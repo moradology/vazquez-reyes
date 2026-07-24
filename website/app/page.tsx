@@ -1,5 +1,10 @@
 import { ResearchTools } from "./research-tools";
 import { sources } from "./research-data";
+import { FamilyTrees } from "./family-tree";
+import {
+  PuertoRicoMap,
+  PuertoRicoMapDefinitions,
+} from "./puerto-rico-map";
 
 const principalSources = sources.filter((source) =>
   [
@@ -22,10 +27,10 @@ export default function Home() {
         </a>
         <nav aria-label="Main navigation">
           <a href="#family">Family</a>
-          <a href="#puerto-rico">Puerto Rico</a>
+          <a href="#tree">Tree</a>
+          <a href="#geography">Puerto Rico</a>
           <a href="#records">Records</a>
-          <a href="#journey">New York</a>
-          <a href="#stories">Their parents</a>
+          <a href="#stories">Stories</a>
           <a href="/research">Research notes</a>
         </nav>
         <ResearchTools />
@@ -59,10 +64,10 @@ export default function Home() {
         <p>
           Cruz’s parents, Mauricio Reyes Martínez and Carmen Díaz García, lived
           in Naguabo before their daughter was born in Gurabo on 3 May 1915.
-          By 1920 the family was in Anton Ruiz, Humacao.
+          By 1920 the family was in Antón Ruíz, Humacao.
         </p>
         <p>
-          Rafael’s family was already in Anton Ruiz when he was a child. He and
+          Rafael’s family was already in Antón Ruíz when he was a child. He and
           Cruz married in East Harlem in 1941; the 1950 census records their
           household a few blocks away on East 109th Street.
         </p>
@@ -160,44 +165,100 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="plot-feature public-plot" id="puerto-rico">
-        <div className="plot-stamp">
-          <span>Puerto Rico</span>
-          <strong>EASTERN</strong>
-          <b>1902—40</b>
-          <span>Naguabo · Gurabo · Humacao</span>
+      <FamilyTrees />
+
+      <section className="section geography-atlas" id="geography">
+        <div className="section-label light">
+          <span>03</span>
+          <p>Puerto Rico, life by life</p>
         </div>
-        <div className="plot-copy">
-          <p className="eyebrow">Before New York</p>
-          <h2>The Puerto Rico years</h2>
+        <div className="geography-heading">
+          <p className="eyebrow">One map, held steady</p>
+          <h2>The same island across five generations</h2>
           <p>
-            The two families lived within the same part of eastern Puerto Rico,
-            but not in one place. The Reyes–Díaz family moved from Naguabo to
-            Gurabo and then Humacao. The Vázquez–Perales family lived in
-            Humacao, first in Anton Ruiz and later in Mambiche.
+            Every panel repeats the same Puerto Rico shoreline, municipio
+            boundaries, labels, and scale. Only the documented family path
+            changes, making continuities and short moves visible from one life
+            to the next.
           </p>
-          <div className="interments">
-            <p>
-              <strong>Naguabo → Gurabo</strong>
-              <span>Carmen’s family in 1910; her daughter’s birthplace in 1915</span>
-            </p>
-            <p>
-              <strong>Humacao</strong>
-              <span>Both families across the 1920–1940 records</span>
-            </p>
-          </div>
-          <a
-            className="text-link"
-            href="/research#source-census-1910"
-          >
-            View the Puerto Rico sources →
-          </a>
         </div>
+        <PuertoRicoMapDefinitions />
+        <div className="map-atlas-grid">
+          <PuertoRicoMap
+            group="cruz"
+            eyebrow="Cruz · 1915–1940"
+            title="Cruz Reyes Díaz"
+            summary="A Gurabo birth followed by three documented Humacao households before New York."
+            storyHref="#family"
+            tone="reyes"
+          />
+          <PuertoRicoMap
+            group="rafael"
+            eyebrow="Rafael · 1906–1930"
+            title="Rafael Vázquez Perales"
+            summary="A Humacao childhood that can be followed from Antón Ruíz to Mambiche."
+            storyHref="#family"
+            tone="vazquez"
+          />
+          <PuertoRicoMap
+            group="mauricio-carmen"
+            eyebrow="Cruz’s parents · 1907–1940"
+            title="Mauricio Reyes and Carmen Díaz"
+            summary="Their records move through Fajardo, Naguabo, Gurabo, and three Humacao barrios."
+            storyHref="#story-mauricio-carmen"
+            tone="reyes"
+          />
+          <PuertoRicoMap
+            group="juan-carlina"
+            eyebrow="Rafael’s parents · 1878–1930"
+            title="Juan Vázquez and Carlina Perales"
+            summary="From their separate Yabucoa and Naguabo beginnings to a shared life in Humacao."
+            storyHref="#story-juan-carlina"
+            tone="vazquez"
+          />
+          <PuertoRicoMap
+            group="sotero-maria"
+            eyebrow="Rafael’s grandparents · 1875–1933"
+            title="Sotero Vázquez and María Eugenia Rodríguez"
+            summary="Their family formed in Yabucoa and later appears together in Antón Ruíz, Humacao."
+            storyHref="#story-sotero-rodriguez"
+            tone="vazquez"
+          />
+          <PuertoRicoMap
+            group="atilano-juana"
+            eyebrow="One generation earlier · c. 1828–1898"
+            title="Atilano Vázquez and Juana Regina Rodríguez"
+            summary="Atilano’s Juncos origin and the Yabucoa family he built with Juana Regina."
+            storyHref="#story-atilano-juana"
+            tone="vazquez"
+          />
+          <PuertoRicoMap
+            group="marcelino-aurora"
+            eyebrow="The Perales branch · c. 1841–1940"
+            title="Marcelino Perales and Aurora Pérez"
+            summary="A Naguabo family, followed into Aurora’s long widowhood in Río Blanco."
+            storyHref="#story-marcelino-aurora"
+            tone="vazquez"
+          />
+          <PuertoRicoMap
+            group="early-vazquez"
+            eyebrow="The earliest mapped generation · before 1819–1824"
+            title="Máximo Vázquez and Josefa Rivera"
+            summary="Caguas and Humacao origins followed by children baptized in Juncos and San Lorenzo."
+            storyHref="#story-maximo-josefa"
+            tone="vazquez"
+          />
+        </div>
+        <p className="geography-method">
+          Points locate the named municipio or barrio—not a guessed house.
+          Census GEOIDs, coordinates, precision, and event-to-record links are
+          preserved in the public project’s geography ledger.
+        </p>
       </section>
 
       <section className="section record-gallery" id="records">
         <div className="section-label">
-          <span>02</span>
+          <span>04</span>
           <p>In the records</p>
         </div>
         <div className="records-heading">
@@ -229,11 +290,11 @@ export default function Home() {
             <a href="/records/1910-reyes-household.jpg" target="_blank">
               <img
                 src="/records/1910-reyes-household.jpg"
-                alt="1910 Puerto Rico census sheet for Ucares, Naguabo"
+                alt="1910 Puerto Rico census sheet for Húcares, Naguabo"
               />
             </a>
             <figcaption>
-              <strong>1910 · Ucares, Naguabo</strong>
+              <strong>1910 · Húcares, Naguabo</strong>
               <span>
                 Carmen Díaz, her parents Lope Díaz and Reyes García, her husband
                 Mauricio Reyes, and their first child.
@@ -245,11 +306,11 @@ export default function Home() {
             <a href="/records/1920-vazquez-household.jpg" target="_blank">
               <img
                 src="/records/1920-vazquez-household.jpg"
-                alt="1920 Puerto Rico census sheet for Anton Ruiz, Humacao"
+                alt="1920 Puerto Rico census sheet for Antón Ruíz, Humacao"
               />
             </a>
             <figcaption>
-              <strong>1920 · Anton Ruiz, Humacao</strong>
+              <strong>1920 · Antón Ruíz, Humacao</strong>
               <span>
                 Rafael in the household of Juan Vázquez and Carlina Perales,
                 with his brothers and sisters.
@@ -278,7 +339,7 @@ export default function Home() {
 
       <section className="section journey" id="journey">
         <div className="section-label light">
-          <span>03</span>
+          <span>05</span>
           <p>Puerto Rico to New York</p>
         </div>
         <div className="journey-heading">
@@ -335,7 +396,7 @@ export default function Home() {
 
       <section className="section stories" id="stories">
         <div className="section-label">
-          <span>04</span>
+          <span>06</span>
           <p>Their parents</p>
         </div>
         <div className="stories-heading">
@@ -343,7 +404,7 @@ export default function Home() {
           <h2>The families before New York</h2>
         </div>
         <div className="story-grid">
-          <article>
+          <article id="story-mauricio-carmen">
             <span className="story-when">Cruz’s parents</span>
             <h3>
               <span data-person-id="person.mauricio-reyes">Mauricio Reyes Martínez</span>
@@ -356,7 +417,7 @@ export default function Home() {
             </p>
             <a href="/research#source-cruz-birth">View the sources →</a>
           </article>
-          <article>
+          <article id="story-juan-carlina">
             <span className="story-when">Rafael’s parents</span>
             <h3>
               <span data-person-id="person.juan-vazquez-rodriguez">
@@ -374,7 +435,7 @@ export default function Home() {
             </p>
             <a href="/research#source-census-1910">View the sources →</a>
           </article>
-          <article>
+          <article id="story-pedro-ana">
             <span className="story-when">Mauricio’s parents</span>
             <h3>
               <span data-person-id="person.pedro-reyes">Pedro Reyes</span>
@@ -390,7 +451,7 @@ export default function Home() {
             </p>
             <a href="/research#pedro-ana">See this family →</a>
           </article>
-          <article>
+          <article id="story-ramon-ines">
             <span className="story-when">Pedro’s parents</span>
             <h3>
               <span data-person-id="person.ramon-reyes">Ramón Reyes</span>
@@ -404,7 +465,7 @@ export default function Home() {
             </p>
             <a href="/research#ramon-ines">See this family →</a>
           </article>
-          <article>
+          <article id="story-damaso-maria">
             <span className="story-when">Ana’s parents</span>
             <h3>
               <span data-person-id="person.damaso-martinez">
@@ -420,7 +481,7 @@ export default function Home() {
             </p>
             <a href="/research#damaso-maria">See this family →</a>
           </article>
-          <article>
+          <article id="story-lope-reyes">
             <span className="story-when">Carmen’s parents</span>
             <h3>
               <span data-person-id="person.lope-diaz-figueroa">
@@ -432,19 +493,41 @@ export default function Home() {
               </span>
             </h3>
             <p>
-              Lope was a son of{" "}
-              <span data-person-id="person.manuel-diaz">Manuel María Díaz</span>{" "}
-              and{" "}
-              <span data-person-id="person.carmen-figueroa">Carmen Figueroa</span>.
-              Reyes’s death record names{" "}
-              <span data-person-id="person.bautista-garcia">Bautista García</span>{" "}
-              and{" "}
-              <span data-person-id="person.carmen-olivero">Carmen Olivero</span>.
-              A son’s baptism instead calls her mother Dolores Olivero.
+              In 1910 Lope and Reyes lived in Húcares, Naguabo, with their
+              daughter Carmen, son-in-law Mauricio, and granddaughter Juana.
+              Later records follow Lope and Reyes to Humacao, where they died
+              in 1929 and 1933.
             </p>
             <a href="/research#lope-reyes">See this family →</a>
           </article>
-          <article>
+          <article id="story-manuel-carmen">
+            <span className="story-when">Lope’s parents</span>
+            <h3>
+              <span data-person-id="person.manuel-diaz">Manuel María Díaz</span>
+              {" + "}
+              <span data-person-id="person.carmen-figueroa">Carmen Figueroa</span>
+            </h3>
+            <p>
+              Records for their sons call Manuel and Carmen natives of
+              Naguabo. Their own birth, marriage, and death dates remain open.
+            </p>
+            <a href="/research#lope-reyes">See the supporting records →</a>
+          </article>
+          <article id="story-bautista-carmen">
+            <span className="story-when">Reyes’s parents</span>
+            <h3>
+              <span data-person-id="person.bautista-garcia">Bautista García</span>
+              {" + "}
+              <span data-person-id="person.carmen-olivero">Carmen Olivero</span>
+            </h3>
+            <p>
+              Reyes’s death record names Bautista and Carmen, both from
+              Naguabo. A son’s baptism calls her mother Dolores Olivero, so
+              that given-name conflict remains open.
+            </p>
+            <a href="/research#lope-reyes">See the name conflict →</a>
+          </article>
+          <article id="story-sotero-rodriguez">
             <span className="story-when">A family in Yabucoa</span>
             <h3>
               <span data-person-id="person.sotero-vazquez">Sotero Vázquez</span>
@@ -479,7 +562,7 @@ export default function Home() {
               <span data-person-id="person.francisco-vazquez-rodriguez">
                 Francisco
               </span>
-              . By 1910, Sotero and María were living in Anton Ruiz, Humacao,
+              . By 1910, Sotero and María were living in Antón Ruíz, Humacao,
               with Braulio and Francisco still at home. Records call their
               mother María Eugenia, Eugenia, and{" "}
               <span data-person-id="person.carmen-rodriguez">
@@ -490,7 +573,7 @@ export default function Home() {
             </p>
             <a href="/research#sotero-rodriguez">See this family →</a>
           </article>
-          <article>
+          <article id="story-atilano-juana">
             <span className="story-when">A generation earlier in Yabucoa</span>
             <h3>
               <span data-person-id="person.atilano-vazquez">Atilano Vázquez</span>
@@ -510,23 +593,41 @@ export default function Home() {
                 María Balbina
               </span>
               , born in 1850. Juana died before María Balbina’s marriage in
-              1870. Atilano lived in Yabucoa until his death in 1898. He was a
-              son of{" "}
-              <span data-person-id="person.maximo-vazquez">
-                Máximo Vázquez
-              </span>{" "}
-              and{" "}
-              <span data-person-id="person.josefa-rivera">Josefa Rivera</span>.{" "}
-              Máximo was from Caguas; Josefa was from Humacao.
-              Juana Regina was a daughter of{" "}
-              <span data-person-id="person.andres-rodriguez">
-                Andrés
-              </span>{" "}
-              and <span data-person-id="person.francisca-diaz">Francisca Díaz</span>.
+              1870. Atilano lived in Yabucoa until his death in 1898.
             </p>
             <a href="/research#atilano-juana">See this family →</a>
           </article>
-          <article>
+          <article id="story-maximo-josefa">
+            <span className="story-when">Atilano’s parents</span>
+            <h3>
+              <span data-person-id="person.maximo-vazquez">Máximo Vázquez</span>
+              {" + "}
+              <span data-person-id="person.josefa-rivera">Josefa Rivera</span>
+            </h3>
+            <p>
+              An 1819 baptism calls Máximo a native of Caguas and Josefa a
+              native of Humacao. Records for their children place the family
+              in Humacao, Juncos, and San Lorenzo from 1806 onward.
+            </p>
+            <a href="/research#maximo-josefa">See this family →</a>
+          </article>
+          <article id="story-andres-francisca">
+            <span className="story-when">Juana Regina’s parents</span>
+            <h3>
+              <span data-person-id="person.andres-rodriguez">
+                Andrés [Rodríguez]
+              </span>
+              {" + "}
+              <span data-person-id="person.francisca-diaz">Francisca Díaz</span>
+            </h3>
+            <p>
+              The 1849 marriage names Juana Regina’s parents as the deceased
+              Andrés and Francisca Díaz. Andrés’s surname was not written and
+              is retained in brackets, inferred from his daughter.
+            </p>
+            <a href="/research#andres-francisca">See this family →</a>
+          </article>
+          <article id="story-atilano-juana-paula">
             <span className="story-when">Atilano’s later family</span>
             <h3>
               <span data-person-id="person.atilano-vazquez">Atilano Vázquez</span>
@@ -552,7 +653,7 @@ export default function Home() {
             </p>
             <a href="/research#atilano-juana-paula">See this family →</a>
           </article>
-          <article>
+          <article id="story-marcelino-aurora">
             <span className="story-when">Carlina’s parents</span>
             <h3>
               <span data-person-id="person.marcelino-perales-medina">
@@ -562,24 +663,36 @@ export default function Home() {
               <span data-person-id="person.aurora-perez">Aurora Pérez</span>
             </h3>
             <p>
-              Marcelino was a son of{" "}
-              <span data-person-id="person.abal-perales">Abal or Abel Perales</span>{" "}
-              and <span data-person-id="person.vicenta-medina">Vicenta Medina</span>.
               This Naguabo family included at least eight known children,
               including{" "}
               <span data-person-id="person.hilaria-perales-perez">
                 Hilaria or Ilaria Perales
               </span>
-              .
+              . Marcelino died in 1891. Aurora was still living with Hilaria
+              in Río Blanco in 1940.
             </p>
             <a href="/research#marcelino-aurora">See this family →</a>
+          </article>
+          <article id="story-abal-vicenta">
+            <span className="story-when">Marcelino’s parents</span>
+            <h3>
+              <span data-person-id="person.abal-perales">Abal or Abel Perales</span>
+              {" + "}
+              <span data-person-id="person.vicenta-medina">Vicenta Medina</span>
+            </h3>
+            <p>
+              Marcelino’s death act names both parents and says they had
+              already died. The image leaves Abal or Abel’s exact spelling
+              uncertain; both were associated with Naguabo.
+            </p>
+            <a href="/research#marcelino-aurora">See the death act →</a>
           </article>
         </div>
       </section>
 
       <section className="section public-sources">
         <div className="section-label">
-          <span>05</span>
+          <span>07</span>
           <p>Sources for this page</p>
         </div>
         <div className="principal-source-grid">

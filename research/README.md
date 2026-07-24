@@ -17,3 +17,8 @@ separate candidates until evidence supports a resolution.
 
 See [`image-capture-policy.md`](image-capture-policy.md) for the local archive
 rules used when reviewing record images.
+
+The canonical geographic layer lives under [`geography/`](geography/). It
+separates record certainty from coordinate precision: an event can be
+documented by an original census while its map point remains only the
+representative point of the named barrio.

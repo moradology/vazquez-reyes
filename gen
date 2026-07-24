@@ -9,8 +9,13 @@ case "$COMMAND" in
     shift
     exec uv run "$ROOT/tools/gen_ancestry.py" "$@"
     ;;
+  geography)
+    node "$ROOT/tools/build-geography.mjs"
+    node "$ROOT/tools/build-pr-map.mjs"
+    ;;
   gate)
-    exec uv run "$ROOT/tools/test_gen_ancestry.py"
+    uv run "$ROOT/tools/test_gen_ancestry.py"
+    node "$ROOT/tools/build-geography.mjs"
     ;;
   help|-h|--help)
     cat <<'EOF'
@@ -24,6 +29,7 @@ Usage:
   ./gen ancestry capture --collection N --id RECORD_ID --capture-id ID --source-ref SOURCE
   ./gen ancestry goto "search/N?name=Given_Surname" --agent ID
   ./gen ancestry cache stats
+  ./gen geography
   ./gen gate
 
 `browser start` launches a dedicated, persistent Chrome profile on localhost:

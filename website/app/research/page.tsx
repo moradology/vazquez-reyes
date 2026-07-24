@@ -95,6 +95,15 @@ export default function ResearchPage() {
           about living people are excluded. Selected historical record images
           are reproduced on the public summary.
         </p>
+        <p className="method-note geography-note">
+          The maps use a separate{" "}
+          <a href="https://github.com/moradology/vazquez-reyes/tree/main/research/geography">
+            geography ledger
+          </a>
+          . Each mapped event names its people, date, place, and supporting
+          record. Coordinates are labeled by their real precision: a barrio
+          point locates the named barrio, never an invented house.
+        </p>
       </section>
 
       <section className="research-section family-groups" id="families">

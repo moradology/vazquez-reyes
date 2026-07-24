@@ -8,12 +8,12 @@ Public site: https://moradology.github.io/vazquez-reyes/
 
 ## Current state
 
-The project has a clean research structure, a tested Ancestry acquisition
-cockpit, and an initial evidence-backed reconstruction of the starting couple.
-Cruz Reyes and Rafael Vázquez are connected by their 1941 Manhattan marriage,
-their 1950 Manhattan household, and a shared cemetery plot in Linden, New
-Jersey. Their recorded parents and the major date conflicts are now captured
-as structured research records.
+The project has a tested Ancestry acquisition cockpit and an evidence-backed
+reconstruction extending both branches through several generations in Puerto
+Rico. The public story follows Cruz Reyes Díaz and Rafael Vázquez from eastern
+Puerto Rico to their 1941 Manhattan marriage and 1950 East Harlem household.
+Their parents, grandparents, earlier families, documented places, and the major
+date and identity conflicts are captured as structured research records.
 
 Start with [`research/initial-findings.md`](research/initial-findings.md).
 
@@ -38,8 +38,8 @@ both pages are assembled and checked.
 - Keep raw subscription images and structured Ancestry acquisitions local.
 - Preserve source URLs, literal citation metadata, and the search context that
   produced each finding.
-- Treat the public-facing family tree, if one is later built, as a generated
-  projection rather than the source of truth.
+- Treat the public-facing trees and maps as generated projections rather than
+  the source of truth.
 
 ## Ancestry cockpit
 
@@ -72,8 +72,15 @@ and `back` are local operations and do not contact Ancestry.
 ./gen gate
 ```
 
-This currently runs the cockpit's offline contract suite. The initial research
-records are line-oriented JSON and can be reviewed with ordinary text tools.
+This runs the cockpit's offline contract suite and validates/regenerates the
+geographic projection. The website has a separate render test:
+
+```sh
+cd website && npm test
+```
+
+The research records are line-oriented JSON and can be reviewed with ordinary
+text tools. Run `./gen geography` after editing the place or event ledgers.
 
 ## Research layout
 
@@ -81,6 +88,8 @@ records are line-oriented JSON and can be reviewed with ordinary text tools.
 - `research/initial-findings.md` — human-readable first-pass report.
 - `research/people/people.jsonl` — reviewed historical people.
 - `research/people/relationships.jsonl` — typed family relationships.
+- `research/geography/places.jsonl` — sourced Census map points and precision.
+- `research/geography/events.jsonl` — dated, sourced movements used by the maps.
 - `research/cases/cases.jsonl` — open and resolved research questions.
 - `research/evidence/claims.jsonl` — privacy-reviewed claims and conclusions.
 - `research/sources/sources.jsonl` — canonical source registry.

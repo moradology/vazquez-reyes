@@ -36,7 +36,10 @@ test("renders the Vazquez-Reyes family history", async () => {
   assert.match(html, /Rafael Vázquez/);
   assert.match(html, /From.*Puerto Rico/s);
   assert.match(html, /to New York/);
-  assert.match(html, /The Puerto Rico years/);
+  assert.match(html, /The same island across five generations/);
+  assert.match(html, /Start with Cruz or Rafael/);
+  assert.match(html, /The Reyes–Díaz ancestors/);
+  assert.match(html, /The Vázquez–Perales ancestors/);
   assert.match(html, /Eastern Puerto Rico → East Harlem/);
   assert.match(html, /The families on paper/);
   assert.match(html, /1940-reyes-household\.jpg/);
@@ -47,6 +50,71 @@ test("renders the Vazquez-Reyes family history", async () => {
     /Two lives, firmly connected|The evidence behind the story|Three breakthroughs|closed the loop/i,
   );
   assert.doesNotMatch(html, /codex-preview|react-loading-skeleton/i);
+});
+
+test("renders navigable trees and repeated maps from one geographic frame", async () => {
+  const response = await render();
+  const html = await response.text();
+
+  assert.equal([...html.matchAll(/data-pr-map="[^"]+"/g)].length, 8);
+  assert.equal(
+    [...html.matchAll(/id="puerto-rico-municipio-base"/g)].length,
+    1,
+  );
+  assert.equal(
+    [...html.matchAll(/href="#puerto-rico-municipio-base"/g)].length,
+    8,
+  );
+  assert.match(html, /data-tree-person="person\.cruz-reyes-vasquez"/);
+  assert.match(html, /data-tree-person="person\.rafael-vazquez-perales"/);
+  assert.match(html, /data-tree-person="person\.maximo-vazquez"/);
+  assert.match(html, /data-tree-open="true"/);
+  assert.match(html, /href="#story-mauricio-carmen"/);
+  assert.match(html, /href="#story-atilano-juana"/);
+  assert.match(html, /Points locate the named municipio or barrio/);
+});
+
+test("keeps the geography ledger referential and explicit about precision", async () => {
+  const [placesText, eventsText, peopleText, sourcesText] = await Promise.all([
+    readFile(
+      new URL("../../research/geography/places.jsonl", import.meta.url),
+      "utf8",
+    ),
+    readFile(
+      new URL("../../research/geography/events.jsonl", import.meta.url),
+      "utf8",
+    ),
+    readFile(
+      new URL("../../research/people/people.jsonl", import.meta.url),
+      "utf8",
+    ),
+    readFile(
+      new URL("../../research/sources/sources.jsonl", import.meta.url),
+      "utf8",
+    ),
+  ]);
+  const parse = (text) =>
+    text
+      .split(/\r?\n/)
+      .filter((line) => line.trim())
+      .map((line) => JSON.parse(line));
+  const places = parse(placesText);
+  const events = parse(eventsText);
+  const placeIds = new Set(places.map((place) => place.id));
+  const peopleIds = new Set(parse(peopleText).map((person) => person.id));
+  const sourceIds = new Set(parse(sourcesText).map((source) => source.id));
+
+  assert.equal(places.length, 17);
+  assert.equal(events.length, 32);
+  for (const place of places) {
+    assert.match(place.precision, /point/);
+    assert.match(place.coordinate_source.url, /^https:\/\/tigerweb\.geo\.census\.gov\//);
+  }
+  for (const event of events) {
+    assert.ok(placeIds.has(event.place_ref), event.id);
+    assert.ok(event.person_refs.every((id) => peopleIds.has(id)), event.id);
+    assert.ok(event.evidence_refs.every((id) => sourceIds.has(id)), event.id);
+  }
 });
 
 test("keeps sensitive details out of the rendered page", async () => {

@@ -29,6 +29,8 @@ jobs:
           cache-dependency-path: website/package-lock.json
       - run: npm ci
         working-directory: website
+      - run: node tools/build-geography.mjs
+      - run: git diff --exit-code -- website/app/geography-data.ts
       - run: npm run build
         working-directory: website
       - run: node --test tests/rendered-html.test.mjs

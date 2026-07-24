@@ -1290,6 +1290,15 @@ a {
   padding: 20px;
 }
 
+.method-note.geography-note {
+  border-top: 0;
+}
+
+.method-note a {
+  color: var(--rust);
+  font-weight: 700;
+}
+
 .family-groups {
   background: var(--paper-deep);
 }
@@ -1694,6 +1703,369 @@ a {
   margin: 0;
 }
 
+.family-trees {
+  background: var(--paper-deep);
+  border-top: 1px solid var(--line);
+}
+
+.tree-heading,
+.geography-heading {
+  display: grid;
+  gap: clamp(24px, 5vw, 70px);
+  grid-template-columns: 0.55fr 1.5fr 0.75fr;
+  margin: 70px 0 85px;
+}
+
+.tree-heading h2,
+.geography-heading h2 {
+  font-family: var(--font-display), serif;
+  font-size: clamp(44px, 5.6vw, 78px);
+  font-weight: 500;
+  letter-spacing: -0.045em;
+  line-height: 0.98;
+  margin: 0;
+}
+
+.tree-heading > p:last-child,
+.geography-heading > p:last-child {
+  font-size: 12px;
+  line-height: 1.7;
+  margin: 6px 0 0;
+}
+
+.pedigree {
+  border-top: 1px solid var(--line);
+  margin-top: 70px;
+  padding-top: 28px;
+}
+
+.pedigree > header {
+  align-items: end;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 140px 1fr auto;
+  margin-bottom: 24px;
+}
+
+.pedigree > header p,
+.pedigree > header span {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  margin: 0 0 4px;
+  text-transform: uppercase;
+}
+
+.pedigree > header p {
+  color: var(--rust);
+}
+
+.pedigree > header span {
+  color: rgba(23, 42, 38, 0.58);
+  max-width: 230px;
+  text-align: right;
+}
+
+.pedigree > header h3 {
+  font-family: var(--font-display), serif;
+  font-size: clamp(31px, 4vw, 53px);
+  font-weight: 500;
+  margin: 0;
+}
+
+.pedigree-scroll {
+  background:
+    linear-gradient(rgba(23, 42, 38, 0.035) 1px, transparent 1px),
+    var(--paper);
+  background-size: 100% 42px;
+  border: 1px solid var(--line);
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+}
+
+.pedigree-scroll:focus-visible {
+  outline: 3px solid var(--gold);
+  outline-offset: 3px;
+}
+
+.pedigree svg {
+  display: block;
+  min-width: 1255px;
+  width: 100%;
+}
+
+.pedigree-generation-labels {
+  fill: rgba(23, 42, 38, 0.52);
+  font-family: var(--font-sans), sans-serif;
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
+}
+
+.pedigree-connectors {
+  fill: none;
+  stroke: rgba(23, 42, 38, 0.32);
+  stroke-width: 1;
+}
+
+.pedigree-node rect {
+  fill: var(--paper);
+  stroke: rgba(23, 42, 38, 0.45);
+  transition: fill 160ms ease, stroke 160ms ease;
+}
+
+.pedigree-reyes .pedigree-node:not(.open) rect {
+  stroke: var(--rust);
+}
+
+.pedigree-vazquez .pedigree-node:not(.open) rect {
+  stroke: #6d7643;
+}
+
+.pedigree-node text {
+  fill: var(--ink);
+  font-family: var(--font-display), serif;
+  font-size: 12px;
+  font-weight: 600;
+  pointer-events: none;
+}
+
+.pedigree-node .pedigree-node-detail {
+  fill: rgba(23, 42, 38, 0.63);
+  font-family: var(--font-sans), sans-serif;
+  font-size: 7.5px;
+  font-weight: 600;
+  letter-spacing: 0.35px;
+}
+
+.pedigree-node.open rect {
+  fill: rgba(241, 236, 223, 0.36);
+  stroke: rgba(23, 42, 38, 0.18);
+  stroke-dasharray: 3 3;
+}
+
+.pedigree-node.open text {
+  fill: rgba(23, 42, 38, 0.42);
+  font-family: var(--font-sans), sans-serif;
+  font-size: 7px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+}
+
+.pedigree a:hover .pedigree-node rect,
+.pedigree a:focus .pedigree-node rect {
+  fill: #fffaf0;
+  stroke: var(--gold);
+  stroke-width: 2;
+}
+
+.geography-atlas {
+  background: var(--forest);
+  color: var(--paper);
+}
+
+.geography-heading > p:last-child {
+  color: rgba(241, 236, 223, 0.7);
+}
+
+.map-atlas-grid {
+  display: grid;
+  gap: 2px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.pr-life-map {
+  --map-accent: var(--rust);
+  background: var(--paper);
+  color: var(--ink);
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: clamp(26px, 3.5vw, 52px);
+}
+
+.pr-life-map-vazquez {
+  --map-accent: #747841;
+}
+
+.pr-life-map-copy h3 {
+  font-family: var(--font-display), serif;
+  font-size: clamp(32px, 3.6vw, 52px);
+  font-weight: 500;
+  letter-spacing: -0.035em;
+  line-height: 1;
+  margin: 12px 0 18px;
+}
+
+.pr-life-map-copy > p:last-child {
+  font-size: 12px;
+  line-height: 1.65;
+  margin: 0;
+  max-width: 560px;
+  min-height: 42px;
+}
+
+.pr-life-map figure {
+  margin: 35px 0 0;
+}
+
+.pr-life-map svg {
+  background: #d7dfd2;
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.pr-map-water {
+  fill: #d7dfd2;
+}
+
+.pr-map-water-label {
+  fill: rgba(23, 42, 38, 0.35);
+  font-family: var(--font-sans), sans-serif;
+  font-size: 7px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.pr-map-definitions {
+  height: 0;
+  position: absolute;
+  width: 0;
+}
+
+.pr-map-municipios {
+  fill: #eee8d8;
+  stroke: rgba(23, 42, 38, 0.34);
+  stroke-width: 0.75;
+}
+
+.pr-map-municipio-active {
+  fill: color-mix(in srgb, var(--map-accent) 19%, #eee8d8);
+  stroke: rgba(23, 42, 38, 0.46);
+  stroke-width: 0.8;
+}
+
+.pr-map-labels text {
+  fill: rgba(23, 42, 38, 0.55);
+  font-family: var(--font-sans), sans-serif;
+  font-size: 7px;
+  font-weight: 700;
+  paint-order: stroke;
+  stroke: #eee8d8;
+  stroke-width: 2.4px;
+}
+
+.pr-map-route {
+  fill: none;
+  stroke: var(--map-accent);
+  stroke-dasharray: 4 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2.2;
+}
+
+.pr-map-stop {
+  fill: var(--map-accent);
+  stroke: var(--paper);
+  stroke-width: 2;
+}
+
+.pr-map-stop.municipio {
+  fill: var(--paper);
+  stroke: var(--map-accent);
+}
+
+.pr-map-stops text {
+  fill: var(--paper);
+  font-family: var(--font-sans), sans-serif;
+  font-size: 8px;
+  font-weight: 800;
+  text-anchor: middle;
+}
+
+.pr-map-stops g:has(.municipio) text {
+  fill: var(--map-accent);
+}
+
+.pr-map-neatline {
+  fill: none;
+  stroke: rgba(23, 42, 38, 0.65);
+  stroke-width: 1;
+}
+
+.pr-map-north {
+  fill: var(--ink);
+  font-family: var(--font-display), serif;
+  font-size: 10px;
+  text-anchor: middle;
+}
+
+.pr-map-north path {
+  fill: none;
+  stroke: var(--ink);
+  stroke-width: 1;
+}
+
+.pr-life-map figcaption {
+  display: flex;
+  font-size: 7px;
+  font-weight: 700;
+  justify-content: space-between;
+  letter-spacing: 0.12em;
+  padding-top: 9px;
+  text-transform: uppercase;
+}
+
+.pr-life-events {
+  border-top: 1px solid var(--line);
+  list-style: none;
+  margin: 28px 0 0;
+  padding: 0;
+}
+
+.pr-life-events li {
+  border-bottom: 1px solid var(--line);
+  display: grid;
+  gap: 14px;
+  grid-template-columns: minmax(105px, 0.36fr) 1fr;
+  padding: 13px 0;
+}
+
+.pr-life-events span {
+  color: var(--map-accent);
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.pr-life-events p {
+  font-size: 10px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.pr-map-link {
+  color: var(--map-accent);
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  margin-top: 22px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.geography-method {
+  border: 1px solid rgba(241, 236, 223, 0.28);
+  color: rgba(241, 236, 223, 0.7);
+  font-size: 10px;
+  line-height: 1.7;
+  margin: 50px 0 0;
+  padding: 18px;
+}
+
 footer {
   align-items: center;
   background: var(--forest-deep);
@@ -1735,6 +2107,8 @@ footer p {
   .evidence-heading,
   .questions-grid,
   .plot-feature,
+  .tree-heading,
+  .geography-heading,
   .wanted-grid,
   .public-foreword,
   .method-grid,
@@ -1804,6 +2178,19 @@ footer p {
     grid-template-columns: 1fr;
   }
 
+  .map-atlas-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pedigree > header {
+    align-items: start;
+    grid-template-columns: 1fr;
+  }
+
+  .pedigree > header span {
+    text-align: left;
+  }
+
   .story-grid article {
     min-height: 0;
   }
@@ -1865,8 +2252,19 @@ footer p {
 
   .foreword,
   .stories-heading,
+  .tree-heading,
+  .geography-heading,
   .name-index {
     grid-template-columns: 1fr;
+  }
+
+  .pr-life-map {
+    padding: 24px 18px 28px;
+  }
+
+  .pr-life-events li {
+    grid-template-columns: 1fr;
+    gap: 5px;
   }
 
   .research-hero {
