@@ -484,7 +484,8 @@ export default function Home() {
                 Máximo Vázquez
               </span>{" "}
               and{" "}
-              <span data-person-id="person.josefa-rivera">Josefa Rivera</span>.
+              <span data-person-id="person.josefa-rivera">Josefa Rivera</span>.{" "}
+              Máximo was from Caguas; Josefa was from Humacao.
               Juana Regina was a daughter of{" "}
               <span data-person-id="person.andres-rodriguez">
                 Andrés
@@ -509,8 +510,13 @@ export default function Home() {
               <span data-person-id="person.maria-eugenia-vazquez-de-santiago">
                 María Eugenia
               </span>{" "}
-              was born in Yabucoa in 1879. She was a different María Eugenia
-              from Sotero’s wife and was likely Sotero’s half-sister.
+              was born in Yabucoa in 1879. Their daughter{" "}
+              <span data-person-id="person.mariana-vazquez-de-santiago">
+                Mariana
+              </span>{" "}
+              was born in 1896 and baptized in Cidra the following year.
+              María Eugenia was a different person from Sotero’s wife and was
+              likely Sotero’s half-sister.
             </p>
             <a href="/research#atilano-juana-paula">See this family →</a>
           </article>

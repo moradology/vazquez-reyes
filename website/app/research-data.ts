@@ -238,6 +238,41 @@ export const sources = [
     grade: "Original parish register",
   },
   {
+    id: "juana-jacinta-baptism",
+    label: "1806 baptismal ceremonies: Juana Jacinta Vázquez",
+    detail: "Born 16 August 1806 in Humacao, legitimate daughter of Máximo Vázquez and Josefa de Rivera. She was baptized at home because of danger of death; the parish supplied the ceremonies on 28 August. A computer index incorrectly calls the child Jesús.",
+    href: "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSFS-K94J-H?view=fullText&keywords=Josefa%2CM%C3%A1ximo%2CRibera&lang=en",
+    grade: "Original parish register · index name corrected",
+  },
+  {
+    id: "juan-de-dios-baptism",
+    label: "1819 baptism: Juan de Dios Vázquez",
+    detail: "Born 9 March and baptized 14 March 1819 in Juncos, son of Máximo Vázquez, a native of Caguas, and Josefa de Ribera, a native of Humacao. The original corrects a computer index that shifted the event to 1813–1814.",
+    href: "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSV2-MS7P-F?view=fullText&keywords=Juan%20de%20Dios%2CM%C3%A1ximo%20V%C3%A1zquez%2CRibera&lang=en",
+    grade: "Original parish register · index dates corrected",
+  },
+  {
+    id: "francisco-solano-death",
+    label: "1878 death: Francisco Solano Vázquez Rivera",
+    detail: "Died 30 December and buried 31 December 1878 in San Lorenzo, reported age 40; husband of Rita Rodríguez and son of Máximo Vázquez and Josefa Rivera. A computer transcript misread Solano as Polanco.",
+    href: "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSV2-SS23-Z?view=fullText&keywords=Francisco%20V%C3%A1zquez%2CM%C3%A1ximo%20V%C3%A1zquez%2CJosefa%20Rivera&lang=en",
+    grade: "Original parish register · OCR name corrected",
+  },
+  {
+    id: "dolores-vazquez-baptism",
+    label: "1879 baptism: Dolores, daughter of Francisco Solano",
+    detail: "Born 1 December 1878 and baptized 7 March 1879 in San Lorenzo. Her baptism names Francisco Solano Vázquez and Rita Rodríguez as parents and Máximo Vázquez and Josefa Rivera as paternal grandparents.",
+    href: "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSV2-9WQN-V?view=index&personArk=%2Fark%3A%2F61903%2F1%3A1%3A6DRH-1X1T&action=view&cc=1807092&lang=en",
+    grade: "Original parish register + index",
+  },
+  {
+    id: "mariana-vazquez-baptism",
+    label: "1897 baptism: Mariana Vázquez de Santiago",
+    detail: "Born 18 April 1896 and baptized 19 December 1897 in Cidra, daughter of Atilano Vázquez and Juana Santiago. The record repeats both grandparent pairs and uses Maximiliano as a later form of Máximo.",
+    href: "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSVN-K9PZ-3?view=index&personArk=%2Fark%3A%2F61903%2F1%3A1%3A6Z4C-SCMK&action=view&cc=1807092&lang=en",
+    grade: "Original parish register + index",
+  },
+  {
     id: "miguel-baptism",
     label: "1824 baptism: Miguel de los Santos Vázquez",
     detail: "Born 5 July and baptized 15 July 1824 in San Lorenzo, legitimate son of Máximo Vázquez and Josefa de Ribera and a documented brother of Atilano.",
@@ -577,39 +612,44 @@ export const familyCouples = [
         death: "Not yet found",
       },
     ],
-    children: ["María Eugenia — born 20 May 1879"],
+    children: [
+      "María Eugenia — born 20 May 1879 in Yabucoa",
+      "Mariana — born 18 Apr 1896; baptized 19 Dec 1897 in Cidra",
+    ],
     childNote:
-      "The marriage calls Atilano the widower of Juana Regina Rodríguez and names Juana Paula’s parents as Tomás de Santiago and Petronila Orellana. María Eugenia’s baptism repeats Atilano’s parents.",
+      "The marriage calls Atilano the widower of Juana Regina Rodríguez and names Juana Paula’s parents as Tomás de Santiago and Petronila Orellana. Both daughters’ baptisms repeat the same parent and grandparent cluster.",
   },
   {
     id: "maximo-josefa",
     branch: "Atilano’s parents",
     couple: "Máximo Vázquez + Josefa Rivera",
     status: "documented" as const,
-    connection: "Parents of Atilano and a documented eastern Puerto Rico sibling cluster",
+    connection: "Parents of Atilano; eight children now documented through original records",
     people: [
       {
         name: "Máximo Vázquez",
-        birth: "Not yet found",
+        birth: "Caguas, Puerto Rico · native place recorded in 1819; date not found",
         death: "Not yet found",
       },
       {
         name: "Josefa Rivera",
-        birth: "Not yet found",
+        birth: "Humacao, Puerto Rico · native place recorded in 1819; date not found",
         death: "Not yet found",
       },
     ],
     children: [
-      "Andrea — buried 19 Nov 1866 in Humacao",
+      "Juana Jacinta — born 16 Aug 1806 in Humacao",
+      "Andrea — born about 1816; buried 19 Nov 1866 in Humacao",
+      "Juan de Dios — born 9 Mar 1819 in Juncos; died in 1820",
       "Miguel de los Santos — born 5 Jul 1824 in San Lorenzo",
       "Atilano — born about 1828 in Juncos",
+      "Francisco Solano — born about 1838; died 30 Dec 1878 in San Lorenzo",
       "Manuel — married 14 Feb 1846 in Yabucoa",
       "María — documented through children born in Humacao and San Lorenzo",
-      "Juan de Dios — probable infant son; died in 1820",
       "Tomasa — probable daughter; died in 1889, age conflict unresolved",
     ],
     childNote:
-      "The first five are supported by original records naming the exact parent pair. Juan de Dios and Tomasa remain probable rather than confirmed because a same-name couple or erroneous reported age has not been excluded.",
+      "Eight children are supported by original records naming the exact parent pair. Juan de Dios’s 1819 baptism now resolves his earlier provisional identity. Francisco Solano is supported by his death and his daughter Dolores’s baptism; Polanco is an OCR error. Tomasa alone remains provisional because her reported age conflicts with Juan de Dios’s known birth.",
   },
   {
     id: "andres-francisca",
@@ -724,8 +764,8 @@ export const openCases = [
   {
     id: "VR-10",
     title: "Atilano’s baptism",
-    conflict: "His 1875 marriage says he was from Juncos, and his 1898 death at reported age 70 implies about 1828. No defensible baptism appeared in the indexed Juncos search.",
-    next: "Page through Juncos baptisms around 1827–1829 and inspect neighboring San Lorenzo books using Máximo Vázquez and Josefa de Ribera as parent anchors.",
+    conflict: "His 1875 marriage says he was from Juncos, and his 1898 death at reported age 70 implies about 1828. Neither the full-text index nor a direct image-by-image scan of the expected 1828–1829 Juncos pages produced a defensible baptism.",
+    next: "Inspect original Juncos index pages for omissions and neighboring San Lorenzo baptisms around 1827–1829 using Máximo Vázquez and Josefa de Ribera as parent anchors.",
   },
   {
     id: "VR-11",
@@ -742,8 +782,8 @@ export const openCases = [
   {
     id: "VR-13",
     title: "Máximo and Josefa’s full child cluster",
-    conflict: "Manuel, Miguel, Atilano, María, and Andrea are documented through the exact parent pair. Juan de Dios and Tomasa are probable, but Tomasa’s reported age conflicts with Juan de Dios’s infancy and could indicate age error or a second couple.",
-    next: "Find Máximo and Josefa’s marriage and the missing baptisms or marriages for Andrea, Manuel, María, and Tomasa.",
+    conflict: "Eight children are now documented through the exact parent pair: Juana Jacinta, Andrea, Juan de Dios, Miguel, Atilano, Francisco Solano, Manuel, and María. Tomasa remains probable because her reported age conflicts with Juan de Dios’s known 1819 birth. The long 1806-to-about-1838 child span also needs testing.",
+    next: "Find Máximo and Josefa’s marriage before 16 August 1806, Máximo’s baptism in Caguas, Josefa’s baptism in Humacao, and another record that establishes Tomasa’s age and birthplace.",
   },
 ];
 
@@ -754,7 +794,7 @@ export const negativeSearches = [
   "Sotero’s death, several child records, and María Eugenia’s own 1933 death strongly favor Carmen, Eugenia, and María Eugenia as one woman’s name variants, but no original yet states that bridge explicitly.",
   "Sotero’s baptism was not found in the reviewed full-text Yabucoa film. An apparent 1865 candidate was rejected as OCR or name noise; the baptism books still need manual inspection.",
   "An 1861 baptism of Sotero Lebrón is not Sotero Vázquez Rodríguez. The full page is retained as a rejected candidate.",
-  "Atilano’s indexed Juncos baptism was not found. A damaged 1846 page naming Don Atilano del Rosario Vázquez as a godfather is retained only as a candidate naming clue.",
+  "Atilano’s baptism was not found in either the full-text index or a direct scan of the expected 1828–1829 Juncos pages. A damaged 1846 page naming Don Atilano del Rosario Vázquez as a godfather is retained only as a candidate naming clue.",
   "A 1942 death for Aurora Monserrate Pérez belongs to the widow of Marcelo Pérez, not the wife of Marcelino Perales; it was captured and rejected.",
   "No Pastora Reyes entry appears in the reviewed Gurabo baptism-index pages. A Cruz Reyes entry points to book 15, folio 18 verso, but the damaged register image does not expose the child or parents.",
 ];
@@ -809,6 +849,16 @@ export const nameVariants = [
     person: "Two different María Eugenias",
     forms: "María Eugenia Rodríguez Pacheco · María Eugenia Vázquez de Santiago",
     conclusion: "Sotero’s wife and widow is María Eugenia Rodríguez Pacheco. A separate child named María Eugenia was born in 1879 to Atilano Vázquez and Juana Paula de Santiago; she was Sotero’s likely half-sister, not his wife.",
+  },
+  {
+    person: "Máximo Vázquez",
+    forms: "Máximo Vázquez · Maximino Vázquez · Maximiliano Vázquez",
+    conclusion: "Máximo is the recurring early-register form. Later descendant records and indexes use Maximino or Maximiliano; the repeated spouse and family cluster support name variants, not separate grandfathers.",
+  },
+  {
+    person: "Francisco Solano Vázquez Rivera",
+    forms: "Francisco Solano Vázquez Rivera · Francisco Polanco Vázquez Rivera",
+    conclusion: "Solano is supported by the original death margin and his daughter Dolores’s baptism. Polanco is an automated handwriting transcription error.",
   },
 ];
 
@@ -923,7 +973,23 @@ export const updates = [
   },
   {
     date: "24 Jul 2026",
-    text: "Expanded Máximo Vázquez and Josefa Rivera’s documented children to Manuel, Miguel, Atilano, María, and Andrea; retained Juan de Dios and Tomasa as provisional candidates.",
+    text: "Found Juan de Dios’s 1819 Juncos baptism, corrected the index’s 1813–1814 dates, and confirmed that he was the infant recorded dead in 1820.",
+  },
+  {
+    date: "24 Jul 2026",
+    text: "Established that Máximo Vázquez was a native of Caguas and Josefa de Ribera a native of Humacao; added their 1806 daughter Juana Jacinta.",
+  },
+  {
+    date: "24 Jul 2026",
+    text: "Resolved Francisco Polanco/Solano as Francisco Solano Vázquez Rivera through his 1878 death and daughter Dolores’s 1879 baptism.",
+  },
+  {
+    date: "24 Jul 2026",
+    text: "Expanded Máximo and Josefa’s documented child cluster to eight; Tomasa remains the sole provisional child because of her age conflict.",
+  },
+  {
+    date: "24 Jul 2026",
+    text: "Added Mariana, born in 1896, as a second documented daughter of Atilano and Juana Paula de Santiago.",
   },
   {
     date: "24 Jul 2026",
