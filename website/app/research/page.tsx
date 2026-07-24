@@ -163,6 +163,27 @@ export default function ResearchPage() {
               </div>
             </dl>
           </article>
+          <article>
+            <Grade kind="documented">DOCUMENTED</Grade>
+            <h3>Luís de Rivera</h3>
+            <dl>
+              <div>
+                <dt>Native place</dt>
+                <dd>Humacao district, Puerto Rico</dd>
+              </div>
+              <div>
+                <dt>Parents</dt>
+                <dd>Roque [surname not stated] and Marciana Delgado</dd>
+              </div>
+              <div>
+                <dt>1811 death record</dt>
+                <dd>
+                  About 50 years old; married in the church to Isidora
+                  Rodríguez; nine children named
+                </dd>
+              </div>
+            </dl>
+          </article>
         </div>
 
         <div className="origin-coverage">
@@ -192,9 +213,10 @@ export default function ResearchPage() {
               <span>Humacao / Las Piedras</span>
               <strong>Josefa’s earlier records</strong>
               <p>
-                Las Piedras baptisms identify her sister Simona in 1790 and
-                another child, Ysabel, in 1792. Both name Luís de Rivera and
-                Isidora Rodríguez. Josefa’s own baptism remains unfound.
+                All 227 images in the surviving 1778–1799 Las Piedras item were
+                reviewed. Simona’s 1790 and Ysabel’s 1792 baptisms name Luís de
+                Rivera and Isidora Rodríguez; Josefa’s baptism was not found in
+                that item.
               </p>
             </article>
             <article>
@@ -370,6 +392,31 @@ export default function ResearchPage() {
               )}
               {family.id === "luis-isidora" && (
                 <>
+                  <figure className="family-record">
+                    <a
+                      href="/records/1811-luis-de-rivera-death.jpg"
+                      target="_blank"
+                    >
+                      <img
+                        src="/records/1811-luis-de-rivera-death.jpg"
+                        alt="1811 Humacao death entry for Luís de Rivera, shown in reading order across two parts of the parish register"
+                      />
+                    </a>
+                    <figcaption>
+                      <strong>1811 · Luís de Rivera’s death</strong>
+                      <span>
+                        Luís is described as a native of the Humacao district,
+                        about 50 years old, and the legitimate son of Roque and
+                        Marciana Delgado. The entry names Isidora Rodríguez and
+                        their nine children. The exact death day remains too
+                        faint to report confidently.
+                      </span>
+                      <small>
+                        Dulce Nombre de Jesús · DGS 008038524 · item 6 · image
+                        23
+                      </small>
+                    </figcaption>
+                  </figure>
                   <figure className="family-record">
                     <a
                       href="/records/1790-simona-rivera-baptism.jpg"

@@ -23,13 +23,13 @@ export function OriginFrontier() {
 
       <div className="origin-heading">
         <p className="eyebrow">The current edge of the family tree</p>
-        <h2>The earliest stated origins are Caguas and Humacao.</h2>
+        <h2>The records still point to Caguas and Humacao.</h2>
         <p>
           The first people whose native places are stated in the records are
           Máximo Vázquez of Caguas and Josefa Rivera of Humacao. Their 1805
-          marriage names both parent pairs. Earlier baptisms of Josefa’s
-          sisters supply her father’s full name, but still give neither parent
-          a birthplace.
+          marriage names both parent pairs. Luís de Rivera’s 1811 death carries
+          Josefa’s line one generation farther, but it calls Luís himself a
+          native of the Humacao district.
         </p>
       </div>
 
@@ -65,21 +65,36 @@ export function OriginFrontier() {
 
         <article className="origin-line origin-line-josefa">
           <header>
-            <span>Josefa’s parents</span>
+            <span>Luís’s parents</span>
             <strong>
-              <b data-person-id="person.luis-father-of-josefa-rivera">
-                Luís de Rivera
+              <b data-person-id="person.roque-father-of-luis-de-rivera">
+                Roque [surname not stated]
               </b>
               <br />
+              <b data-person-id="person.marciana-delgado">Marciana Delgado</b>
+            </strong>
+            <small>Birthplaces and dates not yet found</small>
+          </header>
+          <div className="origin-descent" aria-hidden="true">
+            <i />
+            <b>their son and his wife</b>
+          </div>
+          <div
+            className="origin-person"
+            data-person-id="person.luis-father-of-josefa-rivera"
+          >
+            <span>Luís native of the Humacao district</span>
+            <h3>
+              Luís de Rivera +{" "}
               <b data-person-id="person.isidora-rodriguez">
                 Isidora Rodríguez
               </b>
-            </strong>
-            <small>
-              Daughters Simona and Ysabel were baptized at Las Piedras in 1790
-              and 1792; the parents’ own dates and birthplaces remain unknown
-            </small>
-          </header>
+            </h3>
+            <p>
+              His 1811 death names Roque and Marciana; Isidora’s birthplace
+              and parents remain unknown
+            </p>
+          </div>
           <div className="origin-descent" aria-hidden="true">
             <i />
             <b>their daughter</b>
@@ -93,7 +108,7 @@ export function OriginFrontier() {
       </div>
 
       <div className="record-boundary">
-        <span>Current record boundary</span>
+        <span>Current birthplace boundary</span>
       </div>
 
       <div className="origin-open">

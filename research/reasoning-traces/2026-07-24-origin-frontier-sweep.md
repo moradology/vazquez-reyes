@@ -49,9 +49,10 @@ composite are retained in:
 
 ### Las Piedras baptism sweep
 
-The early Las Piedras baptism item was then reviewed image by image through
-item image 155, using the original images and the full-text layer as a finding
-aid. This produced two positive household records:
+The early Las Piedras baptism item was reviewed image by image, using the
+original images and the full-text layer as a finding aid. The first pass
+reached image 155; a later pass completed all 227 images. The review produced
+two positive household records:
 
 - **Simona** was born **8 February 1790** and baptized **7 March 1790**. The
   entry calls her the legitimate daughter of **Luís de Rivera** and **Isidora
@@ -75,9 +76,9 @@ Two nearby records were deliberately kept separate:
   to name a father other than Luís de Rivera. It remains an unmerged
   same-name-mother candidate.
 
-Josefa's baptism was not found in the bounded review. The 227-image item was
-not reviewed to its final frame, so this is not presented as a complete
-negative search.
+Josefa's baptism was not found in the complete 227-image item review. This is
+a complete negative result only for that surviving item; it does not cover a
+missing book, duplicate register, or neighboring parish.
 
 ## Early-book checks
 
@@ -113,7 +114,10 @@ The verified direct-line boundary is:
 - Máximo Vázquez — native of Caguas; parents Francisco and María Cortez;
 - Josefa Rivera — native of Humacao; parents Luís de Rivera and Isidora
   Rodríguez;
-- no reviewed record gives a birthplace for those four parents;
+- Luís de Rivera — native of the Humacao district; parents Roque and Marciana
+  Delgado;
+- no reviewed record gives a birthplace for Francisco, María, Roque, Marciana,
+  or Isidora;
 - no reviewed record names a direct ancestor born in Africa, Europe, or another
   Caribbean island.
 
@@ -122,12 +126,13 @@ family-history claims.
 
 ## Next focused records
 
-1. Finish the unreviewed remainder of the Las Piedras baptism item as a bounded
-   check for Josefa and additional children, then seek duplicate or neighboring
-   books rather than treating the first item as complete.
+1. Seek duplicate or neighboring baptism books for Josefa rather than treating
+   the completed Las Piedras item as complete coverage of the event.
 2. Search Las Piedras and neighboring eastern-parish marriage material earlier
    than the reviewed 1787–1816 transcription for Luís and Isidora.
 3. Search Caguas duplicate, diocesan, or neighboring-parish material that
    covers the published baptism gaps before and after 1785–1788.
-4. Seek death or burial records for Máximo and Josefa; a death entry may state
+4. Prioritize original records that could state the native places or parents of
+   Roque, Marciana Delgado, Isidora Rodríguez, Francisco, and María Cortez.
+5. Seek death or burial records for Máximo and Josefa; a death entry may state
    age, residence, spouse, or native place even when a baptism is missing.

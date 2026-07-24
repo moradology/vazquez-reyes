@@ -40,12 +40,13 @@ test("renders the Vazquez-Reyes family history", async () => {
   assert.match(html, /Start with Cruz or Rafael/);
   assert.match(html, /The Reyes–Díaz ancestors/);
   assert.match(html, /The Vázquez–Perales ancestors/);
-  assert.match(html, /Two parent pairs, kept separate/);
-  assert.match(html, /The earliest stated origins are Caguas and Humacao/);
+  assert.match(html, /Three parent pairs, kept in order/);
+  assert.match(html, /The records still point to Caguas and Humacao/);
   assert.match(html, /Luís de Rivera/);
   assert.match(html, /No record yet names an overseas-born ancestor/);
   assert.match(html, /Routes still to test/);
   assert.match(html, /1805-maximo-josefa-marriage\.jpg/);
+  assert.match(html, /1811-luis-de-rivera-death\.jpg/);
   assert.match(html, /Eastern Puerto Rico → East Harlem/);
   assert.match(html, /The families on paper/);
   assert.match(html, /1940-reyes-household\.jpg/);
@@ -111,7 +112,7 @@ test("keeps the geography ledger referential and explicit about precision", asyn
   const sourceIds = new Set(parse(sourcesText).map((source) => source.id));
 
   assert.equal(places.length, 18);
-  assert.equal(events.length, 36);
+  assert.equal(events.length, 38);
   for (const place of places) {
     assert.match(place.precision, /point/);
     assert.match(place.coordinate_source.url, /^https:\/\/tigerweb\.geo\.census\.gov\//);
@@ -184,6 +185,8 @@ test("separates the public summary from the research notes", async () => {
   assert.match(researchHtml, /Luís de Rivera \+ Isidora Rodríguez/);
   assert.match(researchHtml, /1790-simona-rivera-baptism\.jpg/);
   assert.match(researchHtml, /1792-ysabel-rivera-baptism\.jpg/);
+  assert.match(researchHtml, /1811-luis-de-rivera-death\.jpg/);
+  assert.match(researchHtml, /Roque \[surname not stated\] and Marciana Delgado/);
   assert.match(researchHtml, /31 December 1805 in Humacao/);
   assert.match(researchHtml, /Miguel de los Santos/);
   assert.match(researchHtml, /Andrés \[Rodríguez\] \+ Francisca Díaz/);

@@ -315,6 +315,13 @@ export const sources = [
     grade: "Original parish register · image captured",
   },
   {
+    id: "luis-de-rivera-death",
+    label: "1811 death: Luís de Rivera",
+    detail: "The Humacao register calls Luís a native of that district and about 50, names his parents as Roque and Marciana Delgado, identifies Isidora Rodríguez as his church-married wife, and lists nine children. The exact day is too faint to promote.",
+    href: "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSFS-2BP2?view=fullText&keywords=Isidora+Rodr%C3%ADguez%2Cde+Lu%C3%ADs+de+Rivera&lang=en&groupId=M993-WQQ",
+    grade: "Original parish register · image captured · exact day open",
+  },
+  {
     id: "humacao-marriage-transcription-1793-1808",
     label: "Humacao marriage transcription, 1793–1808",
     detail: "The full register transcription places both Simona’s April marriage and Josefa’s December marriage in the same 1805 book and repeats Luís and Isidora Rodríguez as the brides’ parents. Parent surnames supplied by the spreadsheet are treated as normalization, not as words written in the original entries.",
@@ -834,12 +841,12 @@ export const familyCouples = [
     branch: "Josefa’s parents",
     couple: "Luís de Rivera + Isidora Rodríguez",
     status: "documented" as const,
-    connection: "Named across two Las Piedras baptisms and the 1805 marriages of daughters Simona and Josefa",
+    connection: "Named across two Las Piedras baptisms, two daughter marriages, and Luís’s 1811 Humacao death",
     people: [
       {
         name: "Luís de Rivera",
-        birth: "Not yet found",
-        death: "Not yet found",
+        birth: "About 1761; native of the Humacao district",
+        death: "1811 in Humacao; exact day too faint",
       },
       {
         name: "Isidora Rodríguez",
@@ -851,9 +858,37 @@ export const familyCouples = [
       "Josefa Ribera or Rivera",
       "Simona Ribera — born 8 Feb 1790; baptized 7 Mar in Las Piedras",
       "Ysabel — born 5 Oct 1792; baptized 22 Oct in Las Piedras",
+      "Juana — named on her father’s 1811 death",
+      "Gerónima — named on her father’s 1811 death",
+      "Domingo — named on his father’s 1811 death",
+      "María — named on her father’s 1811 death",
+      "Ramón — named on his father’s 1811 death",
+      "Juan — named on his father’s 1811 death",
     ],
     childNote:
-      "Simona’s 1790 baptism and Ysabel’s 1792 baptism write Luís de Rivera and Isidora Rodríguez. Simona’s and Josefa’s separate 1805 marriages repeat the parent pair while omitting Luís’s surname. The originals establish Simona as Josefa’s sister and Ysabel as another child of the household; Josefa’s own baptism remains unfound.",
+      "Luís’s death lists nine children by given name and names his parents as Roque and Marciana Delgado. The six newly identified children are not assigned surnames without their own records. Isidora’s parents and native place remain unknown.",
+  },
+  {
+    id: "roque-marciana",
+    branch: "Luís de Rivera’s parents",
+    couple: "Roque [surname not stated] + Marciana Delgado",
+    status: "documented" as const,
+    connection: "Named as Luís de Rivera’s parents in his 1811 Humacao death",
+    people: [
+      {
+        name: "Roque [surname not stated]",
+        birth: "Not yet found",
+        death: "Not yet found",
+      },
+      {
+        name: "Marciana Delgado",
+        birth: "Not yet found",
+        death: "Not yet found",
+      },
+    ],
+    children: ["Luís de Rivera — about 1761–1811; native of the Humacao district"],
+    childNote:
+      "The death entry gives Roque no surname, so Rivera is not assigned to him. It establishes the parent pair but not a marriage date or place. The original reads Marciana; the automated Merenciana form is an OCR error.",
   },
   {
     id: "andres-francisca",
@@ -986,8 +1021,8 @@ export const openCases = [
   {
     id: "VR-13",
     title: "Máximo and Josefa before 1805",
-    conflict: "Their 31 December 1805 marriage, both parent pairs, and native places are confirmed. The 1819 baptism classifies them as pardos libres. Las Piedras baptisms now verify Simona and Ysabel as children of Luís de Rivera and Isidora Rodríguez, but Josefa’s baptism and all four earlier parents’ birthplaces remain unfound. No reviewed record names an overseas-born direct ancestor.",
-    next: "Finish the bounded Las Piedras sibling check and seek duplicate or earlier eastern-parish books for Josefa and the Luís–Isidora marriage. Search Caguas gaps for Máximo. Keep Africa, Europe, and other Caribbean islands unassigned until a record names a direct ancestor and place.",
+    conflict: "Their 31 December 1805 marriage and native places are confirmed. Luís de Rivera’s 1811 death now calls him native to the Humacao district and names parents Roque and Marciana Delgado. The complete 227-image Las Piedras item review found Simona and Ysabel but not Josefa. No reviewed record names an overseas-born direct ancestor.",
+    next: "Prioritize records that can state native places for Roque, Marciana Delgado, Isidora Rodríguez, Francisco, and María Cortez. Search earlier, duplicate, diocesan, and neighboring books; do not turn an index gap into a migration claim.",
   },
   {
     id: "VR-14",
@@ -1266,5 +1301,9 @@ export const updates = [
   {
     date: "24 Jul 2026",
     text: "Found Simona’s 1790 and Ysabel’s 1792 Las Piedras baptisms. Both name Luís de Rivera and Isidora Rodríguez; Simona’s baptism and marriage now verify her as Josefa’s sister and supply Luís’s documented surname.",
+  },
+  {
+    date: "24 Jul 2026",
+    text: "Found Luís de Rivera’s 1811 Humacao death. It calls him native to that district, names his parents as Roque and Marciana Delgado, and lists nine children with Isidora Rodríguez. The original image is archived; no overseas birthplace is claimed.",
   },
 ];

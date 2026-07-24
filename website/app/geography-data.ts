@@ -350,6 +350,25 @@ export const geographyEvents = [
     "map_note": "The same baptism calls Josefa a native of Humacao."
   },
   {
+    "id": "geo.event.luis-native-humacao",
+    "date_range": "before 1811",
+    "event_type": "reported_native_place",
+    "person_refs": [
+      "person.luis-father-of-josefa-rivera"
+    ],
+    "place_ref": "place.humacao",
+    "status": "confirmed_as_recorded",
+    "evidence_refs": [
+      "source.familysearch-death.luis-de-rivera.1811"
+    ],
+    "map_groups": [
+      "early-vazquez"
+    ],
+    "sequence": 3,
+    "map_label": "Humacao",
+    "map_note": "Luís de Rivera's 1811 death calls him a native of this Humacao district."
+  },
+  {
     "id": "geo.event.simona-baptism-1790",
     "date": "1790-03-07",
     "event_type": "baptism",
@@ -366,7 +385,7 @@ export const geographyEvents = [
     "map_groups": [
       "early-vazquez"
     ],
-    "sequence": 3,
+    "sequence": 4,
     "map_label": "Las Piedras · 1790",
     "map_note": "Simona, sister of Josefa, was baptized here to Luís de Rivera and Isidora Rodríguez."
   },
@@ -387,7 +406,7 @@ export const geographyEvents = [
     "map_groups": [
       "early-vazquez"
     ],
-    "sequence": 4,
+    "sequence": 5,
     "map_label": "Las Piedras · 1792",
     "map_note": "Another daughter, Ysabel, was baptized in the same parish."
   },
@@ -407,7 +426,7 @@ export const geographyEvents = [
     "map_groups": [
       "early-vazquez"
     ],
-    "sequence": 5,
+    "sequence": 6,
     "map_label": "Humacao · 1805",
     "map_note": "Máximo Basquez and Josefa Ribera married in Humacao."
   },
@@ -428,9 +447,28 @@ export const geographyEvents = [
     "map_groups": [
       "early-vazquez"
     ],
-    "sequence": 6,
+    "sequence": 7,
     "map_label": "Humacao · 1806",
     "map_note": "Their daughter Juana Jacinta was born in Humacao."
+  },
+  {
+    "id": "geo.event.luis-death-1811",
+    "date": "1811",
+    "event_type": "death",
+    "person_refs": [
+      "person.luis-father-of-josefa-rivera"
+    ],
+    "place_ref": "place.humacao",
+    "status": "confirmed_year_exact_day_open",
+    "evidence_refs": [
+      "source.familysearch-death.luis-de-rivera.1811"
+    ],
+    "map_groups": [
+      "early-vazquez"
+    ],
+    "sequence": 8,
+    "map_label": "Humacao · 1811",
+    "map_note": "Luís died in Humacao. The entry names his parents, wife, and nine children."
   },
   {
     "id": "geo.event.family-juncos-1819",
@@ -448,7 +486,7 @@ export const geographyEvents = [
     "map_groups": [
       "early-vazquez"
     ],
-    "sequence": 7,
+    "sequence": 9,
     "map_label": "Juncos · 1819",
     "map_note": "Their son Juan de Dios was baptized in Juncos."
   },
@@ -468,7 +506,7 @@ export const geographyEvents = [
     "map_groups": [
       "early-vazquez"
     ],
-    "sequence": 8,
+    "sequence": 10,
     "map_label": "San Lorenzo · 1824",
     "map_note": "Their son Miguel de los Santos was baptized in San Lorenzo."
   },

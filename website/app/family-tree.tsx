@@ -178,15 +178,14 @@ export function FamilyTrees() {
       />
       <aside className="tree-continuation" aria-labelledby="earliest-vazquez-heading">
         <div>
-          <p className="eyebrow">The chart continues one record farther</p>
+          <p className="eyebrow">The chart continues through Luís de Rivera</p>
           <h3 id="earliest-vazquez-heading">
-            Two parent pairs, kept separate
+            Three parent pairs, kept in order
           </h3>
           <p>
-            The marriage register names each pair separately and leaves both
-            fathers’ surnames unstated. Earlier baptisms now supply Luís de
-            Rivera’s full name; Francisco’s surname and all four birthplaces
-            remain open.
+            The 1805 marriage names Máximo’s and Josefa’s parents separately.
+            Luís’s 1811 death then names his own parents, Roque and Marciana
+            Delgado. Francisco’s and Roque’s surnames are not supplied.
           </p>
         </div>
         <div className="tree-continuation-grid">
@@ -204,6 +203,14 @@ export function FamilyTrees() {
               Luís de Rivera
               <br />
               Isidora Rodríguez
+            </strong>
+          </a>
+          <a href="#origins">
+            <span>Luís’s parents</span>
+            <strong>
+              Roque [surname not stated]
+              <br />
+              Marciana Delgado
             </strong>
           </a>
         </div>

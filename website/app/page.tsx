@@ -359,6 +359,26 @@ export default function Home() {
               </small>
             </figcaption>
           </figure>
+          <figure className="record-wide">
+            <a href="/records/1811-luis-de-rivera-death.jpg" target="_blank">
+              <img
+                src="/records/1811-luis-de-rivera-death.jpg"
+                alt="1811 Humacao parish death entry for Luís de Rivera, continued across two pages"
+              />
+            </a>
+            <figcaption>
+              <strong>1811 · Humacao</strong>
+              <span>
+                Luís de Rivera’s death entry calls him native to the Humacao
+                district, names his parents as Roque and Marciana Delgado, and
+                lists nine children with Isidora Rodríguez.
+              </span>
+              <small>
+                Dulce Nombre de Jesús parish register · two-part reading-order
+                crop · exact day open
+              </small>
+            </figcaption>
+          </figure>
         </div>
       </section>
 

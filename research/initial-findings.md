@@ -13,10 +13,11 @@ Puerto Rico whose paths ran through Naguabo, Gurabo and Humacao before the
 couple married in Manhattan and made their home in East Harlem.
 
 The direct lines now reach several great-great-grandparents of the starting
-couple, and the Vázquez branch reaches four parents named in an original 1805
-marriage. Original images have been retained for every central census, civil,
-and parish record reviewed. Details about potentially living descendants
-remain private.
+couple. The Vázquez branch reaches the four parents named in an original 1805
+marriage and, through Luís de Rivera's 1811 death, one generation farther to
+Roque and Marciana Delgado. Original images have been retained for every
+central census, civil, and parish record reviewed. Details about potentially
+living descendants remain private.
 
 ## Cruz Reyes Díaz Vasquez
 
@@ -233,16 +234,30 @@ marriage and death, and a wider Vázquez sibling cluster.
 - **Ysabel** was born **5 October 1792** and baptized **22 October 1792** in
   Las Piedras to the same parents, with Marta Berríos as godmother. Her name is
   written in the margin and omitted by the automated transcript.
+- Luís de Rivera's **1811 Humacao death entry** calls him a native of that
+  district and about 50 years old, names his parents as **Roque** and
+  **Marciana Delgado**, and identifies **Isidora Rodríguez** as his
+  church-married wife. The original reads Marciana; the automated transcript's
+  Merenciana form is an OCR error.
+- The same death entry names nine children: **Josefa, Simona, Ysabel, Juana,
+  Gerónima, Domingo, María, Ramón, and Juan**. The six newly identified
+  children are retained by given name only because the entry does not assign
+  surnames to them.
 - The marriage occurred about seven and a half months before their first
   currently documented child, **Juana Jacinta**, was born in Humacao on **16
   August 1806**.
 - Juan de Dios's 1819 baptism identifies Máximo as a native of **Caguas** and
-  Josefa as a native of **Humacao**. Their own baptisms and deaths remain the
-  next direct targets; Josefa's baptism did not appear in the bounded Las
-  Piedras review through item image 155.
+  Josefa as a native of **Humacao**. All 227 images in the surviving Las
+  Piedras baptism item, covering 1778–1799, were reviewed without finding
+  Josefa. That complete item review does not cover missing, duplicate, or
+  neighboring registers.
+- No record yet places a named direct ancestor before Puerto Rico. Luís is the
+  earliest direct ancestor with a newly stated origin, and that origin is
+  still the Humacao district. Roque's, Marciana's, Isidora's, Francisco's, and
+  María Cortez's own origins remain unknown.
 - The captured evidence includes the complete original register image, a
   natural reading-order crop joining the bottom-left entry to its top-right
-  continuation, an enhanced legibility crop, and capture metadata.
+  continuation, enhanced legibility crops, and capture metadata.
 
 ### Marcelino Perales y Medina and Aurora Pérez
 
@@ -327,9 +342,10 @@ This couple were Carlina's parents and Rafael's maternal grandparents.
 8. Birth or baptism records for the Perales–Pérez and Reyes–Martínez sibling
    clusters, especially Benito Isabel versus Isabel and Pedro's earlier
    children with Juana Villafañe.
-9. Baptisms, marriages, and deaths that can identify the life dates and
-   birthplaces of Francisco with María Cortez, and Luís with Isidora Rodríguez,
-   without supplying the two fathers' surnames from inheritance alone.
+9. Baptisms, marriages, and deaths that can identify the life dates and native
+   places of Roque with Marciana Delgado, Isidora Rodríguez, and Francisco
+   with María Cortez. Overseas origins remain unassigned unless a record names
+   a specific direct ancestor and place.
 
 All sources, conflicts and next-record targets are recorded in the adjacent
 JSONL files. Record pages, viewer captures, original-resolution images, and the
