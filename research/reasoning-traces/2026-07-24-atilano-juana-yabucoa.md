@@ -129,9 +129,8 @@ parents themselves:
 - **Josefa de Ribera was a native of Humacao**.
 
 The act describes the couple as *pardos libres*. “Native of” is evidence for
-origin, not an exact birth date or a located baptism. Their marriage has not
-been found, but Juana Jacinta's 16 August 1806 birth now establishes that it
-should be sought before that date.
+origin, not an exact birth date or a located baptism. A later pass found their
+original Humacao marriage on 31 December 1805; it names both parent pairs.
 
 ## Place pattern
 
@@ -192,8 +191,9 @@ chronology. The image is preserved, but no new child is added from it.
 1. Inspect original Juncos index pages and neighboring San Lorenzo baptisms
    around 1827–1829 for Atilano. The expected Juncos pages themselves were
    manually scanned without a hit.
-2. Find Máximo's baptism in Caguas and Josefa's baptism in Humacao.
-3. Find Máximo and Josefa's marriage before 16 August 1806.
+2. Find Máximo's baptism in Caguas and search pre-1793 Humacao-family
+   baptisms under Las Piedras for Josefa and likely sister Simona.
+3. Find death or burial records for Máximo and Josefa.
 4. Locate an earlier Yabucoa burial book, duplicate, or diocesan copy covering
    July 1863 through February 1870 for Juana; the reviewed item starts in 1871.
 5. Seek unfilmed Yabucoa registers, duplicate parish books, diocesan copies,

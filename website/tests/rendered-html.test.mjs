@@ -40,7 +40,10 @@ test("renders the Vazquez-Reyes family history", async () => {
   assert.match(html, /Start with Cruz or Rafael/);
   assert.match(html, /The Reyes–Díaz ancestors/);
   assert.match(html, /The Vázquez–Perales ancestors/);
-  assert.match(html, /The 1805 marriage opens two earlier paths/);
+  assert.match(html, /Two parent pairs, kept separate/);
+  assert.match(html, /The records stop in Caguas and Humacao/);
+  assert.match(html, /No record yet names an overseas-born ancestor/);
+  assert.match(html, /Routes still to test/);
   assert.match(html, /1805-maximo-josefa-marriage\.jpg/);
   assert.match(html, /Eastern Puerto Rico → East Harlem/);
   assert.match(html, /The families on paper/);
@@ -154,6 +157,10 @@ test("separates the public summary from the research notes", async () => {
 
   assert.equal(researchResponse.status, 200);
   assert.match(researchHtml, /Research notes/);
+  assert.match(researchHtml, /What is known, and where the trail stops/);
+  assert.match(researchHtml, /The missing record is not the same as a missing person/);
+  assert.match(researchHtml, /Simona Ribera/);
+  assert.match(researchHtml, /OVERSEAS ORIGIN OPEN/);
   assert.match(researchHtml, /Where the records and memory differ/);
   assert.match(researchHtml, /secondhand Pastora story/i);
   assert.match(researchHtml, /daughter remembers being told/i);

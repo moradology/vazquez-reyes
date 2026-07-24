@@ -36,6 +36,7 @@ export default function ResearchPage() {
         </Link>
         <nav aria-label="Research navigation">
           <Link href="/">Public summary</Link>
+          <a href="#origins">Origin frontier</a>
           <a href="#families">Family groups</a>
           <a href="#conflicts">Conflicts</a>
           <a href="#docket">Open questions</a>
@@ -106,9 +107,121 @@ export default function ResearchPage() {
         </p>
       </section>
 
-      <section className="research-section family-groups" id="families">
+      <section className="research-section origin-research" id="origins">
         <div className="research-section-title">
           <span>01</span>
+          <div>
+            <p>Origin frontier</p>
+            <h2>What is known, and where the trail stops</h2>
+          </div>
+        </div>
+        <p className="section-deck">
+          This pass stays shallow on purpose: identify the person, the
+          relationship, the stated place, and the next relevant record set.
+          Nothing below assigns an overseas origin without a named person and
+          record.
+        </p>
+        <div className="origin-audit-grid">
+          <article>
+            <Grade kind="documented">DOCUMENTED</Grade>
+            <h3>Máximo Vázquez</h3>
+            <dl>
+              <div>
+                <dt>Native place</dt>
+                <dd>Caguas, Puerto Rico</dd>
+              </div>
+              <div>
+                <dt>Parents</dt>
+                <dd>Francisco [surname not stated] and María Cortez</dd>
+              </div>
+              <div>
+                <dt>Record language</dt>
+                <dd>
+                  Described with Josefa as <i>pardo libre</i> in 1819
+                </dd>
+              </div>
+            </dl>
+          </article>
+          <article>
+            <Grade kind="documented">DOCUMENTED</Grade>
+            <h3>Josefa Rivera</h3>
+            <dl>
+              <div>
+                <dt>Native place</dt>
+                <dd>Humacao, Puerto Rico</dd>
+              </div>
+              <div>
+                <dt>Parents</dt>
+                <dd>Luís [surname not stated] and Isidora Rodríguez</dd>
+              </div>
+              <div>
+                <dt>Likely sister</dt>
+                <dd>
+                  Simona Ribera, who married in Humacao in April 1805 with the
+                  same parent pair
+                </dd>
+              </div>
+            </dl>
+          </article>
+        </div>
+
+        <div className="origin-coverage">
+          <header>
+            <p className="eyebrow">Record coverage checked</p>
+            <h3>The missing record is not the same as a missing person.</h3>
+          </header>
+          <div>
+            <article>
+              <span>Caguas</span>
+              <strong>Máximo’s baptism</strong>
+              <p>
+                No match appears in the complete 1785–1788 baptism transcript.
+                The surviving digitized sequence has major gaps before and
+                after those years.
+              </p>
+            </article>
+            <article>
+              <span>Caguas</span>
+              <strong>His parents’ marriage</strong>
+              <p>
+                No Francisco and María Cortez match appears in the 1774–1804
+                marriage transcript.
+              </p>
+            </article>
+            <article>
+              <span>Humacao / Las Piedras</span>
+              <strong>Josefa’s earlier records</strong>
+              <p>
+                Humacao’s surviving baptism and marriage books begin in 1793.
+                Earlier Humacao baptisms and marriages may have been recorded
+                under Las Piedras.
+              </p>
+            </article>
+            <article>
+              <span>Las Piedras</span>
+              <strong>Her parents’ marriage</strong>
+              <p>
+                Luís and Isidora Rodríguez do not appear as a couple in the
+                reviewed 1787–1816 marriage transcription.
+              </p>
+            </article>
+          </div>
+        </div>
+
+        <aside className="origin-research-note">
+          <Grade kind="open">OVERSEAS ORIGIN OPEN</Grade>
+          <p>
+            Africa, Europe, and other Caribbean islands remain routes to test.
+            The phrase <i>pardos libres</i> records how a Puerto Rican parish
+            classified Máximo and Josefa; it does not identify a birthplace
+            outside Puerto Rico or measure ancestry.
+          </p>
+        </aside>
+      </section>
+
+      <section className="research-section family-groups" id="families">
+        <div className="research-section-title">
+          <span>02</span>
           <div>
             <p>Direct lines</p>
             <h2>One family at a time</h2>
@@ -262,7 +375,7 @@ export default function ResearchPage() {
 
       <section className="research-section research-dark" id="conflicts">
         <div className="research-section-title">
-          <span>02</span>
+          <span>03</span>
           <div>
             <p>Conflicts</p>
             <h2>Where the records and memory differ</h2>
@@ -442,7 +555,7 @@ export default function ResearchPage() {
 
       <section className="research-section" id="names">
         <div className="research-section-title">
-          <span>03</span>
+          <span>04</span>
           <div>
             <p>Name variants</p>
             <h2>Names found in the records</h2>
@@ -461,7 +574,7 @@ export default function ResearchPage() {
 
       <section className="research-section research-dark" id="docket">
         <div className="research-section-title">
-          <span>04</span>
+          <span>05</span>
           <div>
             <p>Open questions</p>
             <h2>Records to look for next</h2>
@@ -485,7 +598,7 @@ export default function ResearchPage() {
 
       <section className="research-section" id="negative">
         <div className="research-section-title">
-          <span>05</span>
+          <span>06</span>
           <div>
             <p>Search log</p>
             <h2>Searches without a match</h2>
@@ -504,7 +617,7 @@ export default function ResearchPage() {
 
       <section className="research-section wanted-records">
         <div className="research-section-title">
-          <span>06</span>
+          <span>07</span>
           <div>
             <p>Family papers</p>
             <h2>Documents we are looking for</h2>
@@ -535,7 +648,7 @@ export default function ResearchPage() {
 
       <section className="research-section research-sources" id="sources">
         <div className="research-section-title">
-          <span>07</span>
+          <span>08</span>
           <div>
             <p>Sources</p>
             <h2>Records reviewed</h2>
@@ -571,7 +684,7 @@ export default function ResearchPage() {
 
       <section className="research-section change-log">
         <div className="research-section-title">
-          <span>08</span>
+          <span>09</span>
           <div>
             <p>Research log</p>
             <h2>Work completed</h2>

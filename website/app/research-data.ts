@@ -294,6 +294,48 @@ export const sources = [
     grade: "Original parish register",
   },
   {
+    id: "simona-rivera-marriage",
+    label: "1805 marriage: Simona Ribera and León Garrafa",
+    detail: "Married 24 April 1805 in Humacao. The original calls Simona the legitimate daughter of Luís and Isidora Rodríguez—the same parent pair named for Josefa eight months later. Simona is retained as Josefa’s likely sister.",
+    href: "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSFS-R9MT-Q?cat=248892&i=1122&lang=en",
+    grade: "Original parish register · likely sibling",
+  },
+  {
+    id: "humacao-marriage-transcription-1793-1808",
+    label: "Humacao marriage transcription, 1793–1808",
+    detail: "The full register transcription places both Simona’s April marriage and Josefa’s December marriage in the same 1805 book and repeats Luís and Isidora Rodríguez as the brides’ parents. Parent surnames supplied by the spreadsheet are treated as normalization, not as words written in the original entries.",
+    href: "https://docs.google.com/spreadsheets/d/1TtzO9MU8kOTRuLXLi7LpBPvRPTKfyB5NjiIsx3M9EDE/edit",
+    grade: "Volunteer transcription · checked against originals",
+  },
+  {
+    id: "humacao-parish-coverage",
+    label: "Humacao parish-book coverage guide",
+    detail: "The surviving digitized Humacao baptism and marriage sequences begin in 1793. The 1805 marriage is in the first marriage book, cataloged for pardos and enslaved residents; the specific family’s free status comes from the 1819 baptism, not from that book title alone.",
+    href: "https://hijosdecoamopr.com/humacao-puerto-rico-church-records-indexes-1784-1966/",
+    grade: "Published record guide · coverage evidence",
+  },
+  {
+    id: "las-piedras-parish-coverage",
+    label: "Las Piedras parish-book coverage guide",
+    detail: "Las Piedras has early baptism and marriage books and served the surrounding eastern area. Its 1787–1816 marriage transcription was checked without finding Luís and Isidora Rodríguez as a couple.",
+    href: "https://hijosdecoamopr.com/las-piedras-puerto-rico-church-index/",
+    grade: "Published record guide + complete marriage transcription",
+  },
+  {
+    id: "las-piedras-humacao-burial-transcription",
+    label: "Las Piedras and Humacao burial transcription, 1787–1798",
+    detail: "The historical note explains that Humacao’s church functioned under Las Piedras before Humacao became a parish in 1793. Humacao residents therefore used Las Piedras for baptisms and marriages in the earlier period.",
+    href: "https://hijosdecoamopr.com/wp-content/uploads/2023/06/Entierros-en-Las-Piedras-y-Humacao-1787-1798.pdf",
+    grade: "Published complete transcription + parish-jurisdiction note",
+  },
+  {
+    id: "caguas-early-transcripts",
+    label: "Caguas early baptism and marriage transcriptions",
+    detail: "The complete 1785–1788 baptism transcript contains no Máximo matching parents Francisco and María Cortez. The complete 1774–1804 marriage transcript contains no matching parent marriage. Large baptism-book gaps mean these are negative searches, not proof that the events occurred elsewhere.",
+    href: "https://hijosdecoamopr.com/caguas-puerto-rico-church-records-1730-1968/",
+    grade: "Published record guide + complete volunteer transcriptions",
+  },
+  {
     id: "juana-jacinta-baptism",
     label: "1806 baptismal ceremonies: Juana Jacinta Vázquez",
     detail: "Born 16 August 1806 in Humacao, legitimate daughter of Máximo Vázquez and Josefa de Rivera. She was baptized at home because of danger of death; the parish supplied the ceremonies on 28 August. A computer index incorrectly calls the child Jesús.",
@@ -303,7 +345,7 @@ export const sources = [
   {
     id: "juan-de-dios-baptism",
     label: "1819 baptism: Juan de Dios Vázquez",
-    detail: "Born 9 March and baptized 14 March 1819 in Juncos, son of Máximo Vázquez, a native of Caguas, and Josefa de Ribera, a native of Humacao. The original corrects a computer index that shifted the event to 1813–1814.",
+    detail: "Born 9 March and baptized 14 March 1819 in Juncos, son of Máximo Vázquez, a native of Caguas, and Josefa de Ribera, a native of Humacao. The entry calls the parents pardos libres. The original also corrects a computer index that shifted the event to 1813–1814.",
     href: "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSV2-MS7P-F?view=fullText&keywords=Juan%20de%20Dios%2CM%C3%A1ximo%20V%C3%A1zquez%2CRibera&lang=en",
     grade: "Original parish register · index dates corrected",
   },
@@ -791,9 +833,12 @@ export const familyCouples = [
         death: "Not yet found",
       },
     ],
-    children: ["Josefa Ribera or Rivera"],
+    children: [
+      "Josefa Ribera or Rivera",
+      "Simona Ribera — likely sister; married 24 Apr 1805 in Humacao",
+    ],
     childNote:
-      "The Humacao register calls Josefa their legitimate daughter. It gives Luís no surname, so Rivera or Ribera is not assigned to him without another record.",
+      "Separate original 1805 marriages call both Josefa and Simona legitimate daughters of Luís and Isidora Rodríguez. The same uncommon parent pair in the same parish and year makes them likely sisters. Neither original gives Luís a surname, so Rivera or Ribera is not assigned to him.",
   },
   {
     id: "andres-francisca",
@@ -926,8 +971,8 @@ export const openCases = [
   {
     id: "VR-13",
     title: "Máximo and Josefa before 1805",
-    conflict: "Their 31 December 1805 marriage and both parent pairs are now confirmed. Eight children are documented through the exact parent pair; Tomasa remains probable because her reported age conflicts with Juan de Dios’s known 1819 birth. The long 1806-to-about-1838 child span still needs testing.",
-    next: "Find Máximo’s baptism in Caguas, Josefa’s baptism in Humacao, death records for both, and another record that establishes Tomasa’s age and birthplace. Search the prior generation under Francisco with María Cortez and Luís with Isidora Rodríguez, without inventing the fathers’ surnames.",
+    conflict: "Their 31 December 1805 marriage, both parent pairs, and native places are confirmed. The 1819 baptism classifies them as pardos libres. Simona Ribera’s April 1805 marriage names the same parents as Josefa and makes her a likely sister. No reviewed record names an overseas-born ancestor.",
+    next: "Search pre-1793 Humacao-family baptisms and marriages under Las Piedras, then Caguas books outside the surviving 1785–1788 baptism window. Keep Africa, Europe, and other Caribbean islands unassigned until a record names a person and place.",
   },
   {
     id: "VR-14",
@@ -964,6 +1009,9 @@ export const negativeSearches = [
   "No Pastora Reyes entry appears in the reviewed Gurabo baptism-index pages. A Cruz Reyes entry points to book 15, folio 18 verso, but the damaged register image does not expose the child or parents.",
   "The 1844 Humacao baptism of an Ana Martínez with parents Dámaso Martínez and María Rivera is retained but rejected as the direct Ana because it is 11–14 years earlier than her ages in the 1910 census and 1918 death act.",
   "Focused searches for Pedro Reyes and Juana Villafañe’s marriage and for Juana’s death did not produce a defensible exact match; two children’s original death records nevertheless confirm the parent pair.",
+  "The complete Caguas 1785–1788 baptism transcription contains no Máximo matching parents Francisco and María Cortez. Major gaps before and after that book prevent a negative conclusion about Caguas as his birthplace.",
+  "The complete Caguas 1774–1804 marriage transcription contains no defensible Francisco and María Cortez parent-couple match.",
+  "The Las Piedras 1787–1816 marriage transcription contains no Luís and Isidora Rodríguez marriage. Josefa’s and likely sister Simona’s 1805 Humacao marriages nevertheless confirm the parent pair.",
 ];
 
 export const nameVariants = [
@@ -1193,5 +1241,9 @@ export const updates = [
   {
     date: "24 Jul 2026",
     text: "Found Máximo Basquez and Josefa Ribera’s original Humacao marriage on 31 December 1805, extending the direct line to Francisco and María Cortez, and Luís and Isidora Rodríguez. The record does not state surnames for either father.",
+  },
+  {
+    date: "24 Jul 2026",
+    text: "Completed a focused origin sweep: confirmed Caguas and Humacao as Máximo and Josefa’s stated native places, retained the pardos libres classification without turning it into an overseas birthplace, checked the early Caguas and Las Piedras transcriptions, and captured the original marriage of Josefa’s likely sister Simona.",
   },
 ];

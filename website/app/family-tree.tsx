@@ -178,17 +178,18 @@ export function FamilyTrees() {
       />
       <aside className="tree-continuation" aria-labelledby="earliest-vazquez-heading">
         <div>
-          <p className="eyebrow">One record beyond the chart</p>
+          <p className="eyebrow">The chart continues one record farther</p>
           <h3 id="earliest-vazquez-heading">
-            The 1805 marriage opens two earlier paths
+            Two parent pairs, kept separate
           </h3>
           <p>
             The register names each parent pair separately. It does not supply
-            surnames for Francisco or Luís, so those blanks remain visible.
+            surnames for Francisco or Luís. The origin view below shows exactly
+            where the record trail ends.
           </p>
         </div>
         <div className="tree-continuation-grid">
-          <a href="#story-francisco-maria-cortez">
+          <a href="#origins">
             <span>Máximo’s parents</span>
             <strong>
               Francisco [surname not stated]
@@ -196,7 +197,7 @@ export function FamilyTrees() {
               María Cortez
             </strong>
           </a>
-          <a href="#story-luis-isidora">
+          <a href="#origins">
             <span>Josefa’s parents</span>
             <strong>
               Luís [surname not stated]

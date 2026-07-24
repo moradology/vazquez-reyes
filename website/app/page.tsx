@@ -1,6 +1,7 @@
 import { ResearchTools } from "./research-tools";
 import { sources } from "./research-data";
 import { FamilyTrees } from "./family-tree";
+import { OriginFrontier } from "./origin-frontier";
 import {
   PuertoRicoMap,
   PuertoRicoMapDefinitions,
@@ -29,9 +30,9 @@ export default function Home() {
         <nav aria-label="Main navigation">
           <a href="#family">Family</a>
           <a href="#tree">Tree</a>
-          <a href="#geography">Puerto Rico</a>
+          <a href="#origins">Origins</a>
+          <a href="#geography">Map</a>
           <a href="#records">Records</a>
-          <a href="#stories">Stories</a>
           <a href="/research">Research notes</a>
         </nav>
         <ResearchTools />
@@ -168,9 +169,11 @@ export default function Home() {
 
       <FamilyTrees />
 
+      <OriginFrontier />
+
       <section className="section geography-atlas" id="geography">
         <div className="section-label light">
-          <span>03</span>
+          <span>04</span>
           <p>Puerto Rico, life by life</p>
         </div>
         <div className="geography-heading">
@@ -259,7 +262,7 @@ export default function Home() {
 
       <section className="section record-gallery" id="records">
         <div className="section-label">
-          <span>04</span>
+          <span>05</span>
           <p>In the records</p>
         </div>
         <div className="records-heading">
@@ -361,7 +364,7 @@ export default function Home() {
 
       <section className="section journey" id="journey">
         <div className="section-label light">
-          <span>05</span>
+          <span>06</span>
           <p>Puerto Rico to New York</p>
         </div>
         <div className="journey-heading">
@@ -418,7 +421,7 @@ export default function Home() {
 
       <section className="section stories" id="stories">
         <div className="section-label">
-          <span>06</span>
+          <span>07</span>
           <p>Their parents</p>
         </div>
         <div className="stories-heading">
@@ -635,40 +638,6 @@ export default function Home() {
             </p>
             <a href="/research#maximo-josefa">See this family →</a>
           </article>
-          <article id="story-francisco-maria-cortez">
-            <span className="story-when">Máximo’s parents</span>
-            <h3>
-              <span data-person-id="person.francisco-father-of-maximo-vazquez">
-                Francisco [surname not stated]
-              </span>
-              {" + "}
-              <span data-person-id="person.maria-cortez">María Cortez</span>
-            </h3>
-            <p>
-              Máximo and Josefa’s 1805 marriage names Francisco and María
-              Cortez as Máximo’s parents. The register gives Francisco no
-              surname, so this page does not assign one.
-            </p>
-            <a href="/research#francisco-maria-cortez">See this family →</a>
-          </article>
-          <article id="story-luis-isidora">
-            <span className="story-when">Josefa’s parents</span>
-            <h3>
-              <span data-person-id="person.luis-father-of-josefa-rivera">
-                Luís [surname not stated]
-              </span>
-              {" + "}
-              <span data-person-id="person.isidora-rodriguez">
-                Isidora Rodríguez
-              </span>
-            </h3>
-            <p>
-              The same marriage names Luís and Isidora Rodríguez as Josefa’s
-              parents. Luís’s surname is not written; Rivera or Ribera is not
-              inferred for him.
-            </p>
-            <a href="/research#luis-isidora">See this family →</a>
-          </article>
           <article id="story-andres-francisca">
             <span className="story-when">Juana Regina’s parents</span>
             <h3>
@@ -750,7 +719,7 @@ export default function Home() {
 
       <section className="section public-sources">
         <div className="section-label">
-          <span>07</span>
+          <span>08</span>
           <p>Sources for this page</p>
         </div>
         <div className="principal-source-grid">
