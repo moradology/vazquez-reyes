@@ -164,17 +164,17 @@ export default function ResearchPage() {
         <div className="conflict-table" role="table" aria-label="Research conflicts">
           <article role="row">
             <div role="cell">
-              <strong>Pastora or Cruz?</strong>
+              <strong>Pastora and the civil name Cruz</strong>
               <Grade kind="open">NAME UNRESOLVED</Grade>
             </div>
             <p role="cell">
-              <b>Pastora</b> — the name remembered by the family, possibly a
-              personal or baptismal name.
+              <b>Pastora</b> — the name by which the family knew her. Its exact
+              baptismal or compound form has not yet been found.
             </p>
             <p role="cell">
               <b>Cruz Reyes Díaz</b> — the civilly registered name. Her
-              grandfather Lope Díaz made the declaration on 17 June 1915, six
-              weeks after the birth; later records also use Cruz.
+              grandfather Lope Díaz made the declaration on 17 June 1915, 45
+              days after the birth; later records also use Cruz.
             </p>
             <p role="cell">
               <b>Next:</b> locate the Gurabo parish baptism and check whether it
@@ -373,8 +373,9 @@ export default function ResearchPage() {
         <p className="method-note">
           Some Ancestry links require a subscription and signed-in session.
           Original downloads and interface captures are archived privately. A
-          readable derivative of the 1915 civil act and two National Archives
-          census sheets are reproduced on the public summary.
+          readable derivative of the 1915 civil act and three census images are
+          reproduced on the public summary. The 1940 image stops before younger
+          household members whose deaths have not been documented.
         </p>
       </section>
 

@@ -96,7 +96,7 @@ confirmed against records.
   Reyes and names all four parents.
 - Cruz's civil registration identifies her as Cruz Reyes Díaz, born 3 May 1915
   in Gurabo to Mauricio Reyes Martínez and Carmen Díaz García. The act was made
-  on 17 June, six weeks after the birth, from a declaration by maternal
+  on 17 June, 45 days after the birth, from a declaration by maternal
   grandfather Lope Díaz. It confirms the civil name Cruz but does not settle
   the family report that she was personally or baptismally named Pastora.
 - The 1910, 1920 and 1930 censuses reconstruct the Reyes-Díaz household from

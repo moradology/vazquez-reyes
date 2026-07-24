@@ -40,6 +40,8 @@ test("renders the Vazquez-Reyes family history", async () => {
   assert.match(html, /The Puerto Rico years/);
   assert.match(html, /Eastern Puerto Rico → East Harlem/);
   assert.match(html, /The families on paper/);
+  assert.match(html, /1940-reyes-household\.jpg/);
+  assert.match(html, /4 April 1940/);
   assert.match(html, /research notes/);
   assert.doesNotMatch(
     html,
@@ -75,21 +77,28 @@ test("separates the public summary from the research notes", async () => {
   assert.doesNotMatch(publicHtml, /Negative memory/);
   assert.doesNotMatch(publicHtml, /VR-01/);
   assert.doesNotMatch(publicHtml, /WIN4T|Rosedale|Linden, New Jersey/);
+  assert.doesNotMatch(
+    publicHtml,
+    /data-person-id="person\.(?:candido-reyes-diaz|teresa-reyes-diaz)"/,
+  );
 
   assert.equal(researchResponse.status, 200);
   assert.match(researchHtml, /Research notes/);
   assert.match(researchHtml, /Where the records and memory differ/);
-  assert.match(researchHtml, /Pastora or Cruz/);
+  assert.match(researchHtml, /Pastora and the civil name Cruz/);
   assert.match(researchHtml, /One family at a time/);
   assert.match(researchHtml, /Known or reported children/);
+  assert.match(researchHtml, /Cándido \(1923–1948\)/);
+  assert.match(researchHtml, /Teresa \(died as an infant in 1927\)/);
   assert.match(researchHtml, /Pedro Reyes \+ Ana Martínez/);
   assert.match(researchHtml, /Marcelino Perales y Medina \+ Aurora Pérez/);
   assert.match(researchHtml, /Searches without a match/);
   assert.match(researchHtml, /VR-02/);
+  assert.match(researchHtml, /VR-08/);
   assert.match(researchHtml, /Records reviewed/);
 });
 
-test("projects every canonical historical person into the public page", async () => {
+test("projects every public canonical historical person into the public page", async () => {
   const response = await render();
   const html = await response.text();
   const peopleText = await readFile(
@@ -99,7 +108,9 @@ test("projects every canonical historical person into the public page", async ()
   const canonicalIds = peopleText
     .trim()
     .split("\n")
-    .map((line) => JSON.parse(line).id)
+    .map((line) => JSON.parse(line))
+    .filter((person) => person.site_projection !== "research_only")
+    .map((person) => person.id)
     .sort();
   const renderedIds = [...html.matchAll(/data-person-id="([^"]+)"/g)].map(
     (match) => match[1],

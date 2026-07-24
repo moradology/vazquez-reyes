@@ -757,6 +757,15 @@ a {
   grid-template-columns: minmax(0, 1.35fr) minmax(260px, 0.65fr);
 }
 
+.record-grid .record-wide {
+  grid-column: 1 / -1;
+}
+
+.record-grid .record-wide img {
+  height: auto;
+  object-fit: contain;
+}
+
 .record-grid .record-featured img {
   height: clamp(430px, 54vw, 760px);
   object-position: center 18%;

@@ -2,7 +2,13 @@ import { ResearchTools } from "./research-tools";
 import { sources } from "./research-data";
 
 const principalSources = sources.filter((source) =>
-  ["cruz-birth", "rafael-birth", "marriage", "census-1950"].includes(source.id),
+  [
+    "cruz-birth",
+    "rafael-birth",
+    "census-1940-reyes",
+    "marriage",
+    "census-1950",
+  ].includes(source.id),
 );
 
 export default function Home() {
@@ -33,9 +39,9 @@ export default function Home() {
           to New York
         </h1>
         <p className="hero-deck">
-          Pastora Reyes—recorded as Cruz in official documents—was born in
-          Gurabo. Rafael Vázquez grew up in Humacao. They married in Manhattan
-          in 1941 and made their home in East Harlem.
+          Pastora Reyes—registered civilly as Cruz—was born in Gurabo. Rafael
+          Vázquez grew up in Humacao. They married in Manhattan in 1941 and
+          made their home in East Harlem.
         </p>
         <div className="hero-rule">
           <span>Naguabo</span>
@@ -68,7 +74,7 @@ export default function Home() {
           <p>Pastora and Rafael</p>
         </div>
         <div className="family-intro public-family-intro">
-          <h2>Pastora “Cruz” Reyes and Rafael Vázquez</h2>
+          <h2>Pastora Reyes Díaz and Rafael Vázquez</h2>
           <p>
             They married on East 105th Street in 1941. Nine years later, the
             census recorded them a few blocks north on East 109th Street.
@@ -157,7 +163,7 @@ export default function Home() {
         <div className="plot-stamp">
           <span>Puerto Rico</span>
           <strong>EASTERN</strong>
-          <b>1902—30</b>
+          <b>1902—40</b>
           <span>Naguabo · Gurabo · Humacao</span>
         </div>
         <div className="plot-copy">
@@ -176,7 +182,7 @@ export default function Home() {
             </p>
             <p>
               <strong>Humacao</strong>
-              <span>Both families in the 1920 and 1930 censuses</span>
+              <span>Both families across the 1920–1940 records</span>
             </p>
           </div>
           <a
@@ -213,8 +219,8 @@ export default function Home() {
               <strong>1915 · Rincón, Gurabo</strong>
               <span>
                 The civil act records the name Cruz Reyes Díaz. Her grandfather
-                Lope Díaz reported the birth six weeks after she was born.
-                Family memory preserves the name Pastora.
+                Lope Díaz reported the birth 45 days after she was born. Her
+                family knew her as Pastora.
               </span>
               <small>Puerto Rico civil registration</small>
             </figcaption>
@@ -251,6 +257,23 @@ export default function Home() {
               <small>U.S. Census, National Archives</small>
             </figcaption>
           </figure>
+          <figure className="record-wide">
+            <a href="/records/1940-reyes-household.jpg" target="_blank">
+              <img
+                src="/records/1940-reyes-household.jpg"
+                alt="1940 Puerto Rico census crop of the Mauricio and Carmen Reyes household, rows 91 through 96"
+              />
+            </a>
+            <figcaption>
+              <strong>1940 · Collores, Humacao</strong>
+              <span>
+                Mauricio and Carmen with Eriberta, Pastora (recorded here as
+                Cruz), Aurora, and Cándido. Eighteen months later, Pastora
+                married in Manhattan.
+              </span>
+              <small>U.S. Census, National Archives · rows 91–96</small>
+            </figcaption>
+          </figure>
         </div>
       </section>
 
@@ -276,13 +299,13 @@ export default function Home() {
             </div>
           </article>
           <article>
-            <span className="year">1920–30</span>
+            <span className="year">1920–40</span>
             <div className="dot" />
             <div>
               <h3>Humacao</h3>
               <p>
-                Both families appear in Humacao records: first in Anton Ruiz,
-                then in Mambiche.
+                Both families appear in Humacao records. Pastora was still
+                living with her parents in Collores on 4 April 1940.
               </p>
             </div>
           </article>

@@ -4,14 +4,14 @@ Research date: 24 July 2026
 
 ## Pastora and Cruz
 
-Family testimony says the woman documented in later records as Cruz may have
-been personally or baptismally named **Pastora**. The remembered explanation
-is that **Cruz** was connected to her birth on 3 May, the Day of the Cross.
+Family testimony identifies **Pastora** as the name by which the woman
+documented in later records as Cruz was known. The remembered explanation is
+that **Cruz** was connected to her birth on 3 May, the Day of the Cross.
 
 The original Gurabo civil act does not settle the full name story:
 
 - The birth occurred at 2 a.m. on **3 May 1915** in barrio Rincón.
-- The civil act was made on **17 June 1915**, about six weeks later.
+- The civil act was made on **17 June 1915**, 45 days later.
 - The declarant was maternal grandfather **Lope Díaz**, not either parent.
 - The act uses the formula “se le puso por nombre Cruz.”
 - Later marriage, census, Social Security, and cemetery records also use Cruz.
@@ -19,7 +19,8 @@ The original Gurabo civil act does not settle the full name story:
 The act therefore proves that **Cruz Reyes Díaz was the civilly registered
 name**. It does not prove that Cruz was the only name used in the family or at
 baptism, and it does not show that the civil registration preceded baptism.
-Pastora remains unconfirmed oral history rather than a disproved name.
+Pastora remains documented family testimony rather than a disproved name, but
+its exact baptismal or compound form remains unconfirmed.
 
 The highest-value next record is the Gurabo parish baptism shortly after 3 May
 1915. The original entry should be checked for Pastora, Cruz Pastora, Pastora

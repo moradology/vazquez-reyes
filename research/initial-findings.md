@@ -4,34 +4,47 @@ Research dates: 23–24 July 2026
 
 ## Bottom line
 
-The starting couple is confidently identified as the woman civilly recorded as
-**Cruz Reyes Díaz Vasquez** and **Rafael Vázquez y Perales**. Family testimony
-preserves **Pastora** as a possible personal or baptismal name for her. Their
-records describe two families from eastern Puerto Rico whose paths ran through
-Naguabo, Gurabo and Humacao before the couple married in Manhattan and made
-their home in East Harlem.
+The starting couple is confidently identified as **Pastora Reyes Díaz
+Vasquez**, civilly registered and later documented as **Cruz Reyes Díaz**, and
+**Rafael Vázquez y Perales**. Family testimony identifies Pastora as the name
+she was known by and connects the civil name Cruz to her birth on the Day of
+the Cross. Their records describe two families from eastern Puerto Rico whose
+paths ran through Naguabo, Gurabo and Humacao before the couple married in
+Manhattan and made their home in East Harlem.
 
 The direct lines now reach several great-great-grandparents of the starting
 couple. Original images have been retained for every central census and civil
 record reviewed. Details about potentially living descendants remain private.
 
-## Pastora or Cruz Reyes Díaz Vasquez
+## Pastora Reyes Díaz Vasquez, civilly registered as Cruz
 
 - Born **3 May 1915** in barrio Rincón, Gurabo, Puerto Rico. Her contemporary
   civil registration resolves the earlier 1914/1915 conflict.
-- The civil act was registered **17 June 1915**, six weeks after the birth,
+- The civil act was registered **17 June 1915**, 45 days after the birth,
   from a declaration by maternal grandfather **Lope Díaz**. It says the girl
   was given the name **Cruz**.
-- The family remembers **Pastora** as her real or personal name and connects
-  Cruz with her birth on the Day of the Cross. No record yet proves whether
-  Pastora was baptismal, part of a compound name, or a later family-used name.
-  Her Gurabo baptism is the next decisive record.
+- The family knew her as **Pastora** and connects Cruz with her birth on the
+  Day of the Cross. The delayed civil act proves only that her grandfather
+  registered the name Cruz; it does not prove what name was used at baptism or
+  in the family. Her Gurabo baptism is the next decisive record.
 - Parents: **Mauricio Reyes Martínez** and **Carmen Díaz García**.
 - Mauricio and Carmen married **23 October 1907** in Fajardo.
 - The family appears in Ucares, Naguabo, in 1910; Anton Ruiz, Humacao, in 1920;
-  and Mambiche, Humacao, in 1930.
-- The 1920 and 1930 households confirm that **Belén was Cruz's sister**, not a
-  maiden-name clue for Carmen.
+  Mambiche, Humacao, in 1930; and Collores, Humacao, in 1935 and 1940.
+- The 1920, 1930 and 1935 households confirm that **Belén was Pastora's
+  sister**, not a maiden-name clue for Carmen.
+- A 1923 birth act and 1948 death certificate identify brother **Cándido Reyes
+  Díaz**. The death record calls him Cándido Reyes López and gives a conflicting
+  birth date, but his parents, brother-informant, age, place and census
+  continuity identify the same man.
+- Infant **Teresa Reyes Díaz** died in Humacao on **1 June 1927**, age one day.
+  Her death act directly names Mauricio and Carmen as her parents.
+- The census sibling cluster also includes Juana, Ruperto, Eriberta, Saturnino,
+  and later entries for Angelina or Aurora and Tomás or Julio César. The two
+  name pairs are not merged without direct records.
+- The 1940 census places Pastora with her parents in Collores on **4 April
+  1940**. Her Manhattan marriage-license affidavit was made **21 October 1941**,
+  bounding her move from Puerto Rico to New York to that eighteen-month period.
 - Died **10 October 1998**, probably in New York City.
 
 ### Pedro Reyes and Ana Martínez
@@ -122,12 +135,18 @@ This couple were Carlina's parents and Rafael's maternal grandparents.
 ## What changed from the family account
 
 - The civil record gives **3 May 1915 in Gurabo**, not Humacao, and records the
-  name Cruz. The family-reported name Pastora remains an open baptismal or
-  personal-name question.
+  name Cruz. The family identifies her as Pastora; the baptismal or compound
+  form remains open.
 - Carmen's full documented name is **Carmen Díaz García**.
 - **Belén Reyes** was Cruz's younger sister.
+- Cándido and infant Teresa are now directly documented as additional children
+  of Mauricio and Carmen. The 1935 and 1940 censuses establish a larger sibling
+  cluster while leaving two possible alternate-name pairs unresolved.
 - Mauricio's mother was **Ana Martínez** in the records closest to his marriage
   and Cruz's birth.
+- The 1977 Mauricio Reyes Martínez death is now the strongest death candidate:
+  full name, age, Humacao birthplace and father agree, while a nurse supplied
+  the conflicting mother and did not know his spouse.
 - Rafael's mother was **Carlina Perales Pérez**; her mother was **Aurora Pérez**.
 - Rafael's father appears consistently as **Juan Vázquez Rodríguez**. The Juan
   Ramón form remains an unconfirmed family variant.
@@ -142,9 +161,10 @@ This couple were Carlina's parents and Rafael's maternal grandparents.
 4. The Gurabo parish baptism for the girl born 3 May 1915, searched under both
    Pastora and Cruz.
 5. Cruz's and Rafael's NYC death certificates.
-5. Mauricio's baptism and the complete 1977 candidate death record.
-6. Aurora Pérez's birth, marriage, and death records.
-7. Birth or baptism records for the Perales–Pérez and Reyes–Martínez sibling
+6. Mauricio's and Carmen's baptisms, plus a family-informed record that can
+   settle Mauricio's 1977 candidate and Carmen's death.
+7. Aurora Pérez's birth, marriage, and death records.
+8. Birth or baptism records for the Perales–Pérez and Reyes–Martínez sibling
    clusters.
 
 All sources, conflicts and next-record targets are recorded in the adjacent

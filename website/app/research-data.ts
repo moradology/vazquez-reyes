@@ -42,6 +42,41 @@ export const sources = [
     grade: "Original enumeration",
   },
   {
+    id: "census-1935-reyes",
+    label: "1935 Puerto Rico social census: Reyes–Díaz household",
+    detail: "Collores, Humacao; Mauricio and Carmen with Eriberta, Pastora (recorded as Cruz), Belén, Cándido, Saturnino, and Julio César.",
+    href: "https://www.ancestry.com/search/collections/2404/records/390774",
+    grade: "Original enumeration",
+  },
+  {
+    id: "census-1940-reyes",
+    label: "1940 Puerto Rico census: Reyes–Díaz household",
+    detail: "Collores, Humacao, 4 April 1940; Mauricio and Carmen with Eriberta, Pastora (recorded as Cruz), Aurora, Cándido, and Julio. The public image is cropped before younger household members.",
+    href: "https://www.ancestry.com/search/collections/2442/records/161323863",
+    grade: "Original enumeration",
+  },
+  {
+    id: "candido-birth",
+    label: "1923 birth: Cándido Reyes Díaz",
+    detail: "Born 14 July 1923 in Humacao; parents Mauricio Reyes Martínez and Carmen Díaz García; both sets of grandparents named.",
+    href: "https://www.ancestry.com/search/collections/9100/records/659141",
+    grade: "Original civil record",
+  },
+  {
+    id: "candido-death",
+    label: "1948 death: Cándido Reyes López",
+    detail: "The Humacao certificate names father Mauricio, mother Carmen, and brother Saturnino as informant. Its López surname and June birth date conflict with Cándido’s original birth act.",
+    href: "https://www.ancestry.com/search/collections/9100/records/707995",
+    grade: "Original civil record · identity resolved with conflicts",
+  },
+  {
+    id: "teresa-death",
+    label: "1927 death: Teresa Reyes Díaz",
+    detail: "Died 1 June 1927 in Humacao at one day old; the act names Mauricio Reyes and Carmen Díaz as her parents.",
+    href: "https://www.ancestry.com/search/collections/9100/records/683176",
+    grade: "Original civil record",
+  },
+  {
     id: "rafael-birth",
     label: "Puerto Rico civil registration: Rafael Vazquez y Peralez",
     detail: "Humacao registration 134; indexed February 1906; mother Carlina Peralez.",
@@ -214,15 +249,15 @@ export const sources = [
 export const familyCouples = [
   {
     id: "mauricio-carmen",
-    branch: "Pastora / Cruz’s parents",
+    branch: "Pastora’s parents",
     couple: "Mauricio Reyes Martínez + Carmen Díaz García",
     status: "documented" as const,
-    connection: "Parents of the woman the family remembers as Pastora and the civil records name Cruz Reyes Díaz",
+    connection: "Parents of Pastora Reyes, civilly registered as Cruz Reyes Díaz",
     people: [
       {
         name: "Mauricio Reyes Martínez",
-        birth: "About 1882 · Puerto Rico",
-        death: "Not confirmed · a 1977 candidate remains unmerged",
+        birth: "About 1881–1882 · Humacao, Puerto Rico",
+        death: "Strong candidate: 29 May 1977 · Bayamón",
       },
       {
         name: "Carmen Díaz García",
@@ -234,13 +269,18 @@ export const familyCouples = [
       "Juana",
       "Ruperto",
       "Eriberta",
-      "Cruz",
+      "Pastora (civil records: Cruz)",
       "Belén",
-      "Angelina",
-      "Cándido",
+      "Angelina (1930 census)",
+      "Aurora (1940 census)",
+      "Cándido (1923–1948)",
+      "Teresa (died as an infant in 1927)",
+      "Saturnino",
+      "Tomás (1930 census)",
+      "Julio César (1935–40 censuses)",
     ],
     childNote:
-      "These seven appear across the 1910, 1920, and 1930 households. A reported son Julio still needs a direct record.",
+      "The list combines the 1910–1940 households with Cándido’s birth and Teresa’s death. Angelina may be Aurora, and Tomás may be Julio César; neither pair is merged without a direct record.",
   },
   {
     id: "juan-carlina",
@@ -366,9 +406,9 @@ export const familyCouples = [
 export const openCases = [
   {
     id: "VR-01",
-    title: "Pastora or Cruz?",
-    conflict: "Family memory preserves Pastora as her personal or baptismal name. The civil act and later records use Cruz; the act was registered six weeks after birth by her grandfather.",
-    next: "Find the Gurabo parish baptism after 3 May 1915 and inspect it for Pastora, Cruz Pastora, Pastora Cruz, or Cruz.",
+    title: "Pastora’s baptismal name",
+    conflict: "The family knew her as Pastora. Her grandfather registered the civil name Cruz 45 days after her birth, apparently connected to the Day of the Cross; that does not establish the name used at baptism.",
+    next: "Find the Gurabo parish baptism after 3 May 1915 and inspect it for Pastora, Pastora Cruz, Cruz Pastora, or Cruz.",
   },
   {
     id: "VR-02",
@@ -385,8 +425,8 @@ export const openCases = [
   {
     id: "VR-04",
     title: "Mauricio Reyes’s death and mother",
-    conflict: "The 1907 marriage and the 1915 civil birth act name his mother Ana Martínez; a likely 1977 death record says María Martínez, while the family export says he died in 1982.",
-    next: "Obtain the complete 1977 death certificate, a baptism, and any later identity records before merging the candidate.",
+    conflict: "The strong 1977 candidate matches Mauricio’s full name, age, Humacao birthplace, father Pedro, and widowed status. A nurse supplied mother María rather than the documented Ana and did not know his spouse; the family export says 1982.",
+    next: "Find Mauricio’s baptism, obituary, burial, or another family-informed later record before merging the 1977 death.",
   },
   {
     id: "VR-05",
@@ -406,6 +446,12 @@ export const openCases = [
     conflict: "She was alive in Río Blanco on 5 April 1940. Her reported ages suggest about 1840–1841, but neither her birth nor death has been found.",
     next: "Search Naguabo and nearby municipalities after April 1940 under Pérez, Perales, and widow-of-Perales forms.",
   },
+  {
+    id: "VR-08",
+    title: "Two Reyes sibling name pairs",
+    conflict: "Angelina in 1930 may be Aurora in 1940; infant Tomás in 1930 may be Julio César in 1935 and 1940. Compatible ages are not enough to merge either pair.",
+    next: "Find their Humacao birth, baptism, marriage, or death records using Mauricio Reyes and Carmen Díaz as parent anchors.",
+  },
 ];
 
 export const negativeSearches = [
@@ -419,9 +465,9 @@ export const negativeSearches = [
 
 export const nameVariants = [
   {
-    person: "Pastora or Cruz Reyes Vasquez",
+    person: "Pastora Reyes Vasquez, civilly recorded as Cruz",
     forms: "Pastora Reyes · Cruz Reyes Díaz · Cruz Reyes · Cruz Vasquez · Cruz Vázquez",
-    conclusion: "Cruz Reyes Díaz is the documented civil form. Pastora is family testimony and may be a personal or baptismal name; the Gurabo baptism has not yet been found.",
+    conclusion: "Pastora is the name remembered and used by the family. Cruz Reyes Díaz is the documented civil form entered by her grandfather 45 days after birth. The Gurabo baptism is needed to recover the church form.",
   },
   {
     person: "Rafael Vázquez y Perales",
@@ -492,5 +538,17 @@ export const updates = [
   {
     date: "24 Jul 2026",
     text: "Found Aurora Pérez in Río Blanco in 1935 and 1940 with daughter Hilaria or Ilaria, establishing that Aurora lived past 5 April 1940.",
+  },
+  {
+    date: "24 Jul 2026",
+    text: "Extended Mauricio and Carmen’s household through the 1935 and 1940 censuses; Pastora was still in Collores on 4 April 1940.",
+  },
+  {
+    date: "24 Jul 2026",
+    text: "Confirmed Cándido’s 14 July 1923 birth and resolved his 1948 death despite later surname and birth-date errors.",
+  },
+  {
+    date: "24 Jul 2026",
+    text: "Identified infant Teresa Reyes Díaz and separated the unresolved Angelina/Aurora and Tomás/Julio name questions.",
   },
 ];
