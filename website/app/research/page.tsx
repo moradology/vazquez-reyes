@@ -229,6 +229,32 @@ export default function ResearchPage() {
                   </figcaption>
                 </figure>
               )}
+              {family.id === "maximo-josefa" && (
+                <figure className="family-record">
+                  <a
+                    href="/records/1805-maximo-josefa-marriage.jpg"
+                    target="_blank"
+                  >
+                    <img
+                      src="/records/1805-maximo-josefa-marriage.jpg"
+                      alt="1805 Humacao parish marriage entry for Máximo Basquez and Josefa Ribera, continued across two pages"
+                    />
+                  </a>
+                  <figcaption>
+                    <strong>1805 · Humacao marriage</strong>
+                    <span>
+                      On 31 December, Máximo Basquez, son of Francisco and
+                      María Cortez, married Josefa Ribera, daughter of Luís and
+                      Isidora Rodríguez. The register gives no surname for
+                      either father.
+                    </span>
+                    <small>
+                      Dulce Nombre de Jesús · DGS 008038536 · item 4 · image
+                      105
+                    </small>
+                  </figcaption>
+                </figure>
+              )}
             </article>
           ))}
         </div>

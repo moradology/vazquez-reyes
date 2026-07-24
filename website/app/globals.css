@@ -1860,6 +1860,72 @@ a {
   stroke-width: 2;
 }
 
+.tree-continuation {
+  align-items: end;
+  border-top: 1px solid var(--line);
+  display: grid;
+  gap: clamp(34px, 6vw, 90px);
+  grid-template-columns: minmax(260px, 0.7fr) minmax(0, 1.3fr);
+  margin-top: 54px;
+  padding-top: 34px;
+}
+
+.tree-continuation > div:first-child h3 {
+  font-family: var(--font-display), serif;
+  font-size: clamp(30px, 3.4vw, 48px);
+  font-weight: 500;
+  line-height: 1;
+  margin: 10px 0 16px;
+}
+
+.tree-continuation > div:first-child > p:last-child {
+  color: rgba(23, 42, 38, 0.68);
+  font-size: 11px;
+  line-height: 1.7;
+  margin: 0;
+  max-width: 520px;
+}
+
+.tree-continuation-grid {
+  display: grid;
+  gap: 14px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.tree-continuation-grid a {
+  background: var(--paper);
+  border: 1px solid rgba(109, 118, 67, 0.62);
+  color: var(--ink);
+  display: grid;
+  gap: 10px;
+  min-height: 128px;
+  padding: 22px;
+  text-decoration: none;
+  transition: background 160ms ease, border-color 160ms ease;
+}
+
+.tree-continuation-grid a:hover,
+.tree-continuation-grid a:focus {
+  background: #fffaf0;
+  border-color: var(--gold);
+}
+
+.tree-continuation-grid span {
+  color: #6d7643;
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.tree-continuation-grid strong {
+  align-self: end;
+  font-family: var(--font-display), serif;
+  font-size: clamp(18px, 2vw, 25px);
+  font-weight: 600;
+  line-height: 1.2;
+}
+
 .geography-atlas {
   background: var(--forest);
   color: var(--paper);
@@ -2175,6 +2241,11 @@ footer p {
 
   .reading-key,
   .story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tree-continuation,
+  .tree-continuation-grid {
     grid-template-columns: 1fr;
   }
 

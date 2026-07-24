@@ -13,6 +13,7 @@ const principalSources = sources.filter((source) =>
     "census-1940-reyes",
     "marriage",
     "census-1950",
+    "maximo-josefa-marriage",
   ].includes(source.id),
 );
 
@@ -265,8 +266,9 @@ export default function Home() {
           <p className="eyebrow">Original records</p>
           <h2>The families on paper</h2>
           <p>
-            These are the civil and census pages that carry the family names.
-            Spelling and ages vary, but the people and households line up.
+            These are the civil, parish, and census pages that carry the family
+            names. Spelling and ages vary, but the people and households line
+            up.
           </p>
         </div>
         <div className="record-grid">
@@ -332,6 +334,26 @@ export default function Home() {
                 Eighteen months later, Cruz married in Manhattan.
               </span>
               <small>U.S. Census, National Archives · rows 91–96</small>
+            </figcaption>
+          </figure>
+          <figure className="record-wide">
+            <a href="/records/1805-maximo-josefa-marriage.jpg" target="_blank">
+              <img
+                src="/records/1805-maximo-josefa-marriage.jpg"
+                alt="1805 Humacao parish marriage entry for Máximo Basquez and Josefa Ribera, continued across two pages"
+              />
+            </a>
+            <figcaption>
+              <strong>1805 · Humacao</strong>
+              <span>
+                Máximo Basquez and Josefa Ribera married on 31 December. The
+                entry names his parents, Francisco and María Cortez, and hers,
+                Luís and Isidora Rodríguez.
+              </span>
+              <small>
+                Dulce Nombre de Jesús parish register · two-part reading-order
+                crop
+              </small>
             </figcaption>
           </figure>
         </div>
@@ -605,11 +627,47 @@ export default function Home() {
               <span data-person-id="person.josefa-rivera">Josefa Rivera</span>
             </h3>
             <p>
-              An 1819 baptism calls Máximo a native of Caguas and Josefa a
-              native of Humacao. Records for their children place the family
-              in Humacao, Juncos, and San Lorenzo from 1806 onward.
+              They married in Humacao on 31 December 1805. The register writes
+              their names as Máximo Basquez and Josefa Ribera and identifies
+              both sets of parents. An 1819 baptism calls Máximo a native of
+              Caguas and Josefa a native of Humacao. Their children’s records
+              follow the family through Humacao, Juncos, and San Lorenzo.
             </p>
             <a href="/research#maximo-josefa">See this family →</a>
+          </article>
+          <article id="story-francisco-maria-cortez">
+            <span className="story-when">Máximo’s parents</span>
+            <h3>
+              <span data-person-id="person.francisco-father-of-maximo-vazquez">
+                Francisco [surname not stated]
+              </span>
+              {" + "}
+              <span data-person-id="person.maria-cortez">María Cortez</span>
+            </h3>
+            <p>
+              Máximo and Josefa’s 1805 marriage names Francisco and María
+              Cortez as Máximo’s parents. The register gives Francisco no
+              surname, so this page does not assign one.
+            </p>
+            <a href="/research#francisco-maria-cortez">See this family →</a>
+          </article>
+          <article id="story-luis-isidora">
+            <span className="story-when">Josefa’s parents</span>
+            <h3>
+              <span data-person-id="person.luis-father-of-josefa-rivera">
+                Luís [surname not stated]
+              </span>
+              {" + "}
+              <span data-person-id="person.isidora-rodriguez">
+                Isidora Rodríguez
+              </span>
+            </h3>
+            <p>
+              The same marriage names Luís and Isidora Rodríguez as Josefa’s
+              parents. Luís’s surname is not written; Rivera or Ribera is not
+              inferred for him.
+            </p>
+            <a href="/research#luis-isidora">See this family →</a>
           </article>
           <article id="story-andres-francisca">
             <span className="story-when">Juana Regina’s parents</span>

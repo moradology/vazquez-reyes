@@ -287,6 +287,13 @@ export const sources = [
     grade: "Original parish register",
   },
   {
+    id: "maximo-josefa-marriage",
+    label: "1805 marriage: Máximo Basquez and Josefa Ribera",
+    detail: "Married 31 December 1805 in Humacao. The register names Máximo’s parents as Francisco and María Cortez, and Josefa’s as Luís and Isidora Rodríguez. It does not state surnames for Francisco or Luís.",
+    href: "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSFS-RT8X?view=fullText&keywords=M%C3%A1ximo+Basquez%2CJosefa%2CRibera&lang=en",
+    grade: "Original parish register",
+  },
+  {
     id: "juana-jacinta-baptism",
     label: "1806 baptismal ceremonies: Juana Jacinta Vázquez",
     detail: "Born 16 August 1806 in Humacao, legitimate daughter of Máximo Vázquez and Josefa de Rivera. She was baptized at home because of danger of death; the parish supplied the ceremonies on 28 August. A computer index incorrectly calls the child Jesús.",
@@ -717,7 +724,7 @@ export const familyCouples = [
     branch: "Atilano’s parents",
     couple: "Máximo Vázquez + Josefa Rivera",
     status: "documented" as const,
-    connection: "Parents of Atilano; eight children now documented through original records",
+    connection: "Married 31 December 1805 in Humacao; parents of Atilano and eight other documented or probable children",
     people: [
       {
         name: "Máximo Vázquez",
@@ -742,7 +749,51 @@ export const familyCouples = [
       "Tomasa — probable daughter; died in 1889, age conflict unresolved",
     ],
     childNote:
-      "Eight children are supported by original records naming the exact parent pair. Juan de Dios’s 1819 baptism now resolves his earlier provisional identity. Francisco Solano is supported by his death and his daughter Dolores’s baptism; Polanco is an OCR error. Tomasa alone remains provisional because her reported age conflicts with Juan de Dios’s known birth.",
+      "Their original marriage records Máximo as Basquez and Josefa as Ribera. It names his parents as Francisco and María Cortez and hers as Luís and Isidora Rodríguez; neither father’s surname is written. Eight children are supported by original records naming the exact parent pair. Tomasa alone remains provisional because her reported age conflicts with Juan de Dios’s known birth.",
+  },
+  {
+    id: "francisco-maria-cortez",
+    branch: "Máximo’s parents",
+    couple: "Francisco [surname not stated] + María Cortez",
+    status: "documented" as const,
+    connection: "Named as Máximo’s parents in his 31 December 1805 marriage",
+    people: [
+      {
+        name: "Francisco [surname not stated]",
+        birth: "Not yet found",
+        death: "Not yet found",
+      },
+      {
+        name: "María Cortez",
+        birth: "Not yet found",
+        death: "Not yet found",
+      },
+    ],
+    children: ["Máximo Basquez or Vázquez"],
+    childNote:
+      "The Humacao register calls Máximo their legitimate son. It gives Francisco no surname, so Vázquez is not assigned to him without another record.",
+  },
+  {
+    id: "luis-isidora",
+    branch: "Josefa’s parents",
+    couple: "Luís [surname not stated] + Isidora Rodríguez",
+    status: "documented" as const,
+    connection: "Named as Josefa’s parents in her 31 December 1805 marriage",
+    people: [
+      {
+        name: "Luís [surname not stated]",
+        birth: "Not yet found",
+        death: "Not yet found",
+      },
+      {
+        name: "Isidora Rodríguez",
+        birth: "Not yet found",
+        death: "Not yet found",
+      },
+    ],
+    children: ["Josefa Ribera or Rivera"],
+    childNote:
+      "The Humacao register calls Josefa their legitimate daughter. It gives Luís no surname, so Rivera or Ribera is not assigned to him without another record.",
   },
   {
     id: "andres-francisca",
@@ -874,9 +925,9 @@ export const openCases = [
   },
   {
     id: "VR-13",
-    title: "Máximo and Josefa’s full child cluster",
-    conflict: "Eight children are now documented through the exact parent pair: Juana Jacinta, Andrea, Juan de Dios, Miguel, Atilano, Francisco Solano, Manuel, and María. Tomasa remains probable because her reported age conflicts with Juan de Dios’s known 1819 birth. The long 1806-to-about-1838 child span also needs testing.",
-    next: "Find Máximo and Josefa’s marriage before 16 August 1806, Máximo’s baptism in Caguas, Josefa’s baptism in Humacao, and another record that establishes Tomasa’s age and birthplace.",
+    title: "Máximo and Josefa before 1805",
+    conflict: "Their 31 December 1805 marriage and both parent pairs are now confirmed. Eight children are documented through the exact parent pair; Tomasa remains probable because her reported age conflicts with Juan de Dios’s known 1819 birth. The long 1806-to-about-1838 child span still needs testing.",
+    next: "Find Máximo’s baptism in Caguas, Josefa’s baptism in Humacao, death records for both, and another record that establishes Tomasa’s age and birthplace. Search the prior generation under Francisco with María Cortez and Luís with Isidora Rodríguez, without inventing the fathers’ surnames.",
   },
   {
     id: "VR-14",
@@ -968,8 +1019,8 @@ export const nameVariants = [
   },
   {
     person: "Máximo Vázquez",
-    forms: "Máximo Vázquez · Maximino Vázquez · Maximiliano Vázquez",
-    conclusion: "Máximo is the recurring early-register form. Later descendant records and indexes use Maximino or Maximiliano; the repeated spouse and family cluster support name variants, not separate grandfathers.",
+    forms: "Máximo Vázquez · Máximo Basquez · Maximino Vázquez · Maximiliano Vázquez",
+    conclusion: "The 1805 marriage writes Máximo Basquez; subsequent parish records repeatedly use Vázquez. Later descendant records and indexes use Maximino or Maximiliano. The same spouse and family cluster support spelling and given-name variants, not separate men.",
   },
   {
     person: "Francisco Solano Vázquez Rivera",
@@ -1138,5 +1189,9 @@ export const updates = [
   {
     date: "24 Jul 2026",
     text: "Retained the 1844 Ana candidate, the 1877 Benito Isabel baptism, every full record image, and every legibility crop without forcing uncertain identities together.",
+  },
+  {
+    date: "24 Jul 2026",
+    text: "Found Máximo Basquez and Josefa Ribera’s original Humacao marriage on 31 December 1805, extending the direct line to Francisco and María Cortez, and Luís and Isidora Rodríguez. The record does not state surnames for either father.",
   },
 ];

@@ -332,6 +332,47 @@ export const geographyEvents = [
     "map_note": "The same baptism calls Josefa a native of Humacao."
   },
   {
+    "id": "geo.event.maximo-josefa-marriage-1805",
+    "date": "1805-12-31",
+    "event_type": "marriage",
+    "person_refs": [
+      "person.maximo-vazquez",
+      "person.josefa-rivera"
+    ],
+    "place_ref": "place.humacao",
+    "status": "confirmed",
+    "evidence_refs": [
+      "source.familysearch-marriage.maximo-josefa.1805"
+    ],
+    "map_groups": [
+      "early-vazquez"
+    ],
+    "sequence": 3,
+    "map_label": "Humacao · 1805",
+    "map_note": "Máximo Basquez and Josefa Ribera married in Humacao."
+  },
+  {
+    "id": "geo.event.juana-jacinta-birth-1806",
+    "date": "1806-08-16",
+    "event_type": "child_birth",
+    "person_refs": [
+      "person.maximo-vazquez",
+      "person.josefa-rivera",
+      "person.juana-jacinta-vazquez-rivera"
+    ],
+    "place_ref": "place.humacao",
+    "status": "confirmed",
+    "evidence_refs": [
+      "source.familysearch-baptism.juana-jacinta-vazquez-rivera.1806"
+    ],
+    "map_groups": [
+      "early-vazquez"
+    ],
+    "sequence": 4,
+    "map_label": "Humacao · 1806",
+    "map_note": "Their daughter Juana Jacinta was born in Humacao."
+  },
+  {
     "id": "geo.event.family-juncos-1819",
     "date": "1819-03-14",
     "event_type": "child_baptism",
@@ -347,7 +388,7 @@ export const geographyEvents = [
     "map_groups": [
       "early-vazquez"
     ],
-    "sequence": 3,
+    "sequence": 5,
     "map_label": "Juncos · 1819",
     "map_note": "Their son Juan de Dios was baptized in Juncos."
   },
@@ -367,7 +408,7 @@ export const geographyEvents = [
     "map_groups": [
       "early-vazquez"
     ],
-    "sequence": 4,
+    "sequence": 6,
     "map_label": "San Lorenzo · 1824",
     "map_note": "Their son Miguel de los Santos was baptized in San Lorenzo."
   },

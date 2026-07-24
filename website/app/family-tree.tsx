@@ -176,6 +176,36 @@ export function FamilyTrees() {
         branch="vazquez"
         people={rafaelPeople}
       />
+      <aside className="tree-continuation" aria-labelledby="earliest-vazquez-heading">
+        <div>
+          <p className="eyebrow">One record beyond the chart</p>
+          <h3 id="earliest-vazquez-heading">
+            The 1805 marriage opens two earlier paths
+          </h3>
+          <p>
+            The register names each parent pair separately. It does not supply
+            surnames for Francisco or Luís, so those blanks remain visible.
+          </p>
+        </div>
+        <div className="tree-continuation-grid">
+          <a href="#story-francisco-maria-cortez">
+            <span>Máximo’s parents</span>
+            <strong>
+              Francisco [surname not stated]
+              <br />
+              María Cortez
+            </strong>
+          </a>
+          <a href="#story-luis-isidora">
+            <span>Josefa’s parents</span>
+            <strong>
+              Luís [surname not stated]
+              <br />
+              Isidora Rodríguez
+            </strong>
+          </a>
+        </div>
+      </aside>
     </section>
   );
 }

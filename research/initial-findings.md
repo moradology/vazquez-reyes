@@ -13,8 +13,10 @@ Puerto Rico whose paths ran through Naguabo, Gurabo and Humacao before the
 couple married in Manhattan and made their home in East Harlem.
 
 The direct lines now reach several great-great-grandparents of the starting
-couple. Original images have been retained for every central census and civil
-record reviewed. Details about potentially living descendants remain private.
+couple, and the Vázquez branch reaches four parents named in an original 1805
+marriage. Original images have been retained for every central census, civil,
+and parish record reviewed. Details about potentially living descendants
+remain private.
 
 ## Cruz Reyes Díaz Vasquez
 
@@ -210,6 +212,27 @@ marriage and death, and a wider Vázquez sibling cluster.
   confirmed sibling because her reported age conflicts with Juan de Dios's
   documented infancy.
 
+### Máximo Vázquez and Josefa Rivera
+
+- The original Humacao parish register records their marriage on **31 December
+  1805**, writing their names as **Máximo Basquez** and **Josefa Ribera**.
+  Basquez/Vázquez and Ribera/Rivera are retained as historical spelling
+  variants.
+- The marriage identifies Máximo as the legitimate son of **Francisco** and
+  **María Cortez**, and Josefa as the legitimate daughter of **Luís** and
+  **Isidora Rodríguez**.
+- The register does not write surnames for Francisco or Luís. Vázquez and
+  Rivera are therefore not inferred for the two fathers.
+- The marriage occurred about seven and a half months before their first
+  currently documented child, **Juana Jacinta**, was born in Humacao on **16
+  August 1806**.
+- Juan de Dios's 1819 baptism identifies Máximo as a native of **Caguas** and
+  Josefa as a native of **Humacao**. Their own baptisms and deaths remain the
+  next direct targets.
+- The captured evidence includes the complete original register image, a
+  natural reading-order crop joining the bottom-left entry to its top-right
+  continuation, an enhanced legibility crop, and capture metadata.
+
 ### Marcelino Perales y Medina and Aurora Pérez
 
 This couple were Carlina's parents and Rafael's maternal grandparents.
@@ -263,8 +286,11 @@ This couple were Carlina's parents and Rafael's maternal grandparents.
   variant.
 - Sotero's parents were **Atilano Vázquez and Juana Regina Rodríguez**, married
   in 1849. Juana died between 1863 and 1870; Atilano died in 1898. The line
-  extends again to **Máximo Vázquez and Josefa Rivera**, and **Andrés
-  [Rodríguez] and Francisca Díaz**.
+  extends again to **Máximo Vázquez and Josefa Rivera**, who married in 1805.
+  Their marriage names the prior generation as **Francisco and María Cortez**,
+  and **Luís and Isidora Rodríguez**, while leaving both fathers' surnames
+  unstated. Juana Regina's parents were **Andrés [Rodríguez] and Francisca
+  Díaz**.
 - Rafael's civil-registration index supports **February 1906**, not October;
   his exact birth day is still open.
 
@@ -274,8 +300,9 @@ This couple were Carlina's parents and Rafael's maternal grandparents.
 2. Sotero's baptism in an unfilmed register, duplicate, diocesan copy, or
    neighboring parish covering 1843–1847 or 1857–1860; Atilano's Juncos
    baptism; Juana Regina's baptism and an earlier burial volume or duplicate
-   covering her exact death; Máximo and Josefa's marriage; and birth or baptism
-   records for Juana, Mauricio, and Braulio.
+   covering her exact death; Máximo's Caguas baptism, Josefa's Humacao baptism,
+   their death records, and birth or baptism records for Juana, Mauricio, and
+   Braulio.
 3. The original Manhattan marriage certificate, not only its index.
 4. A duplicate register, sacramental certificate, alternate filming, or parish
    archive lookup for Gurabo book 15, folio 18 verso, sufficient to identify
@@ -288,6 +315,9 @@ This couple were Carlina's parents and Rafael's maternal grandparents.
 8. Birth or baptism records for the Perales–Pérez and Reyes–Martínez sibling
    clusters, especially Benito Isabel versus Isabel and Pedro's earlier
    children with Juana Villafañe.
+9. Baptisms, marriages, and deaths that can identify the life dates and
+   birthplaces of Francisco with María Cortez, and Luís with Isidora Rodríguez,
+   without supplying the two fathers' surnames from inheritance alone.
 
 All sources, conflicts and next-record targets are recorded in the adjacent
 JSONL files. Record pages, viewer captures, original-resolution images, and the
