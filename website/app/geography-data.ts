@@ -1197,5 +1197,140 @@ export const geographyEvents = [
     "sequence": 8,
     "map_label": "Antón Ruíz · 1940",
     "map_note": "The census again recorded Juan and Dolores together, both marked CC, contrato consensual."
+  },
+  {
+    "id": "geo.event.manuel-diaz-native-naguabo",
+    "date_range": "before 1920",
+    "event_type": "reported_native_place",
+    "person_refs": [
+      "person.manuel-diaz"
+    ],
+    "place_ref": "place.naguabo",
+    "status": "confirmed_as_recorded_on_sons_death_records",
+    "evidence_refs": [
+      "source.pr-civil-death.lope-diaz.684632",
+      "source.pr-civil-death.pedro-diaz.60679799"
+    ],
+    "map_groups": [
+      "profile-detail"
+    ],
+    "sequence": 1,
+    "map_label": "Naguabo",
+    "map_note": "The death records of Manuel's sons Lope and Pedro identify their father as a native of Naguabo."
+  },
+  {
+    "id": "geo.event.carmen-figueroa-native-naguabo",
+    "date_range": "before 1920",
+    "event_type": "reported_native_place",
+    "person_refs": [
+      "person.carmen-figueroa"
+    ],
+    "place_ref": "place.naguabo",
+    "status": "confirmed_as_recorded_on_sons_death_records",
+    "evidence_refs": [
+      "source.pr-civil-death.lope-diaz.684632",
+      "source.pr-civil-death.pedro-diaz.60679799"
+    ],
+    "map_groups": [
+      "profile-detail"
+    ],
+    "sequence": 1,
+    "map_label": "Naguabo",
+    "map_note": "The death records of Carmen's sons Lope and Pedro identify their mother as a native of Naguabo."
+  },
+  {
+    "id": "geo.event.bautista-garcia-native-naguabo",
+    "date_range": "before 1933",
+    "event_type": "reported_native_place",
+    "person_refs": [
+      "person.bautista-garcia"
+    ],
+    "place_ref": "place.naguabo",
+    "status": "confirmed_as_recorded_on_daughters_death_record",
+    "evidence_refs": [
+      "source.pr-civil-death.reyes-garcia.686138"
+    ],
+    "map_groups": [
+      "profile-detail"
+    ],
+    "sequence": 1,
+    "map_label": "Naguabo",
+    "map_note": "The death record of Bautista's daughter Reyes García identifies her father with Naguabo ties."
+  },
+  {
+    "id": "geo.event.carmen-olivero-native-naguabo",
+    "date_range": "before 1933",
+    "event_type": "reported_native_place",
+    "person_refs": [
+      "person.carmen-olivero"
+    ],
+    "place_ref": "place.naguabo",
+    "status": "confirmed_as_recorded_on_daughters_death_record",
+    "evidence_refs": [
+      "source.pr-civil-death.reyes-garcia.686138"
+    ],
+    "map_groups": [
+      "profile-detail"
+    ],
+    "sequence": 1,
+    "map_label": "Naguabo",
+    "map_note": "The death record of Carmen's daughter Reyes García identifies her mother with Naguabo ties."
+  },
+  {
+    "id": "geo.event.juana-de-jesus-vazquez-baptism-1851",
+    "date": "1851-06-06",
+    "event_type": "baptism",
+    "person_refs": [
+      "person.juana-de-jesus-vazquez"
+    ],
+    "place_ref": "place.humacao",
+    "status": "confirmed_original_parish_register",
+    "evidence_refs": [
+      "source.familysearch-baptism.juana-de-jesus.1851"
+    ],
+    "map_groups": [
+      "profile-detail"
+    ],
+    "sequence": 1,
+    "map_label": "Humacao · 1851",
+    "map_note": "Juana de Jesús was baptized in Humacao nine days after her recorded birth."
+  },
+  {
+    "id": "geo.event.jose-maria-de-la-cruz-vazquez-baptism-1852",
+    "date": "1852-10-03",
+    "event_type": "baptism",
+    "person_refs": [
+      "person.jose-maria-de-la-cruz-vazquez"
+    ],
+    "place_ref": "place.san-lorenzo",
+    "status": "confirmed_original_parish_register",
+    "evidence_refs": [
+      "source.familysearch-baptism.jose-maria-de-la-cruz-vazquez.1852"
+    ],
+    "map_groups": [
+      "profile-detail"
+    ],
+    "sequence": 1,
+    "map_label": "San Lorenzo · 1852",
+    "map_note": "José María de la Cruz was baptized in San Lorenzo three weeks after his recorded birth."
+  },
+  {
+    "id": "geo.event.dolores-vazquez-rodriguez-baptism-1879",
+    "date": "1879-03-07",
+    "event_type": "baptism",
+    "person_refs": [
+      "person.dolores-vazquez-rodriguez"
+    ],
+    "place_ref": "place.san-lorenzo",
+    "status": "confirmed_original_parish_register",
+    "evidence_refs": [
+      "source.familysearch-baptism.dolores-vazquez-rodriguez.1879"
+    ],
+    "map_groups": [
+      "profile-detail"
+    ],
+    "sequence": 1,
+    "map_label": "San Lorenzo · 1879",
+    "map_note": "Dolores was baptized at Nuestra Señora de las Mercedes in San Lorenzo."
   }
 ] as const;

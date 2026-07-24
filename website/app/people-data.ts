@@ -51,10 +51,12 @@ export type PersonProfile = {
   }[];
   geographyEvents: readonly {
     id: string;
-    date: string;
+    date?: string;
+    date_range?: string;
     event_type: string;
     person_refs: readonly string[];
     place_ref: string;
+    status: string;
     evidence_refs: readonly string[];
     map_groups: readonly string[];
     sequence: number;
@@ -6016,7 +6018,28 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "citation": "DGS 008038528, item 3, local image 181 of 309, folio 345. Baptized 4 July 1903; born 23 May 1903; legitimate son of Lope Díaz and María de Reyes García. Grandparents Manuel María Díaz and Carmen Figueroa, and Bautista García and Dolores Olivero. The margin reads Secundino; the computer index reads Decundino."
       }
     ],
-    "geographyEvents": []
+    "geographyEvents": [
+      {
+        "id": "geo.event.manuel-diaz-native-naguabo",
+        "date_range": "before 1920",
+        "event_type": "reported_native_place",
+        "person_refs": [
+          "person.manuel-diaz"
+        ],
+        "place_ref": "place.naguabo",
+        "status": "confirmed_as_recorded_on_sons_death_records",
+        "evidence_refs": [
+          "source.pr-civil-death.lope-diaz.684632",
+          "source.pr-civil-death.pedro-diaz.60679799"
+        ],
+        "map_groups": [
+          "profile-detail"
+        ],
+        "sequence": 1,
+        "map_label": "Naguabo",
+        "map_note": "The death records of Manuel's sons Lope and Pedro identify their father as a native of Naguabo."
+      }
+    ]
   },
   {
     "id": "person.carmen-figueroa",
@@ -6080,7 +6103,28 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "citation": "Brother of Lope Díaz Figueroa; names parents Manuel Díaz and Carmen Figueroa, both Naguabo natives and deceased by 1920."
       }
     ],
-    "geographyEvents": []
+    "geographyEvents": [
+      {
+        "id": "geo.event.carmen-figueroa-native-naguabo",
+        "date_range": "before 1920",
+        "event_type": "reported_native_place",
+        "person_refs": [
+          "person.carmen-figueroa"
+        ],
+        "place_ref": "place.naguabo",
+        "status": "confirmed_as_recorded_on_sons_death_records",
+        "evidence_refs": [
+          "source.pr-civil-death.lope-diaz.684632",
+          "source.pr-civil-death.pedro-diaz.60679799"
+        ],
+        "map_groups": [
+          "profile-detail"
+        ],
+        "sequence": 1,
+        "map_label": "Naguabo",
+        "map_note": "The death records of Carmen's sons Lope and Pedro identify their mother as a native of Naguabo."
+      }
+    ]
   },
   {
     "id": "person.bautista-garcia",
@@ -6132,7 +6176,27 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "citation": "Humacao, 28 March 1933; age 70; widow of Lope Díaz; parents Bautista García and Carmen Olivero; Naguabo ties."
       }
     ],
-    "geographyEvents": []
+    "geographyEvents": [
+      {
+        "id": "geo.event.bautista-garcia-native-naguabo",
+        "date_range": "before 1933",
+        "event_type": "reported_native_place",
+        "person_refs": [
+          "person.bautista-garcia"
+        ],
+        "place_ref": "place.naguabo",
+        "status": "confirmed_as_recorded_on_daughters_death_record",
+        "evidence_refs": [
+          "source.pr-civil-death.reyes-garcia.686138"
+        ],
+        "map_groups": [
+          "profile-detail"
+        ],
+        "sequence": 1,
+        "map_label": "Naguabo",
+        "map_note": "The death record of Bautista's daughter Reyes García identifies her father with Naguabo ties."
+      }
+    ]
   },
   {
     "id": "person.carmen-olivero",
@@ -6184,7 +6248,27 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "citation": "Humacao, 28 March 1933; age 70; widow of Lope Díaz; parents Bautista García and Carmen Olivero; Naguabo ties."
       }
     ],
-    "geographyEvents": []
+    "geographyEvents": [
+      {
+        "id": "geo.event.carmen-olivero-native-naguabo",
+        "date_range": "before 1933",
+        "event_type": "reported_native_place",
+        "person_refs": [
+          "person.carmen-olivero"
+        ],
+        "place_ref": "place.naguabo",
+        "status": "confirmed_as_recorded_on_daughters_death_record",
+        "evidence_refs": [
+          "source.pr-civil-death.reyes-garcia.686138"
+        ],
+        "map_groups": [
+          "profile-detail"
+        ],
+        "sequence": 1,
+        "map_label": "Naguabo",
+        "map_note": "The death record of Carmen's daughter Reyes García identifies her mother with Naguabo ties."
+      }
+    ]
   },
   {
     "id": "person.abal-perales",
@@ -12732,7 +12816,27 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "citation": "DGS 008038522, item 7, local image 76 of 469. Born 28 May and baptized 6 June 1851, natural daughter of María Vázquez; maternal grandparents Máximo Vázquez and Josefa Rivera."
       }
     ],
-    "geographyEvents": []
+    "geographyEvents": [
+      {
+        "id": "geo.event.juana-de-jesus-vazquez-baptism-1851",
+        "date": "1851-06-06",
+        "event_type": "baptism",
+        "person_refs": [
+          "person.juana-de-jesus-vazquez"
+        ],
+        "place_ref": "place.humacao",
+        "status": "confirmed_original_parish_register",
+        "evidence_refs": [
+          "source.familysearch-baptism.juana-de-jesus.1851"
+        ],
+        "map_groups": [
+          "profile-detail"
+        ],
+        "sequence": 1,
+        "map_label": "Humacao · 1851",
+        "map_note": "Juana de Jesús was baptized in Humacao nine days after her recorded birth."
+      }
+    ]
   },
   {
     "id": "person.jose-maria-de-la-cruz-vazquez",
@@ -12792,7 +12896,27 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "citation": "DGS 008126780, item 5, local images 20-21 of 244. José María was born 12 September and baptized 3 October 1852, legitimate son of José de la Cruz and María Vázquez. Maternal grandparents Máximo Vázquez and Josefa de Rivera identify María as a documented sister of Atilano."
       }
     ],
-    "geographyEvents": []
+    "geographyEvents": [
+      {
+        "id": "geo.event.jose-maria-de-la-cruz-vazquez-baptism-1852",
+        "date": "1852-10-03",
+        "event_type": "baptism",
+        "person_refs": [
+          "person.jose-maria-de-la-cruz-vazquez"
+        ],
+        "place_ref": "place.san-lorenzo",
+        "status": "confirmed_original_parish_register",
+        "evidence_refs": [
+          "source.familysearch-baptism.jose-maria-de-la-cruz-vazquez.1852"
+        ],
+        "map_groups": [
+          "profile-detail"
+        ],
+        "sequence": 1,
+        "map_label": "San Lorenzo · 1852",
+        "map_note": "José María de la Cruz was baptized in San Lorenzo three weeks after his recorded birth."
+      }
+    ]
   },
   {
     "id": "person.juan-de-dios-vazquez-rivera",
@@ -13379,7 +13503,27 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "citation": "DGS 008126780, item 9, local image 37 of 313, entry 87. Dolores, born 1 December 1878 and baptized 7 March 1879, was the legitimate daughter of Francisco Solano Vázquez and Rita Rodríguez. Paternal grandparents Máximo Vázquez and Josefa Rivera identify Francisco Solano as a son of the exact parent pair."
       }
     ],
-    "geographyEvents": []
+    "geographyEvents": [
+      {
+        "id": "geo.event.dolores-vazquez-rodriguez-baptism-1879",
+        "date": "1879-03-07",
+        "event_type": "baptism",
+        "person_refs": [
+          "person.dolores-vazquez-rodriguez"
+        ],
+        "place_ref": "place.san-lorenzo",
+        "status": "confirmed_original_parish_register",
+        "evidence_refs": [
+          "source.familysearch-baptism.dolores-vazquez-rodriguez.1879"
+        ],
+        "map_groups": [
+          "profile-detail"
+        ],
+        "sequence": 1,
+        "map_label": "San Lorenzo · 1879",
+        "map_note": "Dolores was baptized at Nuestra Señora de las Mercedes in San Lorenzo."
+      }
+    ]
   },
   {
     "id": "person.mariana-vazquez-de-santiago",

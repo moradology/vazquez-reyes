@@ -98,12 +98,17 @@ test("renders navigable trees and repeated maps from one geographic frame", asyn
 });
 
 test("renders the people directory and a detailed, linked person profile", async () => {
-  const [indexResponse, personResponse] = await Promise.all([
+  const [indexResponse, personResponse, contextResponse, placeResponse] =
+    await Promise.all([
     render("/people"),
     render("/people/maximo-vazquez"),
+    render("/people/lope-diaz-figueroa"),
+    render("/people/manuel-diaz"),
   ]);
   const indexHtml = await indexResponse.text();
   const personHtml = await personResponse.text();
+  const contextHtml = await contextResponse.text();
+  const placeHtml = await placeResponse.text();
 
   assert.equal(indexResponse.status, 200);
   assert.match(indexHtml, /The people in the records/);
@@ -126,6 +131,19 @@ test("renders the people directory and a detailed, linked person profile", async
   assert.match(personHtml, /1794-maria-magdalena-cortes-burial\.jpg/);
   assert.match(personHtml, /Claims and how they are graded/);
   assert.match(personHtml, /Records reviewed/);
+
+  assert.equal(contextResponse.status, 200);
+  assert.match(contextHtml, /data-pr-map="person-lope-diaz-figueroa"/);
+  assert.match(contextHtml, /Family context/);
+  assert.match(
+    contextHtml,
+    /not evidence that Lope Díaz Figueroa lived in any of them/,
+  );
+
+  assert.equal(placeResponse.status, 200);
+  assert.match(placeHtml, /data-pr-map="person-manuel-diaz"/);
+  assert.match(placeHtml, /Documented places/);
+  assert.match(placeHtml, /Naguabo/);
 });
 
 test("renders a filterable two-line family timeline from the research ledger", async () => {
@@ -172,11 +190,13 @@ test("renders a slide-style, evidence-led family presentation", async () => {
 
   assert.equal(response.status, 200);
   assert.match(html, /Vazquez–Reyes family history/);
-  assert.equal([...html.matchAll(/\bdata-slide="true"/g)].length, 15);
+  assert.equal([...html.matchAll(/\bdata-slide="true"/g)].length, 16);
   assert.match(html, /family roots/);
   assert.match(html, /Connection/);
   assert.match(html, /The record/);
   assert.match(html, /Geographic context/);
+  assert.match(html, /Relief and routes · 1886/);
+  assert.match(html, /Crops and land cover · 1899/);
   assert.match(html, /puerto-rico-topographic-1886\.jpg/);
   assert.match(html, /puerto-rico-crop-lands-1899\.jpg/);
   assert.match(html, /Juan \+ Dolores Rivera by 1930/);
@@ -256,7 +276,7 @@ test("keeps the geography ledger referential and explicit about precision", asyn
   const sourceIds = new Set(parse(sourcesText).map((source) => source.id));
 
   assert.equal(places.length, 18);
-  assert.equal(events.length, 44);
+  assert.equal(events.length, 51);
   for (const place of places) {
     assert.match(place.precision, /point/);
     assert.match(place.coordinate_source.url, /^https:\/\/tigerweb\.geo\.census\.gov\//);

@@ -26,12 +26,18 @@ type PuertoRicoMapProps = {
 
 type PuertoRicoPersonMapProps = {
   personId: string;
+  familyPersonIds: readonly string[];
+  extendedFamilyPersonIds: readonly string[];
   title: string;
-  summary: string;
   tone: "reyes" | "vazquez";
 };
 
 type GeographyEvent = (typeof geographyEvents)[number];
+
+type DatedGeographyEvent = GeographyEvent & {
+  date?: string;
+  date_range?: string;
+};
 
 type GeographyPlace = {
   id: string;
@@ -71,6 +77,27 @@ const baseLabels = [
   ["Fajardo", [-65.588454, 18.3863776]],
 ] as const;
 
+function eventYear(event: DatedGeographyEvent) {
+  const match = (event.date ?? event.date_range ?? "").match(/\d{4}/);
+  return match ? Number(match[0]) : Number.POSITIVE_INFINITY;
+}
+
+function chronologicalEvents(events: readonly GeographyEvent[]) {
+  return [...events].sort(
+    (a, b) =>
+      eventYear(a as DatedGeographyEvent) -
+        eventYear(b as DatedGeographyEvent) ||
+      a.sequence - b.sequence,
+  );
+}
+
+function eventsForPeople(personIds: readonly string[]) {
+  const people = new Set(personIds);
+  return geographyEvents.filter((event) =>
+    (event.person_refs as readonly string[]).some((id) => people.has(id)),
+  );
+}
+
 export function PuertoRicoMapDefinitions() {
   return (
     <svg
@@ -99,9 +126,11 @@ export function PuertoRicoMap({
   storyHref,
   tone,
 }: PuertoRicoMapProps) {
-  const events = geographyEvents
-    .filter((event) => (event.map_groups as readonly string[]).includes(group))
-    .sort((a, b) => a.sequence - b.sequence);
+  const events = chronologicalEvents(
+    geographyEvents.filter((event) =>
+      (event.map_groups as readonly string[]).includes(group),
+    ),
+  );
 
   return (
     <PuertoRicoMapCard
@@ -118,13 +147,26 @@ export function PuertoRicoMap({
 
 export function PuertoRicoPersonMap({
   personId,
+  familyPersonIds,
+  extendedFamilyPersonIds,
   title,
-  summary,
   tone,
 }: PuertoRicoPersonMapProps) {
-  const events = geographyEvents
-    .filter((event) => (event.person_refs as readonly string[]).includes(personId))
-    .sort((a, b) => a.sequence - b.sequence);
+  const documentedEvents = eventsForPeople([personId]);
+  const immediateFamilyEvents =
+    documentedEvents.length === 0 ? eventsForPeople(familyPersonIds) : [];
+  const extendedFamilyEvents =
+    documentedEvents.length === 0 && immediateFamilyEvents.length === 0
+      ? eventsForPeople(extendedFamilyPersonIds)
+      : [];
+  const isFamilyContext = documentedEvents.length === 0;
+  const events = chronologicalEvents(
+    documentedEvents.length > 0
+      ? documentedEvents
+      : immediateFamilyEvents.length > 0
+        ? immediateFamilyEvents
+        : extendedFamilyEvents,
+  );
 
   if (events.length === 0) return null;
 
@@ -132,10 +174,14 @@ export function PuertoRicoPersonMap({
     <PuertoRicoMapCard
       dataMap={`person-${personId.replace(/^person\./, "")}`}
       events={events}
-      eyebrow="Documented places"
+      eyebrow={isFamilyContext ? "Family context" : "Documented places"}
       storyHref="#evidence"
-      summary={summary}
-      title={title}
+      summary={
+        isFamilyContext
+          ? `These places come from records for close relatives. They are family context only and are not evidence that ${title} lived in any of them.`
+          : "Only places tied to this person by a cited event are shown. Municipio and barrio points do not claim an exact address."
+      }
+      title={isFamilyContext ? `${title}: family context` : title}
       tone={tone}
     />
   );

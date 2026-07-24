@@ -79,6 +79,13 @@ export const timelinePeople: readonly TimelinePerson[] = [
     "directLine": true
   },
   {
+    "id": "person.bautista-garcia",
+    "name": "Bautista García",
+    "slug": "bautista-garcia",
+    "branch": "reyes",
+    "directLine": true
+  },
+  {
     "id": "person.benito-isabel-reyes-martinez",
     "name": "Benito Isabel Reyes Martínez",
     "slug": "benito-isabel-reyes-martinez",
@@ -117,6 +124,13 @@ export const timelinePeople: readonly TimelinePerson[] = [
     "id": "person.carmen-figueroa",
     "name": "Carmen Figueroa",
     "slug": "carmen-figueroa",
+    "branch": "reyes",
+    "directLine": true
+  },
+  {
+    "id": "person.carmen-olivero",
+    "name": "Carmen Olivero",
+    "slug": "carmen-olivero",
     "branch": "reyes",
     "directLine": true
   },
@@ -1678,7 +1692,7 @@ export const timelineEvents: readonly TimelineEvent[] = [
     "source": null
   },
   {
-    "id": "timeline.juana-de-jesus-vazquez.baptism.18510606",
+    "id": "geo.event.juana-de-jesus-vazquez-baptism-1851",
     "branch": "vazquez",
     "directLine": false,
     "dateLabel": "6 June 1851",
@@ -1688,8 +1702,8 @@ export const timelineEvents: readonly TimelineEvent[] = [
     "eventTypeLabel": "Baptism",
     "certainty": "Documented",
     "title": "Juana de Jesús Vázquez is baptized",
-    "description": "Baptized in Humacao, Puerto Rico.",
-    "place": "Humacao, Puerto Rico",
+    "description": "Juana de Jesús was baptized in Humacao nine days after her recorded birth.",
+    "place": "Humacao",
     "people": [
       {
         "id": "person.juana-de-jesus-vazquez",
@@ -1697,7 +1711,10 @@ export const timelineEvents: readonly TimelineEvent[] = [
         "slug": "juana-de-jesus-vazquez"
       }
     ],
-    "source": null
+    "source": {
+      "title": "1851 baptism of Juana de Jesús, daughter of María Vázquez",
+      "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSFS-K938-D?view=fullText&keywords=Josefa+Rivera%2CM%C3%A1ximo+V%C3%A1zquez&lang=en"
+    }
   },
   {
     "id": "timeline.jose-maria-de-la-cruz-vazquez.birth.18520912",
@@ -1722,7 +1739,7 @@ export const timelineEvents: readonly TimelineEvent[] = [
     "source": null
   },
   {
-    "id": "timeline.jose-maria-de-la-cruz-vazquez.baptism.18521003",
+    "id": "geo.event.jose-maria-de-la-cruz-vazquez-baptism-1852",
     "branch": "vazquez",
     "directLine": false,
     "dateLabel": "3 October 1852",
@@ -1732,8 +1749,8 @@ export const timelineEvents: readonly TimelineEvent[] = [
     "eventTypeLabel": "Baptism",
     "certainty": "Documented",
     "title": "José María de la Cruz Vázquez is baptized",
-    "description": "Baptized in San Lorenzo, Puerto Rico.",
-    "place": "San Lorenzo, Puerto Rico",
+    "description": "José María de la Cruz was baptized in San Lorenzo three weeks after his recorded birth.",
+    "place": "San Lorenzo",
     "people": [
       {
         "id": "person.jose-maria-de-la-cruz-vazquez",
@@ -1741,7 +1758,10 @@ export const timelineEvents: readonly TimelineEvent[] = [
         "slug": "jose-maria-de-la-cruz-vazquez"
       }
     ],
-    "source": null
+    "source": {
+      "title": "1852 baptism of José María, son of José de la Cruz and María Vázquez",
+      "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSV2-9W96-L?view=fullText&keywords=Josefa+de+Rivera%2CM%C3%A1ximo+V%C3%A1zquez&lang=en"
+    }
   },
   {
     "id": "timeline.francisca-vazquez-rodriguez.birth.18530615",
@@ -2266,7 +2286,7 @@ export const timelineEvents: readonly TimelineEvent[] = [
     "source": null
   },
   {
-    "id": "timeline.dolores-vazquez-rodriguez.baptism.18790307",
+    "id": "geo.event.dolores-vazquez-rodriguez-baptism-1879",
     "branch": "vazquez",
     "directLine": false,
     "dateLabel": "7 March 1879",
@@ -2276,8 +2296,8 @@ export const timelineEvents: readonly TimelineEvent[] = [
     "eventTypeLabel": "Baptism",
     "certainty": "Documented",
     "title": "Dolores Vázquez Rodríguez is baptized",
-    "description": "Baptized in Nuestra Señora de las Mercedes, San Lorenzo, Puerto Rico.",
-    "place": "Nuestra Señora de las Mercedes, San Lorenzo, Puerto Rico",
+    "description": "Dolores was baptized at Nuestra Señora de las Mercedes in San Lorenzo.",
+    "place": "San Lorenzo",
     "people": [
       {
         "id": "person.dolores-vazquez-rodriguez",
@@ -2285,7 +2305,10 @@ export const timelineEvents: readonly TimelineEvent[] = [
         "slug": "dolores-vazquez-rodriguez"
       }
     ],
-    "source": null
+    "source": {
+      "title": "1879 baptism of Dolores Vázquez Rodríguez",
+      "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSV2-9WQN-V?view=index&personArk=%2Fark%3A%2F61903%2F1%3A1%3A6DRH-1X1T&action=view&cc=1807092&lang=en"
+    }
   },
   {
     "id": "timeline.maria-eugenia-vazquez-de-santiago.birth.18790520",
@@ -3435,6 +3458,56 @@ export const timelineEvents: readonly TimelineEvent[] = [
     "source": null
   },
   {
+    "id": "geo.event.carmen-figueroa-native-naguabo",
+    "branch": "reyes",
+    "directLine": true,
+    "dateLabel": "before 1920",
+    "dateTime": null,
+    "sortValue": 19200615,
+    "eventType": "origin",
+    "eventTypeLabel": "Birthplace evidence",
+    "certainty": "Approximate or bounded",
+    "title": "Carmen Figueroa's birthplace enters the record",
+    "description": "The death records of Carmen's sons Lope and Pedro identify their mother as a native of Naguabo.",
+    "place": "Naguabo",
+    "people": [
+      {
+        "id": "person.carmen-figueroa",
+        "name": "Carmen Figueroa",
+        "slug": "carmen-figueroa"
+      }
+    ],
+    "source": {
+      "title": "1929 death of Lope Díaz Figueroa",
+      "url": "https://www.ancestry.com/search/collections/9100/records/684632"
+    }
+  },
+  {
+    "id": "geo.event.manuel-diaz-native-naguabo",
+    "branch": "reyes",
+    "directLine": true,
+    "dateLabel": "before 1920",
+    "dateTime": null,
+    "sortValue": 19200615,
+    "eventType": "origin",
+    "eventTypeLabel": "Birthplace evidence",
+    "certainty": "Approximate or bounded",
+    "title": "Manuel María Díaz's birthplace enters the record",
+    "description": "The death records of Manuel's sons Lope and Pedro identify their father as a native of Naguabo.",
+    "place": "Naguabo",
+    "people": [
+      {
+        "id": "person.manuel-diaz",
+        "name": "Manuel María Díaz",
+        "slug": "manuel-diaz"
+      }
+    ],
+    "source": {
+      "title": "1929 death of Lope Díaz Figueroa",
+      "url": "https://www.ancestry.com/search/collections/9100/records/684632"
+    }
+  },
+  {
     "id": "timeline.carlina-perales-perez.death.19220531",
     "branch": "vazquez",
     "directLine": true,
@@ -3682,6 +3755,56 @@ export const timelineEvents: readonly TimelineEvent[] = [
       }
     ],
     "source": null
+  },
+  {
+    "id": "geo.event.bautista-garcia-native-naguabo",
+    "branch": "reyes",
+    "directLine": true,
+    "dateLabel": "before 1933",
+    "dateTime": null,
+    "sortValue": 19330615,
+    "eventType": "origin",
+    "eventTypeLabel": "Birthplace evidence",
+    "certainty": "Approximate or bounded",
+    "title": "Bautista García's birthplace enters the record",
+    "description": "The death record of Bautista's daughter Reyes García identifies her father with Naguabo ties.",
+    "place": "Naguabo",
+    "people": [
+      {
+        "id": "person.bautista-garcia",
+        "name": "Bautista García",
+        "slug": "bautista-garcia"
+      }
+    ],
+    "source": {
+      "title": "1933 death of Reyes García Olivero",
+      "url": "https://www.ancestry.com/search/collections/9100/records/686138"
+    }
+  },
+  {
+    "id": "geo.event.carmen-olivero-native-naguabo",
+    "branch": "reyes",
+    "directLine": true,
+    "dateLabel": "before 1933",
+    "dateTime": null,
+    "sortValue": 19330615,
+    "eventType": "origin",
+    "eventTypeLabel": "Birthplace evidence",
+    "certainty": "Approximate or bounded",
+    "title": "Carmen Olivero's birthplace enters the record",
+    "description": "The death record of Carmen's daughter Reyes García identifies her mother with Naguabo ties.",
+    "place": "Naguabo",
+    "people": [
+      {
+        "id": "person.carmen-olivero",
+        "name": "Carmen Olivero",
+        "slug": "carmen-olivero"
+      }
+    ],
+    "source": {
+      "title": "1933 death of Reyes García Olivero",
+      "url": "https://www.ancestry.com/search/collections/9100/records/686138"
+    }
   },
   {
     "id": "geo.event.maria-death-1933",

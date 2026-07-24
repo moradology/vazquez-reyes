@@ -304,10 +304,12 @@ export type PersonProfile = {
   }[];
   geographyEvents: readonly {
     id: string;
-    date: string;
+    date?: string;
+    date_range?: string;
     event_type: string;
     person_refs: readonly string[];
     place_ref: string;
+    status: string;
     evidence_refs: readonly string[];
     map_groups: readonly string[];
     sequence: number;

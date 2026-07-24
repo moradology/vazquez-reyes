@@ -70,7 +70,7 @@ function SlideNav({ current, total }: { current: number; total: number }) {
   );
 }
 
-const totalSlides = 15;
+const totalSlides = 16;
 
 export default function PresentationPage() {
   return (
@@ -155,18 +155,19 @@ export default function PresentationPage() {
       <section className="deck-slide map-context-slide" data-slide id="slide-03">
         <div className="slide-copy map-context-copy">
           <p className="slide-kicker">Geographic context</p>
-          <h2>Puerto Rico: relief, routes, and crops.</h2>
+          <h2>Relief and routes · 1886</h2>
           <p>
             Most of the Puerto Rico record trail stays within a compact eastern
             corridor: Caguas, Gurabo, Juncos, Las Piedras, Naguabo, Humacao,
             and Yabucoa.
           </p>
           <p className="slide-caution">
-            These maps describe the region, not land owned or worked by a
-            particular relative. Select either map to inspect it at full size.
+            This map describes the region, not land owned or worked by a
+            particular relative. Select it to inspect the original at full
+            size.
           </p>
         </div>
-        <div className="slide-map-grid">
+        <div className="slide-map-single">
           <figure>
             <ArchiveImage
               alt="Topographic map of Puerto Rico published in 1886"
@@ -186,6 +187,25 @@ export default function PresentationPage() {
               </span>
             </figcaption>
           </figure>
+        </div>
+        <SlideNav current={3} total={totalSlides} />
+      </section>
+
+      <section className="deck-slide map-context-slide" data-slide id="slide-04">
+        <div className="slide-copy map-context-copy">
+          <p className="slide-kicker">Geographic context</p>
+          <h2>Crops and land cover · 1899</h2>
+          <p>
+            The crop map distinguishes coffee, sugar cane, pasture, and mixed
+            cultivation across the island at the end of the nineteenth
+            century.
+          </p>
+          <p className="slide-caution">
+            It supplies regional context only; it does not identify a
+            particular relative’s occupation or property.
+          </p>
+        </div>
+        <div className="slide-map-single">
           <figure>
             <ArchiveImage
               alt="Map of Puerto Rico showing the distribution of crop lands in 1899"
@@ -206,10 +226,10 @@ export default function PresentationPage() {
             </figcaption>
           </figure>
         </div>
-        <SlideNav current={3} total={totalSlides} />
+        <SlideNav current={4} total={totalSlides} />
       </section>
 
-      <section className="deck-slide record-slide" data-slide id="slide-04">
+      <section className="deck-slide record-slide" data-slide id="slide-05">
         <div className="slide-copy">
           <p className="slide-kicker">Cruz’s birth</p>
           <h2>The civil act fixes the place, date, and two generations.</h2>
@@ -235,10 +255,10 @@ export default function PresentationPage() {
           caption="Gurabo civil birth registration, 1915"
           src="1915-cruz-civil-birth.jpg"
         />
-        <SlideNav current={4} total={totalSlides} />
+        <SlideNav current={5} total={totalSlides} />
       </section>
 
-      <section className="deck-slide record-slide" data-slide id="slide-05">
+      <section className="deck-slide record-slide" data-slide id="slide-06">
         <div className="slide-copy">
           <p className="slide-kicker">Cruz’s parents</p>
           <h2>Mauricio Reyes Martínez + Carmen Díaz García</h2>
@@ -268,10 +288,10 @@ export default function PresentationPage() {
           caption="The Reyes–Díaz household in Húcares, Naguabo, 1910"
           src="1910-reyes-household.jpg"
         />
-        <SlideNav current={5} total={totalSlides} />
+        <SlideNav current={6} total={totalSlides} />
       </section>
 
-      <section className="deck-slide record-slide" data-slide id="slide-06">
+      <section className="deck-slide record-slide" data-slide id="slide-07">
         <div className="slide-copy">
           <p className="slide-kicker">Mauricio’s parents</p>
           <h2>Pedro Reyes + Ana or Anastasia Martínez</h2>
@@ -298,10 +318,10 @@ export default function PresentationPage() {
           caption="Dulce Nombre de Jesús, Humacao, 1882"
           src="1882-mauricio-reyes-baptism.jpg"
         />
-        <SlideNav current={6} total={totalSlides} />
+        <SlideNav current={7} total={totalSlides} />
       </section>
 
-      <section className="deck-slide record-slide" data-slide id="slide-07">
+      <section className="deck-slide record-slide" data-slide id="slide-08">
         <div className="slide-copy">
           <p className="slide-kicker">Rafael’s childhood</p>
           <h2>Rafael with Juan Vázquez and Carlina Perales</h2>
@@ -327,10 +347,10 @@ export default function PresentationPage() {
           caption="The Vázquez–Perales household in Antón Ruíz, Humacao, 1920"
           src="1920-vazquez-household.jpg"
         />
-        <SlideNav current={7} total={totalSlides} />
+        <SlideNav current={8} total={totalSlides} />
       </section>
 
-      <section className="deck-slide relationship-sequence-slide" data-slide id="slide-08">
+      <section className="deck-slide relationship-sequence-slide" data-slide id="slide-09">
         <div className="slide-copy">
           <p className="slide-kicker">Rafael’s parents</p>
           <h2>Juan de la Rosa Vázquez + Carlina Perales Pérez</h2>
@@ -385,10 +405,10 @@ export default function PresentationPage() {
             <p>Consensual/common-law household</p>
           </div>
         </aside>
-        <SlideNav current={8} total={totalSlides} />
+        <SlideNav current={9} total={totalSlides} />
       </section>
 
-      <section className="deck-slide record-slide" data-slide id="slide-09">
+      <section className="deck-slide record-slide" data-slide id="slide-10">
         <div className="slide-copy">
           <p className="slide-kicker">The Rodríguez name conflict</p>
           <h2>Carmen and María Eugenia are probably one woman—but not merged.</h2>
@@ -417,10 +437,10 @@ export default function PresentationPage() {
           caption="Sotero, María, Braulio, and Francisco in Antón Ruíz, 1910"
           src="1910-sotero-maria-household.jpg"
         />
-        <SlideNav current={9} total={totalSlides} />
+        <SlideNav current={10} total={totalSlides} />
       </section>
 
-      <section className="deck-slide" data-slide id="slide-10">
+      <section className="deck-slide" data-slide id="slide-11">
         <div className="slide-copy">
           <p className="slide-kicker">Sotero’s parents</p>
           <h2>Atilano Vázquez + Juana Regina Rodríguez</h2>
@@ -455,10 +475,10 @@ export default function PresentationPage() {
           <span>Manuel</span>
           <span>María</span>
         </aside>
-        <SlideNav current={10} total={totalSlides} />
+        <SlideNav current={11} total={totalSlides} />
       </section>
 
-      <section className="deck-slide record-slide" data-slide id="slide-11">
+      <section className="deck-slide record-slide" data-slide id="slide-12">
         <div className="slide-copy">
           <p className="slide-kicker">The 1805 bridge</p>
           <h2>Máximo Basquez + Josefa Ribera</h2>
@@ -485,10 +505,10 @@ export default function PresentationPage() {
           caption="The marriage entry continues across the facing pages"
           src="1805-maximo-josefa-marriage.jpg"
         />
-        <SlideNav current={11} total={totalSlides} />
+        <SlideNav current={12} total={totalSlides} />
       </section>
 
-      <section className="deck-slide record-slide" data-slide id="slide-12">
+      <section className="deck-slide record-slide" data-slide id="slide-13">
         <div className="slide-copy">
           <p className="slide-kicker">Máximo’s Caguas family</p>
           <h2>Four earlier records supply the fuller parent names.</h2>
@@ -526,10 +546,10 @@ export default function PresentationPage() {
           caption="María Magdalena Cortés’s 1794 Caguas burial"
           src="1794-maria-magdalena-cortes-burial.jpg"
         />
-        <SlideNav current={12} total={totalSlides} />
+        <SlideNav current={13} total={totalSlides} />
       </section>
 
-      <section className="deck-slide record-slide" data-slide id="slide-13">
+      <section className="deck-slide record-slide" data-slide id="slide-14">
         <div className="slide-copy">
           <p className="slide-kicker">Josefa’s family</p>
           <h2>Three records establish the Luís de Rivera household.</h2>
@@ -560,10 +580,10 @@ export default function PresentationPage() {
           caption="Simona, daughter of Luís de Rivera and Isidora Rodríguez"
           src="1790-simona-rivera-baptism.jpg"
         />
-        <SlideNav current={13} total={totalSlides} />
+        <SlideNav current={14} total={totalSlides} />
       </section>
 
-      <section className="deck-slide record-slide" data-slide id="slide-14">
+      <section className="deck-slide record-slide" data-slide id="slide-15">
         <div className="slide-copy">
           <p className="slide-kicker">One generation farther</p>
           <h2>Luís de Rivera names Roque and Marciana Delgado.</h2>
@@ -590,10 +610,10 @@ export default function PresentationPage() {
           caption="Luís de Rivera’s 1811 death entry"
           src="1811-luis-de-rivera-death.jpg"
         />
-        <SlideNav current={14} total={totalSlides} />
+        <SlideNav current={15} total={totalSlides} />
       </section>
 
-      <section className="deck-slide frontier-slide" data-slide id="slide-15">
+      <section className="deck-slide frontier-slide" data-slide id="slide-16">
         <div className="slide-copy">
           <p className="slide-kicker">Where the trail stands</p>
           <h2>The earliest proven places are still in Puerto Rico.</h2>
@@ -634,7 +654,7 @@ export default function PresentationPage() {
           <p>Letters and funeral cards</p>
           <p>Stories—with who told them</p>
         </aside>
-        <SlideNav current={15} total={totalSlides} />
+        <SlideNav current={16} total={totalSlides} />
       </section>
     </main>
   );

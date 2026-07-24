@@ -266,17 +266,23 @@ export default async function PersonPage({
         />
       </section>
 
-      {profile.geographyEvents.length > 0 && (
-        <section className="person-section person-map-section">
-          <PuertoRicoMapDefinitions />
-          <PuertoRicoPersonMap
-            personId={profile.id}
-            summary="Only places tied to this person by a cited event are shown. Municipio and barrio points do not claim an exact address."
-            title={profile.displayName}
-            tone={profile.tone}
-          />
-        </section>
-      )}
+      <section className="person-section person-map-section">
+        <PuertoRicoMapDefinitions />
+        <PuertoRicoPersonMap
+          extendedFamilyPersonIds={[
+            ...profile.relations.siblingIds,
+            ...profile.relations.relatedIds,
+          ]}
+          familyPersonIds={[
+            ...profile.relations.parentIds,
+            ...profile.relations.partnerIds,
+            ...profile.relations.childIds,
+          ]}
+          personId={profile.id}
+          title={profile.displayName}
+          tone={profile.tone}
+        />
+      </section>
 
       <section className="person-section" id="details">
         <div className="person-section-heading">
