@@ -1,8 +1,8 @@
 export const sources = [
   {
     id: "cruz-birth",
-    label: "Puerto Rico civil registration: Cruz Reyes Díaz",
-    detail: "Born 3 May 1915 in barrio Rincón, Gurabo; parents Mauricio Reyes Martínez and Carmen Díaz García; both sets of grandparents named.",
+    label: "1915 civil registration: Cruz Reyes Díaz",
+    detail: "Born 3 May 1915 in barrio Rincón, Gurabo. Maternal grandfather Lope Díaz registered the birth on 17 June; the act gives the name Cruz and names both parents and both sets of grandparents.",
     href: "https://www.ancestry.com/search/collections/9100/records/3790159",
     grade: "Original civil record",
   },
@@ -168,6 +168,20 @@ export const sources = [
     grade: "Original records + derivative indexes",
   },
   {
+    id: "census-1935-aurora",
+    label: "1935 Puerto Rico social census: Aurora Pérez and Hilaria Perales",
+    detail: "Río Blanco, Naguabo; widowed Aurora, reported age 95, is recorded as the mother of Ilaria or Hilaria Perales, widow of Rotger.",
+    href: "https://www.ancestry.com/search/collections/2404/records/1583597",
+    grade: "Original enumeration",
+  },
+  {
+    id: "census-1940-aurora",
+    label: "1940 census: Aurora Pérez, widow of Perales",
+    detail: "Río Blanco, Naguabo; Aurora, reported age 99, again appears as the mother of Ilaria or Hilaria Perales. The image corrects the index's surname error.",
+    href: "https://www.ancestry.com/search/collections/2442/records/162855393",
+    grade: "Original enumeration",
+  },
+  {
     id: "census-1950",
     label: "1950 United States census",
     detail: "Rafael and Cruz together on East 109th Street, Manhattan.",
@@ -200,10 +214,10 @@ export const sources = [
 export const familyCouples = [
   {
     id: "mauricio-carmen",
-    branch: "Cruz’s parents",
+    branch: "Pastora / Cruz’s parents",
     couple: "Mauricio Reyes Martínez + Carmen Díaz García",
     status: "documented" as const,
-    connection: "Parents of Cruz Reyes Díaz",
+    connection: "Parents of the woman the family remembers as Pastora and the civil records name Cruz Reyes Díaz",
     people: [
       {
         name: "Mauricio Reyes Martínez",
@@ -255,7 +269,7 @@ export const familyCouples = [
     branch: "Mauricio’s parents",
     couple: "Pedro Reyes + Ana Martínez",
     status: "documented" as const,
-    connection: "Paternal grandparents of Cruz Reyes Díaz",
+    connection: "Her paternal grandparents",
     people: [
       {
         name: "Pedro Reyes",
@@ -277,7 +291,7 @@ export const familyCouples = [
     branch: "Carmen’s parents",
     couple: "Lope Díaz Figueroa + Reyes García Olivero",
     status: "documented" as const,
-    connection: "Maternal grandparents of Cruz Reyes Díaz",
+    connection: "Her maternal grandparents",
     people: [
       {
         name: "Lope Díaz Figueroa",
@@ -330,8 +344,8 @@ export const familyCouples = [
       },
       {
         name: "Aurora Pérez",
-        birth: "Not yet found",
-        death: "Not yet found",
+        birth: "About 1840–1841 · late-life census estimate",
+        death: "After 5 April 1940 · exact date not yet found",
       },
     ],
     children: [
@@ -345,11 +359,17 @@ export const familyCouples = [
       "Martina",
     ],
     childNote:
-      "Multiple civil records repeat the same parent pair. Several late death indexes report extraordinary ages, so the children’s estimated birth years remain provisional until birth records are found.",
+      "Multiple civil records repeat the same parent pair. The 1935 and 1940 censuses place Aurora with daughter Hilaria or Ilaria and suggest Hilaria was born about 1889–1890; exact birth records are still needed.",
   },
 ];
 
 export const openCases = [
+  {
+    id: "VR-01",
+    title: "Pastora or Cruz?",
+    conflict: "Family memory preserves Pastora as her personal or baptismal name. The civil act and later records use Cruz; the act was registered six weeks after birth by her grandfather.",
+    next: "Find the Gurabo parish baptism after 3 May 1915 and inspect it for Pastora, Cruz Pastora, Pastora Cruz, or Cruz.",
+  },
   {
     id: "VR-02",
     title: "Rafael’s exact birth day",
@@ -365,7 +385,7 @@ export const openCases = [
   {
     id: "VR-04",
     title: "Mauricio Reyes’s death and mother",
-    conflict: "The 1907 marriage and Cruz’s birth name his mother Ana Martínez; a likely 1977 death record says María Martínez, while the family export says he died in 1982.",
+    conflict: "The 1907 marriage and the 1915 civil birth act name his mother Ana Martínez; a likely 1977 death record says María Martínez, while the family export says he died in 1982.",
     next: "Obtain the complete 1977 death certificate, a baptism, and any later identity records before merging the candidate.",
   },
   {
@@ -380,6 +400,12 @@ export const openCases = [
     conflict: "Censuses and a 1933 death suggest María Eugenia Rodríguez was Sotero’s wife, but ages and second surnames vary.",
     next: "Find the couple’s marriage or Juan’s baptism before attaching the Rodríguez-Pacheco parents as confirmed ancestors.",
   },
+  {
+    id: "VR-07",
+    title: "Aurora Pérez’s death and parents",
+    conflict: "She was alive in Río Blanco on 5 April 1940. Her reported ages suggest about 1840–1841, but neither her birth nor death has been found.",
+    next: "Search Naguabo and nearby municipalities after April 1940 under Pérez, Perales, and widow-of-Perales forms.",
+  },
 ];
 
 export const negativeSearches = [
@@ -388,13 +414,14 @@ export const negativeSearches = [
   "No Rafael memorial matching the shared plot was found on Find a Grave; the official cemetery database remains the stronger burial source.",
   "No record yet settles whether Juan Vázquez’s mother used both Carmen and María Eugenia or whether one informant supplied the wrong name.",
   "A 1942 death for Aurora Monserrate Pérez belongs to the widow of Marcelo Pérez, not the wife of Marcelino Perales; it was captured and rejected.",
+  "No convincing Pastora Reyes match appeared in the initial 1915 Gurabo civil search; the parish baptism remains the necessary test.",
 ];
 
 export const nameVariants = [
   {
-    person: "Cruz Reyes Vasquez",
-    forms: "Cruz Reyes · Cruz Vasquez · Cruz Vázquez",
-    conclusion: "Reyes is the documented maiden surname; Vasquez is the married form.",
+    person: "Pastora or Cruz Reyes Vasquez",
+    forms: "Pastora Reyes · Cruz Reyes Díaz · Cruz Reyes · Cruz Vasquez · Cruz Vázquez",
+    conclusion: "Cruz Reyes Díaz is the documented civil form. Pastora is family testimony and may be a personal or baptismal name; the Gurabo baptism has not yet been found.",
   },
   {
     person: "Rafael Vázquez y Perales",
@@ -457,5 +484,13 @@ export const updates = [
   {
     date: "24 Jul 2026",
     text: "Captured Ana Martínez’s death, both pages of Marcelino Perales’s death act, two Braulio marriages, and the Perales–Pérez sibling cluster.",
+  },
+  {
+    date: "24 Jul 2026",
+    text: "Recorded the family’s Pastora account separately from the documented civil name Cruz and made the Gurabo baptism an open case.",
+  },
+  {
+    date: "24 Jul 2026",
+    text: "Found Aurora Pérez in Río Blanco in 1935 and 1940 with daughter Hilaria or Ilaria, establishing that Aurora lived past 5 April 1940.",
   },
 ];

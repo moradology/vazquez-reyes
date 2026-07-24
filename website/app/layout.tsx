@@ -17,7 +17,7 @@ const sans = Inter({
 export const metadata: Metadata = {
   title: "Vazquez–Reyes Family History",
   description:
-    "Cruz Reyes and Rafael Vázquez: from eastern Puerto Rico to East Harlem, New York.",
+    "Pastora Reyes, recorded as Cruz in official documents, and Rafael Vázquez: from eastern Puerto Rico to East Harlem, New York.",
   openGraph: {
     title: "Vazquez–Reyes Family History",
     description:
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Vazquez–Reyes Family History",
     description:
-      "Family records for Cruz Reyes and Rafael Vázquez.",
+      "Family records for Pastora or Cruz Reyes and Rafael Vázquez.",
     images: ["/og.png"],
   },
 };

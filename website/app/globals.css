@@ -750,6 +750,25 @@ a {
   margin: 0;
 }
 
+.record-grid .record-featured {
+  display: grid;
+  gap: clamp(24px, 4vw, 56px);
+  grid-column: 1 / -1;
+  grid-template-columns: minmax(0, 1.35fr) minmax(260px, 0.65fr);
+}
+
+.record-grid .record-featured img {
+  height: clamp(430px, 54vw, 760px);
+  object-position: center 18%;
+}
+
+.record-grid .record-featured figcaption {
+  align-content: start;
+  border-left: 4px solid var(--rust);
+  border-top: 0;
+  padding: 24px 0 0 24px;
+}
+
 .record-grid figure > a {
   background: var(--forest-deep);
   display: block;
@@ -1665,6 +1684,16 @@ footer p {
 
   .principal-source-grid a:nth-child(odd) {
     border-right: none;
+  }
+
+  .record-grid .record-featured {
+    grid-template-columns: 1fr;
+  }
+
+  .record-grid .record-featured figcaption {
+    border-left: 0;
+    border-top: 4px solid var(--rust);
+    padding: 20px 4px 0;
   }
 
   .research-cta {

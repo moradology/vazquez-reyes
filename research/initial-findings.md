@@ -4,19 +4,28 @@ Research dates: 23–24 July 2026
 
 ## Bottom line
 
-The starting couple is confidently identified as **Cruz Reyes Díaz Vasquez**
-and **Rafael Vázquez y Perales**. Their records describe two families from
-eastern Puerto Rico whose paths ran through Naguabo, Gurabo and Humacao before
-Cruz and Rafael married in Manhattan and made their home in East Harlem.
+The starting couple is confidently identified as the woman civilly recorded as
+**Cruz Reyes Díaz Vasquez** and **Rafael Vázquez y Perales**. Family testimony
+preserves **Pastora** as a possible personal or baptismal name for her. Their
+records describe two families from eastern Puerto Rico whose paths ran through
+Naguabo, Gurabo and Humacao before the couple married in Manhattan and made
+their home in East Harlem.
 
 The direct lines now reach several great-great-grandparents of the starting
 couple. Original images have been retained for every central census and civil
 record reviewed. Details about potentially living descendants remain private.
 
-## Cruz Reyes Díaz Vasquez
+## Pastora or Cruz Reyes Díaz Vasquez
 
 - Born **3 May 1915** in barrio Rincón, Gurabo, Puerto Rico. Her contemporary
   civil registration resolves the earlier 1914/1915 conflict.
+- The civil act was registered **17 June 1915**, six weeks after the birth,
+  from a declaration by maternal grandfather **Lope Díaz**. It says the girl
+  was given the name **Cruz**.
+- The family remembers **Pastora** as her real or personal name and connects
+  Cruz with her birth on the Day of the Cross. No record yet proves whether
+  Pastora was baptismal, part of a compound name, or a later family-used name.
+  Her Gurabo baptism is the next decisive record.
 - Parents: **Mauricio Reyes Martínez** and **Carmen Díaz García**.
 - Mauricio and Carmen married **23 October 1907** in Fajardo.
 - The family appears in Ucares, Naguabo, in 1910; Anton Ruiz, Humacao, in 1920;
@@ -86,16 +95,23 @@ This couple were Carlina's parents and Rafael's maternal grandparents.
 - Marcelino was born about **1841** in Naguabo and died there on **13 May
   1891**, age 50. The full two-page death act names his wife Aurora and parents
   **Abal or Abel Perales** and **Vicenta Medina**.
-- Aurora's birth, death, and parents have not yet been found. A 1942 Aurora
-  Monserrate Pérez death was captured and rejected because that woman's spouse
-  was Marcelo Pérez, not Marcelino Perales.
+- Aurora was living in **Río Blanco, Naguabo**, in both the 1935 Puerto Rico
+  social census and the 1940 United States census. In both households she is
+  the widowed mother of **Hilaria or Ilaria Perales**, widow of Rotger.
+- The censuses report Aurora as age **95 in 1935** and **99 in 1940**, suggesting
+  a working birth range around **1840–1841**. These very late-life ages are
+  estimates, not exact birth evidence. Her death occurred after **5 April
+  1940** but has not yet been found.
+- A 1942 Aurora Monserrate Pérez death was captured and rejected because that
+  woman's spouse was Marcelo Pérez, not Marcelino Perales.
 - Civil records support eight known children: **Hilaria, Juan, Catalina,
   Marcolina, Carlina, Leocadio, Francisca, and Martina**.
-- Catalina and Carlina were separate sisters. Very high ages reported in the
-  late death indexes for Hilaria and Francisca remain provisional until birth
-  records are found.
+- Catalina and Carlina were separate sisters. Hilaria's ages of **45 in 1935**
+  and **50 in 1940** are mutually consistent and suggest birth around 1889–1890,
+  rather than the implausible age 115 indexed at her 1980 death. Francisca's
+  late-reported age remains provisional until a birth record is found.
 
-## Cruz and Rafael in New York
+## The couple in New York
 
 - Marriage: **25 October 1941**, Manhattan, certificate **18978**.
 - Rafael lived at **16 East 105th Street** and worked as a button maker.
@@ -105,7 +121,9 @@ This couple were Carlina's parents and Rafael's maternal grandparents.
 
 ## What changed from the family account
 
-- Cruz's original record gives **3 May 1915 in Gurabo**, not Humacao.
+- The civil record gives **3 May 1915 in Gurabo**, not Humacao, and records the
+  name Cruz. The family-reported name Pastora remains an open baptismal or
+  personal-name question.
 - Carmen's full documented name is **Carmen Díaz García**.
 - **Belén Reyes** was Cruz's younger sister.
 - Mauricio's mother was **Ana Martínez** in the records closest to his marriage
@@ -121,7 +139,9 @@ This couple were Carlina's parents and Rafael's maternal grandparents.
 1. Rafael's baptism or a fully legible certified birth record.
 2. Juan Vázquez Rodríguez's Yabucoa baptism or birth record.
 3. The original Manhattan marriage certificate, not only its index.
-4. Cruz's and Rafael's NYC death certificates.
+4. The Gurabo parish baptism for the girl born 3 May 1915, searched under both
+   Pastora and Cruz.
+5. Cruz's and Rafael's NYC death certificates.
 5. Mauricio's baptism and the complete 1977 candidate death record.
 6. Aurora Pérez's birth, marriage, and death records.
 7. Birth or baptism records for the Perales–Pérez and Reyes–Martínez sibling

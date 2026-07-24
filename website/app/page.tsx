@@ -33,8 +33,9 @@ export default function Home() {
           to New York
         </h1>
         <p className="hero-deck">
-          Cruz Reyes was born in Gurabo. Rafael Vázquez grew up in Humacao.
-          They married in Manhattan in 1941 and made their home in East Harlem.
+          Pastora Reyes—recorded as Cruz in official documents—was born in
+          Gurabo. Rafael Vázquez grew up in Humacao. They married in Manhattan
+          in 1941 and made their home in East Harlem.
         </p>
         <div className="hero-rule">
           <span>Naguabo</span>
@@ -44,19 +45,19 @@ export default function Home() {
           <span>New York City</span>
         </div>
         <a className="scroll-cue" href="#family">
-          Cruz and Rafael <span aria-hidden="true">↓</span>
+          Pastora and Rafael <span aria-hidden="true">↓</span>
         </a>
       </section>
 
       <section className="public-foreword">
         <p>
-          Cruz’s parents, Mauricio Reyes Martínez and Carmen Díaz García, lived
-          in Naguabo before Cruz was born in Gurabo on 3 May 1915. By 1920 the
-          family was in Anton Ruiz, Humacao.
+          Pastora’s parents, Mauricio Reyes Martínez and Carmen Díaz García,
+          lived in Naguabo before their daughter was born in Gurabo on 3 May
+          1915. By 1920 the family was in Anton Ruiz, Humacao.
         </p>
         <p>
           Rafael’s family was already in Anton Ruiz when he was a child. He and
-          Cruz married in East Harlem in 1941; the 1950 census records their
+          Pastora married in East Harlem in 1941; the 1950 census records their
           household a few blocks away on East 109th Street.
         </p>
       </section>
@@ -64,10 +65,10 @@ export default function Home() {
       <section className="section family" id="family">
         <div className="section-label">
           <span>01</span>
-          <p>Cruz and Rafael</p>
+          <p>Pastora and Rafael</p>
         </div>
         <div className="family-intro public-family-intro">
-          <h2>Cruz Reyes and Rafael Vázquez</h2>
+          <h2>Pastora “Cruz” Reyes and Rafael Vázquez</h2>
           <p>
             They married on East 105th Street in 1941. Nine years later, the
             census recorded them a few blocks north on East 109th Street.
@@ -80,8 +81,11 @@ export default function Home() {
             data-person-id="person.cruz-reyes-vasquez"
           >
             <div className="person-number">I</div>
-            <p className="given">Cruz Reyes</p>
+            <p className="given">Pastora Reyes</p>
             <h3>Vasquez</h3>
+            <p className="card-note">
+              Family memory: Pastora · Civil records: Cruz Reyes Díaz
+            </p>
             <p className="lifespan">died 1998</p>
             <dl>
               <div>
@@ -168,7 +172,7 @@ export default function Home() {
           <div className="interments">
             <p>
               <strong>Naguabo → Gurabo</strong>
-              <span>Carmen’s family in 1910; Cruz’s birthplace in 1915</span>
+              <span>Carmen’s family in 1910; her daughter’s birthplace in 1915</span>
             </p>
             <p>
               <strong>Humacao</strong>
@@ -190,14 +194,31 @@ export default function Home() {
           <p>In the records</p>
         </div>
         <div className="records-heading">
-          <p className="eyebrow">Original census sheets</p>
+          <p className="eyebrow">Original records</p>
           <h2>The families on paper</h2>
           <p>
-            These are the pages the enumerators filled out. The spelling and
-            ages vary, but the households line up from one census to the next.
+            These are the civil and census pages that carry the family names.
+            Spelling and ages vary, but the people and households line up.
           </p>
         </div>
         <div className="record-grid">
+          <figure className="record-featured">
+            <a href="/records/1915-cruz-civil-birth.jpg" target="_blank">
+              <img
+                src="/records/1915-cruz-civil-birth.jpg"
+                alt="1915 Gurabo civil birth registration naming Cruz Reyes Díaz"
+              />
+            </a>
+            <figcaption>
+              <strong>1915 · Rincón, Gurabo</strong>
+              <span>
+                The civil act records the name Cruz Reyes Díaz. Her grandfather
+                Lope Díaz reported the birth six weeks after she was born.
+                Family memory preserves the name Pastora.
+              </span>
+              <small>Puerto Rico civil registration</small>
+            </figcaption>
+          </figure>
           <figure>
             <a href="/records/1910-reyes-household.jpg" target="_blank">
               <img
@@ -250,7 +271,7 @@ export default function Home() {
               <h3>Fajardo, Naguabo and Gurabo</h3>
               <p>
                 Mauricio and Carmen marry in Fajardo, live with her family in
-                Naguabo, and welcome Cruz in Gurabo.
+                Naguabo, and welcome their daughter in Gurabo.
               </p>
             </div>
           </article>
@@ -271,8 +292,8 @@ export default function Home() {
             <div>
               <h3>East Harlem, Manhattan</h3>
               <p>
-                Rafael and Cruz marry on 25 October at an address on East 105th
-                Street.
+                Rafael and Pastora marry on 25 October at an address on East
+                105th Street.
               </p>
             </div>
           </article>
@@ -282,8 +303,8 @@ export default function Home() {
             <div>
               <h3>East Harlem, Manhattan</h3>
               <p>
-                The census records Cruz and Rafael living together on East
-                109th Street.
+                The census records the couple living together on East 109th
+                Street.
               </p>
             </div>
           </article>
@@ -301,7 +322,7 @@ export default function Home() {
         </div>
         <div className="story-grid">
           <article>
-            <span className="story-when">Cruz’s parents</span>
+            <span className="story-when">Pastora’s parents</span>
             <h3>
               <span data-person-id="person.mauricio-reyes">Mauricio Reyes Martínez</span>
               {" + "}
@@ -395,7 +416,12 @@ export default function Home() {
               Marcelino was a son of{" "}
               <span data-person-id="person.abal-perales">Abal or Abel Perales</span>{" "}
               and <span data-person-id="person.vicenta-medina">Vicenta Medina</span>.
-              This Naguabo family included at least eight known children.
+              This Naguabo family included at least eight known children,
+              including{" "}
+              <span data-person-id="person.hilaria-perales-perez">
+                Hilaria or Ilaria Perales
+              </span>
+              .
             </p>
             <a href="/research#marcelino-aurora">See this family →</a>
           </article>

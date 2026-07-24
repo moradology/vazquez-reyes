@@ -24,7 +24,11 @@ confirmed against records.
 - Working interpretation: Cruz Reyes, married to a Vasquez; the meaning of
   “m. Reyes” needs clarification from records.
 - Name variants to search: Cruz Reyes, Cruz Vasquez, Cruz Vázquez,
-  Cruz Reyes Vasquez, Cruz Reyes Vázquez.
+  Cruz Reyes Vasquez, Cruz Reyes Vázquez, Pastora Reyes, Pastora Cruz Reyes.
+- Later family testimony: the family does not believe Cruz was her only or
+  primary personal name. **Pastora** may have been her personal or baptismal
+  name; Cruz was remembered as connected to her birth on 3 May, the Day of the
+  Cross. This remains an oral-history lead until her baptism is found.
 - Supplied birth: 3 May 1915, Puerto Rico.
 - Supplied death: October 1998, possibly 24 October, place not yet supplied.
 - Supplied burial: Rosedale & Rosehill Cemetery in Linden, New Jersey
@@ -90,8 +94,11 @@ confirmed against records.
 
 - A 1941 Manhattan marriage-license record connects Rafael Vazquez and Cruz
   Reyes and names all four parents.
-- Cruz's original civil registration identifies her as Cruz Reyes Díaz, born
-  3 May 1915 in Gurabo to Mauricio Reyes Martínez and Carmen Díaz García.
+- Cruz's civil registration identifies her as Cruz Reyes Díaz, born 3 May 1915
+  in Gurabo to Mauricio Reyes Martínez and Carmen Díaz García. The act was made
+  on 17 June, six weeks after the birth, from a declaration by maternal
+  grandfather Lope Díaz. It confirms the civil name Cruz but does not settle
+  the family report that she was personally or baptismally named Pastora.
 - The 1910, 1920 and 1930 censuses reconstruct the Reyes-Díaz household from
   Naguabo to Humacao and confirm Belén as Cruz's sister.
 - Mauricio and Carmen's 1907 marriage names their parents as Pedro Reyes and
@@ -113,3 +120,7 @@ confirmed against records.
   and older family death records extend several direct branches into the
   mid-nineteenth century. Conflicting parent names remain flagged rather than
   merged.
+- The 1935 and 1940 censuses place the widowed Aurora Pérez in the Río Blanco,
+  Naguabo household of daughter Hilaria or Ilaria Perales. Aurora was still
+  living on 5 April 1940; the reported ages suggest a provisional birth around
+  1840–1841.

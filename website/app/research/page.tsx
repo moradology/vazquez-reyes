@@ -90,8 +90,9 @@ export default function ResearchPage() {
         </div>
         <p className="method-note">
           The underlying notes are stored as JSONL files in the public
-          repository. Subscription-only images, Social Security numbers, and
-          details about living people are excluded.
+          repository. Social Security numbers, account details, and information
+          about living people are excluded. Selected historical record images
+          are reproduced on the public summary.
         </p>
       </section>
 
@@ -156,19 +157,38 @@ export default function ResearchPage() {
         <div className="research-section-title">
           <span>02</span>
           <div>
-            <p>Date conflicts</p>
-            <h2>Where the records disagree</h2>
+            <p>Conflicts</p>
+            <h2>Where the records and memory differ</h2>
           </div>
         </div>
-        <div className="conflict-table" role="table" aria-label="Date conflicts">
+        <div className="conflict-table" role="table" aria-label="Research conflicts">
           <article role="row">
             <div role="cell">
-              <strong>Cruz’s birth</strong>
+              <strong>Pastora or Cruz?</strong>
+              <Grade kind="open">NAME UNRESOLVED</Grade>
+            </div>
+            <p role="cell">
+              <b>Pastora</b> — the name remembered by the family, possibly a
+              personal or baptismal name.
+            </p>
+            <p role="cell">
+              <b>Cruz Reyes Díaz</b> — the civilly registered name. Her
+              grandfather Lope Díaz made the declaration on 17 June 1915, six
+              weeks after the birth; later records also use Cruz.
+            </p>
+            <p role="cell">
+              <b>Next:</b> locate the Gurabo parish baptism and check whether it
+              says Pastora, Cruz Pastora, Pastora Cruz, or Cruz.
+            </p>
+          </article>
+          <article role="row">
+            <div role="cell">
+              <strong>Her birth date and place</strong>
               <Grade kind="documented">RESOLVED</Grade>
             </div>
             <p role="cell">
-              <b>3 May 1915, Gurabo</b> — the original civil registration names
-              Cruz Reyes Díaz and both parents.
+              <b>3 May 1915, Gurabo</b> — the original civil registration gives
+              the date, place, both parents, and both sets of grandparents.
             </p>
             <p role="cell">
               <b>4 May 1914, Humacao</b> — the later Social Security index is
@@ -302,6 +322,10 @@ export default function ResearchPage() {
         </div>
         <div className="wanted-research-grid">
           <ul>
+            <li>
+              The Gurabo baptism after 3 May 1915, checked under both Pastora
+              and Cruz.
+            </li>
             <li>Rafael’s baptism card, passport, or a clearer birth certificate.</li>
             <li>The 1941 marriage certificate or church announcement.</li>
             <li>Obituary clippings and funeral cards from 1984 and 1998.</li>
@@ -348,9 +372,9 @@ export default function ResearchPage() {
         </div>
         <p className="method-note">
           Some Ancestry links require a subscription and signed-in session.
-          Original downloads are archived privately. Two National Archives
-          census sheets are reproduced on the public summary; subscription-site
-          interface screenshots and civil-record images are not republished.
+          Original downloads and interface captures are archived privately. A
+          readable derivative of the 1915 civil act and two National Archives
+          census sheets are reproduced on the public summary.
         </p>
       </section>
 
