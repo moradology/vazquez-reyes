@@ -45,6 +45,8 @@ test("renders the Vazquez-Reyes family history", async () => {
   );
   assert.match(html, /Waldrop Photographic Co\./);
   assert.match(html, /Bernard Gotfryd/);
+  assert.match(html, /data-archive-image-trigger="home-humacao-image"/);
+  assert.match(html, /data-archive-image-viewer="home-east-harlem-image"/);
   assert.match(html, /The same island across five generations/);
   assert.match(html, /Start with Cruz or Rafael/);
   assert.match(html, /The Reyes–Díaz ancestors/);
@@ -147,6 +149,17 @@ test("renders a filterable two-line family timeline from the research ledger", a
   assert.match(html, /Cruz's move from Puerto Rico to New York is bounded/);
   assert.match(html, /href="\/people\/cruz-reyes-vasquez"/);
   assert.match(html, /data-timeline-event="timeline\.claim\.couple-marriage"/);
+  assert.equal(
+    [...html.matchAll(/\bdata-timeline-place-image=/g)].length,
+    3,
+  );
+  assert.match(html, /punta-santiago-1902\.jpg/);
+  assert.match(html, /Punta Santiago, Humacao/);
+  assert.match(html, /Near Humacao/);
+  assert.match(html, /East Harlem, New York/);
+  assert.match(html, /View full size/);
+  assert.match(html, /United States Fish Commission/);
+  assert.match(html, /LC-DIG-gtfy-07645/);
   assert.ok(
     [...html.matchAll(/\bdata-timeline-event=/g)].length > 50,
     "expected a substantial direct-line chronology",

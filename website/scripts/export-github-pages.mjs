@@ -142,6 +142,7 @@ for (const filename of [
 for (const filename of [
   "humacao-near-1909.jpg",
   "east-harlem-1970s.jpg",
+  "punta-santiago-1902.jpg",
 ]) {
   await readFile(new URL(`places/${filename}`, outRoot));
 }

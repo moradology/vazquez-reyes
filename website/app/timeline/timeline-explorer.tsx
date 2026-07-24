@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useMemo, useState } from "react";
+import { ArchiveImage } from "../archive-image";
 import type {
   TimelineBranch,
   TimelineEvent,
@@ -10,6 +11,70 @@ import type {
 
 type BranchFilter = "all" | Exclude<TimelineBranch, "both">;
 type ScopeFilter = "direct" | "all";
+
+type TimelinePlaceImage = {
+  afterEventId: string;
+  alt: string;
+  citation: string;
+  context: string;
+  dateLabel: string;
+  id: string;
+  place: string;
+  sourceHref: string;
+  sourceLabel: string;
+  src: string;
+};
+
+const timelinePlaceImages: readonly TimelinePlaceImage[] = [
+  {
+    id: "timeline-place-punta-santiago-1902",
+    afterEventId: "geo.event.juan-carlina-marriage-1902",
+    dateLabel: "1902",
+    place: "Punta Santiago, Humacao",
+    context:
+      "Published in the year Juan Vázquez and Carlina Perales married in Humacao. This is a view of the municipio, not their residence.",
+    src: "/places/punta-santiago-1902.jpg",
+    alt: "Fishing boats and fishermen’s homes at Punta Santiago, Humacao, in 1902",
+    citation:
+      "William A. Wilcox, Fishing Boats and Fishermen’s Homes, Punta Santiago, published by the United States Fish Commission in 1902. Public domain.",
+    sourceHref:
+      "https://commons.wikimedia.org/wiki/File:FMIB_38052_Fishing_Boats_and_Fishermen%27s_Homes,_Punta_Santiago.jpeg",
+    sourceLabel: "United States Fish Commission image",
+  },
+  {
+    id: "timeline-place-humacao-1920",
+    afterEventId: "geo.event.reyes-anton-ruiz-1920",
+    dateLabel: "1920",
+    place: "Near Humacao",
+    context:
+      "Both Cruz’s and Rafael’s households were recorded in Antón Ruíz in 1920. This postcard shows the surrounding region, not either family home.",
+    src: "/places/humacao-near-1909.jpg",
+    alt: "A hand-colored postcard showing bull carts, a rural house, and palms near Humacao, Puerto Rico",
+    citation:
+      "Waldrop Photographic Co., Bull Carts near Humacao, first issued 1909; this postcard edition published 1920. Public domain.",
+    sourceHref:
+      "https://commons.wikimedia.org/wiki/File:Puerto_Rico_-_Bull_Carts_near_Humacao.jpg",
+    sourceLabel: "Wikimedia Commons source",
+  },
+  {
+    id: "timeline-place-east-harlem-1970s",
+    afterEventId: "timeline.claim.couple-east-harlem-1950",
+    dateLabel: "1970s",
+    place: "East Harlem, New York",
+    context:
+      "The 1950 census placed Cruz and Rafael on East 109th Street. Gotfryd photographed Spanish Harlem in the decades after their move; the exact block is not identified.",
+    src: "/places/east-harlem-1970s.jpg",
+    alt: "A Spanish Harlem street with brick apartment buildings, shops, pedestrians, and fire escapes in the 1970s",
+    citation:
+      "Bernard Gotfryd, Spanish Harlem, between 1970 and 1980. Library of Congress, LC-DIG-gtfy-07645; no known restrictions on publication.",
+    sourceHref: "https://www.loc.gov/item/2020737186/",
+    sourceLabel: "Library of Congress citation",
+  },
+];
+
+const timelinePlaceImagesByEvent = new Map(
+  timelinePlaceImages.map((image) => [image.afterEventId, image]),
+);
 
 function branchMatches(
   branch: TimelineBranch,
@@ -68,6 +133,50 @@ function TimelineRecord({
           ) : null}
         </div>
       </article>
+    </li>
+  );
+}
+
+function TimelinePlaceRecord({
+  hidden,
+  image,
+}: {
+  hidden: boolean;
+  image: TimelinePlaceImage;
+}) {
+  return (
+    <li
+      className="timeline-place-row"
+      data-timeline-place-image={image.id}
+      hidden={hidden}
+    >
+      <div className="timeline-place-axis">
+        <span aria-hidden="true" />
+        <time>{image.dateLabel}</time>
+      </div>
+      <figure className="timeline-place-figure">
+        <ArchiveImage
+          alt={image.alt}
+          citation={image.citation}
+          id={`${image.id}-viewer`}
+          sourceHref={image.sourceHref}
+          sourceLabel={image.sourceLabel}
+          src={image.src}
+          triggerClassName="timeline-place-image"
+          zoomLabel={`View ${image.place} at full size`}
+        />
+        <figcaption>
+          <p className="timeline-place-label">Place in view</p>
+          <h3>{image.place}</h3>
+          <p>{image.context}</p>
+          <p className="timeline-place-source">
+            {image.citation}{" "}
+            <a href={image.sourceHref} rel="noreferrer" target="_blank">
+              Source ↗
+            </a>
+          </p>
+        </figcaption>
+      </figure>
     </li>
   );
 }
@@ -206,13 +315,23 @@ export function TimelineExplorer({
       </div>
 
       <ol className="family-timeline">
-        {events.map((event) => (
-          <TimelineRecord
-            event={event}
-            hidden={!visibleEventIds.has(event.id)}
-            key={event.id}
-          />
-        ))}
+        {events.flatMap((event) => {
+          const placeImage = timelinePlaceImagesByEvent.get(event.id);
+          return [
+            <TimelineRecord
+              event={event}
+              hidden={!visibleEventIds.has(event.id)}
+              key={event.id}
+            />,
+            placeImage ? (
+              <TimelinePlaceRecord
+                hidden={personId !== "all"}
+                image={placeImage}
+                key={placeImage.id}
+              />
+            ) : null,
+          ];
+        })}
       </ol>
       <p
         className="timeline-empty"

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ArchiveImage } from "./archive-image";
 import { sources } from "./research-data";
 import { FamilyTrees } from "./family-tree";
 import { OriginFrontier } from "./origin-frontier";
@@ -63,18 +64,16 @@ export default function Home() {
 
         <div className="place-intro-grid">
           <figure className="place-figure">
-            <a
-              className="place-image"
-              href="https://commons.wikimedia.org/wiki/File:Puerto_Rico_-_Bull_Carts_near_Humacao.jpg"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="View the source for the Humacao postcard"
-            >
-              <img
-                src="/places/humacao-near-1909.jpg"
-                alt="A hand-colored postcard showing bull carts, a rural house, and palms near Humacao, Puerto Rico"
-              />
-            </a>
+            <ArchiveImage
+              alt="A hand-colored postcard showing bull carts, a rural house, and palms near Humacao, Puerto Rico"
+              citation="Waldrop Photographic Co., Bull Carts near Humacao, first issued 1909; this postcard edition published 1920. Public domain."
+              id="home-humacao-image"
+              sourceHref="https://commons.wikimedia.org/wiki/File:Puerto_Rico_-_Bull_Carts_near_Humacao.jpg"
+              sourceLabel="Wikimedia Commons source"
+              src="/places/humacao-near-1909.jpg"
+              triggerClassName="place-image"
+              zoomLabel="View the Humacao postcard at full size"
+            />
             <figcaption>
               <div>
                 <p className="place-name">Humacao, Puerto Rico</p>
@@ -86,24 +85,29 @@ export default function Home() {
                 generations.
               </p>
               <p className="place-credit">
-                Waldrop Photographic Co. · public-domain postcard
+                Waldrop Photographic Co. · public domain ·{" "}
+                <a
+                  href="https://commons.wikimedia.org/wiki/File:Puerto_Rico_-_Bull_Carts_near_Humacao.jpg"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  Source ↗
+                </a>
               </p>
             </figcaption>
           </figure>
 
           <figure className="place-figure">
-            <a
-              className="place-image"
-              href="https://www.loc.gov/item/2020737186/"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="View the Library of Congress source for the East Harlem photograph"
-            >
-              <img
-                src="/places/east-harlem-1970s.jpg"
-                alt="A Spanish Harlem street with brick apartment buildings, shops, pedestrians, and fire escapes in the 1970s"
-              />
-            </a>
+            <ArchiveImage
+              alt="A Spanish Harlem street with brick apartment buildings, shops, pedestrians, and fire escapes in the 1970s"
+              citation="Bernard Gotfryd, Spanish Harlem, between 1970 and 1980. Library of Congress, LC-DIG-gtfy-07645; no known restrictions on publication."
+              id="home-east-harlem-image"
+              sourceHref="https://www.loc.gov/item/2020737186/"
+              sourceLabel="Library of Congress citation"
+              src="/places/east-harlem-1970s.jpg"
+              triggerClassName="place-image"
+              zoomLabel="View the East Harlem photograph at full size"
+            />
             <figcaption>
               <div>
                 <p className="place-name">East Harlem, New York</p>
@@ -115,7 +119,14 @@ export default function Home() {
                 109th Street.
               </p>
               <p className="place-credit">
-                Bernard Gotfryd · Library of Congress
+                Bernard Gotfryd · Library of Congress ·{" "}
+                <a
+                  href="https://www.loc.gov/item/2020737186/"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  Source ↗
+                </a>
               </p>
             </figcaption>
           </figure>

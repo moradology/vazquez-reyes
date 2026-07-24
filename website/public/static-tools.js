@@ -105,6 +105,9 @@
     ];
     const personSelect = timeline.querySelector("[data-timeline-person-filter]");
     const rows = [...timeline.querySelectorAll("[data-timeline-event]")];
+    const placeRows = [
+      ...timeline.querySelectorAll("[data-timeline-place-image]"),
+    ];
     const count = timeline.querySelector("[data-timeline-count]");
     const empty = timeline.querySelector("[data-timeline-empty]");
     let branch =
@@ -132,6 +135,9 @@
           (selectedPerson === "all" || people.includes(selectedPerson));
         row.hidden = !show;
         if (show) visible += 1;
+      }
+      for (const row of placeRows) {
+        row.hidden = selectedPerson !== "all";
       }
 
       if (personSelect) {
