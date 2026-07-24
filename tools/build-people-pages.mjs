@@ -24,6 +24,10 @@ const publicRecordImages = {
   "source.census.1910.reyes-diaz": "1910-reyes-household.jpg",
   "source.census.1940.reyes-diaz": "1940-reyes-household.jpg",
   "source.census.1920.rafael": "1920-vazquez-household.jpg",
+  "source.familysearch-census.1930.juan-dolores":
+    "1930-juan-dolores-household.jpg",
+  "source.familysearch-census.1940.juan-dolores":
+    "1940-juan-dolores-household.jpg",
   "source.familysearch-baptism.mauricio-reyes-martinez.1882":
     "1882-mauricio-reyes-baptism.jpg",
   "source.census.1910.pedro-ana-julian":

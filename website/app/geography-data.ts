@@ -1157,5 +1157,45 @@ export const geographyEvents = [
     "sequence": 3,
     "map_label": "Humacao · Mar. 1918",
     "map_note": "Ana died there less than three months later."
+  },
+  {
+    "id": "geo.event.juan-dolores-mambiche-1930",
+    "date": "1930-04-11",
+    "event_type": "residence",
+    "person_refs": [
+      "person.juan-vazquez-rodriguez",
+      "person.dolores-rivera"
+    ],
+    "place_ref": "place.mambiche-humacao",
+    "status": "confirmed_consensual_household",
+    "evidence_refs": [
+      "source.familysearch-census.1930.juan-dolores"
+    ],
+    "map_groups": [
+      "juan-carlina"
+    ],
+    "sequence": 7,
+    "map_label": "Mambiche · 1930",
+    "map_note": "Juan and Dolores Rivera headed a household containing children from Juan's earlier marriage and their Vázquez Rivera children."
+  },
+  {
+    "id": "geo.event.juan-dolores-anton-ruiz-1940",
+    "date": "1940-04-25",
+    "event_type": "residence",
+    "person_refs": [
+      "person.juan-vazquez-rodriguez",
+      "person.dolores-rivera"
+    ],
+    "place_ref": "place.anton-ruiz-humacao",
+    "status": "confirmed_consensual_household",
+    "evidence_refs": [
+      "source.familysearch-census.1940.juan-dolores"
+    ],
+    "map_groups": [
+      "juan-carlina"
+    ],
+    "sequence": 8,
+    "map_label": "Antón Ruíz · 1940",
+    "map_note": "The census again recorded Juan and Dolores together, both marked CC, contrato consensual."
   }
 ] as const;

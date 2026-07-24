@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ArchiveImage } from "../archive-image";
 import { SiteHeader } from "../site-header";
 
 export const metadata = {
@@ -30,9 +31,19 @@ function RecordImage({
   caption: string;
   src: string;
 }) {
+  const imageId = `presentation-record-${src.replace(/[^a-z0-9]+/gi, "-")}`;
   return (
     <figure className="slide-record">
-      <img alt={alt} src={`/records/${src}`} />
+      <ArchiveImage
+        alt={alt}
+        citation={caption}
+        id={imageId}
+        sourceHref={`/records/${src}`}
+        sourceLabel="Open image file"
+        src={`/records/${src}`}
+        triggerClassName="slide-record-image"
+        zoomLabel={`View ${caption} at full size`}
+      />
       <figcaption>{caption}</figcaption>
     </figure>
   );
@@ -59,7 +70,7 @@ function SlideNav({ current, total }: { current: number; total: number }) {
   );
 }
 
-const totalSlides = 14;
+const totalSlides = 15;
 
 export default function PresentationPage() {
   return (
@@ -69,37 +80,36 @@ export default function PresentationPage() {
         variant="dark"
         actions={
           <div className="presentation-actions">
-          <span>Family evidence walkthrough</span>
-          <button type="button" data-presentation-fullscreen>
-            Present
-          </button>
+            <span>Vazquez–Reyes family history</span>
+            <button type="button" data-presentation-fullscreen>
+              Present
+            </button>
           </div>
         }
       />
 
       <section className="deck-slide title-slide" data-slide id="slide-01">
         <div className="slide-copy">
-          <p className="slide-kicker">The Vazquez–Reyes family</p>
+          <p className="slide-kicker">Family presentation</p>
           <h1>
-            How the records
+            The Vázquez–Reyes
             <br />
-            <em>connect us</em>
+            <em>family roots</em>
           </h1>
           <p>
-            A record-by-record walk from Cruz and Rafael in New York through
-            eastern Puerto Rico and back to the earliest generation we can
-            currently prove.
+            Cruz Reyes and Rafael Vázquez, their parents and siblings, and the
+            earlier generations documented in New York and Puerto Rico.
           </p>
           <span className="presentation-instruction">
             Use ← → or the space bar to move through the slides
           </span>
         </div>
         <div className="title-route" aria-label="Family route">
-          <span>New York</span>
+          <span>Caguas · Juncos · Yabucoa · Naguabo</span>
           <i />
           <span>Humacao</span>
           <i />
-          <span>Naguabo · Yabucoa · Juncos · Caguas</span>
+          <span>New York</span>
         </div>
         <SlideNav current={1} total={totalSlides} />
       </section>
@@ -142,7 +152,64 @@ export default function PresentationPage() {
         <SlideNav current={2} total={totalSlides} />
       </section>
 
-      <section className="deck-slide record-slide" data-slide id="slide-03">
+      <section className="deck-slide map-context-slide" data-slide id="slide-03">
+        <div className="slide-copy map-context-copy">
+          <p className="slide-kicker">Geographic context</p>
+          <h2>Puerto Rico: relief, routes, and crops.</h2>
+          <p>
+            Most of the Puerto Rico record trail stays within a compact eastern
+            corridor: Caguas, Gurabo, Juncos, Las Piedras, Naguabo, Humacao,
+            and Yabucoa.
+          </p>
+          <p className="slide-caution">
+            These maps describe the region, not land owned or worked by a
+            particular relative. Select either map to inspect it at full size.
+          </p>
+        </div>
+        <div className="slide-map-grid">
+          <figure>
+            <ArchiveImage
+              alt="Topographic map of Puerto Rico published in 1886"
+              citation="G.W. & C.B. Colton & Co., Mapa topográfico de la isla de Puerto Rico, 1886. Library of Congress Geography and Map Division."
+              id="presentation-topographic-map-1886"
+              sourceHref="https://www.loc.gov/item/98687140/"
+              sourceLabel="Library of Congress"
+              src="/maps/puerto-rico-topographic-1886.jpg"
+              triggerClassName="slide-map-image"
+              zoomLabel="View the 1886 Puerto Rico topographic map at full size"
+            />
+            <figcaption>
+              <strong>Relief and routes · 1886</strong>
+              <span>
+                The eastern towns sit between the central heights and the
+                Atlantic-facing coastal plain.
+              </span>
+            </figcaption>
+          </figure>
+          <figure>
+            <ArchiveImage
+              alt="Map of Puerto Rico showing the distribution of crop lands in 1899"
+              citation="Herbert M. Wilson, Map of Puerto Rico showing distribution of crop lands, U.S. Geological Survey Water-Supply Paper 32, plate XIII, 1899. Library of Congress."
+              id="presentation-crop-map-1899"
+              sourceHref="https://www.loc.gov/item/98687184/"
+              sourceLabel="Library of Congress"
+              src="/maps/puerto-rico-crop-lands-1899.jpg"
+              triggerClassName="slide-map-image"
+              zoomLabel="View the 1899 Puerto Rico crop-land map at full size"
+            />
+            <figcaption>
+              <strong>Crops and land cover · 1899</strong>
+              <span>
+                Coffee, sugar cane, grass, and mixed crop zones give texture to
+                the places named in the records.
+              </span>
+            </figcaption>
+          </figure>
+        </div>
+        <SlideNav current={3} total={totalSlides} />
+      </section>
+
+      <section className="deck-slide record-slide" data-slide id="slide-04">
         <div className="slide-copy">
           <p className="slide-kicker">Cruz’s birth</p>
           <h2>The civil act fixes the place, date, and two generations.</h2>
@@ -168,10 +235,10 @@ export default function PresentationPage() {
           caption="Gurabo civil birth registration, 1915"
           src="1915-cruz-civil-birth.jpg"
         />
-        <SlideNav current={3} total={totalSlides} />
+        <SlideNav current={4} total={totalSlides} />
       </section>
 
-      <section className="deck-slide record-slide" data-slide id="slide-04">
+      <section className="deck-slide record-slide" data-slide id="slide-05">
         <div className="slide-copy">
           <p className="slide-kicker">Cruz’s parents</p>
           <h2>Mauricio Reyes Martínez + Carmen Díaz García</h2>
@@ -201,10 +268,10 @@ export default function PresentationPage() {
           caption="The Reyes–Díaz household in Húcares, Naguabo, 1910"
           src="1910-reyes-household.jpg"
         />
-        <SlideNav current={4} total={totalSlides} />
+        <SlideNav current={5} total={totalSlides} />
       </section>
 
-      <section className="deck-slide record-slide" data-slide id="slide-05">
+      <section className="deck-slide record-slide" data-slide id="slide-06">
         <div className="slide-copy">
           <p className="slide-kicker">Mauricio’s parents</p>
           <h2>Pedro Reyes + Ana or Anastasia Martínez</h2>
@@ -231,10 +298,10 @@ export default function PresentationPage() {
           caption="Dulce Nombre de Jesús, Humacao, 1882"
           src="1882-mauricio-reyes-baptism.jpg"
         />
-        <SlideNav current={5} total={totalSlides} />
+        <SlideNav current={6} total={totalSlides} />
       </section>
 
-      <section className="deck-slide record-slide" data-slide id="slide-06">
+      <section className="deck-slide record-slide" data-slide id="slide-07">
         <div className="slide-copy">
           <p className="slide-kicker">Rafael’s childhood</p>
           <h2>Rafael with Juan Vázquez and Carlina Perales</h2>
@@ -260,10 +327,10 @@ export default function PresentationPage() {
           caption="The Vázquez–Perales household in Antón Ruíz, Humacao, 1920"
           src="1920-vazquez-household.jpg"
         />
-        <SlideNav current={6} total={totalSlides} />
+        <SlideNav current={7} total={totalSlides} />
       </section>
 
-      <section className="deck-slide" data-slide id="slide-07">
+      <section className="deck-slide relationship-sequence-slide" data-slide id="slide-08">
         <div className="slide-copy">
           <p className="slide-kicker">Rafael’s parents</p>
           <h2>Juan de la Rosa Vázquez + Carlina Perales Pérez</h2>
@@ -283,25 +350,45 @@ export default function PresentationPage() {
               adding both sets of grandparents.
             </p>
           </div>
+          <div className="evidence-step">
+            <span>Later household</span>
+            <strong>Juan + Dolores Rivera by 1930</strong>
+            <p>
+              After Carlina’s 1922 death, the 1930 and 1940 censuses place
+              Dolores with Juan and mark the couple <i>CC</i>, contrato
+              consensual or common law. No legal marriage record has been
+              found.
+            </p>
+          </div>
           <div className="slide-links">
             <Link href="/people/juan-vazquez-rodriguez">Juan’s profile →</Link>
             <Link href="/people/carlina-perales-perez">Carlina’s profile →</Link>
+            <Link href="/people/dolores-rivera">Dolores’s profile →</Link>
           </div>
         </div>
-        <aside className="connection-ladder">
-          <span>Rafael</span>
-          <i />
-          <strong>Juan + Carlina</strong>
-          <i />
+        <aside className="household-sequence" aria-label="Juan's two documented households">
           <div>
-            <span>Sotero + Carmen</span>
-            <span>Marcelino + Aurora</span>
+            <span>1902</span>
+            <strong>Juan + Carlina Perales</strong>
+            <p>Civil marriage · Rafael’s parents</p>
+          </div>
+          <i aria-hidden="true" />
+          <div>
+            <span>1922</span>
+            <strong>Carlina dies</strong>
+            <p>Humacao civil death record</p>
+          </div>
+          <i aria-hidden="true" />
+          <div>
+            <span>By 1930</span>
+            <strong>Juan + Dolores Rivera</strong>
+            <p>Consensual/common-law household</p>
           </div>
         </aside>
-        <SlideNav current={7} total={totalSlides} />
+        <SlideNav current={8} total={totalSlides} />
       </section>
 
-      <section className="deck-slide record-slide" data-slide id="slide-08">
+      <section className="deck-slide record-slide" data-slide id="slide-09">
         <div className="slide-copy">
           <p className="slide-kicker">The Rodríguez name conflict</p>
           <h2>Carmen and María Eugenia are probably one woman—but not merged.</h2>
@@ -330,10 +417,10 @@ export default function PresentationPage() {
           caption="Sotero, María, Braulio, and Francisco in Antón Ruíz, 1910"
           src="1910-sotero-maria-household.jpg"
         />
-        <SlideNav current={8} total={totalSlides} />
+        <SlideNav current={9} total={totalSlides} />
       </section>
 
-      <section className="deck-slide" data-slide id="slide-09">
+      <section className="deck-slide" data-slide id="slide-10">
         <div className="slide-copy">
           <p className="slide-kicker">Sotero’s parents</p>
           <h2>Atilano Vázquez + Juana Regina Rodríguez</h2>
@@ -368,10 +455,10 @@ export default function PresentationPage() {
           <span>Manuel</span>
           <span>María</span>
         </aside>
-        <SlideNav current={9} total={totalSlides} />
+        <SlideNav current={10} total={totalSlides} />
       </section>
 
-      <section className="deck-slide record-slide" data-slide id="slide-10">
+      <section className="deck-slide record-slide" data-slide id="slide-11">
         <div className="slide-copy">
           <p className="slide-kicker">The 1805 bridge</p>
           <h2>Máximo Basquez + Josefa Ribera</h2>
@@ -398,10 +485,10 @@ export default function PresentationPage() {
           caption="The marriage entry continues across the facing pages"
           src="1805-maximo-josefa-marriage.jpg"
         />
-        <SlideNav current={10} total={totalSlides} />
+        <SlideNav current={11} total={totalSlides} />
       </section>
 
-      <section className="deck-slide record-slide" data-slide id="slide-11">
+      <section className="deck-slide record-slide" data-slide id="slide-12">
         <div className="slide-copy">
           <p className="slide-kicker">Máximo’s Caguas family</p>
           <h2>Four earlier records supply the fuller parent names.</h2>
@@ -439,10 +526,10 @@ export default function PresentationPage() {
           caption="María Magdalena Cortés’s 1794 Caguas burial"
           src="1794-maria-magdalena-cortes-burial.jpg"
         />
-        <SlideNav current={11} total={totalSlides} />
+        <SlideNav current={12} total={totalSlides} />
       </section>
 
-      <section className="deck-slide record-slide" data-slide id="slide-12">
+      <section className="deck-slide record-slide" data-slide id="slide-13">
         <div className="slide-copy">
           <p className="slide-kicker">Josefa’s family</p>
           <h2>Three records establish the Luís de Rivera household.</h2>
@@ -473,10 +560,10 @@ export default function PresentationPage() {
           caption="Simona, daughter of Luís de Rivera and Isidora Rodríguez"
           src="1790-simona-rivera-baptism.jpg"
         />
-        <SlideNav current={12} total={totalSlides} />
+        <SlideNav current={13} total={totalSlides} />
       </section>
 
-      <section className="deck-slide record-slide" data-slide id="slide-13">
+      <section className="deck-slide record-slide" data-slide id="slide-14">
         <div className="slide-copy">
           <p className="slide-kicker">One generation farther</p>
           <h2>Luís de Rivera names Roque and Marciana Delgado.</h2>
@@ -503,10 +590,10 @@ export default function PresentationPage() {
           caption="Luís de Rivera’s 1811 death entry"
           src="1811-luis-de-rivera-death.jpg"
         />
-        <SlideNav current={13} total={totalSlides} />
+        <SlideNav current={14} total={totalSlides} />
       </section>
 
-      <section className="deck-slide frontier-slide" data-slide id="slide-14">
+      <section className="deck-slide frontier-slide" data-slide id="slide-15">
         <div className="slide-copy">
           <p className="slide-kicker">Where the trail stands</p>
           <h2>The earliest proven places are still in Puerto Rico.</h2>
@@ -547,7 +634,7 @@ export default function PresentationPage() {
           <p>Letters and funeral cards</p>
           <p>Stories—with who told them</p>
         </aside>
-        <SlideNav current={14} total={totalSlides} />
+        <SlideNav current={15} total={totalSlides} />
       </section>
     </main>
   );

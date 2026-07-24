@@ -283,9 +283,9 @@ export default function Home() {
           />
           <PuertoRicoMap
             group="juan-carlina"
-            eyebrow="Rafael’s parents · 1878–1930"
-            title="Juan Vázquez and Carlina Perales"
-            summary="From their separate Yabucoa and Naguabo beginnings to a shared life in Humacao."
+            eyebrow="Rafael’s father · 1878–1940"
+            title="Juan Vázquez: Carlina, then Dolores"
+            summary="Marriage and children with Carlina Perales, followed after her death by a documented common-law household with Dolores Rivera."
             storyHref="#story-juan-carlina"
             tone="vazquez"
           />
@@ -566,6 +566,18 @@ export default function Home() {
               Juan was born in Yabucoa on 30 August 1878. He and Carlina
               married in Humacao in 1902; Rafael was one of the seven children
               named in Carlina’s death record.
+            </p>
+            <p className="story-followup">
+              After Carlina died in 1922, the 1930 and 1940 censuses record
+              Juan with{" "}
+              <Link
+                className="person-profile-link"
+                data-person-id="person.dolores-rivera"
+                href="/people/dolores-rivera"
+              >
+                Dolores Rivera
+              </Link>{" "}
+              in a consensual/common-law household.
             </p>
             <a href="/research#source-census-1910">View the sources →</a>
           </article>

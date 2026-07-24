@@ -171,11 +171,16 @@ test("renders a slide-style, evidence-led family presentation", async () => {
   const html = await response.text();
 
   assert.equal(response.status, 200);
-  assert.match(html, /Family evidence walkthrough/);
-  assert.equal([...html.matchAll(/\bdata-slide="true"/g)].length, 14);
-  assert.match(html, /How the records/);
+  assert.match(html, /Vazquez–Reyes family history/);
+  assert.equal([...html.matchAll(/\bdata-slide="true"/g)].length, 15);
+  assert.match(html, /family roots/);
   assert.match(html, /Connection/);
   assert.match(html, /The record/);
+  assert.match(html, /Geographic context/);
+  assert.match(html, /puerto-rico-topographic-1886\.jpg/);
+  assert.match(html, /puerto-rico-crop-lands-1899\.jpg/);
+  assert.match(html, /Juan \+ Dolores Rivera by 1930/);
+  assert.match(html, /Consensual\/common-law household/);
   assert.match(html, /1915-cruz-civil-birth\.jpg/);
   assert.match(html, /1805-maximo-josefa-marriage\.jpg/);
   assert.match(html, /1794-maria-magdalena-cortes-burial\.jpg/);
@@ -251,7 +256,7 @@ test("keeps the geography ledger referential and explicit about precision", asyn
   const sourceIds = new Set(parse(sourcesText).map((source) => source.id));
 
   assert.equal(places.length, 18);
-  assert.equal(events.length, 42);
+  assert.equal(events.length, 44);
   for (const place of places) {
     assert.match(place.precision, /point/);
     assert.match(place.coordinate_source.url, /^https:\/\/tigerweb\.geo\.census\.gov\//);

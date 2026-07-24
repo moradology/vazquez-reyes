@@ -135,6 +135,13 @@ export const timelinePeople: readonly TimelinePerson[] = [
     "directLine": true
   },
   {
+    "id": "person.dolores-rivera",
+    "name": "Dolores Rivera",
+    "slug": "dolores-rivera",
+    "branch": "vazquez",
+    "directLine": false
+  },
+  {
     "id": "person.dolores-vazquez-rodriguez",
     "name": "Dolores Vázquez Rodríguez",
     "slug": "dolores-vazquez-rodriguez",
@@ -2851,6 +2858,28 @@ export const timelineEvents: readonly TimelineEvent[] = [
     }
   },
   {
+    "id": "timeline.dolores-rivera.birth.19061915",
+    "branch": "vazquez",
+    "directLine": false,
+    "dateLabel": "c. 1906–1907",
+    "dateTime": null,
+    "sortValue": 19061915,
+    "eventType": "birth",
+    "eventTypeLabel": "Birth",
+    "certainty": "Approximate or bounded",
+    "title": "Dolores Rivera is born",
+    "description": "The date is estimated from later records; the recorded place is Puerto Rico.",
+    "place": "Puerto Rico",
+    "people": [
+      {
+        "id": "person.dolores-rivera",
+        "name": "Dolores Rivera",
+        "slug": "dolores-rivera"
+      }
+    ],
+    "source": null
+  },
+  {
     "id": "geo.event.mauricio-carmen-marriage-1907",
     "branch": "reyes",
     "directLine": true,
@@ -3538,6 +3567,36 @@ export const timelineEvents: readonly TimelineEvent[] = [
     "source": null
   },
   {
+    "id": "geo.event.juan-dolores-mambiche-1930",
+    "branch": "vazquez",
+    "directLine": true,
+    "dateLabel": "11 April 1930",
+    "dateTime": "1930-04-11",
+    "sortValue": 19300411,
+    "eventType": "residence",
+    "eventTypeLabel": "Household",
+    "certainty": "Documented",
+    "title": "A household is recorded in Mambiche, Humacao",
+    "description": "Juan and Dolores Rivera headed a household containing children from Juan's earlier marriage and their Vázquez Rivera children.",
+    "place": "Mambiche, Humacao",
+    "people": [
+      {
+        "id": "person.juan-vazquez-rodriguez",
+        "name": "Juan de la Rosa Vázquez Rodríguez",
+        "slug": "juan-vazquez-rodriguez"
+      },
+      {
+        "id": "person.dolores-rivera",
+        "name": "Dolores Rivera",
+        "slug": "dolores-rivera"
+      }
+    ],
+    "source": {
+      "title": "1930 census: Juan Vázquez Rodríguez and Dolores Rivera household",
+      "url": "https://www.familysearch.org/ark:/61903/1:1:V6CY-7JP"
+    }
+  },
+  {
     "id": "geo.event.rafael-mambiche-1930",
     "branch": "vazquez",
     "directLine": true,
@@ -3837,6 +3896,36 @@ export const timelineEvents: readonly TimelineEvent[] = [
       }
     ],
     "source": null
+  },
+  {
+    "id": "geo.event.juan-dolores-anton-ruiz-1940",
+    "branch": "vazquez",
+    "directLine": true,
+    "dateLabel": "25 April 1940",
+    "dateTime": "1940-04-25",
+    "sortValue": 19400425,
+    "eventType": "residence",
+    "eventTypeLabel": "Household",
+    "certainty": "Documented",
+    "title": "A household is recorded in Antón Ruíz, Humacao",
+    "description": "The census again recorded Juan and Dolores together, both marked CC, contrato consensual.",
+    "place": "Antón Ruíz, Humacao",
+    "people": [
+      {
+        "id": "person.juan-vazquez-rodriguez",
+        "name": "Juan de la Rosa Vázquez Rodríguez",
+        "slug": "juan-vazquez-rodriguez"
+      },
+      {
+        "id": "person.dolores-rivera",
+        "name": "Dolores Rivera",
+        "slug": "dolores-rivera"
+      }
+    ],
+    "source": {
+      "title": "1940 census: Juan Vázquez and Dolores Rivera household",
+      "url": "https://www.familysearch.org/ark:/61903/1:1:KFVF-LRC"
+    }
   },
   {
     "id": "timeline.claim.couple-marriage",

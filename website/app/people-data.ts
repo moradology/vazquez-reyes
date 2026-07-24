@@ -2236,17 +2236,32 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "mother": "Carmen Rodríguez on 1878 baptism and 1902 marriage; María Eugenia Rodríguez on 1951 death",
         "status": "conflicted"
       },
-      "confidence": "reconstructed_core_direct_baptism_parent_conflict",
+      "marriages": [
+        {
+          "person": "person.carlina-perales-perez",
+          "date": "1902-09-25",
+          "place": "Humacao, Puerto Rico",
+          "status": "confirmed_civil_marriage"
+        }
+      ],
+      "later_partner": {
+        "partner": "person.dolores-rivera",
+        "documented_by": "1930",
+        "place": "Humacao, Puerto Rico",
+        "status": "confirmed_consensual_common_law_household_not_proven_legal_marriage"
+      },
+      "confidence": "reconstructed_core_direct_baptism_parent_conflict_two_households_documented",
       "evidence_refs": [
         "source.familysearch-baptism.juan-de-la-rosa-vazquez.1878",
         "source.pr-civil-marriage.juan-carlina.1530270",
         "source.pr-civil-death.juan.710658",
         "source.census.1910.rafael",
         "source.census.1920.rafael",
-        "source.census.1930.rafael",
+        "source.familysearch-census.1930.juan-dolores",
+        "source.familysearch-census.1940.juan-dolores",
         "source.nyc-marriage.1941.18978"
       ],
-      "notes": "Father of Rafael. The baptism confirms the child, exact birth date, Yabucoa parish, Sotero Vázquez as father, and Carmen Rodríguez as mother; it does not resolve why the 1951 death names María Eugenia. Juan Ramón remains only a family search variant."
+      "notes": "Father of Rafael. Juan legally married Carlina Perales Pérez in 1902. After Carlina's 1922 death, the 1930 and 1940 censuses place Dolores Rivera with Juan and mark both adults CC, contrato consensual or common law; no reviewed record yet proves a legal marriage to Dolores. The baptism confirms Juan's exact birth date, Yabucoa parish, Sotero Vázquez as father, and Carmen Rodríguez as mother; it does not resolve why the 1951 death names María Eugenia."
     },
     "relations": {
       "parentIds": [
@@ -2254,7 +2269,10 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "person.carmen-rodriguez",
         "person.maria-eugenia-rodriguez"
       ],
-      "partnerIds": [],
+      "partnerIds": [
+        "person.carlina-perales-perez",
+        "person.dolores-rivera"
+      ],
       "childIds": [
         "person.rafael-vazquez-perales"
       ],
@@ -2342,6 +2360,26 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "evidence_refs": [
           "source.familysearch-baptism.juan-de-la-rosa-vazquez.1878"
         ]
+      },
+      {
+        "id": "claim.juan-dolores-later-household",
+        "subject": [
+          "person.juan-vazquez-rodriguez",
+          "person.dolores-rivera"
+        ],
+        "predicate": "later_partnership",
+        "object": {
+          "documented_by": "1930",
+          "place": "Humacao, Puerto Rico",
+          "recorded_status": "CC — contrato consensual or common law",
+          "legal_marriage": "not_yet_proven"
+        },
+        "status": "confirmed_two_original_censuses_partnership_type_bounded",
+        "evidence_refs": [
+          "source.familysearch-census.1930.juan-dolores",
+          "source.familysearch-census.1940.juan-dolores"
+        ],
+        "note": "The 1930 and 1940 household sheets independently place Juan and Dolores together and mark both adults CC. This is distinct from Juan's 1902 civil marriage to Carlina Perales Pérez."
       }
     ],
     "sources": [
@@ -2397,14 +2435,32 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "public_image": "1920-vazquez-household.jpg"
       },
       {
-        "id": "source.census.1930.rafael",
-        "type": "federal_census",
-        "title": "1930 United States Federal Census: Rafael Vazquez y Perales household",
-        "repository": "U.S. National Archives via Ancestry.com",
-        "accessed": "2026-07-23",
-        "url": "https://www.ancestry.com/search/collections/6224/records/113399940",
-        "quality": "original_enumeration_derivative_index",
-        "citation": "Mambiche, Humacao, Puerto Rico; page 13B; ED 0012; FHL 2342384."
+        "id": "source.familysearch-census.1930.juan-dolores",
+        "type": "federal_census_with_image",
+        "title": "1930 census: Juan Vázquez Rodríguez and Dolores Rivera household",
+        "repository": "U.S. National Archives via FamilySearch",
+        "accessed": "2026-07-24",
+        "url": "https://www.familysearch.org/ark:/61903/1:1:V6CY-7JP",
+        "image_url": "https://www.familysearch.org/ark:/61903/3:1:33S7-9RZT-5GN",
+        "quality": "original_enumeration_downloaded_and_reviewed",
+        "citation": "Mambiche, Humacao, Puerto Rico; 11 April 1930; sheet 13B, household 215, lines 70-81. Juan Vázquez Rodríguez and Dolores Rivera are followed by Vázquez Rivera and Vázquez Perales children. Both adults use marital-status code CC, contrato consensual.",
+        "image_archive": "research/pulls/images/capture.census.1930.rafael/20260724T031440Z-document-original.jpg",
+        "status": "confirmed_original_reviewed",
+        "public_image": "1930-juan-dolores-household.jpg"
+      },
+      {
+        "id": "source.familysearch-census.1940.juan-dolores",
+        "type": "federal_census_with_image",
+        "title": "1940 census: Juan Vázquez and Dolores Rivera household",
+        "repository": "U.S. National Archives via FamilySearch",
+        "accessed": "2026-07-24",
+        "url": "https://www.familysearch.org/ark:/61903/1:1:KFVF-LRC",
+        "image_url": "https://www.familysearch.org/ark:/61903/3:1:3QS7-L99M-34VL",
+        "quality": "original_enumeration_downloaded_and_reviewed",
+        "citation": "Antón Ruíz, Humacao, Puerto Rico; 25 April 1940; ED 68-7, sheet 23A, household 239, lines 27-36. Juan and Dolores appear with eight children; both adults are marked CC, contrato consensual, indexed by FamilySearch as common law.",
+        "image_archive": "research/pulls/familysearch/1940-juan-dolores/1940-juan-dolores-full.jpg",
+        "status": "confirmed_original_reviewed",
+        "public_image": "1940-juan-dolores-household.jpg"
       },
       {
         "id": "source.nyc-marriage.1941.18978",
@@ -2425,7 +2481,7 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "accessed": "2026-07-24",
         "url": null,
         "quality": "family_compiled_unsourced_lead",
-        "citation": "Twenty profiles. Rafael is linked to Juan Vázquez and Carlina; Juan is linked to a Carmen Rodríguez and a father entered as 'Soltero Vázquez'."
+        "citation": "Twenty profiles. Rafael is linked to Juan Vázquez and Carlina; the export also names Dolores or Lola as Juan's later partner. Juan's parents appear as Carmen Rodríguez and a father entered as 'Soltero Vázquez'."
       },
       {
         "id": "source.familysearch-marriage.sotero-maria-eugenia.1875",
@@ -2586,6 +2642,46 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "sequence": 6,
         "map_label": "Mambiche · 1930",
         "map_note": "Rafael, now an adult, was still in Juan’s household."
+      },
+      {
+        "id": "geo.event.juan-dolores-mambiche-1930",
+        "date": "1930-04-11",
+        "event_type": "residence",
+        "person_refs": [
+          "person.juan-vazquez-rodriguez",
+          "person.dolores-rivera"
+        ],
+        "place_ref": "place.mambiche-humacao",
+        "status": "confirmed_consensual_household",
+        "evidence_refs": [
+          "source.familysearch-census.1930.juan-dolores"
+        ],
+        "map_groups": [
+          "juan-carlina"
+        ],
+        "sequence": 7,
+        "map_label": "Mambiche · 1930",
+        "map_note": "Juan and Dolores Rivera headed a household containing children from Juan's earlier marriage and their Vázquez Rivera children."
+      },
+      {
+        "id": "geo.event.juan-dolores-anton-ruiz-1940",
+        "date": "1940-04-25",
+        "event_type": "residence",
+        "person_refs": [
+          "person.juan-vazquez-rodriguez",
+          "person.dolores-rivera"
+        ],
+        "place_ref": "place.anton-ruiz-humacao",
+        "status": "confirmed_consensual_household",
+        "evidence_refs": [
+          "source.familysearch-census.1940.juan-dolores"
+        ],
+        "map_groups": [
+          "juan-carlina"
+        ],
+        "sequence": 8,
+        "map_label": "Antón Ruíz · 1940",
+        "map_note": "The census again recorded Juan and Dolores together, both marked CC, contrato consensual."
       }
     ]
   },
@@ -2636,6 +2732,12 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "person.marcelino-perales-medina",
         "person.aurora-perez"
       ],
+      "marriage": {
+        "person": "person.juan-vazquez-rodriguez",
+        "date": "1902-09-25",
+        "place": "Humacao, Puerto Rico",
+        "status": "confirmed_civil_marriage"
+      },
       "confidence": "reconstructed_core",
       "evidence_refs": [
         "source.pr-civil-birth.rafael.649515",
@@ -2652,7 +2754,9 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "person.marcelino-perales-medina",
         "person.aurora-perez"
       ],
-      "partnerIds": [],
+      "partnerIds": [
+        "person.juan-vazquez-rodriguez"
+      ],
       "childIds": [
         "person.rafael-vazquez-perales"
       ],
@@ -14878,5 +14982,209 @@ export const peopleProfiles: readonly PersonProfile[] = [
       }
     ],
     "geographyEvents": []
+  },
+  {
+    "id": "person.dolores-rivera",
+    "slug": "dolores-rivera",
+    "displayName": "Dolores Rivera",
+    "sex": "female",
+    "tone": "vazquez",
+    "siteProjection": "public",
+    "record": {
+      "id": "person.dolores-rivera",
+      "display_name": "Dolores Rivera",
+      "sex": "female",
+      "names": [
+        {
+          "name": "Dolores Rivera",
+          "type": "1930_and_1940_census_form",
+          "status": "documented"
+        },
+        {
+          "name": "Dolores (Lola) Vázquez",
+          "type": "family_tree_export",
+          "status": "family_report"
+        }
+      ],
+      "birth": {
+        "estimated": "about 1906-1907",
+        "place": "Puerto Rico",
+        "status": "derived_from_ages_23_in_1930_and_33_in_1940"
+      },
+      "death": {
+        "status": "not_yet_found"
+      },
+      "partner": "person.juan-vazquez-rodriguez",
+      "partnership": {
+        "documented_by": "1930",
+        "place": "Humacao, Puerto Rico",
+        "status": "confirmed_consensual_common_law_household_not_proven_legal_marriage"
+      },
+      "known_children": [
+        {
+          "name": "Genara Vázquez Rivera",
+          "status": "1930_and_1940_censuses"
+        },
+        {
+          "name": "Isabel Vázquez Rivera",
+          "status": "1930_and_1940_censuses"
+        },
+        {
+          "name": "Ramón Juan Vázquez Rivera",
+          "status": "1930_and_1940_censuses"
+        },
+        {
+          "name": "Sergio Vázquez Rivera",
+          "status": "1940_census"
+        },
+        {
+          "name": "Glady Vázquez Rivera",
+          "status": "1940_census"
+        },
+        {
+          "name": "Félix Vázquez Rivera",
+          "status": "1940_census"
+        },
+        {
+          "name": "Carmen Vázquez Rivera",
+          "status": "1940_census"
+        },
+        {
+          "name": "Eliú Vázquez Rivera",
+          "status": "1940_census"
+        }
+      ],
+      "confidence": "partner_and_household_confirmed_two_original_censuses_life_dates_open",
+      "evidence_refs": [
+        "source.family-echo.vazquez.2026-07-23",
+        "source.familysearch-census.1930.juan-dolores",
+        "source.familysearch-census.1940.juan-dolores"
+      ],
+      "notes": "The supplied family tree names Dolores or Lola as Juan's partner. The 1930 and 1940 censuses independently confirm Dolores Rivera in Juan's household and mark both adults CC, contrato consensual or common law. No reviewed marriage record yet establishes a legal marriage."
+    },
+    "relations": {
+      "parentIds": [],
+      "partnerIds": [
+        "person.juan-vazquez-rodriguez"
+      ],
+      "childIds": [],
+      "siblingIds": [],
+      "relatedIds": [],
+      "namedChildren": [
+        "Genara Vázquez Rivera",
+        "Isabel Vázquez Rivera",
+        "Ramón Juan Vázquez Rivera",
+        "Sergio Vázquez Rivera",
+        "Glady Vázquez Rivera",
+        "Félix Vázquez Rivera",
+        "Carmen Vázquez Rivera",
+        "Eliú Vázquez Rivera"
+      ],
+      "namedSiblings": []
+    },
+    "claims": [
+      {
+        "id": "claim.juan-dolores-later-household",
+        "subject": [
+          "person.juan-vazquez-rodriguez",
+          "person.dolores-rivera"
+        ],
+        "predicate": "later_partnership",
+        "object": {
+          "documented_by": "1930",
+          "place": "Humacao, Puerto Rico",
+          "recorded_status": "CC — contrato consensual or common law",
+          "legal_marriage": "not_yet_proven"
+        },
+        "status": "confirmed_two_original_censuses_partnership_type_bounded",
+        "evidence_refs": [
+          "source.familysearch-census.1930.juan-dolores",
+          "source.familysearch-census.1940.juan-dolores"
+        ],
+        "note": "The 1930 and 1940 household sheets independently place Juan and Dolores together and mark both adults CC. This is distinct from Juan's 1902 civil marriage to Carlina Perales Pérez."
+      }
+    ],
+    "sources": [
+      {
+        "id": "source.family-echo.vazquez.2026-07-23",
+        "type": "family_tree_export",
+        "title": "Family Echo Vázquez family tree export supplied by researcher",
+        "repository": "Private project source material",
+        "accessed": "2026-07-24",
+        "url": null,
+        "quality": "family_compiled_unsourced_lead",
+        "citation": "Twenty profiles. Rafael is linked to Juan Vázquez and Carlina; the export also names Dolores or Lola as Juan's later partner. Juan's parents appear as Carmen Rodríguez and a father entered as 'Soltero Vázquez'."
+      },
+      {
+        "id": "source.familysearch-census.1930.juan-dolores",
+        "type": "federal_census_with_image",
+        "title": "1930 census: Juan Vázquez Rodríguez and Dolores Rivera household",
+        "repository": "U.S. National Archives via FamilySearch",
+        "accessed": "2026-07-24",
+        "url": "https://www.familysearch.org/ark:/61903/1:1:V6CY-7JP",
+        "image_url": "https://www.familysearch.org/ark:/61903/3:1:33S7-9RZT-5GN",
+        "quality": "original_enumeration_downloaded_and_reviewed",
+        "citation": "Mambiche, Humacao, Puerto Rico; 11 April 1930; sheet 13B, household 215, lines 70-81. Juan Vázquez Rodríguez and Dolores Rivera are followed by Vázquez Rivera and Vázquez Perales children. Both adults use marital-status code CC, contrato consensual.",
+        "image_archive": "research/pulls/images/capture.census.1930.rafael/20260724T031440Z-document-original.jpg",
+        "status": "confirmed_original_reviewed",
+        "public_image": "1930-juan-dolores-household.jpg"
+      },
+      {
+        "id": "source.familysearch-census.1940.juan-dolores",
+        "type": "federal_census_with_image",
+        "title": "1940 census: Juan Vázquez and Dolores Rivera household",
+        "repository": "U.S. National Archives via FamilySearch",
+        "accessed": "2026-07-24",
+        "url": "https://www.familysearch.org/ark:/61903/1:1:KFVF-LRC",
+        "image_url": "https://www.familysearch.org/ark:/61903/3:1:3QS7-L99M-34VL",
+        "quality": "original_enumeration_downloaded_and_reviewed",
+        "citation": "Antón Ruíz, Humacao, Puerto Rico; 25 April 1940; ED 68-7, sheet 23A, household 239, lines 27-36. Juan and Dolores appear with eight children; both adults are marked CC, contrato consensual, indexed by FamilySearch as common law.",
+        "image_archive": "research/pulls/familysearch/1940-juan-dolores/1940-juan-dolores-full.jpg",
+        "status": "confirmed_original_reviewed",
+        "public_image": "1940-juan-dolores-household.jpg"
+      }
+    ],
+    "geographyEvents": [
+      {
+        "id": "geo.event.juan-dolores-mambiche-1930",
+        "date": "1930-04-11",
+        "event_type": "residence",
+        "person_refs": [
+          "person.juan-vazquez-rodriguez",
+          "person.dolores-rivera"
+        ],
+        "place_ref": "place.mambiche-humacao",
+        "status": "confirmed_consensual_household",
+        "evidence_refs": [
+          "source.familysearch-census.1930.juan-dolores"
+        ],
+        "map_groups": [
+          "juan-carlina"
+        ],
+        "sequence": 7,
+        "map_label": "Mambiche · 1930",
+        "map_note": "Juan and Dolores Rivera headed a household containing children from Juan's earlier marriage and their Vázquez Rivera children."
+      },
+      {
+        "id": "geo.event.juan-dolores-anton-ruiz-1940",
+        "date": "1940-04-25",
+        "event_type": "residence",
+        "person_refs": [
+          "person.juan-vazquez-rodriguez",
+          "person.dolores-rivera"
+        ],
+        "place_ref": "place.anton-ruiz-humacao",
+        "status": "confirmed_consensual_household",
+        "evidence_refs": [
+          "source.familysearch-census.1940.juan-dolores"
+        ],
+        "map_groups": [
+          "juan-carlina"
+        ],
+        "sequence": 8,
+        "map_label": "Antón Ruíz · 1940",
+        "map_note": "The census again recorded Juan and Dolores together, both marked CC, contrato consensual."
+      }
+    ]
   }
 ];

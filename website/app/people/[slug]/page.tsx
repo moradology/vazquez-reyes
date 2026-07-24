@@ -9,6 +9,7 @@ import {
   PuertoRicoMapDefinitions,
   PuertoRicoPersonMap,
 } from "../../puerto-rico-map";
+import { ArchiveImage } from "../../archive-image";
 import { SiteHeader } from "../../site-header";
 
 const profilesById = new Map(
@@ -303,13 +304,16 @@ export default async function PersonPage({
           <div className="record-gallery-grid">
             {imageSources.map((source) => (
               <figure key={source.id}>
-                <a href={source.url} rel="noreferrer" target="_blank">
-                  <img
-                    alt={source.title}
-                    loading="lazy"
-                    src={`/records/${source.public_image}`}
-                  />
-                </a>
+                <ArchiveImage
+                  alt={source.title}
+                  citation={source.citation ?? source.title}
+                  id={`person-record-${profile.slug}-${source.id.replace(/[^a-z0-9]+/gi, "-")}`}
+                  sourceHref={source.url ?? "/research"}
+                  sourceLabel="Source record"
+                  src={`/records/${source.public_image}`}
+                  triggerClassName="person-record-image"
+                  zoomLabel={`View ${source.title} at full size`}
+                />
                 <figcaption>
                   <strong>{source.title}</strong>
                   {source.citation && <span>{source.citation}</span>}
