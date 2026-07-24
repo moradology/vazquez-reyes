@@ -478,8 +478,9 @@ export default function Home() {
               <span data-person-id="person.maria-balbina-vazquez-rodriguez">
                 María Balbina
               </span>
-              . Juana died before María Balbina’s marriage in 1870. Atilano
-              lived in Yabucoa until his death in 1898. He was a son of{" "}
+              , born in 1850. Juana died before María Balbina’s marriage in
+              1870. Atilano lived in Yabucoa until his death in 1898. He was a
+              son of{" "}
               <span data-person-id="person.maximo-vazquez">
                 Máximo Vázquez
               </span>{" "}

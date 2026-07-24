@@ -210,6 +210,13 @@ export const sources = [
     grade: "Original parish register",
   },
   {
+    id: "maria-balbina-baptism",
+    label: "1850 baptism: María Balbina Vázquez Rodríguez",
+    detail: "Born 31 May and baptized 25 June 1850 in Yabucoa, daughter of Atilano Vázquez and Juana Rodríguez. The record names maternal grandparents Andrés Rodríguez and Francisca Díaz; the automated paternal-grandparent line is garbled and remains flagged for a careful reread.",
+    href: "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSM8-SQ8Z-G",
+    grade: "Original parish register · paternal line transcription caution",
+  },
+  {
     id: "maria-balbina-marriage",
     label: "1870 marriage: María Balbina Vázquez and Desiderio Rodríguez",
     detail: "Married 10 February 1870 in Yabucoa. María Balbina’s mother, Juana Rodríguez, is called deceased. A later child record uses Delgado for Desiderio, leaving a surname conflict.",
@@ -589,10 +596,10 @@ export const familyCouples = [
       "Sotero Vázquez",
       "Francisca — died 14 Feb 1876, age 22",
       "María Isidra — born 15 May 1863",
-      "María Balbina — married Desiderio Rodríguez on 10 Feb 1870",
+      "María Balbina — born 31 May 1850; married Desiderio Rodríguez on 10 Feb 1870",
     ],
     childNote:
-      "Juana was alive for María Isidra’s 1863 baptism and called deceased in María Balbina’s 1870 marriage. A grandson’s 1892 birth act mistakenly calls Atilano deceased; his matching parish and civil deaths establish 1898. María Balbina’s marriage calls the groom Desiderio Rodríguez, while an 1884 child baptism calls him Desiderio Delgado.",
+      "Juana was alive for María Isidra’s 1863 baptism and called deceased in María Balbina’s 1870 marriage. The available Yabucoa burial item begins in 1871, after Juana’s death window. A grandson’s 1892 birth act mistakenly calls Atilano deceased; his matching parish and civil deaths establish 1898. María Balbina’s marriage calls the groom Desiderio Rodríguez, while an 1884 child baptism calls him Desiderio Delgado.",
   },
   {
     id: "atilano-juana-paula",
@@ -758,8 +765,8 @@ export const openCases = [
   {
     id: "VR-09",
     title: "Sotero’s baptism and age",
-    conflict: "Sotero’s 1916 death reports age 56, implying about 1860, but that makes his 1875 marriage unusually early. His parents married in 1849 and had documented daughters around 1853–54 and in 1863, but Sotero’s own baptism is still missing. An 1861 Sotero Lebrón page was captured and rejected.",
-    next: "Manually inspect Yabucoa baptisms from 1849 through 1861 using Atilano, Juana Regina, Máximo, Josefa Rivera, Andrés, and Francisca Díaz as anchors.",
+    conflict: "Sotero’s 1916 death reports age 56, implying about 1860, but that makes his 1875 marriage unusually early. Every image in the Yabucoa item containing baptisms through 1856 was reviewed without a defensible match. An 1861 Sotero Lebrón and an 1898 Sotero whose parents were Tomás and Rosa were captured and rejected.",
+    next: "Inspect the remaining 1857–1860 Yabucoa baptism coverage using Atilano, Juana Regina, Máximo, Josefa Rivera, Andrés, and Francisca Díaz as anchors.",
   },
   {
     id: "VR-10",
@@ -770,8 +777,8 @@ export const openCases = [
   {
     id: "VR-11",
     title: "Juana Regina’s exact death",
-    conflict: "She was alive on 9 July 1863 and called deceased on 10 February 1870. Atilano was her widower by December 1875, but no death entry has been isolated.",
-    next: "Inspect Yabucoa burials from July 1863 through February 1870 under Juana, Regina, Rodríguez, wife of Atilano, and daughter of Andrés and Francisca Díaz.",
+    conflict: "She was alive on 9 July 1863 and called deceased on 10 February 1870. Focused searches found no death, and the reviewed Yabucoa burial item starts in July 1871, after the entire target window.",
+    next: "Find an earlier Yabucoa burial book, duplicate parish register, diocesan copy, or archive inventory covering July 1863 through February 1870.",
   },
   {
     id: "VR-12",
@@ -792,8 +799,11 @@ export const negativeSearches = [
   "The New York State death index returned no match, but that index does not reliably cover New York City and cannot settle the question.",
   "No Rafael memorial matching the shared plot was found on Find a Grave; the official cemetery database remains the stronger burial source.",
   "Sotero’s death, several child records, and María Eugenia’s own 1933 death strongly favor Carmen, Eugenia, and María Eugenia as one woman’s name variants, but no original yet states that bridge explicitly.",
-  "Sotero’s baptism was not found in the reviewed full-text Yabucoa film. An apparent 1865 candidate was rejected as OCR or name noise; the baptism books still need manual inspection.",
+  "All 146 images in the Yabucoa item containing baptisms through 1856 were manually reviewed without a defensible Sotero match. FamilySearch mislabels the item as 1927–1957; a screenshot preserves the discrepancy. The remaining priority is 1857–1860.",
   "An 1861 baptism of Sotero Lebrón is not Sotero Vázquez Rodríguez. The full page is retained as a rejected candidate.",
+  "An 1898 death for a roughly 50-year-old Sotero Vázquez belongs to a son of Tomás and Rosa, not the son of Atilano and Juana. The image is retained as a rejected same-name candidate.",
+  "An 1897 burial indexed as male Eladia Vázquez and attached to a Juan Vázquez tree profile has conflicting name, age, and identity signals. It is retained but not added as a confirmed child.",
+  "No Juana Regina death appeared in focused exact-name searches. The reviewed Yabucoa burial item begins in July 1871, after her 1863–1870 death window, so this remains a coverage gap.",
   "Atilano’s baptism was not found in either the full-text index or a direct scan of the expected 1828–1829 Juncos pages. A damaged 1846 page naming Don Atilano del Rosario Vázquez as a godfather is retained only as a candidate naming clue.",
   "A 1942 death for Aurora Monserrate Pérez belongs to the widow of Marcelo Pérez, not the wife of Marcelino Perales; it was captured and rejected.",
   "No Pastora Reyes entry appears in the reviewed Gurabo baptism-index pages. A Cruz Reyes entry points to book 15, folio 18 verso, but the damaged register image does not expose the child or parents.",
@@ -965,6 +975,10 @@ export const updates = [
   },
   {
     date: "24 Jul 2026",
+    text: "Found María Balbina’s own 1850 baptism, establishing birth on 31 May and baptism on 25 June in Yabucoa.",
+  },
+  {
+    date: "24 Jul 2026",
     text: "Found Atilano and Juana’s 1849 marriage and Atilano and Juana Paula’s 1875 marriage, establishing Atilano’s Juncos birthplace and Juana Regina’s death before 1870.",
   },
   {
@@ -990,6 +1004,10 @@ export const updates = [
   {
     date: "24 Jul 2026",
     text: "Added Mariana, born in 1896, as a second documented daughter of Atilano and Juana Paula de Santiago.",
+  },
+  {
+    date: "24 Jul 2026",
+    text: "Completed an image-by-image scan of the mislabeled Yabucoa baptism item through 1856; no defensible Sotero baptism appeared, and every same-name candidate image was retained.",
   },
   {
     date: "24 Jul 2026",

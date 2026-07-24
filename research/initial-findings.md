@@ -155,10 +155,11 @@ marriage and death, and a wider Vázquez sibling cluster.
 - Their daughter **María Isidra Vázquez Rodríguez** was born **15 May 1863**
   and baptized **9 July 1863**. Another daughter, **Francisca**, died unmarried
   in Yabucoa on **14 February 1876**, age 22.
-- Daughter **María Balbina** married Desiderio Rodríguez on **10 February
-  1870**. That record calls Juana deceased, bounding Juana's death after
-  9 July 1863 and before the marriage. A later child record calls María
-  Balbina's partner Desiderio Delgado, an unresolved surname or identity
+- Daughter **María Balbina Vázquez Rodríguez** was born **31 May 1850** and
+  baptized **25 June 1850** in Yabucoa. She married Desiderio Rodríguez on
+  **10 February 1870**. That record calls Juana deceased, bounding Juana's
+  death after 9 July 1863 and before the marriage. A later child record calls
+  María Balbina's partner Desiderio Delgado, an unresolved surname or identity
   conflict.
 - Atilano, identified as a native of **Juncos** and widower of Juana Regina,
   married **Juana Paula de Santiago** on **18 December 1875**. Juana Paula was
@@ -170,10 +171,17 @@ marriage and death, and a wider Vázquez sibling cluster.
 - The reviewed children of Atilano and Juana Regina now include **Sotero,
   Francisca, María Isidra, and María Balbina**. María Eugenia, born in 1879,
   was Atilano's daughter with Juana Paula.
-- Exact-parent records also confirm Atilano's siblings **Manuel, Miguel de los
-  Santos, María, and Andrea Vázquez**. **Juan de Dios** and **Tomasa** are
-  retained as probable candidates, not confirmed siblings; Tomasa's reported
-  age conflicts with Juan de Dios's documented infancy.
+- All 146 local images in the mislabeled Yabucoa baptism item containing
+  nineteenth-century entries through 1856 were manually reviewed. No defensible
+  baptism for Sotero appeared. The remaining priority is the 1857–1860 gap.
+- Focused searches did not isolate Juana Regina's death, and the reviewed
+  Yabucoa burial item begins in July 1871, after her entire 1863–1870 death
+  window. That is a collection-coverage gap, not a negative proof.
+- Exact-parent records also confirm Atilano's siblings **Juana Jacinta,
+  Andrea, Juan de Dios, Miguel de los Santos, Francisco Solano, Manuel, and
+  María Vázquez**. **Tomasa** remains a probable candidate rather than a
+  confirmed sibling because her reported age conflicts with Juan de Dios's
+  documented infancy.
 
 ### Marcelino Perales y Medina and Aurora Pérez
 
@@ -236,9 +244,10 @@ This couple were Carlina's parents and Rafael's maternal grandparents.
 ## Highest-value next records
 
 1. Rafael's baptism or a fully legible certified birth record.
-2. Sotero's baptism; Atilano's Juncos baptism; Juana Regina's baptism and exact
-   death; Máximo and Josefa's marriage; and birth or baptism records for Juana,
-   Mauricio, and Braulio.
+2. Sotero's baptism in the remaining 1857–1860 Yabucoa coverage; Atilano's
+   Juncos baptism; Juana Regina's baptism and an earlier burial volume or
+   duplicate covering her exact death; Máximo and Josefa's marriage; and birth
+   or baptism records for Juana, Mauricio, and Braulio.
 3. The original Manhattan marriage certificate, not only its index.
 4. A duplicate register, sacramental certificate, alternate filming, or parish
    archive lookup for Gurabo book 15, folio 18 verso, sufficient to identify

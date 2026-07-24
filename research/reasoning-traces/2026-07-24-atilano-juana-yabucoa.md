@@ -28,13 +28,23 @@ The reviewed originals establish at least four children of Atilano and Juana:
 - **Francisca Vázquez**, unmarried, who died in Yabucoa on 14 February 1876
   at a reported age of 22;
 - **María Isidra Vázquez Rodríguez**, born 15 May and baptized 9 July 1863;
-- **María Balbina Vázquez**, whose own marriage on 10 February 1870 and her
-  daughter's 1884 baptism both identify Atilano and Juana as her parents.
+- **María Balbina Vázquez Rodríguez**, born 31 May and baptized 25 June 1850
+  in Yabucoa. Her baptism, own marriage on 10 February 1870, and daughter's
+  1884 baptism all identify Atilano and Juana as her parents.
+
+María Balbina's baptism also names maternal grandparents Andrés Rodríguez and
+Francisca Díaz and godparents Juan Martínez and Francisca Díaz. The automated
+transcript garbles the paternal-grandparent line. The original and attached
+index align with Máximo Vázquez and Josefa Rivera, but that line is retained
+with a cautious-reading note rather than treated as clean transcription.
 
 Juana's exact death has not been found. María Isidra's 1863 baptism records
 Juana as her mother. María Balbina's marriage on 10 February 1870 calls Juana
 deceased. The defensible window is therefore after 9 July 1863 and before
-10 February 1870.
+10 February 1870. Focused searches under Juana, Regina, and Rodríguez did not
+produce a death. The reviewed Yabucoa burial item begins in July 1871, after
+the entire target window, so this is a **collection-coverage gap**, not a claim
+that no burial entry existed.
 
 María Balbina's marriage writes her groom as **Desiderio Rodríguez**. The 1884
 baptism of apparent daughter María Epifania writes the father as **Desiderio
@@ -136,6 +146,26 @@ describe their adult children's later homes. The defensible core is:
 - Atilano was explicitly called a native of Juncos;
 - the adult sibling cluster later appears across eastern Puerto Rico.
 
+## Sotero baptism search audit
+
+FamilySearch labels DGS 007769018 item 3 as part of “Baptism Records
+1805–1814, 1927–1957,” but the pages themselves contain nineteenth-century
+entries extending through 1856. All 146 local images in that item were reviewed
+for Sotero and for the anchor names Atilano, Juana Regina, Máximo, Josefa
+Rivera, Andrés, and Francisca Díaz. No defensible baptism for Sotero Vázquez
+Rodríguez appeared.
+
+Two same-name records were retained without being forced into the family:
+
+- an 1861 baptism belongs to **Sotero Lebrón**, not Sotero Vázquez;
+- an 1898 death belongs to a roughly 50-year-old **Sotero Vázquez whose parents
+  were Tomás and Rosa**, not Atilano and Juana.
+
+An 1897 Yabucoa burial is internally contradictory: it is indexed as a male
+**Eladia Vázquez**, child of Atilano and Juana, while an attached tree links
+Juan Vázquez y Rodríguez and the reported age does not fit the surrounding
+chronology. The image is preserved, but no new child is added from it.
+
 ## Open work
 
 1. Inspect original Juncos index pages and neighboring San Lorenzo baptisms
@@ -143,8 +173,10 @@ describe their adult children's later homes. The defensible core is:
    manually scanned without a hit.
 2. Find Máximo's baptism in Caguas and Josefa's baptism in Humacao.
 3. Find Máximo and Josefa's marriage before 16 August 1806.
-4. Inspect Yabucoa deaths from July 1863 through February 1870 for Juana.
-5. Continue the manual Sotero baptism search from 1849 through 1861.
+4. Locate an earlier Yabucoa burial book, duplicate, or diocesan copy covering
+   July 1863 through February 1870 for Juana; the reviewed item starts in 1871.
+5. Continue the manual Sotero baptism search in the remaining 1857–1860
+   coverage. Item 3 through 1856 has now been fully scanned.
 6. Resolve Tomasa's age and identity.
 7. Resolve Desiderio Rodríguez versus Desiderio Delgado.
 
