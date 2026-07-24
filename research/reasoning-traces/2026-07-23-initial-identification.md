@@ -33,8 +33,8 @@ This combination is substantially stronger than a name-and-date match:
   Reyes in married-name form. The Belén clue is not discarded, but no reviewed
   record yet explains it.
 - Rafael's mother is strongly identified as **Carlina Perales y Pérez**. The
-  family memory “Cathelina/Catalina, Pérez or López” likely preserved Pérez and
-  an approximate first name. No reviewed source supports López.
+  researcher later clarified that “Cathelina/Catalina” was a simple
+  misremembering, not an alternate name. No reviewed source supports López.
 - Rafael's father is repeatedly **Juan Vázquez y Rodríguez**. “Juan Ramón
   Vázquez” remains a family-supplied variant until an original vital record
   confirms or rejects the middle name.

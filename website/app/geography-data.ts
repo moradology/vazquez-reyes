@@ -289,6 +289,24 @@ export const geographyPlaces = [
       "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Places_CouSub_ConCity_SubMCD/MapServer/1",
       "accessed": "2026-07-24"
     }
+  },
+  {
+    "id": "place.las-piedras",
+    "label": "Las Piedras",
+    "kind": "municipio",
+    "parent_ref": "place.puerto-rico",
+    "geoid": "72085",
+    "coordinates": [
+      -65.8693153,
+      18.1875309
+    ],
+    "precision": "municipio_polygon_centroid_point",
+    "coordinate_source": {
+      "dataset": "U.S. Census Bureau TIGERweb ACS 2025",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/State_County/MapServer/11",
+      "accessed": "2026-07-24",
+      "method": "Centroid calculated from the returned municipio polygon; representative area point, not a church or household coordinate."
+    }
   }
 ] as const;
 
@@ -332,6 +350,48 @@ export const geographyEvents = [
     "map_note": "The same baptism calls Josefa a native of Humacao."
   },
   {
+    "id": "geo.event.simona-baptism-1790",
+    "date": "1790-03-07",
+    "event_type": "baptism",
+    "person_refs": [
+      "person.simona-ribera",
+      "person.luis-father-of-josefa-rivera",
+      "person.isidora-rodriguez"
+    ],
+    "place_ref": "place.las-piedras",
+    "status": "confirmed",
+    "evidence_refs": [
+      "source.familysearch-baptism.simona-rivera.1790"
+    ],
+    "map_groups": [
+      "early-vazquez"
+    ],
+    "sequence": 3,
+    "map_label": "Las Piedras · 1790",
+    "map_note": "Simona, sister of Josefa, was baptized here to Luís de Rivera and Isidora Rodríguez."
+  },
+  {
+    "id": "geo.event.ysabel-baptism-1792",
+    "date": "1792-10-22",
+    "event_type": "baptism",
+    "person_refs": [
+      "person.ysabel-daughter-of-luis-rivera",
+      "person.luis-father-of-josefa-rivera",
+      "person.isidora-rodriguez"
+    ],
+    "place_ref": "place.las-piedras",
+    "status": "confirmed",
+    "evidence_refs": [
+      "source.familysearch-baptism.ysabel-rivera.1792"
+    ],
+    "map_groups": [
+      "early-vazquez"
+    ],
+    "sequence": 4,
+    "map_label": "Las Piedras · 1792",
+    "map_note": "Another daughter, Ysabel, was baptized in the same parish."
+  },
+  {
     "id": "geo.event.maximo-josefa-marriage-1805",
     "date": "1805-12-31",
     "event_type": "marriage",
@@ -347,7 +407,7 @@ export const geographyEvents = [
     "map_groups": [
       "early-vazquez"
     ],
-    "sequence": 3,
+    "sequence": 5,
     "map_label": "Humacao · 1805",
     "map_note": "Máximo Basquez and Josefa Ribera married in Humacao."
   },
@@ -368,7 +428,7 @@ export const geographyEvents = [
     "map_groups": [
       "early-vazquez"
     ],
-    "sequence": 4,
+    "sequence": 6,
     "map_label": "Humacao · 1806",
     "map_note": "Their daughter Juana Jacinta was born in Humacao."
   },
@@ -388,7 +448,7 @@ export const geographyEvents = [
     "map_groups": [
       "early-vazquez"
     ],
-    "sequence": 5,
+    "sequence": 7,
     "map_label": "Juncos · 1819",
     "map_note": "Their son Juan de Dios was baptized in Juncos."
   },
@@ -408,7 +468,7 @@ export const geographyEvents = [
     "map_groups": [
       "early-vazquez"
     ],
-    "sequence": 6,
+    "sequence": 8,
     "map_label": "San Lorenzo · 1824",
     "map_note": "Their son Miguel de los Santos was baptized in San Lorenzo."
   },

@@ -14,7 +14,10 @@ unless they helped test a parent pair or a place.
 The 31 December 1805 Humacao marriage names **Máximo Basquez** and **Josefa
 Ribera**. It calls Máximo the legitimate son of **Francisco** and **María
 Cortez**, and Josefa the legitimate daughter of **Luís** and **Isidora
-Rodríguez**. The entry gives no surname for Francisco or Luís.
+Rodríguez**. The entry gives no surname for Francisco or Luís. A later review
+of earlier Las Piedras baptisms supplies the full father form **Luís de
+Rivera** for the same parent pair; that surname must be cited to the baptisms,
+not quoted as though it appeared in Josefa's marriage.
 
 Their son Juan de Dios's 1819 Juncos baptism supplies the couple's native
 places:
@@ -27,7 +30,7 @@ the parish's colonial racial and legal classification: pardo and free. It does
 not identify an African-born ancestor, a particular African place, a precise
 ethnic mixture, or a modern ancestry percentage.
 
-## A likely sister for Josefa
+## Josefa's sister Simona
 
 The complete Humacao marriage transcription identifies another 1805 bride with
 the same parents. The original image was opened and downloaded:
@@ -37,14 +40,44 @@ the same parents. The original image was opened and downloaded:
   Rodríguez**.
 
 The exact parent pair in the same parish and year, eight months before Josefa's
-marriage, makes Simona a strong likely sister. Because the fathers' surnames are
-not written in either original, the Rivera surname supplied for Luís in the
-volunteer spreadsheet is treated as normalization and is not promoted.
+marriage, made Simona a strong likely sister at this stage of the review.
 
 The full frame, adjacent frame, both natural entry crops, and a reading-order
 composite are retained in:
 
 `research/pulls/images/capture.familysearch-marriage.simona-rivera-leon-garrafa.1805/`
+
+### Las Piedras baptism sweep
+
+The early Las Piedras baptism item was then reviewed image by image through
+item image 155, using the original images and the full-text layer as a finding
+aid. This produced two positive household records:
+
+- **Simona** was born **8 February 1790** and baptized **7 March 1790**. The
+  entry calls her the legitimate daughter of **Luís de Rivera** and **Isidora
+  Rodríguez** and names **Matías Berríos** and **Marta Berríos** as
+  godparents.
+- **Ysabel** was born **5 October 1792** and baptized **22 October 1792**.
+  Her name appears only in the margin; the body again names **Luís de Rivera**
+  and **Isidora Rodríguez**, with **Marta Berríos** as godmother.
+
+Simona's baptism and marriage and Josefa's marriage independently repeat the
+same parent pair. The combined originals support treating Simona as Josefa's
+sister, not merely a same-name candidate. Ysabel is another verified child of
+the parent pair, although no surname is assigned to her because her baptism
+does not write one.
+
+Two nearby records were deliberately kept separate:
+
+- a Simona born 19 April 1787 was the daughter of **Isidora Montañez**, with
+  no father stated; the exact 1790 match rules her out as the later bride;
+- a faded 1791 baptism for Lorenza names an **Isidora Rodríguez** but appears
+  to name a father other than Luís de Rivera. It remains an unmerged
+  same-name-mother candidate.
+
+Josefa's baptism was not found in the bounded review. The 227-image item was
+not reviewed to its final frame, so this is not presented as a complete
+negative search.
 
 ## Early-book checks
 
@@ -69,17 +102,17 @@ The Las Piedras guide identifies early baptism coverage from 1778 and marriage
 coverage from 1787. The complete 1787–1816 marriage transcription contains no
 Luís and Isidora Rodríguez marriage. This is one negative search, not proof
 that they married elsewhere: an earlier, missing, differently cataloged, or
-neighboring register may hold the event.
-
-The eastern-parish jurisdiction and coverage make Las Piedras the sensible next
-place to test for Humacao-family baptisms and marriages before 1793.
+neighboring register may hold the event. The positive Simona and Ysabel
+baptisms establish that the family did use Las Piedras before Humacao's
+surviving baptism series begins.
 
 ## Current boundary
 
 The verified direct-line boundary is:
 
 - Máximo Vázquez — native of Caguas; parents Francisco and María Cortez;
-- Josefa Rivera — native of Humacao; parents Luís and Isidora Rodríguez;
+- Josefa Rivera — native of Humacao; parents Luís de Rivera and Isidora
+  Rodríguez;
 - no reviewed record gives a birthplace for those four parents;
 - no reviewed record names a direct ancestor born in Africa, Europe, or another
   Caribbean island.
@@ -89,8 +122,9 @@ family-history claims.
 
 ## Next focused records
 
-1. Search Las Piedras baptisms for Josefa and Simona under Luís and Isidora
-   Rodríguez, using the 1778–1799 range rather than a surname-only search.
+1. Finish the unreviewed remainder of the Las Piedras baptism item as a bounded
+   check for Josefa and additional children, then seek duplicate or neighboring
+   books rather than treating the first item as complete.
 2. Search Las Piedras and neighboring eastern-parish marriage material earlier
    than the reviewed 1787–1816 transcription for Luís and Isidora.
 3. Search Caguas duplicate, diocesan, or neighboring-parish material that

@@ -54,8 +54,9 @@ confirmed against records.
   (family called it “Rosehill”).
 - Spouse: Cruz Reyes Vasquez.
 - Supplied father: Juan Ramón Vázquez.
-- Supplied mother: Cathelina/Catalina, with Pérez or López as competing surname
-  clues.
+- Initial intake misremembered Rafael's mother as Cathelina/Catalina, with
+  Pérez or López as competing surname clues. The researcher later corrected
+  the given name to **Carlina**; Cathelina is not an alternate name to pursue.
 
 ## Known places
 
@@ -88,8 +89,8 @@ confirmed against records.
 3. Locate their marriage record and establish Cruz's recorded maiden name.
 4. Identify each person's Puerto Rico municipality of birth or baptism.
 5. Test the supplied parent names against Puerto Rico civil and church records.
-6. Resolve Carmen's Belén clue and Catalina's competing Pérez/López surname
-   clues without merging candidates prematurely.
+6. Resolve Carmen's Belén clue. The separate Cathelina/Pérez/López intake clue
+   was later corrected to Carlina and is no longer an alternate-name question.
 
 ## Documentary findings
 

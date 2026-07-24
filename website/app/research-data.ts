@@ -289,16 +289,30 @@ export const sources = [
   {
     id: "maximo-josefa-marriage",
     label: "1805 marriage: Máximo Basquez and Josefa Ribera",
-    detail: "Married 31 December 1805 in Humacao. The register names Máximo’s parents as Francisco and María Cortez, and Josefa’s as Luís and Isidora Rodríguez. It does not state surnames for Francisco or Luís.",
+    detail: "Married 31 December 1805 in Humacao. The register names Máximo’s parents as Francisco and María Cortez, and Josefa’s as Luís and Isidora Rodríguez. It omits both fathers’ surnames; Simona’s earlier baptism supplies the full Luís de Rivera form.",
     href: "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSFS-RT8X?view=fullText&keywords=M%C3%A1ximo+Basquez%2CJosefa%2CRibera&lang=en",
     grade: "Original parish register",
   },
   {
     id: "simona-rivera-marriage",
     label: "1805 marriage: Simona Ribera and León Garrafa",
-    detail: "Married 24 April 1805 in Humacao. The original calls Simona the legitimate daughter of Luís and Isidora Rodríguez—the same parent pair named for Josefa eight months later. Simona is retained as Josefa’s likely sister.",
+    detail: "Married 24 April 1805 in Humacao. The original calls Simona the legitimate daughter of Luís and Isidora Rodríguez—the same parent pair named for Josefa eight months later. Her 1790 baptism now independently confirms the family.",
     href: "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSFS-R9MT-Q?cat=248892&i=1122&lang=en",
-    grade: "Original parish register · likely sibling",
+    grade: "Original parish register · verified sibling cluster",
+  },
+  {
+    id: "simona-rivera-baptism",
+    label: "1790 baptism: Simona, daughter of Luís de Rivera and Isidora Rodríguez",
+    detail: "Born 8 February and baptized 7 March 1790 in Las Piedras. The original names Matías and Marta Berríos as godparents and supplies the father’s de Rivera surname, which both 1805 daughter marriages omit.",
+    href: "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSV2-M9TT-W?view=fullText&lang=en&groupId=M99W-VYV",
+    grade: "Original parish register · image captured",
+  },
+  {
+    id: "ysabel-rivera-baptism",
+    label: "1792 baptism: Ysabel, daughter of Luís de Rivera and Isidora Rodríguez",
+    detail: "Born 5 October and baptized 22 October 1792 in Las Piedras. Marta Berríos was godmother. Ysabel’s name appears only in the margin, so the automated transcript omits it.",
+    href: "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSV2-MS9L-N?view=fullText&lang=en&groupId=M99W-VYV",
+    grade: "Original parish register · image captured",
   },
   {
     id: "humacao-marriage-transcription-1793-1808",
@@ -791,7 +805,7 @@ export const familyCouples = [
       "Tomasa — probable daughter; died in 1889, age conflict unresolved",
     ],
     childNote:
-      "Their original marriage records Máximo as Basquez and Josefa as Ribera. It names his parents as Francisco and María Cortez and hers as Luís and Isidora Rodríguez; neither father’s surname is written. Eight children are supported by original records naming the exact parent pair. Tomasa alone remains provisional because her reported age conflicts with Juan de Dios’s known birth.",
+      "Their original marriage records Máximo as Basquez and Josefa as Ribera. It names his parents as Francisco and María Cortez and hers as Luís and Isidora Rodríguez; neither father’s surname is written there. Simona’s 1790 baptism supplies the full Luís de Rivera form. Eight children are supported by original records naming the exact parent pair. Tomasa alone remains provisional because her reported age conflicts with Juan de Dios’s known birth.",
   },
   {
     id: "francisco-maria-cortez",
@@ -818,12 +832,12 @@ export const familyCouples = [
   {
     id: "luis-isidora",
     branch: "Josefa’s parents",
-    couple: "Luís [surname not stated] + Isidora Rodríguez",
+    couple: "Luís de Rivera + Isidora Rodríguez",
     status: "documented" as const,
-    connection: "Named as Josefa’s parents in her 31 December 1805 marriage",
+    connection: "Named across two Las Piedras baptisms and the 1805 marriages of daughters Simona and Josefa",
     people: [
       {
-        name: "Luís [surname not stated]",
+        name: "Luís de Rivera",
         birth: "Not yet found",
         death: "Not yet found",
       },
@@ -835,10 +849,11 @@ export const familyCouples = [
     ],
     children: [
       "Josefa Ribera or Rivera",
-      "Simona Ribera — likely sister; married 24 Apr 1805 in Humacao",
+      "Simona Ribera — born 8 Feb 1790; baptized 7 Mar in Las Piedras",
+      "Ysabel — born 5 Oct 1792; baptized 22 Oct in Las Piedras",
     ],
     childNote:
-      "Separate original 1805 marriages call both Josefa and Simona legitimate daughters of Luís and Isidora Rodríguez. The same uncommon parent pair in the same parish and year makes them likely sisters. Neither original gives Luís a surname, so Rivera or Ribera is not assigned to him.",
+      "Simona’s 1790 baptism and Ysabel’s 1792 baptism write Luís de Rivera and Isidora Rodríguez. Simona’s and Josefa’s separate 1805 marriages repeat the parent pair while omitting Luís’s surname. The originals establish Simona as Josefa’s sister and Ysabel as another child of the household; Josefa’s own baptism remains unfound.",
   },
   {
     id: "andres-francisca",
@@ -971,8 +986,8 @@ export const openCases = [
   {
     id: "VR-13",
     title: "Máximo and Josefa before 1805",
-    conflict: "Their 31 December 1805 marriage, both parent pairs, and native places are confirmed. The 1819 baptism classifies them as pardos libres. Simona Ribera’s April 1805 marriage names the same parents as Josefa and makes her a likely sister. No reviewed record names an overseas-born ancestor.",
-    next: "Search pre-1793 Humacao-family baptisms and marriages under Las Piedras, then Caguas books outside the surviving 1785–1788 baptism window. Keep Africa, Europe, and other Caribbean islands unassigned until a record names a person and place.",
+    conflict: "Their 31 December 1805 marriage, both parent pairs, and native places are confirmed. The 1819 baptism classifies them as pardos libres. Las Piedras baptisms now verify Simona and Ysabel as children of Luís de Rivera and Isidora Rodríguez, but Josefa’s baptism and all four earlier parents’ birthplaces remain unfound. No reviewed record names an overseas-born direct ancestor.",
+    next: "Finish the bounded Las Piedras sibling check and seek duplicate or earlier eastern-parish books for Josefa and the Luís–Isidora marriage. Search Caguas gaps for Máximo. Keep Africa, Europe, and other Caribbean islands unassigned until a record names a direct ancestor and place.",
   },
   {
     id: "VR-14",
@@ -1011,7 +1026,9 @@ export const negativeSearches = [
   "Focused searches for Pedro Reyes and Juana Villafañe’s marriage and for Juana’s death did not produce a defensible exact match; two children’s original death records nevertheless confirm the parent pair.",
   "The complete Caguas 1785–1788 baptism transcription contains no Máximo matching parents Francisco and María Cortez. Major gaps before and after that book prevent a negative conclusion about Caguas as his birthplace.",
   "The complete Caguas 1774–1804 marriage transcription contains no defensible Francisco and María Cortez parent-couple match.",
-  "The Las Piedras 1787–1816 marriage transcription contains no Luís and Isidora Rodríguez marriage. Josefa’s and likely sister Simona’s 1805 Humacao marriages nevertheless confirm the parent pair.",
+  "The Las Piedras 1787–1816 marriage transcription contains no Luís and Isidora Rodríguez marriage. Original 1790 and 1792 baptisms nevertheless verify children Simona and Ysabel under Luís de Rivera and Isidora Rodríguez.",
+  "A 1787 Simona born to Isidora Montañez is not the woman who married León Garrafa; the exact 1790 baptism resolves that same-name candidate.",
+  "A faded 1791 Lorenza baptism names an Isidora Rodríguez with a different apparent father. It is preserved but not merged with the target household.",
 ];
 
 export const nameVariants = [
@@ -1032,8 +1049,8 @@ export const nameVariants = [
   },
   {
     person: "Carlina Perales y Pérez",
-    forms: "Carlina Peralez · Carlina Perales de Vazquez · Cathelina/Catalina Pérez or López",
-    conclusion: "The 1902 marriage and 1922 death confirm Carlina Perales Pérez; neither supports López.",
+    forms: "Carlina Perales Pérez · Carlina Peralez · Carlina Perales de Vazquez",
+    conclusion: "The 1902 marriage and 1922 death confirm Carlina Perales Pérez.",
   },
   {
     person: "Juan de la Rosa Vázquez Rodríguez",
@@ -1244,6 +1261,10 @@ export const updates = [
   },
   {
     date: "24 Jul 2026",
-    text: "Completed a focused origin sweep: confirmed Caguas and Humacao as Máximo and Josefa’s stated native places, retained the pardos libres classification without turning it into an overseas birthplace, checked the early Caguas and Las Piedras transcriptions, and captured the original marriage of Josefa’s likely sister Simona.",
+    text: "Completed a focused origin sweep: confirmed Caguas and Humacao as Máximo and Josefa’s stated native places, retained the pardos libres classification without turning it into an overseas birthplace, and checked the early Caguas and Las Piedras material.",
+  },
+  {
+    date: "24 Jul 2026",
+    text: "Found Simona’s 1790 and Ysabel’s 1792 Las Piedras baptisms. Both name Luís de Rivera and Isidora Rodríguez; Simona’s baptism and marriage now verify her as Josefa’s sister and supply Luís’s documented surname.",
   },
 ];

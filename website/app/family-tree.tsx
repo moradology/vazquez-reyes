@@ -183,9 +183,10 @@ export function FamilyTrees() {
             Two parent pairs, kept separate
           </h3>
           <p>
-            The register names each parent pair separately. It does not supply
-            surnames for Francisco or Luís. The origin view below shows exactly
-            where the record trail ends.
+            The marriage register names each pair separately and leaves both
+            fathers’ surnames unstated. Earlier baptisms now supply Luís de
+            Rivera’s full name; Francisco’s surname and all four birthplaces
+            remain open.
           </p>
         </div>
         <div className="tree-continuation-grid">
@@ -200,7 +201,7 @@ export function FamilyTrees() {
           <a href="#origins">
             <span>Josefa’s parents</span>
             <strong>
-              Luís [surname not stated]
+              Luís de Rivera
               <br />
               Isidora Rodríguez
             </strong>

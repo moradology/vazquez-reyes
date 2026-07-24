@@ -221,14 +221,25 @@ marriage and death, and a wider Vázquez sibling cluster.
 - The marriage identifies Máximo as the legitimate son of **Francisco** and
   **María Cortez**, and Josefa as the legitimate daughter of **Luís** and
   **Isidora Rodríguez**.
-- The register does not write surnames for Francisco or Luís. Vázquez and
-  Rivera are therefore not inferred for the two fathers.
+- The marriage register does not write surnames for Francisco or Luís.
+  Francisco therefore remains without an assigned surname. Two earlier Las
+  Piedras child baptisms now supply **Luís de Rivera** as a documented full
+  form for Josefa's father; the surname is cited to those baptisms rather than
+  retroactively quoted as part of the marriage.
+- **Simona** was born **8 February 1790** and baptized **7 March 1790** in Las
+  Piedras, the legitimate daughter of Luís de Rivera and Isidora Rodríguez.
+  Her 1805 marriage repeats the parent pair, establishing her as Josefa's
+  sister. Godparents were Matías and Marta Berríos.
+- **Ysabel** was born **5 October 1792** and baptized **22 October 1792** in
+  Las Piedras to the same parents, with Marta Berríos as godmother. Her name is
+  written in the margin and omitted by the automated transcript.
 - The marriage occurred about seven and a half months before their first
   currently documented child, **Juana Jacinta**, was born in Humacao on **16
   August 1806**.
 - Juan de Dios's 1819 baptism identifies Máximo as a native of **Caguas** and
   Josefa as a native of **Humacao**. Their own baptisms and deaths remain the
-  next direct targets.
+  next direct targets; Josefa's baptism did not appear in the bounded Las
+  Piedras review through item image 155.
 - The captured evidence includes the complete original register image, a
   natural reading-order crop joining the bottom-left entry to its top-right
   continuation, an enhanced legibility crop, and capture metadata.
@@ -288,7 +299,8 @@ This couple were Carlina's parents and Rafael's maternal grandparents.
   in 1849. Juana died between 1863 and 1870; Atilano died in 1898. The line
   extends again to **Máximo Vázquez and Josefa Rivera**, who married in 1805.
   Their marriage names the prior generation as **Francisco and María Cortez**,
-  and **Luís and Isidora Rodríguez**, while leaving both fathers' surnames
+  and **Luís and Isidora Rodríguez**. Earlier baptisms for Josefa's sisters
+  document the full form **Luís de Rivera**; Francisco's surname remains
   unstated. Juana Regina's parents were **Andrés [Rodríguez] and Francisca
   Díaz**.
 - Rafael's civil-registration index supports **February 1906**, not October;

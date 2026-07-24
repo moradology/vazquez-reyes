@@ -23,12 +23,13 @@ export function OriginFrontier() {
 
       <div className="origin-heading">
         <p className="eyebrow">The current edge of the family tree</p>
-        <h2>The records stop in Caguas and Humacao—for now.</h2>
+        <h2>The earliest stated origins are Caguas and Humacao.</h2>
         <p>
           The first people whose native places are stated in the records are
           Máximo Vázquez of Caguas and Josefa Rivera of Humacao. Their 1805
-          marriage names both parent pairs, but gives those parents no
-          birthplace.
+          marriage names both parent pairs. Earlier baptisms of Josefa’s
+          sisters supply her father’s full name, but still give neither parent
+          a birthplace.
         </p>
       </div>
 
@@ -67,14 +68,17 @@ export function OriginFrontier() {
             <span>Josefa’s parents</span>
             <strong>
               <b data-person-id="person.luis-father-of-josefa-rivera">
-                Luís [surname not stated]
+                Luís de Rivera
               </b>
               <br />
               <b data-person-id="person.isidora-rodriguez">
                 Isidora Rodríguez
               </b>
             </strong>
-            <small>Birthplaces and dates not yet found</small>
+            <small>
+              Daughters Simona and Ysabel were baptized at Las Piedras in 1790
+              and 1792; the parents’ own dates and birthplaces remain unknown
+            </small>
           </header>
           <div className="origin-descent" aria-hidden="true">
             <i />

@@ -152,13 +152,13 @@ export default function ResearchPage() {
               </div>
               <div>
                 <dt>Parents</dt>
-                <dd>Luís [surname not stated] and Isidora Rodríguez</dd>
+                <dd>Luís de Rivera and Isidora Rodríguez</dd>
               </div>
               <div>
-                <dt>Likely sister</dt>
+                <dt>Sibling household</dt>
                 <dd>
-                  Simona Ribera, who married in Humacao in April 1805 with the
-                  same parent pair
+                  Simona, born in 1790, is verified through her baptism and
+                  marriage. Ysabel’s 1792 baptism names the same parents.
                 </dd>
               </div>
             </dl>
@@ -192,9 +192,9 @@ export default function ResearchPage() {
               <span>Humacao / Las Piedras</span>
               <strong>Josefa’s earlier records</strong>
               <p>
-                Humacao’s surviving baptism and marriage books begin in 1793.
-                Earlier Humacao baptisms and marriages may have been recorded
-                under Las Piedras.
+                Las Piedras baptisms identify her sister Simona in 1790 and
+                another child, Ysabel, in 1792. Both name Luís de Rivera and
+                Isidora Rodríguez. Josefa’s own baptism remains unfound.
               </p>
             </article>
             <article>
@@ -367,6 +367,54 @@ export default function ResearchPage() {
                     </small>
                   </figcaption>
                 </figure>
+              )}
+              {family.id === "luis-isidora" && (
+                <>
+                  <figure className="family-record">
+                    <a
+                      href="/records/1790-simona-rivera-baptism.jpg"
+                      target="_blank"
+                    >
+                      <img
+                        src="/records/1790-simona-rivera-baptism.jpg"
+                        alt="1790 Las Piedras baptism entry for Simona, daughter of Luís de Rivera and Isidora Rodríguez"
+                      />
+                    </a>
+                    <figcaption>
+                      <strong>1790 · Simona’s baptism</strong>
+                      <span>
+                        Born 8 February and baptized 7 March, Simona was the
+                        legitimate daughter of Luís de Rivera and Isidora
+                        Rodríguez. Her later marriage repeats the parent pair.
+                      </span>
+                      <small>
+                        Las Piedras · DGS 008126787 · item 1 · image 39
+                      </small>
+                    </figcaption>
+                  </figure>
+                  <figure className="family-record">
+                    <a
+                      href="/records/1792-ysabel-rivera-baptism.jpg"
+                      target="_blank"
+                    >
+                      <img
+                        src="/records/1792-ysabel-rivera-baptism.jpg"
+                        alt="1792 Las Piedras baptism entry for Ysabel, daughter of Luís de Rivera and Isidora Rodríguez"
+                      />
+                    </a>
+                    <figcaption>
+                      <strong>1792 · Ysabel’s baptism</strong>
+                      <span>
+                        Born 5 October and baptized 22 October, Ysabel appears
+                        in the margin; the body again names Luís de Rivera and
+                        Isidora Rodríguez.
+                      </span>
+                      <small>
+                        Las Piedras · DGS 008126787 · item 1 · image 92
+                      </small>
+                    </figcaption>
+                  </figure>
+                </>
               )}
             </article>
           ))}
