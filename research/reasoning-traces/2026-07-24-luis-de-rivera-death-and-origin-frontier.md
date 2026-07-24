@@ -149,6 +149,36 @@ A separate July 1829 Humacao page returned by computer full-text search for
 Roque was reviewed and produced no defensible family record. Its full image is
 also retained as a rejected OCR lead.
 
+## Coamo death and marriage register check
+
+The FamilySearch catalog establishes the useful coverage boundary:
+
+- DGS 008135755 includes Coamo deaths and burials from 1773 through 1815 and
+  marriages beginning in 1798; and
+- DGS 007765060 includes marriages from 1778 through 1798.
+
+The surviving marriage run therefore begins after the baptisms of Bernarda in
+1763 and the candidate Luís in 1765. It cannot contain a marriage that occurred
+before those children.
+
+A focused full-text screen of the 1773–1815 death and burial material found:
+
+- three Emerenciana hits, all for Emerenciana de Soto;
+- two Marciana hits, for Marciana Rangel and Marciana Díaz; and
+- sixteen Roque hits, none joining Roque Rivera to either Emerenciana Tirado or
+  Marciana Delgado.
+
+The most tempting early Roque result was checked against the original. It is a
+November 1780 burial of **Blas Martín**, husband of María Malavé. The highlighted
+“Roque” is a computer misreading inside a burial phrase, not a person's name.
+The page image is archived as a rejected OCR lead.
+
+Exact-phrase searches in DGS 007765060 also did not produce a marriage joining
+Luís Rivera and Isidora Rodríguez. These are bounded machine-assisted checks,
+not proof that the records never existed or that the people were absent.
+Full line-by-line review, unfilmed registers, duplicate books, and diocesan
+copies remain open.
+
 ## Negative coverage
 
 The Las Piedras baptism review was completed through all 227 images in the
