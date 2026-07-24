@@ -8,6 +8,7 @@
   const fullscreenButton = document.querySelector(
     "[data-presentation-fullscreen]",
   );
+  const timeline = document.querySelector(".timeline-explorer");
 
   function applyScale(value) {
     if (value === "0") delete root.dataset.scale;
@@ -93,5 +94,87 @@
           : "Present full screen";
       }
     });
+  }
+
+  if (timeline) {
+    const branchButtons = [
+      ...timeline.querySelectorAll("[data-timeline-branch-filter]"),
+    ];
+    const scopeButtons = [
+      ...timeline.querySelectorAll("[data-timeline-scope-filter]"),
+    ];
+    const personSelect = timeline.querySelector("[data-timeline-person-filter]");
+    const rows = [...timeline.querySelectorAll("[data-timeline-event]")];
+    const count = timeline.querySelector("[data-timeline-count]");
+    const empty = timeline.querySelector("[data-timeline-empty]");
+    let branch =
+      branchButtons.find(
+        (button) => button.getAttribute("aria-pressed") === "true",
+      )?.dataset.timelineBranchFilter ?? "all";
+    let scope =
+      scopeButtons.find(
+        (button) => button.getAttribute("aria-pressed") === "true",
+      )?.dataset.timelineScopeFilter ?? "direct";
+
+    function branchMatches(value) {
+      return branch === "all" || value === "both" || value === branch;
+    }
+
+    function applyTimelineFilters() {
+      const selectedPerson = personSelect?.value ?? "all";
+      let visible = 0;
+
+      for (const row of rows) {
+        const people = (row.dataset.timelinePeople ?? "").split(" ");
+        const show =
+          branchMatches(row.dataset.timelineBranch) &&
+          (scope === "all" || row.dataset.timelineDirect === "true") &&
+          (selectedPerson === "all" || people.includes(selectedPerson));
+        row.hidden = !show;
+        if (show) visible += 1;
+      }
+
+      if (personSelect) {
+        for (const option of [...personSelect.options].slice(1)) {
+          option.hidden =
+            !branchMatches(option.dataset.timelineBranch) ||
+            (scope === "direct" &&
+              option.dataset.timelineDirect !== "true");
+        }
+        if (personSelect.selectedOptions[0]?.hidden) {
+          personSelect.value = "all";
+          applyTimelineFilters();
+          return;
+        }
+      }
+
+      if (count) {
+        count.innerHTML = `Showing <strong>${visible}</strong> ${
+          visible === 1 ? "event" : "events"
+        }, earliest to latest`;
+      }
+      if (empty) empty.hidden = visible > 0;
+    }
+
+    for (const button of branchButtons) {
+      button.addEventListener("click", () => {
+        branch = button.dataset.timelineBranchFilter;
+        branchButtons.forEach((item) =>
+          item.setAttribute("aria-pressed", String(item === button)),
+        );
+        applyTimelineFilters();
+      });
+    }
+    for (const button of scopeButtons) {
+      button.addEventListener("click", () => {
+        scope = button.dataset.timelineScopeFilter;
+        scopeButtons.forEach((item) =>
+          item.setAttribute("aria-pressed", String(item === button)),
+        );
+        applyTimelineFilters();
+      });
+    }
+    personSelect?.addEventListener("change", applyTimelineFilters);
+    applyTimelineFilters();
   }
 })();

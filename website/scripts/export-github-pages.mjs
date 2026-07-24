@@ -64,6 +64,7 @@ async function rewriteAssetUrls(directory) {
 await rm(outRoot, { recursive: true, force: true });
 await Promise.all([
   mkdir(new URL("people/", outRoot), { recursive: true }),
+  mkdir(new URL("timeline/", outRoot), { recursive: true }),
   mkdir(new URL("presentation/", outRoot), { recursive: true }),
   mkdir(new URL("research/", outRoot), { recursive: true }),
 ]);
@@ -90,6 +91,7 @@ const personSlugs = people.map((person) => person.id.replace(/^person\./, ""));
 const routes = [
   { name: "public", pathname: "/", output: "index.html" },
   { name: "people", pathname: "/people", output: "people/index.html" },
+  { name: "timeline", pathname: "/timeline", output: "timeline/index.html" },
   {
     name: "presentation",
     pathname: "/presentation",
@@ -126,7 +128,7 @@ for (const { name, html } of renderedRoutes) {
   assert.match(html, new RegExp(`${basePath.replaceAll("/", "\\/")}static-tools\\.js`));
 }
 
-assert.equal(renderedRoutes.length, people.length + 4);
+assert.equal(renderedRoutes.length, people.length + 5);
 
 for (const filename of [
   "1910-reyes-household.jpg",

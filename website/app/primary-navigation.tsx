@@ -1,6 +1,11 @@
 import Link from "next/link";
 
-export type PrimaryPage = "story" | "people" | "presentation" | "research";
+export type PrimaryPage =
+  | "story"
+  | "people"
+  | "timeline"
+  | "presentation"
+  | "research";
 
 const primaryLinks: Array<{
   id: PrimaryPage;
@@ -9,6 +14,7 @@ const primaryLinks: Array<{
 }> = [
   { id: "story", href: "/", label: "Family story" },
   { id: "people", href: "/people", label: "People" },
+  { id: "timeline", href: "/timeline", label: "Timeline" },
   { id: "presentation", href: "/presentation", label: "Presentation" },
   { id: "research", href: "/research", label: "Research" },
 ];

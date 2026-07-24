@@ -117,6 +117,33 @@ test("renders the people directory and a detailed, linked person profile", async
   assert.match(personHtml, /Records reviewed/);
 });
 
+test("renders a filterable two-line family timeline from the research ledger", async () => {
+  const response = await render("/timeline");
+  const html = await response.text();
+
+  assert.equal(response.status, 200);
+  assert.match(
+    html,
+    /<title>Timeline · Vazquez–Reyes Family History<\/title>/,
+  );
+  assert.match(html, /One chronology, two family lines/);
+  assert.match(html, /Reyes–Díaz/);
+  assert.match(html, /Vázquez–Perales/);
+  assert.match(html, /Direct line/);
+  assert.match(html, /Include relatives/);
+  assert.match(html, /One person/);
+  assert.match(html, /earliest to latest/);
+  assert.match(html, /25 October 1941/);
+  assert.match(html, /East 109th Street/);
+  assert.match(html, /Cruz's move from Puerto Rico to New York is bounded/);
+  assert.match(html, /href="\/people\/cruz-reyes-vasquez"/);
+  assert.match(html, /data-timeline-event="timeline\.claim\.couple-marriage"/);
+  assert.ok(
+    [...html.matchAll(/\bdata-timeline-event=/g)].length > 50,
+    "expected a substantial direct-line chronology",
+  );
+});
+
 test("renders a slide-style, evidence-led family presentation", async () => {
   const response = await render("/presentation");
   const html = await response.text();
@@ -141,6 +168,7 @@ test("uses one predictable primary navigation across every page type", async () 
     ["/", "/"],
     ["/people", "/people"],
     ["/people/maximo-vazquez", "/people"],
+    ["/timeline", "/timeline"],
     ["/presentation", "/presentation"],
     ["/research", "/research"],
   ];
@@ -153,9 +181,10 @@ test("uses one predictable primary navigation across every page type", async () 
     )?.[1];
 
     assert.ok(nav, `primary navigation missing on ${path}`);
-    assert.equal([...nav.matchAll(/<a\b/g)].length, 4, path);
+    assert.equal([...nav.matchAll(/<a\b/g)].length, 5, path);
     assert.match(nav, /<a[^>]*href="\/"[^>]*>Family story<\/a>/);
     assert.match(nav, /<a[^>]*href="\/people"[^>]*>People<\/a>/);
+    assert.match(nav, /<a[^>]*href="\/timeline"[^>]*>Timeline<\/a>/);
     assert.match(nav, /<a[^>]*href="\/presentation"[^>]*>Presentation<\/a>/);
     assert.match(nav, /<a[^>]*href="\/research"[^>]*>Research<\/a>/);
     assert.match(

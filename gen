@@ -13,9 +13,13 @@ case "$COMMAND" in
     node "$ROOT/tools/build-geography.mjs"
     node "$ROOT/tools/build-pr-map.mjs"
     ;;
+  timeline)
+    node "$ROOT/tools/build-timeline.mjs"
+    ;;
   gate)
     uv run "$ROOT/tools/test_gen_ancestry.py"
     node "$ROOT/tools/build-geography.mjs"
+    node "$ROOT/tools/build-timeline.mjs"
     ;;
   help|-h|--help)
     cat <<'EOF'
@@ -30,6 +34,7 @@ Usage:
   ./gen ancestry goto "search/N?name=Given_Surname" --agent ID
   ./gen ancestry cache stats
   ./gen geography
+  ./gen timeline
   ./gen gate
 
 `browser start` launches a dedicated, persistent Chrome profile on localhost:
