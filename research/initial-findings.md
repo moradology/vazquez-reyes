@@ -26,7 +26,12 @@ record reviewed. Details about potentially living descendants remain private.
 - The family knew her as **Pastora** and connects Cruz with her birth on the
   Day of the Cross. The delayed civil act proves only that her grandfather
   registered the name Cruz; it does not prove what name was used at baptism or
-  in the family. Her Gurabo baptism is the next decisive record.
+  in the family.
+- The Gurabo baptism index contains a later-volume entry for **Cruz Reyes,
+  book 15, folio 18 verso**. No Pastora Reyes appears in the reviewed Reyes
+  index section. The exact folio survives, but torn, folded and overlapping
+  sheets hide the indexed entry and its parents. This is a strong candidate,
+  not yet a confirmed baptism.
 - Parents: **Mauricio Reyes Martínez** and **Carmen Díaz García**.
 - Mauricio and Carmen married **23 October 1907** in Fajardo.
 - The family appears in Ucares, Naguabo, in 1910; Anton Ruiz, Humacao, in 1920;
@@ -135,8 +140,9 @@ This couple were Carlina's parents and Rafael's maternal grandparents.
 ## What changed from the family account
 
 - The civil record gives **3 May 1915 in Gurabo**, not Humacao, and records the
-  name Cruz. The family identifies her as Pastora; the baptismal or compound
-  form remains open.
+  name Cruz. The family identifies her as Pastora. A Gurabo baptism index also
+  points to Cruz Reyes, but the damaged folio prevents identification of the
+  child and leaves the exact family-versus-church name relationship open.
 - Carmen's full documented name is **Carmen Díaz García**.
 - **Belén Reyes** was Cruz's younger sister.
 - Cándido and infant Teresa are now directly documented as additional children
@@ -158,8 +164,9 @@ This couple were Carlina's parents and Rafael's maternal grandparents.
 1. Rafael's baptism or a fully legible certified birth record.
 2. Juan Vázquez Rodríguez's Yabucoa baptism or birth record.
 3. The original Manhattan marriage certificate, not only its index.
-4. The Gurabo parish baptism for the girl born 3 May 1915, searched under both
-   Pastora and Cruz.
+4. A duplicate register, sacramental certificate, alternate filming, or parish
+   archive lookup for Gurabo book 15, folio 18 verso, sufficient to identify
+   the indexed Cruz Reyes and her parents.
 5. Cruz's and Rafael's NYC death certificates.
 6. Mauricio's and Carmen's baptisms, plus a family-informed record that can
    settle Mauricio's 1977 candidate and Carmen's death.

@@ -99,6 +99,11 @@ confirmed against records.
   on 17 June, 45 days after the birth, from a declaration by maternal
   grandfather Lope Díaz. It confirms the civil name Cruz but does not settle
   the family report that she was personally or baptismally named Pastora.
+- The San José de Gurabo baptism index contains a matching-era **Cruz Reyes**
+  in book 15, folio 18 verso. No Pastora Reyes appears in the reviewed Reyes
+  index section. The exact folio was captured, but damage and overlapping
+  sheets conceal the indexed entry and prevent confirmation of the child or
+  her parents.
 - The 1910, 1920 and 1930 censuses reconstruct the Reyes-Díaz household from
   Naguabo to Humacao and confirm Belén as Cruz's sister.
 - Mauricio and Carmen's 1907 marriage names their parents as Pedro Reyes and

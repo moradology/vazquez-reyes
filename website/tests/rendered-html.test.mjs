@@ -90,6 +90,8 @@ test("separates the public summary from the research notes", async () => {
   assert.match(researchHtml, /Known or reported children/);
   assert.match(researchHtml, /Cándido \(1923–1948\)/);
   assert.match(researchHtml, /Teresa \(died as an infant in 1927\)/);
+  assert.match(researchHtml, /book 15, folio 18 verso/i);
+  assert.match(researchHtml, /surviving page is damaged/i);
   assert.match(researchHtml, /Pedro Reyes \+ Ana Martínez/);
   assert.match(researchHtml, /Marcelino Perales y Medina \+ Aurora Pérez/);
   assert.match(researchHtml, /Searches without a match/);

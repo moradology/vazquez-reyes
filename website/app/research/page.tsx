@@ -323,8 +323,8 @@ export default function ResearchPage() {
         <div className="wanted-research-grid">
           <ul>
             <li>
-              The Gurabo baptism after 3 May 1915, checked under both Pastora
-              and Cruz.
+              A duplicate or clearer copy of Gurabo baptism book 15, folio 18
+              verso, naming the indexed Cruz Reyes and her parents.
             </li>
             <li>Rafael’s baptism card, passport, or a clearer birth certificate.</li>
             <li>The 1941 marriage certificate or church announcement.</li>

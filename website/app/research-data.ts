@@ -407,8 +407,8 @@ export const openCases = [
   {
     id: "VR-01",
     title: "Pastora’s baptismal name",
-    conflict: "The family knew her as Pastora. Her grandfather registered the civil name Cruz 45 days after her birth, apparently connected to the Day of the Cross; that does not establish the name used at baptism.",
-    next: "Find the Gurabo parish baptism after 3 May 1915 and inspect it for Pastora, Pastora Cruz, Cruz Pastora, or Cruz.",
+    conflict: "The family knew her as Pastora. Her grandfather registered the civil name Cruz 45 days after birth. The Gurabo index also lists a matching-era Cruz Reyes in book 15, folio 18 verso, but the surviving page is damaged and the indexed entry is not legible.",
+    next: "Seek a duplicate register, sacramental certificate, alternate filming, or parish archive lookup for book 15, folio 18 verso that names the child and parents.",
   },
   {
     id: "VR-02",
@@ -460,14 +460,14 @@ export const negativeSearches = [
   "No Rafael memorial matching the shared plot was found on Find a Grave; the official cemetery database remains the stronger burial source.",
   "No record yet settles whether Juan Vázquez’s mother used both Carmen and María Eugenia or whether one informant supplied the wrong name.",
   "A 1942 death for Aurora Monserrate Pérez belongs to the widow of Marcelo Pérez, not the wife of Marcelino Perales; it was captured and rejected.",
-  "No convincing Pastora Reyes match appeared in the initial 1915 Gurabo civil search; the parish baptism remains the necessary test.",
+  "No Pastora Reyes entry appears in the reviewed Gurabo baptism-index pages. A Cruz Reyes entry points to book 15, folio 18 verso, but the damaged register image does not expose the child or parents.",
 ];
 
 export const nameVariants = [
   {
     person: "Pastora Reyes Vasquez, civilly recorded as Cruz",
     forms: "Pastora Reyes · Cruz Reyes Díaz · Cruz Reyes · Cruz Vasquez · Cruz Vázquez",
-    conclusion: "Pastora is the name remembered and used by the family. Cruz Reyes Díaz is the documented civil form entered by her grandfather 45 days after birth. The Gurabo baptism is needed to recover the church form.",
+    conclusion: "Pastora is the name remembered and used by the family. Cruz Reyes Díaz is the documented civil form. The Gurabo baptism index also lists Cruz Reyes, but the damaged folio does not reveal enough to identify the child conclusively.",
   },
   {
     person: "Rafael Vázquez y Perales",
@@ -550,5 +550,9 @@ export const updates = [
   {
     date: "24 Jul 2026",
     text: "Identified infant Teresa Reyes Díaz and separated the unresolved Angelina/Aurora and Tomás/Julio name questions.",
+  },
+  {
+    date: "24 Jul 2026",
+    text: "Located the Gurabo baptism-index entry Cruz Reyes, book 15, folio 18 verso, and captured the exact damaged folio without overstating the identification.",
   },
 ];

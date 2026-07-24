@@ -22,10 +22,12 @@ baptism, and it does not show that the civil registration preceded baptism.
 Pastora remains documented family testimony rather than a disproved name, but
 its exact baptismal or compound form remains unconfirmed.
 
-The highest-value next record is the Gurabo parish baptism shortly after 3 May
-1915. The original entry should be checked for Pastora, Cruz Pastora, Pastora
-Cruz, and Cruz, as well as for a baptism date that precedes the 17 June civil
-registration.
+Later the same day, the Gurabo baptism index was located. It lists **Cruz
+Reyes, book 15, folio 18 verso**; no Pastora Reyes appears in the reviewed
+Reyes section. The exact folio survives but is badly damaged and overlapped,
+and the indexed entry and parents are not legible. That makes the Cruz entry a
+strong candidate rather than a confirmed baptism. See the separate baptism
+index and damaged-folio trace for the image-level analysis.
 
 ## Aurora Pérez in Río Blanco
 
