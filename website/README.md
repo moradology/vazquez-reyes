@@ -3,6 +3,10 @@
 Public presentation layer for the canonical research records one directory up.
 The page is a sourced working artifact, not a final proof tree.
 
+- `/` is the concise family-facing story.
+- `/research` is the sanitized ongoing research notebook.
+- `../research/` remains the canonical evidence and reasoning layer.
+
 ## Public-data rules
 
 - Publish deceased historical people only.

@@ -19,6 +19,15 @@ The public presentation lives in [`website/`](website/) and is deliberately
 derived from the privacy-reviewed research core. Its validation checks that all
 canonical historical people appear and that sensitive identifiers do not.
 
+The presentation has two reader-facing layers:
+
+- `/` — concise family story for public consumption.
+- `/research` — sanitized ongoing notebook with conflicts, open cases, negative
+  searches, sources, and a change log.
+
+The tracked `research/` directory remains the canonical third layer from which
+both pages are assembled and checked.
+
 ## Operating principles
 
 - Record facts and uncertainty separately.
