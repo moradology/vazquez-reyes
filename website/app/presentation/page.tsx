@@ -74,7 +74,11 @@ const totalSlides = 16;
 
 export default function PresentationPage() {
   return (
-    <main className="presentation-deck" data-presentation>
+    <main
+      className="presentation-deck"
+      data-presentation
+      data-slide-total={totalSlides}
+    >
       <SiteHeader
         current="presentation"
         variant="dark"

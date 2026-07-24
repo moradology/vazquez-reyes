@@ -44,8 +44,8 @@ function makeStatic(html) {
     )
     .replace(/\bcontent="\/og\.png"/g, `content="${basePath}og.png"`)
     .replace(
-      "</body>",
-      `<script src="${basePath}static-tools.js" defer></script></body>`,
+      "</head>",
+      `<script src="${basePath}static-tools.js"></script></head>`,
     );
 }
 
@@ -132,6 +132,10 @@ for (const { name, html } of renderedRoutes) {
   assert.doesNotMatch(html, /__VINEXT_RSC_|modulepreload/, `${name} runtime`);
   assert.match(html, new RegExp(`${basePath.replaceAll("/", "\\/")}assets\\/`));
   assert.match(html, new RegExp(`${basePath.replaceAll("/", "\\/")}static-tools\\.js`));
+  assert.ok(
+    html.indexOf(`${basePath}static-tools.js`) < html.indexOf("<body"),
+    `${name} loads interaction controls before the body`,
+  );
 }
 
 assert.equal(renderedRoutes.length, people.length + 5);

@@ -208,6 +208,24 @@ test("renders a slide-style, evidence-led family presentation", async () => {
   assert.match(html, /1811-luis-de-rivera-death\.jpg/);
   assert.match(html, /No reviewed record yet identifies a direct ancestor born in Africa/);
   assert.match(html, /data-presentation-fullscreen/);
+  assert.match(html, /data-slide-total="16"/);
+});
+
+test("installs presentation controls before the page finishes loading", async () => {
+  const source = await readFile(
+    new URL("../public/static-tools.js", import.meta.url),
+    "utf8",
+  );
+
+  assert.match(source, /document\.addEventListener\("keydown"/);
+  assert.match(source, /document\.addEventListener\("click"/);
+  assert.match(source, /closest\("\[data-presentation-fullscreen\]"\)/);
+  assert.match(source, /DOMContentLoaded/);
+  assert.match(source, /new MutationObserver/);
+  assert.doesNotMatch(
+    source,
+    /fullscreenButton\?\.addEventListener\("click"/,
+  );
 });
 
 test("uses one predictable primary navigation across every page type", async () => {
