@@ -44,21 +44,86 @@ export default function Home() {
           <b />
           <span>New York City</span>
         </div>
-        <a className="scroll-cue" href="#family">
-          Cruz and Rafael <span aria-hidden="true">↓</span>
+        <a className="scroll-cue" href="#places">
+          Humacao / East Harlem <span aria-hidden="true">↓</span>
         </a>
       </section>
 
-      <section className="public-foreword">
-        <p>
-          Cruz’s parents, Mauricio Reyes Martínez and Carmen Díaz García, lived
-          in Naguabo before their daughter was born in Gurabo on 3 May 1915.
-          By 1920 the family was in Antón Ruíz, Humacao.
-        </p>
-        <p>
-          Rafael’s family was already in Antón Ruíz when he was a child. He and
-          Cruz married in East Harlem in 1941; the 1950 census records their
-          household a few blocks away on East 109th Street.
+      <section className="place-intro" id="places">
+        <div className="place-intro-heading">
+          <div>
+            <p className="eyebrow">Puerto Rico → New York</p>
+            <h2>Humacao / East Harlem</h2>
+          </div>
+          <p>
+            Humacao was home to both families. East Harlem became Cruz and
+            Rafael’s home after their 1941 marriage.
+          </p>
+        </div>
+
+        <div className="place-intro-grid">
+          <figure className="place-figure">
+            <a
+              className="place-image"
+              href="https://commons.wikimedia.org/wiki/File:Puerto_Rico_-_Bull_Carts_near_Humacao.jpg"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="View the source for the Humacao postcard"
+            >
+              <img
+                src="/places/humacao-near-1909.jpg"
+                alt="A hand-colored postcard showing bull carts, a rural house, and palms near Humacao, Puerto Rico"
+              />
+            </a>
+            <figcaption>
+              <div>
+                <p className="place-name">Humacao, Puerto Rico</p>
+                <p className="place-date">about 1909</p>
+              </div>
+              <p>
+                Rafael grew up in Antón Ruíz. Cruz’s family was living there
+                by 1920, and both family lines appear in Humacao records across
+                generations.
+              </p>
+              <p className="place-credit">
+                Waldrop Photographic Co. · public-domain postcard
+              </p>
+            </figcaption>
+          </figure>
+
+          <figure className="place-figure">
+            <a
+              className="place-image"
+              href="https://www.loc.gov/item/2020737186/"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="View the Library of Congress source for the East Harlem photograph"
+            >
+              <img
+                src="/places/east-harlem-1970s.jpg"
+                alt="A Spanish Harlem street with brick apartment buildings, shops, pedestrians, and fire escapes in the 1970s"
+              />
+            </a>
+            <figcaption>
+              <div>
+                <p className="place-name">East Harlem, New York</p>
+                <p className="place-date">1970s</p>
+              </div>
+              <p>
+                Cruz and Rafael married on East 105th Street in 1941. The 1950
+                census recorded their household four blocks north on East
+                109th Street.
+              </p>
+              <p className="place-credit">
+                Bernard Gotfryd · Library of Congress
+              </p>
+            </figcaption>
+          </figure>
+        </div>
+
+        <p className="place-context-note">
+          These are archival views of the places—not photographs of a residence
+          identified as belonging to the family.
         </p>
       </section>
 

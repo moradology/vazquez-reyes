@@ -75,6 +75,9 @@ await cp(new URL("og.png", clientRoot), new URL("og.png", outRoot));
 await cp(new URL("records/", clientRoot), new URL("records/", outRoot), {
   recursive: true,
 });
+await cp(new URL("places/", clientRoot), new URL("places/", outRoot), {
+  recursive: true,
+});
 await cp(
   new URL("static-tools.js", clientRoot),
   new URL("static-tools.js", outRoot),
@@ -135,6 +138,12 @@ for (const filename of [
   "1920-vazquez-household.jpg",
 ]) {
   await readFile(new URL(`records/${filename}`, outRoot));
+}
+for (const filename of [
+  "humacao-near-1909.jpg",
+  "east-harlem-1970s.jpg",
+]) {
+  await readFile(new URL(`places/${filename}`, outRoot));
 }
 
 console.log(`Exported GitHub Pages artifact to ${outRoot.pathname}`);

@@ -36,6 +36,15 @@ test("renders the Vazquez-Reyes family history", async () => {
   assert.match(html, /Rafael Vázquez/);
   assert.match(html, /From.*Puerto Rico/s);
   assert.match(html, /to New York/);
+  assert.match(html, /Humacao \/ East Harlem/);
+  assert.match(html, /humacao-near-1909\.jpg/);
+  assert.match(html, /east-harlem-1970s\.jpg/);
+  assert.match(
+    html,
+    /not photographs of a residence\s*identified as belonging to the family/i,
+  );
+  assert.match(html, /Waldrop Photographic Co\./);
+  assert.match(html, /Bernard Gotfryd/);
   assert.match(html, /The same island across five generations/);
   assert.match(html, /Start with Cruz or Rafael/);
   assert.match(html, /The Reyes–Díaz ancestors/);
