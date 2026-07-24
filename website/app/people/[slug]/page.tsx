@@ -123,6 +123,7 @@ function eventSummary(value: LedgerValue | undefined, fallback: string) {
   const date =
     event.preferred ??
     event.date ??
+    event.on_or_before ??
     event.approximate ??
     event.estimated ??
     event.estimated_range ??
@@ -130,9 +131,18 @@ function eventSummary(value: LedgerValue | undefined, fallback: string) {
     event.before ??
     event.after;
   const place = event.place;
-  return [date, place]
+  const datePrefix =
+    typeof event.on_or_before === "string"
+      ? "On or before "
+      : typeof event.before === "string"
+        ? "Before "
+        : typeof event.after === "string"
+          ? "After "
+          : "";
+  const datePart =
+    typeof date === "string" ? `${datePrefix}${dateText(date)}` : undefined;
+  return [datePart, place]
     .filter((part) => typeof part === "string")
-    .map((part) => dateText(String(part)))
     .join(" · ") || fallback;
 }
 

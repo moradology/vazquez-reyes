@@ -14,17 +14,21 @@ function lifeLine(profile: (typeof peopleProfiles)[number]) {
   const read = (value: unknown, fallback: string) => {
     if (!value || typeof value !== "object" || Array.isArray(value)) return fallback;
     const event = value as Record<string, unknown>;
-    return String(
+    const date =
       event.preferred ??
         event.date ??
+        event.on_or_before ??
         event.approximate ??
         event.estimated ??
         event.estimated_range ??
         event.approximate_range ??
         event.before ??
         event.after ??
-        fallback,
-    );
+        fallback;
+    if (typeof event.on_or_before === "string") return `on or before ${date}`;
+    if (typeof event.before === "string") return `before ${date}`;
+    if (typeof event.after === "string") return `after ${date}`;
+    return String(date);
   };
   return `${read(birth, "birth open")} — ${read(death, "death open")}`;
 }

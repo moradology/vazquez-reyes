@@ -98,17 +98,19 @@ test("renders navigable trees and repeated maps from one geographic frame", asyn
 });
 
 test("renders the people directory and a detailed, linked person profile", async () => {
-  const [indexResponse, personResponse, contextResponse, placeResponse] =
+  const [indexResponse, personResponse, contextResponse, placeResponse, luisResponse] =
     await Promise.all([
     render("/people"),
     render("/people/maximo-vazquez"),
     render("/people/lope-diaz-figueroa"),
     render("/people/manuel-diaz"),
+    render("/people/luis-father-of-josefa-rivera"),
   ]);
   const indexHtml = await indexResponse.text();
   const personHtml = await personResponse.text();
   const contextHtml = await contextResponse.text();
   const placeHtml = await placeResponse.text();
+  const luisHtml = await luisResponse.text();
 
   assert.equal(indexResponse.status, 200);
   assert.match(indexHtml, /The people in the records/);
@@ -144,6 +146,10 @@ test("renders the people directory and a detailed, linked person profile", async
   assert.match(placeHtml, /data-pr-map="person-manuel-diaz"/);
   assert.match(placeHtml, /Documented places/);
   assert.match(placeHtml, /Naguabo/);
+
+  assert.equal(luisResponse.status, 200);
+  assert.match(luisHtml, /On or before April 20, 1811 · Humacao, Puerto Rico/);
+  assert.match(luisHtml, /Burial/);
 });
 
 test("renders a filterable two-line family timeline from the research ledger", async () => {
