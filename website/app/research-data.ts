@@ -156,7 +156,7 @@ export const sources = [
   {
     id: "francisco-birth",
     label: "1892 birth: Francisco Vázquez Rodríguez",
-    detail: "Born 3 June 1892 in Yabucoa; parents Sotero Vázquez and Eugenia Rodríguez. The act reports paternal grandparents Atilano Vázquez and Juana Rodríguez already deceased.",
+    detail: "Born 3 June 1892 in Yabucoa; parents Sotero Vázquez and Eugenia Rodríguez. The act reports paternal grandparents Atilano Vázquez and Juana Rodríguez already deceased, but Atilano’s own parish and civil deaths prove that notation wrong for him.",
     href: "https://www.familysearch.org/ark:/61903/3:1:939D-7LSD-DT?view=index&personArk=%2Fark%3A%2F61903%2F1%3A1%3AQVJV-6Q27&action=view&lang=en",
     grade: "Original civil record",
   },
@@ -200,6 +200,62 @@ export const sources = [
     label: "1884 baptism: María Epifania Delgado Vázquez",
     detail: "The child’s mother was María Balbina Vázquez; maternal grandparents Atilano Vázquez and Juana Regina Rodríguez identify María Balbina as another daughter of that couple.",
     href: "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSM8-3BQZ?view=fullText&keywords=Juana+Regina+Rodr%C3%ADguez&lang=en&groupId=M9SP-ZFQ",
+    grade: "Original parish register · two-page entry",
+  },
+  {
+    id: "atilano-juana-marriage",
+    label: "1849 marriage: Atilano Vázquez and Juana Rodríguez",
+    detail: "Married 10 February 1849 in Yabucoa. The entry names Atilano’s parents Máximo Vázquez and Josefa de Rivera, and Juana’s parents the deceased Andrés and Francisca Díaz.",
+    href: "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSM8-SQC9-X?view=fullText&keywords=Atilano%2CV%C3%A1zquez&lang=en",
+    grade: "Original parish register",
+  },
+  {
+    id: "maria-balbina-marriage",
+    label: "1870 marriage: María Balbina Vázquez and Desiderio Rodríguez",
+    detail: "Married 10 February 1870 in Yabucoa. María Balbina’s mother, Juana Rodríguez, is called deceased. A later child record uses Delgado for Desiderio, leaving a surname conflict.",
+    href: "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSV2-2Q63-7?view=fullText&keywords=Atilano%2CJuana&lang=en",
+    grade: "Original parish register · spouse surname conflict retained",
+  },
+  {
+    id: "atilano-juana-paula-marriage",
+    label: "1875 marriage: Atilano Vázquez and Juana Paula de Santiago",
+    detail: "Married 18 December 1875. The record calls Atilano a native of Juncos and widower of Juana Regina Rodríguez; Juana Paula was from Humacao, daughter of Tomás de Santiago and Petronila Orellana.",
+    href: "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSV2-2Q87-P?view=fullText&keywords=V%C3%A1zquez+Atilano&lang=en",
+    grade: "Original parish register · two-page entry",
+  },
+  {
+    id: "atilano-death",
+    label: "1898 death: Atilano Vázquez",
+    detail: "Died 3 June 1898 in Yabucoa at a reported age of 70. The parish entry names wife Juana de Santiago and parents Máximo Vázquez and Josefa Rivera; the civil registration agrees.",
+    href: "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSV2-2Q4J-V?view=fullText&keywords=Atilano+V%C3%A1zquez%2CV%C3%A1zquez+Atilano&lang=en",
+    grade: "Original parish and civil records",
+  },
+  {
+    id: "francisca-vazquez-death",
+    label: "1876 death: Francisca Vázquez",
+    detail: "Died 14 February 1876 in Yabucoa, unmarried, reported age 22; legitimate daughter of Atilano Vázquez and Juana Rodríguez.",
+    href: "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSV2-KQ95-J?view=fullText&keywords=Atilano+V%C3%A1zquez%2CV%C3%A1zquez%2CYabucoa&lang=en",
+    grade: "Original parish register",
+  },
+  {
+    id: "miguel-baptism",
+    label: "1824 baptism: Miguel de los Santos Vázquez",
+    detail: "Born 5 July and baptized 15 July 1824 in San Lorenzo, legitimate son of Máximo Vázquez and Josefa de Ribera and a documented brother of Atilano.",
+    href: "https://www.familysearch.org/ark:/61903/1:1:6DXP-D6X1?lang=en",
+    grade: "Original parish register + index",
+  },
+  {
+    id: "andrea-death",
+    label: "1866 death: Andrea Vázquez",
+    detail: "Buried 19 November 1866 in Humacao and recorded as a legitimate daughter of Máximo Vázquez and Josefa Rivera.",
+    href: "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSFS-GWZX-K?view=fullText&keywords=Josefa+Rivera%2CM%C3%A1ximo+V%C3%A1zquez&lang=en",
+    grade: "Original parish register",
+  },
+  {
+    id: "jose-maria-baptism",
+    label: "1852 baptism: José María, son of María Vázquez",
+    detail: "Born 12 September and baptized 3 October 1852 in San Lorenzo. Maternal grandparents Máximo Vázquez and Josefa de Rivera identify María as Atilano’s sister.",
+    href: "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSV2-9W96-L?view=fullText&keywords=Josefa+de+Rivera%2CM%C3%A1ximo+V%C3%A1zquez&lang=en",
     grade: "Original parish register · two-page entry",
   },
   {
@@ -481,58 +537,59 @@ export const familyCouples = [
     branch: "Sotero’s parents",
     couple: "Atilano Vázquez + Juana Regina Rodríguez",
     status: "documented" as const,
-    connection: "Together in Yabucoa by 1861; parents of Sotero and at least two documented daughters",
+    connection: "Married 10 February 1849 in Yabucoa; parents of Sotero and at least three documented daughters",
     people: [
       {
         name: "Atilano Vázquez",
-        birth: "Puerto Rico · exact date and place not yet found",
-        death: "Before 23 June 1892 · exact date not yet found",
+        birth: "About 1828 · Juncos, Puerto Rico · death-age estimate",
+        death: "3 June 1898 · Yabucoa, Puerto Rico",
       },
       {
         name: "Juana Regina Rodríguez",
         birth: "Puerto Rico · exact date and place not yet found",
-        death: "Before 23 June 1892 · exact date not yet found",
+        death: "After 9 Jul 1863 and before 10 Feb 1870",
       },
     ],
     children: [
       "Sotero Vázquez",
+      "Francisca — died 14 Feb 1876, age 22",
       "María Isidra — born 15 May 1863",
-      "María Balbina — mother of María Epifania Delgado Vázquez by 1884",
+      "María Balbina — married Desiderio Rodríguez on 10 Feb 1870",
     ],
     childNote:
-      "A 1861 baptism names the pair as godparents. María Isidra’s 1863 baptism and María Balbina’s daughter’s 1884 baptism document the two sisters separately from Sotero.",
+      "Juana was alive for María Isidra’s 1863 baptism and called deceased in María Balbina’s 1870 marriage. A grandson’s 1892 birth act mistakenly calls Atilano deceased; his matching parish and civil deaths establish 1898. María Balbina’s marriage calls the groom Desiderio Rodríguez, while an 1884 child baptism calls him Desiderio Delgado.",
   },
   {
     id: "atilano-juana-paula",
     branch: "Atilano’s later family",
     couple: "Atilano Vázquez + Juana Paula de Santiago",
     status: "documented" as const,
-    connection: "Recorded together as parents in 1879; a marriage has not yet been found",
+    connection: "Married 18 December 1875 in Yabucoa",
     people: [
       {
         name: "Atilano Vázquez",
-        birth: "Puerto Rico · exact date and place not yet found",
-        death: "Before 23 June 1892 · exact date not yet found",
+        birth: "About 1828 · Juncos, Puerto Rico · death-age estimate",
+        death: "3 June 1898 · Yabucoa, Puerto Rico",
       },
       {
         name: "Juana Paula de Santiago",
-        birth: "Yabucoa, Puerto Rico · exact date not yet found",
+        birth: "Humacao, Puerto Rico · exact date not yet found",
         death: "Not yet found",
       },
     ],
     children: ["María Eugenia — born 20 May 1879"],
     childNote:
-      "The child’s baptism repeats Atilano’s parents, Máximo Vázquez and Josefa Rivera, matching the 1863 record and supporting the same Atilano. It proves the parent pair, not their marital status.",
+      "The marriage calls Atilano the widower of Juana Regina Rodríguez and names Juana Paula’s parents as Tomás de Santiago and Petronila Orellana. María Eugenia’s baptism repeats Atilano’s parents.",
   },
   {
     id: "maximo-josefa",
     branch: "Atilano’s parents",
-    couple: "Máximo [Vázquez] + Josefa Rivera",
+    couple: "Máximo Vázquez + Josefa Rivera",
     status: "documented" as const,
-    connection: "Parents of Atilano Vázquez",
+    connection: "Parents of Atilano and a documented eastern Puerto Rico sibling cluster",
     people: [
       {
-        name: "Máximo [Vázquez]",
+        name: "Máximo Vázquez",
         birth: "Not yet found",
         death: "Not yet found",
       },
@@ -542,9 +599,17 @@ export const familyCouples = [
         death: "Not yet found",
       },
     ],
-    children: ["Atilano Vázquez"],
+    children: [
+      "Andrea — buried 19 Nov 1866 in Humacao",
+      "Miguel de los Santos — born 5 Jul 1824 in San Lorenzo",
+      "Atilano — born about 1828 in Juncos",
+      "Manuel — married 14 Feb 1846 in Yabucoa",
+      "María — documented through children born in Humacao and San Lorenzo",
+      "Juan de Dios — probable infant son; died in 1820",
+      "Tomasa — probable daughter; died in 1889, age conflict unresolved",
+    ],
     childNote:
-      "The 1863 baptism gives Máximo without a surname. The 1879 baptism repeats the pair and explicitly writes Máximo Vázquez and Josefa Rivera.",
+      "The first five are supported by original records naming the exact parent pair. Juan de Dios and Tomasa remain probable rather than confirmed because a same-name couple or erroneous reported age has not been excluded.",
   },
   {
     id: "andres-francisca",
@@ -653,8 +718,32 @@ export const openCases = [
   {
     id: "VR-09",
     title: "Sotero’s baptism and age",
-    conflict: "Sotero’s 1916 death reports age 56, implying about 1860, but that makes his 1875 marriage unusually early. Atilano and Juana Regina are together in an August 1861 record and have a documented daughter born in May 1863, but Sotero’s own baptism is still missing.",
-    next: "Manually inspect Yabucoa baptisms from roughly 1847 through 1861 using Atilano, Juana Regina, Máximo, Josefa Rivera, Andrés, and Francisca Díaz as anchors.",
+    conflict: "Sotero’s 1916 death reports age 56, implying about 1860, but that makes his 1875 marriage unusually early. His parents married in 1849 and had documented daughters around 1853–54 and in 1863, but Sotero’s own baptism is still missing. An 1861 Sotero Lebrón page was captured and rejected.",
+    next: "Manually inspect Yabucoa baptisms from 1849 through 1861 using Atilano, Juana Regina, Máximo, Josefa Rivera, Andrés, and Francisca Díaz as anchors.",
+  },
+  {
+    id: "VR-10",
+    title: "Atilano’s baptism",
+    conflict: "His 1875 marriage says he was from Juncos, and his 1898 death at reported age 70 implies about 1828. No defensible baptism appeared in the indexed Juncos search.",
+    next: "Page through Juncos baptisms around 1827–1829 and inspect neighboring San Lorenzo books using Máximo Vázquez and Josefa de Ribera as parent anchors.",
+  },
+  {
+    id: "VR-11",
+    title: "Juana Regina’s exact death",
+    conflict: "She was alive on 9 July 1863 and called deceased on 10 February 1870. Atilano was her widower by December 1875, but no death entry has been isolated.",
+    next: "Inspect Yabucoa burials from July 1863 through February 1870 under Juana, Regina, Rodríguez, wife of Atilano, and daughter of Andrés and Francisca Díaz.",
+  },
+  {
+    id: "VR-12",
+    title: "Desiderio Rodríguez or Delgado",
+    conflict: "María Balbina’s 1870 marriage calls her groom Desiderio Rodríguez. The 1884 baptism of apparent daughter María Epifania calls the father Desiderio Delgado.",
+    next: "Find María Epifania’s civil birth and records naming Desiderio’s parents, age, and residence before merging the surname forms.",
+  },
+  {
+    id: "VR-13",
+    title: "Máximo and Josefa’s full child cluster",
+    conflict: "Manuel, Miguel, Atilano, María, and Andrea are documented through the exact parent pair. Juan de Dios and Tomasa are probable, but Tomasa’s reported age conflicts with Juan de Dios’s infancy and could indicate age error or a second couple.",
+    next: "Find Máximo and Josefa’s marriage and the missing baptisms or marriages for Andrea, Manuel, María, and Tomasa.",
   },
 ];
 
@@ -664,6 +753,8 @@ export const negativeSearches = [
   "No Rafael memorial matching the shared plot was found on Find a Grave; the official cemetery database remains the stronger burial source.",
   "Sotero’s death, several child records, and María Eugenia’s own 1933 death strongly favor Carmen, Eugenia, and María Eugenia as one woman’s name variants, but no original yet states that bridge explicitly.",
   "Sotero’s baptism was not found in the reviewed full-text Yabucoa film. An apparent 1865 candidate was rejected as OCR or name noise; the baptism books still need manual inspection.",
+  "An 1861 baptism of Sotero Lebrón is not Sotero Vázquez Rodríguez. The full page is retained as a rejected candidate.",
+  "Atilano’s indexed Juncos baptism was not found. A damaged 1846 page naming Don Atilano del Rosario Vázquez as a godfather is retained only as a candidate naming clue.",
   "A 1942 death for Aurora Monserrate Pérez belongs to the widow of Marcelo Pérez, not the wife of Marcelino Perales; it was captured and rejected.",
   "No Pastora Reyes entry appears in the reviewed Gurabo baptism-index pages. A Cruz Reyes entry points to book 15, folio 18 verso, but the damaged register image does not expose the child or parents.",
 ];
@@ -712,7 +803,7 @@ export const nameVariants = [
   {
     person: "Juana Regina Rodríguez",
     forms: "Juana Regina Rodríguez · Juana Rodríguez",
-    conclusion: "The 1861, 1863, and 1884 parish entries supply Regina. Later records naming her as Sotero’s mother usually shorten the name to Juana Rodríguez.",
+    conclusion: "The 1861, 1863, 1875, and 1884 parish entries supply Regina. Her 1849 marriage and later records often shorten the name to Juana Rodríguez.",
   },
   {
     person: "Two different María Eugenias",
@@ -821,5 +912,21 @@ export const updates = [
   {
     date: "24 Jul 2026",
     text: "Identified María Balbina as another daughter of Atilano and Juana Regina, and a later 1879 daughter of Atilano with Juana Paula de Santiago.",
+  },
+  {
+    date: "24 Jul 2026",
+    text: "Found Atilano and Juana’s 1849 marriage and Atilano and Juana Paula’s 1875 marriage, establishing Atilano’s Juncos birthplace and Juana Regina’s death before 1870.",
+  },
+  {
+    date: "24 Jul 2026",
+    text: "Found Atilano’s matching parish and civil deaths on 3 June 1898 and added daughter Francisca, who died in 1876.",
+  },
+  {
+    date: "24 Jul 2026",
+    text: "Expanded Máximo Vázquez and Josefa Rivera’s documented children to Manuel, Miguel, Atilano, María, and Andrea; retained Juan de Dios and Tomasa as provisional candidates.",
+  },
+  {
+    date: "24 Jul 2026",
+    text: "Preserved every direct download, screenshot-only record, damaged lead, and rejected candidate from this pass in the private evidence archive.",
   },
 ];

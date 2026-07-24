@@ -96,7 +96,10 @@ test("separates the public summary from the research notes", async () => {
   assert.match(researchHtml, /Juan de la Rosa Vázquez Rodríguez/);
   assert.match(researchHtml, /Atilano Vázquez \+ Juana Regina Rodríguez/);
   assert.match(researchHtml, /Atilano Vázquez \+ Juana Paula de Santiago/);
-  assert.match(researchHtml, /Máximo \[Vázquez\] \+ Josefa Rivera/);
+  assert.match(researchHtml, /Married 10 February 1849 in Yabucoa/);
+  assert.match(researchHtml, /3 June 1898 · Yabucoa/);
+  assert.match(researchHtml, /Máximo Vázquez \+ Josefa Rivera/);
+  assert.match(researchHtml, /Miguel de los Santos/);
   assert.match(researchHtml, /Andrés \[Rodríguez\] \+ Francisca Díaz/);
   assert.match(researchHtml, /Heriberta.*25 Jul 1913.*16 Mar 1913/s);
   assert.match(researchHtml, /Marcelino Perales y Medina \+ Aurora Pérez/);
@@ -104,6 +107,7 @@ test("separates the public summary from the research notes", async () => {
   assert.match(researchHtml, /VR-02/);
   assert.match(researchHtml, /VR-08/);
   assert.match(researchHtml, /VR-09/);
+  assert.match(researchHtml, /VR-13/);
   assert.match(researchHtml, /Records reviewed/);
 });
 

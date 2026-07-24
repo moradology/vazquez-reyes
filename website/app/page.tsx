@@ -469,8 +469,8 @@ export default function Home() {
               </span>
             </h3>
             <p>
-              Atilano and Juana Regina appear together in Yabucoa by 1861.
-              Their known children include Sotero,{" "}
+              Atilano, born in Juncos around 1828, married Juana Regina in
+              Yabucoa in 1849. Their family included Sotero, Francisca,{" "}
               <span data-person-id="person.maria-isidra-vazquez-rodriguez">
                 María Isidra
               </span>
@@ -478,7 +478,8 @@ export default function Home() {
               <span data-person-id="person.maria-balbina-vazquez-rodriguez">
                 María Balbina
               </span>
-              . Atilano was a son of{" "}
+              . Juana died before María Balbina’s marriage in 1870. Atilano
+              lived in Yabucoa until his death in 1898. He was a son of{" "}
               <span data-person-id="person.maximo-vazquez">
                 Máximo Vázquez
               </span>{" "}
@@ -502,7 +503,9 @@ export default function Home() {
               </span>
             </h3>
             <p>
-              Their daughter{" "}
+              The widowed Atilano married Juana Paula in Yabucoa in 1875. She
+              was from Humacao, a daughter of Tomás de Santiago and Petronila
+              Orellana. Their daughter{" "}
               <span data-person-id="person.maria-eugenia-vazquez-de-santiago">
                 María Eugenia
               </span>{" "}

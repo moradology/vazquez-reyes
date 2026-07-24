@@ -145,28 +145,35 @@ states that connection directly.
 
 ### Atilano Vázquez and Juana Regina Rodríguez
 
-The parish register now supplies records from their own generation and extends
-both ancestral lines.
+The parish registers now document their marriage, children, Atilano's second
+marriage and death, and a wider Vázquez sibling cluster.
 
-- A Yabucoa baptism dated **25 August 1861** names **Atilano Vázquez and Juana
-  Regina Rodríguez** as godparents. The act does not claim they were related to
-  the child; it independently places the couple together in Yabucoa.
+- **Atilano Vázquez and Juana Rodríguez married in Yabucoa on 10 February
+  1849.** He was a son of **Máximo Vázquez and Josefa de Rivera**; she was a
+  daughter of the deceased **Andrés** and **Francisca Díaz**. Andrés's surname
+  is not written and remains bracketed as an inference.
 - Their daughter **María Isidra Vázquez Rodríguez** was born **15 May 1863**
-  and baptized **9 July 1863**. Her baptism names paternal grandparents
-  **Máximo and Josefa Rivera**, and maternal grandparents **Andrés and Francisca
-  Díaz**. The grandfathers' inherited surnames remain bracketed in the
-  canonical records.
-- A two-page 1879 baptism records **María Eugenia**, born **20 May 1879**, as a
-  daughter of Atilano and **Juana Paula de Santiago**. The same entry repeats
-  Atilano's parents as **Máximo Vázquez and Josefa Rivera**, strongly supporting
-  the same Atilano with a later partner rather than a namesake.
-- An 1884 baptism for **María Epifania Delgado Vázquez** names her mother
-  **María Balbina Vázquez** and maternal grandparents Atilano Vázquez and Juana
-  Regina Rodríguez, identifying María Balbina as another daughter of that
-  couple.
+  and baptized **9 July 1863**. Another daughter, **Francisca**, died unmarried
+  in Yabucoa on **14 February 1876**, age 22.
+- Daughter **María Balbina** married Desiderio Rodríguez on **10 February
+  1870**. That record calls Juana deceased, bounding Juana's death after
+  9 July 1863 and before the marriage. A later child record calls María
+  Balbina's partner Desiderio Delgado, an unresolved surname or identity
+  conflict.
+- Atilano, identified as a native of **Juncos** and widower of Juana Regina,
+  married **Juana Paula de Santiago** on **18 December 1875**. Juana Paula was
+  from Humacao, daughter of **Tomás de Santiago and Petronila Orellana**.
+- Atilano died in Yabucoa on **3 June 1898**, reported age 70. Parish and civil
+  death records agree, implying a birth about 1828. His exact baptism remains
+  unfound. Francisco's 1892 birth act had reported Atilano already deceased;
+  the two direct 1898 death records establish that notation as an error.
 - The reviewed children of Atilano and Juana Regina now include **Sotero,
-  María Isidra, and María Balbina**. María Eugenia was Atilano's documented
-  child with Juana Paula. Additional children may remain undiscovered.
+  Francisca, María Isidra, and María Balbina**. María Eugenia, born in 1879,
+  was Atilano's daughter with Juana Paula.
+- Exact-parent records also confirm Atilano's siblings **Manuel, Miguel de los
+  Santos, María, and Andrea Vázquez**. **Juan de Dios** and **Tomasa** are
+  retained as probable candidates, not confirmed siblings; Tomasa's reported
+  age conflicts with Juan de Dios's documented infancy.
 
 ### Marcelino Perales y Medina and Aurora Pérez
 
@@ -219,9 +226,9 @@ This couple were Carlina's parents and Rafael's maternal grandparents.
 - Rafael's father was baptized **Juan de la Rosa Vázquez** and later appears as
   **Juan Vázquez Rodríguez**. The Juan Ramón form remains an unconfirmed family
   variant.
-- Sotero's parents were **Atilano Vázquez and Juana Regina Rodríguez**, both
-  already deceased by **23 June 1892**. María Isidra's 1863 baptism extends the
-  line again to **Máximo [Vázquez] and Josefa Rivera**, and **Andrés
+- Sotero's parents were **Atilano Vázquez and Juana Regina Rodríguez**, married
+  in 1849. Juana died between 1863 and 1870; Atilano died in 1898. The line
+  extends again to **Máximo Vázquez and Josefa Rivera**, and **Andrés
   [Rodríguez] and Francisca Díaz**.
 - Rafael's civil-registration index supports **February 1906**, not October;
   his exact birth day is still open.
@@ -229,8 +236,9 @@ This couple were Carlina's parents and Rafael's maternal grandparents.
 ## Highest-value next records
 
 1. Rafael's baptism or a fully legible certified birth record.
-2. Sotero's baptism; Atilano's marriages and death; Juana Regina's baptism and
-   death; and birth or baptism records for Juana, Mauricio, and Braulio.
+2. Sotero's baptism; Atilano's Juncos baptism; Juana Regina's baptism and exact
+   death; Máximo and Josefa's marriage; and birth or baptism records for Juana,
+   Mauricio, and Braulio.
 3. The original Manhattan marriage certificate, not only its index.
 4. A duplicate register, sacramental certificate, alternate filming, or parish
    archive lookup for Gurabo book 15, folio 18 verso, sufficient to identify
