@@ -344,10 +344,10 @@ export const sources = [
   },
   {
     id: "luis-de-rivera-death",
-    label: "1811 death: Luís de Rivera",
-    detail: "The Humacao register calls Luís a native of that district and about 50, names his parents as Roque and Marciana Delgado, identifies Isidora Rodríguez as his church-married wife, and lists nine children. The exact day is too faint to promote.",
+    label: "20 April 1811 burial: Luís de Rivera",
+    detail: "The Humacao register calls Luís a native of that district and about 50, names his parents as Roque and Marciana Delgado, identifies Isidora Rodríguez as his church-married wife, and lists nine children. The attached index resolves the faint manuscript day as the burial date; the exact death day is not separately stated.",
     href: "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSFS-2BP2?view=fullText&keywords=Isidora+Rodr%C3%ADguez%2Cde+Lu%C3%ADs+de+Rivera&lang=en&groupId=M993-WQQ",
-    grade: "Original parish register · image captured · exact day open",
+    grade: "Original parish register · image captured · indexed burial date checked",
   },
   {
     id: "humacao-marriage-transcription-1793-1808",
@@ -888,12 +888,12 @@ export const familyCouples = [
     branch: "Josefa’s parents",
     couple: "Luís de Rivera + Isidora Rodríguez",
     status: "documented" as const,
-    connection: "Named across two Las Piedras baptisms, two daughter marriages, and Luís’s 1811 Humacao death",
+    connection: "Named across two Las Piedras baptisms, two daughter marriages, and Luís’s 1811 Humacao burial",
     people: [
       {
         name: "Luís de Rivera",
         birth: "About 1761; native of the Humacao district",
-        death: "1811 in Humacao; exact day too faint",
+        death: "On or before 20 Apr 1811; buried that day in Humacao",
       },
       {
         name: "Isidora Rodríguez",
@@ -920,7 +920,7 @@ export const familyCouples = [
     branch: "Luís de Rivera’s parents",
     couple: "Roque [surname not stated] + Marciana Delgado",
     status: "documented" as const,
-    connection: "Named as Luís de Rivera’s parents in his 1811 Humacao death",
+    connection: "Named as Luís de Rivera’s parents in his 1811 Humacao burial",
     people: [
       {
         name: "Roque [surname not stated]",
@@ -1068,7 +1068,7 @@ export const openCases = [
   {
     id: "VR-13",
     title: "Máximo and Josefa before 1805",
-    conflict: "The 1805 marriage and native places are confirmed. Four earlier Caguas originals strongly identify Máximo’s parents more fully as Francisco Vázquez and María Magdalena Cortés and add three probable siblings, but Máximo’s own baptism remains missing. Luís de Rivera’s 1811 death names Roque and Marciana Delgado. No reviewed record names an overseas-born direct ancestor.",
+    conflict: "The 1805 marriage and native places are confirmed. Four earlier Caguas originals strongly identify Máximo’s parents more fully as Francisco Vázquez and María Magdalena Cortés and add three probable siblings, but Máximo’s own baptism remains missing. Luís de Rivera’s 1811 burial names Roque and Marciana Delgado. No reviewed record names an overseas-born direct ancestor.",
     next: "Prioritize Máximo’s baptism, Francisco and María’s pre-1786 marriage, Francisco’s post-1801 burial, and records that state native places or parents for this Caguas couple, Roque, Marciana Delgado, and Isidora Rodríguez.",
   },
   {
@@ -1357,7 +1357,7 @@ export const updates = [
   },
   {
     date: "24 Jul 2026",
-    text: "Found Luís de Rivera’s 1811 Humacao death. It calls him native to that district, names his parents as Roque and Marciana Delgado, and lists nine children with Isidora Rodríguez. The original image is archived; no overseas birthplace is claimed.",
+    text: "Found Luís de Rivera’s Humacao burial entry. It calls him native to that district, names his parents as Roque and Marciana Delgado, and lists nine children with Isidora Rodríguez. The attached index resolves burial on 20 April 1811; no overseas birthplace is claimed.",
   },
   {
     date: "24 Jul 2026",

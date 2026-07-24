@@ -592,15 +592,16 @@ export default function PresentationPage() {
           <p className="slide-kicker">One generation farther</p>
           <h2>Luís de Rivera names Roque and Marciana Delgado.</h2>
           <ul className="slide-findings">
-            <li>Luís died in Humacao district in 1811, about age 50.</li>
+            <li>Luís was buried in Humacao on 20 April 1811, about age 50.</li>
             <li>He was a native of that district.</li>
             <li>His parents were Roque and Marciana Delgado.</li>
             <li>His wife was Isidora Rodríguez.</li>
             <li>The entry names nine children, including Josefa and Simona.</li>
           </ul>
           <p className="slide-caution">
-            The exact day is too faint to state. The relationship, place,
-            approximate age, parents, spouse, and child list are legible.
+            The manuscript day is faint; the attached index resolves the
+            burial as 20 April. The record does not separately state an exact
+            day of death.
           </p>
           <Link
             className="slide-profile-link"
@@ -610,8 +611,8 @@ export default function PresentationPage() {
           </Link>
         </div>
         <RecordImage
-          alt="1811 Humacao death entry for Luís de Rivera"
-          caption="Luís de Rivera’s 1811 death entry"
+          alt="1811 Humacao burial entry for Luís de Rivera"
+          caption="Luís de Rivera’s burial entry · 20 April 1811"
           src="1811-luis-de-rivera-death.jpg"
         />
         <SlideNav current={15} total={totalSlides} />

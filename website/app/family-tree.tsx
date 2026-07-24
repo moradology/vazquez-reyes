@@ -194,7 +194,7 @@ export function FamilyTrees() {
             The 1805 marriage names Máximo’s and Josefa’s parents separately.
             It omits Francisco’s surname, but four earlier Caguas originals
             identify the couple as Francisco Vázquez and María Magdalena
-            Cortés. Luís’s 1811 death then names his own parents, Roque and
+            Cortés. Luís’s 1811 burial then names his own parents, Roque and
             Marciana Delgado; Roque’s surname is still not supplied.
           </p>
         </div>

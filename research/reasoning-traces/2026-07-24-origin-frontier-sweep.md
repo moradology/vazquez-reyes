@@ -124,6 +124,30 @@ The verified direct-line boundary is:
 Those overseas routes remain open research possibilities. They are not current
 family-history claims.
 
+## Luís's burial date and the completed Humacao index
+
+The original Luís de Rivera entry had a faint day. The attached FamilySearch
+index and record page resolve the event as a burial on **20 April 1811**. The
+preceding burial is dated 19 April and the following entry begins in May, which
+supports the indexed chronology. This does not establish a separately stated
+exact day of death.
+
+The index's **Luís Sumano**, **Roque de Rivera**, and **Merenciana** forms are
+computer-index errors. The original and earlier child baptisms control the
+names Luís de Rivera, Roque without a stated surname, and Marciana Delgado.
+
+All nine full-size frames of the alphabetical index to the Humacao 1810–1815
+burial book were downloaded and reviewed. The index:
+
+- confirms Luís under Rivera and points to page 18;
+- contains no defensible Isidora Rodríguez or Máximo Vázquez burial; and
+- points to a María Vázquez, daughter of Josefa, on page 22.
+
+The last lead was checked against its original. It records five-year-old
+**María de la Cruz**, daughter of **Josefa Vázquez**, buried 22 June 1800. No
+father or other identity bridge connects that Josefa to Josefa Rivera, so the
+record is preserved but not attached to this family.
+
 ## Next focused records
 
 1. Seek duplicate or neighboring baptism books for Josefa rather than treating

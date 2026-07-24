@@ -2,7 +2,8 @@
 
 ## Why the record mattered
 
-Luís de Rivera’s 1811 death names his parents as Roque and Marciana Delgado.
+Luís de Rivera’s 1811 burial entry names his parents as Roque and Marciana
+Delgado.
 An 8 June 1797 Humacao burial then surfaced for a man recorded as Joseph
 Roque, explicitly described as a native of the Canary Islands. If the men were
 the same person, this would be the first documented pre-Puerto Rico origin in

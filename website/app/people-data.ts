@@ -9412,15 +9412,16 @@ export const peopleProfiles: readonly PersonProfile[] = [
       },
       {
         "id": "source.familysearch-death.luis-de-rivera.1811",
-        "type": "parish_death_register_with_image",
-        "title": "1811 death of Luís de Rivera",
+        "type": "parish_burial_register_with_image",
+        "title": "1811 burial of Luís de Rivera",
         "repository": "Dulce Nombre de Jesús, Humacao, via FamilySearch",
         "accessed": "2026-07-24",
         "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSFS-2BP2?view=fullText&keywords=Isidora+Rodr%C3%ADguez%2Cde+Lu%C3%ADs+de+Rivera&lang=en&groupId=M993-WQQ",
-        "quality": "original_register_image_downloaded_and_transcribed_key_clauses",
-        "citation": "DGS 008038524, item 6, image 23. The 1811 Humacao entry identifies Luís de Rivera as a native of this district and about 50 years old, the legitimate son of Roque and Marciana Delgado, and the church-married husband of Isidora Rodríguez. It names nine children: Josefa, Simona, Ysabel, Juana, Gerónima, Domingo, María, Ramón, and Juan. The exact day is too faint to promote from the original image.",
-        "image_archive": "capture.familysearch-death.luis-de-rivera.1811/3Q9M-CSFS-2BP2-original.jpg plus deep-zoom assembly, reading-order crops, and metadata",
-        "status": "confirmed_original_reviewed_exact_day_open",
+        "index_url": "https://www.familysearch.org/ark:/61903/1:1:XS31-1VWK?lang=en",
+        "quality": "original_register_image_downloaded_and_transcribed_attached_index_resolves_faint_date",
+        "citation": "DGS 008038524, item 6, image 23. The Humacao entry identifies Luís de Rivera as a native of this district and about 50 years old, the legitimate son of Roque and Marciana Delgado, and the church-married husband of Isidora Rodríguez. It names nine children: Josefa, Simona, Ysabel, Juana, Gerónima, Domingo, María, Ramón, and Juan. The manuscript day is faint; the attached FamilySearch index and record page resolve the burial date as 20 April 1811, consistent with the surrounding 19 April and 1 May entries. The exact death day is not separately stated. The computer-index forms Luís Sumano, Roque de Rivera, and Merenciana are not adopted as names.",
+        "image_archive": "capture.familysearch-death.luis-de-rivera.1811/3Q9M-CSFS-2BP2-original.jpg plus deep-zoom assembly, reading-order crops, and metadata; duplicate exact frame retained in humacao-burials-1810-1815",
+        "status": "confirmed_original_reviewed_burial_date_resolved",
         "public_image": "1811-luis-de-rivera-death.jpg"
       },
       {
@@ -9848,6 +9849,25 @@ export const peopleProfiles: readonly PersonProfile[] = [
           "source.search-audit.familysearch-index.origin-frontier.2026-07-24"
         ],
         "note": "The records establish Puerto Rican native places for Máximo, Josefa, and Luís. The Caguas cluster supplies the fuller parent names Francisco Vázquez and María Magdalena Cortés and María's 1794 burial, but no reviewed source states either parent's native place or names an overseas-born direct ancestor."
+      },
+      {
+        "id": "claim.maria-de-la-cruz-josefa-vazquez-rejected",
+        "subject": "person.josefa-rivera",
+        "predicate": "rejected_possible_child_or_collateral",
+        "object": {
+          "burial": "1800-06-22",
+          "place": "Humacao, Puerto Rico",
+          "child": "María de la Cruz",
+          "reported_age": "5",
+          "mother": "Josefa Vázquez",
+          "father": "not stated"
+        },
+        "status": "rejected_name_only_no_identity_bridge_parent_surname_conflict",
+        "evidence_refs": [
+          "source.familysearch-burial.maria-de-la-cruz-josefa-vazquez-rejected.1800",
+          "source.familysearch-marriage.maximo-josefa.1805"
+        ],
+        "note": "The 1800 mother is recorded as Josefa Vázquez, while the documented ancestor is Josefa Ribera or Rivera, daughter of Luís de Rivera and Isidora Rodríguez. No father, spouse, or parent pair joins the two women. The record is preserved but not attached to the family."
       }
     ],
     "sources": [
@@ -10051,15 +10071,16 @@ export const peopleProfiles: readonly PersonProfile[] = [
       },
       {
         "id": "source.familysearch-death.luis-de-rivera.1811",
-        "type": "parish_death_register_with_image",
-        "title": "1811 death of Luís de Rivera",
+        "type": "parish_burial_register_with_image",
+        "title": "1811 burial of Luís de Rivera",
         "repository": "Dulce Nombre de Jesús, Humacao, via FamilySearch",
         "accessed": "2026-07-24",
         "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSFS-2BP2?view=fullText&keywords=Isidora+Rodr%C3%ADguez%2Cde+Lu%C3%ADs+de+Rivera&lang=en&groupId=M993-WQQ",
-        "quality": "original_register_image_downloaded_and_transcribed_key_clauses",
-        "citation": "DGS 008038524, item 6, image 23. The 1811 Humacao entry identifies Luís de Rivera as a native of this district and about 50 years old, the legitimate son of Roque and Marciana Delgado, and the church-married husband of Isidora Rodríguez. It names nine children: Josefa, Simona, Ysabel, Juana, Gerónima, Domingo, María, Ramón, and Juan. The exact day is too faint to promote from the original image.",
-        "image_archive": "capture.familysearch-death.luis-de-rivera.1811/3Q9M-CSFS-2BP2-original.jpg plus deep-zoom assembly, reading-order crops, and metadata",
-        "status": "confirmed_original_reviewed_exact_day_open",
+        "index_url": "https://www.familysearch.org/ark:/61903/1:1:XS31-1VWK?lang=en",
+        "quality": "original_register_image_downloaded_and_transcribed_attached_index_resolves_faint_date",
+        "citation": "DGS 008038524, item 6, image 23. The Humacao entry identifies Luís de Rivera as a native of this district and about 50 years old, the legitimate son of Roque and Marciana Delgado, and the church-married husband of Isidora Rodríguez. It names nine children: Josefa, Simona, Ysabel, Juana, Gerónima, Domingo, María, Ramón, and Juan. The manuscript day is faint; the attached FamilySearch index and record page resolve the burial date as 20 April 1811, consistent with the surrounding 19 April and 1 May entries. The exact death day is not separately stated. The computer-index forms Luís Sumano, Roque de Rivera, and Merenciana are not adopted as names.",
+        "image_archive": "capture.familysearch-death.luis-de-rivera.1811/3Q9M-CSFS-2BP2-original.jpg plus deep-zoom assembly, reading-order crops, and metadata; duplicate exact frame retained in humacao-burials-1810-1815",
+        "status": "confirmed_original_reviewed_burial_date_resolved",
         "public_image": "1811-luis-de-rivera-death.jpg"
       },
       {
@@ -10113,6 +10134,18 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "quality": "focused_index_and_ocr_search_with_same_name_candidates_checked",
         "citation": "Exact and variant searches tested Isidora or Ysidora Rodríguez in early Humacao deaths, Marciana Delgado with Roque, María Cortez or Cortés in early Caguas deaths, Máximo with Francisco and María Cortez, and Josefa with Luís and Isidora Rodríguez. The one early Humacao death indexed to Isidora Rodríguez names husband Andrés Obierna and different parents, so it is rejected. No indexed target death or baptism survived the parent, spouse, date, and place checks. Index and OCR gaps make this negative coverage, not proof of absence.",
         "status": "negative_target_search_same_name_candidates_rejected"
+      },
+      {
+        "id": "source.familysearch-burial.maria-de-la-cruz-josefa-vazquez-rejected.1800",
+        "type": "parish_burial_register_candidate_review",
+        "title": "1800 burial of María de la Cruz, daughter of Josefa Vázquez",
+        "repository": "Dulce Nombre de Jesús, Humacao, via FamilySearch",
+        "accessed": "2026-07-24",
+        "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSFS-299D-J?view=fullText&keywords=Josefa+V%C3%A1zquez%2CV%C3%A1zquez%2CMar%C3%ADa&lang=en",
+        "quality": "original_register_reviewed_in_full_text_viewer_index_frame_downloaded_original_download_failed",
+        "citation": "DGS 008038524, item 6, local image 27. The original records the burial on 22 June 1800 of five-year-old María de la Cruz, daughter of Josefa Vázquez of the district. It does not name a father or provide an identity bridge to Josefa Rivera, daughter of Luís de Rivera and Isidora Rodríguez. The shared given name is insufficient, so the child and mother are not merged into the family.",
+        "image_archive": "research/pulls/images/humacao-burial-indexes-1810-1820/1810-1815-humacao-burial-index-frame-581_3Q9M-CSM8-Q7KQ-Y.jpg; original ARK reviewed but download did not complete",
+        "status": "rejected_as_family_link_name_only_no_identity_bridge"
       }
     ],
     "geographyEvents": [
@@ -10512,15 +10545,16 @@ export const peopleProfiles: readonly PersonProfile[] = [
       },
       {
         "id": "source.familysearch-death.luis-de-rivera.1811",
-        "type": "parish_death_register_with_image",
-        "title": "1811 death of Luís de Rivera",
+        "type": "parish_burial_register_with_image",
+        "title": "1811 burial of Luís de Rivera",
         "repository": "Dulce Nombre de Jesús, Humacao, via FamilySearch",
         "accessed": "2026-07-24",
         "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSFS-2BP2?view=fullText&keywords=Isidora+Rodr%C3%ADguez%2Cde+Lu%C3%ADs+de+Rivera&lang=en&groupId=M993-WQQ",
-        "quality": "original_register_image_downloaded_and_transcribed_key_clauses",
-        "citation": "DGS 008038524, item 6, image 23. The 1811 Humacao entry identifies Luís de Rivera as a native of this district and about 50 years old, the legitimate son of Roque and Marciana Delgado, and the church-married husband of Isidora Rodríguez. It names nine children: Josefa, Simona, Ysabel, Juana, Gerónima, Domingo, María, Ramón, and Juan. The exact day is too faint to promote from the original image.",
-        "image_archive": "capture.familysearch-death.luis-de-rivera.1811/3Q9M-CSFS-2BP2-original.jpg plus deep-zoom assembly, reading-order crops, and metadata",
-        "status": "confirmed_original_reviewed_exact_day_open",
+        "index_url": "https://www.familysearch.org/ark:/61903/1:1:XS31-1VWK?lang=en",
+        "quality": "original_register_image_downloaded_and_transcribed_attached_index_resolves_faint_date",
+        "citation": "DGS 008038524, item 6, image 23. The Humacao entry identifies Luís de Rivera as a native of this district and about 50 years old, the legitimate son of Roque and Marciana Delgado, and the church-married husband of Isidora Rodríguez. It names nine children: Josefa, Simona, Ysabel, Juana, Gerónima, Domingo, María, Ramón, and Juan. The manuscript day is faint; the attached FamilySearch index and record page resolve the burial date as 20 April 1811, consistent with the surrounding 19 April and 1 May entries. The exact death day is not separately stated. The computer-index forms Luís Sumano, Roque de Rivera, and Merenciana are not adopted as names.",
+        "image_archive": "capture.familysearch-death.luis-de-rivera.1811/3Q9M-CSFS-2BP2-original.jpg plus deep-zoom assembly, reading-order crops, and metadata; duplicate exact frame retained in humacao-burials-1810-1815",
+        "status": "confirmed_original_reviewed_burial_date_resolved",
         "public_image": "1811-luis-de-rivera-death.jpg"
       },
       {
@@ -10997,15 +11031,16 @@ export const peopleProfiles: readonly PersonProfile[] = [
       },
       {
         "id": "source.familysearch-death.luis-de-rivera.1811",
-        "type": "parish_death_register_with_image",
-        "title": "1811 death of Luís de Rivera",
+        "type": "parish_burial_register_with_image",
+        "title": "1811 burial of Luís de Rivera",
         "repository": "Dulce Nombre de Jesús, Humacao, via FamilySearch",
         "accessed": "2026-07-24",
         "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSFS-2BP2?view=fullText&keywords=Isidora+Rodr%C3%ADguez%2Cde+Lu%C3%ADs+de+Rivera&lang=en&groupId=M993-WQQ",
-        "quality": "original_register_image_downloaded_and_transcribed_key_clauses",
-        "citation": "DGS 008038524, item 6, image 23. The 1811 Humacao entry identifies Luís de Rivera as a native of this district and about 50 years old, the legitimate son of Roque and Marciana Delgado, and the church-married husband of Isidora Rodríguez. It names nine children: Josefa, Simona, Ysabel, Juana, Gerónima, Domingo, María, Ramón, and Juan. The exact day is too faint to promote from the original image.",
-        "image_archive": "capture.familysearch-death.luis-de-rivera.1811/3Q9M-CSFS-2BP2-original.jpg plus deep-zoom assembly, reading-order crops, and metadata",
-        "status": "confirmed_original_reviewed_exact_day_open",
+        "index_url": "https://www.familysearch.org/ark:/61903/1:1:XS31-1VWK?lang=en",
+        "quality": "original_register_image_downloaded_and_transcribed_attached_index_resolves_faint_date",
+        "citation": "DGS 008038524, item 6, image 23. The Humacao entry identifies Luís de Rivera as a native of this district and about 50 years old, the legitimate son of Roque and Marciana Delgado, and the church-married husband of Isidora Rodríguez. It names nine children: Josefa, Simona, Ysabel, Juana, Gerónima, Domingo, María, Ramón, and Juan. The manuscript day is faint; the attached FamilySearch index and record page resolve the burial date as 20 April 1811, consistent with the surrounding 19 April and 1 May entries. The exact death day is not separately stated. The computer-index forms Luís Sumano, Roque de Rivera, and Merenciana are not adopted as names.",
+        "image_archive": "capture.familysearch-death.luis-de-rivera.1811/3Q9M-CSFS-2BP2-original.jpg plus deep-zoom assembly, reading-order crops, and metadata; duplicate exact frame retained in humacao-burials-1810-1815",
+        "status": "confirmed_original_reviewed_burial_date_resolved",
         "public_image": "1811-luis-de-rivera-death.jpg"
       },
       {
@@ -11499,6 +11534,11 @@ export const peopleProfiles: readonly PersonProfile[] = [
           "name": "Luís [surname omitted]",
           "type": "1805_daughter_marriage_form",
           "status": "documented_contextual"
+        },
+        {
+          "name": "Luís Sumano",
+          "type": "familysearch_computer_index",
+          "status": "automated_index_error_not_adopted"
         }
       ],
       "birth": {
@@ -11507,9 +11547,14 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "status": "derived_from_reported_age_about_50_and_native_of_this_district_in_1811"
       },
       "death": {
-        "year": "1811",
+        "on_or_before": "1811-04-20",
         "place": "Humacao, Puerto Rico",
-        "status": "confirmed_original_register_exact_day_too_faint"
+        "status": "burial_date_confirmed_exact_death_day_not_separately_stated"
+      },
+      "burial": {
+        "date": "1811-04-20",
+        "place": "Dulce Nombre de Jesús, Humacao, Puerto Rico",
+        "status": "confirmed_original_register_attached_index_resolves_faint_day"
       },
       "parents": [
         "person.roque-father-of-luis-de-rivera",
@@ -11554,15 +11599,16 @@ export const peopleProfiles: readonly PersonProfile[] = [
           "status": "confirmed_named_on_father_death"
         }
       ],
-      "confidence": "native_place_parentage_marriage_and_nine_child_cluster_confirmed_originals",
+      "confidence": "native_place_parentage_marriage_burial_date_and_nine_child_cluster_confirmed_originals",
       "evidence_refs": [
         "source.familysearch-baptism.simona-rivera.1790",
         "source.familysearch-baptism.ysabel-rivera.1792",
         "source.familysearch-marriage.maximo-josefa.1805",
         "source.familysearch-marriage.simona-ribera-leon-garrafa.1805",
-        "source.familysearch-death.luis-de-rivera.1811"
+        "source.familysearch-death.luis-de-rivera.1811",
+        "source.familysearch-index.humacao-burials.1810-1815"
       ],
-      "notes": "The 1811 death entry calls Luís a native of this Humacao district, about 50, legitimate son of Roque and Marciana Delgado, and husband of Isidora Rodríguez. The about-1761 birth is an estimate, not an exact date. The surname is supplied from three earlier or contemporary originals, not inferred from Josefa's surname."
+      "notes": "The 1811 entry calls Luís a native of this Humacao district, about 50, legitimate son of Roque and Marciana Delgado, and husband of Isidora Rodríguez. The attached index resolves the faint burial date as 20 April 1811; the exact death day is not separately stated. The about-1761 birth is an estimate. Luís Sumano is a FamilySearch computer-index error and is not adopted; the Luís de Rivera form is supported by the original entry and two child baptisms."
     },
     "relations": {
       "parentIds": [
@@ -11657,9 +11703,10 @@ export const peopleProfiles: readonly PersonProfile[] = [
       {
         "id": "claim.luis-de-rivera-death-origin-parents",
         "subject": "person.luis-father-of-josefa-rivera",
-        "predicate": "death_origin_age_parents_and_spouse",
+        "predicate": "burial_origin_age_parents_and_spouse",
         "object": {
-          "death_year": "1811",
+          "burial": "1811-04-20",
+          "death": "on or before 1811-04-20",
           "place": "Humacao, Puerto Rico",
           "native_place_wording": "natural de este Partido",
           "reported_age": "about 50",
@@ -11670,11 +11717,12 @@ export const peopleProfiles: readonly PersonProfile[] = [
           ],
           "spouse": "person.isidora-rodriguez"
         },
-        "status": "confirmed_original_death_register_exact_day_open",
+        "status": "confirmed_original_register_attached_index_resolves_burial_date",
         "evidence_refs": [
-          "source.familysearch-death.luis-de-rivera.1811"
+          "source.familysearch-death.luis-de-rivera.1811",
+          "source.familysearch-index.humacao-burials.1810-1815"
         ],
-        "note": "The native-place clause identifies the Humacao district in Puerto Rico, not an overseas origin. The birth year is derived from the approximate age and remains approximate."
+        "note": "The native-place clause identifies the Humacao district in Puerto Rico, not an overseas origin. The birth year is derived from the approximate age. The attached index resolves the faint manuscript date as the burial date, not a separately stated death date. Its Luís Sumano, Roque de Rivera, and Merenciana forms are indexing errors and are not adopted."
       },
       {
         "id": "claim.luis-isidora-nine-children-1811",
@@ -11755,16 +11803,29 @@ export const peopleProfiles: readonly PersonProfile[] = [
       },
       {
         "id": "source.familysearch-death.luis-de-rivera.1811",
-        "type": "parish_death_register_with_image",
-        "title": "1811 death of Luís de Rivera",
+        "type": "parish_burial_register_with_image",
+        "title": "1811 burial of Luís de Rivera",
         "repository": "Dulce Nombre de Jesús, Humacao, via FamilySearch",
         "accessed": "2026-07-24",
         "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSFS-2BP2?view=fullText&keywords=Isidora+Rodr%C3%ADguez%2Cde+Lu%C3%ADs+de+Rivera&lang=en&groupId=M993-WQQ",
-        "quality": "original_register_image_downloaded_and_transcribed_key_clauses",
-        "citation": "DGS 008038524, item 6, image 23. The 1811 Humacao entry identifies Luís de Rivera as a native of this district and about 50 years old, the legitimate son of Roque and Marciana Delgado, and the church-married husband of Isidora Rodríguez. It names nine children: Josefa, Simona, Ysabel, Juana, Gerónima, Domingo, María, Ramón, and Juan. The exact day is too faint to promote from the original image.",
-        "image_archive": "capture.familysearch-death.luis-de-rivera.1811/3Q9M-CSFS-2BP2-original.jpg plus deep-zoom assembly, reading-order crops, and metadata",
-        "status": "confirmed_original_reviewed_exact_day_open",
+        "index_url": "https://www.familysearch.org/ark:/61903/1:1:XS31-1VWK?lang=en",
+        "quality": "original_register_image_downloaded_and_transcribed_attached_index_resolves_faint_date",
+        "citation": "DGS 008038524, item 6, image 23. The Humacao entry identifies Luís de Rivera as a native of this district and about 50 years old, the legitimate son of Roque and Marciana Delgado, and the church-married husband of Isidora Rodríguez. It names nine children: Josefa, Simona, Ysabel, Juana, Gerónima, Domingo, María, Ramón, and Juan. The manuscript day is faint; the attached FamilySearch index and record page resolve the burial date as 20 April 1811, consistent with the surrounding 19 April and 1 May entries. The exact death day is not separately stated. The computer-index forms Luís Sumano, Roque de Rivera, and Merenciana are not adopted as names.",
+        "image_archive": "capture.familysearch-death.luis-de-rivera.1811/3Q9M-CSFS-2BP2-original.jpg plus deep-zoom assembly, reading-order crops, and metadata; duplicate exact frame retained in humacao-burials-1810-1815",
+        "status": "confirmed_original_reviewed_burial_date_resolved",
         "public_image": "1811-luis-de-rivera-death.jpg"
+      },
+      {
+        "id": "source.familysearch-index.humacao-burials.1810-1815",
+        "type": "complete_parish_burial_index_capture_and_review",
+        "title": "Humacao burial index, 1810–1815",
+        "repository": "Dulce Nombre de Jesús, Humacao, DGS 007769016, via FamilySearch",
+        "accessed": "2026-07-24",
+        "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSM8-Q7KW-Y?i=572&lang=en",
+        "quality": "nine_full_size_index_frames_downloaded_and_manually_reviewed",
+        "citation": "FamilySearch frames 573–581 contain the complete alphabetical index to the Humacao burial book labeled 1810–1815. Frame 579 lists Luís Rivera, son of Roque and Marciana Delgado, at page 18; the attached indexed record resolves his burial as 20 April 1811. The review found no defensible Isidora Rodríguez or Máximo Vázquez burial. Frame 581 also produced a María Vázquez, daughter of Josefa, lead that was checked against the original and kept separate.",
+        "image_archive": "research/pulls/images/humacao-burial-indexes-1810-1820/frames 573-581 plus metadata.json",
+        "status": "complete_index_capture_positive_luis_negative_isidora_maximo"
       },
       {
         "id": "source.familysearch-baptism.juan-de-dios-vazquez-rivera.1819",
@@ -11945,26 +12006,27 @@ export const peopleProfiles: readonly PersonProfile[] = [
         ],
         "sequence": 9,
         "map_label": "Humacao",
-        "map_note": "Luís de Rivera's 1811 death calls him a native of this Humacao district."
+        "map_note": "Luís de Rivera's 1811 burial entry calls him a native of this Humacao district."
       },
       {
         "id": "geo.event.luis-death-1811",
-        "date": "1811",
-        "event_type": "death",
+        "date": "1811-04-20",
+        "event_type": "burial",
         "person_refs": [
           "person.luis-father-of-josefa-rivera"
         ],
         "place_ref": "place.humacao",
-        "status": "confirmed_year_exact_day_open",
+        "status": "confirmed_original_register_attached_index_resolves_burial_date",
         "evidence_refs": [
-          "source.familysearch-death.luis-de-rivera.1811"
+          "source.familysearch-death.luis-de-rivera.1811",
+          "source.familysearch-index.humacao-burials.1810-1815"
         ],
         "map_groups": [
           "early-vazquez"
         ],
         "sequence": 12,
-        "map_label": "Humacao · 1811",
-        "map_note": "Luís died in Humacao. The entry names his parents, wife, and nine children."
+        "map_label": "Humacao · 20 Apr 1811",
+        "map_note": "Luís was buried in Humacao. The entry names his parents, wife, and nine children."
       }
     ]
   },
@@ -12152,15 +12214,16 @@ export const peopleProfiles: readonly PersonProfile[] = [
       },
       {
         "id": "source.familysearch-death.luis-de-rivera.1811",
-        "type": "parish_death_register_with_image",
-        "title": "1811 death of Luís de Rivera",
+        "type": "parish_burial_register_with_image",
+        "title": "1811 burial of Luís de Rivera",
         "repository": "Dulce Nombre de Jesús, Humacao, via FamilySearch",
         "accessed": "2026-07-24",
         "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSFS-2BP2?view=fullText&keywords=Isidora+Rodr%C3%ADguez%2Cde+Lu%C3%ADs+de+Rivera&lang=en&groupId=M993-WQQ",
-        "quality": "original_register_image_downloaded_and_transcribed_key_clauses",
-        "citation": "DGS 008038524, item 6, image 23. The 1811 Humacao entry identifies Luís de Rivera as a native of this district and about 50 years old, the legitimate son of Roque and Marciana Delgado, and the church-married husband of Isidora Rodríguez. It names nine children: Josefa, Simona, Ysabel, Juana, Gerónima, Domingo, María, Ramón, and Juan. The exact day is too faint to promote from the original image.",
-        "image_archive": "capture.familysearch-death.luis-de-rivera.1811/3Q9M-CSFS-2BP2-original.jpg plus deep-zoom assembly, reading-order crops, and metadata",
-        "status": "confirmed_original_reviewed_exact_day_open",
+        "index_url": "https://www.familysearch.org/ark:/61903/1:1:XS31-1VWK?lang=en",
+        "quality": "original_register_image_downloaded_and_transcribed_attached_index_resolves_faint_date",
+        "citation": "DGS 008038524, item 6, image 23. The Humacao entry identifies Luís de Rivera as a native of this district and about 50 years old, the legitimate son of Roque and Marciana Delgado, and the church-married husband of Isidora Rodríguez. It names nine children: Josefa, Simona, Ysabel, Juana, Gerónima, Domingo, María, Ramón, and Juan. The manuscript day is faint; the attached FamilySearch index and record page resolve the burial date as 20 April 1811, consistent with the surrounding 19 April and 1 May entries. The exact death day is not separately stated. The computer-index forms Luís Sumano, Roque de Rivera, and Merenciana are not adopted as names.",
+        "image_archive": "capture.familysearch-death.luis-de-rivera.1811/3Q9M-CSFS-2BP2-original.jpg plus deep-zoom assembly, reading-order crops, and metadata; duplicate exact frame retained in humacao-burials-1810-1815",
+        "status": "confirmed_original_reviewed_burial_date_resolved",
         "public_image": "1811-luis-de-rivera-death.jpg"
       },
       {
@@ -14618,21 +14681,22 @@ export const peopleProfiles: readonly PersonProfile[] = [
           "source.familysearch-burial.joseph-roque-canary-islands-rejected.1797",
           "source.familysearch-death.luis-de-rivera.1811"
         ],
-        "note": "The 1811 death of Luís names his parents as Roque and Marciana Delgado. The 1797 burial identifies a Joseph Roque as María Herrera's widower. No source connects the Canary-born man to Marciana or Luís, so the overseas-origin clue is preserved but not assigned to the family."
+        "note": "The 1811 burial entry for Luís names his parents as Roque and Marciana Delgado. The 1797 burial identifies a Joseph Roque as María Herrera's widower. No source connects the Canary-born man to Marciana or Luís, so the overseas-origin clue is preserved but not assigned to the family."
       }
     ],
     "sources": [
       {
         "id": "source.familysearch-death.luis-de-rivera.1811",
-        "type": "parish_death_register_with_image",
-        "title": "1811 death of Luís de Rivera",
+        "type": "parish_burial_register_with_image",
+        "title": "1811 burial of Luís de Rivera",
         "repository": "Dulce Nombre de Jesús, Humacao, via FamilySearch",
         "accessed": "2026-07-24",
         "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSFS-2BP2?view=fullText&keywords=Isidora+Rodr%C3%ADguez%2Cde+Lu%C3%ADs+de+Rivera&lang=en&groupId=M993-WQQ",
-        "quality": "original_register_image_downloaded_and_transcribed_key_clauses",
-        "citation": "DGS 008038524, item 6, image 23. The 1811 Humacao entry identifies Luís de Rivera as a native of this district and about 50 years old, the legitimate son of Roque and Marciana Delgado, and the church-married husband of Isidora Rodríguez. It names nine children: Josefa, Simona, Ysabel, Juana, Gerónima, Domingo, María, Ramón, and Juan. The exact day is too faint to promote from the original image.",
-        "image_archive": "capture.familysearch-death.luis-de-rivera.1811/3Q9M-CSFS-2BP2-original.jpg plus deep-zoom assembly, reading-order crops, and metadata",
-        "status": "confirmed_original_reviewed_exact_day_open",
+        "index_url": "https://www.familysearch.org/ark:/61903/1:1:XS31-1VWK?lang=en",
+        "quality": "original_register_image_downloaded_and_transcribed_attached_index_resolves_faint_date",
+        "citation": "DGS 008038524, item 6, image 23. The Humacao entry identifies Luís de Rivera as a native of this district and about 50 years old, the legitimate son of Roque and Marciana Delgado, and the church-married husband of Isidora Rodríguez. It names nine children: Josefa, Simona, Ysabel, Juana, Gerónima, Domingo, María, Ramón, and Juan. The manuscript day is faint; the attached FamilySearch index and record page resolve the burial date as 20 April 1811, consistent with the surrounding 19 April and 1 May entries. The exact death day is not separately stated. The computer-index forms Luís Sumano, Roque de Rivera, and Merenciana are not adopted as names.",
+        "image_archive": "capture.familysearch-death.luis-de-rivera.1811/3Q9M-CSFS-2BP2-original.jpg plus deep-zoom assembly, reading-order crops, and metadata; duplicate exact frame retained in humacao-burials-1810-1815",
+        "status": "confirmed_original_reviewed_burial_date_resolved",
         "public_image": "1811-luis-de-rivera-death.jpg"
       },
       {
@@ -14705,15 +14769,16 @@ export const peopleProfiles: readonly PersonProfile[] = [
     "sources": [
       {
         "id": "source.familysearch-death.luis-de-rivera.1811",
-        "type": "parish_death_register_with_image",
-        "title": "1811 death of Luís de Rivera",
+        "type": "parish_burial_register_with_image",
+        "title": "1811 burial of Luís de Rivera",
         "repository": "Dulce Nombre de Jesús, Humacao, via FamilySearch",
         "accessed": "2026-07-24",
         "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSFS-2BP2?view=fullText&keywords=Isidora+Rodr%C3%ADguez%2Cde+Lu%C3%ADs+de+Rivera&lang=en&groupId=M993-WQQ",
-        "quality": "original_register_image_downloaded_and_transcribed_key_clauses",
-        "citation": "DGS 008038524, item 6, image 23. The 1811 Humacao entry identifies Luís de Rivera as a native of this district and about 50 years old, the legitimate son of Roque and Marciana Delgado, and the church-married husband of Isidora Rodríguez. It names nine children: Josefa, Simona, Ysabel, Juana, Gerónima, Domingo, María, Ramón, and Juan. The exact day is too faint to promote from the original image.",
-        "image_archive": "capture.familysearch-death.luis-de-rivera.1811/3Q9M-CSFS-2BP2-original.jpg plus deep-zoom assembly, reading-order crops, and metadata",
-        "status": "confirmed_original_reviewed_exact_day_open",
+        "index_url": "https://www.familysearch.org/ark:/61903/1:1:XS31-1VWK?lang=en",
+        "quality": "original_register_image_downloaded_and_transcribed_attached_index_resolves_faint_date",
+        "citation": "DGS 008038524, item 6, image 23. The Humacao entry identifies Luís de Rivera as a native of this district and about 50 years old, the legitimate son of Roque and Marciana Delgado, and the church-married husband of Isidora Rodríguez. It names nine children: Josefa, Simona, Ysabel, Juana, Gerónima, Domingo, María, Ramón, and Juan. The manuscript day is faint; the attached FamilySearch index and record page resolve the burial date as 20 April 1811, consistent with the surrounding 19 April and 1 May entries. The exact death day is not separately stated. The computer-index forms Luís Sumano, Roque de Rivera, and Merenciana are not adopted as names.",
+        "image_archive": "capture.familysearch-death.luis-de-rivera.1811/3Q9M-CSFS-2BP2-original.jpg plus deep-zoom assembly, reading-order crops, and metadata; duplicate exact frame retained in humacao-burials-1810-1815",
+        "status": "confirmed_original_reviewed_burial_date_resolved",
         "public_image": "1811-luis-de-rivera-death.jpg"
       }
     ],
@@ -14773,15 +14838,16 @@ export const peopleProfiles: readonly PersonProfile[] = [
     "sources": [
       {
         "id": "source.familysearch-death.luis-de-rivera.1811",
-        "type": "parish_death_register_with_image",
-        "title": "1811 death of Luís de Rivera",
+        "type": "parish_burial_register_with_image",
+        "title": "1811 burial of Luís de Rivera",
         "repository": "Dulce Nombre de Jesús, Humacao, via FamilySearch",
         "accessed": "2026-07-24",
         "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSFS-2BP2?view=fullText&keywords=Isidora+Rodr%C3%ADguez%2Cde+Lu%C3%ADs+de+Rivera&lang=en&groupId=M993-WQQ",
-        "quality": "original_register_image_downloaded_and_transcribed_key_clauses",
-        "citation": "DGS 008038524, item 6, image 23. The 1811 Humacao entry identifies Luís de Rivera as a native of this district and about 50 years old, the legitimate son of Roque and Marciana Delgado, and the church-married husband of Isidora Rodríguez. It names nine children: Josefa, Simona, Ysabel, Juana, Gerónima, Domingo, María, Ramón, and Juan. The exact day is too faint to promote from the original image.",
-        "image_archive": "capture.familysearch-death.luis-de-rivera.1811/3Q9M-CSFS-2BP2-original.jpg plus deep-zoom assembly, reading-order crops, and metadata",
-        "status": "confirmed_original_reviewed_exact_day_open",
+        "index_url": "https://www.familysearch.org/ark:/61903/1:1:XS31-1VWK?lang=en",
+        "quality": "original_register_image_downloaded_and_transcribed_attached_index_resolves_faint_date",
+        "citation": "DGS 008038524, item 6, image 23. The Humacao entry identifies Luís de Rivera as a native of this district and about 50 years old, the legitimate son of Roque and Marciana Delgado, and the church-married husband of Isidora Rodríguez. It names nine children: Josefa, Simona, Ysabel, Juana, Gerónima, Domingo, María, Ramón, and Juan. The manuscript day is faint; the attached FamilySearch index and record page resolve the burial date as 20 April 1811, consistent with the surrounding 19 April and 1 May entries. The exact death day is not separately stated. The computer-index forms Luís Sumano, Roque de Rivera, and Merenciana are not adopted as names.",
+        "image_archive": "capture.familysearch-death.luis-de-rivera.1811/3Q9M-CSFS-2BP2-original.jpg plus deep-zoom assembly, reading-order crops, and metadata; duplicate exact frame retained in humacao-burials-1810-1815",
+        "status": "confirmed_original_reviewed_burial_date_resolved",
         "public_image": "1811-luis-de-rivera-death.jpg"
       }
     ],
@@ -14841,15 +14907,16 @@ export const peopleProfiles: readonly PersonProfile[] = [
     "sources": [
       {
         "id": "source.familysearch-death.luis-de-rivera.1811",
-        "type": "parish_death_register_with_image",
-        "title": "1811 death of Luís de Rivera",
+        "type": "parish_burial_register_with_image",
+        "title": "1811 burial of Luís de Rivera",
         "repository": "Dulce Nombre de Jesús, Humacao, via FamilySearch",
         "accessed": "2026-07-24",
         "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSFS-2BP2?view=fullText&keywords=Isidora+Rodr%C3%ADguez%2Cde+Lu%C3%ADs+de+Rivera&lang=en&groupId=M993-WQQ",
-        "quality": "original_register_image_downloaded_and_transcribed_key_clauses",
-        "citation": "DGS 008038524, item 6, image 23. The 1811 Humacao entry identifies Luís de Rivera as a native of this district and about 50 years old, the legitimate son of Roque and Marciana Delgado, and the church-married husband of Isidora Rodríguez. It names nine children: Josefa, Simona, Ysabel, Juana, Gerónima, Domingo, María, Ramón, and Juan. The exact day is too faint to promote from the original image.",
-        "image_archive": "capture.familysearch-death.luis-de-rivera.1811/3Q9M-CSFS-2BP2-original.jpg plus deep-zoom assembly, reading-order crops, and metadata",
-        "status": "confirmed_original_reviewed_exact_day_open",
+        "index_url": "https://www.familysearch.org/ark:/61903/1:1:XS31-1VWK?lang=en",
+        "quality": "original_register_image_downloaded_and_transcribed_attached_index_resolves_faint_date",
+        "citation": "DGS 008038524, item 6, image 23. The Humacao entry identifies Luís de Rivera as a native of this district and about 50 years old, the legitimate son of Roque and Marciana Delgado, and the church-married husband of Isidora Rodríguez. It names nine children: Josefa, Simona, Ysabel, Juana, Gerónima, Domingo, María, Ramón, and Juan. The manuscript day is faint; the attached FamilySearch index and record page resolve the burial date as 20 April 1811, consistent with the surrounding 19 April and 1 May entries. The exact death day is not separately stated. The computer-index forms Luís Sumano, Roque de Rivera, and Merenciana are not adopted as names.",
+        "image_archive": "capture.familysearch-death.luis-de-rivera.1811/3Q9M-CSFS-2BP2-original.jpg plus deep-zoom assembly, reading-order crops, and metadata; duplicate exact frame retained in humacao-burials-1810-1815",
+        "status": "confirmed_original_reviewed_burial_date_resolved",
         "public_image": "1811-luis-de-rivera-death.jpg"
       }
     ],
@@ -14909,15 +14976,16 @@ export const peopleProfiles: readonly PersonProfile[] = [
     "sources": [
       {
         "id": "source.familysearch-death.luis-de-rivera.1811",
-        "type": "parish_death_register_with_image",
-        "title": "1811 death of Luís de Rivera",
+        "type": "parish_burial_register_with_image",
+        "title": "1811 burial of Luís de Rivera",
         "repository": "Dulce Nombre de Jesús, Humacao, via FamilySearch",
         "accessed": "2026-07-24",
         "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSFS-2BP2?view=fullText&keywords=Isidora+Rodr%C3%ADguez%2Cde+Lu%C3%ADs+de+Rivera&lang=en&groupId=M993-WQQ",
-        "quality": "original_register_image_downloaded_and_transcribed_key_clauses",
-        "citation": "DGS 008038524, item 6, image 23. The 1811 Humacao entry identifies Luís de Rivera as a native of this district and about 50 years old, the legitimate son of Roque and Marciana Delgado, and the church-married husband of Isidora Rodríguez. It names nine children: Josefa, Simona, Ysabel, Juana, Gerónima, Domingo, María, Ramón, and Juan. The exact day is too faint to promote from the original image.",
-        "image_archive": "capture.familysearch-death.luis-de-rivera.1811/3Q9M-CSFS-2BP2-original.jpg plus deep-zoom assembly, reading-order crops, and metadata",
-        "status": "confirmed_original_reviewed_exact_day_open",
+        "index_url": "https://www.familysearch.org/ark:/61903/1:1:XS31-1VWK?lang=en",
+        "quality": "original_register_image_downloaded_and_transcribed_attached_index_resolves_faint_date",
+        "citation": "DGS 008038524, item 6, image 23. The Humacao entry identifies Luís de Rivera as a native of this district and about 50 years old, the legitimate son of Roque and Marciana Delgado, and the church-married husband of Isidora Rodríguez. It names nine children: Josefa, Simona, Ysabel, Juana, Gerónima, Domingo, María, Ramón, and Juan. The manuscript day is faint; the attached FamilySearch index and record page resolve the burial date as 20 April 1811, consistent with the surrounding 19 April and 1 May entries. The exact death day is not separately stated. The computer-index forms Luís Sumano, Roque de Rivera, and Merenciana are not adopted as names.",
+        "image_archive": "capture.familysearch-death.luis-de-rivera.1811/3Q9M-CSFS-2BP2-original.jpg plus deep-zoom assembly, reading-order crops, and metadata; duplicate exact frame retained in humacao-burials-1810-1815",
+        "status": "confirmed_original_reviewed_burial_date_resolved",
         "public_image": "1811-luis-de-rivera-death.jpg"
       }
     ],
@@ -14977,15 +15045,16 @@ export const peopleProfiles: readonly PersonProfile[] = [
     "sources": [
       {
         "id": "source.familysearch-death.luis-de-rivera.1811",
-        "type": "parish_death_register_with_image",
-        "title": "1811 death of Luís de Rivera",
+        "type": "parish_burial_register_with_image",
+        "title": "1811 burial of Luís de Rivera",
         "repository": "Dulce Nombre de Jesús, Humacao, via FamilySearch",
         "accessed": "2026-07-24",
         "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSFS-2BP2?view=fullText&keywords=Isidora+Rodr%C3%ADguez%2Cde+Lu%C3%ADs+de+Rivera&lang=en&groupId=M993-WQQ",
-        "quality": "original_register_image_downloaded_and_transcribed_key_clauses",
-        "citation": "DGS 008038524, item 6, image 23. The 1811 Humacao entry identifies Luís de Rivera as a native of this district and about 50 years old, the legitimate son of Roque and Marciana Delgado, and the church-married husband of Isidora Rodríguez. It names nine children: Josefa, Simona, Ysabel, Juana, Gerónima, Domingo, María, Ramón, and Juan. The exact day is too faint to promote from the original image.",
-        "image_archive": "capture.familysearch-death.luis-de-rivera.1811/3Q9M-CSFS-2BP2-original.jpg plus deep-zoom assembly, reading-order crops, and metadata",
-        "status": "confirmed_original_reviewed_exact_day_open",
+        "index_url": "https://www.familysearch.org/ark:/61903/1:1:XS31-1VWK?lang=en",
+        "quality": "original_register_image_downloaded_and_transcribed_attached_index_resolves_faint_date",
+        "citation": "DGS 008038524, item 6, image 23. The Humacao entry identifies Luís de Rivera as a native of this district and about 50 years old, the legitimate son of Roque and Marciana Delgado, and the church-married husband of Isidora Rodríguez. It names nine children: Josefa, Simona, Ysabel, Juana, Gerónima, Domingo, María, Ramón, and Juan. The manuscript day is faint; the attached FamilySearch index and record page resolve the burial date as 20 April 1811, consistent with the surrounding 19 April and 1 May entries. The exact death day is not separately stated. The computer-index forms Luís Sumano, Roque de Rivera, and Merenciana are not adopted as names.",
+        "image_archive": "capture.familysearch-death.luis-de-rivera.1811/3Q9M-CSFS-2BP2-original.jpg plus deep-zoom assembly, reading-order crops, and metadata; duplicate exact frame retained in humacao-burials-1810-1815",
+        "status": "confirmed_original_reviewed_burial_date_resolved",
         "public_image": "1811-luis-de-rivera-death.jpg"
       }
     ],
@@ -15045,15 +15114,16 @@ export const peopleProfiles: readonly PersonProfile[] = [
     "sources": [
       {
         "id": "source.familysearch-death.luis-de-rivera.1811",
-        "type": "parish_death_register_with_image",
-        "title": "1811 death of Luís de Rivera",
+        "type": "parish_burial_register_with_image",
+        "title": "1811 burial of Luís de Rivera",
         "repository": "Dulce Nombre de Jesús, Humacao, via FamilySearch",
         "accessed": "2026-07-24",
         "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSFS-2BP2?view=fullText&keywords=Isidora+Rodr%C3%ADguez%2Cde+Lu%C3%ADs+de+Rivera&lang=en&groupId=M993-WQQ",
-        "quality": "original_register_image_downloaded_and_transcribed_key_clauses",
-        "citation": "DGS 008038524, item 6, image 23. The 1811 Humacao entry identifies Luís de Rivera as a native of this district and about 50 years old, the legitimate son of Roque and Marciana Delgado, and the church-married husband of Isidora Rodríguez. It names nine children: Josefa, Simona, Ysabel, Juana, Gerónima, Domingo, María, Ramón, and Juan. The exact day is too faint to promote from the original image.",
-        "image_archive": "capture.familysearch-death.luis-de-rivera.1811/3Q9M-CSFS-2BP2-original.jpg plus deep-zoom assembly, reading-order crops, and metadata",
-        "status": "confirmed_original_reviewed_exact_day_open",
+        "index_url": "https://www.familysearch.org/ark:/61903/1:1:XS31-1VWK?lang=en",
+        "quality": "original_register_image_downloaded_and_transcribed_attached_index_resolves_faint_date",
+        "citation": "DGS 008038524, item 6, image 23. The Humacao entry identifies Luís de Rivera as a native of this district and about 50 years old, the legitimate son of Roque and Marciana Delgado, and the church-married husband of Isidora Rodríguez. It names nine children: Josefa, Simona, Ysabel, Juana, Gerónima, Domingo, María, Ramón, and Juan. The manuscript day is faint; the attached FamilySearch index and record page resolve the burial date as 20 April 1811, consistent with the surrounding 19 April and 1 May entries. The exact death day is not separately stated. The computer-index forms Luís Sumano, Roque de Rivera, and Merenciana are not adopted as names.",
+        "image_archive": "capture.familysearch-death.luis-de-rivera.1811/3Q9M-CSFS-2BP2-original.jpg plus deep-zoom assembly, reading-order crops, and metadata; duplicate exact frame retained in humacao-burials-1810-1815",
+        "status": "confirmed_original_reviewed_burial_date_resolved",
         "public_image": "1811-luis-de-rivera-death.jpg"
       }
     ],
@@ -15113,15 +15183,16 @@ export const peopleProfiles: readonly PersonProfile[] = [
     "sources": [
       {
         "id": "source.familysearch-death.luis-de-rivera.1811",
-        "type": "parish_death_register_with_image",
-        "title": "1811 death of Luís de Rivera",
+        "type": "parish_burial_register_with_image",
+        "title": "1811 burial of Luís de Rivera",
         "repository": "Dulce Nombre de Jesús, Humacao, via FamilySearch",
         "accessed": "2026-07-24",
         "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSFS-2BP2?view=fullText&keywords=Isidora+Rodr%C3%ADguez%2Cde+Lu%C3%ADs+de+Rivera&lang=en&groupId=M993-WQQ",
-        "quality": "original_register_image_downloaded_and_transcribed_key_clauses",
-        "citation": "DGS 008038524, item 6, image 23. The 1811 Humacao entry identifies Luís de Rivera as a native of this district and about 50 years old, the legitimate son of Roque and Marciana Delgado, and the church-married husband of Isidora Rodríguez. It names nine children: Josefa, Simona, Ysabel, Juana, Gerónima, Domingo, María, Ramón, and Juan. The exact day is too faint to promote from the original image.",
-        "image_archive": "capture.familysearch-death.luis-de-rivera.1811/3Q9M-CSFS-2BP2-original.jpg plus deep-zoom assembly, reading-order crops, and metadata",
-        "status": "confirmed_original_reviewed_exact_day_open",
+        "index_url": "https://www.familysearch.org/ark:/61903/1:1:XS31-1VWK?lang=en",
+        "quality": "original_register_image_downloaded_and_transcribed_attached_index_resolves_faint_date",
+        "citation": "DGS 008038524, item 6, image 23. The Humacao entry identifies Luís de Rivera as a native of this district and about 50 years old, the legitimate son of Roque and Marciana Delgado, and the church-married husband of Isidora Rodríguez. It names nine children: Josefa, Simona, Ysabel, Juana, Gerónima, Domingo, María, Ramón, and Juan. The manuscript day is faint; the attached FamilySearch index and record page resolve the burial date as 20 April 1811, consistent with the surrounding 19 April and 1 May entries. The exact death day is not separately stated. The computer-index forms Luís Sumano, Roque de Rivera, and Merenciana are not adopted as names.",
+        "image_archive": "capture.familysearch-death.luis-de-rivera.1811/3Q9M-CSFS-2BP2-original.jpg plus deep-zoom assembly, reading-order crops, and metadata; duplicate exact frame retained in humacao-burials-1810-1815",
+        "status": "confirmed_original_reviewed_burial_date_resolved",
         "public_image": "1811-luis-de-rivera-death.jpg"
       }
     ],

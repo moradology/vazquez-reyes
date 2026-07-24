@@ -29,7 +29,7 @@ export function OriginFrontier() {
           Máximo Vázquez of Caguas and Josefa Rivera of Humacao. Their 1805
           marriage names both parent pairs. Earlier Caguas records now identify
           Máximo’s parents more fully as Francisco Vázquez and María Magdalena
-          Cortés. Luís de Rivera’s 1811 death carries Josefa’s line one
+          Cortés. Luís de Rivera’s 1811 burial carries Josefa’s line one
           generation farther, but it calls Luís himself a native of the
           Humacao district.
         </p>
@@ -100,7 +100,7 @@ export function OriginFrontier() {
               </b>
             </h3>
             <p>
-              His 1811 death names Roque and Marciana; Isidora’s birthplace
+              His 1811 burial names Roque and Marciana; Isidora’s birthplace
               and parents remain unknown
             </p>
           </div>

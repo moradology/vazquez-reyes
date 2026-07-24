@@ -968,6 +968,53 @@ export const timelineEvents: readonly TimelineEvent[] = [
     }
   },
   {
+    "id": "timeline.luis-father-of-josefa-rivera.death.18110420",
+    "branch": "vazquez",
+    "directLine": true,
+    "dateLabel": "By 20 April 1811",
+    "dateTime": null,
+    "sortValue": 18110419,
+    "eventType": "death",
+    "eventTypeLabel": "Death",
+    "certainty": "Approximate or bounded",
+    "title": "Luís de Rivera dies",
+    "description": "The surviving records bound the date and place the event in Humacao, Puerto Rico.",
+    "place": "Humacao, Puerto Rico",
+    "people": [
+      {
+        "id": "person.luis-father-of-josefa-rivera",
+        "name": "Luís de Rivera",
+        "slug": "luis-father-of-josefa-rivera"
+      }
+    ],
+    "source": null
+  },
+  {
+    "id": "geo.event.luis-death-1811",
+    "branch": "vazquez",
+    "directLine": true,
+    "dateLabel": "20 April 1811",
+    "dateTime": "1811-04-20",
+    "sortValue": 18110420,
+    "eventType": "burial",
+    "eventTypeLabel": "Burial",
+    "certainty": "Documented",
+    "title": "Luís de Rivera is buried",
+    "description": "Luís was buried in Humacao. The entry names his parents, wife, and nine children.",
+    "place": "Humacao",
+    "people": [
+      {
+        "id": "person.luis-father-of-josefa-rivera",
+        "name": "Luís de Rivera",
+        "slug": "luis-father-of-josefa-rivera"
+      }
+    ],
+    "source": {
+      "title": "1811 burial of Luís de Rivera",
+      "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSFS-2BP2?view=fullText&keywords=Isidora+Rodr%C3%ADguez%2Cde+Lu%C3%ADs+de+Rivera&lang=en&groupId=M993-WQQ"
+    }
+  },
+  {
     "id": "timeline.domingo-child-of-luis-isidora.birth.18110615",
     "branch": "vazquez",
     "directLine": false,
@@ -1100,31 +1147,6 @@ export const timelineEvents: readonly TimelineEvent[] = [
     "source": null
   },
   {
-    "id": "geo.event.luis-death-1811",
-    "branch": "vazquez",
-    "directLine": true,
-    "dateLabel": "1811",
-    "dateTime": "1811",
-    "sortValue": 18110615,
-    "eventType": "death",
-    "eventTypeLabel": "Death",
-    "certainty": "Documented",
-    "title": "Luís de Rivera dies",
-    "description": "Luís died in Humacao. The entry names his parents, wife, and nine children.",
-    "place": "Humacao",
-    "people": [
-      {
-        "id": "person.luis-father-of-josefa-rivera",
-        "name": "Luís de Rivera",
-        "slug": "luis-father-of-josefa-rivera"
-      }
-    ],
-    "source": {
-      "title": "1811 death of Luís de Rivera",
-      "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSFS-2BP2?view=fullText&keywords=Isidora+Rodr%C3%ADguez%2Cde+Lu%C3%ADs+de+Rivera&lang=en&groupId=M993-WQQ"
-    }
-  },
-  {
     "id": "geo.event.luis-native-humacao",
     "branch": "vazquez",
     "directLine": true,
@@ -1135,7 +1157,7 @@ export const timelineEvents: readonly TimelineEvent[] = [
     "eventTypeLabel": "Birthplace evidence",
     "certainty": "Approximate or bounded",
     "title": "Luís de Rivera's birthplace enters the record",
-    "description": "Luís de Rivera's 1811 death calls him a native of this Humacao district.",
+    "description": "Luís de Rivera's 1811 burial entry calls him a native of this Humacao district.",
     "place": "Humacao",
     "people": [
       {
@@ -1145,7 +1167,7 @@ export const timelineEvents: readonly TimelineEvent[] = [
       }
     ],
     "source": {
-      "title": "1811 death of Luís de Rivera",
+      "title": "1811 burial of Luís de Rivera",
       "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSFS-2BP2?view=fullText&keywords=Isidora+Rodr%C3%ADguez%2Cde+Lu%C3%ADs+de+Rivera&lang=en&groupId=M993-WQQ"
     }
   },

@@ -1,4 +1,4 @@
-# Luís de Rivera's 1811 death and the origin frontier
+# Luís de Rivera's 1811 burial and the origin frontier
 
 ## Question
 
@@ -8,7 +8,7 @@ Rico?
 
 ## Original record
 
-FamilySearch full-text search surfaced a death entry in the Humacao register
+FamilySearch full-text search surfaced a burial entry in the Humacao register
 for 1811:
 
 - DGS 008038524, item 6, image 23
@@ -26,8 +26,15 @@ the top of the right page. The key clauses identify:
   Ramón, and Juan**.
 
 The manuscript reads Marciana. The automated transcript's "Merenciana" form is
-not adopted. The exact day is too faint to promote; 1811 is secure from the
-register and surrounding entry.
+not adopted.
+
+The manuscript day is faint. The attached FamilySearch index and record page
+resolve the event as a burial on **20 April 1811**. That date is also
+chronologically consistent with the preceding 19 April burial and the next
+entry in May. The computer-indexed subject name **Luís Sumano**, father form
+**Roque de Rivera**, and mother form **Merenciana** are indexing errors and are
+not adopted. The register establishes the burial date, not a separately stated
+exact day of death.
 
 ## Identity
 
@@ -38,7 +45,7 @@ The record is a strong match to the established household:
 2. His wife is Isidora Rodríguez.
 3. The children include Josefa, Simona, and Ysabel, each independently tied to
    that parent pair by earlier originals.
-4. The additional six children are accepted from the death entry but are
+4. The additional six children are accepted from the burial entry but are
    retained without surnames until their own records are found.
 
 ## Negative coverage
@@ -48,7 +55,19 @@ surviving 1778–1799 item. It found Simona and Ysabel but not Josefa. This is a
 complete review of one item, not evidence that Josefa lacked a baptism or was
 born elsewhere.
 
-Focused FamilySearch index and OCR searches tested:
+The complete nine-frame alphabetical index to the Humacao 1810–1815 burial
+book was downloaded and reviewed. It:
+
+- lists Luís Rivera, son of Roque and Marciana Delgado, at page 18;
+- contains no defensible Isidora Rodríguez or Máximo Vázquez burial; and
+- lists a María Vázquez, daughter of Josefa, at page 22.
+
+The last lead was checked against the original. It is five-year-old **María de
+la Cruz**, daughter of **Josefa Vázquez**, buried 22 June 1800. The entry names
+no father and provides no identity bridge to Josefa Rivera, so it is retained
+as a rejected family link.
+
+Focused FamilySearch index and OCR searches also tested:
 
 - Isidora and Ysidora Rodríguez in early Humacao deaths;
 - Marciana Delgado with Roque;

@@ -500,17 +500,18 @@ export default function ResearchPage() {
                     >
                       <img
                         src="/records/1811-luis-de-rivera-death.jpg"
-                        alt="1811 Humacao death entry for Luís de Rivera, shown in reading order across two parts of the parish register"
+                        alt="1811 Humacao burial entry for Luís de Rivera, shown in reading order across two parts of the parish register"
                       />
                     </a>
                     <figcaption>
-                      <strong>1811 · Luís de Rivera’s death</strong>
+                      <strong>20 April 1811 · Luís de Rivera’s burial</strong>
                       <span>
                         Luís is described as a native of the Humacao district,
                         about 50 years old, and the legitimate son of Roque and
                         Marciana Delgado. The entry names Isidora Rodríguez and
-                        their nine children. The exact death day remains too
-                        faint to report confidently.
+                        their nine children. The manuscript day is faint; the
+                        attached index resolves the burial date as 20 April.
+                        The exact death day is not separately stated.
                       </span>
                       <small>
                         Dulce Nombre de Jesús · DGS 008038524 · item 6 · image

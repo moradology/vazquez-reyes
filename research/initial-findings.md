@@ -14,7 +14,7 @@ couple married in Manhattan and made their home in East Harlem.
 
 The direct lines now reach several great-great-grandparents of the starting
 couple. The Vázquez branch reaches the four parents named in an original 1805
-marriage and, through Luís de Rivera's 1811 death, one generation farther to
+marriage and, through Luís de Rivera's 1811 burial, one generation farther to
 Roque and Marciana Delgado. Original images have been retained for every
 central census, civil, and parish record reviewed. Details about potentially
 living descendants remain private.
@@ -249,12 +249,15 @@ marriage and death, and a wider Vázquez sibling cluster.
 - **Ysabel** was born **5 October 1792** and baptized **22 October 1792** in
   Las Piedras to the same parents, with Marta Berríos as godmother. Her name is
   written in the margin and omitted by the automated transcript.
-- Luís de Rivera's **1811 Humacao death entry** calls him a native of that
+- Luís de Rivera's **Humacao burial entry**, dated **20 April 1811**, calls
+  him a native of that
   district and about 50 years old, names his parents as **Roque** and
   **Marciana Delgado**, and identifies **Isidora Rodríguez** as his
   church-married wife. The original reads Marciana; the automated transcript's
-  Merenciana form is an OCR error.
-- The same death entry names nine children: **Josefa, Simona, Ysabel, Juana,
+  Merenciana form is an OCR error. The attached index resolves the faint
+  manuscript date as the burial date; the exact death day is not separately
+  stated.
+- The same burial entry names nine children: **Josefa, Simona, Ysabel, Juana,
   Gerónima, Domingo, María, Ramón, and Juan**. The six newly identified
   children are retained by given name only because the entry does not assign
   surnames to them.

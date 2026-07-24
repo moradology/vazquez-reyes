@@ -491,7 +491,7 @@ export const geographyEvents = [
     ],
     "sequence": 9,
     "map_label": "Humacao",
-    "map_note": "Luís de Rivera's 1811 death calls him a native of this Humacao district."
+    "map_note": "Luís de Rivera's 1811 burial entry calls him a native of this Humacao district."
   },
   {
     "id": "geo.event.maximo-josefa-marriage-1805",
@@ -536,22 +536,23 @@ export const geographyEvents = [
   },
   {
     "id": "geo.event.luis-death-1811",
-    "date": "1811",
-    "event_type": "death",
+    "date": "1811-04-20",
+    "event_type": "burial",
     "person_refs": [
       "person.luis-father-of-josefa-rivera"
     ],
     "place_ref": "place.humacao",
-    "status": "confirmed_year_exact_day_open",
+    "status": "confirmed_original_register_attached_index_resolves_burial_date",
     "evidence_refs": [
-      "source.familysearch-death.luis-de-rivera.1811"
+      "source.familysearch-death.luis-de-rivera.1811",
+      "source.familysearch-index.humacao-burials.1810-1815"
     ],
     "map_groups": [
       "early-vazquez"
     ],
     "sequence": 12,
-    "map_label": "Humacao · 1811",
-    "map_note": "Luís died in Humacao. The entry names his parents, wife, and nine children."
+    "map_label": "Humacao · 20 Apr 1811",
+    "map_note": "Luís was buried in Humacao. The entry names his parents, wife, and nine children."
   },
   {
     "id": "geo.event.family-juncos-1819",
