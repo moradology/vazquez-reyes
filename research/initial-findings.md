@@ -59,15 +59,32 @@ record reviewed. Details about potentially living descendants remain private.
 
 This couple were Mauricio's parents and Cruz's paternal grandparents.
 
-- Pedro was born about **1842–1843** in Humacao and died there on **3 January
-  1918**, age 75. His parents were unknown to the death informant.
-- Ana was born about **1857–1858** in Humacao and died there on **21 March
-  1918**, age 60. Her parents have not yet been found.
-- Ana's death act names four children: **Isabel, Natalio, Mauricio, and
-  Juliano**. Natalio's 1904 marriage independently names Pedro and Ana as his
-  parents.
+- Pedro died in Humacao on **3 January 1918**, reported age 75. The 1910
+  census instead reports age 60, so his birth remains a range of about
+  **1842–1850**, not an exact year.
+- Ana died there on **21 March 1918**, reported age 60. Her age 55 in 1910
+  places her birth about **1854–1858**.
+- Mauricio's Humacao baptism on **23 February 1882** confirms Pedro and Ana
+  as his parents and names another generation: Pedro's parents were **Ramón
+  Reyes and Inés Castro**; Ana's were **Dámaso Martínez and María Rivera**.
+  The entry reports a 22 September birth but uses impossible year wording;
+  1881 is likely but remains an inference.
+- The 1910 census identifies Pedro's marriage to Ana as his second and Ana's
+  first. They reported 35 years married. Ana reported **seven children born,
+  four living**.
+- Ana's death act names the four living children as **Isabel, Natalio,
+  Mauricio, and Juliano**. The 1910 household uses **Julián** for the son then
+  at home. Natalio's 1904 marriage independently names Pedro and Ana.
+- A 1877 baptism adds **Benito Isabel**, described as their legitimate son.
+  He is not merged with the later Isabel without a bridging record.
+- Pedro's earlier children **Anastacia Reyes Villafañe** and **Pedro Reyes
+  Villafañe** name his earlier partner **Juana Villafañe**, making them
+  Mauricio's documented paternal half-siblings.
 - Heriberta's 1913 baptism calls Mauricio's mother **Anastasia Martínez**;
   the civil records use **Ana Martínez**.
+- An 1844 Ana baptism with the same parent names is retained but rejected as
+  the direct Ana because it is 11–14 years earlier than her ages in two later
+  originals.
 
 ### Lope Díaz Figueroa and Reyes García Olivero
 
@@ -264,11 +281,13 @@ This couple were Carlina's parents and Rafael's maternal grandparents.
    archive lookup for Gurabo book 15, folio 18 verso, sufficient to identify
    the indexed Cruz Reyes and her parents.
 5. Cruz's and Rafael's NYC death certificates.
-6. Mauricio's and Carmen's baptisms, plus a family-informed record that can
-   settle Mauricio's 1977 candidate and Carmen's death.
+6. Mauricio's civil birth or a duplicate baptism that fixes the impossible
+   year wording; Carmen's baptism and death; and a family-informed record that
+   can settle Mauricio's 1977 death candidate.
 7. Aurora Pérez's birth, marriage, and death records.
 8. Birth or baptism records for the Perales–Pérez and Reyes–Martínez sibling
-   clusters.
+   clusters, especially Benito Isabel versus Isabel and Pedro's earlier
+   children with Juana Villafañe.
 
 All sources, conflicts and next-record targets are recorded in the adjacent
 JSONL files. Record pages, viewer captures, original-resolution images, and the

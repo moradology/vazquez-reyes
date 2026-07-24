@@ -14,6 +14,41 @@ export const sources = [
     grade: "Original civil record",
   },
   {
+    id: "mauricio-baptism-1882",
+    label: "1882 baptism: Mauricio Reyes Martínez",
+    detail: "Baptized 23 February 1882 in Humacao; parents Pedro Reyes and Ana Martínez; grandparents Ramón Reyes and Inés Castro, and Dámaso Martínez and María Rivera. The entry’s birth-year wording is impossible and remains unresolved.",
+    href: "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSF3-6SVL-5?view=fullText&keywords=Pedro+Reyes%2CReyes%2CPedro%2CAna+Mart%C3%ADnez%2CHumacao&lang=en",
+    grade: "Original parish register · birth-year conflict retained",
+  },
+  {
+    id: "pedro-ana-census-1910",
+    label: "1910 census: Pedro Reyes, Ana Martínez, and Julián Reyes",
+    detail: "Anton Ruiz, Humacao. The household crosses sheets 5B–6A. Pedro’s marriage to Ana was his second and her first; Ana reported seven children born and four living.",
+    href: "https://www.familysearch.org/ark:/61903/1:1:VWKH-5D5?lang=en",
+    grade: "Original enumeration · two adjacent pages",
+  },
+  {
+    id: "benito-isabel-baptism-1877",
+    label: "1877 baptism: Benito Isabel Reyes Martínez",
+    detail: "Born 8 July and baptized 15 September 1877 in Humacao, a son of Pedro Reyes and Ana Martínez. He is not merged with the later Isabel without a record connecting the names.",
+    href: "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSFS-29WY-6?view=fullText&keywords=Reyes%2CAna+Mart%C3%ADnez%2CPedro+Reyes%2CHumacao&lang=en",
+    grade: "Original parish register · identity question open",
+  },
+  {
+    id: "anastacia-reyes-villafane-death",
+    label: "1958 death: Anastacia Reyes Villafañe",
+    detail: "Humacao death record naming Pedro Reyes and Juana Villafañe as her parents, confirming one of Mauricio’s paternal half-siblings.",
+    href: "https://www.familysearch.org/ark:/61903/1:1:QVJS-K72H?lang=en",
+    grade: "Original civil record",
+  },
+  {
+    id: "pedro-reyes-villafane-death",
+    label: "1897 death: Pedro Reyes Villafañe",
+    detail: "Humacao death record naming Pedro Reyes and Juana Villafañe as his parents, confirming another of Mauricio’s paternal half-siblings.",
+    href: "https://www.familysearch.org/ark:/61903/1:1:ZC2J-5DPZ?lang=en",
+    grade: "Original civil record",
+  },
+  {
     id: "marriage",
     label: "1941 Manhattan marriage license",
     detail: "Rafael Vazquez and Cruz Reyes, married 25 October 1941; certificate 18978; all four parents named.",
@@ -516,18 +551,62 @@ export const familyCouples = [
     people: [
       {
         name: "Pedro Reyes",
-        birth: "About 1842–1843 · Humacao, Puerto Rico",
+        birth: "About 1842–1850 · Humacao, Puerto Rico · conflicting ages",
         death: "3 January 1918 · Humacao, Puerto Rico",
       },
       {
         name: "Ana or Anastasia Martínez",
-        birth: "About 1857–1858 · Humacao, Puerto Rico",
+        birth: "About 1854–1858 · Humacao, Puerto Rico",
         death: "21 March 1918 · Humacao, Puerto Rico",
       },
     ],
-    children: ["Isabel", "Natalio", "Mauricio", "Juliano"],
+    children: ["Isabel", "Natalio", "Benito Isabel", "Mauricio", "Julián or Juliano"],
     childNote:
-      "Ana’s death act names all four. Heriberta’s 1913 baptism uses Anastasia Martínez; the other reviewed civil records use Ana.",
+      "Ana reported seven children born and four living in 1910, so this remains an incomplete cluster. Benito Isabel is not merged with the later Isabel. Heriberta’s 1913 baptism uses Anastasia; the civil records use Ana.",
+  },
+  {
+    id: "ramon-ines",
+    branch: "Pedro’s parents",
+    couple: "Ramón Reyes + Inés Castro",
+    status: "documented" as const,
+    connection: "Her paternal great-grandparents",
+    people: [
+      {
+        name: "Ramón Reyes",
+        birth: "Not yet found",
+        death: "Not yet found",
+      },
+      {
+        name: "Inés Castro",
+        birth: "Not yet found",
+        death: "Not yet found",
+      },
+    ],
+    children: ["Pedro Reyes"],
+    childNote:
+      "Mauricio’s 1882 baptism and Benito Isabel’s 1877 baptism independently name Ramón and Inés as Pedro’s parents. Their own life records are the next target.",
+  },
+  {
+    id: "damaso-maria",
+    branch: "Ana’s parents",
+    couple: "Dámaso Martínez + María Rivera",
+    status: "documented" as const,
+    connection: "Her paternal great-grandparents",
+    people: [
+      {
+        name: "Dámaso Martínez",
+        birth: "Not yet found",
+        death: "Not yet found",
+      },
+      {
+        name: "María Rivera",
+        birth: "Not yet found",
+        death: "Not yet found",
+      },
+    ],
+    children: ["Ana or Anastasia Martínez"],
+    childNote:
+      "Mauricio’s 1882 baptism clearly names this pair. A 1877 sibling baptism repeats Dámaso but leaves María’s surname difficult to read; the conflict remains visible.",
   },
   {
     id: "lope-reyes",
@@ -743,7 +822,7 @@ export const openCases = [
     id: "VR-04",
     title: "Mauricio Reyes’s death and mother",
     conflict: "The strong 1977 candidate matches Mauricio’s full name, age, Humacao birthplace, father Pedro, and widowed status. A nurse supplied mother María rather than the documented Ana and did not know his spouse; the family export says 1982.",
-    next: "Find Mauricio’s baptism, obituary, burial, or another family-informed later record before merging the 1977 death.",
+    next: "His 1882 baptism now confirms Ana as his mother. Find an obituary, burial, or another family-informed later record before merging the 1977 death.",
   },
   {
     id: "VR-05",
@@ -799,6 +878,24 @@ export const openCases = [
     conflict: "Eight children are now documented through the exact parent pair: Juana Jacinta, Andrea, Juan de Dios, Miguel, Atilano, Francisco Solano, Manuel, and María. Tomasa remains probable because her reported age conflicts with Juan de Dios’s known 1819 birth. The long 1806-to-about-1838 child span also needs testing.",
     next: "Find Máximo and Josefa’s marriage before 16 August 1806, Máximo’s baptism in Caguas, Josefa’s baptism in Humacao, and another record that establishes Tomasa’s age and birthplace.",
   },
+  {
+    id: "VR-14",
+    title: "Mauricio’s exact birth year",
+    conflict: "His 23 February 1882 baptism reports a 22 September birth but says it occurred “this year,” which would place the birth after the baptism. An 1881 birth is likely, not proven.",
+    next: "Find the civil birth, duplicate baptism, parish index, confirmation, or marriage-preparation record before assigning 22 September 1881 as exact.",
+  },
+  {
+    id: "VR-15",
+    title: "Ana’s baptism and maternal surname",
+    conflict: "Mauricio’s 1882 baptism clearly names Dámaso Martínez and María Rivera as Ana’s parents. A 1877 sibling baptism repeats Dámaso but leaves María’s surname difficult to read. An 1844 Ana with the same parent names is too old to fit Ana’s ages in 1910 and 1918.",
+    next: "Search Humacao baptisms about 1854–1858 and the Pedro–Ana marriage around 1874–1875. Retain the 1844 child without merging her.",
+  },
+  {
+    id: "VR-16",
+    title: "Benito Isabel and Isabel",
+    conflict: "A 1877 baptism records a son named Benito Isabel. Ana’s 1918 death names a living child Isabel. The shared name element does not prove one identity.",
+    next: "Find civil births, baptisms, marriages, or deaths for both children using Pedro Reyes and Ana Martínez as parent anchors.",
+  },
 ];
 
 export const negativeSearches = [
@@ -814,6 +911,8 @@ export const negativeSearches = [
   "Atilano’s baptism was not found in either the full-text index or a direct scan of the expected 1828–1829 Juncos pages. A damaged 1846 page naming Don Atilano del Rosario Vázquez as a godfather is retained only as a candidate naming clue.",
   "A 1942 death for Aurora Monserrate Pérez belongs to the widow of Marcelo Pérez, not the wife of Marcelino Perales; it was captured and rejected.",
   "No Pastora Reyes entry appears in the reviewed Gurabo baptism-index pages. A Cruz Reyes entry points to book 15, folio 18 verso, but the damaged register image does not expose the child or parents.",
+  "The 1844 Humacao baptism of an Ana Martínez with parents Dámaso Martínez and María Rivera is retained but rejected as the direct Ana because it is 11–14 years earlier than her ages in the 1910 census and 1918 death act.",
+  "Focused searches for Pedro Reyes and Juana Villafañe’s marriage and for Juana’s death did not produce a defensible exact match; two children’s original death records nevertheless confirm the parent pair.",
 ];
 
 export const nameVariants = [
@@ -1027,5 +1126,17 @@ export const updates = [
   {
     date: "24 Jul 2026",
     text: "Preserved every direct download, screenshot-only record, damaged lead, and rejected candidate from this pass in the private evidence archive.",
+  },
+  {
+    date: "24 Jul 2026",
+    text: "Found Mauricio Reyes Martínez’s 1882 Humacao baptism, carrying the Reyes line back to Ramón Reyes and Inés Castro and the Martínez line to Dámaso Martínez and María Rivera.",
+  },
+  {
+    date: "24 Jul 2026",
+    text: "Found Pedro and Ana across the 1910 census page break and documented Pedro’s earlier children with Juana Villafañe; Ana reported seven children born and four living.",
+  },
+  {
+    date: "24 Jul 2026",
+    text: "Retained the 1844 Ana candidate, the 1877 Benito Isabel baptism, every full record image, and every legibility crop without forcing uncertain identities together.",
   },
 ];

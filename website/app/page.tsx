@@ -385,10 +385,41 @@ export default function Home() {
               </span>
             </h3>
             <p>
-              Pedro and Ana lived in Humacao. A granddaughter’s baptism uses
-              Anastasia; their other reviewed records use Ana.
+              Pedro and Ana lived in Humacao. Their son Mauricio was baptized
+              there in 1882. In 1910 they were living with their son Julián;
+              Ana reported seven children born and four living.
             </p>
             <a href="/research#pedro-ana">See this family →</a>
+          </article>
+          <article>
+            <span className="story-when">Pedro’s parents</span>
+            <h3>
+              <span data-person-id="person.ramon-reyes">Ramón Reyes</span>
+              {" + "}
+              <span data-person-id="person.ines-castro">Inés Castro</span>
+            </h3>
+            <p>
+              Two Humacao baptismal records name Ramón and Inés as Pedro
+              Reyes’s parents. Their own birth, marriage and death records are
+              still to be found.
+            </p>
+            <a href="/research#ramon-ines">See this family →</a>
+          </article>
+          <article>
+            <span className="story-when">Ana’s parents</span>
+            <h3>
+              <span data-person-id="person.damaso-martinez">
+                Dámaso Martínez
+              </span>
+              {" + "}
+              <span data-person-id="person.maria-rivera">María Rivera</span>
+            </h3>
+            <p>
+              Mauricio’s baptism names Dámaso and María as Ana’s parents. An
+              earlier sibling’s baptism repeats Dámaso, though María’s surname
+              is difficult to read on that page.
+            </p>
+            <a href="/research#damaso-maria">See this family →</a>
           </article>
           <article>
             <span className="story-when">Carmen’s parents</span>

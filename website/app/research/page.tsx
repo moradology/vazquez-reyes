@@ -149,6 +149,54 @@ export default function ResearchPage() {
                 </ul>
                 <p>{family.childNote}</p>
               </div>
+              {family.id === "pedro-ana" && (
+                <>
+                  <figure className="family-record">
+                    <a
+                      href="/records/1882-mauricio-reyes-baptism.jpg"
+                      target="_blank"
+                    >
+                      <img
+                        src="/records/1882-mauricio-reyes-baptism.jpg"
+                        alt="1882 Humacao baptismal entry for Mauricio Reyes Martínez"
+                      />
+                    </a>
+                    <figcaption>
+                      <strong>1882 · Humacao baptism</strong>
+                      <span>
+                        Mauricio’s baptism names Pedro Reyes and Ana Martínez,
+                        then carries both lines back to Ramón Reyes and Inés
+                        Castro, and Dámaso Martínez and María Rivera.
+                      </span>
+                      <small>
+                        Parish register · page 236 · baptized 23 February 1882
+                      </small>
+                    </figcaption>
+                  </figure>
+                  <figure className="family-record">
+                    <a
+                      href="/records/1910-pedro-ana-julian-household.jpg"
+                      target="_blank"
+                    >
+                      <img
+                        src="/records/1910-pedro-ana-julian-household.jpg"
+                        alt="1910 Puerto Rico census lines for Pedro Reyes, Ana Martínez, and Julián Reyes across two adjacent pages"
+                      />
+                    </a>
+                    <figcaption>
+                      <strong>1910 · Anton Ruiz, Humacao</strong>
+                      <span>
+                        Pedro closes sheet 5B; Ana and Julián continue on sheet
+                        6A. The columns identify Pedro’s second marriage and
+                        report that Ana had seven children, four living.
+                      </span>
+                      <small>
+                        U.S. census · ED 822 · sheets 5B–6A · lines 50 and 1–2
+                      </small>
+                    </figcaption>
+                  </figure>
+                </>
+              )}
               {family.id === "sotero-rodriguez" && (
                 <figure className="family-record">
                   <a
@@ -204,6 +252,43 @@ export default function ResearchPage() {
               <b>Next:</b> seek a duplicate or clearer copy of the damaged
               Gurabo folio and check whether it says Pastora, Cruz Pastora,
               Pastora Cruz, or Cruz.
+            </p>
+          </article>
+          <article role="row">
+            <div role="cell">
+              <strong>Mauricio’s birth year</strong>
+              <Grade kind="open">WORDING CONFLICT</Grade>
+            </div>
+            <p role="cell">
+              <b>22 September</b> — the birth day and month written in his
+              original baptismal entry.
+            </p>
+            <p role="cell">
+              <b>“This year”</b> — impossible wording in a baptism dated 23
+              February 1882. The likely year is 1881, but that remains an
+              inference.
+            </p>
+            <p role="cell">
+              <b>Next:</b> find his civil birth or a duplicate church record
+              before assigning an exact year.
+            </p>
+          </article>
+          <article role="row">
+            <div role="cell">
+              <strong>Ana Martínez’s baptism</strong>
+              <Grade kind="open">CANDIDATE REJECTED</Grade>
+            </div>
+            <p role="cell">
+              <b>1844</b> — an Ana baptized in Humacao with parents Dámaso
+              Martínez and María Rivera.
+            </p>
+            <p role="cell">
+              <b>About 1854–1858</b> — the range implied by Ana’s ages in the
+              1910 census and 1918 death act.
+            </p>
+            <p role="cell">
+              <b>Conclusion:</b> the 1844 child may belong to the same parent
+              pair, but she is not merged as the direct Ana.
             </p>
           </article>
           <article role="row">
@@ -441,9 +526,9 @@ export default function ResearchPage() {
         <p className="method-note">
           Some Ancestry links require a subscription and signed-in session.
           Original downloads and interface captures are archived privately. A
-          readable derivative of the 1915 civil act and three census images are
-          reproduced on the public summary. The 1940 image stops before younger
-          household members whose deaths have not been documented.
+          small set of readable record crops is reproduced here and on the
+          public summary. The 1940 image stops before younger household members
+          whose deaths have not been documented.
         </p>
       </section>
 
