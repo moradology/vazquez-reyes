@@ -98,6 +98,13 @@ export const sources = [
     grade: "Original civil record",
   },
   {
+    id: "ana-death",
+    label: "1918 death: Ana Martínez",
+    detail: "Died 21 March 1918 in Humacao, about age 60; widow of Pedro Reyes; children Isabel, Natalio, Mauricio, and Juliano named.",
+    href: "https://www.ancestry.com/search/collections/9100/records/45678048",
+    grade: "Original civil record",
+  },
+  {
     id: "lope-death",
     label: "1929 death: Lope Díaz Figueroa",
     detail: "Humacao record naming wife Reyes García and parents Manuel Díaz and Carmen Figueroa.",
@@ -110,6 +117,55 @@ export const sources = [
     detail: "Humacao record naming parents Bautista García and Carmen Olivero, with Naguabo birthplaces.",
     href: "https://www.ancestry.com/search/collections/9100/records/686138",
     grade: "Original civil record",
+  },
+  {
+    id: "braulio-marriage-1915",
+    label: "1915 marriage: Braulio Vázquez Rodríguez and Cayetana Vázquez",
+    detail: "Braulio’s original Humacao marriage record names his parents Sotero Vázquez and María Eugenia Rodríguez.",
+    href: "https://www.ancestry.com/search/collections/9100/records/746471",
+    grade: "Original civil record",
+  },
+  {
+    id: "braulio-marriage-1923",
+    label: "1923 marriage: Braulio Vázquez Rodríguez and Felicita Mendoza Santiago",
+    detail: "A second original marriage record again names Sotero and María Eugenia. This supports Braulio’s parentage but does not resolve Juan’s mother.",
+    href: "https://www.ancestry.com/search/collections/9100/records/748917",
+    grade: "Original civil record",
+  },
+  {
+    id: "marcelino-death",
+    label: "1891 death: Marcelino Perales y Medina",
+    detail: "Two-page Naguabo act: died 13 May 1891, about age 50; wife Aurora Pérez; parents recorded as Abal or Abel Perales and Vicenta Medina.",
+    href: "https://www.ancestry.com/search/collections/9100/records/4607227",
+    grade: "Original civil record",
+  },
+  {
+    id: "juan-perales-marriage",
+    label: "1904 marriage: Juan Perales Pérez",
+    detail: "A son of Marcelo Perales and Aurora Pérez married Manuela in Humacao on 28 August 1904.",
+    href: "https://www.ancestry.com/search/collections/9100/records/1531375",
+    grade: "Original civil record",
+  },
+  {
+    id: "catalina-perales-death",
+    label: "1958 death: Catalina Perales Pérez",
+    detail: "Naguabo record naming Marcelino Perales and Aurora Pérez; Catalina is a separate daughter from Carlina.",
+    href: "https://www.ancestry.com/search/collections/9100/records/4626202",
+    grade: "Original civil record",
+  },
+  {
+    id: "leocadio-perales-death",
+    label: "1944 death: Leocadio Perales Pérez",
+    detail: "Gurabo record naming Marcelo Perales and Aurora Pérez; reported age gives an estimated 1884 birth.",
+    href: "https://www.ancestry.com/search/collections/9100/records/3812242",
+    grade: "Original civil record",
+  },
+  {
+    id: "perales-sibling-indexes",
+    label: "Perales–Pérez sibling record cluster",
+    detail: "Additional civil records name Martina, Hilaria, Marcolina, and Francisca as children of Marcelino or Marcelo Perales and Aurora Pérez. Extreme reported ages remain provisional.",
+    href: "https://www.ancestry.com/search/collections/9100/",
+    grade: "Original records + derivative indexes",
   },
   {
     id: "census-1950",
@@ -141,6 +197,158 @@ export const sources = [
   },
 ];
 
+export const familyCouples = [
+  {
+    id: "mauricio-carmen",
+    branch: "Cruz’s parents",
+    couple: "Mauricio Reyes Martínez + Carmen Díaz García",
+    status: "documented" as const,
+    connection: "Parents of Cruz Reyes Díaz",
+    people: [
+      {
+        name: "Mauricio Reyes Martínez",
+        birth: "About 1882 · Puerto Rico",
+        death: "Not confirmed · a 1977 candidate remains unmerged",
+      },
+      {
+        name: "Carmen Díaz García",
+        birth: "About 1887–1889 · Puerto Rico",
+        death: "Not yet found",
+      },
+    ],
+    children: [
+      "Juana",
+      "Ruperto",
+      "Eriberta",
+      "Cruz",
+      "Belén",
+      "Angelina",
+      "Cándido",
+    ],
+    childNote:
+      "These seven appear across the 1910, 1920, and 1930 households. A reported son Julio still needs a direct record.",
+  },
+  {
+    id: "juan-carlina",
+    branch: "Rafael’s parents",
+    couple: "Juan Vázquez Rodríguez + Carlina Perales Pérez",
+    status: "documented" as const,
+    connection: "Parents of Rafael Vázquez y Perales",
+    people: [
+      {
+        name: "Juan Vázquez Rodríguez",
+        birth: "About 1878 · Yabucoa, Puerto Rico",
+        death: "22 December 1951 · Humacao, Puerto Rico",
+      },
+      {
+        name: "Carlina Perales Pérez",
+        birth: "About 1881–1882 · Naguabo, Puerto Rico",
+        death: "31 May 1922 · Humacao, Puerto Rico",
+      },
+    ],
+    children: ["Inés", "Juana", "Josué", "Marcelo", "Paulo or Paula", "Rafael", "Ramón"],
+    childNote:
+      "Carlina’s death act says seven children survived her. The names above come from the family export and census work; individual civil records remain a secondary search.",
+  },
+  {
+    id: "pedro-ana",
+    branch: "Mauricio’s parents",
+    couple: "Pedro Reyes + Ana Martínez",
+    status: "documented" as const,
+    connection: "Paternal grandparents of Cruz Reyes Díaz",
+    people: [
+      {
+        name: "Pedro Reyes",
+        birth: "About 1842–1843 · Humacao, Puerto Rico",
+        death: "3 January 1918 · Humacao, Puerto Rico",
+      },
+      {
+        name: "Ana Martínez",
+        birth: "About 1857–1858 · Humacao, Puerto Rico",
+        death: "21 March 1918 · Humacao, Puerto Rico",
+      },
+    ],
+    children: ["Isabel", "Natalio", "Mauricio", "Juliano"],
+    childNote:
+      "Ana’s death act names all four. Her son Natalio was the informant; a 1904 marriage record independently links Natalio to Pedro and Ana.",
+  },
+  {
+    id: "lope-reyes",
+    branch: "Carmen’s parents",
+    couple: "Lope Díaz Figueroa + Reyes García Olivero",
+    status: "documented" as const,
+    connection: "Maternal grandparents of Cruz Reyes Díaz",
+    people: [
+      {
+        name: "Lope Díaz Figueroa",
+        birth: "About 1858–1859 · Puerto Rico",
+        death: "23 March 1929 · Humacao, Puerto Rico",
+      },
+      {
+        name: "Reyes García Olivero",
+        birth: "About 1862–1863 · Puerto Rico",
+        death: "28 March 1933 · Humacao, Puerto Rico",
+      },
+    ],
+    children: ["Carmen", "Saturnino", "Paulino"],
+    childNote:
+      "Carmen is in the 1910 household; Saturnino’s death act and the 1930 household identify two more sons. This is a known-child list, not yet a complete family.",
+  },
+  {
+    id: "sotero-rodriguez",
+    branch: "Juan’s parents",
+    couple: "Sotero Vázquez + Carmen / María Eugenia Rodríguez",
+    status: "open" as const,
+    connection: "Paternal grandparents of Rafael Vázquez y Perales",
+    people: [
+      {
+        name: "Sotero Vázquez",
+        birth: "Not settled · conflicting ages imply roughly 1850–1863",
+        death: "Not yet found",
+      },
+      {
+        name: "Carmen / María Eugenia Rodríguez",
+        birth: "Identity and dates not settled",
+        death: "A 1933 María Eugenia record is still a candidate",
+      },
+    ],
+    children: ["Juan — Sotero is confirmed; mother unresolved", "Braulio — parents Sotero and María Eugenia"],
+    childNote:
+      "Juan’s 1902 marriage names Carmen; his 1951 death names María Eugenia. Braulio’s two marriages prove María Eugenia was mother of Braulio, not necessarily Juan.",
+  },
+  {
+    id: "marcelino-aurora",
+    branch: "Carlina’s parents",
+    couple: "Marcelino Perales y Medina + Aurora Pérez",
+    status: "documented" as const,
+    connection: "Maternal grandparents of Rafael Vázquez y Perales",
+    people: [
+      {
+        name: "Marcelino Perales y Medina",
+        birth: "About 1841 · Naguabo, Puerto Rico",
+        death: "13 May 1891 · Naguabo, Puerto Rico",
+      },
+      {
+        name: "Aurora Pérez",
+        birth: "Not yet found",
+        death: "Not yet found",
+      },
+    ],
+    children: [
+      "Hilaria",
+      "Juan",
+      "Catalina",
+      "Marcolina",
+      "Carlina",
+      "Leocadio",
+      "Francisca",
+      "Martina",
+    ],
+    childNote:
+      "Multiple civil records repeat the same parent pair. Several late death indexes report extraordinary ages, so the children’s estimated birth years remain provisional until birth records are found.",
+  },
+];
+
 export const openCases = [
   {
     id: "VR-02",
@@ -163,7 +371,7 @@ export const openCases = [
   {
     id: "VR-05",
     title: "Juan Vázquez’s mother",
-    conflict: "Juan’s 1902 marriage names Carmen Rodríguez; his 1951 death names María Eugenia Rodríguez.",
+    conflict: "Juan’s 1902 marriage names Carmen Rodríguez; his 1951 death names María Eugenia Rodríguez. Braulio’s marriages prove María Eugenia was Braulio’s mother, but do not prove she was Juan’s.",
     next: "Locate Juan’s Yabucoa baptism or birth record and compare the original wording in both records.",
   },
   {
@@ -179,6 +387,7 @@ export const negativeSearches = [
   "The New York State death index returned no match, but that index does not reliably cover New York City and cannot settle the question.",
   "No Rafael memorial matching the shared plot was found on Find a Grave; the official cemetery database remains the stronger burial source.",
   "No record yet settles whether Juan Vázquez’s mother used both Carmen and María Eugenia or whether one informant supplied the wrong name.",
+  "A 1942 death for Aurora Monserrate Pérez belongs to the widow of Marcelo Pérez, not the wife of Marcelino Perales; it was captured and rejected.",
 ];
 
 export const nameVariants = [
@@ -240,5 +449,13 @@ export const updates = [
   {
     date: "24 Jul 2026",
     text: "Archived record pages, viewer images, and available original downloads in the private evidence store.",
+  },
+  {
+    date: "24 Jul 2026",
+    text: "Added birth and death fields for every direct-line parent and grandparent, including explicit not-yet-found entries.",
+  },
+  {
+    date: "24 Jul 2026",
+    text: "Captured Ana Martínez’s death, both pages of Marcelino Perales’s death act, two Braulio marriages, and the Perales–Pérez sibling cluster.",
   },
 ];

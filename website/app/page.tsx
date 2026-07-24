@@ -302,7 +302,11 @@ export default function Home() {
         <div className="story-grid">
           <article>
             <span className="story-when">Cruz’s parents</span>
-            <h3>Mauricio Reyes Martínez and Carmen Díaz García</h3>
+            <h3>
+              <span data-person-id="person.mauricio-reyes">Mauricio Reyes Martínez</span>
+              {" + "}
+              <span data-person-id="person.carmen-diaz">Carmen Díaz García</span>
+            </h3>
             <p>
               They married in Fajardo in 1907. Census and civil records follow
               their family through Naguabo, Gurabo and Humacao.
@@ -311,7 +315,15 @@ export default function Home() {
           </article>
           <article>
             <span className="story-when">Rafael’s parents</span>
-            <h3>Juan Vázquez Rodríguez and Carlina Perales Pérez</h3>
+            <h3>
+              <span data-person-id="person.juan-vazquez-rodriguez">
+                Juan Vázquez Rodríguez
+              </span>
+              {" + "}
+              <span data-person-id="person.carlina-perales-perez">
+                Carlina Perales Pérez
+              </span>
+            </h3>
             <p>
               They married in Humacao in 1902. Carlina died there in 1922;
               Rafael was one of the seven children named in her death record.
@@ -319,14 +331,73 @@ export default function Home() {
             <a href="/research#source-census-1910">View the sources →</a>
           </article>
           <article>
-            <span className="story-when">Their grandparents</span>
-            <h3>Pedro, Ana, Lope, Reyes, Sotero, María, Marcelo and Aurora</h3>
+            <span className="story-when">Mauricio’s parents</span>
+            <h3>
+              <span data-person-id="person.pedro-reyes">Pedro Reyes</span>
+              {" + "}
+              <span data-person-id="person.ana-martinez">Ana Martínez</span>
+            </h3>
             <p>
-              The Puerto Rico civil records carry both lines back another
-              generation. Several branches now reach people born in the 1840s
-              and 1850s.
+              Pedro and Ana lived in Humacao. Their known children were Isabel,
+              Natalio, Mauricio and Juliano.
             </p>
-            <a href="/research#sources">See the record list →</a>
+            <a href="/research#pedro-ana">See this family →</a>
+          </article>
+          <article>
+            <span className="story-when">Carmen’s parents</span>
+            <h3>
+              <span data-person-id="person.lope-diaz-figueroa">
+                Lope Díaz Figueroa
+              </span>
+              {" + "}
+              <span data-person-id="person.reyes-garcia-olivero">
+                Reyes García Olivero
+              </span>
+            </h3>
+            <p>
+              Their parents were{" "}
+              <span data-person-id="person.manuel-diaz">Manuel Díaz</span> and{" "}
+              <span data-person-id="person.carmen-figueroa">Carmen Figueroa</span>,
+              and{" "}
+              <span data-person-id="person.bautista-garcia">Bautista García</span>{" "}
+              and{" "}
+              <span data-person-id="person.carmen-olivero">Carmen Olivero</span>.
+            </p>
+            <a href="/research#lope-reyes">See this family →</a>
+          </article>
+          <article>
+            <span className="story-when">Juan’s parents</span>
+            <h3>
+              <span data-person-id="person.sotero-vazquez">Sotero Vázquez</span>
+              {" + Carmen / María Eugenia Rodríguez"}
+            </h3>
+            <p>
+              Juan’s records disagree: one names{" "}
+              <span data-person-id="person.carmen-rodriguez">Carmen Rodríguez</span>,
+              another{" "}
+              <span data-person-id="person.maria-eugenia-rodriguez">
+                María Eugenia Rodríguez
+              </span>
+              . The distinction remains open.
+            </p>
+            <a href="/research#sotero-rodriguez">See this family →</a>
+          </article>
+          <article>
+            <span className="story-when">Carlina’s parents</span>
+            <h3>
+              <span data-person-id="person.marcelino-perales-medina">
+                Marcelino Perales y Medina
+              </span>
+              {" + "}
+              <span data-person-id="person.aurora-perez">Aurora Pérez</span>
+            </h3>
+            <p>
+              Marcelino was a son of{" "}
+              <span data-person-id="person.abal-perales">Abal or Abel Perales</span>{" "}
+              and <span data-person-id="person.vicenta-medina">Vicenta Medina</span>.
+              This Naguabo family included at least eight known children.
+            </p>
+            <a href="/research#marcelino-aurora">See this family →</a>
           </article>
         </div>
       </section>

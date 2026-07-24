@@ -67,6 +67,10 @@ test("separates the public summary from the research notes", async () => {
   const researchHtml = await researchResponse.text();
 
   assert.match(publicHtml, /The families before New York/);
+  assert.doesNotMatch(
+    publicHtml,
+    /Pedro,\s*Ana,\s*Lope,\s*Reyes,\s*Sotero,\s*María,\s*Marcelo and Aurora/i,
+  );
   assert.doesNotMatch(publicHtml, /Negative memory/);
   assert.doesNotMatch(publicHtml, /VR-01/);
   assert.doesNotMatch(publicHtml, /WIN4T|Rosedale|Linden, New Jersey/);
@@ -74,6 +78,10 @@ test("separates the public summary from the research notes", async () => {
   assert.equal(researchResponse.status, 200);
   assert.match(researchHtml, /Research notes/);
   assert.match(researchHtml, /Where the records disagree/);
+  assert.match(researchHtml, /One family at a time/);
+  assert.match(researchHtml, /Known or reported children/);
+  assert.match(researchHtml, /Pedro Reyes \+ Ana Martínez/);
+  assert.match(researchHtml, /Marcelino Perales y Medina \+ Aurora Pérez/);
   assert.match(researchHtml, /Searches without a match/);
   assert.match(researchHtml, /VR-02/);
   assert.match(researchHtml, /Records reviewed/);

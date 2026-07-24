@@ -1,5 +1,6 @@
 import { ResearchTools } from "../research-tools";
 import {
+  familyCouples,
   nameVariants,
   negativeSearches,
   openCases,
@@ -34,6 +35,7 @@ export default function ResearchPage() {
         </a>
         <nav aria-label="Research navigation">
           <a href="/">Public summary</a>
+          <a href="#families">Family groups</a>
           <a href="#conflicts">Conflicts</a>
           <a href="#docket">Open questions</a>
           <a href="#negative">Search log</a>
@@ -93,9 +95,66 @@ export default function ResearchPage() {
         </p>
       </section>
 
-      <section className="research-section research-dark" id="conflicts">
+      <section className="research-section family-groups" id="families">
         <div className="research-section-title">
           <span>01</span>
+          <div>
+            <p>Direct lines</p>
+            <h2>One family at a time</h2>
+          </div>
+        </div>
+        <p className="section-deck">
+          Each couple is kept separate. Birth and death fields stay visible even
+          when no reliable date has been found; known children are included as
+          sibling leads, not as a claim that every child has been identified.
+        </p>
+        <div className="family-couple-list">
+          {familyCouples.map((family) => (
+            <article className="family-couple" id={family.id} key={family.id}>
+              <header>
+                <div>
+                  <p>{family.branch}</p>
+                  <h3>{family.couple}</h3>
+                  <span>{family.connection}</span>
+                </div>
+                <Grade kind={family.status}>
+                  {family.status === "documented" ? "DOCUMENTED" : "UNRESOLVED"}
+                </Grade>
+              </header>
+              <div className="couple-people">
+                {family.people.map((person) => (
+                  <section key={person.name}>
+                    <h4>{person.name}</h4>
+                    <dl>
+                      <div>
+                        <dt>Birth</dt>
+                        <dd>{person.birth}</dd>
+                      </div>
+                      <div>
+                        <dt>Death</dt>
+                        <dd>{person.death}</dd>
+                      </div>
+                    </dl>
+                  </section>
+                ))}
+              </div>
+              <div className="known-children">
+                <strong>Known or reported children</strong>
+                <ul>
+                  {family.children.map((child) => (
+                    <li key={child}>{child}</li>
+                  ))}
+                </ul>
+                <p>{family.childNote}</p>
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="research-section research-dark" id="conflicts">
+        <div className="research-section-title">
+          <span>02</span>
           <div>
             <p>Date conflicts</p>
             <h2>Where the records disagree</h2>
@@ -173,7 +232,7 @@ export default function ResearchPage() {
 
       <section className="research-section" id="names">
         <div className="research-section-title">
-          <span>02</span>
+          <span>03</span>
           <div>
             <p>Name variants</p>
             <h2>Names found in the records</h2>
@@ -192,7 +251,7 @@ export default function ResearchPage() {
 
       <section className="research-section research-dark" id="docket">
         <div className="research-section-title">
-          <span>03</span>
+          <span>04</span>
           <div>
             <p>Open questions</p>
             <h2>Records to look for next</h2>
@@ -216,7 +275,7 @@ export default function ResearchPage() {
 
       <section className="research-section" id="negative">
         <div className="research-section-title">
-          <span>04</span>
+          <span>05</span>
           <div>
             <p>Search log</p>
             <h2>Searches without a match</h2>
@@ -235,7 +294,7 @@ export default function ResearchPage() {
 
       <section className="research-section wanted-records">
         <div className="research-section-title">
-          <span>05</span>
+          <span>06</span>
           <div>
             <p>Family papers</p>
             <h2>Documents we are looking for</h2>
@@ -262,7 +321,7 @@ export default function ResearchPage() {
 
       <section className="research-section research-sources" id="sources">
         <div className="research-section-title">
-          <span>06</span>
+          <span>07</span>
           <div>
             <p>Sources</p>
             <h2>Records reviewed</h2>
@@ -297,7 +356,7 @@ export default function ResearchPage() {
 
       <section className="research-section change-log">
         <div className="research-section-title">
-          <span>07</span>
+          <span>08</span>
           <div>
             <p>Research log</p>
             <h2>Work completed</h2>

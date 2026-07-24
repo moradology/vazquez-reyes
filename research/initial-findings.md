@@ -25,17 +25,29 @@ record reviewed. Details about potentially living descendants remain private.
   maiden-name clue for Carmen.
 - Died **10 October 1998**, probably in New York City.
 
-### Cruz's grandparents and earlier line
+### Pedro Reyes and Ana Martínez
 
-- Mauricio's parents: **Pedro Reyes** and **Ana Martínez**.
-- Pedro's 1918 Humacao death record names Ana and lists their children,
-  including Mauricio. It reports Pedro as about 75 and born in Humacao; his
-  parents were unknown to the informant.
-- Carmen's parents: **Lope Díaz Figueroa** and **Reyes García Olivero**.
-- Lope's 1929 death record names parents **Manuel Díaz** and **Carmen
-  Figueroa**.
-- Reyes's 1933 death record names parents **Bautista García** and **Carmen
-  Olivero**, with Naguabo ties.
+This couple were Mauricio's parents and Cruz's paternal grandparents.
+
+- Pedro was born about **1842–1843** in Humacao and died there on **3 January
+  1918**, age 75. His parents were unknown to the death informant.
+- Ana was born about **1857–1858** in Humacao and died there on **21 March
+  1918**, age 60. Her parents have not yet been found.
+- Ana's death act names four children: **Isabel, Natalio, Mauricio, and
+  Juliano**. Natalio's 1904 marriage independently names Pedro and Ana as his
+  parents.
+
+### Lope Díaz Figueroa and Reyes García Olivero
+
+This couple were Carmen's parents and Cruz's maternal grandparents.
+
+- Lope was born about **1858–1859** and died in Humacao on **23 March 1929**.
+  His parents were **Manuel Díaz** and **Carmen Figueroa**, both identified as
+  Naguabo natives in the death record of Lope's brother Pedro.
+- Reyes was born about **1862–1863** and died in Humacao on **28 March 1933**.
+  Her parents were **Bautista García** and **Carmen Olivero**.
+- Known children include **Carmen, Saturnino, and Paulino**. This is not yet a
+  complete child list.
 
 ## Rafael Vázquez y Perales
 
@@ -50,19 +62,38 @@ record reviewed. Details about potentially living descendants remain private.
 - Probable death: **30 December 1984** in New York. The original death
   certificate is still needed.
 
-### Rafael's grandparents and earlier line
+### Sotero Vázquez and Carmen or María Eugenia Rodríguez
 
-- Juan's parents: **Sotero Vázquez** and a Rodríguez mother whose given name is
-  conflicted. Juan's 1902 marriage says **Carmen Rodríguez**; his 1951 death
-  says **María Eugenia Rodríguez**.
-- Censuses in 1910, 1920 and 1930 and a 1933 death record form a strong
-  candidate cluster for Sotero's widow María Eugenia, but her reported age and
-  second surname vary. Do not attach her parents as settled until Juan's
-  baptism or another direct record is found.
-- Carlina's parents are **Marcelino Perales** and **Aurora Pérez**. An 1891
-  Naguabo death record for Marcelino Perales y Medina is a promising candidate,
-  but the complete multi-page record still needs transcription before it is
-  treated as proved.
+Sotero is Juan's documented father. Juan's mother's identity is still open.
+
+- Juan's 1902 marriage names **Carmen Rodríguez**; his 1951 death names **María
+  Eugenia Rodríguez**.
+- Braulio Vázquez Rodríguez's original 1915 and 1923 marriage acts name his
+  parents as **Sotero Vázquez and María Eugenia Rodríguez**. They prove
+  Braulio's parentage, not that Braulio and Juan necessarily had the same
+  mother.
+- Conflicting reported ages put Sotero's possible birth roughly between
+  **1850 and 1863**. His death has not been found.
+- María Eugenia's reported ages imply roughly **1847–1858**. A **6 July 1933**
+  death remains a candidate, not a merged fact.
+- Juan's Yabucoa birth or baptism is the record most likely to settle the
+  conflict.
+
+### Marcelino Perales y Medina and Aurora Pérez
+
+This couple were Carlina's parents and Rafael's maternal grandparents.
+
+- Marcelino was born about **1841** in Naguabo and died there on **13 May
+  1891**, age 50. The full two-page death act names his wife Aurora and parents
+  **Abal or Abel Perales** and **Vicenta Medina**.
+- Aurora's birth, death, and parents have not yet been found. A 1942 Aurora
+  Monserrate Pérez death was captured and rejected because that woman's spouse
+  was Marcelo Pérez, not Marcelino Perales.
+- Civil records support eight known children: **Hilaria, Juan, Catalina,
+  Marcolina, Carlina, Leocadio, Francisca, and Martina**.
+- Catalina and Carlina were separate sisters. Very high ages reported in the
+  late death indexes for Hilaria and Francisca remain provisional until birth
+  records are found.
 
 ## Cruz and Rafael in New York
 
@@ -92,7 +123,11 @@ record reviewed. Details about potentially living descendants remain private.
 3. The original Manhattan marriage certificate, not only its index.
 4. Cruz's and Rafael's NYC death certificates.
 5. Mauricio's baptism and the complete 1977 candidate death record.
+6. Aurora Pérez's birth, marriage, and death records.
+7. Birth or baptism records for the Perales–Pérez and Reyes–Martínez sibling
+   clusters.
 
 All sources, conflicts and next-record targets are recorded in the adjacent
-JSONL files. Subscription-site screenshots and civil-record images remain in
-the private local evidence archive.
+JSONL files. Record pages, viewer captures, original-resolution images, and the
+continuation page of Marcelino's death act remain in the private local evidence
+archive, including relevant records that were later rejected.

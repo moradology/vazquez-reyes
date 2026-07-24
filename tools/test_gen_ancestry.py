@@ -1033,6 +1033,26 @@ class NavigationTests(unittest.TestCase):
 
 
 class BrowserControlTests(unittest.TestCase):
+    def test_adjacent_imageviewer_url_increments_same_roll(self):
+        url = (
+            "https://www.ancestry.com/imageviewer/collections/9100/"
+            "images/004563137_00245?pid=4607227"
+        )
+        self.assertEqual(
+            ga.adjacent_imageviewer_url(url, "9100", 1),
+            (
+                "https://www.ancestry.com/imageviewer/collections/9100/"
+                "images/004563137_00246?usePUB=true&usePUBJs=true"
+            ),
+        )
+
+    def test_adjacent_imageviewer_url_rejects_wrong_collection_and_bad_offset(self):
+        url = "https://www.ancestry.com/imageviewer/collections/9100/images/004563137_00245"
+        with self.assertRaises(ga.CockpitError):
+            ga.adjacent_imageviewer_url(url, "7884", 1)
+        with self.assertRaises(ga.CockpitError):
+            ga.adjacent_imageviewer_url(url, "9100", 0)
+
     def test_browser_status_is_read_only(self):
         with temporary_runtime(), patch.object(ga, "cdp_up", return_value=False):
             code, output = captured(ga.cmd_browser, SimpleNamespace(action="status"))

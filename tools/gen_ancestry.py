@@ -875,6 +875,26 @@ def record_imageviewer_links(page, collection: str) -> list[str]:
     return valid
 
 
+def adjacent_imageviewer_url(viewer_url: str, collection: str, offset: int) -> str:
+    """Return a same-roll image-viewer URL offset from the current filmed page."""
+    if offset < 1:
+        raise CockpitError("adjacent image offset must be positive")
+    _host, path = _ancestry_url(viewer_url)
+    expected_prefix = f"/imageviewer/collections/{collection}/images/"
+    if not path.lower().startswith(expected_prefix.lower()):
+        raise CockpitError("image viewer URL does not match the requested collection")
+    image_id = path[len(expected_prefix):]
+    match = re.fullmatch(r"(.+_)(\d+)", image_id)
+    if match is None:
+        raise CockpitError("image viewer URL has no incrementable filmed-page number")
+    page_number = int(match.group(2)) + offset
+    next_image_id = f"{match.group(1)}{page_number:0{len(match.group(2))}d}"
+    return (
+        f"https://www.ancestry.com/imageviewer/collections/{collection}/images/"
+        f"{next_image_id}?usePUB=true&usePUBJs=true"
+    )
+
+
 def screenshot_largest_document_element(page, path: Path) -> dict | None:
     candidates = page.locator("canvas, img")
     best = None
@@ -948,6 +968,9 @@ def capture_record_images(args) -> dict:
     viewer_path = capture_root / f"{timestamp}-document-viewer.png"
     crop_path = capture_root / f"{timestamp}-document-crop.png"
     original_path_base = capture_root / f"{timestamp}-document-original"
+    next_images = getattr(args, "next_images", 0)
+    if next_images < 0 or next_images > 10:
+        raise CockpitError("next-images must be between 0 and 10")
 
     def do_capture(page):
         response = page.goto(requested_url, wait_until="domcontentloaded", timeout=45000)
@@ -962,6 +985,7 @@ def capture_record_images(args) -> dict:
         crop = None
         original = None
         resources = []
+        adjacent_documents = []
         if viewer_links:
             viewer_url = viewer_links[0]
             viewer_response = page.goto(viewer_url, wait_until="domcontentloaded", timeout=45000)
@@ -989,11 +1013,47 @@ def capture_record_images(args) -> dict:
                   .filter(url => /\\.(?:jpe?g|png|webp)(?:\\?|$)/i.test(url))
                   .slice(-200)"""
             )
+            for offset in range(1, next_images + 1):
+                adjacent_url = adjacent_imageviewer_url(viewer_url, args.collection, offset)
+                adjacent_response = page.goto(adjacent_url, wait_until="domcontentloaded", timeout=45000)
+                page.wait_for_timeout(5000)
+                validate_response(adjacent_response)
+                _host, adjacent_path = _ancestry_url(page.url)
+                expected_prefix = f"/imageviewer/collections/{args.collection}/images/"
+                if not adjacent_path.lower().startswith(expected_prefix.lower()):
+                    raise CockpitError(
+                        "Ancestry adjacent image redirected unexpectedly",
+                        requested_url=adjacent_url,
+                        final_url=page.url,
+                    )
+                adjacent_body = page.evaluate("() => document.body.innerText")
+                if page_looks_like_login(page.url, page.title(), adjacent_body):
+                    raise CockpitError(
+                        "Ancestry redirected to login during adjacent image capture",
+                        final_url=page.url,
+                    )
+                adjacent_original_base = capture_root / f"{timestamp}-document-next-{offset}-original"
+                adjacent_viewer_path = capture_root / f"{timestamp}-document-next-{offset}-viewer.png"
+                adjacent_crop_path = capture_root / f"{timestamp}-document-next-{offset}-crop.png"
+                adjacent_original = download_viewer_document(page, adjacent_original_base)
+                page.screenshot(path=str(adjacent_viewer_path), full_page=True)
+                adjacent_viewer_path.chmod(0o600)
+                adjacent_crop = screenshot_largest_document_element(page, adjacent_crop_path)
+                adjacent_documents.append(
+                    {
+                        "offset": offset,
+                        "url": page.url,
+                        "viewer_page": {"path": str(adjacent_viewer_path), "url": page.url},
+                        "original_document": adjacent_original,
+                        "document_crop": adjacent_crop,
+                    }
+                )
         return {
             "record_page": {"path": str(record_path), "url": requested_url},
             "viewer_page": viewer,
             "original_document": original,
             "document_crop": crop,
+            "adjacent_documents": adjacent_documents,
             "viewer_links": viewer_links,
             "image_resources": resources if isinstance(resources, list) else [],
         }
@@ -1014,6 +1074,7 @@ def capture_record_images(args) -> dict:
         "viewer_page": result["viewer_page"],
         "original_document": result["original_document"],
         "document_crop": result["document_crop"],
+        "adjacent_documents": result["adjacent_documents"],
     }
     sidecar_path = capture_root / f"{timestamp}-metadata.json"
     atomic_write_json(sidecar_path, {**metadata, **result})
@@ -1025,6 +1086,16 @@ def capture_record_images(args) -> dict:
         warnings.append("The image viewer was captured, but no large canvas or image element was available for a crop.")
     if result["viewer_page"] and result["original_document"] is None:
         warnings.append("The viewer was captured, but Ancestry did not offer an original document download.")
+    missing_adjacent_originals = [
+        item["offset"]
+        for item in result["adjacent_documents"]
+        if item["original_document"] is None
+    ]
+    if missing_adjacent_originals:
+        warnings.append(
+            "Ancestry did not offer an original download for following image offset(s): "
+            + ", ".join(str(offset) for offset in missing_adjacent_originals)
+        )
     return {
         "command": "ancestry.capture",
         "ok": True,
@@ -2467,6 +2538,13 @@ def main() -> int:
     p_capture.add_argument("--id", required=True, metavar="RECORD_ID", help="record id within the collection")
     p_capture.add_argument("--capture-id", required=True, metavar="ID", help="stable image-manifest id")
     p_capture.add_argument("--source-ref", required=True, metavar="SOURCE", help="canonical source-registry id")
+    p_capture.add_argument(
+        "--next-images",
+        type=int,
+        default=0,
+        metavar="N",
+        help="also capture N following filmed pages from the same image roll (0-10)",
+    )
     p_capture.add_argument("--agent", metavar="ID", help="agent id for tab ownership and session accounting")
     p_capture.set_defaults(func=cmd_capture)
 
