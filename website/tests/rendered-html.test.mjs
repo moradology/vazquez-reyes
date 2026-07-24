@@ -34,10 +34,11 @@ test("renders the Vazquez-Reyes family history", async () => {
   assert.match(html, /Humacao/);
   assert.match(html, /Cruz Reyes/);
   assert.match(html, /Rafael Vázquez/);
-  assert.match(html, /From.*Humacao/s);
+  assert.match(html, /From.*Puerto Rico/s);
   assert.match(html, /to New York/);
-  assert.match(html, /Cruz and Rafael in Humacao/);
-  assert.match(html, /Humacao → East Harlem/);
+  assert.match(html, /The Puerto Rico years/);
+  assert.match(html, /Eastern Puerto Rico → East Harlem/);
+  assert.match(html, /The families on paper/);
   assert.match(html, /research notes/);
   assert.doesNotMatch(
     html,
@@ -65,7 +66,7 @@ test("separates the public summary from the research notes", async () => {
   const publicHtml = await publicResponse.text();
   const researchHtml = await researchResponse.text();
 
-  assert.match(publicHtml, /The families in Humacao/);
+  assert.match(publicHtml, /The families before New York/);
   assert.doesNotMatch(publicHtml, /Negative memory/);
   assert.doesNotMatch(publicHtml, /VR-01/);
   assert.doesNotMatch(publicHtml, /WIN4T|Rosedale|Linden, New Jersey/);
@@ -74,7 +75,7 @@ test("separates the public summary from the research notes", async () => {
   assert.match(researchHtml, /Research notes/);
   assert.match(researchHtml, /Where the records disagree/);
   assert.match(researchHtml, /Searches without a match/);
-  assert.match(researchHtml, /VR-01/);
+  assert.match(researchHtml, /VR-02/);
   assert.match(researchHtml, /Records reviewed/);
 });
 

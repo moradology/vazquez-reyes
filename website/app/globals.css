@@ -714,6 +714,89 @@ a {
   margin: 16px 0 30px;
 }
 
+.record-gallery {
+  background: #e9e2d2;
+}
+
+.records-heading {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 0.7fr 1.3fr 1fr;
+  margin: 70px 0 60px;
+}
+
+.records-heading h2 {
+  font-family: var(--font-display), serif;
+  font-size: clamp(46px, 6vw, 82px);
+  font-weight: 500;
+  letter-spacing: -0.04em;
+  line-height: 0.98;
+  margin: 0;
+}
+
+.records-heading > p:last-child {
+  font-size: 13px;
+  line-height: 1.7;
+  margin: 8px 0 0;
+}
+
+.record-grid {
+  display: grid;
+  gap: clamp(28px, 4vw, 56px);
+  grid-template-columns: 1fr 1fr;
+}
+
+.record-grid figure {
+  margin: 0;
+}
+
+.record-grid figure > a {
+  background: var(--forest-deep);
+  display: block;
+  overflow: hidden;
+}
+
+.record-grid img {
+  display: block;
+  filter: sepia(0.12) contrast(1.04);
+  height: clamp(280px, 30vw, 470px);
+  object-fit: cover;
+  object-position: center;
+  transition: filter 180ms ease, transform 350ms ease;
+  width: 100%;
+}
+
+.record-grid a:hover img {
+  filter: sepia(0) contrast(1.08);
+  transform: scale(1.015);
+}
+
+.record-grid figcaption {
+  border-top: 4px solid var(--rust);
+  display: grid;
+  gap: 8px;
+  padding: 20px 4px 0;
+}
+
+.record-grid figcaption strong {
+  font-family: var(--font-display), serif;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.record-grid figcaption span {
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.record-grid figcaption small {
+  color: rgba(23, 42, 38, 0.62);
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
 .interments {
   border-bottom: 1px solid var(--line);
   border-top: 1px solid var(--line);
@@ -1452,7 +1535,9 @@ footer p {
   .method-grid,
   .variant-list,
   .wanted-research-grid,
-  .principal-source-grid {
+  .principal-source-grid,
+  .record-grid,
+  .records-heading {
     grid-template-columns: 1fr;
   }
 

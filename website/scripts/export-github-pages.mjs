@@ -68,6 +68,9 @@ await cp(new URL("assets/", clientRoot), new URL("assets/", outRoot), {
   recursive: true,
 });
 await cp(new URL("og.png", clientRoot), new URL("og.png", outRoot));
+await cp(new URL("records/", clientRoot), new URL("records/", outRoot), {
+  recursive: true,
+});
 await cp(
   new URL("static-tools.js", clientRoot),
   new URL("static-tools.js", outRoot),
@@ -91,6 +94,13 @@ for (const [name, html] of [
   assert.doesNotMatch(html, /__VINEXT_RSC_|modulepreload/, `${name} runtime`);
   assert.match(html, new RegExp(`${basePath.replaceAll("/", "\\/")}assets\\/`));
   assert.match(html, new RegExp(`${basePath.replaceAll("/", "\\/")}static-tools\\.js`));
+}
+
+for (const filename of [
+  "1910-reyes-household.jpg",
+  "1920-vazquez-household.jpg",
+]) {
+  await readFile(new URL(`records/${filename}`, outRoot));
 }
 
 console.log(`Exported GitHub Pages artifact to ${outRoot.pathname}`);

@@ -18,13 +18,17 @@ Vazquez-Reyes family-research cockpit
 
 Usage:
   ./gen ancestry --help
+  ./gen ancestry browser start
+  ./gen ancestry browser status
   ./gen ancestry search --collection N --name Given_Surname [filters]
+  ./gen ancestry capture --collection N --id RECORD_ID --capture-id ID --source-ref SOURCE
   ./gen ancestry goto "search/N?name=Given_Surname" --agent ID
   ./gen ancestry cache stats
   ./gen gate
 
-The Ancestry commands drive an already-running, logged-in Chrome CDP
-session on localhost:9222. They do not automate login.
+`browser start` launches a dedicated, persistent Chrome profile on localhost:
+9222. Sign into Ancestry manually in that window; the cockpit never reads or
+automates login credentials.
 EOF
     ;;
   *)

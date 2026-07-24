@@ -1,76 +1,98 @@
-# Vazquez-Reyes initial findings
+# Vazquez-Reyes findings
 
-Research date: 23 July 2026
+Research dates: 23–24 July 2026
 
 ## Bottom line
 
-The supplied grandparents can be identified confidently as **Cruz Reyes
-Vasquez** and **Rafael Vázquez y Perales**. Records connect them from Humacao,
-Puerto Rico, to Manhattan and finally to a shared burial plot in Linden, New
-Jersey.
+The starting couple is confidently identified as **Cruz Reyes Díaz Vasquez**
+and **Rafael Vázquez y Perales**. Their records describe two families from
+eastern Puerto Rico whose paths ran through Naguabo, Gurabo and Humacao before
+Cruz and Rafael married in Manhattan and made their home in East Harlem.
 
-## What the records currently show
+The direct lines now reach several great-great-grandparents of the starting
+couple. Original images have been retained for every central census and civil
+record reviewed. Details about potentially living descendants remain private.
 
-### Cruz Reyes Vasquez
+## Cruz Reyes Díaz Vasquez
 
-- Born in Humacao, Puerto Rico.
-- Best current record date: **4 May 1914**, from her Social Security claim.
-- Competing dates: **3 May 1915** in the family account and a public SSDI
-  derivative; **May 1917** on the marriage license.
-- Parents: **Mauricio Reyes** and **Carmen Díaz**. The marriage index calls her
-  mother Carmen Reyes, consistent with a married surname.
+- Born **3 May 1915** in barrio Rincón, Gurabo, Puerto Rico. Her contemporary
+  civil registration resolves the earlier 1914/1915 conflict.
+- Parents: **Mauricio Reyes Martínez** and **Carmen Díaz García**.
+- Mauricio and Carmen married **23 October 1907** in Fajardo.
+- The family appears in Ucares, Naguabo, in 1910; Anton Ruiz, Humacao, in 1920;
+  and Mambiche, Humacao, in 1930.
+- The 1920 and 1930 households confirm that **Belén was Cruz's sister**, not a
+  maiden-name clue for Carmen.
 - Died **10 October 1998**, probably in New York City.
-- Buried **13 October 1998** in the Rosedale division of Rosedale & Rosehill
-  Cemetery, plot `WIN4T-22-11 /DD`.
 
-### Rafael Vázquez y Perales
+### Cruz's grandparents and earlier line
 
-- Born in **February 1906** in Humacao, Puerto Rico; exact day unresolved.
-- Parents: **Juan Vázquez y Rodríguez** and **Carlina Perales y Pérez**.
-- Raised in Anton Ruiz, Humacao; enumerated in Mambiche, Humacao, in 1930.
-- Probable death: **30 December 1984** in New York. A weak public derivative
-  instead gives 1 December, so the original death certificate is needed.
-- Buried **2 January 1985** in the same cemetery plot, position
-  `WIN4T-22-11 /3D`.
+- Mauricio's parents: **Pedro Reyes** and **Ana Martínez**.
+- Pedro's 1918 Humacao death record names Ana and lists their children,
+  including Mauricio. It reports Pedro as about 75 and born in Humacao; his
+  parents were unknown to the informant.
+- Carmen's parents: **Lope Díaz Figueroa** and **Reyes García Olivero**.
+- Lope's 1929 death record names parents **Manuel Díaz** and **Carmen
+  Figueroa**.
+- Reyes's 1933 death record names parents **Bautista García** and **Carmen
+  Olivero**, with Naguabo ties.
 
-## The couple
+## Rafael Vázquez y Perales
 
-- Marriage affidavit: 21 October 1941.
-- Marriage: **25 October 1941**, Manhattan.
-- Certificate: **18978**.
-- Address at marriage: **16 East 105th Street**, Manhattan.
-- Rafael's occupation: button maker; Cruz's: servant.
-- The 1950 census records them as a married household on **East 109th Street**
-  in Manhattan. Potentially living descendant details are omitted.
+- Born in **February 1906** in Humacao, Puerto Rico; the exact day remains
+  unresolved.
+- Parents: **Juan Vázquez Rodríguez** and **Carlina Perales Pérez**.
+- Juan and Carlina married **25 September 1902** in Humacao.
+- Rafael grew up in Anton Ruiz and appears with his father in Mambiche in 1930.
+- Carlina died **31 May 1922** in Humacao. Her death record names Juan and seven
+  children, including Rafael, and identifies her parents as **Marcelo or
+  Marcelino Perales** and **Aurora Pérez**.
+- Probable death: **30 December 1984** in New York. The original death
+  certificate is still needed.
 
-## The cemetery clue
+### Rafael's grandparents and earlier line
 
-“Rosehill Cemetery in Linden” was very close and decisive. The official
-facility is **Rosedale & Rosehill Cemetery**. Its own lookup assigns both
-burials to the **Rosedale** division and to the same plot, `WIN4T-22-11`.
-Cruz's Find a Grave memorial independently gives the same plot.
+- Juan's parents: **Sotero Vázquez** and a Rodríguez mother whose given name is
+  conflicted. Juan's 1902 marriage says **Carmen Rodríguez**; his 1951 death
+  says **María Eugenia Rodríguez**.
+- Censuses in 1910, 1920 and 1930 and a 1933 death record form a strong
+  candidate cluster for Sotero's widow María Eugenia, but her reported age and
+  second surname vary. Do not attach her parents as settled until Juan's
+  baptism or another direct record is found.
+- Carlina's parents are **Marcelino Perales** and **Aurora Pérez**. An 1891
+  Naguabo death record for Marcelino Perales y Medina is a promising candidate,
+  but the complete multi-page record still needs transcription before it is
+  treated as proved.
 
-## What has changed from the family account
+## Cruz and Rafael in New York
 
-- “Cathelina, Pérez or López” is now strongly **Carlina Perales y Pérez**.
-- Rafael's father is repeatedly **Juan Vázquez y Rodríguez**; the supplied
-  Juan Ramón variant is not yet confirmed.
-- Cruz's mother appears to be **Carmen Díaz**, later Carmen Reyes. The supplied
-  Belén clue is still unexplained.
-- Rafael's birth month is **February**, not October, in his civil registration
-  index. The exact day is not safe to state yet.
-- Cruz died on **10 October 1998**, rather than the tentative 24 October.
-- Their New Jersey connection is a burial location; records reviewed so far
-  place their later life in New York City.
+- Marriage: **25 October 1941**, Manhattan, certificate **18978**.
+- Rafael lived at **16 East 105th Street** and worked as a button maker.
+- The 1950 census records the couple on **East 109th Street** in East Harlem.
+  Names of potentially living descendants are omitted from tracked public
+  records.
 
-## Highest-value next steps
+## What changed from the family account
 
-1. Obtain Cruz's original Humacao birth registration.
-2. Obtain a certified/legible copy of Rafael's Humacao registration 134.
-3. Order the original Manhattan marriage packet, certificate 18978.
-4. Obtain both NYC death certificates and the cemetery interment cards.
-5. Use Cruz's birth record to extend Mauricio Reyes and Carmen Díaz and test
-   the Martínez and Belén clues.
+- Cruz's original record gives **3 May 1915 in Gurabo**, not Humacao.
+- Carmen's full documented name is **Carmen Díaz García**.
+- **Belén Reyes** was Cruz's younger sister.
+- Mauricio's mother was **Ana Martínez** in the records closest to his marriage
+  and Cruz's birth.
+- Rafael's mother was **Carlina Perales Pérez**; her mother was **Aurora Pérez**.
+- Rafael's father appears consistently as **Juan Vázquez Rodríguez**. The Juan
+  Ramón form remains an unconfirmed family variant.
+- Rafael's civil-registration index supports **February 1906**, not October;
+  his exact birth day is still open.
 
-All conclusions, source links, conflicts, and next-record targets are captured
-in the adjacent JSONL research files.
+## Highest-value next records
+
+1. Rafael's baptism or a fully legible certified birth record.
+2. Juan Vázquez Rodríguez's Yabucoa baptism or birth record.
+3. The original Manhattan marriage certificate, not only its index.
+4. Cruz's and Rafael's NYC death certificates.
+5. Mauricio's baptism and the complete 1977 candidate death record.
+
+All sources, conflicts and next-record targets are recorded in the adjacent
+JSONL files. Subscription-site screenshots and civil-record images remain in
+the private local evidence archive.

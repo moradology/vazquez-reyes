@@ -43,13 +43,19 @@ both pages are assembled and checked.
 
 ## Ancestry cockpit
 
-The cockpit connects to an already-running Chrome session on port `9222`.
-Chrome must be logged into Ancestry by the researcher; the tool never automates
-login.
+The cockpit uses a dedicated, persistent Chrome profile on port `9222`. Start
+it from the project, then sign into Ancestry manually in the opened window.
+The tool never reads or automates login credentials.
 
 ```sh
 ./gen ancestry --help
+./gen ancestry browser start
+./gen ancestry browser status
 ./gen ancestry cache stats
+./gen ancestry capture --collection 7884 --id 174417271 \
+  --capture-id capture.census.1910.rafael \
+  --source-ref source.census.1910.rafael \
+  --agent vazquez-reyes
 ./gen ancestry search --collection 62308 --name Given_Vazquez --agent vazquez-reyes
 ./gen ancestry goto "search/62308?name=Given_Vazquez" --agent vazquez-reyes
 ./gen ancestry next --agent vazquez-reyes

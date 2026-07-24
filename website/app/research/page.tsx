@@ -105,17 +105,18 @@ export default function ResearchPage() {
           <article role="row">
             <div role="cell">
               <strong>Cruz’s birth</strong>
-              <Grade kind="open">UNRESOLVED</Grade>
+              <Grade kind="documented">RESOLVED</Grade>
             </div>
             <p role="cell">
-              <b>4 May 1914</b> — Social Security claim; provisionally preferred
-              because it also names both parents and Humacao.
+              <b>3 May 1915, Gurabo</b> — the original civil registration names
+              Cruz Reyes Díaz and both parents.
             </p>
             <p role="cell">
-              <b>3 May 1915</b> — family account and public SSDI derivative.
+              <b>4 May 1914, Humacao</b> — the later Social Security index is
+              superseded for birthplace and date by the contemporary record.
             </p>
             <p role="cell">
-              <b>May 1917</b> — 1941 marriage license.
+              <b>May 1917</b> — the 1941 marriage index understates her age.
             </p>
           </article>
           <article role="row">
@@ -149,6 +150,22 @@ export default function ResearchPage() {
             </p>
             <p role="cell">
               <b>Next:</b> obtain the NYC death certificate.
+            </p>
+          </article>
+          <article role="row">
+            <div role="cell">
+              <strong>Juan’s mother</strong>
+              <Grade kind="open">UNRESOLVED</Grade>
+            </div>
+            <p role="cell">
+              <b>Carmen Rodríguez</b> — named in Juan’s 1902 marriage record.
+            </p>
+            <p role="cell">
+              <b>María Eugenia Rodríguez</b> — named by the informant on Juan’s
+              1951 death record.
+            </p>
+            <p role="cell">
+              <b>Next:</b> locate Juan’s Yabucoa baptism or birth registration.
             </p>
           </article>
         </div>
@@ -226,13 +243,13 @@ export default function ResearchPage() {
         </div>
         <div className="wanted-research-grid">
           <ul>
-            <li>Birth certificates, baptism cards, or passports for Cruz and Rafael.</li>
+            <li>Rafael’s baptism card, passport, or a clearer birth certificate.</li>
             <li>The 1941 marriage certificate or church announcement.</li>
             <li>Obituary clippings and funeral cards from 1984 and 1998.</li>
           </ul>
           <ul>
             <li>Photographs of either couple’s parents.</li>
-            <li>Anything labeled Martínez, Belén, or Juan Ramón.</li>
+            <li>Anything labeled Martínez, Juan Ramón, Sotero, or Carlina.</li>
             <li>Anything that explains why 24 October was remembered.</li>
           </ul>
         </div>
@@ -271,9 +288,10 @@ export default function ResearchPage() {
           ))}
         </div>
         <p className="method-note">
-          Some Ancestry links require a subscription and signed-in session. The
-          public page summarizes metadata rather than republishing protected
-          record images.
+          Some Ancestry links require a subscription and signed-in session.
+          Original downloads are archived privately. Two National Archives
+          census sheets are reproduced on the public summary; subscription-site
+          interface screenshots and civil-record images are not republished.
         </p>
       </section>
 

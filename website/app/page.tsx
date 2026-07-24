@@ -2,7 +2,7 @@ import { ResearchTools } from "./research-tools";
 import { sources } from "./research-data";
 
 const principalSources = sources.filter((source) =>
-  ["rafael-birth", "census-1910", "marriage", "census-1950"].includes(source.id),
+  ["cruz-birth", "rafael-birth", "marriage", "census-1950"].includes(source.id),
 );
 
 export default function Home() {
@@ -17,6 +17,7 @@ export default function Home() {
         <nav aria-label="Main navigation">
           <a href="#family">Family</a>
           <a href="#puerto-rico">Puerto Rico</a>
+          <a href="#records">Records</a>
           <a href="#journey">New York</a>
           <a href="#stories">Their parents</a>
           <a href="/research">Research notes</a>
@@ -27,18 +28,18 @@ export default function Home() {
       <section className="hero" id="top">
         <div className="hero-kicker">The Vazquez–Reyes family</div>
         <h1>
-          From <em>Humacao</em>
+          From <em>Puerto Rico</em>
           <br />
           to New York
         </h1>
         <p className="hero-deck">
-          Born in Humacao, Puerto Rico, Cruz Reyes and Rafael Vázquez married
-          in Manhattan in 1941 and made their home in East Harlem.
+          Cruz Reyes was born in Gurabo. Rafael Vázquez grew up in Humacao.
+          They married in Manhattan in 1941 and made their home in East Harlem.
         </p>
         <div className="hero-rule">
-          <span>Humacao</span>
+          <span>Naguabo</span>
           <b />
-          <span>Puerto Rico</span>
+          <span>Gurabo &amp; Humacao</span>
           <b />
           <span>New York City</span>
         </div>
@@ -49,14 +50,14 @@ export default function Home() {
 
       <section className="public-foreword">
         <p>
-          Rafael Vázquez grew up in Humacao, in the barrios of Anton Ruiz and
-          Mambiche. Cruz Reyes was also born in Humacao. By 1941 they were both
-          in New York, where they married on East 105th Street.
+          Cruz’s parents, Mauricio Reyes Martínez and Carmen Díaz García, lived
+          in Naguabo before Cruz was born in Gurabo on 3 May 1915. By 1920 the
+          family was in Anton Ruiz, Humacao.
         </p>
         <p>
-          The 1950 census records them on East 109th Street in East Harlem.
-          Their 1941 marriage license also records the names of their four
-          parents in Puerto Rico.
+          Rafael’s family was already in Anton Ruiz when he was a child. He and
+          Cruz married in East Harlem in 1941; the 1950 census records their
+          household a few blocks away on East 109th Street.
         </p>
       </section>
 
@@ -86,7 +87,8 @@ export default function Home() {
               <div>
                 <dt>Born</dt>
                 <dd>
-                  Humacao, Puerto Rico
+                  3 May 1915
+                  <small>Gurabo, Puerto Rico</small>
                 </dd>
               </div>
               <div>
@@ -150,26 +152,27 @@ export default function Home() {
       <section className="plot-feature public-plot" id="puerto-rico">
         <div className="plot-stamp">
           <span>Puerto Rico</span>
-          <strong>HUMACAO</strong>
-          <b>1906—30</b>
-          <span>Anton Ruiz · Mambiche</span>
+          <strong>EASTERN</strong>
+          <b>1902—30</b>
+          <span>Naguabo · Gurabo · Humacao</span>
         </div>
         <div className="plot-copy">
-          <p className="eyebrow">Humacao, Puerto Rico</p>
-          <h2>Cruz and Rafael in Humacao</h2>
+          <p className="eyebrow">Before New York</p>
+          <h2>The Puerto Rico years</h2>
           <p>
-            Cruz’s records name Humacao as her birthplace. Rafael’s birth
-            registration and three censuses place him in Humacao from childhood
-            through 1930.
+            The two families lived within the same part of eastern Puerto Rico,
+            but not in one place. The Reyes–Díaz family moved from Naguabo to
+            Gurabo and then Humacao. The Vázquez–Perales family lived in
+            Humacao, first in Anton Ruiz and later in Mambiche.
           </p>
           <div className="interments">
             <p>
-              <strong>Anton Ruiz</strong>
-              <span>Rafael’s family in the 1910 and 1920 censuses</span>
+              <strong>Naguabo → Gurabo</strong>
+              <span>Carmen’s family in 1910; Cruz’s birthplace in 1915</span>
             </p>
             <p>
-              <strong>Mambiche</strong>
-              <span>Rafael and his father in the 1930 census</span>
+              <strong>Humacao</strong>
+              <span>Both families in the 1920 and 1930 censuses</span>
             </p>
           </div>
           <a
@@ -181,24 +184,84 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="section record-gallery" id="records">
+        <div className="section-label">
+          <span>02</span>
+          <p>In the records</p>
+        </div>
+        <div className="records-heading">
+          <p className="eyebrow">Original census sheets</p>
+          <h2>The families on paper</h2>
+          <p>
+            These are the pages the enumerators filled out. The spelling and
+            ages vary, but the households line up from one census to the next.
+          </p>
+        </div>
+        <div className="record-grid">
+          <figure>
+            <a href="/records/1910-reyes-household.jpg" target="_blank">
+              <img
+                src="/records/1910-reyes-household.jpg"
+                alt="1910 Puerto Rico census sheet for Ucares, Naguabo"
+              />
+            </a>
+            <figcaption>
+              <strong>1910 · Ucares, Naguabo</strong>
+              <span>
+                Carmen Díaz, her parents Lope Díaz and Reyes García, her husband
+                Mauricio Reyes, and their first child.
+              </span>
+              <small>U.S. Census, National Archives</small>
+            </figcaption>
+          </figure>
+          <figure>
+            <a href="/records/1920-vazquez-household.jpg" target="_blank">
+              <img
+                src="/records/1920-vazquez-household.jpg"
+                alt="1920 Puerto Rico census sheet for Anton Ruiz, Humacao"
+              />
+            </a>
+            <figcaption>
+              <strong>1920 · Anton Ruiz, Humacao</strong>
+              <span>
+                Rafael in the household of Juan Vázquez and Carlina Perales,
+                with his brothers and sisters.
+              </span>
+              <small>U.S. Census, National Archives</small>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
       <section className="section journey" id="journey">
         <div className="section-label light">
-          <span>02</span>
+          <span>03</span>
           <p>Puerto Rico to New York</p>
         </div>
         <div className="journey-heading">
-          <p className="eyebrow">1906–1950</p>
-          <h2>Humacao → East Harlem</h2>
+          <p className="eyebrow">1907–1950</p>
+          <h2>Eastern Puerto Rico → East Harlem</h2>
         </div>
         <div className="timeline">
           <article>
-            <span className="year">1906–30</span>
+            <span className="year">1907–15</span>
             <div className="dot" />
             <div>
-              <h3>Humacao, Puerto Rico</h3>
+              <h3>Fajardo, Naguabo and Gurabo</h3>
               <p>
-                Rafael is born and raised in Anton Ruiz. By 1930 he is a single
-                adult in Mambiche, still in his father’s household.
+                Mauricio and Carmen marry in Fajardo, live with her family in
+                Naguabo, and welcome Cruz in Gurabo.
+              </p>
+            </div>
+          </article>
+          <article>
+            <span className="year">1920–30</span>
+            <div className="dot" />
+            <div>
+              <h3>Humacao</h3>
+              <p>
+                Both families appear in Humacao records: first in Anton Ruiz,
+                then in Mambiche.
               </p>
             </div>
           </article>
@@ -229,47 +292,48 @@ export default function Home() {
 
       <section className="section stories" id="stories">
         <div className="section-label">
-          <span>03</span>
+          <span>04</span>
           <p>Their parents</p>
         </div>
         <div className="stories-heading">
           <p className="eyebrow">One generation earlier</p>
-          <h2>The families in Humacao</h2>
+          <h2>The families before New York</h2>
         </div>
         <div className="story-grid">
           <article>
             <span className="story-when">Cruz’s parents</span>
-            <h3>Mauricio Reyes and Carmen Díaz</h3>
+            <h3>Mauricio Reyes Martínez and Carmen Díaz García</h3>
             <p>
-              Cruz’s marriage license and Social Security record name Mauricio
-              Reyes and Carmen Díaz as her parents.
+              They married in Fajardo in 1907. Census and civil records follow
+              their family through Naguabo, Gurabo and Humacao.
             </p>
-            <a href="/research#source-ssa-cruz">View the sources →</a>
+            <a href="/research#source-cruz-birth">View the sources →</a>
           </article>
           <article>
             <span className="story-when">Rafael’s parents</span>
-            <h3>Juan Vázquez and Carlina Perales</h3>
+            <h3>Juan Vázquez Rodríguez and Carlina Perales Pérez</h3>
             <p>
-              Rafael’s birth and census records name Juan Vázquez y Rodríguez
-              and Carlina Perales y Pérez as his parents.
+              They married in Humacao in 1902. Carlina died there in 1922;
+              Rafael was one of the seven children named in her death record.
             </p>
             <a href="/research#source-census-1910">View the sources →</a>
           </article>
           <article>
-            <span className="story-when">25 October 1941</span>
-            <h3>Both families on the marriage record</h3>
+            <span className="story-when">Their grandparents</span>
+            <h3>Pedro, Ana, Lope, Reyes, Sotero, María, Marcelo and Aurora</h3>
             <p>
-              The Manhattan marriage license records Cruz, Rafael, and all four
-              parents together.
+              The Puerto Rico civil records carry both lines back another
+              generation. Several branches now reach people born in the 1840s
+              and 1850s.
             </p>
-            <a href="/research#source-marriage">View the source →</a>
+            <a href="/research#sources">See the record list →</a>
           </article>
         </div>
       </section>
 
       <section className="section public-sources">
         <div className="section-label">
-          <span>04</span>
+          <span>05</span>
           <p>Sources for this page</p>
         </div>
         <div className="principal-source-grid">
@@ -296,7 +360,7 @@ export default function Home() {
         <p>
           Vazquez–Reyes family history
           <br />
-          Humacao, Puerto Rico · New York City
+          Puerto Rico · New York City
         </p>
         <p className="footer-note">
           Public summary · <a href="/research">Research notes</a>

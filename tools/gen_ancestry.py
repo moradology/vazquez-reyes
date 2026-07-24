@@ -3,22 +3,24 @@
 # requires-python = ">=3.12"
 # dependencies = ["playwright"]
 # ///
-"""Read Ancestry records as JSON by driving an ALREADY-RUNNING Chrome CDP session.
+"""Read Ancestry records as JSON through a dedicated Chrome CDP session.
 
-Never launches a browser: it connects over CDP (http://localhost:9222) to the
-single, human-paced session the researcher already opened and logged in. That
-honors the Ancestry ToS posture (one human-paced session, no automation of
-login/settings) and keeps raw pages out of the repo — this only emits parsed
-JSON to stdout; the raw image capture stays a manual "Save to your computer".
+`browser start` launches a visible Chrome with a private, persistent cockpit
+profile and CDP on http://localhost:9222. The researcher signs in manually once;
+later commands reuse that session. This honors the Ancestry ToS posture (one
+human-paced session, no automation of login/settings) and keeps raw pages out
+of the repo.
 
 JSON-first. No try/except: the common failure (browser not up) is detected by a
 plain socket probe and returned as a clean JSON error; genuinely unexpected
 errors fail fast.
 
 Commands:
+  browser  start|status
   search  --collection N --name Given_Surname [filters] [--limit K]
   record  --collection N --id RECORD_ID
   household --collection N --id RECORD_ID   (record, household members only)
+  capture --collection N --id RECORD_ID --capture-id ID --source-ref SOURCE
   goto/where/next/prev/open/back --agent ID  (private logical navigation)
   cache stats|list|migrate|clear             (durable-store administration)
   session stats|reset --agent ID             (per-agent hit accounting)
@@ -38,9 +40,12 @@ import os
 import random
 import re
 import secrets
+import shutil
 import socket
+import subprocess
 import time
 from contextlib import contextmanager
+from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import parse_qsl, quote, urlencode, urlparse
 
@@ -78,6 +83,13 @@ LAST_PATH = STATE_DIR / "last_request"
 AGENTS_DIR = STATE_DIR / "agents"       # per-agent cursor + history, one file each
 SESSIONS_DIR = STATE_DIR / "sessions"   # per-agent live/cache hit accounting
 TABS_PATH = STATE_DIR / "tabs.json"     # hashed agent id -> CDP targetId
+BROWSER_DIR = STATE_DIR / "browser"
+CHROME_PROFILE_DIR = BROWSER_DIR / "profile"
+CHROME_PID_PATH = BROWSER_DIR / "chrome.pid"
+CHROME_LOG_PATH = BROWSER_DIR / "chrome.log"
+ANCESTRY_HOME = "https://www.ancestry.com/"
+CAPTURE_DIR = ROOT / "research" / "pulls" / "images"
+CAPTURE_MANIFEST_PATH = CAPTURE_DIR / "manifest.jsonl"
 # Minimum seconds between REAL Ancestry hits, across all agents (human pace).
 # Configuration may make pacing slower, never faster than the safety floor.
 MIN_INTERVAL_FLOOR = 5.0
@@ -97,6 +109,7 @@ REQUEST_STATE_SCHEMA = "gen.ancestry.request-state"
 RECORD_DELETE_CONFIRMATION = "DELETE-DURABLE-ANCESTRY-RECORDS"
 SESSION_RESET_CONFIRMATION = "RESET-ANCESTRY-SESSION"
 AGENT_RE = re.compile(r"[A-Za-z0-9][A-Za-z0-9._-]{0,63}")
+CAPTURE_ID_RE = re.compile(r"[A-Za-z0-9][A-Za-z0-9._-]{0,127}")
 CACHE_KINDS = ("collection", "record", "search")
 SEARCH_TEXT_FILTERS = ("birth", "place", "spouse", "birthplace")
 CENSUS_COLLECTION_YEARS = {
@@ -667,6 +680,372 @@ def cdp_up() -> bool:
     return code == 0
 
 
+def chrome_executable() -> Path:
+    configured = os.environ.get("GEN_ANCESTRY_CHROME")
+    candidates = [
+        Path(configured) if configured else None,
+        Path("/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"),
+        Path("/Applications/Chromium.app/Contents/MacOS/Chromium"),
+    ]
+    for command in ("google-chrome", "google-chrome-stable", "chromium", "chromium-browser"):
+        found = shutil.which(command)
+        if found:
+            candidates.append(Path(found))
+    for candidate in candidates:
+        if candidate and candidate.is_file():
+            return candidate
+    raise CockpitError(
+        "Chrome executable not found; set GEN_ANCESTRY_CHROME to the browser executable",
+    )
+
+
+def browser_pid() -> int | None:
+    try:
+        value = int(CHROME_PID_PATH.read_text().strip())
+    except (FileNotFoundError, OSError, ValueError):
+        return None
+    return value if value > 0 else None
+
+
+def process_up(pid: int | None) -> bool:
+    if pid is None:
+        return False
+    try:
+        os.kill(pid, 0)
+    except (OSError, ProcessLookupError):
+        return False
+    return True
+
+
+def launch_cockpit_browser() -> int:
+    ensure_private_dir(BROWSER_DIR)
+    ensure_private_dir(CHROME_PROFILE_DIR)
+    executable = chrome_executable()
+    command = [
+        str(executable),
+        f"--remote-debugging-port={CDP_PORT}",
+        "--remote-debugging-address=127.0.0.1",
+        "--remote-allow-origins=*",
+        f"--user-data-dir={CHROME_PROFILE_DIR}",
+        "--no-first-run",
+        "--no-default-browser-check",
+        ANCESTRY_HOME,
+    ]
+    with CHROME_LOG_PATH.open("ab") as log:
+        CHROME_LOG_PATH.chmod(0o600)
+        process = subprocess.Popen(
+            command,
+            stdin=subprocess.DEVNULL,
+            stdout=log,
+            stderr=subprocess.STDOUT,
+            start_new_session=True,
+        )
+    atomic_write_bytes(CHROME_PID_PATH, f"{process.pid}\n".encode())
+    return process.pid
+
+
+def wait_for_cdp(timeout: float = 15.0) -> bool:
+    deadline = time.monotonic() + timeout
+    while time.monotonic() < deadline:
+        if cdp_up():
+            return True
+        time.sleep(0.2)
+    return cdp_up()
+
+
+def cmd_browser(args) -> int:
+    pid = browser_pid()
+    if args.action == "status":
+        emit({
+            "command": "ancestry.browser.status",
+            "ok": True,
+            "cdp_reachable": cdp_up(),
+            "pid": pid,
+            "process_reachable": process_up(pid),
+            "cdp_url": CDP_URL,
+            "profile_dir": str(CHROME_PROFILE_DIR),
+        })
+        return 0
+
+    with cache_lock():
+        if cdp_up():
+            emit({
+                "command": "ancestry.browser.start",
+                "ok": True,
+                "already_running": True,
+                "cdp_url": CDP_URL,
+                "pid": pid,
+                "profile_dir": str(CHROME_PROFILE_DIR),
+                "login_url": ANCESTRY_HOME,
+            })
+            return 0
+        pid = launch_cockpit_browser()
+        if not wait_for_cdp():
+            raise CockpitError(
+                "Chrome launched but CDP did not become reachable",
+                pid=pid,
+                log_path=str(CHROME_LOG_PATH),
+            )
+    emit({
+        "command": "ancestry.browser.start",
+        "ok": True,
+        "already_running": False,
+        "cdp_url": CDP_URL,
+        "pid": pid,
+        "profile_dir": str(CHROME_PROFILE_DIR),
+        "login_url": ANCESTRY_HOME,
+        "login_note": "Sign in manually in the opened cockpit Chrome window; credentials are never read or automated.",
+    })
+    return 0
+
+
+def capture_id(raw: str) -> str:
+    if not CAPTURE_ID_RE.fullmatch(raw):
+        raise CockpitError(
+            "invalid capture id; use 1-128 letters, digits, dots, underscores, or hyphens",
+            capture_id=raw,
+        )
+    return raw
+
+
+def load_capture_manifest() -> list[dict]:
+    try:
+        lines = CAPTURE_MANIFEST_PATH.read_text().splitlines()
+    except FileNotFoundError:
+        return []
+    rows = []
+    for line_number, line in enumerate(lines, 1):
+        if not line.strip():
+            continue
+        try:
+            row = json.loads(line)
+        except json.JSONDecodeError as exc:
+            raise CockpitError(
+                "invalid image-capture manifest",
+                path=str(CAPTURE_MANIFEST_PATH),
+                line=line_number,
+                detail=str(exc),
+            ) from exc
+        if not isinstance(row, dict) or not isinstance(row.get("id"), str):
+            raise CockpitError(
+                "invalid image-capture manifest row",
+                path=str(CAPTURE_MANIFEST_PATH),
+                line=line_number,
+            )
+        rows.append(row)
+    return rows
+
+
+def write_capture_manifest(rows: list[dict]) -> None:
+    payload = "".join(json.dumps(row, separators=(",", ":")) + "\n" for row in rows)
+    atomic_write_bytes(CAPTURE_MANIFEST_PATH, payload.encode())
+
+
+def update_capture_manifest(capture: str, metadata: dict) -> dict:
+    rows = load_capture_manifest()
+    existing = next((row for row in rows if row["id"] == capture), None)
+    if existing is None:
+        existing = {"id": capture, "status": "pending", "disposition": "pending"}
+        rows.append(existing)
+    captures = existing.setdefault("captures", [])
+    if not isinstance(captures, list):
+        raise CockpitError("invalid captures list in image-capture manifest", capture_id=capture)
+    captures.append(metadata)
+    existing["status"] = "captured_pending_review"
+    existing["last_captured_at"] = metadata["captured_at"]
+    write_capture_manifest(rows)
+    return existing
+
+
+def record_imageviewer_links(page, collection: str) -> list[str]:
+    links = page.evaluate(
+        """() => [...document.querySelectorAll('a[href*="/imageviewer/"]')]
+          .map(link => link.href)
+          .filter(Boolean)"""
+    )
+    prefix = f"/imageviewer/collections/{collection}/images/"
+    valid = []
+    for link in links if isinstance(links, list) else []:
+        try:
+            _host, path = _ancestry_url(link)
+        except CockpitError:
+            continue
+        if path.lower().startswith(prefix.lower()) and link not in valid:
+            valid.append(link)
+    return valid
+
+
+def screenshot_largest_document_element(page, path: Path) -> dict | None:
+    candidates = page.locator("canvas, img")
+    best = None
+    for index in range(candidates.count()):
+        candidate = candidates.nth(index)
+        try:
+            box = candidate.bounding_box()
+        except Exception:
+            continue
+        if not box:
+            continue
+        area = box["width"] * box["height"]
+        if box["width"] < 400 or box["height"] < 300:
+            continue
+        if best is None or area > best["area"]:
+            best = {"locator": candidate, "area": area, "box": box, "index": index}
+    if best is None:
+        return None
+    best["locator"].screenshot(path=str(path))
+    path.chmod(0o600)
+    return {"path": str(path), "box": best["box"], "candidate_index": best["index"]}
+
+
+def download_viewer_document(page, path_base: Path) -> dict | None:
+    """Use Ancestry's own Save menu to retain the original document image."""
+    from playwright.sync_api import TimeoutError as PlaywrightTimeoutError
+
+    save_to_computer = page.get_by_text("Save to your computer", exact=True)
+    if not save_to_computer.is_visible():
+        save_button = page.get_by_role("button", name="Save", exact=True)
+        if save_button.count() != 1:
+            return None
+        save_button.click()
+        page.wait_for_timeout(500)
+    if not save_to_computer.is_visible():
+        return None
+    try:
+        with page.expect_download(timeout=15000) as download_info:
+            save_to_computer.click()
+    except PlaywrightTimeoutError:
+        return None
+    download = download_info.value
+    suggested_filename = download.suggested_filename
+    suffix = Path(suggested_filename).suffix.lower()
+    if suffix not in {".jpg", ".jpeg", ".png", ".tif", ".tiff", ".pdf"}:
+        suffix = ".bin"
+    path = path_base.with_suffix(suffix)
+    download.save_as(str(path))
+    path.chmod(0o600)
+    return {
+        "path": str(path),
+        "suggested_filename": suggested_filename,
+        "size_bytes": path.stat().st_size,
+    }
+
+
+def capture_record_images(args) -> dict:
+    if not args.collection.isdigit() or not args.id.isdigit():
+        raise CockpitError("collection and record id must be numeric")
+    agent = agent_id(args.agent)
+    capture = capture_id(args.capture_id)
+    source_ref = args.source_ref.strip()
+    if not source_ref:
+        raise CockpitError("source ref must not be blank")
+    loc = {"type": "record", "collection": args.collection, "id": args.id}
+    requested_url = url_for(loc)
+    timestamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
+    capture_root = CAPTURE_DIR / capture
+    ensure_private_dir(capture_root)
+    record_path = capture_root / f"{timestamp}-record-page.png"
+    viewer_path = capture_root / f"{timestamp}-document-viewer.png"
+    crop_path = capture_root / f"{timestamp}-document-crop.png"
+    original_path_base = capture_root / f"{timestamp}-document-original"
+
+    def do_capture(page):
+        response = page.goto(requested_url, wait_until="domcontentloaded", timeout=45000)
+        page.wait_for_timeout(3000)
+        validate_response(response)
+        body = page.evaluate("() => document.body.innerText")
+        validate_page(loc, page.url, page.title(), body)
+        page.screenshot(path=str(record_path), full_page=True)
+        record_path.chmod(0o600)
+        viewer_links = record_imageviewer_links(page, args.collection)
+        viewer = None
+        crop = None
+        original = None
+        resources = []
+        if viewer_links:
+            viewer_url = viewer_links[0]
+            viewer_response = page.goto(viewer_url, wait_until="domcontentloaded", timeout=45000)
+            page.wait_for_timeout(5000)
+            validate_response(viewer_response)
+            _host, viewer_url_path = _ancestry_url(page.url)
+            expected_prefix = f"/imageviewer/collections/{args.collection}/images/"
+            if not viewer_url_path.lower().startswith(expected_prefix.lower()):
+                raise CockpitError(
+                    "Ancestry image viewer redirected unexpectedly",
+                    requested_url=viewer_url,
+                    final_url=page.url,
+                )
+            viewer_body = page.evaluate("() => document.body.innerText")
+            if page_looks_like_login(page.url, page.title(), viewer_body):
+                raise CockpitError("Ancestry redirected to login during image capture", final_url=page.url)
+            original = download_viewer_document(page, original_path_base)
+            page.screenshot(path=str(viewer_path), full_page=True)
+            viewer_path.chmod(0o600)
+            viewer = {"path": str(viewer_path), "url": page.url}
+            crop = screenshot_largest_document_element(page, crop_path)
+            resources = page.evaluate(
+                """() => performance.getEntriesByType('resource')
+                  .map(entry => entry.name)
+                  .filter(url => /\\.(?:jpe?g|png|webp)(?:\\?|$)/i.test(url))
+                  .slice(-200)"""
+            )
+        return {
+            "record_page": {"path": str(record_path), "url": requested_url},
+            "viewer_page": viewer,
+            "original_document": original,
+            "document_crop": crop,
+            "viewer_links": viewer_links,
+            "image_resources": resources if isinstance(resources, list) else [],
+        }
+
+    with cache_lock():
+        if not cdp_up():
+            raise CockpitError("cdp browser not reachable on :9222; run `gen ancestry browser start`")
+        throttle()
+        record_session_access(agent, "record", cached=False)
+        result = run_on_page(do_capture, agent=agent)
+
+    metadata = {
+        "captured_at": datetime.now(timezone.utc).isoformat(),
+        "source_ref": source_ref,
+        "collection": args.collection,
+        "record_id": args.id,
+        "record_page": result["record_page"],
+        "viewer_page": result["viewer_page"],
+        "original_document": result["original_document"],
+        "document_crop": result["document_crop"],
+    }
+    sidecar_path = capture_root / f"{timestamp}-metadata.json"
+    atomic_write_json(sidecar_path, {**metadata, **result})
+    manifest_row = update_capture_manifest(capture, {**metadata, "metadata_path": str(sidecar_path)})
+    warnings = []
+    if result["viewer_page"] is None:
+        warnings.append("No image-viewer link was exposed on the record page; only the record page was captured.")
+    if result["viewer_page"] and result["document_crop"] is None:
+        warnings.append("The image viewer was captured, but no large canvas or image element was available for a crop.")
+    if result["viewer_page"] and result["original_document"] is None:
+        warnings.append("The viewer was captured, but Ancestry did not offer an original document download.")
+    return {
+        "command": "ancestry.capture",
+        "ok": True,
+        "capture_id": capture,
+        "source_ref": source_ref,
+        "collection": args.collection,
+        "record_id": args.id,
+        "agent": agent,
+        **result,
+        "metadata_path": str(sidecar_path),
+        "manifest_status": manifest_row["status"],
+        "warnings": warnings,
+        "session": session_summary(agent),
+    }
+
+
+def cmd_capture(args) -> int:
+    emit(capture_record_images(args))
+    return 0
+
+
 # ---- innerText parsing (pure functions, unit-testable without a browser) ----
 
 def parse_detail_fields(text: str) -> dict[str, str]:
@@ -823,8 +1202,17 @@ def parse_household_table(table: object, collection: str) -> tuple[list[dict[str
     rows = table["rows"]
     if not all(isinstance(header, str) for header in headers):
         raise CockpitError("Ancestry household table parser returned malformed headers; page was not cached")
-    warnings = [] if rows else ["household table contained no member rows"]
-    return normalize_household_rows(headers, rows, collection, method="table", extra_warnings=warnings)
+    filtered_rows = [
+        row for row in rows
+        if not (
+            isinstance(row, list)
+            and row
+            and isinstance(row[0], str)
+            and row[0].lower().startswith("household members")
+        )
+    ]
+    warnings = [] if filtered_rows else ["household table contained no member rows"]
+    return normalize_household_rows(headers, filtered_rows, collection, method="table", extra_warnings=warnings)
 
 
 def parse_household(text: str, collection: str) -> tuple[list[dict[str, str | None]], dict]:
@@ -916,13 +1304,39 @@ def _ancestry_url(url: str) -> tuple[str, str]:
     return host, parsed.path.rstrip("/")
 
 
+def page_looks_like_login(final_url: str, title: str, body: str) -> bool:
+    _host, path = _ancestry_url(final_url)
+    path_lower = path.lower()
+    title_lower = (title or "").strip().lower()
+    body_lower = (body or "")[:12000].lower()
+    return (
+        any(marker in path_lower for marker in (
+            "/account/signin",
+            "/account/login",
+            "/secure/login",
+            "/auth/",
+            "/offers/join",
+        ))
+        or "sign in" in title_lower
+        or "login" in title_lower
+        or any(marker in title_lower or marker in body_lower for marker in (
+            "verify you are human",
+            "unusual activity",
+            "complete the security check",
+            "access denied",
+            "captcha",
+            "sign in to ancestry",
+        ))
+    )
+
+
 def validate_page(loc: dict, final_url: str, title: str, body: str) -> None:
     """Reject redirects, login walls, challenges, and empty/skeleton pages."""
     _host, path = _ancestry_url(final_url)
     path_lower = path.lower()
     title_lower = (title or "").strip().lower()
     body_lower = (body or "")[:12000].lower()
-    login_paths = ("/account/signin", "/account/login", "/secure/login", "/auth/")
+    login_paths = ("/account/signin", "/account/login", "/secure/login", "/auth/", "/offers/join")
     challenge_phrases = (
         "verify you are human",
         "unusual activity",
@@ -1382,17 +1796,20 @@ SEARCH_JS = r"""() => {
 HOUSEHOLD_JS = r"""() => {
   const clean = value => (value || '').replace(/\s+/g, ' ').trim();
   const tables = [...document.querySelectorAll('table')];
-  const table = tables.find(candidate => /household members/i.test(clean(candidate.innerText).slice(0, 300)));
+  const table = tables.find(candidate => {
+    const ownHeaders = [...candidate.querySelectorAll(':scope > thead th')].map(cell => clean(cell.innerText));
+    return ownHeaders.some(header => /household members/i.test(header));
+  }) || tables.find(candidate => /household members/i.test(clean(candidate.innerText).slice(0, 300)));
   if (!table) return null;
-  let headers = [...table.querySelectorAll('thead th')].map(cell => clean(cell.innerText));
-  let rowElements = [...table.querySelectorAll('tbody tr')];
+  let headers = [...table.querySelectorAll(':scope > thead th')].map(cell => clean(cell.innerText));
+  let rowElements = [...table.querySelectorAll(':scope > tbody > tr')];
   if (!headers.length) {
-    const first = table.querySelector('tr');
-    if (first) headers = [...first.querySelectorAll('th')].map(cell => clean(cell.innerText));
-    rowElements = [...table.querySelectorAll('tr')].filter(row => row !== first);
+    const first = table.querySelector(':scope > tbody > tr, :scope > tr');
+    if (first) headers = [...first.querySelectorAll(':scope > th')].map(cell => clean(cell.innerText));
+    rowElements = [...table.querySelectorAll(':scope > tbody > tr, :scope > tr')].filter(row => row !== first);
   }
   const rows = rowElements
-    .map(row => [...row.querySelectorAll('td')].map(cell => clean(cell.innerText)))
+    .map(row => [...row.querySelectorAll(':scope > td')].map(cell => clean(cell.innerText)))
     .filter(cells => cells.some(Boolean));
   return {headers, rows};
 }"""
@@ -1965,9 +2382,12 @@ addresses:
   collection/COLL                          a collection's landing page
 
 semantics (what an agent must know):
-  - Never launches a browser: connects to the already-running, logged-in Chrome
-    (CDP :9222). If it is down, you get {"ok":false,"error":"cdp browser not
-    reachable on :9222"} - ask the human to start it.
+  - `browser start` launches or reuses a visible dedicated Chrome profile with
+    CDP on :9222. The researcher signs into Ancestry manually; the cockpit never
+    reads or automates credentials. Use `browser status` to diagnose attachment.
+  - `capture` saves a full record page, the linked document viewer, and a
+    document crop when available. It always writes to the private ignored image
+    archive and appends capture metadata to the local manifest.
   - Every real Ancestry hit is serialized through a machine-global queue and
     human-paced (>= GEN_ANCESTRY_MIN_INTERVAL seconds apart, default 5, plus
     jitter) across ALL agents. You never need to rate-limit yourself.
@@ -2022,6 +2442,33 @@ def main() -> int:
         formatter_class=argparse.RawDescriptionHelpFormatter,
     )
     sub = parser.add_subparsers(dest="cmd", required=True, metavar="<command>")
+
+    p_browser = sub.add_parser(
+        "browser",
+        help="launch or inspect the dedicated cockpit Chrome -> start | status",
+        description=(
+            "Manage the dedicated visible Chrome profile used by the cockpit. "
+            "Login remains a manual researcher action."
+        ),
+    )
+    p_browser.add_argument("action", choices=["start", "status"], help="launch Chrome or inspect CDP status")
+    p_browser.set_defaults(func=cmd_browser)
+
+    p_capture = sub.add_parser(
+        "capture",
+        help="save the record page and available document viewer images to the private archive",
+        description=(
+            "Capture a full record page, the linked document viewer, and a readable "
+            "document crop when available. Files and metadata remain under the "
+            "Git-ignored research/pulls/images directory."
+        ),
+    )
+    p_capture.add_argument("--collection", required=True, metavar="N", help="Ancestry collection id")
+    p_capture.add_argument("--id", required=True, metavar="RECORD_ID", help="record id within the collection")
+    p_capture.add_argument("--capture-id", required=True, metavar="ID", help="stable image-manifest id")
+    p_capture.add_argument("--source-ref", required=True, metavar="SOURCE", help="canonical source-registry id")
+    p_capture.add_argument("--agent", metavar="ID", help="agent id for tab ownership and session accounting")
+    p_capture.set_defaults(func=cmd_capture)
 
     # one-shot data commands (default agent unless --agent is supplied)
     p_search = sub.add_parser(

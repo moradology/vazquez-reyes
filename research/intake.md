@@ -1,15 +1,16 @@
 # Vazquez-Reyes research intake
 
-Status: initial family account recorded and first documentary pass completed
-2026-07-23.
+Status: family account recorded 2026-07-23; first civil-registration and census
+reconstruction completed 2026-07-24.
 
 ## Privacy boundary
 
 - Project is local and private by default.
 - Do not enter living-person details beyond what is strictly necessary for
   orientation.
-- Do not track Social Security numbers, account data, or raw subscription
-  images.
+- Do not track Social Security numbers or account data in public files.
+- Preserve relevant record images in the ignored private archive; publish only
+  rights-safe images with living-person details excluded.
 
 ## Starting couple
 
@@ -56,8 +57,10 @@ confirmed against records.
 - Both members of the starting couple were reportedly born in Puerto Rico.
 - Both were reportedly buried at Rosedale & Rosehill Cemetery in Linden, New
   Jersey.
-- Documentary records place both in Humacao, Puerto Rico, and later in
-  Manhattan. No New Jersey residence has been established.
+- Cruz was born in Gurabo. Her family is documented in Naguabo, Gurabo and
+  Humacao. Rafael was born and raised in Humacao.
+- Both are documented in Manhattan by their 1941 marriage. No New Jersey
+  residence has been established.
 
 ## Existing material
 
@@ -66,6 +69,8 @@ confirmed against records.
 - Photographs:
 - Obituaries or cemetery records:
 - Census or vital-record links:
+- Family-tree exports: Family Echo Vázquez and Reyes TXT/CSV exports supplied
+  23 July 2026. Raw files contain living-person data and remain local.
 - Ancestry tree or record links:
 - Oral history: Vázquez was anglicized or de-accented to Vasquez.
 
@@ -81,13 +86,16 @@ confirmed against records.
 6. Resolve Carmen's Belén clue and Catalina's competing Pérez/López surname
    clues without merging candidates prematurely.
 
-## Documentary findings from the first pass
+## Documentary findings
 
 - A 1941 Manhattan marriage-license record connects Rafael Vazquez and Cruz
   Reyes and names all four parents.
-- Cruz's Social Security application/claim identifies her as Cruz Reyes,
-  daughter of Mauricio Reyes and Carmen Diaz, born in Humacao. It records
-  4 May 1914, conflicting with the family's 3 May 1915.
+- Cruz's original civil registration identifies her as Cruz Reyes Díaz, born
+  3 May 1915 in Gurabo to Mauricio Reyes Martínez and Carmen Díaz García.
+- The 1910, 1920 and 1930 censuses reconstruct the Reyes-Díaz household from
+  Naguabo to Humacao and confirm Belén as Cruz's sister.
+- Mauricio and Carmen's 1907 marriage names their parents as Pedro Reyes and
+  Ana Martínez, and Lope Díaz and Reyes García.
 - Rafael's Puerto Rico civil birth index and the 1910 and 1920 censuses place
   him in Humacao and identify his parents as Juan Vázquez y Rodríguez and
   Carlina Perales y Pérez. His exact birth day remains unresolved.
@@ -101,3 +109,7 @@ confirmed against records.
 - Cruz's death is well supported as 10 October 1998. Rafael's 30 December 1984
   death is probable from the family account, a matching tree, and the burial
   two days later, but an original death record is still needed.
+- Juan and Carlina's 1902 marriage, Carlina's 1922 death, Juan's 1951 death,
+  and older family death records extend several direct branches into the
+  mid-nineteenth century. Conflicting parent names remain flagged rather than
+  merged.

@@ -17,18 +17,18 @@ const sans = Inter({
 export const metadata: Metadata = {
   title: "Vazquez–Reyes Family History",
   description:
-    "Cruz Reyes and Rafael Vázquez: from Humacao, Puerto Rico, to East Harlem, New York.",
+    "Cruz Reyes and Rafael Vázquez: from eastern Puerto Rico to East Harlem, New York.",
   openGraph: {
     title: "Vazquez–Reyes Family History",
     description:
-      "The Vazquez-Reyes family from Humacao, Puerto Rico, to East Harlem, New York.",
+      "The Vazquez-Reyes family from eastern Puerto Rico to East Harlem, New York.",
     type: "website",
     images: [
       {
         url: "/og.png",
         width: 1659,
         height: 948,
-        alt: "Vazquez-Reyes: From Humacao to Manhattan",
+        alt: "Vazquez-Reyes: From Puerto Rico to Manhattan",
       },
     ],
   },

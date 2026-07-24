@@ -15,3 +15,5 @@ The first intake pass should establish:
 Unknown relationships remain explicit gaps. Conflicting identities remain
 separate candidates until evidence supports a resolution.
 
+See [`image-capture-policy.md`](image-capture-policy.md) for the local archive
+rules used when reviewing record images.

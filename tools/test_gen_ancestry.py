@@ -126,6 +126,12 @@ def temporary_runtime():
             "AGENTS_DIR": state / "agents",
             "SESSIONS_DIR": state / "sessions",
             "TABS_PATH": state / "tabs.json",
+            "BROWSER_DIR": state / "browser",
+            "CHROME_PROFILE_DIR": state / "browser" / "profile",
+            "CHROME_PID_PATH": state / "browser" / "chrome.pid",
+            "CHROME_LOG_PATH": state / "browser" / "chrome.log",
+            "CAPTURE_DIR": root / "pulls" / "images",
+            "CAPTURE_MANIFEST_PATH": root / "pulls" / "images" / "manifest.jsonl",
         }
         with patch.multiple(ga, **values):
             yield root
@@ -180,6 +186,27 @@ class ParsingTests(unittest.TestCase):
         self.assertTrue(extraction["complete"])
         self.assertIsNone(extraction["dwelling_complete"])
         self.assertTrue(extraction["warnings"])
+
+    def test_semantic_table_ignores_nested_wrapper_row(self):
+        household, extraction = ga.parse_household_table(
+            {
+                "headers": ["Household Members (Name)", "Age", "Relationship"],
+                "rows": [
+                    ["Household Members (Name) Age Relationship Juan Vazquez 30 Head", "Juan Vazquez", "30"],
+                    ["Juan Vazquez", "30", "Head"],
+                    ["Rafael Vazquez", "4", "Son"],
+                ],
+            },
+            "7884",
+        )
+        self.assertEqual(
+            household,
+            [
+                {"name": "Juan Vazquez", "age": "30", "relation": "Head"},
+                {"name": "Rafael Vazquez", "age": "4", "relation": "Son"},
+            ],
+        )
+        self.assertTrue(extraction["complete"])
 
     def test_address_grammar_and_urls(self):
         rec = ga.parse_address("record/2442/58087568")
@@ -1003,6 +1030,62 @@ class NavigationTests(unittest.TestCase):
             )
             self.assertEqual(code, 1)
             self.assertEqual(output["error"], "no active search; goto a search first")
+
+
+class BrowserControlTests(unittest.TestCase):
+    def test_browser_status_is_read_only(self):
+        with temporary_runtime(), patch.object(ga, "cdp_up", return_value=False):
+            code, output = captured(ga.cmd_browser, SimpleNamespace(action="status"))
+            self.assertEqual(code, 0)
+            self.assertFalse(output["cdp_reachable"])
+            self.assertIsNone(output["pid"])
+            self.assertFalse(output["process_reachable"])
+            self.assertFalse(ga.CHROME_PROFILE_DIR.exists())
+
+    def test_browser_start_uses_a_dedicated_persistent_profile(self):
+        fake_process = SimpleNamespace(pid=4242)
+        with temporary_runtime():
+            with (
+                patch.object(ga, "cdp_up", side_effect=[False, True]),
+                patch.object(ga, "chrome_executable", return_value=Path("/fake/Google Chrome")),
+                patch.object(ga.subprocess, "Popen", return_value=fake_process) as popen,
+            ):
+                code, output = captured(ga.cmd_browser, SimpleNamespace(action="start"))
+                self.assertEqual(code, 0)
+                self.assertFalse(output["already_running"])
+                self.assertEqual(output["pid"], 4242)
+                command = popen.call_args.args[0]
+                self.assertIn(f"--user-data-dir={ga.CHROME_PROFILE_DIR}", command)
+                self.assertIn("--remote-debugging-port=9222", command)
+                self.assertNotEqual(ga.CHROME_PROFILE_DIR, Path.home() / "Library/Application Support/Google/Chrome")
+                self.assertEqual(ga.CHROME_PID_PATH.read_text().strip(), "4242")
+
+    def test_capture_manifest_appends_without_discarding_pending_fields(self):
+        with temporary_runtime():
+            ga.ensure_private_dir(ga.CAPTURE_DIR)
+            ga.atomic_write_bytes(
+                ga.CAPTURE_MANIFEST_PATH,
+                b'{"id":"capture.example","wanted":["full_document"],"status":"pending","disposition":"pending"}\n',
+            )
+            row = ga.update_capture_manifest(
+                "capture.example",
+                {
+                    "captured_at": "2026-07-24T00:00:00+00:00",
+                    "source_ref": "source.example",
+                    "metadata_path": "/private/metadata.json",
+                },
+            )
+            self.assertEqual(row["wanted"], ["full_document"])
+            self.assertEqual(row["status"], "captured_pending_review")
+            self.assertEqual(len(row["captures"]), 1)
+            persisted = ga.load_capture_manifest()
+            self.assertEqual(persisted[0]["captures"][0]["source_ref"], "source.example")
+
+    def test_capture_ids_reject_paths(self):
+        self.assertEqual(ga.capture_id("capture.census.1910"), "capture.census.1910")
+        for value in ("../escape", "/absolute", "contains space", "x" * 129):
+            with self.assertRaises(ga.CockpitError):
+                ga.capture_id(value)
 
 
 class LastSearchSurvivalTests(unittest.TestCase):
