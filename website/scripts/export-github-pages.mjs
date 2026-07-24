@@ -75,6 +75,9 @@ await cp(new URL("og.png", clientRoot), new URL("og.png", outRoot));
 await cp(new URL("records/", clientRoot), new URL("records/", outRoot), {
   recursive: true,
 });
+await cp(new URL("maps/", clientRoot), new URL("maps/", outRoot), {
+  recursive: true,
+});
 await cp(new URL("places/", clientRoot), new URL("places/", outRoot), {
   recursive: true,
 });
@@ -145,6 +148,12 @@ for (const filename of [
   "punta-santiago-1902.jpg",
 ]) {
   await readFile(new URL(`places/${filename}`, outRoot));
+}
+for (const filename of [
+  "puerto-rico-topographic-1886.jpg",
+  "puerto-rico-crop-lands-1899.jpg",
+]) {
+  await readFile(new URL(`maps/${filename}`, outRoot));
 }
 
 console.log(`Exported GitHub Pages artifact to ${outRoot.pathname}`);
