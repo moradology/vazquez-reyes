@@ -1,12 +1,8 @@
 import { ResearchTools } from "./research-tools";
 import { sources } from "./research-data";
 
-function PersonStatus({ children }: { children: React.ReactNode }) {
-  return <span className="status">{children}</span>;
-}
-
 const principalSources = sources.filter((source) =>
-  ["marriage", "census-1910", "census-1950", "cemetery"].includes(source.id),
+  ["rafael-birth", "census-1910", "marriage", "census-1950"].includes(source.id),
 );
 
 export default function Home() {
@@ -20,32 +16,31 @@ export default function Home() {
         </a>
         <nav aria-label="Main navigation">
           <a href="#family">Family</a>
-          <a href="#resting-place">Resting place</a>
-          <a href="#journey">Places</a>
-          <a href="#stories">Findings</a>
+          <a href="#puerto-rico">Puerto Rico</a>
+          <a href="#journey">New York</a>
+          <a href="#stories">Their parents</a>
           <a href="/research">Research notes</a>
         </nav>
         <ResearchTools />
       </header>
 
       <section className="hero" id="top">
-        <div className="hero-kicker">Vazquez–Reyes family records</div>
+        <div className="hero-kicker">The Vazquez–Reyes family</div>
         <h1>
           From <em>Humacao</em>
           <br />
-          to Manhattan
+          to New York
         </h1>
         <p className="hero-deck">
-          Cruz Reyes and Rafael Vázquez married in Manhattan in 1941. The
-          records collected here trace Rafael’s childhood in Humacao, the
-          couple’s life in East Harlem, and their burials in Linden, New Jersey.
+          Born in Humacao, Puerto Rico, Cruz Reyes and Rafael Vázquez married
+          in Manhattan in 1941 and made their home in East Harlem.
         </p>
         <div className="hero-rule">
+          <span>Humacao</span>
+          <b />
           <span>Puerto Rico</span>
           <b />
-          <span>New York</span>
-          <b />
-          <span>New Jersey</span>
+          <span>New York City</span>
         </div>
         <a className="scroll-cue" href="#family">
           Cruz and Rafael <span aria-hidden="true">↓</span>
@@ -54,15 +49,14 @@ export default function Home() {
 
       <section className="public-foreword">
         <p>
-          This research began with two names, several approximate dates, and
-          “Rosehill Cemetery in Linden.” Marriage, census, civil-registration,
-          and cemetery records have since identified the couple and both sets
-          of parents.
+          Rafael Vázquez grew up in Humacao, in the barrios of Anton Ruiz and
+          Mambiche. Cruz Reyes was also born in Humacao. By 1941 they were both
+          in New York, where they married on East 105th Street.
         </p>
         <p>
-          This page summarizes the findings. Conflicting dates, searches that
-          did not produce a match, and records still to be found are listed in
-          the <a href="/research">research notes</a>.
+          The 1950 census records them on East 109th Street in East Harlem.
+          Their 1941 marriage license also records the names of their four
+          parents in Puerto Rico.
         </p>
       </section>
 
@@ -72,11 +66,10 @@ export default function Home() {
           <p>Cruz and Rafael</p>
         </div>
         <div className="family-intro public-family-intro">
-          <h2>What the records establish</h2>
+          <h2>Cruz Reyes and Rafael Vázquez</h2>
           <p>
-            Their 1941 marriage record names both sets of parents. The 1950
-            census records them together in East Harlem, and the cemetery
-            database places them in the same plot in Linden.
+            They married on East 105th Street in 1941. Nine years later, the
+            census recorded them a few blocks north on East 109th Street.
           </p>
         </div>
 
@@ -86,7 +79,6 @@ export default function Home() {
             data-person-id="person.cruz-reyes-vasquez"
           >
             <div className="person-number">I</div>
-            <PersonStatus>IDENTIFIED</PersonStatus>
             <p className="given">Cruz Reyes</p>
             <h3>Vasquez</h3>
             <p className="lifespan">died 1998</p>
@@ -95,7 +87,6 @@ export default function Home() {
                 <dt>Born</dt>
                 <dd>
                   Humacao, Puerto Rico
-                  <small>Exact date still being resolved</small>
                 </dd>
               </div>
               <div>
@@ -124,7 +115,6 @@ export default function Home() {
             data-person-id="person.rafael-vazquez-perales"
           >
             <div className="person-number">II</div>
-            <PersonStatus>IDENTIFIED</PersonStatus>
             <p className="given">Rafael Vázquez</p>
             <h3>y Perales</h3>
             <p className="lifespan">1906 — 1984</p>
@@ -157,38 +147,36 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="plot-feature public-plot" id="resting-place">
+      <section className="plot-feature public-plot" id="puerto-rico">
         <div className="plot-stamp">
-          <span>Rosedale division</span>
-          <strong>WIN4T</strong>
-          <b>22—11</b>
-          <span>Linden, New Jersey</span>
+          <span>Puerto Rico</span>
+          <strong>HUMACAO</strong>
+          <b>1906—30</b>
+          <span>Anton Ruiz · Mambiche</span>
         </div>
         <div className="plot-copy">
-          <p className="eyebrow">Rosedale &amp; Rosehill Cemetery</p>
-          <h2>Buried in the same plot</h2>
+          <p className="eyebrow">Humacao, Puerto Rico</p>
+          <h2>Cruz and Rafael in Humacao</h2>
           <p>
-            The remembered name, “Rosehill Cemetery in Linden,” led to Rosedale
-            &amp; Rosehill Cemetery. Its database lists Cruz and Rafael in two
-            positions within Rosedale plot WIN4T-22-11.
+            Cruz’s records name Humacao as her birthplace. Rafael’s birth
+            registration and three censuses place him in Humacao from childhood
+            through 1930.
           </p>
           <div className="interments">
             <p>
-              <strong>Cruz Vasquez</strong>
-              <span>/DD · buried 13 October 1998</span>
+              <strong>Anton Ruiz</strong>
+              <span>Rafael’s family in the 1910 and 1920 censuses</span>
             </p>
             <p>
-              <strong>Rafael Vasquez</strong>
-              <span>/3D · buried 2 January 1985</span>
+              <strong>Mambiche</strong>
+              <span>Rafael and his father in the 1930 census</span>
             </p>
           </div>
           <a
             className="text-link"
-            href="https://www.rosedale-rosehill.com/name-lookup"
-            target="_blank"
-            rel="noreferrer"
+            href="/research#source-census-1910"
           >
-            Search the official cemetery record ↗
+            View the Puerto Rico sources →
           </a>
         </div>
       </section>
@@ -196,15 +184,15 @@ export default function Home() {
       <section className="section journey" id="journey">
         <div className="section-label light">
           <span>02</span>
-          <p>Places and dates</p>
+          <p>Puerto Rico to New York</p>
         </div>
         <div className="journey-heading">
-          <p className="eyebrow">Locations in the records</p>
-          <h2>Humacao → Manhattan → Linden</h2>
+          <p className="eyebrow">1906–1950</p>
+          <h2>Humacao → East Harlem</h2>
         </div>
         <div className="timeline">
           <article>
-            <span className="year">1906</span>
+            <span className="year">1906–30</span>
             <div className="dot" />
             <div>
               <h3>Humacao, Puerto Rico</h3>
@@ -221,18 +209,18 @@ export default function Home() {
               <h3>East Harlem, Manhattan</h3>
               <p>
                 Rafael and Cruz marry on 25 October at an address on East 105th
-                Street. By 1950 they are living on East 109th Street.
+                Street.
               </p>
             </div>
           </article>
           <article>
-            <span className="year">1985–98</span>
+            <span className="year">1950</span>
             <div className="dot" />
             <div>
-              <h3>Linden, New Jersey</h3>
+              <h3>East Harlem, Manhattan</h3>
               <p>
-                Rafael is buried in January 1985. Cruz is buried in the same
-                Rosedale plot in October 1998.
+                The census records Cruz and Rafael living together on East
+                109th Street.
               </p>
             </div>
           </article>
@@ -242,41 +230,39 @@ export default function Home() {
       <section className="section stories" id="stories">
         <div className="section-label">
           <span>03</span>
-          <p>Key findings</p>
+          <p>Their parents</p>
         </div>
         <div className="stories-heading">
-          <p className="eyebrow">From the records reviewed so far</p>
-          <h2>What we have learned</h2>
+          <p className="eyebrow">One generation earlier</p>
+          <h2>The families in Humacao</h2>
         </div>
         <div className="story-grid">
           <article>
-            <span className="story-when">1941 → 1950</span>
-            <h3>The marriage record identifies all four parents</h3>
+            <span className="story-when">Cruz’s parents</span>
+            <h3>Mauricio Reyes and Carmen Díaz</h3>
             <p>
-              The Manhattan license names Rafael, Cruz, and all four parents.
-              The 1950 census then finds the couple together on East 109th
-              Street.
+              Cruz’s marriage license and Social Security record name Mauricio
+              Reyes and Carmen Díaz as her parents.
             </p>
-            <a href="/research#source-marriage">View the sources →</a>
+            <a href="/research#source-ssa-cruz">View the sources →</a>
           </article>
           <article>
-            <span className="story-when">1910 → 1920</span>
-            <h3>Rafael’s mother was Carlina Perales y Pérez</h3>
+            <span className="story-when">Rafael’s parents</span>
+            <h3>Juan Vázquez and Carlina Perales</h3>
             <p>
-              Rafael’s mother appears across the Humacao records as Carlina
-              Perales y Pérez. The family memory preserved Pérez and an
-              approximate first name.
+              Rafael’s birth and census records name Juan Vázquez y Rodríguez
+              and Carlina Perales y Pérez as his parents.
             </p>
             <a href="/research#source-census-1910">View the sources →</a>
           </article>
           <article>
-            <span className="story-when">1985 → 1998</span>
-            <h3>The cemetery database identifies the shared plot</h3>
+            <span className="story-when">25 October 1941</span>
+            <h3>Both families on the marriage record</h3>
             <p>
-              A remembered cemetery name led to two official entries in one
-              plot, thirteen years apart.
+              The Manhattan marriage license records Cruz, Rafael, and all four
+              parents together.
             </p>
-            <a href="/research#source-cemetery">View the sources →</a>
+            <a href="/research#source-marriage">View the source →</a>
           </article>
         </div>
       </section>
@@ -284,7 +270,7 @@ export default function Home() {
       <section className="section public-sources">
         <div className="section-label">
           <span>04</span>
-          <p>Principal records</p>
+          <p>Sources for this page</p>
         </div>
         <div className="principal-source-grid">
           {principalSources.map((source) => (
@@ -301,21 +287,6 @@ export default function Home() {
         </a>
       </section>
 
-      <section className="public-contribute">
-        <p className="eyebrow">Documents still wanted</p>
-        <h2>What to look for in family papers</h2>
-        <p>
-          Wedding photographs, baptism cards, passports, funeral cards,
-          obituary clippings, and notes on the backs of photographs may explain
-          the Martínez, Belén, Juan Ramón, and 24 October clues. A clear
-          photograph of the front and back is useful.
-        </p>
-        <p className="privacy-promise">
-          Living relatives remain private unless there is explicit permission
-          and a clear reason to publish their information.
-        </p>
-      </section>
-
       <footer>
         <div className="wordmark inverse" aria-hidden="true">
           <span>V</span>
@@ -325,7 +296,7 @@ export default function Home() {
         <p>
           Vazquez–Reyes family history
           <br />
-          Research begun July 2026
+          Humacao, Puerto Rico · New York City
         </p>
         <p className="footer-note">
           Public summary · <a href="/research">Research notes</a>
