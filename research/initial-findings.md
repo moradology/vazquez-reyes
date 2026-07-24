@@ -96,33 +96,48 @@ This couple were Carmen's parents and Cruz's maternal grandparents.
 - Probable death: **30 December 1984** in New York. The original death
   certificate is still needed.
 
-### Sotero Vázquez, María Eugenia Rodríguez, and the Carmen conflict
+### Sotero Vázquez and the Rodríguez name question
 
-Sotero is Juan's documented father. His own parents are now confirmed, while
-Juan's mother's identity remains open.
+Sotero is Juan's documented father. His death and several more children are now
+documented. The records strongly suggest that Carmen, Eugenia, and María Eugenia
+were names used for one woman, but the profiles remain separate until a record
+states that connection directly.
 
 - Juan's Yabucoa baptism records the name **Juan de la Rosa Vázquez**, birth
   **30 August 1878**, and baptism **13 October 1878**. It names **Sotero
   Vázquez** and **Carmen Rodríguez** as his parents.
-- The baptism and Juan's 1902 marriage name Carmen; his 1951 death names
-  **María Eugenia Rodríguez**.
+- Juan's baptism and 1902 marriage name Carmen; his 1951 death names **María
+  Eugenia Rodríguez**.
 - Sotero's 1875 Yabucoa marriage confirms María Eugenia as his wife. The entry
   names Sotero's parents as **Atilano Vázquez** and **Juana Rodríguez**. Juan's
   baptism independently repeats the same paternal grandparents.
-- The marriage names María Eugenia's parents as **Cristóbal Rodríguez** and
-  **Leonor Díaz**. Juan's baptism names Carmen's parents as **Cristóbal
-  Rodríguez** and **María Pacheco**. The women and their mothers remain
-  unmerged.
+- **Victorio Vázquez Rodríguez** was born **22 December 1880** and baptized
+  **27 February 1881**. His baptism names parents Sotero and María Eugenia.
+- **Juan del Carmen Vázquez y Rodríguez** was born **24 May 1885**. His birth
+  act names parents Sotero and Eugenia. A derivative tree calls him Carmelo,
+  and Sotero's death lists both an older Juan and a Carmelo; that later identity
+  is plausible but not proved.
+- **Francisco Vázquez Rodríguez** was born **3 June 1892**. His birth act names
+  Sotero and Eugenia and reports both paternal grandparents already deceased.
 - Braulio Vázquez Rodríguez's original 1915 and 1923 marriage acts name his
   parents as **Sotero Vázquez and María Eugenia Rodríguez**. They prove
-  Braulio's parentage, not that Braulio and Juan necessarily had the same
-  mother.
-- Conflicting reported ages put Sotero's possible birth roughly between
-  **1850 and 1863**. His death has not been found.
+  Braulio's parentage.
+- Sotero died in Humacao on **31 May 1916**, age 56, of a cerebral hemorrhage.
+  His act names wife **Carmen Rodríguez** and seven living children:
+  **Juan; Juana; Victorio; Carmelo; Mauricio; Braulio; and Francisco**.
+- Across the records, the mother's father is consistently **Cristóbal
+  Rodríguez**. Her mother appears as **Leonor or Leonarda Díaz, María Pacheco,
+  Leonarda Pacheco, and María Leonarda Díaz**. The matching husband,
+  grandparents, dates, and child cluster make a single woman the strongest
+  explanation for the Carmen/Eugenia/María Eugenia forms. No record yet gives
+  the combined names, so neither the women nor Díaz and Pacheco are silently
+  merged.
+- Sotero's death age implies birth about **1860** in Yabucoa. That estimate
+  conflicts with the timing of his 1875 marriage; his baptism remains unfound.
 - María Eugenia's reported ages imply roughly **1847–1858**. A **6 July 1933**
   death remains a candidate, not a merged fact.
-- Baptisms for Braulio and other children of Sotero, plus death records for
-  Sotero, Carmen, and María Eugenia, are now the best tests of the conflict.
+- Baptisms or civil births for Juana, Mauricio, and Braulio, Sotero's baptism,
+  and a full review of María Eugenia's 1933 death candidate are the next tests.
 
 ### Marcelino Perales y Medina and Aurora Pérez
 
@@ -175,16 +190,17 @@ This couple were Carlina's parents and Rafael's maternal grandparents.
 - Rafael's father was baptized **Juan de la Rosa Vázquez** and later appears as
   **Juan Vázquez Rodríguez**. The Juan Ramón form remains an unconfirmed family
   variant.
-- Sotero's parents were **Atilano Vázquez and Juana Rodríguez**, extending the
-  direct Vázquez line one more generation in Yabucoa.
+- Sotero's parents were **Atilano Vázquez and Juana Rodríguez**, both already
+  deceased by **23 June 1892**, extending the direct Vázquez line one more
+  generation in Yabucoa.
 - Rafael's civil-registration index supports **February 1906**, not October;
   his exact birth day is still open.
 
 ## Highest-value next records
 
 1. Rafael's baptism or a fully legible certified birth record.
-2. Baptisms for Braulio and other children of Sotero Vázquez, and death records
-   for Sotero, Carmen Rodríguez, and María Eugenia Rodríguez.
+2. Sotero's baptism; birth or baptism records for Juana, Mauricio, and Braulio;
+   and the original 1933 death candidate for María Eugenia.
 3. The original Manhattan marriage certificate, not only its index.
 4. A duplicate register, sacramental certificate, alternate filming, or parish
    archive lookup for Gurabo book 15, folio 18 verso, sufficient to identify

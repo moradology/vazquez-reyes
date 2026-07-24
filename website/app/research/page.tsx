@@ -235,21 +235,22 @@ export default function ResearchPage() {
           <article role="row">
             <div role="cell">
               <strong>Juan’s mother</strong>
-              <Grade kind="open">UNRESOLVED</Grade>
+              <Grade kind="probable">STRONG WORKING CONCLUSION</Grade>
             </div>
             <p role="cell">
               <b>Carmen Rodríguez</b> — named in Juan’s 1878 baptism and 1902
-              marriage. The baptism names her parents as Cristóbal Rodríguez
-              and María Pacheco.
+              marriage, and as Sotero’s wife on his 1916 death act.
             </p>
             <p role="cell">
-              <b>María Eugenia Rodríguez</b> — named by the informant on Juan’s
-              1951 death record. Her 1875 marriage to Sotero names parents
-              Cristóbal Rodríguez and Leonor Díaz.
+              <b>María Eugenia or Eugenia Rodríguez</b> — named in Sotero’s
+              1875 marriage, Juan’s 1951 death, and the records of Victorio,
+              Juan del Carmen, Braulio, and Francisco.
             </p>
             <p role="cell">
-              <b>Next:</b> compare baptisms for Braulio and other children of
-              Sotero, plus death records for Sotero, Carmen, and María Eugenia.
+              <b>Conclusion:</b> one woman using Carmen, Eugenia, and María
+              Eugenia best explains the matching husband, children, and
+              grandparents. The profiles remain separate until an original
+              states the connection explicitly.
             </p>
           </article>
           <article role="row">

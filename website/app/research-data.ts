@@ -140,6 +140,34 @@ export const sources = [
     grade: "Original parish register · date bracketed",
   },
   {
+    id: "victorio-baptism",
+    label: "1881 baptism: Victorio Vázquez Rodríguez",
+    detail: "Born 22 December 1880 and baptized 27 February 1881 in Yabucoa; parents Sotero Vázquez and María Eugenia Rodríguez; both sets of grandparents named.",
+    href: "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSM8-3B5R?view=index&personArk=%2Fark%3A%2F61903%2F1%3A1%3A6DF9-RJYP&action=view&lang=en",
+    grade: "Original parish register",
+  },
+  {
+    id: "juan-del-carmen-birth",
+    label: "1885 birth: Juan del Carmen Vázquez y Rodríguez",
+    detail: "Born 24 May 1885 in Yabucoa; parents Sotero Vázquez and Eugenia Rodríguez. A tree attachment calls him Carmelo, but that later identity remains unproved.",
+    href: "https://www.familysearch.org/ark:/61903/3:1:939D-7LSR-YJ?view=index&personArk=%2Fark%3A%2F61903%2F1%3A1%3AQVJV-DJHY&action=view&lang=en",
+    grade: "Original civil record · later identity open",
+  },
+  {
+    id: "francisco-birth",
+    label: "1892 birth: Francisco Vázquez Rodríguez",
+    detail: "Born 3 June 1892 in Yabucoa; parents Sotero Vázquez and Eugenia Rodríguez. The act reports paternal grandparents Atilano Vázquez and Juana Rodríguez already deceased.",
+    href: "https://www.familysearch.org/ark:/61903/3:1:939D-7LSD-DT?view=index&personArk=%2Fark%3A%2F61903%2F1%3A1%3AQVJV-6Q27&action=view&lang=en",
+    grade: "Original civil record",
+  },
+  {
+    id: "sotero-death",
+    label: "1916 death: Sotero Vázquez Rodríguez",
+    detail: "Died 31 May 1916 in Humacao. The act names wife Carmen Rodríguez, parents Atilano Vázquez and Juana Rodríguez, and seven living children: Juan, Juana, Victorio, Carmelo, Mauricio, Braulio, and Francisco.",
+    href: "https://www.familysearch.org/ark:/61903/3:1:9Q97-YS6J-Q7Y?view=index&personArk=%2Fark%3A%2F61903%2F1%3A1%3AQVJS-FV93&action=view&lang=en",
+    grade: "Original civil record",
+  },
+  {
     id: "carlina-death",
     label: "1922 death: Carlina Perales Pérez",
     detail: "Humacao record naming husband Juan Vázquez, seven children including Rafael, and parents Marcelo Perales and Aurora Pérez.",
@@ -385,15 +413,15 @@ export const familyCouples = [
   },
   {
     id: "sotero-rodriguez",
-    branch: "Sotero’s documented marriage",
+    branch: "Juan’s parents and siblings",
     couple: "Sotero Vázquez + María Eugenia Rodríguez",
     status: "documented" as const,
-    connection: "Married in Yabucoa in September 1875; Juan’s recorded mother remains a separate conflict",
+    connection: "Married in Yabucoa in September 1875; records also use Eugenia and Carmen for the mother of this child cluster",
     people: [
       {
-        name: "Sotero Vázquez",
-        birth: "Not settled · conflicting ages imply roughly 1850–1863",
-        death: "Not yet found",
+        name: "Sotero Vázquez Rodríguez",
+        birth: "About 1860 · Yabucoa, Puerto Rico · death-age estimate",
+        death: "31 May 1916 · Humacao, Puerto Rico",
       },
       {
         name: "María Eugenia Rodríguez",
@@ -401,9 +429,17 @@ export const familyCouples = [
         death: "A 1933 María Eugenia record is still a candidate",
       },
     ],
-    children: ["Juan — baptism names mother Carmen Rodríguez", "Braulio — records name mother María Eugenia Rodríguez"],
+    children: [
+      "Juan de la Rosa — born 30 Aug 1878; mother recorded as Carmen",
+      "Juana — living in 1916; birth not yet found",
+      "Victorio — born 22 Dec 1880; mother recorded as María Eugenia",
+      "Carmelo — living in 1916; may be Juan del Carmen, born 24 May 1885",
+      "Mauricio — living in 1916; birth not yet found",
+      "Braulio — two marriages name mother María Eugenia",
+      "Francisco — born 3 Jun 1892; mother recorded as Eugenia",
+    ],
     childNote:
-      "The marriage proves the Sotero–María Eugenia pairing. Juan’s baptism and 1902 marriage name Carmen Rodríguez, while his 1951 death names María Eugenia. The women are not merged.",
+      "Sotero’s death names all seven children and wife Carmen. The same husband, child cluster, and recurring Rodríguez grandparents make Carmen, Eugenia, and María Eugenia strong name variants for one woman. The research profiles remain separate until a record states the bridge explicitly.",
   },
   {
     id: "atilano-juana",
@@ -415,12 +451,12 @@ export const familyCouples = [
       {
         name: "Atilano Vázquez",
         birth: "Yabucoa, Puerto Rico · exact date not yet found",
-        death: "Not yet found",
+        death: "Before 23 June 1892 · exact date not yet found",
       },
       {
         name: "Juana Rodríguez",
         birth: "Yabucoa, Puerto Rico · exact date not yet found",
-        death: "Not yet found",
+        death: "Before 23 June 1892 · exact date not yet found",
       },
     ],
     children: ["Sotero Vázquez"],
@@ -488,14 +524,14 @@ export const openCases = [
   {
     id: "VR-05",
     title: "Juan Vázquez’s mother",
-    conflict: "Juan’s 1878 baptism and 1902 marriage name Carmen Rodríguez; his 1951 death names María Eugenia Rodríguez. The direct baptism confirms the conflict rather than resolving it.",
-    next: "Find baptisms for Braulio and other children of Sotero, and death records for Sotero, Carmen, and María Eugenia. Compare full maternal names and grandparents before merging anyone.",
+    conflict: "Juan’s records say Carmen or María Eugenia. Victorio, Juan del Carmen, Francisco, Braulio, and Sotero’s death now supply a matching husband, child cluster, and recurring grandparents. One woman using Carmen, Eugenia, and María Eugenia is the strongest explanation, but no record yet gives a combined name.",
+    next: "Find birth or baptism records for Juana, Mauricio, and Braulio, and a record that explicitly joins Carmen with Eugenia before merging the profiles.",
   },
   {
     id: "VR-06",
-    title: "Carmen, María Eugenia, and the Rodríguez mothers",
-    conflict: "Sotero’s 1875 marriage names María Eugenia’s parents as Cristóbal Rodríguez and Leonor Díaz. Juan’s 1878 baptism names Carmen’s parents as Cristóbal Rodríguez and María Pacheco. A later María Eugenia death candidate uses Pacheco.",
-    next: "Test whether Carmen and María Eugenia were one woman, sisters or half-sisters, or a register/informant error. Do not merge Leonor Díaz and María Pacheco.",
+    title: "The Rodríguez maternal surname",
+    conflict: "The same maternal grandmother appears as Leonor or Leonarda Díaz, María Pacheco, Leonarda Pacheco, and María Leonarda Díaz. The forms may describe one woman with two surnames, but no reviewed record states the full combination.",
+    next: "Review María Eugenia’s original 1933 death candidate and seek her baptism or marriage preliminaries. Keep Díaz and Pacheco unmerged until an original bridges them.",
   },
   {
     id: "VR-07",
@@ -515,7 +551,8 @@ export const negativeSearches = [
   "No confident Cruz or Rafael match appeared in the reviewed New Jersey death-index image sets for 1984 and 1998.",
   "The New York State death index returned no match, but that index does not reliably cover New York City and cannot settle the question.",
   "No Rafael memorial matching the shared plot was found on Find a Grave; the official cemetery database remains the stronger burial source.",
-  "Juan’s baptism was found, but it confirms Carmen Rodríguez while Sotero’s marriage confirms María Eugenia Rodríguez. The conflict now requires sibling baptisms or later death records rather than another search for Juan’s baptism.",
+  "Sotero’s death and four child records were found. They strongly favor Carmen, Eugenia, and María Eugenia as one woman’s name variants, but no original yet states that bridge explicitly.",
+  "Sotero’s baptism was not found in the reviewed full-text Yabucoa film. An apparent 1865 candidate was rejected as OCR or name noise; the baptism books still need manual inspection.",
   "A 1942 death for Aurora Monserrate Pérez belongs to the widow of Marcelo Pérez, not the wife of Marcelino Perales; it was captured and rejected.",
   "No Pastora Reyes entry appears in the reviewed Gurabo baptism-index pages. A Cruz Reyes entry points to book 15, folio 18 verso, but the damaged register image does not expose the child or parents.",
 ];
@@ -643,5 +680,13 @@ export const updates = [
   {
     date: "24 Jul 2026",
     text: "Found Juan de la Rosa Vázquez’s 1878 Yabucoa baptism and Sotero Vázquez’s 1875 marriage, extending the direct line to Atilano Vázquez and Juana Rodríguez.",
+  },
+  {
+    date: "24 Jul 2026",
+    text: "Found Sotero Vázquez Rodríguez’s 1916 death act, including wife Carmen Rodríguez and seven living children.",
+  },
+  {
+    date: "24 Jul 2026",
+    text: "Captured original records for Victorio, Juan del Carmen, and Francisco. Together they make the Carmen, Eugenia, and María Eugenia same-person explanation strong but not yet explicit.",
   },
 ];

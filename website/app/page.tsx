@@ -415,19 +415,46 @@ export default function Home() {
             <a href="/research#lope-reyes">See this family →</a>
           </article>
           <article>
-            <span className="story-when">Juan’s father and an open mother record</span>
+            <span className="story-when">A family in Yabucoa</span>
             <h3>
               <span data-person-id="person.sotero-vazquez">Sotero Vázquez</span>
-            </h3>
-            <p>
-              Sotero married{" "}
+              {" + "}
               <span data-person-id="person.maria-eugenia-rodriguez">
                 María Eugenia Rodríguez
               </span>
-              {" "}in Yabucoa in 1875. Juan’s baptism instead names{" "}
-              <span data-person-id="person.carmen-rodriguez">Carmen Rodríguez</span>{" "}
-              as his mother, so the women remain separate in the research. Sotero
-              was a son of{" "}
+            </h3>
+            <p>
+              Sotero and María Eugenia married in Yabucoa in 1875. Their family
+              included Juan,{" "}
+              <span data-person-id="person.juana-maria-vazquez-rodriguez">
+                Juana
+              </span>
+              ,{" "}
+              <span data-person-id="person.victorio-vazquez-rodriguez">
+                Victorio
+              </span>
+              ,{" "}
+              <span data-person-id="person.juan-del-carmen-vazquez-rodriguez">
+                Juan del Carmen, possibly the Carmelo named later
+              </span>
+              ,{" "}
+              <span data-person-id="person.mauricio-vazquez-rodriguez">
+                Mauricio
+              </span>
+              ,{" "}
+              <span data-person-id="person.braulio-vazquez-rodriguez">
+                Braulio
+              </span>
+              , and{" "}
+              <span data-person-id="person.francisco-vazquez-rodriguez">
+                Francisco
+              </span>
+              . The family later lived in Humacao. Records call their mother
+              María Eugenia, Eugenia, and{" "}
+              <span data-person-id="person.carmen-rodriguez">
+                Carmen Rodríguez
+              </span>
+              . Sotero was a son of{" "}
               <span data-person-id="person.atilano-vazquez">Atilano Vázquez</span>{" "}
               and{" "}
               <span data-person-id="person.juana-rodriguez">Juana Rodríguez</span>.
