@@ -8906,6 +8906,31 @@ export const peopleProfiles: readonly PersonProfile[] = [
           "source.search-audit.familysearch-index.origin-frontier.2026-07-24"
         ],
         "note": "The records establish Puerto Rican native places for Máximo, Josefa, and Luís. Luís's death adds parents Roque and Marciana Delgado but does not give their origins. No reviewed source names an overseas-born direct ancestor."
+      },
+      {
+        "id": "claim.caguas-burial-screen-maximo-parents",
+        "subject": [
+          "person.maximo-vazquez",
+          "person.francisco-father-of-maximo-vazquez",
+          "person.maria-cortez"
+        ],
+        "predicate": "negative_search_coverage",
+        "object": {
+          "repository": "Catedral Dulce Nombre de Jesús, Caguas",
+          "record_type": "parish burials",
+          "visible_span": "January 1804 through June 1809",
+          "images_captured": 190,
+          "target_names": [
+            "Máximo, Maximino, or Maximiliano Vázquez and spelling variants",
+            "Francisco paired with María Cortez or Cortés",
+            "María Cortez or Cortés"
+          ]
+        },
+        "status": "complete_image_capture_machine_screen_negative_full_manual_transcription_open",
+        "evidence_refs": [
+          "source.search-audit.caguas-burials.1804-1809.maximo-parents"
+        ],
+        "note": "Two handwriting-recognition passes and manual review of every plausible target-like result produced no defensible match. This is negative machine-assisted coverage, not proof of absence; the register has not received a full line-by-line human transcription."
       }
     ],
     "sources": [
@@ -9115,6 +9140,19 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "quality": "focused_index_and_ocr_search_with_same_name_candidates_checked",
         "citation": "Exact and variant searches tested Isidora or Ysidora Rodríguez in early Humacao deaths, Marciana Delgado with Roque, María Cortez or Cortés in early Caguas deaths, Máximo with Francisco and María Cortez, and Josefa with Luís and Isidora Rodríguez. The one early Humacao death indexed to Isidora Rodríguez names husband Andrés Obierna and different parents, so it is rejected. No indexed target death or baptism survived the parent, spouse, date, and place checks. Index and OCR gaps make this negative coverage, not proof of absence.",
         "status": "negative_target_search_same_name_candidates_rejected"
+      },
+      {
+        "id": "source.search-audit.caguas-burials.1804-1809.maximo-parents",
+        "type": "machine_assisted_original_register_search_audit",
+        "title": "Caguas burial-register screen for Máximo Vázquez, Francisco, and María Cortez",
+        "repository": "Catedral Dulce Nombre de Jesús, Caguas, DGS 008126765, item 9, via FamilySearch",
+        "accessed": "2026-07-24",
+        "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSV2-3Q98-Z?view=index&lang=en&groupId=M9HS-4QG",
+        "quality": "complete_190_image_capture_two_ocr_passes_and_manual_review_of_target_like_hits_not_full_human_transcription",
+        "citation": "All 190 photographed openings in the item were captured, covering browser pages 41–230 and film frames 01609–01798. Visible entries span January 1804 through June 1809 within the catalog's broader 1801–1810 label. Two Spanish handwriting-recognition passes, including enlarged single-page columns and target-name variants, produced no defensible Máximo Vázquez, Francisco and María Cortez pair, parent death, or overseas birthplace. Plausible hits were checked against the originals and rejected as other people or formulaic text. OCR cannot prove absence, so a line-by-line human transcription remains open.",
+        "image_archive": "research/pulls/scans/caguas-dgs-008126765-item9-burials-1801-1810/page-041.jpg through page-230.jpg",
+        "image_set_sha256": "a3edfc3a4f06c681a6445565f978ce3ae9a4df0769d57122b0fd5107522b3a27",
+        "status": "complete_image_capture_machine_screen_negative_full_manual_transcription_open"
       }
     ],
     "geographyEvents": [
@@ -9823,7 +9861,33 @@ export const peopleProfiles: readonly PersonProfile[] = [
       "namedChildren": [],
       "namedSiblings": []
     },
-    "claims": [],
+    "claims": [
+      {
+        "id": "claim.caguas-burial-screen-maximo-parents",
+        "subject": [
+          "person.maximo-vazquez",
+          "person.francisco-father-of-maximo-vazquez",
+          "person.maria-cortez"
+        ],
+        "predicate": "negative_search_coverage",
+        "object": {
+          "repository": "Catedral Dulce Nombre de Jesús, Caguas",
+          "record_type": "parish burials",
+          "visible_span": "January 1804 through June 1809",
+          "images_captured": 190,
+          "target_names": [
+            "Máximo, Maximino, or Maximiliano Vázquez and spelling variants",
+            "Francisco paired with María Cortez or Cortés",
+            "María Cortez or Cortés"
+          ]
+        },
+        "status": "complete_image_capture_machine_screen_negative_full_manual_transcription_open",
+        "evidence_refs": [
+          "source.search-audit.caguas-burials.1804-1809.maximo-parents"
+        ],
+        "note": "Two handwriting-recognition passes and manual review of every plausible target-like result produced no defensible match. This is negative machine-assisted coverage, not proof of absence; the register has not received a full line-by-line human transcription."
+      }
+    ],
     "sources": [
       {
         "id": "source.familysearch-marriage.maximo-josefa.1805",
@@ -9837,6 +9901,19 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "image_archive": "capture.familysearch-marriage.maximo-josefa.1805/1805-12-31_maximo-basquez-josefa-ribera-marriage_humacao_familysearch_dgs-008038536_item-4_image-105_3Q9M-CSFS-RT8X.jpg plus natural and enhanced entry crops",
         "status": "confirmed_original_reviewed",
         "public_image": "1805-maximo-josefa-marriage.jpg"
+      },
+      {
+        "id": "source.search-audit.caguas-burials.1804-1809.maximo-parents",
+        "type": "machine_assisted_original_register_search_audit",
+        "title": "Caguas burial-register screen for Máximo Vázquez, Francisco, and María Cortez",
+        "repository": "Catedral Dulce Nombre de Jesús, Caguas, DGS 008126765, item 9, via FamilySearch",
+        "accessed": "2026-07-24",
+        "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSV2-3Q98-Z?view=index&lang=en&groupId=M9HS-4QG",
+        "quality": "complete_190_image_capture_two_ocr_passes_and_manual_review_of_target_like_hits_not_full_human_transcription",
+        "citation": "All 190 photographed openings in the item were captured, covering browser pages 41–230 and film frames 01609–01798. Visible entries span January 1804 through June 1809 within the catalog's broader 1801–1810 label. Two Spanish handwriting-recognition passes, including enlarged single-page columns and target-name variants, produced no defensible Máximo Vázquez, Francisco and María Cortez pair, parent death, or overseas birthplace. Plausible hits were checked against the originals and rejected as other people or formulaic text. OCR cannot prove absence, so a line-by-line human transcription remains open.",
+        "image_archive": "research/pulls/scans/caguas-dgs-008126765-item9-burials-1801-1810/page-041.jpg through page-230.jpg",
+        "image_set_sha256": "a3edfc3a4f06c681a6445565f978ce3ae9a4df0769d57122b0fd5107522b3a27",
+        "status": "complete_image_capture_machine_screen_negative_full_manual_transcription_open"
       }
     ],
     "geographyEvents": []
@@ -9883,7 +9960,33 @@ export const peopleProfiles: readonly PersonProfile[] = [
       "namedChildren": [],
       "namedSiblings": []
     },
-    "claims": [],
+    "claims": [
+      {
+        "id": "claim.caguas-burial-screen-maximo-parents",
+        "subject": [
+          "person.maximo-vazquez",
+          "person.francisco-father-of-maximo-vazquez",
+          "person.maria-cortez"
+        ],
+        "predicate": "negative_search_coverage",
+        "object": {
+          "repository": "Catedral Dulce Nombre de Jesús, Caguas",
+          "record_type": "parish burials",
+          "visible_span": "January 1804 through June 1809",
+          "images_captured": 190,
+          "target_names": [
+            "Máximo, Maximino, or Maximiliano Vázquez and spelling variants",
+            "Francisco paired with María Cortez or Cortés",
+            "María Cortez or Cortés"
+          ]
+        },
+        "status": "complete_image_capture_machine_screen_negative_full_manual_transcription_open",
+        "evidence_refs": [
+          "source.search-audit.caguas-burials.1804-1809.maximo-parents"
+        ],
+        "note": "Two handwriting-recognition passes and manual review of every plausible target-like result produced no defensible match. This is negative machine-assisted coverage, not proof of absence; the register has not received a full line-by-line human transcription."
+      }
+    ],
     "sources": [
       {
         "id": "source.familysearch-marriage.maximo-josefa.1805",
@@ -9897,6 +10000,19 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "image_archive": "capture.familysearch-marriage.maximo-josefa.1805/1805-12-31_maximo-basquez-josefa-ribera-marriage_humacao_familysearch_dgs-008038536_item-4_image-105_3Q9M-CSFS-RT8X.jpg plus natural and enhanced entry crops",
         "status": "confirmed_original_reviewed",
         "public_image": "1805-maximo-josefa-marriage.jpg"
+      },
+      {
+        "id": "source.search-audit.caguas-burials.1804-1809.maximo-parents",
+        "type": "machine_assisted_original_register_search_audit",
+        "title": "Caguas burial-register screen for Máximo Vázquez, Francisco, and María Cortez",
+        "repository": "Catedral Dulce Nombre de Jesús, Caguas, DGS 008126765, item 9, via FamilySearch",
+        "accessed": "2026-07-24",
+        "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSV2-3Q98-Z?view=index&lang=en&groupId=M9HS-4QG",
+        "quality": "complete_190_image_capture_two_ocr_passes_and_manual_review_of_target_like_hits_not_full_human_transcription",
+        "citation": "All 190 photographed openings in the item were captured, covering browser pages 41–230 and film frames 01609–01798. Visible entries span January 1804 through June 1809 within the catalog's broader 1801–1810 label. Two Spanish handwriting-recognition passes, including enlarged single-page columns and target-name variants, produced no defensible Máximo Vázquez, Francisco and María Cortez pair, parent death, or overseas birthplace. Plausible hits were checked against the originals and rejected as other people or formulaic text. OCR cannot prove absence, so a line-by-line human transcription remains open.",
+        "image_archive": "research/pulls/scans/caguas-dgs-008126765-item9-burials-1801-1810/page-041.jpg through page-230.jpg",
+        "image_set_sha256": "a3edfc3a4f06c681a6445565f978ce3ae9a4df0769d57122b0fd5107522b3a27",
+        "status": "complete_image_capture_machine_screen_negative_full_manual_transcription_open"
       }
     ],
     "geographyEvents": []

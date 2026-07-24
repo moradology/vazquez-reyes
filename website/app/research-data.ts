@@ -357,6 +357,13 @@ export const sources = [
     grade: "Published record guide + complete volunteer transcriptions",
   },
   {
+    id: "caguas-burials-1804-1809",
+    label: "Caguas burial register screen, 1804–1809",
+    detail: "All 190 photographed openings in item 9 were captured and screened for Máximo Vázquez and for Francisco with María Cortez. Two handwriting-recognition passes were followed by manual review of plausible hits. No defensible target appeared, but a full line-by-line human transcription remains open.",
+    href: "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSV2-3Q98-Z?view=index&lang=en&groupId=M9HS-4QG",
+    grade: "Original parish register · complete image capture · machine-assisted screen",
+  },
+  {
     id: "juana-jacinta-baptism",
     label: "1806 baptismal ceremonies: Juana Jacinta Vázquez",
     detail: "Born 16 August 1806 in Humacao, legitimate daughter of Máximo Vázquez and Josefa de Rivera. She was baptized at home because of danger of death; the parish supplied the ceremonies on 28 August. A computer index incorrectly calls the child Jesús.",
@@ -1061,6 +1068,7 @@ export const negativeSearches = [
   "Focused searches for Pedro Reyes and Juana Villafañe’s marriage and for Juana’s death did not produce a defensible exact match; two children’s original death records nevertheless confirm the parent pair.",
   "The complete Caguas 1785–1788 baptism transcription contains no Máximo matching parents Francisco and María Cortez. Major gaps before and after that book prevent a negative conclusion about Caguas as his birthplace.",
   "The complete Caguas 1774–1804 marriage transcription contains no defensible Francisco and María Cortez parent-couple match.",
+  "All 190 photographed openings of the Caguas burial item visibly spanning January 1804 through June 1809 were captured and screened twice. Plausible target-like hits were manually rejected, but handwriting-recognition gaps mean this is not a definitive negative.",
   "The Las Piedras 1787–1816 marriage transcription contains no Luís and Isidora Rodríguez marriage. Original 1790 and 1792 baptisms nevertheless verify children Simona and Ysabel under Luís de Rivera and Isidora Rodríguez.",
   "A 1787 Simona born to Isidora Montañez is not the woman who married León Garrafa; the exact 1790 baptism resolves that same-name candidate.",
   "A faded 1791 Lorenza baptism names an Isidora Rodríguez with a different apparent father. It is preserved but not merged with the target household.",
@@ -1305,5 +1313,9 @@ export const updates = [
   {
     date: "24 Jul 2026",
     text: "Found Luís de Rivera’s 1811 Humacao death. It calls him native to that district, names his parents as Roque and Marciana Delgado, and lists nine children with Isidora Rodríguez. The original image is archived; no overseas birthplace is claimed.",
+  },
+  {
+    date: "24 Jul 2026",
+    text: "Captured all 190 photographed openings in the Caguas burial item visibly spanning January 1804 through June 1809. Two handwriting-recognition passes and manual review of plausible hits found no defensible Máximo, Francisco and María Cortez, parent death, or overseas birthplace; full human transcription remains open.",
   },
 ];

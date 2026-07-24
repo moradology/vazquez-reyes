@@ -210,6 +210,17 @@ export default function ResearchPage() {
               </p>
             </article>
             <article>
+              <span>Caguas · 1804–1809</span>
+              <strong>Burial register captured and screened</strong>
+              <p>
+                All 190 photographed openings were saved. Two handwriting
+                recognition passes and a manual review of plausible hits found
+                no defensible Máximo, Francisco and María Cortez, parent death,
+                or overseas birthplace. This is not a full human transcription
+                or proof of absence.
+              </p>
+            </article>
+            <article>
               <span>Humacao / Las Piedras</span>
               <strong>Josefa’s earlier records</strong>
               <p>

@@ -33,6 +33,12 @@ func recognize(_ path: String) -> OCRPage {
     request.recognitionLanguages = ["es-ES"]
     request.usesLanguageCorrection = true
     request.minimumTextHeight = 0.008
+    if let customWords = ProcessInfo.processInfo.environment["OCR_CUSTOM_WORDS"] {
+        request.customWords = customWords
+            .split(separator: ",")
+            .map { $0.trimmingCharacters(in: .whitespacesAndNewlines) }
+            .filter { !$0.isEmpty }
+    }
 
     do {
         let handler = VNImageRequestHandler(cgImage: cgImage, orientation: .up)
