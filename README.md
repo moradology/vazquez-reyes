@@ -4,6 +4,8 @@ Private-first working repository for building a documented Vazquez-Reyes
 family history from public records, subscription indexes, family material,
 and explicitly labeled hypotheses.
 
+Public site: https://moradology.github.io/vazquez-reyes/
+
 ## Current state
 
 The project has a clean research structure, a tested Ancestry acquisition

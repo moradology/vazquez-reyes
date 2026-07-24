@@ -3,6 +3,9 @@
 Public presentation layer for the canonical research records one directory up.
 The page is a sourced working artifact, not a final proof tree.
 
+Published with GitHub Pages at
+https://moradology.github.io/vazquez-reyes/.
+
 - `/` is the concise family-facing story.
 - `/research` is the sanitized ongoing research notebook.
 - `../research/` remains the canonical evidence and reasoning layer.
@@ -26,4 +29,5 @@ npm install
 npm run dev
 npm run build
 node --test tests/rendered-html.test.mjs
+npm run export:pages
 ```

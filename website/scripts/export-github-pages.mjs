@@ -1,0 +1,96 @@
+import assert from "node:assert/strict";
+import {
+  cp,
+  mkdir,
+  readFile,
+  readdir,
+  rm,
+  writeFile,
+} from "node:fs/promises";
+
+const outRoot = new URL("../out-pages/", import.meta.url);
+const clientRoot = new URL("../dist/client/", import.meta.url);
+const basePath = "/vazquez-reyes/";
+
+async function render(pathname) {
+  const workerUrl = new URL("../dist/server/index.js", import.meta.url);
+  workerUrl.searchParams.set("export", `${process.pid}-${Date.now()}-${pathname}`);
+  const { default: worker } = await import(workerUrl.href);
+  const response = await worker.fetch(
+    new Request(`https://moradology.github.io${pathname}`, {
+      headers: { accept: "text/html" },
+    }),
+    {
+      ASSETS: {
+        fetch: async () => new Response("Not found", { status: 404 }),
+      },
+    },
+    {
+      waitUntil() {},
+      passThroughOnException() {},
+    },
+  );
+  assert.equal(response.status, 200, `render ${pathname}`);
+  return response.text();
+}
+
+function makeStatic(html) {
+  return html
+    .replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, "")
+    .replace(/<link\b(?=[^>]*\brel=["']modulepreload["'])[^>]*>/gi, "")
+    .replaceAll("/assets/", `${basePath}assets/`)
+    .replace(
+      /\b(href|src)="\/(?!\/|vazquez-reyes\/)([^"]*)"/g,
+      `$1="${basePath}$2"`,
+    )
+    .replace(/\bcontent="\/og\.png"/g, `content="${basePath}og.png"`)
+    .replace(
+      "</body>",
+      `<script src="${basePath}static-tools.js" defer></script></body>`,
+    );
+}
+
+async function rewriteAssetUrls(directory) {
+  for (const entry of await readdir(directory, { withFileTypes: true })) {
+    const url = new URL(`${entry.name}${entry.isDirectory() ? "/" : ""}`, directory);
+    if (entry.isDirectory()) {
+      await rewriteAssetUrls(url);
+    } else if (entry.name.endsWith(".css") || entry.name.endsWith(".js")) {
+      const source = await readFile(url, "utf8");
+      await writeFile(url, source.replaceAll("/assets/", `${basePath}assets/`));
+    }
+  }
+}
+
+await rm(outRoot, { recursive: true, force: true });
+await mkdir(new URL("research/", outRoot), { recursive: true });
+await cp(new URL("assets/", clientRoot), new URL("assets/", outRoot), {
+  recursive: true,
+});
+await cp(new URL("og.png", clientRoot), new URL("og.png", outRoot));
+await cp(
+  new URL("static-tools.js", clientRoot),
+  new URL("static-tools.js", outRoot),
+);
+
+const publicHtml = makeStatic(await render("/"));
+const researchHtml = makeStatic(await render("/research"));
+await writeFile(new URL("index.html", outRoot), publicHtml);
+await writeFile(new URL("research/index.html", outRoot), researchHtml);
+await writeFile(new URL("404.html", outRoot), publicHtml);
+await writeFile(new URL(".nojekyll", outRoot), "");
+await rewriteAssetUrls(new URL("assets/", outRoot));
+
+for (const [name, html] of [
+  ["public", publicHtml],
+  ["research", researchHtml],
+]) {
+  for (const match of html.matchAll(/\b(?:href|src|content)="(\/[^"]*)"/g)) {
+    assert.ok(match[1].startsWith(basePath), `${name} root path: ${match[1]}`);
+  }
+  assert.doesNotMatch(html, /__VINEXT_RSC_|modulepreload/, `${name} runtime`);
+  assert.match(html, new RegExp(`${basePath.replaceAll("/", "\\/")}assets\\/`));
+  assert.match(html, new RegExp(`${basePath.replaceAll("/", "\\/")}static-tools\\.js`));
+}
+
+console.log(`Exported GitHub Pages artifact to ${outRoot.pathname}`);
