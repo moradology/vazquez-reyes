@@ -227,6 +227,17 @@ export default function ResearchPage() {
                 reviewed 1787–1816 marriage transcription.
               </p>
             </article>
+            <article>
+              <span>Humacao · 1797</span>
+              <strong>A Canary Islands lead rejected</strong>
+              <p>
+                A burial calls Joseph Roque a native of the Canary Islands,
+                but also calls him the widower of María Herrera. Our Roque is
+                documented with Marciana Delgado. With no record bridging the
+                two identities, the overseas-born man is preserved as a
+                same-name candidate and not assigned to this family.
+              </p>
+            </article>
           </div>
         </div>
 

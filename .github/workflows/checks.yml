@@ -17,6 +17,8 @@ jobs:
       - uses: astral-sh/setup-uv@v5
       - run: npm ci
         working-directory: website
+      - run: node tools/build-people-pages.mjs
+      - run: git diff --exit-code -- website/app/people-data.ts
       - run: npm run build
         working-directory: website
       - run: node --test tests/rendered-html.test.mjs

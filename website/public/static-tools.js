@@ -3,6 +3,11 @@
   const buttons = [...document.querySelectorAll(".research-tools button")];
   const scaleButtons = buttons.slice(0, 3);
   const printButton = buttons[3];
+  const deck = document.querySelector("[data-presentation]");
+  const slides = [...document.querySelectorAll("[data-slide]")];
+  const fullscreenButton = document.querySelector(
+    "[data-presentation-fullscreen]",
+  );
 
   function applyScale(value) {
     if (value === "0") delete root.dataset.scale;
@@ -19,4 +24,74 @@
     button.addEventListener("click", () => applyScale(String(index)));
   });
   printButton?.addEventListener("click", () => window.print());
+
+  if (deck && slides.length > 0) {
+    const reduceMotion = window.matchMedia(
+      "(prefers-reduced-motion: reduce)",
+    ).matches;
+
+    function currentSlideIndex() {
+      return slides.reduce(
+        (best, slide, index) => {
+          const distance = Math.abs(slide.getBoundingClientRect().top);
+          return distance < best.distance ? { distance, index } : best;
+        },
+        { distance: Number.POSITIVE_INFINITY, index: 0 },
+      ).index;
+    }
+
+    function showSlide(index) {
+      slides[Math.max(0, Math.min(slides.length - 1, index))]?.scrollIntoView({
+        behavior: reduceMotion ? "auto" : "smooth",
+        block: "start",
+      });
+    }
+
+    document.addEventListener("keydown", (event) => {
+      const target = event.target;
+      if (
+        target instanceof HTMLElement &&
+        (target.matches("input, textarea, select, button, a") ||
+          target.isContentEditable)
+      ) {
+        return;
+      }
+
+      const current = currentSlideIndex();
+      if (
+        event.key === "ArrowRight" ||
+        event.key === "PageDown" ||
+        event.key === " "
+      ) {
+        event.preventDefault();
+        showSlide(current + 1);
+      } else if (event.key === "ArrowLeft" || event.key === "PageUp") {
+        event.preventDefault();
+        showSlide(current - 1);
+      } else if (event.key === "Home") {
+        event.preventDefault();
+        showSlide(0);
+      } else if (event.key === "End") {
+        event.preventDefault();
+        showSlide(slides.length - 1);
+      }
+    });
+
+    fullscreenButton?.addEventListener("click", async () => {
+      try {
+        if (document.fullscreenElement) await document.exitFullscreen();
+        else await root.requestFullscreen();
+      } catch {
+        fullscreenButton.textContent = "Full screen unavailable";
+      }
+    });
+
+    document.addEventListener("fullscreenchange", () => {
+      if (fullscreenButton) {
+        fullscreenButton.textContent = document.fullscreenElement
+          ? "Exit full screen"
+          : "Present full screen";
+      }
+    });
+  }
 })();

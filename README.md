@@ -21,9 +21,13 @@ The public presentation lives in [`website/`](website/) and is deliberately
 derived from the privacy-reviewed research core. Its validation checks that all
 canonical historical people appear and that sensitive identifiers do not.
 
-The presentation has two reader-facing layers:
+The site has four reader-facing layers:
 
 - `/` — concise family story for public consumption.
+- `/people` and `/people/{name}` — a directory and detailed, linked profile for
+  each reviewed historical person.
+- `/presentation` — a full-screen, keyboard-controlled walkthrough of the
+  records that establish the family connections.
 - `/research` — sanitized ongoing notebook with conflicts, open cases, negative
   searches, sources, and a change log.
 
@@ -81,6 +85,9 @@ cd website && npm test
 
 The research records are line-oriented JSON and can be reviewed with ordinary
 text tools. Run `./gen geography` after editing the place or event ledgers.
+Run `node tools/build-people-pages.mjs` after editing people, claims, sources,
+or geographic events; GitHub Actions verifies that both generated projections
+are current.
 
 ## Research layout
 

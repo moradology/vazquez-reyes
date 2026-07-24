@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { ResearchTools } from "./research-tools";
 import { sources } from "./research-data";
 import { FamilyTrees } from "./family-tree";
@@ -33,7 +34,9 @@ export default function Home() {
           <a href="#origins">Origins</a>
           <a href="#geography">Map</a>
           <a href="#records">Records</a>
-          <a href="/research">Research notes</a>
+          <Link href="/people">People</Link>
+          <Link href="/presentation">Presentation</Link>
+          <Link href="/research">Research notes</Link>
         </nav>
         <ResearchTools />
       </header>
@@ -112,9 +115,9 @@ export default function Home() {
               <div>
                 <dt>Parents</dt>
                 <dd>
-                  <span data-person-id="person.mauricio-reyes">Mauricio Reyes</span>
+                  <Link className="person-profile-link" data-person-id="person.mauricio-reyes" href="/people/mauricio-reyes">Mauricio Reyes</Link>
                   <br />
-                  <span data-person-id="person.carmen-diaz">Carmen Díaz</span>
+                  <Link className="person-profile-link" data-person-id="person.carmen-diaz" href="/people/carmen-diaz">Carmen Díaz</Link>
                 </dd>
               </div>
               <div>
@@ -122,6 +125,9 @@ export default function Home() {
                 <dd>10 October 1998</dd>
               </div>
             </dl>
+            <Link className="person-card-link" href="/people/cruz-reyes-vasquez">
+              Full profile →
+            </Link>
           </article>
 
           <div className="marriage-mark" aria-label="Married 25 October 1941">
@@ -149,13 +155,13 @@ export default function Home() {
               <div>
                 <dt>Parents</dt>
                 <dd>
-                  <span data-person-id="person.juan-vazquez-rodriguez">
+                  <Link className="person-profile-link" data-person-id="person.juan-vazquez-rodriguez" href="/people/juan-vazquez-rodriguez">
                     Juan Vázquez y Rodríguez
-                  </span>
+                  </Link>
                   <br />
-                  <span data-person-id="person.carlina-perales-perez">
+                  <Link className="person-profile-link" data-person-id="person.carlina-perales-perez" href="/people/carlina-perales-perez">
                     Carlina Perales y Pérez
-                  </span>
+                  </Link>
                 </dd>
               </div>
               <div>
@@ -163,6 +169,9 @@ export default function Home() {
                 <dd>December 1984</dd>
               </div>
             </dl>
+            <Link className="person-card-link" href="/people/rafael-vazquez-perales">
+              Full profile →
+            </Link>
           </article>
         </div>
       </section>
@@ -452,9 +461,9 @@ export default function Home() {
           <article id="story-mauricio-carmen">
             <span className="story-when">Cruz’s parents</span>
             <h3>
-              <span data-person-id="person.mauricio-reyes">Mauricio Reyes Martínez</span>
+              <Link className="person-profile-link" data-person-id="person.mauricio-reyes" href="/people/mauricio-reyes">Mauricio Reyes Martínez</Link>
               {" + "}
-              <span data-person-id="person.carmen-diaz">Carmen Díaz García</span>
+              <Link className="person-profile-link" data-person-id="person.carmen-diaz" href="/people/carmen-diaz">Carmen Díaz García</Link>
             </h3>
             <p>
               They married in Fajardo in 1907. Census and civil records follow
@@ -465,13 +474,13 @@ export default function Home() {
           <article id="story-juan-carlina">
             <span className="story-when">Rafael’s parents</span>
             <h3>
-              <span data-person-id="person.juan-vazquez-rodriguez">
+              <Link className="person-profile-link" data-person-id="person.juan-vazquez-rodriguez" href="/people/juan-vazquez-rodriguez">
                 Juan de la Rosa Vázquez Rodríguez
-              </span>
+              </Link>
               {" + "}
-              <span data-person-id="person.carlina-perales-perez">
+              <Link className="person-profile-link" data-person-id="person.carlina-perales-perez" href="/people/carlina-perales-perez">
                 Carlina Perales Pérez
-              </span>
+              </Link>
             </h3>
             <p>
               Juan was born in Yabucoa on 30 August 1878. He and Carlina
@@ -483,11 +492,11 @@ export default function Home() {
           <article id="story-pedro-ana">
             <span className="story-when">Mauricio’s parents</span>
             <h3>
-              <span data-person-id="person.pedro-reyes">Pedro Reyes</span>
+              <Link className="person-profile-link" data-person-id="person.pedro-reyes" href="/people/pedro-reyes">Pedro Reyes</Link>
               {" + "}
-              <span data-person-id="person.ana-martinez">
+              <Link className="person-profile-link" data-person-id="person.ana-martinez" href="/people/ana-martinez">
                 Ana or Anastasia Martínez
-              </span>
+              </Link>
             </h3>
             <p>
               Pedro and Ana lived in Humacao. Their son Mauricio was baptized
@@ -499,9 +508,9 @@ export default function Home() {
           <article id="story-ramon-ines">
             <span className="story-when">Pedro’s parents</span>
             <h3>
-              <span data-person-id="person.ramon-reyes">Ramón Reyes</span>
+              <Link className="person-profile-link" data-person-id="person.ramon-reyes" href="/people/ramon-reyes">Ramón Reyes</Link>
               {" + "}
-              <span data-person-id="person.ines-castro">Inés Castro</span>
+              <Link className="person-profile-link" data-person-id="person.ines-castro" href="/people/ines-castro">Inés Castro</Link>
             </h3>
             <p>
               Two Humacao baptismal records name Ramón and Inés as Pedro
@@ -513,11 +522,11 @@ export default function Home() {
           <article id="story-damaso-maria">
             <span className="story-when">Ana’s parents</span>
             <h3>
-              <span data-person-id="person.damaso-martinez">
+              <Link className="person-profile-link" data-person-id="person.damaso-martinez" href="/people/damaso-martinez">
                 Dámaso Martínez
-              </span>
+              </Link>
               {" + "}
-              <span data-person-id="person.maria-rivera">María Rivera</span>
+              <Link className="person-profile-link" data-person-id="person.maria-rivera" href="/people/maria-rivera">María Rivera</Link>
             </h3>
             <p>
               Mauricio’s baptism names Dámaso and María as Ana’s parents. An
@@ -529,13 +538,13 @@ export default function Home() {
           <article id="story-lope-reyes">
             <span className="story-when">Carmen’s parents</span>
             <h3>
-              <span data-person-id="person.lope-diaz-figueroa">
+              <Link className="person-profile-link" data-person-id="person.lope-diaz-figueroa" href="/people/lope-diaz-figueroa">
                 Lope Díaz Figueroa
-              </span>
+              </Link>
               {" + "}
-              <span data-person-id="person.reyes-garcia-olivero">
+              <Link className="person-profile-link" data-person-id="person.reyes-garcia-olivero" href="/people/reyes-garcia-olivero">
                 Reyes García Olivero
-              </span>
+              </Link>
             </h3>
             <p>
               In 1910 Lope and Reyes lived in Húcares, Naguabo, with their
@@ -548,9 +557,9 @@ export default function Home() {
           <article id="story-manuel-carmen">
             <span className="story-when">Lope’s parents</span>
             <h3>
-              <span data-person-id="person.manuel-diaz">Manuel María Díaz</span>
+              <Link className="person-profile-link" data-person-id="person.manuel-diaz" href="/people/manuel-diaz">Manuel María Díaz</Link>
               {" + "}
-              <span data-person-id="person.carmen-figueroa">Carmen Figueroa</span>
+              <Link className="person-profile-link" data-person-id="person.carmen-figueroa" href="/people/carmen-figueroa">Carmen Figueroa</Link>
             </h3>
             <p>
               Records for their sons call Manuel and Carmen natives of
@@ -561,9 +570,9 @@ export default function Home() {
           <article id="story-bautista-carmen">
             <span className="story-when">Reyes’s parents</span>
             <h3>
-              <span data-person-id="person.bautista-garcia">Bautista García</span>
+              <Link className="person-profile-link" data-person-id="person.bautista-garcia" href="/people/bautista-garcia">Bautista García</Link>
               {" + "}
-              <span data-person-id="person.carmen-olivero">Carmen Olivero</span>
+              <Link className="person-profile-link" data-person-id="person.carmen-olivero" href="/people/carmen-olivero">Carmen Olivero</Link>
             </h3>
             <p>
               Reyes’s death record names Bautista and Carmen, both from
@@ -575,44 +584,44 @@ export default function Home() {
           <article id="story-sotero-rodriguez">
             <span className="story-when">A family in Yabucoa</span>
             <h3>
-              <span data-person-id="person.sotero-vazquez">Sotero Vázquez</span>
+              <Link className="person-profile-link" data-person-id="person.sotero-vazquez" href="/people/sotero-vazquez">Sotero Vázquez</Link>
               {" + "}
-              <span data-person-id="person.maria-eugenia-rodriguez">
+              <Link className="person-profile-link" data-person-id="person.maria-eugenia-rodriguez" href="/people/maria-eugenia-rodriguez">
                 María Eugenia Rodríguez
-              </span>
+              </Link>
             </h3>
             <p>
               Sotero and María Eugenia married in Yabucoa in 1875. Their family
               included Juan,{" "}
-              <span data-person-id="person.juana-maria-vazquez-rodriguez">
+              <Link className="person-profile-link" data-person-id="person.juana-maria-vazquez-rodriguez" href="/people/juana-maria-vazquez-rodriguez">
                 Juana
-              </span>
+              </Link>
               ,{" "}
-              <span data-person-id="person.victorio-vazquez-rodriguez">
+              <Link className="person-profile-link" data-person-id="person.victorio-vazquez-rodriguez" href="/people/victorio-vazquez-rodriguez">
                 Victorio
-              </span>
+              </Link>
               ,{" "}
-              <span data-person-id="person.juan-del-carmen-vazquez-rodriguez">
+              <Link className="person-profile-link" data-person-id="person.juan-del-carmen-vazquez-rodriguez" href="/people/juan-del-carmen-vazquez-rodriguez">
                 Juan del Carmen, possibly the Carmelo named later
-              </span>
+              </Link>
               ,{" "}
-              <span data-person-id="person.mauricio-vazquez-rodriguez">
+              <Link className="person-profile-link" data-person-id="person.mauricio-vazquez-rodriguez" href="/people/mauricio-vazquez-rodriguez">
                 Mauricio
-              </span>
+              </Link>
               ,{" "}
-              <span data-person-id="person.braulio-vazquez-rodriguez">
+              <Link className="person-profile-link" data-person-id="person.braulio-vazquez-rodriguez" href="/people/braulio-vazquez-rodriguez">
                 Braulio
-              </span>
+              </Link>
               , and{" "}
-              <span data-person-id="person.francisco-vazquez-rodriguez">
+              <Link className="person-profile-link" data-person-id="person.francisco-vazquez-rodriguez" href="/people/francisco-vazquez-rodriguez">
                 Francisco
-              </span>
+              </Link>
               . By 1910, Sotero and María were living in Antón Ruíz, Humacao,
               with Braulio and Francisco still at home. Records call their
               mother María Eugenia, Eugenia, and{" "}
-              <span data-person-id="person.carmen-rodriguez">
+              <Link className="person-profile-link" data-person-id="person.carmen-rodriguez" href="/people/carmen-rodriguez">
                 Carmen Rodríguez
-              </span>
+              </Link>
               . Sotero died there in 1916. María Eugenia died there in 1933;
               their son Francisco gave the information for her death record.
             </p>
@@ -621,22 +630,22 @@ export default function Home() {
           <article id="story-atilano-juana">
             <span className="story-when">A generation earlier in Yabucoa</span>
             <h3>
-              <span data-person-id="person.atilano-vazquez">Atilano Vázquez</span>
+              <Link className="person-profile-link" data-person-id="person.atilano-vazquez" href="/people/atilano-vazquez">Atilano Vázquez</Link>
               {" + "}
-              <span data-person-id="person.juana-rodriguez">
+              <Link className="person-profile-link" data-person-id="person.juana-rodriguez" href="/people/juana-rodriguez">
                 Juana Regina Rodríguez
-              </span>
+              </Link>
             </h3>
             <p>
               Atilano, born in Juncos around 1828, married Juana Regina in
               Yabucoa in 1849. Their family included Sotero, Francisca,{" "}
-              <span data-person-id="person.maria-isidra-vazquez-rodriguez">
+              <Link className="person-profile-link" data-person-id="person.maria-isidra-vazquez-rodriguez" href="/people/maria-isidra-vazquez-rodriguez">
                 María Isidra
-              </span>
+              </Link>
               , born in 1863, and{" "}
-              <span data-person-id="person.maria-balbina-vazquez-rodriguez">
+              <Link className="person-profile-link" data-person-id="person.maria-balbina-vazquez-rodriguez" href="/people/maria-balbina-vazquez-rodriguez">
                 María Balbina
-              </span>
+              </Link>
               , born in 1850. Juana died before María Balbina’s marriage in
               1870. Atilano lived in Yabucoa until his death in 1898.
             </p>
@@ -645,9 +654,9 @@ export default function Home() {
           <article id="story-maximo-josefa">
             <span className="story-when">Atilano’s parents</span>
             <h3>
-              <span data-person-id="person.maximo-vazquez">Máximo Vázquez</span>
+              <Link className="person-profile-link" data-person-id="person.maximo-vazquez" href="/people/maximo-vazquez">Máximo Vázquez</Link>
               {" + "}
-              <span data-person-id="person.josefa-rivera">Josefa Rivera</span>
+              <Link className="person-profile-link" data-person-id="person.josefa-rivera" href="/people/josefa-rivera">Josefa Rivera</Link>
             </h3>
             <p>
               They married in Humacao on 31 December 1805. The register writes
@@ -661,11 +670,11 @@ export default function Home() {
           <article id="story-andres-francisca">
             <span className="story-when">Juana Regina’s parents</span>
             <h3>
-              <span data-person-id="person.andres-rodriguez">
+              <Link className="person-profile-link" data-person-id="person.andres-rodriguez" href="/people/andres-rodriguez">
                 Andrés [Rodríguez]
-              </span>
+              </Link>
               {" + "}
-              <span data-person-id="person.francisca-diaz">Francisca Díaz</span>
+              <Link className="person-profile-link" data-person-id="person.francisca-diaz" href="/people/francisca-diaz">Francisca Díaz</Link>
             </h3>
             <p>
               The 1849 marriage names Juana Regina’s parents as the deceased
@@ -677,23 +686,23 @@ export default function Home() {
           <article id="story-atilano-juana-paula">
             <span className="story-when">Atilano’s later family</span>
             <h3>
-              <span data-person-id="person.atilano-vazquez">Atilano Vázquez</span>
+              <Link className="person-profile-link" data-person-id="person.atilano-vazquez" href="/people/atilano-vazquez">Atilano Vázquez</Link>
               {" + "}
-              <span data-person-id="person.juana-paula-de-santiago">
+              <Link className="person-profile-link" data-person-id="person.juana-paula-de-santiago" href="/people/juana-paula-de-santiago">
                 Juana Paula de Santiago
-              </span>
+              </Link>
             </h3>
             <p>
               The widowed Atilano married Juana Paula in Yabucoa in 1875. She
               was from Humacao, a daughter of Tomás de Santiago and Petronila
               Orellana. Their daughter{" "}
-              <span data-person-id="person.maria-eugenia-vazquez-de-santiago">
+              <Link className="person-profile-link" data-person-id="person.maria-eugenia-vazquez-de-santiago" href="/people/maria-eugenia-vazquez-de-santiago">
                 María Eugenia
-              </span>{" "}
+              </Link>{" "}
               was born in Yabucoa in 1879. Their daughter{" "}
-              <span data-person-id="person.mariana-vazquez-de-santiago">
+              <Link className="person-profile-link" data-person-id="person.mariana-vazquez-de-santiago" href="/people/mariana-vazquez-de-santiago">
                 Mariana
-              </span>{" "}
+              </Link>{" "}
               was born in 1896 and baptized in Cidra the following year.
               María Eugenia was a different person from Sotero’s wife and was
               likely Sotero’s half-sister.
@@ -703,18 +712,18 @@ export default function Home() {
           <article id="story-marcelino-aurora">
             <span className="story-when">Carlina’s parents</span>
             <h3>
-              <span data-person-id="person.marcelino-perales-medina">
+              <Link className="person-profile-link" data-person-id="person.marcelino-perales-medina" href="/people/marcelino-perales-medina">
                 Marcelino Perales y Medina
-              </span>
+              </Link>
               {" + "}
-              <span data-person-id="person.aurora-perez">Aurora Pérez</span>
+              <Link className="person-profile-link" data-person-id="person.aurora-perez" href="/people/aurora-perez">Aurora Pérez</Link>
             </h3>
             <p>
               This Naguabo family included at least eight known children,
               including{" "}
-              <span data-person-id="person.hilaria-perales-perez">
+              <Link className="person-profile-link" data-person-id="person.hilaria-perales-perez" href="/people/hilaria-perales-perez">
                 Hilaria or Ilaria Perales
-              </span>
+              </Link>
               . Marcelino died in 1891. Aurora was still living with Hilaria
               in Río Blanco in 1940.
             </p>
@@ -723,9 +732,9 @@ export default function Home() {
           <article id="story-abal-vicenta">
             <span className="story-when">Marcelino’s parents</span>
             <h3>
-              <span data-person-id="person.abal-perales">Abal or Abel Perales</span>
+              <Link className="person-profile-link" data-person-id="person.abal-perales" href="/people/abal-perales">Abal or Abel Perales</Link>
               {" + "}
-              <span data-person-id="person.vicenta-medina">Vicenta Medina</span>
+              <Link className="person-profile-link" data-person-id="person.vicenta-medina" href="/people/vicenta-medina">Vicenta Medina</Link>
             </h3>
             <p>
               Marcelino’s death act names both parents and says they had

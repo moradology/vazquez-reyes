@@ -7,6 +7,9 @@ Published with GitHub Pages at
 https://moradology.github.io/vazquez-reyes/.
 
 - `/` is the concise family-facing story.
+- `/people` lists every reviewed historical person and links to one detailed
+  page per person.
+- `/presentation` is the family-meeting evidence walkthrough.
 - `/research` is the sanitized ongoing research notebook.
 - `../research/` remains the canonical evidence and reasoning layer.
 
@@ -26,6 +29,7 @@ represented and that common sensitive-identifier patterns are absent.
 
 ```sh
 npm install
+node ../tools/build-people-pages.mjs
 npm run dev
 npm run build
 node --test tests/rendered-html.test.mjs

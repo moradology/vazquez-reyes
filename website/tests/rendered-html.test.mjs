@@ -76,9 +76,54 @@ test("renders navigable trees and repeated maps from one geographic frame", asyn
   assert.match(html, /data-tree-person="person\.rafael-vazquez-perales"/);
   assert.match(html, /data-tree-person="person\.maximo-vazquez"/);
   assert.match(html, /data-tree-open="true"/);
-  assert.match(html, /href="#story-mauricio-carmen"/);
-  assert.match(html, /href="#story-atilano-juana"/);
+  assert.match(html, /href="\/people\/mauricio-reyes"/);
+  assert.match(html, /href="\/people\/atilano-vazquez"/);
+  assert.match(html, /href="\/people\/maria-cortez"/);
+  assert.match(html, /href="\/people\/marciana-delgado"/);
   assert.match(html, /Points locate the named municipio or barrio/);
+});
+
+test("renders the people directory and a detailed, linked person profile", async () => {
+  const [indexResponse, personResponse] = await Promise.all([
+    render("/people"),
+    render("/people/maximo-vazquez"),
+  ]);
+  const indexHtml = await indexResponse.text();
+  const personHtml = await personResponse.text();
+
+  assert.equal(indexResponse.status, 200);
+  assert.match(indexHtml, /The people in the records/);
+  assert.match(indexHtml, /href="\/people\/maximo-vazquez"/);
+  assert.match(indexHtml, /href="\/people\/cruz-reyes-vasquez"/);
+
+  assert.equal(personResponse.status, 200);
+  assert.match(personHtml, /<title>Máximo Vázquez · Vazquez–Reyes Family History<\/title>/);
+  assert.match(personHtml, /Immediate family and known siblings/);
+  assert.match(personHtml, /Francisco \[surname not stated\]/);
+  assert.match(personHtml, /María Cortez/);
+  assert.match(personHtml, /Known children/);
+  assert.match(personHtml, /Atilano Vázquez/);
+  assert.match(personHtml, /data-pr-map="person-maximo-vazquez"/);
+  assert.match(personHtml, /1805-maximo-josefa-marriage\.jpg/);
+  assert.match(personHtml, /Claims and how they are graded/);
+  assert.match(personHtml, /Records reviewed/);
+});
+
+test("renders a slide-style, evidence-led family presentation", async () => {
+  const response = await render("/presentation");
+  const html = await response.text();
+
+  assert.equal(response.status, 200);
+  assert.match(html, /Family evidence walkthrough/);
+  assert.equal([...html.matchAll(/\bdata-slide="true"/g)].length, 13);
+  assert.match(html, /How the records/);
+  assert.match(html, /Connection/);
+  assert.match(html, /The record/);
+  assert.match(html, /1915-cruz-civil-birth\.jpg/);
+  assert.match(html, /1805-maximo-josefa-marriage\.jpg/);
+  assert.match(html, /1811-luis-de-rivera-death\.jpg/);
+  assert.match(html, /No reviewed record yet identifies a direct ancestor born in Africa/);
+  assert.match(html, /data-presentation-fullscreen/);
 });
 
 test("keeps the geography ledger referential and explicit about precision", async () => {
@@ -125,11 +170,21 @@ test("keeps the geography ledger referential and explicit about precision", asyn
 });
 
 test("keeps sensitive details out of the rendered page", async () => {
-  const [publicResponse, researchResponse] = await Promise.all([
-    render(),
-    render("/research"),
-  ]);
-  const html = `${await publicResponse.text()} ${await researchResponse.text()}`;
+  const peopleText = await readFile(
+    new URL("../../research/people/people.jsonl", import.meta.url),
+    "utf8",
+  );
+  const profilePaths = peopleText
+    .split(/\r?\n/)
+    .filter((line) => line.trim())
+    .map((line) => `/people/${JSON.parse(line).id.replace(/^person\./, "")}`);
+  const responses = await Promise.all(
+    ["/", "/research", "/people", ...profilePaths].map((path) => render(path)),
+  );
+  responses.forEach((response) => assert.equal(response.status, 200));
+  const html = (await Promise.all(responses.map((response) => response.text()))).join(
+    " ",
+  );
 
   assert.doesNotMatch(html, /\bSSN\b/i);
   assert.doesNotMatch(html, /\b\d{3}-\d{2}-\d{4}\b/);
@@ -187,6 +242,8 @@ test("separates the public summary from the research notes", async () => {
   assert.match(researchHtml, /1792-ysabel-rivera-baptism\.jpg/);
   assert.match(researchHtml, /1811-luis-de-rivera-death\.jpg/);
   assert.match(researchHtml, /Roque \[surname not stated\] and Marciana Delgado/);
+  assert.match(researchHtml, /A Canary Islands lead rejected/);
+  assert.match(researchHtml, /widower of María Herrera/);
   assert.match(researchHtml, /31 December 1805 in Humacao/);
   assert.match(researchHtml, /Miguel de los Santos/);
   assert.match(researchHtml, /Andrés \[Rodríguez\] \+ Francisca Díaz/);

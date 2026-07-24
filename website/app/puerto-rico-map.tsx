@@ -24,6 +24,15 @@ type PuertoRicoMapProps = {
   tone: "reyes" | "vazquez";
 };
 
+type PuertoRicoPersonMapProps = {
+  personId: string;
+  title: string;
+  summary: string;
+  tone: "reyes" | "vazquez";
+};
+
+type GeographyEvent = (typeof geographyEvents)[number];
+
 type GeographyPlace = {
   id: string;
   label: string;
@@ -94,6 +103,56 @@ export function PuertoRicoMap({
     .filter((event) => (event.map_groups as readonly string[]).includes(group))
     .sort((a, b) => a.sequence - b.sequence);
 
+  return (
+    <PuertoRicoMapCard
+      dataMap={group}
+      events={events}
+      eyebrow={eyebrow}
+      storyHref={storyHref}
+      summary={summary}
+      title={title}
+      tone={tone}
+    />
+  );
+}
+
+export function PuertoRicoPersonMap({
+  personId,
+  title,
+  summary,
+  tone,
+}: PuertoRicoPersonMapProps) {
+  const events = geographyEvents
+    .filter((event) => (event.person_refs as readonly string[]).includes(personId))
+    .sort((a, b) => a.sequence - b.sequence);
+
+  if (events.length === 0) return null;
+
+  return (
+    <PuertoRicoMapCard
+      dataMap={`person-${personId.replace(/^person\./, "")}`}
+      events={events}
+      eyebrow="Documented places"
+      storyHref="#evidence"
+      summary={summary}
+      title={title}
+      tone={tone}
+    />
+  );
+}
+
+function PuertoRicoMapCard({
+  dataMap,
+  events,
+  eyebrow,
+  title,
+  summary,
+  storyHref,
+  tone,
+}: Omit<PuertoRicoMapProps, "group"> & {
+  dataMap: string;
+  events: readonly GeographyEvent[];
+}) {
   const stops = events.reduce<
     Array<{
       place: GeographyPlace;
@@ -126,7 +185,7 @@ export function PuertoRicoMap({
   return (
     <article
       className={`pr-life-map pr-life-map-${tone}`}
-      data-pr-map={group}
+      data-pr-map={dataMap}
     >
       <div className="pr-life-map-copy">
         <p className="eyebrow">{eyebrow}</p>

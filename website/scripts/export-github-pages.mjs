@@ -11,11 +11,10 @@ import {
 const outRoot = new URL("../out-pages/", import.meta.url);
 const clientRoot = new URL("../dist/client/", import.meta.url);
 const basePath = "/vazquez-reyes/";
+const workerPromise = import(new URL("../dist/server/index.js", import.meta.url));
 
 async function render(pathname) {
-  const workerUrl = new URL("../dist/server/index.js", import.meta.url);
-  workerUrl.searchParams.set("export", `${process.pid}-${Date.now()}-${pathname}`);
-  const { default: worker } = await import(workerUrl.href);
+  const { default: worker } = await workerPromise;
   const response = await worker.fetch(
     new Request(`https://moradology.github.io${pathname}`, {
       headers: { accept: "text/html" },
@@ -63,7 +62,11 @@ async function rewriteAssetUrls(directory) {
 }
 
 await rm(outRoot, { recursive: true, force: true });
-await mkdir(new URL("research/", outRoot), { recursive: true });
+await Promise.all([
+  mkdir(new URL("people/", outRoot), { recursive: true }),
+  mkdir(new URL("presentation/", outRoot), { recursive: true }),
+  mkdir(new URL("research/", outRoot), { recursive: true }),
+]);
 await cp(new URL("assets/", clientRoot), new URL("assets/", outRoot), {
   recursive: true,
 });
@@ -76,18 +79,45 @@ await cp(
   new URL("static-tools.js", outRoot),
 );
 
-const publicHtml = makeStatic(await render("/"));
-const researchHtml = makeStatic(await render("/research"));
-await writeFile(new URL("index.html", outRoot), publicHtml);
-await writeFile(new URL("research/index.html", outRoot), researchHtml);
+const people = (await readFile(
+  new URL("../../research/people/people.jsonl", import.meta.url),
+  "utf8",
+))
+  .split(/\r?\n/)
+  .filter((line) => line.trim())
+  .map((line) => JSON.parse(line));
+const personSlugs = people.map((person) => person.id.replace(/^person\./, ""));
+const routes = [
+  { name: "public", pathname: "/", output: "index.html" },
+  { name: "people", pathname: "/people", output: "people/index.html" },
+  {
+    name: "presentation",
+    pathname: "/presentation",
+    output: "presentation/index.html",
+  },
+  { name: "research", pathname: "/research", output: "research/index.html" },
+  ...personSlugs.map((slug) => ({
+    name: `person ${slug}`,
+    pathname: `/people/${slug}`,
+    output: `people/${slug}/index.html`,
+  })),
+];
+const renderedRoutes = [];
+
+for (const route of routes) {
+  const html = makeStatic(await render(route.pathname));
+  const outputUrl = new URL(route.output, outRoot);
+  await mkdir(new URL("./", outputUrl), { recursive: true });
+  await writeFile(outputUrl, html);
+  renderedRoutes.push({ ...route, html });
+}
+
+const publicHtml = renderedRoutes[0].html;
 await writeFile(new URL("404.html", outRoot), publicHtml);
 await writeFile(new URL(".nojekyll", outRoot), "");
 await rewriteAssetUrls(new URL("assets/", outRoot));
 
-for (const [name, html] of [
-  ["public", publicHtml],
-  ["research", researchHtml],
-]) {
+for (const { name, html } of renderedRoutes) {
   for (const match of html.matchAll(/\b(?:href|src|content)="(\/[^"]*)"/g)) {
     assert.ok(match[1].startsWith(basePath), `${name} root path: ${match[1]}`);
   }
@@ -95,6 +125,8 @@ for (const [name, html] of [
   assert.match(html, new RegExp(`${basePath.replaceAll("/", "\\/")}assets\\/`));
   assert.match(html, new RegExp(`${basePath.replaceAll("/", "\\/")}static-tools\\.js`));
 }
+
+assert.equal(renderedRoutes.length, people.length + 4);
 
 for (const filename of [
   "1910-reyes-household.jpg",

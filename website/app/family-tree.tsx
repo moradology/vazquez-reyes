@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 type TreePerson = {
   number: number;
   name: string;
@@ -122,7 +124,11 @@ function PedigreeChart({
               const nodeHeight = generation === 4 ? 29 : 42;
               return (
                 <a
-                  href={person.href}
+                  href={
+                    person.personId
+                      ? `/people/${person.personId.replace(/^person\./, "")}`
+                      : person.href
+                  }
                   data-tree-person={person.personId}
                   data-tree-open={open ? "true" : undefined}
                   key={person.number}
@@ -189,30 +195,31 @@ export function FamilyTrees() {
           </p>
         </div>
         <div className="tree-continuation-grid">
-          <a href="#origins">
+          <article>
             <span>Máximo’s parents</span>
             <strong>
-              Francisco [surname not stated]
-              <br />
-              María Cortez
+              <Link href="/people/francisco-father-of-maximo-vazquez">
+                Francisco [surname not stated]
+              </Link>
+              <Link href="/people/maria-cortez">María Cortez</Link>
             </strong>
-          </a>
-          <a href="#origins">
+          </article>
+          <article>
             <span>Josefa’s parents</span>
             <strong>
-              Luís de Rivera
-              <br />
-              Isidora Rodríguez
+              <Link href="/people/luis-father-of-josefa-rivera">Luís de Rivera</Link>
+              <Link href="/people/isidora-rodriguez">Isidora Rodríguez</Link>
             </strong>
-          </a>
-          <a href="#origins">
+          </article>
+          <article>
             <span>Luís’s parents</span>
             <strong>
-              Roque [surname not stated]
-              <br />
-              Marciana Delgado
+              <Link href="/people/roque-father-of-luis-de-rivera">
+                Roque [surname not stated]
+              </Link>
+              <Link href="/people/marciana-delgado">Marciana Delgado</Link>
             </strong>
-          </a>
+          </article>
         </div>
       </aside>
     </section>
