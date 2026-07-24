@@ -3,6 +3,7 @@ import { ResearchTools } from "./research-tools";
 import { sources } from "./research-data";
 import { FamilyTrees } from "./family-tree";
 import { OriginFrontier } from "./origin-frontier";
+import { PrimaryNavigation } from "./primary-navigation";
 import {
   PuertoRicoMap,
   PuertoRicoMapDefinitions,
@@ -28,16 +29,7 @@ export default function Home() {
           <i />
           <span>R</span>
         </a>
-        <nav aria-label="Main navigation">
-          <a href="#family">Family</a>
-          <a href="#tree">Tree</a>
-          <a href="#origins">Origins</a>
-          <a href="#geography">Map</a>
-          <a href="#records">Records</a>
-          <Link href="/people">People</Link>
-          <Link href="/presentation">Presentation</Link>
-          <Link href="/research">Research notes</Link>
-        </nav>
+        <PrimaryNavigation current="story" />
         <ResearchTools />
       </header>
 

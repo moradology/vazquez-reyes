@@ -126,6 +126,37 @@ test("renders a slide-style, evidence-led family presentation", async () => {
   assert.match(html, /data-presentation-fullscreen/);
 });
 
+test("uses one predictable primary navigation across every page type", async () => {
+  const pages = [
+    ["/", "/"],
+    ["/people", "/people"],
+    ["/people/maximo-vazquez", "/people"],
+    ["/presentation", "/presentation"],
+    ["/research", "/research"],
+  ];
+
+  for (const [path, currentHref] of pages) {
+    const response = await render(path);
+    const html = await response.text();
+    const nav = html.match(
+      /<nav class="primary-nav" aria-label="Primary navigation">(.*?)<\/nav>/s,
+    )?.[1];
+
+    assert.ok(nav, `primary navigation missing on ${path}`);
+    assert.equal([...nav.matchAll(/<a\b/g)].length, 4, path);
+    assert.match(nav, /<a[^>]*href="\/"[^>]*>Family story<\/a>/);
+    assert.match(nav, /<a[^>]*href="\/people"[^>]*>People<\/a>/);
+    assert.match(nav, /<a[^>]*href="\/presentation"[^>]*>Presentation<\/a>/);
+    assert.match(nav, /<a[^>]*href="\/research"[^>]*>Research<\/a>/);
+    assert.match(
+      nav,
+      new RegExp(
+        `<a(?=[^>]*href="${currentHref.replaceAll("/", "\\/")}")[^>]*aria-current="page"`,
+      ),
+    );
+  }
+});
+
 test("keeps the geography ledger referential and explicit about precision", async () => {
   const [placesText, eventsText, peopleText, sourcesText] = await Promise.all([
     readFile(

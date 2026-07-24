@@ -5,6 +5,7 @@ import {
   type LedgerValue,
   peopleProfiles,
 } from "../../people-data";
+import { PrimaryNavigation } from "../../primary-navigation";
 import {
   PuertoRicoMapDefinitions,
   PuertoRicoPersonMap,
@@ -207,13 +208,7 @@ export default async function PersonPage({
           <i />
           <span>R</span>
         </Link>
-        <nav aria-label="Person profile navigation">
-          <Link href="/people">All people</Link>
-          <a href="#family-links">Family</a>
-          <a href="#details">Details</a>
-          <a href="#evidence">Evidence</a>
-          <Link href="/presentation">Presentation</Link>
-        </nav>
+        <PrimaryNavigation current="people" />
         <ResearchTools />
       </header>
 

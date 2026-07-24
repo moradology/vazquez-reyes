@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { peopleProfiles } from "../people-data";
+import { PrimaryNavigation } from "../primary-navigation";
 import { ResearchTools } from "../research-tools";
 
 export const metadata = {
@@ -42,11 +43,7 @@ export default function PeopleIndexPage() {
           <i />
           <span>R</span>
         </Link>
-        <nav aria-label="People navigation">
-          <Link href="/">Family summary</Link>
-          <Link href="/presentation">Presentation</Link>
-          <Link href="/research">Research notes</Link>
-        </nav>
+        <PrimaryNavigation current="people" />
         <ResearchTools />
       </header>
 

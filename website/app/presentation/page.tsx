@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { PrimaryNavigation } from "../primary-navigation";
 
 export const metadata = {
   title: "Family Presentation · Vazquez–Reyes Family History",
@@ -64,13 +65,15 @@ export default function PresentationPage() {
   return (
     <main className="presentation-deck" data-presentation>
       <header className="presentation-toolbar">
-        <Link href="/">V / R</Link>
-        <span>Family evidence walkthrough</span>
+        <Link className="presentation-mark" href="/" aria-label="Vazquez Reyes family history home">
+          V / R
+        </Link>
+        <PrimaryNavigation current="presentation" />
         <div>
+          <span>Family evidence walkthrough</span>
           <button type="button" data-presentation-fullscreen>
             Present full screen
           </button>
-          <Link href="/people">Person profiles</Link>
         </div>
       </header>
 

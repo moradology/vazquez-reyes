@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { PrimaryNavigation } from "../primary-navigation";
 import { ResearchTools } from "../research-tools";
 import {
   familyCouples,
@@ -34,15 +35,7 @@ export default function ResearchPage() {
           <i />
           <span>R</span>
         </Link>
-        <nav aria-label="Research navigation">
-          <Link href="/">Public summary</Link>
-          <a href="#origins">Origin frontier</a>
-          <a href="#families">Family groups</a>
-          <a href="#conflicts">Conflicts</a>
-          <a href="#docket">Open questions</a>
-          <a href="#negative">Search log</a>
-          <a href="#sources">Sources</a>
-        </nav>
+        <PrimaryNavigation current="research" />
         <ResearchTools />
       </header>
 
@@ -56,6 +49,16 @@ export default function ResearchPage() {
         </p>
         <Link href="/">← Return to the family summary</Link>
       </section>
+
+      <nav className="page-jump-nav" aria-label="Research page sections">
+        <span>On this page</span>
+        <a href="#origins">Origins</a>
+        <a href="#families">Families</a>
+        <a href="#conflicts">Conflicts</a>
+        <a href="#docket">Open questions</a>
+        <a href="#negative">Search log</a>
+        <a href="#sources">Sources</a>
+      </nav>
 
       <section className="research-section" id="method">
         <div className="research-section-title">
