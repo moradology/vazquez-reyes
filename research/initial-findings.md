@@ -44,15 +44,18 @@ record reviewed. Details about potentially living descendants remain private.
   continuity identify the same man.
 - Infant **Teresa Reyes Díaz** died in Humacao on **1 June 1927**, age one day.
   Her death act directly names Mauricio and Carmen as her parents.
-- The census sibling cluster also includes Juana, Ruperto, Eriberta, Saturnino,
+- The census sibling cluster also includes Juana, Ruperto, Heriberta, Saturnino,
   and later entries for Angelina or Aurora and Tomás or Julio César. The two
   name pairs are not merged without direct records.
+- Heriberta's civil birth and baptism name the same parents and grandparents,
+  but disagree between **25 July 1913** and **16 March 1913**. Both dates are
+  retained.
 - The 1940 census places Pastora with her parents in Collores on **4 April
   1940**. Her Manhattan marriage-license affidavit was made **21 October 1941**,
   bounding her move from Puerto Rico to New York to that eighteen-month period.
 - Died **10 October 1998**, probably in New York City.
 
-### Pedro Reyes and Ana Martínez
+### Pedro Reyes and Ana or Anastasia Martínez
 
 This couple were Mauricio's parents and Cruz's paternal grandparents.
 
@@ -63,24 +66,28 @@ This couple were Mauricio's parents and Cruz's paternal grandparents.
 - Ana's death act names four children: **Isabel, Natalio, Mauricio, and
   Juliano**. Natalio's 1904 marriage independently names Pedro and Ana as his
   parents.
+- Heriberta's 1913 baptism calls Mauricio's mother **Anastasia Martínez**;
+  the civil records use **Ana Martínez**.
 
 ### Lope Díaz Figueroa and Reyes García Olivero
 
 This couple were Carmen's parents and Cruz's maternal grandparents.
 
 - Lope was born about **1858–1859** and died in Humacao on **23 March 1929**.
-  His parents were **Manuel Díaz** and **Carmen Figueroa**, both identified as
+  His parents were **Manuel María Díaz** and **Carmen Figueroa**, both identified as
   Naguabo natives in the death record of Lope's brother Pedro.
 - Reyes was born about **1862–1863** and died in Humacao on **28 March 1933**.
   Her parents were **Bautista García** and **Carmen Olivero**.
-- Known children include **Carmen, Saturnino, and Paulino**. This is not yet a
-  complete child list.
+- Known children include **Carmen, Saturnino, Paulino, and Secundino**.
+  Secundino's baptism gives his birth as **23 May 1903** and names all four
+  grandparents. It calls Reyes García's mother **Dolores Olivero**, while
+  Reyes's death record says **Carmen Olivero**.
 
 ## Rafael Vázquez y Perales
 
 - Born in **February 1906** in Humacao, Puerto Rico; the exact day remains
   unresolved.
-- Parents: **Juan Vázquez Rodríguez** and **Carlina Perales Pérez**.
+- Parents: **Juan de la Rosa Vázquez Rodríguez** and **Carlina Perales Pérez**.
 - Juan and Carlina married **25 September 1902** in Humacao.
 - Rafael grew up in Anton Ruiz and appears with his father in Mambiche in 1930.
 - Carlina died **31 May 1922** in Humacao. Her death record names Juan and seven
@@ -89,12 +96,23 @@ This couple were Carmen's parents and Cruz's maternal grandparents.
 - Probable death: **30 December 1984** in New York. The original death
   certificate is still needed.
 
-### Sotero Vázquez and Carmen or María Eugenia Rodríguez
+### Sotero Vázquez, María Eugenia Rodríguez, and the Carmen conflict
 
-Sotero is Juan's documented father. Juan's mother's identity is still open.
+Sotero is Juan's documented father. His own parents are now confirmed, while
+Juan's mother's identity remains open.
 
-- Juan's 1902 marriage names **Carmen Rodríguez**; his 1951 death names **María
-  Eugenia Rodríguez**.
+- Juan's Yabucoa baptism records the name **Juan de la Rosa Vázquez**, birth
+  **30 August 1878**, and baptism **13 October 1878**. It names **Sotero
+  Vázquez** and **Carmen Rodríguez** as his parents.
+- The baptism and Juan's 1902 marriage name Carmen; his 1951 death names
+  **María Eugenia Rodríguez**.
+- Sotero's 1875 Yabucoa marriage confirms María Eugenia as his wife. The entry
+  names Sotero's parents as **Atilano Vázquez** and **Juana Rodríguez**. Juan's
+  baptism independently repeats the same paternal grandparents.
+- The marriage names María Eugenia's parents as **Cristóbal Rodríguez** and
+  **Leonor Díaz**. Juan's baptism names Carmen's parents as **Cristóbal
+  Rodríguez** and **María Pacheco**. The women and their mothers remain
+  unmerged.
 - Braulio Vázquez Rodríguez's original 1915 and 1923 marriage acts name his
   parents as **Sotero Vázquez and María Eugenia Rodríguez**. They prove
   Braulio's parentage, not that Braulio and Juan necessarily had the same
@@ -103,8 +121,8 @@ Sotero is Juan's documented father. Juan's mother's identity is still open.
   **1850 and 1863**. His death has not been found.
 - María Eugenia's reported ages imply roughly **1847–1858**. A **6 July 1933**
   death remains a candidate, not a merged fact.
-- Juan's Yabucoa birth or baptism is the record most likely to settle the
-  conflict.
+- Baptisms for Braulio and other children of Sotero, plus death records for
+  Sotero, Carmen, and María Eugenia, are now the best tests of the conflict.
 
 ### Marcelino Perales y Medina and Aurora Pérez
 
@@ -145,24 +163,28 @@ This couple were Carlina's parents and Rafael's maternal grandparents.
   child and leaves the exact family-versus-church name relationship open.
 - Carmen's full documented name is **Carmen Díaz García**.
 - **Belén Reyes** was Cruz's younger sister.
-- Cándido and infant Teresa are now directly documented as additional children
-  of Mauricio and Carmen. The 1935 and 1940 censuses establish a larger sibling
-  cluster while leaving two possible alternate-name pairs unresolved.
-- Mauricio's mother was **Ana Martínez** in the records closest to his marriage
-  and Cruz's birth.
+- Cándido, infant Teresa, and Heriberta are now directly documented as
+  additional children of Mauricio and Carmen. Heriberta's two originals retain
+  a birth-date conflict.
+- Mauricio's mother was **Ana Martínez** in civil records and **Anastasia
+  Martínez** in Heriberta's baptism.
 - The 1977 Mauricio Reyes Martínez death is now the strongest death candidate:
   full name, age, Humacao birthplace and father agree, while a nurse supplied
   the conflicting mother and did not know his spouse.
 - Rafael's mother was **Carlina Perales Pérez**; her mother was **Aurora Pérez**.
-- Rafael's father appears consistently as **Juan Vázquez Rodríguez**. The Juan
-  Ramón form remains an unconfirmed family variant.
+- Rafael's father was baptized **Juan de la Rosa Vázquez** and later appears as
+  **Juan Vázquez Rodríguez**. The Juan Ramón form remains an unconfirmed family
+  variant.
+- Sotero's parents were **Atilano Vázquez and Juana Rodríguez**, extending the
+  direct Vázquez line one more generation in Yabucoa.
 - Rafael's civil-registration index supports **February 1906**, not October;
   his exact birth day is still open.
 
 ## Highest-value next records
 
 1. Rafael's baptism or a fully legible certified birth record.
-2. Juan Vázquez Rodríguez's Yabucoa baptism or birth record.
+2. Baptisms for Braulio and other children of Sotero Vázquez, and death records
+   for Sotero, Carmen Rodríguez, and María Eugenia Rodríguez.
 3. The original Manhattan marriage certificate, not only its index.
 4. A duplicate register, sacramental certificate, alternate filming, or parish
    archive lookup for Gurabo book 15, folio 18 verso, sufficient to identify

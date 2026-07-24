@@ -177,8 +177,9 @@ export default function ResearchPage() {
               days after the birth; later records also use Cruz.
             </p>
             <p role="cell">
-              <b>Next:</b> locate the Gurabo parish baptism and check whether it
-              says Pastora, Cruz Pastora, Pastora Cruz, or Cruz.
+              <b>Next:</b> seek a duplicate or clearer copy of the damaged
+              Gurabo folio and check whether it says Pastora, Cruz Pastora,
+              Pastora Cruz, or Cruz.
             </p>
           </article>
           <article role="row">
@@ -237,14 +238,54 @@ export default function ResearchPage() {
               <Grade kind="open">UNRESOLVED</Grade>
             </div>
             <p role="cell">
-              <b>Carmen Rodríguez</b> — named in Juan’s 1902 marriage record.
+              <b>Carmen Rodríguez</b> — named in Juan’s 1878 baptism and 1902
+              marriage. The baptism names her parents as Cristóbal Rodríguez
+              and María Pacheco.
             </p>
             <p role="cell">
               <b>María Eugenia Rodríguez</b> — named by the informant on Juan’s
-              1951 death record.
+              1951 death record. Her 1875 marriage to Sotero names parents
+              Cristóbal Rodríguez and Leonor Díaz.
             </p>
             <p role="cell">
-              <b>Next:</b> locate Juan’s Yabucoa baptism or birth registration.
+              <b>Next:</b> compare baptisms for Braulio and other children of
+              Sotero, plus death records for Sotero, Carmen, and María Eugenia.
+            </p>
+          </article>
+          <article role="row">
+            <div role="cell">
+              <strong>Heriberta’s birth date</strong>
+              <Grade kind="open">UNRESOLVED</Grade>
+            </div>
+            <p role="cell">
+              <b>25 July 1913</b> — the Naguabo civil birth act, declared by
+              her father Mauricio Reyes.
+            </p>
+            <p role="cell">
+              <b>16 March 1913</b> — the Naguabo baptismal register. The same
+              parents and all four grandparents establish that both records
+              concern Heriberta.
+            </p>
+            <p role="cell">
+              <b>Next:</b> seek another early record without treating either
+              date as silently corrected.
+            </p>
+          </article>
+          <article role="row">
+            <div role="cell">
+              <strong>Reyes García’s mother</strong>
+              <Grade kind="open">GIVEN NAME UNRESOLVED</Grade>
+            </div>
+            <p role="cell">
+              <b>Carmen Olivero</b> — named on Reyes García’s 1933 death act.
+            </p>
+            <p role="cell">
+              <b>Dolores Olivero</b> — named on her son Secundino’s 1903
+              baptism.
+            </p>
+            <p role="cell">
+              <b>Next:</b> find Reyes García’s own baptism or marriage before
+              merging the two given names.
             </p>
           </article>
         </div>

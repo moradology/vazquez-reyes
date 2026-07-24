@@ -361,7 +361,7 @@ export default function Home() {
             <span className="story-when">Rafael’s parents</span>
             <h3>
               <span data-person-id="person.juan-vazquez-rodriguez">
-                Juan Vázquez Rodríguez
+                Juan de la Rosa Vázquez Rodríguez
               </span>
               {" + "}
               <span data-person-id="person.carlina-perales-perez">
@@ -369,8 +369,9 @@ export default function Home() {
               </span>
             </h3>
             <p>
-              They married in Humacao in 1902. Carlina died there in 1922;
-              Rafael was one of the seven children named in her death record.
+              Juan was born in Yabucoa on 30 August 1878. He and Carlina
+              married in Humacao in 1902; Rafael was one of the seven children
+              named in Carlina’s death record.
             </p>
             <a href="/research#source-census-1910">View the sources →</a>
           </article>
@@ -379,11 +380,13 @@ export default function Home() {
             <h3>
               <span data-person-id="person.pedro-reyes">Pedro Reyes</span>
               {" + "}
-              <span data-person-id="person.ana-martinez">Ana Martínez</span>
+              <span data-person-id="person.ana-martinez">
+                Ana or Anastasia Martínez
+              </span>
             </h3>
             <p>
-              Pedro and Ana lived in Humacao. Their known children were Isabel,
-              Natalio, Mauricio and Juliano.
+              Pedro and Ana lived in Humacao. A granddaughter’s baptism uses
+              Anastasia; their other reviewed records use Ana.
             </p>
             <a href="/research#pedro-ana">See this family →</a>
           </article>
@@ -399,30 +402,35 @@ export default function Home() {
               </span>
             </h3>
             <p>
-              Their parents were{" "}
-              <span data-person-id="person.manuel-diaz">Manuel Díaz</span> and{" "}
-              <span data-person-id="person.carmen-figueroa">Carmen Figueroa</span>,
+              Lope was a son of{" "}
+              <span data-person-id="person.manuel-diaz">Manuel María Díaz</span>{" "}
               and{" "}
+              <span data-person-id="person.carmen-figueroa">Carmen Figueroa</span>.
+              Reyes’s death record names{" "}
               <span data-person-id="person.bautista-garcia">Bautista García</span>{" "}
               and{" "}
               <span data-person-id="person.carmen-olivero">Carmen Olivero</span>.
+              A son’s baptism instead calls her mother Dolores Olivero.
             </p>
             <a href="/research#lope-reyes">See this family →</a>
           </article>
           <article>
-            <span className="story-when">Juan’s parents</span>
+            <span className="story-when">Juan’s father and an open mother record</span>
             <h3>
               <span data-person-id="person.sotero-vazquez">Sotero Vázquez</span>
-              {" + Carmen / María Eugenia Rodríguez"}
             </h3>
             <p>
-              Juan’s records disagree: one names{" "}
-              <span data-person-id="person.carmen-rodriguez">Carmen Rodríguez</span>,
-              another{" "}
+              Sotero married{" "}
               <span data-person-id="person.maria-eugenia-rodriguez">
                 María Eugenia Rodríguez
               </span>
-              . The distinction remains open.
+              {" "}in Yabucoa in 1875. Juan’s baptism instead names{" "}
+              <span data-person-id="person.carmen-rodriguez">Carmen Rodríguez</span>{" "}
+              as his mother, so the women remain separate in the research. Sotero
+              was a son of{" "}
+              <span data-person-id="person.atilano-vazquez">Atilano Vázquez</span>{" "}
+              and{" "}
+              <span data-person-id="person.juana-rodriguez">Juana Rodríguez</span>.
             </p>
             <a href="/research#sotero-rodriguez">See this family →</a>
           </article>

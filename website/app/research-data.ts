@@ -77,6 +77,20 @@ export const sources = [
     grade: "Original civil record",
   },
   {
+    id: "heriberta-birth",
+    label: "1913 birth: Heriberta Reyes Díaz",
+    detail: "Naguabo act 593 gives 25 July 1913 and names Mauricio Reyes, Carmen Díaz, and all four grandparents. Her baptismal register gives a conflicting 16 March birth date.",
+    href: "https://www.ancestry.com/search/collections/9100/records/9431655",
+    grade: "Original civil record · date conflict retained",
+  },
+  {
+    id: "heriberta-baptism",
+    label: "1913 baptism: Heriberta Reyes Díaz",
+    detail: "Baptized 31 August 1913 in Naguabo. The same parents and grandparents establish the identity; the register uses Anastasia Martínez and María de Reyes García.",
+    href: "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSFS-59BS?view=fullText&lang=en&groupId=M9SP-6M8",
+    grade: "Original parish register",
+  },
+  {
     id: "rafael-birth",
     label: "Puerto Rico civil registration: Rafael Vazquez y Peralez",
     detail: "Humacao registration 134; indexed February 1906; mother Carlina Peralez.",
@@ -110,6 +124,20 @@ export const sources = [
     detail: "Humacao marriage record; Juan’s parents Sotero Vázquez and Carmen Rodríguez; Carlina’s parents Marcelino Perales and Aurora Pérez.",
     href: "https://www.ancestry.com/search/collections/9100/records/1530270",
     grade: "Original civil record",
+  },
+  {
+    id: "juan-baptism",
+    label: "1878 baptism: Juan de la Rosa Vázquez",
+    detail: "Born 30 August and baptized 13 October 1878 in Yabucoa; parents Sotero Vázquez and Carmen Rodríguez; grandparents Atilano Vázquez and Juana Rodríguez, and Cristóbal Rodríguez and María Pacheco.",
+    href: "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSM8-3YYX?view=fullText&lang=en&groupId=M9SP-ZFM",
+    grade: "Original parish register",
+  },
+  {
+    id: "sotero-maria-eugenia-marriage",
+    label: "1875 marriage: Sotero Vázquez and María Eugenia Rodríguez",
+    detail: "Yabucoa entry 440 names Sotero’s parents Atilano Vázquez and Juana Rodríguez, and María Eugenia’s parents Cristóbal Rodríguez and Leonor Díaz. Its date is omitted but bracketed between 16 and 25 September.",
+    href: "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSV2-2Q68-Z?view=fullText&lang=en&groupId=M99W-V63",
+    grade: "Original parish register · date bracketed",
   },
   {
     id: "carlina-death",
@@ -152,6 +180,13 @@ export const sources = [
     detail: "Humacao record naming parents Bautista García and Carmen Olivero, with Naguabo birthplaces.",
     href: "https://www.ancestry.com/search/collections/9100/records/686138",
     grade: "Original civil record",
+  },
+  {
+    id: "secundino-baptism",
+    label: "1903 baptism: Secundino Díaz García",
+    detail: "Born 23 May and baptized 4 July 1903 in Humacao; parents Lope Díaz and María de Reyes García; all four grandparents named. The index’s Decundino is a transcription error.",
+    href: "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSFS-VSD5-B?view=fullText&lang=en&groupId=M993-W4S",
+    grade: "Original parish register",
   },
   {
     id: "braulio-marriage-1915",
@@ -268,7 +303,7 @@ export const familyCouples = [
     children: [
       "Juana",
       "Ruperto",
-      "Eriberta",
+      "Heriberta (civil birth: 25 Jul 1913; baptism record: 16 Mar 1913)",
       "Pastora (civil records: Cruz)",
       "Belén",
       "Angelina (1930 census)",
@@ -290,8 +325,8 @@ export const familyCouples = [
     connection: "Parents of Rafael Vázquez y Perales",
     people: [
       {
-        name: "Juan Vázquez Rodríguez",
-        birth: "About 1878 · Yabucoa, Puerto Rico",
+        name: "Juan de la Rosa Vázquez Rodríguez",
+        birth: "30 August 1878 · Yabucoa, Puerto Rico",
         death: "22 December 1951 · Humacao, Puerto Rico",
       },
       {
@@ -307,7 +342,7 @@ export const familyCouples = [
   {
     id: "pedro-ana",
     branch: "Mauricio’s parents",
-    couple: "Pedro Reyes + Ana Martínez",
+    couple: "Pedro Reyes + Ana or Anastasia Martínez",
     status: "documented" as const,
     connection: "Her paternal grandparents",
     people: [
@@ -317,14 +352,14 @@ export const familyCouples = [
         death: "3 January 1918 · Humacao, Puerto Rico",
       },
       {
-        name: "Ana Martínez",
+        name: "Ana or Anastasia Martínez",
         birth: "About 1857–1858 · Humacao, Puerto Rico",
         death: "21 March 1918 · Humacao, Puerto Rico",
       },
     ],
     children: ["Isabel", "Natalio", "Mauricio", "Juliano"],
     childNote:
-      "Ana’s death act names all four. Her son Natalio was the informant; a 1904 marriage record independently links Natalio to Pedro and Ana.",
+      "Ana’s death act names all four. Heriberta’s 1913 baptism uses Anastasia Martínez; the other reviewed civil records use Ana.",
   },
   {
     id: "lope-reyes",
@@ -344,16 +379,16 @@ export const familyCouples = [
         death: "28 March 1933 · Humacao, Puerto Rico",
       },
     ],
-    children: ["Carmen", "Saturnino", "Paulino"],
+    children: ["Carmen", "Saturnino", "Paulino", "Secundino (born 23 May 1903)"],
     childNote:
-      "Carmen is in the 1910 household; Saturnino’s death act and the 1930 household identify two more sons. This is a known-child list, not yet a complete family.",
+      "Secundino’s baptism directly names Lope and María de Reyes García and all four grandparents. The register calls Reyes’s mother Dolores Olivero; her death record says Carmen Olivero.",
   },
   {
     id: "sotero-rodriguez",
-    branch: "Juan’s parents",
-    couple: "Sotero Vázquez + Carmen / María Eugenia Rodríguez",
-    status: "open" as const,
-    connection: "Paternal grandparents of Rafael Vázquez y Perales",
+    branch: "Sotero’s documented marriage",
+    couple: "Sotero Vázquez + María Eugenia Rodríguez",
+    status: "documented" as const,
+    connection: "Married in Yabucoa in September 1875; Juan’s recorded mother remains a separate conflict",
     people: [
       {
         name: "Sotero Vázquez",
@@ -361,14 +396,36 @@ export const familyCouples = [
         death: "Not yet found",
       },
       {
-        name: "Carmen / María Eugenia Rodríguez",
-        birth: "Identity and dates not settled",
+        name: "María Eugenia Rodríguez",
+        birth: "Not settled · records imply roughly 1847–1858",
         death: "A 1933 María Eugenia record is still a candidate",
       },
     ],
-    children: ["Juan — Sotero is confirmed; mother unresolved", "Braulio — parents Sotero and María Eugenia"],
+    children: ["Juan — baptism names mother Carmen Rodríguez", "Braulio — records name mother María Eugenia Rodríguez"],
     childNote:
-      "Juan’s 1902 marriage names Carmen; his 1951 death names María Eugenia. Braulio’s two marriages prove María Eugenia was mother of Braulio, not necessarily Juan.",
+      "The marriage proves the Sotero–María Eugenia pairing. Juan’s baptism and 1902 marriage name Carmen Rodríguez, while his 1951 death names María Eugenia. The women are not merged.",
+  },
+  {
+    id: "atilano-juana",
+    branch: "Sotero’s parents",
+    couple: "Atilano Vázquez + Juana Rodríguez",
+    status: "documented" as const,
+    connection: "The earliest confirmed Vázquez couple currently in the direct line",
+    people: [
+      {
+        name: "Atilano Vázquez",
+        birth: "Yabucoa, Puerto Rico · exact date not yet found",
+        death: "Not yet found",
+      },
+      {
+        name: "Juana Rodríguez",
+        birth: "Yabucoa, Puerto Rico · exact date not yet found",
+        death: "Not yet found",
+      },
+    ],
+    children: ["Sotero Vázquez"],
+    childNote:
+      "Sotero’s 1875 marriage and Juan’s 1878 baptism independently name the same parent pair.",
   },
   {
     id: "marcelino-aurora",
@@ -431,14 +488,14 @@ export const openCases = [
   {
     id: "VR-05",
     title: "Juan Vázquez’s mother",
-    conflict: "Juan’s 1902 marriage names Carmen Rodríguez; his 1951 death names María Eugenia Rodríguez. Braulio’s marriages prove María Eugenia was Braulio’s mother, but do not prove she was Juan’s.",
-    next: "Locate Juan’s Yabucoa baptism or birth record and compare the original wording in both records.",
+    conflict: "Juan’s 1878 baptism and 1902 marriage name Carmen Rodríguez; his 1951 death names María Eugenia Rodríguez. The direct baptism confirms the conflict rather than resolving it.",
+    next: "Find baptisms for Braulio and other children of Sotero, and death records for Sotero, Carmen, and María Eugenia. Compare full maternal names and grandparents before merging anyone.",
   },
   {
     id: "VR-06",
-    title: "The Sotero Vázquez household",
-    conflict: "Censuses and a 1933 death suggest María Eugenia Rodríguez was Sotero’s wife, but ages and second surnames vary.",
-    next: "Find the couple’s marriage or Juan’s baptism before attaching the Rodríguez-Pacheco parents as confirmed ancestors.",
+    title: "Carmen, María Eugenia, and the Rodríguez mothers",
+    conflict: "Sotero’s 1875 marriage names María Eugenia’s parents as Cristóbal Rodríguez and Leonor Díaz. Juan’s 1878 baptism names Carmen’s parents as Cristóbal Rodríguez and María Pacheco. A later María Eugenia death candidate uses Pacheco.",
+    next: "Test whether Carmen and María Eugenia were one woman, sisters or half-sisters, or a register/informant error. Do not merge Leonor Díaz and María Pacheco.",
   },
   {
     id: "VR-07",
@@ -458,7 +515,7 @@ export const negativeSearches = [
   "No confident Cruz or Rafael match appeared in the reviewed New Jersey death-index image sets for 1984 and 1998.",
   "The New York State death index returned no match, but that index does not reliably cover New York City and cannot settle the question.",
   "No Rafael memorial matching the shared plot was found on Find a Grave; the official cemetery database remains the stronger burial source.",
-  "No record yet settles whether Juan Vázquez’s mother used both Carmen and María Eugenia or whether one informant supplied the wrong name.",
+  "Juan’s baptism was found, but it confirms Carmen Rodríguez while Sotero’s marriage confirms María Eugenia Rodríguez. The conflict now requires sibling baptisms or later death records rather than another search for Juan’s baptism.",
   "A 1942 death for Aurora Monserrate Pérez belongs to the widow of Marcelo Pérez, not the wife of Marcelino Perales; it was captured and rejected.",
   "No Pastora Reyes entry appears in the reviewed Gurabo baptism-index pages. A Cruz Reyes entry points to book 15, folio 18 verso, but the damaged register image does not expose the child or parents.",
 ];
@@ -483,6 +540,26 @@ export const nameVariants = [
     person: "Carlina Perales y Pérez",
     forms: "Carlina Peralez · Carlina Perales de Vazquez · Cathelina/Catalina Pérez or López",
     conclusion: "The 1902 marriage and 1922 death confirm Carlina Perales Pérez; neither supports López.",
+  },
+  {
+    person: "Juan de la Rosa Vázquez Rodríguez",
+    forms: "Juan de la Rosa Vázquez · Juan Vázquez Rodríguez · Juan Vázquez y Rodríguez · Juan Ramón Vázquez",
+    conclusion: "The baptism documents Juan de la Rosa. Adult records document Vázquez Rodríguez. Ramón remains a family search variant not yet found in a record.",
+  },
+  {
+    person: "Heriberta Reyes Díaz",
+    forms: "Heriberta Reyes Díaz · Eriberta Reyes Díaz",
+    conclusion: "The civil birth and baptism use Heriberta; censuses use Eriberta. The records identify one woman but disagree on whether she was born 16 March or 25 July 1913.",
+  },
+  {
+    person: "Ana or Anastasia Martínez",
+    forms: "Ana Martínez · Anastasia Martínez",
+    conclusion: "Civil records use Ana. Her granddaughter Heriberta’s baptism uses Anastasia for the same wife of Pedro Reyes.",
+  },
+  {
+    person: "Reyes García Olivero",
+    forms: "Reyes García Olivero · María de Reyes García",
+    conclusion: "Both forms refer to Lope Díaz’s wife. Her mother is recorded as Carmen Olivero on the death act and Dolores Olivero on Secundino’s baptism; that conflict remains open.",
   },
 ];
 
@@ -554,5 +631,17 @@ export const updates = [
   {
     date: "24 Jul 2026",
     text: "Located the Gurabo baptism-index entry Cruz Reyes, book 15, folio 18 verso, and captured the exact damaged folio without overstating the identification.",
+  },
+  {
+    date: "24 Jul 2026",
+    text: "Confirmed Heriberta Reyes Díaz with both her civil birth and baptism, retaining the records’ 16 March versus 25 July 1913 date conflict.",
+  },
+  {
+    date: "24 Jul 2026",
+    text: "Found Secundino Díaz García’s 1903 baptism, expanding the Díaz–García sibling cluster and documenting several grandparent name variants.",
+  },
+  {
+    date: "24 Jul 2026",
+    text: "Found Juan de la Rosa Vázquez’s 1878 Yabucoa baptism and Sotero Vázquez’s 1875 marriage, extending the direct line to Atilano Vázquez and Juana Rodríguez.",
   },
 ];
