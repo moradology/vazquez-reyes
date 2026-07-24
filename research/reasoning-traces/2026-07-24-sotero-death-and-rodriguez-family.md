@@ -15,9 +15,39 @@ Yabucoa native, age 56, son of Atilano Vázquez and Juana Rodríguez. He died
 Rodríguez and names seven living children: Juan, Juana, Victorio, Carmelo,
 Mauricio, Braulio, and Francisco.
 
-The reported age implies birth around 1860. That estimate is not promoted to an
-exact birth year because it sits awkwardly beside Sotero's 1875 marriage. No
-defensible baptism has yet been found.
+The reported age implies birth around 1860. It is not accepted as an exact
+birth year because it conflicts with the 1910 census and sits awkwardly beside
+Sotero's 1875 marriage.
+
+## The 1910 Anton Ruiz household
+
+The original census sheet for barrio Anton Ruiz, Humacao, was enumerated
+25 April 1910. Lines 6–9 record:
+
+- **Sotero Vázquez y Rodríguez**, head, age 63;
+- **María Rodríguez y Díaz de Vázquez**, wife, age 66;
+- **Braulio Vázquez y Rodríguez**, son, age 18; and
+- **Francisco Vázquez y Rodríguez**, son, age 14.
+
+This is not merely a same-name candidate. The census reports a first marriage
+of 34 years, which points back to 1875–1876 and matches the parish marriage.
+It also says María had borne seven children and all seven were living. Sotero's
+1916 death names seven living children, including Braulio and Francisco.
+Those independent details securely identify the household.
+
+The age of 63 implies birth around 1847, about thirteen years earlier than the
+death act implies. It also places the estimated birth before Atilano and
+Juana's documented February 1849 marriage. The census identity is strong; the
+age itself may still be wrong. The working record therefore preserves both
+reported estimates—about 1847 and about 1860—without choosing either as an
+exact birth year.
+
+The collection search has a matching gap. FamilySearch identifies Yabucoa DGS
+007769018 item 2 as baptisms for 1838–1842; item 3 covers 1848–1856 and has
+been reviewed image by image. The image group contains no baptism item for
+1843–1847 or after 1856. Both age-based windows therefore require an unfilmed
+register, duplicate parish book, diocesan copy, archive inventory, or another
+parish—not more scrolling within this film.
 
 ## Sotero Vázquez and María Eugenia Rodríguez
 
@@ -80,7 +110,8 @@ Pacheco. The separate profiles preserve that evidentiary gap.
 
 ## Next records
 
-1. Sotero's baptism in Yabucoa.
+1. Sotero's baptism in a missing Yabucoa or duplicate/diocesan register,
+   searching both 1843–1847 and 1857–1860.
 2. Birth or baptism records for Juana, Mauricio, and Braulio.
 3. María Eugenia's baptism or marriage preliminaries.
 4. Any church or civil record that explicitly combines Carmen with Eugenia, or

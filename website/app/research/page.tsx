@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { ResearchTools } from "../research-tools";
 import {
   familyCouples,
@@ -28,13 +29,13 @@ export default function ResearchPage() {
   return (
     <main className="research-page">
       <header className="site-header research-header">
-        <a className="wordmark" href="/" aria-label="Return to the family summary">
+        <Link className="wordmark" href="/" aria-label="Return to the family summary">
           <span>V</span>
           <i />
           <span>R</span>
-        </a>
+        </Link>
         <nav aria-label="Research navigation">
-          <a href="/">Public summary</a>
+          <Link href="/">Public summary</Link>
           <a href="#families">Family groups</a>
           <a href="#conflicts">Conflicts</a>
           <a href="#docket">Open questions</a>
@@ -52,7 +53,7 @@ export default function ResearchPage() {
           already tried, and the records we are looking for next. Details about
           living relatives and sensitive identifiers are not published.
         </p>
-        <a href="/">← Return to the family summary</a>
+        <Link href="/">← Return to the family summary</Link>
       </section>
 
       <section className="research-section" id="method">
@@ -148,6 +149,29 @@ export default function ResearchPage() {
                 </ul>
                 <p>{family.childNote}</p>
               </div>
+              {family.id === "sotero-rodriguez" && (
+                <figure className="family-record">
+                  <a
+                    href="/records/1910-sotero-maria-household.jpg"
+                    target="_blank"
+                  >
+                    <img
+                      src="/records/1910-sotero-maria-household.jpg"
+                      alt="1910 Puerto Rico census lines for Sotero Vázquez, María Rodríguez, Braulio, and Francisco in Anton Ruiz, Humacao"
+                    />
+                  </a>
+                  <figcaption>
+                    <strong>1910 · Anton Ruiz, Humacao</strong>
+                    <span>
+                      Sotero and María with sons Braulio and Francisco. The
+                      sheet reports a 34-year marriage and seven children born,
+                      seven living—details that confirm the household even
+                      though Sotero’s reported age conflicts with his death act.
+                    </span>
+                    <small>U.S. census · ED 822 · sheet 8A · lines 6–9</small>
+                  </figcaption>
+                </figure>
+              )}
             </article>
           ))}
         </div>
@@ -450,7 +474,7 @@ export default function ResearchPage() {
         <p>
           Vazquez–Reyes research notes
           <br />
-          <a href="/">Return to the public summary</a>
+          <Link href="/">Return to the public summary</Link>
         </p>
         <p className="footer-note">
           Canonical files remain in the public repository.

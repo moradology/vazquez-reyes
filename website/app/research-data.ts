@@ -140,6 +140,13 @@ export const sources = [
     grade: "Original parish register · date bracketed",
   },
   {
+    id: "census-1910-sotero",
+    label: "1910 census: Sotero Vázquez Rodríguez household",
+    detail: "Anton Ruiz, Humacao, lines 6–9: Sotero, 63; wife María Rodríguez y Díaz, 66; sons Braulio, 18, and Francisco, 14. The 34-year marriage and seven children born and living match the 1875 marriage and 1916 child list, confirming the household while creating a major age conflict.",
+    href: "https://www.ancestry.com/search/collections/7884/records/31747267",
+    grade: "Original enumeration · age conflict retained",
+  },
+  {
     id: "victorio-baptism",
     label: "1881 baptism: Victorio Vázquez Rodríguez",
     detail: "Born 22 December 1880 and baptized 27 February 1881 in Yabucoa; parents Sotero Vázquez and María Eugenia Rodríguez; both sets of grandparents named.",
@@ -553,7 +560,7 @@ export const familyCouples = [
     people: [
       {
         name: "Sotero Vázquez Rodríguez",
-        birth: "About 1860 · Yabucoa, Puerto Rico · death-age estimate",
+        birth: "Yabucoa · reported ages imply about 1847 or about 1860",
         death: "31 May 1916 · Humacao, Puerto Rico",
       },
       {
@@ -572,7 +579,7 @@ export const familyCouples = [
       "Francisco — born 3 Jun 1892; mother recorded as Eugenia",
     ],
     childNote:
-      "Sotero’s death names all seven children and wife Carmen. María Eugenia’s 1933 death names her as Sotero’s widow and their son Francisco as informant. The same husband, child cluster, and recurring Rodríguez grandparents make Carmen, Eugenia, and María Eugenia strong name variants for one woman, but the profiles remain separate until a record explicitly joins those given names.",
+      "The 1910 census records Sotero and María with sons Braulio and Francisco, a 34-year marriage, and seven children born and living. Sotero’s 1916 death names all seven children and wife Carmen. María Eugenia’s 1933 death names her as Sotero’s widow and their son Francisco as informant. The same husband, child cluster, and recurring Rodríguez grandparents make Carmen, Eugenia, and María Eugenia strong name variants for one woman, but the profiles remain separate until a record explicitly joins those given names.",
   },
   {
     id: "atilano-juana",
@@ -765,8 +772,8 @@ export const openCases = [
   {
     id: "VR-09",
     title: "Sotero’s baptism and age",
-    conflict: "Sotero’s 1916 death reports age 56, implying about 1860, but that makes his 1875 marriage unusually early. Every image in the Yabucoa item containing baptisms through 1856 was reviewed without a defensible match. An 1861 Sotero Lebrón and an 1898 Sotero whose parents were Tomás and Rosa were captured and rejected.",
-    next: "Inspect the remaining 1857–1860 Yabucoa baptism coverage using Atilano, Juana Regina, Máximo, Josefa Rivera, Andrés, and Francisca Díaz as anchors.",
+    conflict: "The securely identified 1910 household reports Sotero as 63, implying about 1847; his 1916 death reports 56, implying about 1860. The earlier estimate predates his parents’ 1849 marriage, while the later makes him about 15 at his own 1875 marriage. The Yabucoa item for 1848–1856 was reviewed image by image without a defensible match.",
+    next: "Seek an unfilmed register, duplicate parish book, diocesan copy, archive inventory, or neighboring-parish baptism for the collection gaps in 1843–1847 and 1857–1860.",
   },
   {
     id: "VR-10",
@@ -799,7 +806,7 @@ export const negativeSearches = [
   "The New York State death index returned no match, but that index does not reliably cover New York City and cannot settle the question.",
   "No Rafael memorial matching the shared plot was found on Find a Grave; the official cemetery database remains the stronger burial source.",
   "Sotero’s death, several child records, and María Eugenia’s own 1933 death strongly favor Carmen, Eugenia, and María Eugenia as one woman’s name variants, but no original yet states that bridge explicitly.",
-  "All 146 images in the Yabucoa item containing baptisms through 1856 were manually reviewed without a defensible Sotero match. FamilySearch mislabels the item as 1927–1957; a screenshot preserves the discrepancy. The remaining priority is 1857–1860.",
+  "All 146 images in the Yabucoa baptism item for 1848–1856 were manually reviewed without a defensible Sotero match. FamilySearch identifies the preceding item as 1838–1842 and has no baptism item after 1856, leaving 1843–1847 and 1857–1860 as collection gaps rather than remaining pages.",
   "An 1861 baptism of Sotero Lebrón is not Sotero Vázquez Rodríguez. The full page is retained as a rejected candidate.",
   "An 1898 death for a roughly 50-year-old Sotero Vázquez belongs to a son of Tomás and Rosa, not the son of Atilano and Juana. The image is retained as a rejected same-name candidate.",
   "An 1897 burial indexed as male Eladia Vázquez and attached to a Juan Vázquez tree profile has conflicting name, age, and identity signals. It is retained but not added as a confirmed child.",
@@ -1008,6 +1015,14 @@ export const updates = [
   {
     date: "24 Jul 2026",
     text: "Completed an image-by-image scan of the mislabeled Yabucoa baptism item through 1856; no defensible Sotero baptism appeared, and every same-name candidate image was retained.",
+  },
+  {
+    date: "24 Jul 2026",
+    text: "Captured the original 1910 Sotero–María household. Its marriage duration and seven-child count confirm the family, while Sotero’s age creates an unresolved about-1847 versus about-1860 birth conflict.",
+  },
+  {
+    date: "24 Jul 2026",
+    text: "Mapped the Yabucoa film gap: item 2 covers 1838–1842 and item 3 covers 1848–1856, so both age-based baptism windows require another register or archive copy.",
   },
   {
     date: "24 Jul 2026",

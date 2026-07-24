@@ -125,6 +125,11 @@ states that connection directly.
 - Sotero died in Humacao on **31 May 1916**, age 56, of a cerebral hemorrhage.
   His act names wife **Carmen Rodríguez** and seven living children:
   **Juan; Juana; Victorio; Carmelo; Mauricio; Braulio; and Francisco**.
+- The original **1910 Anton Ruiz census** records **Sotero Vázquez y
+  Rodríguez, age 63; María Rodríguez y Díaz de Vázquez, age 66; and sons
+  Braulio, 18, and Francisco, 14**. Its 34-year marriage and seven children
+  born, seven living agree with the 1875 marriage and 1916 child list,
+  securely identifying the household.
 - Across the records, the mother's father is consistently **Cristóbal
   Rodríguez**. Her mother appears as **Leonor or Leonarda Díaz, María Pacheco,
   Leonarda Pacheco, and María Leonarda Díaz**. The matching husband,
@@ -138,8 +143,10 @@ states that connection directly.
   **Francisco Vázquez** was the informant. The reported age, 97 years 7 months,
   conflicts with census-based estimates and is not treated as an exact birth
   date.
-- Sotero's death age implies birth about **1860** in Yabucoa. That estimate
-  conflicts with the timing of his 1875 marriage; his baptism remains unfound.
+- Sotero's reported ages conflict. The 1910 census implies birth about
+  **1847**; the 1916 death act implies about **1860**. The earlier estimate
+  predates his parents' documented 1849 marriage, while the later makes him
+  about 15 at his own 1875 marriage. Neither is accepted as exact.
 - Baptisms or civil births for Juana, Mauricio, and Braulio, Sotero's baptism,
   and a record explicitly joining Carmen with Eugenia remain the next tests.
 
@@ -171,9 +178,12 @@ marriage and death, and a wider Vázquez sibling cluster.
 - The reviewed children of Atilano and Juana Regina now include **Sotero,
   Francisca, María Isidra, and María Balbina**. María Eugenia, born in 1879,
   was Atilano's daughter with Juana Paula.
-- All 146 local images in the mislabeled Yabucoa baptism item containing
-  nineteenth-century entries through 1856 were manually reviewed. No defensible
-  baptism for Sotero appeared. The remaining priority is the 1857–1860 gap.
+- All 146 local images in the mislabeled Yabucoa baptism item covering
+  **1848–1856** were manually reviewed. No defensible baptism for Sotero
+  appeared. FamilySearch identifies the preceding item as **1838–1842**, and
+  this image group has no baptism item after 1856. The target years
+  **1843–1847 and 1857–1860 are collection gaps**, not remaining pages on this
+  film.
 - Focused searches did not isolate Juana Regina's death, and the reviewed
   Yabucoa burial item begins in July 1871, after her entire 1863–1870 death
   window. That is a collection-coverage gap, not a negative proof.
@@ -244,10 +254,11 @@ This couple were Carlina's parents and Rafael's maternal grandparents.
 ## Highest-value next records
 
 1. Rafael's baptism or a fully legible certified birth record.
-2. Sotero's baptism in the remaining 1857–1860 Yabucoa coverage; Atilano's
-   Juncos baptism; Juana Regina's baptism and an earlier burial volume or
-   duplicate covering her exact death; Máximo and Josefa's marriage; and birth
-   or baptism records for Juana, Mauricio, and Braulio.
+2. Sotero's baptism in an unfilmed register, duplicate, diocesan copy, or
+   neighboring parish covering 1843–1847 or 1857–1860; Atilano's Juncos
+   baptism; Juana Regina's baptism and an earlier burial volume or duplicate
+   covering her exact death; Máximo and Josefa's marriage; and birth or baptism
+   records for Juana, Mauricio, and Braulio.
 3. The original Manhattan marriage certificate, not only its index.
 4. A duplicate register, sacramental certificate, alternate filming, or parish
    archive lookup for Gurabo book 15, folio 18 verso, sufficient to identify

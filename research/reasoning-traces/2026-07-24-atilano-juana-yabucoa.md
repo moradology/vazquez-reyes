@@ -155,6 +155,27 @@ for Sotero and for the anchor names Atilano, Juana Regina, Máximo, Josefa
 Rivera, Andrés, and Francisca Díaz. No defensible baptism for Sotero Vázquez
 Rodríguez appeared.
 
+The original 1910 census now changes the age problem. Sotero is recorded in
+Anton Ruiz, Humacao, as age 63 with wife María and sons Braulio and Francisco.
+The household also reports a 34-year first marriage and seven children born,
+seven living; those details match the 1875 marriage and the seven children
+named in Sotero's 1916 death. The household identity is secure even though the
+reported age conflicts with the death act:
+
+- age 63 in 1910 implies birth around **1847**;
+- age 56 at death in 1916 implies birth around **1860**.
+
+The 1847 estimate would predate Atilano and Juana's documented 1849 marriage,
+so it cannot be accepted literally without a baptism or evidence of a
+premarital birth. The death-based estimate would make Sotero about 15 at his
+own 1875 marriage. Both are retained as conflicting reports.
+
+FamilySearch's own Information panel identifies item 2 as Yabucoa baptisms
+**1838–1842**. Item 3 contains **1848–1856**. The DGS therefore omits both
+**1843–1847**, the window suggested by the census, and all baptisms after
+**1856**, including the window suggested by the death act. This is a
+collection-coverage gap, not proof that no baptism existed.
+
 Two same-name records were retained without being forced into the family:
 
 - an 1861 baptism belongs to **Sotero Lebrón**, not Sotero Vázquez;
@@ -175,8 +196,10 @@ chronology. The image is preserved, but no new child is added from it.
 3. Find Máximo and Josefa's marriage before 16 August 1806.
 4. Locate an earlier Yabucoa burial book, duplicate, or diocesan copy covering
    July 1863 through February 1870 for Juana; the reviewed item starts in 1871.
-5. Continue the manual Sotero baptism search in the remaining 1857–1860
-   coverage. Item 3 through 1856 has now been fully scanned.
+5. Seek unfilmed Yabucoa registers, duplicate parish books, diocesan copies,
+   archive inventories, or neighboring-parish baptisms for both missing
+   windows: 1843–1847 and 1857–1860. Item 3 for 1848–1856 has been fully
+   scanned; there is no remaining baptism section on this DGS.
 6. Resolve Tomasa's age and identity.
 7. Resolve Desiderio Rodríguez versus Desiderio Delgado.
 

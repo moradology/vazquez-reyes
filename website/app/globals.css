@@ -1411,6 +1411,62 @@ a {
   max-width: 900px;
 }
 
+.family-record {
+  align-items: start;
+  border: 1px solid var(--line);
+  border-top: 0;
+  display: grid;
+  gap: 28px;
+  grid-template-columns: minmax(0, 1.45fr) minmax(230px, 0.55fr);
+  margin: 0;
+  padding: 28px;
+}
+
+.family-record > a {
+  background: var(--forest-deep);
+  display: block;
+  overflow: hidden;
+}
+
+.family-record img {
+  display: block;
+  filter: sepia(0.08) contrast(1.05);
+  height: auto;
+  transition: filter 180ms ease, transform 350ms ease;
+  width: 100%;
+}
+
+.family-record a:hover img {
+  filter: sepia(0) contrast(1.09);
+  transform: scale(1.012);
+}
+
+.family-record figcaption {
+  border-left: 4px solid var(--rust);
+  display: grid;
+  gap: 10px;
+  padding: 8px 0 0 20px;
+}
+
+.family-record figcaption strong {
+  font-family: var(--font-display), serif;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.family-record figcaption span {
+  font-size: 11px;
+  line-height: 1.65;
+}
+
+.family-record figcaption small {
+  color: rgba(23, 42, 38, 0.58);
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
 .research-dark {
   background: var(--forest);
   color: var(--paper);
@@ -1697,6 +1753,16 @@ footer p {
 
   .record-grid .record-featured {
     grid-template-columns: 1fr;
+  }
+
+  .family-record {
+    grid-template-columns: 1fr;
+  }
+
+  .family-record figcaption {
+    border-left: 0;
+    border-top: 4px solid var(--rust);
+    padding: 18px 0 0;
   }
 
   .record-grid .record-featured figcaption {

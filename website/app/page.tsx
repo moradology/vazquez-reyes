@@ -449,8 +449,9 @@ export default function Home() {
               <span data-person-id="person.francisco-vazquez-rodriguez">
                 Francisco
               </span>
-              . The family later lived in Humacao. Records call their mother
-              María Eugenia, Eugenia, and{" "}
+              . By 1910, Sotero and María were living in Anton Ruiz, Humacao,
+              with Braulio and Francisco still at home. Records call their
+              mother María Eugenia, Eugenia, and{" "}
               <span data-person-id="person.carmen-rodriguez">
                 Carmen Rodríguez
               </span>
