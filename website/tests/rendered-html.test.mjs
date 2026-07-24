@@ -139,7 +139,7 @@ test("uses one predictable primary navigation across every page type", async () 
     const response = await render(path);
     const html = await response.text();
     const nav = html.match(
-      /<nav class="primary-nav" aria-label="Primary navigation">(.*?)<\/nav>/s,
+      /<nav class="primary-nav" aria-label="Main sections">(.*?)<\/nav>/s,
     )?.[1];
 
     assert.ok(nav, `primary navigation missing on ${path}`);
@@ -154,6 +154,8 @@ test("uses one predictable primary navigation across every page type", async () 
         `<a(?=[^>]*href="${currentHref.replaceAll("/", "\\/")}")[^>]*aria-current="page"`,
       ),
     );
+    assert.match(html, /<header class="site-header site-header-(?:light|dark)">/);
+    assert.match(html, />Vazquez–Reyes<\/strong>/);
   }
 });
 

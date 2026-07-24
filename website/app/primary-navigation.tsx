@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-type PrimaryPage = "story" | "people" | "presentation" | "research";
+export type PrimaryPage = "story" | "people" | "presentation" | "research";
 
 const primaryLinks: Array<{
   id: PrimaryPage;
@@ -15,7 +15,7 @@ const primaryLinks: Array<{
 
 export function PrimaryNavigation({ current }: { current: PrimaryPage }) {
   return (
-    <nav className="primary-nav" aria-label="Primary navigation">
+    <nav className="primary-nav" aria-label="Main sections">
       {primaryLinks.map((link) => (
         <Link
           aria-current={link.id === current ? "page" : undefined}

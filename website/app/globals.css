@@ -40,14 +40,23 @@ a {
 
 .site-header {
   align-items: center;
+  backdrop-filter: blur(14px);
+  background: rgba(241, 236, 223, 0.94);
+  border-bottom: 1px solid var(--line);
   display: flex;
   justify-content: space-between;
   left: 0;
-  padding: 24px clamp(24px, 5vw, 72px);
-  position: absolute;
+  padding: 12px clamp(20px, 4vw, 60px);
+  position: sticky;
   right: 0;
   top: 0;
-  z-index: 10;
+  z-index: 30;
+}
+
+.site-header-dark {
+  background: rgba(13, 39, 33, 0.96);
+  border-bottom-color: rgba(241, 236, 223, 0.2);
+  color: var(--paper);
 }
 
 .wordmark {
@@ -58,6 +67,16 @@ a {
   font-weight: 600;
   gap: 7px;
   text-decoration: none;
+}
+
+.site-wordmark strong {
+  font-family: var(--font-sans), sans-serif;
+  font-size: 9px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  margin-left: 5px;
+  text-transform: uppercase;
 }
 
 .wordmark i {
@@ -74,9 +93,77 @@ a {
   gap: clamp(16px, 2.5vw, 36px);
 }
 
+.site-header-actions {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  min-width: 126px;
+}
+
+.display-menu {
+  position: relative;
+}
+
+.display-menu summary {
+  border: 1px solid var(--line);
+  cursor: pointer;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  list-style: none;
+  padding: 7px 9px;
+  text-transform: uppercase;
+}
+
+.display-menu summary::-webkit-details-marker {
+  display: none;
+}
+
+.display-menu summary::after {
+  content: " +";
+}
+
+.display-menu[open] summary::after {
+  content: " −";
+}
+
+.display-menu[open] summary,
+.display-menu summary:hover {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.site-header-dark .display-menu summary {
+  border-color: rgba(241, 236, 223, 0.35);
+}
+
+.site-header-dark .display-menu[open] summary,
+.site-header-dark .display-menu summary:hover {
+  background: var(--paper);
+  color: var(--ink);
+}
+
 .research-tools {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  box-shadow: 0 12px 35px rgba(23, 42, 38, 0.14);
   display: flex;
   gap: 4px;
+  padding: 8px;
+  position: absolute;
+  right: 0;
+  top: calc(100% + 7px);
+  white-space: nowrap;
+}
+
+.research-tools > span {
+  align-self: center;
+  color: var(--ink);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  padding: 0 5px 0 2px;
+  text-transform: uppercase;
 }
 
 .research-tools button {
@@ -114,6 +201,11 @@ a {
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 7px;
+}
+
+.site-header-dark .primary-nav a:hover,
+.site-header-dark .primary-nav a[aria-current="page"] {
+  color: var(--gold);
 }
 
 .hero {
@@ -2631,8 +2723,8 @@ footer p {
     white-space: nowrap;
   }
 
-  .research-tools button:nth-child(-n + 3) {
-    display: none;
+  .site-header-dark .primary-nav {
+    border-top-color: rgba(241, 236, 223, 0.2);
   }
 
   .family-intro,
@@ -2792,6 +2884,17 @@ footer p {
   .plot-stamp {
     margin: auto;
     max-width: 520px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 520px) {
+  .site-wordmark strong {
+    display: none;
+  }
+
+  .primary-nav {
+    justify-content: space-between;
     width: 100%;
   }
 }
@@ -3575,39 +3678,17 @@ footer p {
   scroll-snap-type: y mandatory;
 }
 
-.presentation-toolbar {
+.presentation-actions {
   align-items: center;
-  background: rgba(13, 39, 33, 0.94);
-  color: var(--paper);
   display: flex;
   font-size: 9px;
   font-weight: 700;
-  justify-content: space-between;
-  left: 0;
   letter-spacing: 0.12em;
-  padding: 15px 24px;
-  position: fixed;
-  right: 0;
   text-transform: uppercase;
-  top: 0;
-  z-index: 20;
-}
-
-.presentation-toolbar a {
-  text-decoration: none;
-}
-
-.presentation-toolbar > div {
-  align-items: center;
-  display: flex;
   gap: 16px;
 }
 
-.presentation-toolbar .primary-nav a[aria-current="page"] {
-  color: var(--gold);
-}
-
-.presentation-toolbar button {
+.presentation-actions button {
   background: transparent;
   border: 1px solid rgba(241, 236, 223, 0.45);
   color: inherit;
@@ -4120,31 +4201,14 @@ footer p {
     width: 1px;
   }
 
-  .presentation-toolbar {
-    flex-wrap: wrap;
-    gap: 12px;
-    padding: 12px 16px;
-  }
-
-  .presentation-toolbar .primary-nav {
-    border-top: 1px solid rgba(241, 236, 223, 0.2);
-    flex-basis: 100%;
-    gap: 18px;
-    justify-content: space-between;
-    order: 3;
-    overflow-x: auto;
-    padding-top: 10px;
-    white-space: nowrap;
-  }
-
-  .presentation-toolbar > div span {
+  .presentation-actions span {
     display: none;
   }
 }
 
 @media print {
   .person-header,
-  .presentation-toolbar,
+  .presentation-deck > .site-header,
   .slide-nav {
     display: none;
   }

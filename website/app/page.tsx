@@ -1,13 +1,12 @@
 import Link from "next/link";
-import { ResearchTools } from "./research-tools";
 import { sources } from "./research-data";
 import { FamilyTrees } from "./family-tree";
 import { OriginFrontier } from "./origin-frontier";
-import { PrimaryNavigation } from "./primary-navigation";
 import {
   PuertoRicoMap,
   PuertoRicoMapDefinitions,
 } from "./puerto-rico-map";
+import { SiteHeader } from "./site-header";
 
 const principalSources = sources.filter((source) =>
   [
@@ -23,15 +22,7 @@ const principalSources = sources.filter((source) =>
 export default function Home() {
   return (
     <main>
-      <header className="site-header">
-        <a className="wordmark" href="#top" aria-label="Vazquez Reyes family history home">
-          <span>V</span>
-          <i />
-          <span>R</span>
-        </a>
-        <PrimaryNavigation current="story" />
-        <ResearchTools />
-      </header>
+      <SiteHeader current="story" />
 
       <section className="hero" id="top">
         <div className="hero-kicker">The Vazquez–Reyes family</div>

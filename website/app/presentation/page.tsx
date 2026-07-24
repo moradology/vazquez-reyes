@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { PrimaryNavigation } from "../primary-navigation";
+import { SiteHeader } from "../site-header";
 
 export const metadata = {
   title: "Family Presentation · Vazquez–Reyes Family History",
@@ -64,18 +64,18 @@ const totalSlides = 13;
 export default function PresentationPage() {
   return (
     <main className="presentation-deck" data-presentation>
-      <header className="presentation-toolbar">
-        <Link className="presentation-mark" href="/" aria-label="Vazquez Reyes family history home">
-          V / R
-        </Link>
-        <PrimaryNavigation current="presentation" />
-        <div>
+      <SiteHeader
+        current="presentation"
+        variant="dark"
+        actions={
+          <div className="presentation-actions">
           <span>Family evidence walkthrough</span>
           <button type="button" data-presentation-fullscreen>
-            Present full screen
+            Present
           </button>
-        </div>
-      </header>
+          </div>
+        }
+      />
 
       <section className="deck-slide title-slide" data-slide id="slide-01">
         <div className="slide-copy">

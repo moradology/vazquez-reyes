@@ -1,6 +1,4 @@
 import Link from "next/link";
-import { PrimaryNavigation } from "../primary-navigation";
-import { ResearchTools } from "../research-tools";
 import {
   familyCouples,
   nameVariants,
@@ -9,6 +7,7 @@ import {
   sources,
   updates,
 } from "../research-data";
+import { SiteHeader } from "../site-header";
 
 function Grade({
   kind,
@@ -29,15 +28,7 @@ export const metadata = {
 export default function ResearchPage() {
   return (
     <main className="research-page">
-      <header className="site-header research-header">
-        <Link className="wordmark" href="/" aria-label="Return to the family summary">
-          <span>V</span>
-          <i />
-          <span>R</span>
-        </Link>
-        <PrimaryNavigation current="research" />
-        <ResearchTools />
-      </header>
+      <SiteHeader current="research" />
 
       <section className="research-hero">
         <p className="hero-kicker">Updated July 2026</p>

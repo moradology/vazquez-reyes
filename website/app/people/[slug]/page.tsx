@@ -5,12 +5,11 @@ import {
   type LedgerValue,
   peopleProfiles,
 } from "../../people-data";
-import { PrimaryNavigation } from "../../primary-navigation";
 import {
   PuertoRicoMapDefinitions,
   PuertoRicoPersonMap,
 } from "../../puerto-rico-map";
-import { ResearchTools } from "../../research-tools";
+import { SiteHeader } from "../../site-header";
 
 const profilesById = new Map(
   peopleProfiles.map((profile) => [profile.id, profile]),
@@ -202,15 +201,7 @@ export default async function PersonPage({
 
   return (
     <main className={`person-page person-page-${profile.tone}`}>
-      <header className="site-header person-header">
-        <Link className="wordmark" href="/" aria-label="Return to the family summary">
-          <span>V</span>
-          <i />
-          <span>R</span>
-        </Link>
-        <PrimaryNavigation current="people" />
-        <ResearchTools />
-      </header>
+      <SiteHeader current="people" />
 
       <section className="person-hero">
         <div>

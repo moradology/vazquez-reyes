@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { peopleProfiles } from "../people-data";
-import { PrimaryNavigation } from "../primary-navigation";
-import { ResearchTools } from "../research-tools";
+import { SiteHeader } from "../site-header";
 
 export const metadata = {
   title: "People · Vazquez–Reyes Family History",
@@ -37,15 +36,7 @@ export default function PeopleIndexPage() {
 
   return (
     <main className="people-index">
-      <header className="site-header people-header">
-        <Link className="wordmark" href="/" aria-label="Return to the family summary">
-          <span>V</span>
-          <i />
-          <span>R</span>
-        </Link>
-        <PrimaryNavigation current="people" />
-        <ResearchTools />
-      </header>
+      <SiteHeader current="people" />
 
       <section className="people-index-hero">
         <p className="hero-kicker">The people in the records</p>
