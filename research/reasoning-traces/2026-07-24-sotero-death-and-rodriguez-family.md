@@ -52,13 +52,27 @@ Rodríguez as his parents, and Cristóbal Rodríguez and María Leonarda Díaz a
 his maternal grandparents. The act says all four grandparents were deceased by
 23 June 1892.
 
+## María Eugenia Rodríguez Pacheco
+
+The original Humacao death act confirms that María Eugenia Rodríguez Pacheco,
+widow of Sotero Vázquez, died 6 July 1933 in barrio Anton Ruiz. It reports age
+97 years and 7 months, birth in Yabucoa, father Cristóbal Rodríguez, and mother
+María Pacheco. Her documented son Francisco Vázquez supplied the information.
+She was buried in the Humacao municipal cemetery on 7 July.
+
+The son-as-informant and widow statement make this a strong identity record,
+not merely a name-and-date candidate. The reported age conflicts sharply with
+the census-based age estimates and is retained as a conflict rather than used
+to assign an exact birth date.
+
 ## Working conclusion
 
 The same husband, recurring father Cristóbal Rodríguez, complementary
 Díaz/Pacheco forms for the maternal grandmother, chronological continuity, and
 matching child cluster strongly favor one woman recorded as Carmen, Eugenia,
-and María Eugenia. The likely maternal name may itself involve Díaz and
-Pacheco.
+María Eugenia, and María Eugenia Rodríguez Pacheco. The 1933 death now confirms
+Pacheco in María Eugenia's own name and calls her Sotero's widow, but it does
+not explain the Díaz/Pacheco forms for her mother.
 
 This is a strong same-person hypothesis, not a completed merge. No reviewed
 record explicitly says Carmen María Eugenia Rodríguez or María Leonarda Díaz
@@ -68,6 +82,6 @@ Pacheco. The separate profiles preserve that evidentiary gap.
 
 1. Sotero's baptism in Yabucoa.
 2. Birth or baptism records for Juana, Mauricio, and Braulio.
-3. The original 1933 María Eugenia death candidate.
+3. María Eugenia's baptism or marriage preliminaries.
 4. Any church or civil record that explicitly combines Carmen with Eugenia, or
    Díaz with Pacheco.

@@ -249,8 +249,10 @@ export default function ResearchPage() {
             <p role="cell">
               <b>Conclusion:</b> one woman using Carmen, Eugenia, and María
               Eugenia best explains the matching husband, children, and
-              grandparents. The profiles remain separate until an original
-              states the connection explicitly.
+              grandparents. Her 1933 death confirms María Eugenia Rodríguez
+              Pacheco as Sotero’s widow and names their son Francisco as
+              informant, but it still does not explicitly combine Carmen with
+              Eugenia. The profiles remain separate.
             </p>
           </article>
           <article role="row">

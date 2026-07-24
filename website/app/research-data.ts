@@ -168,6 +168,41 @@ export const sources = [
     grade: "Original civil record",
   },
   {
+    id: "maria-eugenia-death",
+    label: "1933 death: María Eugenia Rodríguez Pacheco",
+    detail: "Died 6 July 1933 in barrio Anton Ruiz, Humacao; widow of Sotero Vázquez. The act names parents Cristóbal Rodríguez and María Pacheco, and son Francisco Vázquez as informant. Its reported age conflicts with earlier records.",
+    href: "https://www.ancestry.com/search/collections/9100/records/685901",
+    grade: "Original civil record · age conflict retained",
+  },
+  {
+    id: "atilano-juana-godparents",
+    label: "1861 Yabucoa baptism: Atilano and Juana Regina as godparents",
+    detail: "José León Carrasquillo’s baptism names Atilano Vázquez and Juana Regina Rodríguez as godparents, independently placing the couple together in Yabucoa.",
+    href: "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSM8-3YFY?view=fullText&keywords=Atilano+V%C3%A1zquez%2CV%C3%A1zquez&lang=en&groupId=M9SP-ZXT",
+    grade: "Original parish register",
+  },
+  {
+    id: "maria-isidra-baptism",
+    label: "1863 baptism: María Isidra Vázquez Rodríguez",
+    detail: "Born 15 May and baptized 9 July 1863 in Yabucoa; daughter of Atilano Vázquez and Juana Regina Rodríguez. The entry names both sets of grandparents.",
+    href: "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSM8-3YG3?view=fullText&keywords=Juana+Regina+Rodr%C3%ADguez&lang=en&groupId=M9SP-ZXT",
+    grade: "Original parish register",
+  },
+  {
+    id: "maria-eugenia-vazquez-baptism",
+    label: "1879 baptism: María Eugenia, daughter of Atilano and Juana Paula",
+    detail: "Born 20 May and baptized 22 June 1879 in Yabucoa. The two-page entry repeats Atilano’s parents, Máximo Vázquez and Josefa Rivera, supporting the same Atilano with a later partner, Juana Paula de Santiago.",
+    href: "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSM8-399L-4?view=fullText&keywords=Atilano+V%C3%A1zquez%2CV%C3%A1zquez&lang=en&groupId=M9SP-ZFM",
+    grade: "Original parish register · two-page entry",
+  },
+  {
+    id: "maria-epifania-baptism",
+    label: "1884 baptism: María Epifania Delgado Vázquez",
+    detail: "The child’s mother was María Balbina Vázquez; maternal grandparents Atilano Vázquez and Juana Regina Rodríguez identify María Balbina as another daughter of that couple.",
+    href: "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSM8-3BQZ?view=fullText&keywords=Juana+Regina+Rodr%C3%ADguez&lang=en&groupId=M9SP-ZFQ",
+    grade: "Original parish register · two-page entry",
+  },
+  {
     id: "carlina-death",
     label: "1922 death: Carlina Perales Pérez",
     detail: "Humacao record naming husband Juan Vázquez, seven children including Rafael, and parents Marcelo Perales and Aurora Pérez.",
@@ -424,9 +459,9 @@ export const familyCouples = [
         death: "31 May 1916 · Humacao, Puerto Rico",
       },
       {
-        name: "María Eugenia Rodríguez",
-        birth: "Not settled · records imply roughly 1847–1858",
-        death: "A 1933 María Eugenia record is still a candidate",
+        name: "María Eugenia Rodríguez Pacheco",
+        birth: "Yabucoa · reported ages conflict from about 1835 to 1858",
+        death: "6 July 1933 · Humacao, Puerto Rico",
       },
     ],
     children: [
@@ -439,29 +474,99 @@ export const familyCouples = [
       "Francisco — born 3 Jun 1892; mother recorded as Eugenia",
     ],
     childNote:
-      "Sotero’s death names all seven children and wife Carmen. The same husband, child cluster, and recurring Rodríguez grandparents make Carmen, Eugenia, and María Eugenia strong name variants for one woman. The research profiles remain separate until a record states the bridge explicitly.",
+      "Sotero’s death names all seven children and wife Carmen. María Eugenia’s 1933 death names her as Sotero’s widow and their son Francisco as informant. The same husband, child cluster, and recurring Rodríguez grandparents make Carmen, Eugenia, and María Eugenia strong name variants for one woman, but the profiles remain separate until a record explicitly joins those given names.",
   },
   {
     id: "atilano-juana",
     branch: "Sotero’s parents",
-    couple: "Atilano Vázquez + Juana Rodríguez",
+    couple: "Atilano Vázquez + Juana Regina Rodríguez",
     status: "documented" as const,
-    connection: "The earliest confirmed Vázquez couple currently in the direct line",
+    connection: "Together in Yabucoa by 1861; parents of Sotero and at least two documented daughters",
     people: [
       {
         name: "Atilano Vázquez",
-        birth: "Yabucoa, Puerto Rico · exact date not yet found",
+        birth: "Puerto Rico · exact date and place not yet found",
         death: "Before 23 June 1892 · exact date not yet found",
       },
       {
-        name: "Juana Rodríguez",
-        birth: "Yabucoa, Puerto Rico · exact date not yet found",
+        name: "Juana Regina Rodríguez",
+        birth: "Puerto Rico · exact date and place not yet found",
         death: "Before 23 June 1892 · exact date not yet found",
       },
     ],
-    children: ["Sotero Vázquez"],
+    children: [
+      "Sotero Vázquez",
+      "María Isidra — born 15 May 1863",
+      "María Balbina — mother of María Epifania Delgado Vázquez by 1884",
+    ],
     childNote:
-      "Sotero’s 1875 marriage and Juan’s 1878 baptism independently name the same parent pair.",
+      "A 1861 baptism names the pair as godparents. María Isidra’s 1863 baptism and María Balbina’s daughter’s 1884 baptism document the two sisters separately from Sotero.",
+  },
+  {
+    id: "atilano-juana-paula",
+    branch: "Atilano’s later family",
+    couple: "Atilano Vázquez + Juana Paula de Santiago",
+    status: "documented" as const,
+    connection: "Recorded together as parents in 1879; a marriage has not yet been found",
+    people: [
+      {
+        name: "Atilano Vázquez",
+        birth: "Puerto Rico · exact date and place not yet found",
+        death: "Before 23 June 1892 · exact date not yet found",
+      },
+      {
+        name: "Juana Paula de Santiago",
+        birth: "Yabucoa, Puerto Rico · exact date not yet found",
+        death: "Not yet found",
+      },
+    ],
+    children: ["María Eugenia — born 20 May 1879"],
+    childNote:
+      "The child’s baptism repeats Atilano’s parents, Máximo Vázquez and Josefa Rivera, matching the 1863 record and supporting the same Atilano. It proves the parent pair, not their marital status.",
+  },
+  {
+    id: "maximo-josefa",
+    branch: "Atilano’s parents",
+    couple: "Máximo [Vázquez] + Josefa Rivera",
+    status: "documented" as const,
+    connection: "Parents of Atilano Vázquez",
+    people: [
+      {
+        name: "Máximo [Vázquez]",
+        birth: "Not yet found",
+        death: "Not yet found",
+      },
+      {
+        name: "Josefa Rivera",
+        birth: "Not yet found",
+        death: "Not yet found",
+      },
+    ],
+    children: ["Atilano Vázquez"],
+    childNote:
+      "The 1863 baptism gives Máximo without a surname. The 1879 baptism repeats the pair and explicitly writes Máximo Vázquez and Josefa Rivera.",
+  },
+  {
+    id: "andres-francisca",
+    branch: "Juana Regina’s parents",
+    couple: "Andrés [Rodríguez] + Francisca Díaz",
+    status: "documented" as const,
+    connection: "Parents of Juana Regina Rodríguez",
+    people: [
+      {
+        name: "Andrés [Rodríguez]",
+        birth: "Not yet found",
+        death: "Not yet found",
+      },
+      {
+        name: "Francisca Díaz",
+        birth: "Not yet found",
+        death: "Not yet found",
+      },
+    ],
+    children: ["Juana Regina Rodríguez"],
+    childNote:
+      "Their granddaughter María Isidra’s 1863 baptism gives Andrés without a surname and Francisca Díaz. Rodríguez is inherited from their daughter and remains bracketed.",
   },
   {
     id: "marcelino-aurora",
@@ -524,14 +629,14 @@ export const openCases = [
   {
     id: "VR-05",
     title: "Juan Vázquez’s mother",
-    conflict: "Juan’s records say Carmen or María Eugenia. Victorio, Juan del Carmen, Francisco, Braulio, and Sotero’s death now supply a matching husband, child cluster, and recurring grandparents. One woman using Carmen, Eugenia, and María Eugenia is the strongest explanation, but no record yet gives a combined name.",
-    next: "Find birth or baptism records for Juana, Mauricio, and Braulio, and a record that explicitly joins Carmen with Eugenia before merging the profiles.",
+    conflict: "Juan’s records say Carmen or María Eugenia. María Eugenia’s 1933 death confirms her as Sotero’s widow and names their son Francisco as informant. Together with the child records, one woman using Carmen, Eugenia, and María Eugenia remains the strongest explanation, but no record yet gives a combined name.",
+    next: "Find birth or baptism records for Juana, Mauricio, and Braulio, plus María Eugenia’s baptism or marriage preliminaries and a record that explicitly joins Carmen with Eugenia before merging the profiles.",
   },
   {
     id: "VR-06",
     title: "The Rodríguez maternal surname",
-    conflict: "The same maternal grandmother appears as Leonor or Leonarda Díaz, María Pacheco, Leonarda Pacheco, and María Leonarda Díaz. The forms may describe one woman with two surnames, but no reviewed record states the full combination.",
-    next: "Review María Eugenia’s original 1933 death candidate and seek her baptism or marriage preliminaries. Keep Díaz and Pacheco unmerged until an original bridges them.",
+    conflict: "The same maternal grandmother appears as Leonor or Leonarda Díaz, María Pacheco, Leonarda Pacheco, and María Leonarda Díaz. María Eugenia’s own 1933 death confirms the Pacheco form, but no reviewed record states the full Díaz–Pacheco combination.",
+    next: "Seek María Eugenia’s baptism or marriage preliminaries. Keep Díaz and Pacheco unmerged until an original bridges them.",
   },
   {
     id: "VR-07",
@@ -545,13 +650,19 @@ export const openCases = [
     conflict: "Angelina in 1930 may be Aurora in 1940; infant Tomás in 1930 may be Julio César in 1935 and 1940. Compatible ages are not enough to merge either pair.",
     next: "Find their Humacao birth, baptism, marriage, or death records using Mauricio Reyes and Carmen Díaz as parent anchors.",
   },
+  {
+    id: "VR-09",
+    title: "Sotero’s baptism and age",
+    conflict: "Sotero’s 1916 death reports age 56, implying about 1860, but that makes his 1875 marriage unusually early. Atilano and Juana Regina are together in an August 1861 record and have a documented daughter born in May 1863, but Sotero’s own baptism is still missing.",
+    next: "Manually inspect Yabucoa baptisms from roughly 1847 through 1861 using Atilano, Juana Regina, Máximo, Josefa Rivera, Andrés, and Francisca Díaz as anchors.",
+  },
 ];
 
 export const negativeSearches = [
   "No confident Cruz or Rafael match appeared in the reviewed New Jersey death-index image sets for 1984 and 1998.",
   "The New York State death index returned no match, but that index does not reliably cover New York City and cannot settle the question.",
   "No Rafael memorial matching the shared plot was found on Find a Grave; the official cemetery database remains the stronger burial source.",
-  "Sotero’s death and four child records were found. They strongly favor Carmen, Eugenia, and María Eugenia as one woman’s name variants, but no original yet states that bridge explicitly.",
+  "Sotero’s death, several child records, and María Eugenia’s own 1933 death strongly favor Carmen, Eugenia, and María Eugenia as one woman’s name variants, but no original yet states that bridge explicitly.",
   "Sotero’s baptism was not found in the reviewed full-text Yabucoa film. An apparent 1865 candidate was rejected as OCR or name noise; the baptism books still need manual inspection.",
   "A 1942 death for Aurora Monserrate Pérez belongs to the widow of Marcelo Pérez, not the wife of Marcelino Perales; it was captured and rejected.",
   "No Pastora Reyes entry appears in the reviewed Gurabo baptism-index pages. A Cruz Reyes entry points to book 15, folio 18 verso, but the damaged register image does not expose the child or parents.",
@@ -597,6 +708,16 @@ export const nameVariants = [
     person: "Reyes García Olivero",
     forms: "Reyes García Olivero · María de Reyes García",
     conclusion: "Both forms refer to Lope Díaz’s wife. Her mother is recorded as Carmen Olivero on the death act and Dolores Olivero on Secundino’s baptism; that conflict remains open.",
+  },
+  {
+    person: "Juana Regina Rodríguez",
+    forms: "Juana Regina Rodríguez · Juana Rodríguez",
+    conclusion: "The 1861, 1863, and 1884 parish entries supply Regina. Later records naming her as Sotero’s mother usually shorten the name to Juana Rodríguez.",
+  },
+  {
+    person: "Two different María Eugenias",
+    forms: "María Eugenia Rodríguez Pacheco · María Eugenia Vázquez de Santiago",
+    conclusion: "Sotero’s wife and widow is María Eugenia Rodríguez Pacheco. A separate child named María Eugenia was born in 1879 to Atilano Vázquez and Juana Paula de Santiago; she was Sotero’s likely half-sister, not his wife.",
   },
 ];
 
@@ -688,5 +809,17 @@ export const updates = [
   {
     date: "24 Jul 2026",
     text: "Captured original records for Victorio, Juan del Carmen, and Francisco. Together they make the Carmen, Eugenia, and María Eugenia same-person explanation strong but not yet explicit.",
+  },
+  {
+    date: "24 Jul 2026",
+    text: "Confirmed María Eugenia Rodríguez Pacheco’s 1933 death in Humacao; the act calls her Sotero’s widow and names their son Francisco as informant.",
+  },
+  {
+    date: "24 Jul 2026",
+    text: "Found Atilano Vázquez and Juana Regina Rodríguez together in 1861 and their daughter María Isidra’s 1863 baptism, which names both sets of grandparents.",
+  },
+  {
+    date: "24 Jul 2026",
+    text: "Identified María Balbina as another daughter of Atilano and Juana Regina, and a later 1879 daughter of Atilano with Juana Paula de Santiago.",
   },
 ];

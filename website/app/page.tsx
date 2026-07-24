@@ -454,12 +454,62 @@ export default function Home() {
               <span data-person-id="person.carmen-rodriguez">
                 Carmen Rodríguez
               </span>
-              . Sotero was a son of{" "}
-              <span data-person-id="person.atilano-vazquez">Atilano Vázquez</span>{" "}
-              and{" "}
-              <span data-person-id="person.juana-rodriguez">Juana Rodríguez</span>.
+              . Sotero died there in 1916. María Eugenia died there in 1933;
+              their son Francisco gave the information for her death record.
             </p>
             <a href="/research#sotero-rodriguez">See this family →</a>
+          </article>
+          <article>
+            <span className="story-when">A generation earlier in Yabucoa</span>
+            <h3>
+              <span data-person-id="person.atilano-vazquez">Atilano Vázquez</span>
+              {" + "}
+              <span data-person-id="person.juana-rodriguez">
+                Juana Regina Rodríguez
+              </span>
+            </h3>
+            <p>
+              Atilano and Juana Regina appear together in Yabucoa by 1861.
+              Their known children include Sotero,{" "}
+              <span data-person-id="person.maria-isidra-vazquez-rodriguez">
+                María Isidra
+              </span>
+              , born in 1863, and{" "}
+              <span data-person-id="person.maria-balbina-vazquez-rodriguez">
+                María Balbina
+              </span>
+              . Atilano was a son of{" "}
+              <span data-person-id="person.maximo-vazquez">
+                Máximo Vázquez
+              </span>{" "}
+              and{" "}
+              <span data-person-id="person.josefa-rivera">Josefa Rivera</span>.
+              Juana Regina was a daughter of{" "}
+              <span data-person-id="person.andres-rodriguez">
+                Andrés
+              </span>{" "}
+              and <span data-person-id="person.francisca-diaz">Francisca Díaz</span>.
+            </p>
+            <a href="/research#atilano-juana">See this family →</a>
+          </article>
+          <article>
+            <span className="story-when">Atilano’s later family</span>
+            <h3>
+              <span data-person-id="person.atilano-vazquez">Atilano Vázquez</span>
+              {" + "}
+              <span data-person-id="person.juana-paula-de-santiago">
+                Juana Paula de Santiago
+              </span>
+            </h3>
+            <p>
+              Their daughter{" "}
+              <span data-person-id="person.maria-eugenia-vazquez-de-santiago">
+                María Eugenia
+              </span>{" "}
+              was born in Yabucoa in 1879. She was a different María Eugenia
+              from Sotero’s wife and was likely Sotero’s half-sister.
+            </p>
+            <a href="/research#atilano-juana-paula">See this family →</a>
           </article>
           <article>
             <span className="story-when">Carlina’s parents</span>

@@ -45,9 +45,14 @@ The marriage and Juan's baptism independently confirm Atilano Vázquez and Juana
 - Sotero's marriage: María Eugenia Rodríguez, daughter of Cristóbal Rodríguez and Leonor Díaz.
 - Juan's 1951 death: María Eugenia Rodríguez.
 - The 1910 census uses María Rodríguez y Díaz.
-- A 1933 death candidate uses María Eugenia Rodríguez Pacheco and names María Pacheco as mother.
+- María Eugenia's reviewed 1933 death act uses the full form María Eugenia
+  Rodríguez Pacheco, calls her Sotero Vázquez's widow, names María Pacheco as
+  her mother, and was reported by son Francisco.
 
-These records could describe one woman under compound or alternate names, sisters or half-sisters, or one or more reporting errors. The project does not merge the women or their mothers.
+The widow and son-as-informant details strongly favor one woman under alternate
+given names. No reviewed record explicitly combines Carmen with Eugenia or
+explains the Díaz and Pacheco forms, so the project does not merge the profiles
+or their mothers.
 
 ## Archived images
 

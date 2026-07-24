@@ -132,12 +132,41 @@ states that connection directly.
   explanation for the Carmen/Eugenia/María Eugenia forms. No record yet gives
   the combined names, so neither the women nor Díaz and Pacheco are silently
   merged.
+- The reviewed death act for **María Eugenia Rodríguez Pacheco** confirms that
+  Sotero's widow died in barrio Anton Ruiz, Humacao, on **6 July 1933**. It
+  names parents **Cristóbal Rodríguez and María Pacheco**; her documented son
+  **Francisco Vázquez** was the informant. The reported age, 97 years 7 months,
+  conflicts with census-based estimates and is not treated as an exact birth
+  date.
 - Sotero's death age implies birth about **1860** in Yabucoa. That estimate
   conflicts with the timing of his 1875 marriage; his baptism remains unfound.
-- María Eugenia's reported ages imply roughly **1847–1858**. A **6 July 1933**
-  death remains a candidate, not a merged fact.
 - Baptisms or civil births for Juana, Mauricio, and Braulio, Sotero's baptism,
-  and a full review of María Eugenia's 1933 death candidate are the next tests.
+  and a record explicitly joining Carmen with Eugenia remain the next tests.
+
+### Atilano Vázquez and Juana Regina Rodríguez
+
+The parish register now supplies records from their own generation and extends
+both ancestral lines.
+
+- A Yabucoa baptism dated **25 August 1861** names **Atilano Vázquez and Juana
+  Regina Rodríguez** as godparents. The act does not claim they were related to
+  the child; it independently places the couple together in Yabucoa.
+- Their daughter **María Isidra Vázquez Rodríguez** was born **15 May 1863**
+  and baptized **9 July 1863**. Her baptism names paternal grandparents
+  **Máximo and Josefa Rivera**, and maternal grandparents **Andrés and Francisca
+  Díaz**. The grandfathers' inherited surnames remain bracketed in the
+  canonical records.
+- A two-page 1879 baptism records **María Eugenia**, born **20 May 1879**, as a
+  daughter of Atilano and **Juana Paula de Santiago**. The same entry repeats
+  Atilano's parents as **Máximo Vázquez and Josefa Rivera**, strongly supporting
+  the same Atilano with a later partner rather than a namesake.
+- An 1884 baptism for **María Epifania Delgado Vázquez** names her mother
+  **María Balbina Vázquez** and maternal grandparents Atilano Vázquez and Juana
+  Regina Rodríguez, identifying María Balbina as another daughter of that
+  couple.
+- The reviewed children of Atilano and Juana Regina now include **Sotero,
+  María Isidra, and María Balbina**. María Eugenia was Atilano's documented
+  child with Juana Paula. Additional children may remain undiscovered.
 
 ### Marcelino Perales y Medina and Aurora Pérez
 
@@ -190,17 +219,18 @@ This couple were Carlina's parents and Rafael's maternal grandparents.
 - Rafael's father was baptized **Juan de la Rosa Vázquez** and later appears as
   **Juan Vázquez Rodríguez**. The Juan Ramón form remains an unconfirmed family
   variant.
-- Sotero's parents were **Atilano Vázquez and Juana Rodríguez**, both already
-  deceased by **23 June 1892**, extending the direct Vázquez line one more
-  generation in Yabucoa.
+- Sotero's parents were **Atilano Vázquez and Juana Regina Rodríguez**, both
+  already deceased by **23 June 1892**. María Isidra's 1863 baptism extends the
+  line again to **Máximo [Vázquez] and Josefa Rivera**, and **Andrés
+  [Rodríguez] and Francisca Díaz**.
 - Rafael's civil-registration index supports **February 1906**, not October;
   his exact birth day is still open.
 
 ## Highest-value next records
 
 1. Rafael's baptism or a fully legible certified birth record.
-2. Sotero's baptism; birth or baptism records for Juana, Mauricio, and Braulio;
-   and the original 1933 death candidate for María Eugenia.
+2. Sotero's baptism; Atilano's marriages and death; Juana Regina's baptism and
+   death; and birth or baptism records for Juana, Mauricio, and Braulio.
 3. The original Manhattan marriage certificate, not only its index.
 4. A duplicate register, sacramental certificate, alternate filming, or parish
    archive lookup for Gurabo book 15, folio 18 verso, sufficient to identify
