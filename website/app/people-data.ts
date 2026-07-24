@@ -8709,7 +8709,7 @@ export const peopleProfiles: readonly PersonProfile[] = [
       "parents": {
         "father": "person.francisco-father-of-maximo-vazquez",
         "mother": "person.maria-cortez",
-        "status": "confirmed_original_1805_marriage_register"
+        "status": "confirmed_original_1805_marriage_register_fuller_parent_names_supported_by_caguas_cluster"
       },
       "partner": "person.josefa-rivera",
       "marriage": {
@@ -8755,9 +8755,27 @@ export const peopleProfiles: readonly PersonProfile[] = [
           "status": "candidate_probable"
         }
       ],
-      "confidence": "marriage_parentage_native_place_and_child_cluster_confirmed_original_records",
+      "known_siblings": [
+        {
+          "person": "person.miguel-vazquez-child-of-francisco-maria",
+          "status": "strong_probable_shared_parent_couple_caguas_cluster"
+        },
+        {
+          "person": "person.maria-de-los-angeles-vazquez",
+          "status": "strong_probable_shared_parent_couple_caguas_cluster"
+        },
+        {
+          "person": "person.jose-vazquez-child-of-francisco-maria",
+          "status": "strong_probable_shared_parent_couple_caguas_cluster"
+        }
+      ],
+      "confidence": "marriage_parentage_native_place_child_cluster_and_probable_birth_family_confirmed_or_strong_original_records",
       "evidence_refs": [
         "source.familysearch-marriage.maximo-josefa.1805",
+        "source.familysearch-baptism.miguel-vazquez.1786",
+        "source.familysearch-burial.maria-de-los-angeles-vazquez.1793",
+        "source.familysearch-burial.maria-magdalena-cortes.1794",
+        "source.familysearch-burial.jose-vazquez.1801",
         "source.familysearch-baptism.juana-jacinta-vazquez-rivera.1806",
         "source.familysearch-baptism.juan-de-dios-vazquez-rivera.1819",
         "source.familysearch-death.juan-de-dios.1820",
@@ -8769,7 +8787,7 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "source.familysearch-death.andrea-vazquez.1866",
         "source.familysearch-death.atilano.1898"
       ],
-      "notes": "The 1805 Humacao marriage writes Máximo's surname Basquez and names his parents as Francisco and María Cortez; Francisco's surname is not stated. The 1819 baptism calls Máximo a native of Caguas and Josefa a native of Humacao. Juan de Dios is confirmed by matching baptism and death records. Tomasa alone remains provisional because her reported age conflicts with Juan de Dios's known birth. The documented child span is long, and reported ages for later children remain estimates."
+      "notes": "The 1805 Humacao marriage writes Máximo's surname Basquez and names his parents as Francisco and María Cortez, omitting Francisco's surname. Four earlier Caguas originals document a Francisco Vázquez and María Magdalena Cortés household: Miguel's 1786 baptism, María de los Ángeles's 1793 burial, María Magdalena Cortés's 1794 burial as Francisco Vázquez's wife, and José Vázquez's 1801 burial. Together with Máximo's recorded Caguas origin, this strongly identifies the fuller parent names and three probable siblings, but Máximo's own baptism remains unfound. The 1819 baptism calls Máximo a native of Caguas and Josefa a native of Humacao. Tomasa remains provisional because her reported age conflicts with Juan de Dios's known birth."
     },
     "relations": {
       "parentIds": [
@@ -8790,7 +8808,11 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "person.maria-vazquez-rivera",
         "person.tomasa-vazquez-rivera"
       ],
-      "siblingIds": [],
+      "siblingIds": [
+        "person.miguel-vazquez-child-of-francisco-maria",
+        "person.maria-de-los-angeles-vazquez",
+        "person.jose-vazquez-child-of-francisco-maria"
+      ],
       "relatedIds": [],
       "namedChildren": [],
       "namedSiblings": []
@@ -8840,11 +8862,15 @@ export const peopleProfiles: readonly PersonProfile[] = [
           "person.francisco-father-of-maximo-vazquez",
           "person.maria-cortez"
         ],
-        "status": "confirmed_original_1805_marriage_register",
+        "status": "confirmed_original_1805_marriage_fuller_names_strong_caguas_cluster",
         "evidence_refs": [
-          "source.familysearch-marriage.maximo-josefa.1805"
+          "source.familysearch-marriage.maximo-josefa.1805",
+          "source.familysearch-baptism.miguel-vazquez.1786",
+          "source.familysearch-burial.maria-de-los-angeles-vazquez.1793",
+          "source.familysearch-burial.maria-magdalena-cortes.1794",
+          "source.familysearch-burial.jose-vazquez.1801"
         ],
-        "note": "The record writes Francisco without a surname. Vázquez is not inferred for him."
+        "note": "The 1805 marriage confirms Máximo as the son of Francisco and María Cortez but omits Francisco's surname. The earlier Caguas originals strongly identify that pair as Francisco Vázquez and María Magdalena Cortés. This fuller-name resolution is a multi-record identity conclusion; Máximo's own baptism remains unfound."
       },
       {
         "id": "claim.maximo-josefa-pardos-libres",
@@ -8869,7 +8895,9 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "subject": [
           "person.maximo-vazquez",
           "person.josefa-rivera",
-          "person.luis-father-of-josefa-rivera"
+          "person.luis-father-of-josefa-rivera",
+          "person.francisco-father-of-maximo-vazquez",
+          "person.maria-cortez"
         ],
         "predicate": "earliest_verified_origin_boundary",
         "object": {
@@ -8879,12 +8907,16 @@ export const peopleProfiles: readonly PersonProfile[] = [
             "person.luis-father-of-josefa-rivera": "Humacao district, Puerto Rico"
           },
           "earliest_named_people_without_birthplaces": [
-            "Francisco [surname not stated]",
-            "María Cortez",
+            "Francisco Vázquez",
+            "María Magdalena Cortés",
             "Roque [surname not stated]",
             "Marciana Delgado",
             "Isidora Rodríguez"
           ],
+          "earliest_verified_events_without_native_places": {
+            "person.francisco-father-of-maximo-vazquez": "children and wife documented in Caguas, 1786–1801",
+            "person.maria-cortez": "buried in Caguas on 17 June 1794"
+          },
           "overseas_birthplace_identified": false,
           "routes_unproven": [
             "Africa",
@@ -8892,10 +8924,14 @@ export const peopleProfiles: readonly PersonProfile[] = [
             "another Caribbean island"
           ]
         },
-        "status": "verified_three_puerto_rico_native_places_two_parent_name_gains_overseas_origin_open",
+        "status": "verified_three_puerto_rico_native_places_fuller_caguas_parent_pair_and_burial_overseas_origin_open",
         "evidence_refs": [
           "source.familysearch-baptism.juan-de-dios-vazquez-rivera.1819",
           "source.familysearch-marriage.maximo-josefa.1805",
+          "source.familysearch-baptism.miguel-vazquez.1786",
+          "source.familysearch-burial.maria-de-los-angeles-vazquez.1793",
+          "source.familysearch-burial.maria-magdalena-cortes.1794",
+          "source.familysearch-burial.jose-vazquez.1801",
           "source.familysearch-baptism.simona-rivera.1790",
           "source.familysearch-baptism.ysabel-rivera.1792",
           "source.familysearch-death.luis-de-rivera.1811",
@@ -8905,7 +8941,7 @@ export const peopleProfiles: readonly PersonProfile[] = [
           "source.search-audit.las-piedras-baptisms.luis-isidora.1778-1799",
           "source.search-audit.familysearch-index.origin-frontier.2026-07-24"
         ],
-        "note": "The records establish Puerto Rican native places for Máximo, Josefa, and Luís. Luís's death adds parents Roque and Marciana Delgado but does not give their origins. No reviewed source names an overseas-born direct ancestor."
+        "note": "The records establish Puerto Rican native places for Máximo, Josefa, and Luís. The Caguas cluster supplies the fuller parent names Francisco Vázquez and María Magdalena Cortés and María's 1794 burial, but no reviewed source states either parent's native place or names an overseas-born direct ancestor."
       },
       {
         "id": "claim.caguas-burial-screen-maximo-parents",
@@ -8930,7 +8966,27 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "evidence_refs": [
           "source.search-audit.caguas-burials.1804-1809.maximo-parents"
         ],
-        "note": "Two handwriting-recognition passes and manual review of every plausible target-like result produced no defensible match. This is negative machine-assisted coverage, not proof of absence; the register has not received a full line-by-line human transcription."
+        "note": "Two handwriting-recognition passes and manual review of every plausible target-like result produced no defensible match inside the visible January 1804–June 1809 span. The positive 1793 and 1794 burials of this family and the 1801 José burial lie outside that captured span, so they revise the broader family picture without contradicting this bounded negative screen."
+      },
+      {
+        "id": "claim.maximo-probable-siblings-caguas",
+        "subject": "person.maximo-vazquez",
+        "predicate": "probable_siblings",
+        "object": [
+          "person.miguel-vazquez-child-of-francisco-maria",
+          "person.maria-de-los-angeles-vazquez",
+          "person.jose-vazquez-child-of-francisco-maria"
+        ],
+        "status": "strong_shared_parent_couple_and_place_cluster_not_direct_baptism",
+        "evidence_refs": [
+          "source.familysearch-baptism.miguel-vazquez.1786",
+          "source.familysearch-burial.maria-de-los-angeles-vazquez.1793",
+          "source.familysearch-burial.maria-magdalena-cortes.1794",
+          "source.familysearch-burial.jose-vazquez.1801",
+          "source.familysearch-marriage.maximo-josefa.1805",
+          "source.familysearch-baptism.juan-de-dios-vazquez-rivera.1819"
+        ],
+        "note": "Each sibling candidate is directly documented as a child of the Caguas Francisco and María household. Máximo is directly documented as son of Francisco and María Cortez and as native of Caguas. Because his own baptism is missing, the sibling links are graded strong rather than fully direct."
       }
     ],
     "sources": [
@@ -8946,6 +9002,62 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "image_archive": "capture.familysearch-marriage.maximo-josefa.1805/1805-12-31_maximo-basquez-josefa-ribera-marriage_humacao_familysearch_dgs-008038536_item-4_image-105_3Q9M-CSFS-RT8X.jpg plus natural and enhanced entry crops",
         "status": "confirmed_original_reviewed",
         "public_image": "1805-maximo-josefa-marriage.jpg"
+      },
+      {
+        "id": "source.familysearch-baptism.miguel-vazquez.1786",
+        "type": "parish_baptism_register_with_image",
+        "title": "1786 baptism of Miguel Vázquez",
+        "repository": "Dulce Nombre de Jesús, Caguas, via FamilySearch",
+        "accessed": "2026-07-24",
+        "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSV2-2QSC-R?cat=89952&i=49&lang=en&cc=1807092&groupId=1807092",
+        "quality": "original_register_image_downloaded_and_reviewed",
+        "citation": "Film 1389001, frame 50, folio 79, record 166. Miguel was baptized 18 October 1786 at the reported age of 15 days, the legitimate son of Francisco Vázquez and María Magdalena. Godparents were Lorenzo Lozano and Juana Cortés. The entry does not state María's surname.",
+        "image_archive": "research/pulls/images/caguas-1786-miguel-vazquez-baptism/1786-10-18-miguel-vazquez-baptism-original-3Q9M-CSV2-2QSC-R.jpg",
+        "image_sha256": "a635eb3194483a73ba24c1f6ed1de004567393e655d2ed03802a79b52291afa3",
+        "status": "confirmed_original_reviewed",
+        "public_image": "1786-miguel-vazquez-baptism.jpg"
+      },
+      {
+        "id": "source.familysearch-burial.maria-de-los-angeles-vazquez.1793",
+        "type": "parish_burial_register_with_image",
+        "title": "1793 burial of María de los Ángeles Vázquez",
+        "repository": "Dulce Nombre de Jesús, Caguas, via FamilySearch",
+        "accessed": "2026-07-24",
+        "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSV2-3QZM-S?cat=89952&i=1979&lang=en",
+        "quality": "original_register_image_downloaded_and_reviewed",
+        "citation": "Film 1389031, frame 1980, folio 119 verso, record 476. On 25 July 1793 the parish buried María de los Ángeles, described as a párvula and legitimate daughter of Francisco Vázquez or Basques and María Magdalena. The entry does not state María's surname.",
+        "image_archive": "research/pulls/images/caguas-1793-maria-de-los-angeles-vazquez-burial/1793-07-25-maria-de-los-angeles-vazquez-burial-original-3Q9M-CSV2-3QZM-S.jpg",
+        "image_sha256": "b6b82fe5a0aac83fa22705361cb973a3696173f3b348dcf0e6ea4b0330ffba14",
+        "status": "confirmed_original_reviewed",
+        "public_image": "1793-maria-de-los-angeles-vazquez-burial.jpg"
+      },
+      {
+        "id": "source.familysearch-burial.maria-magdalena-cortes.1794",
+        "type": "parish_burial_register_with_image",
+        "title": "1794 burial of María Magdalena Cortés",
+        "repository": "Dulce Nombre de Jesús, Caguas, via FamilySearch",
+        "accessed": "2026-07-24",
+        "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSV2-3QZM-Q?cat=89952&i=1990&lang=en",
+        "quality": "original_register_image_downloaded_and_reviewed",
+        "citation": "Film 1389031, frame 1991, folio 130, record 518. On 17 June 1794 the parish buried María Magdalena Cortés, identified as the legitimate wife of Francisco Vázquez. The register date securely establishes the burial; it does not separately state the exact day of death, her age, parents, birthplace, or native place.",
+        "image_archive": "research/pulls/images/caguas-1794-maria-magdalena-cortes-burial/1794-06-17-maria-magdalena-cortes-burial-original-3Q9M-CSV2-3QZM-Q.jpg",
+        "image_sha256": "783e14a277513412927e96e8424bc19a256483ff90f0720bbee2c3c8b80b8530",
+        "status": "confirmed_original_reviewed",
+        "public_image": "1794-maria-magdalena-cortes-burial.jpg"
+      },
+      {
+        "id": "source.familysearch-burial.jose-vazquez.1801",
+        "type": "parish_burial_register_with_image",
+        "title": "1801 burial of José Vázquez",
+        "repository": "Dulce Nombre de Jesús, Caguas, via FamilySearch",
+        "accessed": "2026-07-24",
+        "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSV2-3Q9N-P?cat=89952&i=2104&lang=en",
+        "quality": "original_register_image_downloaded_and_reviewed",
+        "citation": "Film 1389031, frame 2105, folio 244 verso, record 1032. On 14 February 1801 the parish buried José Vázquez, identified as the legitimate son of Francisco and María Cortés. The entry does not state José's age or the parents' native places.",
+        "image_archive": "research/pulls/images/caguas-1801-jose-vazquez-burial/1801-02-14-jose-vazquez-burial-original-3Q9M-CSV2-3Q9N-P.jpg",
+        "image_sha256": "831b0848c6d47dc8a4d8879413b32742d8a93a10446b3fc96d507094acef1524",
+        "status": "confirmed_original_reviewed",
+        "public_image": "1801-jose-vazquez-burial.jpg"
       },
       {
         "id": "source.familysearch-baptism.juana-jacinta-vazquez-rivera.1806",
@@ -9171,7 +9283,7 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "map_groups": [
           "early-vazquez"
         ],
-        "sequence": 1,
+        "sequence": 7,
         "map_label": "Caguas",
         "map_note": "Máximo was recorded as a native of Caguas in his son’s 1819 baptism."
       },
@@ -9191,7 +9303,7 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "map_groups": [
           "early-vazquez"
         ],
-        "sequence": 6,
+        "sequence": 10,
         "map_label": "Humacao · 1805",
         "map_note": "Máximo Basquez and Josefa Ribera married in Humacao."
       },
@@ -9212,7 +9324,7 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "map_groups": [
           "early-vazquez"
         ],
-        "sequence": 7,
+        "sequence": 11,
         "map_label": "Humacao · 1806",
         "map_note": "Their daughter Juana Jacinta was born in Humacao."
       },
@@ -9232,7 +9344,7 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "map_groups": [
           "early-vazquez"
         ],
-        "sequence": 9,
+        "sequence": 13,
         "map_label": "Juncos · 1819",
         "map_note": "Their son Juan de Dios was baptized in Juncos."
       },
@@ -9252,7 +9364,7 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "map_groups": [
           "early-vazquez"
         ],
-        "sequence": 10,
+        "sequence": 14,
         "map_label": "San Lorenzo · 1824",
         "map_note": "Their son Miguel de los Santos was baptized in San Lorenzo."
       }
@@ -9467,7 +9579,9 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "subject": [
           "person.maximo-vazquez",
           "person.josefa-rivera",
-          "person.luis-father-of-josefa-rivera"
+          "person.luis-father-of-josefa-rivera",
+          "person.francisco-father-of-maximo-vazquez",
+          "person.maria-cortez"
         ],
         "predicate": "earliest_verified_origin_boundary",
         "object": {
@@ -9477,12 +9591,16 @@ export const peopleProfiles: readonly PersonProfile[] = [
             "person.luis-father-of-josefa-rivera": "Humacao district, Puerto Rico"
           },
           "earliest_named_people_without_birthplaces": [
-            "Francisco [surname not stated]",
-            "María Cortez",
+            "Francisco Vázquez",
+            "María Magdalena Cortés",
             "Roque [surname not stated]",
             "Marciana Delgado",
             "Isidora Rodríguez"
           ],
+          "earliest_verified_events_without_native_places": {
+            "person.francisco-father-of-maximo-vazquez": "children and wife documented in Caguas, 1786–1801",
+            "person.maria-cortez": "buried in Caguas on 17 June 1794"
+          },
           "overseas_birthplace_identified": false,
           "routes_unproven": [
             "Africa",
@@ -9490,10 +9608,14 @@ export const peopleProfiles: readonly PersonProfile[] = [
             "another Caribbean island"
           ]
         },
-        "status": "verified_three_puerto_rico_native_places_two_parent_name_gains_overseas_origin_open",
+        "status": "verified_three_puerto_rico_native_places_fuller_caguas_parent_pair_and_burial_overseas_origin_open",
         "evidence_refs": [
           "source.familysearch-baptism.juan-de-dios-vazquez-rivera.1819",
           "source.familysearch-marriage.maximo-josefa.1805",
+          "source.familysearch-baptism.miguel-vazquez.1786",
+          "source.familysearch-burial.maria-de-los-angeles-vazquez.1793",
+          "source.familysearch-burial.maria-magdalena-cortes.1794",
+          "source.familysearch-burial.jose-vazquez.1801",
           "source.familysearch-baptism.simona-rivera.1790",
           "source.familysearch-baptism.ysabel-rivera.1792",
           "source.familysearch-death.luis-de-rivera.1811",
@@ -9503,7 +9625,7 @@ export const peopleProfiles: readonly PersonProfile[] = [
           "source.search-audit.las-piedras-baptisms.luis-isidora.1778-1799",
           "source.search-audit.familysearch-index.origin-frontier.2026-07-24"
         ],
-        "note": "The records establish Puerto Rican native places for Máximo, Josefa, and Luís. Luís's death adds parents Roque and Marciana Delgado but does not give their origins. No reviewed source names an overseas-born direct ancestor."
+        "note": "The records establish Puerto Rican native places for Máximo, Josefa, and Luís. The Caguas cluster supplies the fuller parent names Francisco Vázquez and María Magdalena Cortés and María's 1794 burial, but no reviewed source states either parent's native place or names an overseas-born direct ancestor."
       }
     ],
     "sources": [
@@ -9637,6 +9759,62 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "citation": "DGS 008127843, item 9, local image 33 of 322, entry 134. Atilano Vázquez died 3 June 1898 in Yabucoa, reported age 70, husband of Juana de Santiago, and legitimate son of Máximo Vázquez and Josefa Rivera."
       },
       {
+        "id": "source.familysearch-baptism.miguel-vazquez.1786",
+        "type": "parish_baptism_register_with_image",
+        "title": "1786 baptism of Miguel Vázquez",
+        "repository": "Dulce Nombre de Jesús, Caguas, via FamilySearch",
+        "accessed": "2026-07-24",
+        "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSV2-2QSC-R?cat=89952&i=49&lang=en&cc=1807092&groupId=1807092",
+        "quality": "original_register_image_downloaded_and_reviewed",
+        "citation": "Film 1389001, frame 50, folio 79, record 166. Miguel was baptized 18 October 1786 at the reported age of 15 days, the legitimate son of Francisco Vázquez and María Magdalena. Godparents were Lorenzo Lozano and Juana Cortés. The entry does not state María's surname.",
+        "image_archive": "research/pulls/images/caguas-1786-miguel-vazquez-baptism/1786-10-18-miguel-vazquez-baptism-original-3Q9M-CSV2-2QSC-R.jpg",
+        "image_sha256": "a635eb3194483a73ba24c1f6ed1de004567393e655d2ed03802a79b52291afa3",
+        "status": "confirmed_original_reviewed",
+        "public_image": "1786-miguel-vazquez-baptism.jpg"
+      },
+      {
+        "id": "source.familysearch-burial.maria-de-los-angeles-vazquez.1793",
+        "type": "parish_burial_register_with_image",
+        "title": "1793 burial of María de los Ángeles Vázquez",
+        "repository": "Dulce Nombre de Jesús, Caguas, via FamilySearch",
+        "accessed": "2026-07-24",
+        "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSV2-3QZM-S?cat=89952&i=1979&lang=en",
+        "quality": "original_register_image_downloaded_and_reviewed",
+        "citation": "Film 1389031, frame 1980, folio 119 verso, record 476. On 25 July 1793 the parish buried María de los Ángeles, described as a párvula and legitimate daughter of Francisco Vázquez or Basques and María Magdalena. The entry does not state María's surname.",
+        "image_archive": "research/pulls/images/caguas-1793-maria-de-los-angeles-vazquez-burial/1793-07-25-maria-de-los-angeles-vazquez-burial-original-3Q9M-CSV2-3QZM-S.jpg",
+        "image_sha256": "b6b82fe5a0aac83fa22705361cb973a3696173f3b348dcf0e6ea4b0330ffba14",
+        "status": "confirmed_original_reviewed",
+        "public_image": "1793-maria-de-los-angeles-vazquez-burial.jpg"
+      },
+      {
+        "id": "source.familysearch-burial.maria-magdalena-cortes.1794",
+        "type": "parish_burial_register_with_image",
+        "title": "1794 burial of María Magdalena Cortés",
+        "repository": "Dulce Nombre de Jesús, Caguas, via FamilySearch",
+        "accessed": "2026-07-24",
+        "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSV2-3QZM-Q?cat=89952&i=1990&lang=en",
+        "quality": "original_register_image_downloaded_and_reviewed",
+        "citation": "Film 1389031, frame 1991, folio 130, record 518. On 17 June 1794 the parish buried María Magdalena Cortés, identified as the legitimate wife of Francisco Vázquez. The register date securely establishes the burial; it does not separately state the exact day of death, her age, parents, birthplace, or native place.",
+        "image_archive": "research/pulls/images/caguas-1794-maria-magdalena-cortes-burial/1794-06-17-maria-magdalena-cortes-burial-original-3Q9M-CSV2-3QZM-Q.jpg",
+        "image_sha256": "783e14a277513412927e96e8424bc19a256483ff90f0720bbee2c3c8b80b8530",
+        "status": "confirmed_original_reviewed",
+        "public_image": "1794-maria-magdalena-cortes-burial.jpg"
+      },
+      {
+        "id": "source.familysearch-burial.jose-vazquez.1801",
+        "type": "parish_burial_register_with_image",
+        "title": "1801 burial of José Vázquez",
+        "repository": "Dulce Nombre de Jesús, Caguas, via FamilySearch",
+        "accessed": "2026-07-24",
+        "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSV2-3Q9N-P?cat=89952&i=2104&lang=en",
+        "quality": "original_register_image_downloaded_and_reviewed",
+        "citation": "Film 1389031, frame 2105, folio 244 verso, record 1032. On 14 February 1801 the parish buried José Vázquez, identified as the legitimate son of Francisco and María Cortés. The entry does not state José's age or the parents' native places.",
+        "image_archive": "research/pulls/images/caguas-1801-jose-vazquez-burial/1801-02-14-jose-vazquez-burial-original-3Q9M-CSV2-3Q9N-P.jpg",
+        "image_sha256": "831b0848c6d47dc8a4d8879413b32742d8a93a10446b3fc96d507094acef1524",
+        "status": "confirmed_original_reviewed",
+        "public_image": "1801-jose-vazquez-burial.jpg"
+      },
+      {
         "id": "source.familysearch-baptism.ysabel-rivera.1792",
         "type": "parish_baptism_register_with_image",
         "title": "1792 baptism of Ysabel, daughter of Luís de Rivera and Isidora Rodríguez",
@@ -9731,7 +9909,7 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "map_groups": [
           "early-vazquez"
         ],
-        "sequence": 2,
+        "sequence": 8,
         "map_label": "Humacao",
         "map_note": "The same baptism calls Josefa a native of Humacao."
       },
@@ -9751,7 +9929,7 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "map_groups": [
           "early-vazquez"
         ],
-        "sequence": 6,
+        "sequence": 10,
         "map_label": "Humacao · 1805",
         "map_note": "Máximo Basquez and Josefa Ribera married in Humacao."
       },
@@ -9772,7 +9950,7 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "map_groups": [
           "early-vazquez"
         ],
-        "sequence": 7,
+        "sequence": 11,
         "map_label": "Humacao · 1806",
         "map_note": "Their daughter Juana Jacinta was born in Humacao."
       },
@@ -9792,7 +9970,7 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "map_groups": [
           "early-vazquez"
         ],
-        "sequence": 9,
+        "sequence": 13,
         "map_label": "Juncos · 1819",
         "map_note": "Their son Juan de Dios was baptized in Juncos."
       },
@@ -9812,7 +9990,7 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "map_groups": [
           "early-vazquez"
         ],
-        "sequence": 10,
+        "sequence": 14,
         "map_label": "San Lorenzo · 1824",
         "map_note": "Their son Miguel de los Santos was baptized in San Lorenzo."
       }
@@ -9821,14 +9999,26 @@ export const peopleProfiles: readonly PersonProfile[] = [
   {
     "id": "person.francisco-father-of-maximo-vazquez",
     "slug": "francisco-father-of-maximo-vazquez",
-    "displayName": "Francisco [surname not stated]",
+    "displayName": "Francisco Vázquez",
     "sex": "male",
     "tone": "vazquez",
     "siteProjection": "public",
     "record": {
       "id": "person.francisco-father-of-maximo-vazquez",
-      "display_name": "Francisco [surname not stated]",
+      "display_name": "Francisco Vázquez",
       "sex": "male",
+      "names": [
+        {
+          "name": "Francisco",
+          "type": "1805_son_marriage_surname_omitted",
+          "status": "documented"
+        },
+        {
+          "name": "Francisco Vázquez",
+          "type": "1786_1793_1794_caguas_household_form",
+          "status": "documented_originals_strong_identity_match"
+        }
+      ],
       "birth": {
         "status": "not_yet_found"
       },
@@ -9839,14 +10029,30 @@ export const peopleProfiles: readonly PersonProfile[] = [
       "known_children": [
         {
           "person": "person.maximo-vazquez",
-          "status": "confirmed"
+          "status": "confirmed_1805_child_marriage_strong_identity_match_to_caguas_couple"
+        },
+        {
+          "person": "person.miguel-vazquez-child-of-francisco-maria",
+          "status": "confirmed_original_baptism"
+        },
+        {
+          "person": "person.maria-de-los-angeles-vazquez",
+          "status": "confirmed_original_burial"
+        },
+        {
+          "person": "person.jose-vazquez-child-of-francisco-maria",
+          "status": "confirmed_original_burial"
         }
       ],
-      "confidence": "confirmed_parent_original_1805_marriage_register",
+      "confidence": "strong_same_couple_identity_across_four_caguas_originals_and_1805_child_marriage",
       "evidence_refs": [
-        "source.familysearch-marriage.maximo-josefa.1805"
+        "source.familysearch-marriage.maximo-josefa.1805",
+        "source.familysearch-baptism.miguel-vazquez.1786",
+        "source.familysearch-burial.maria-de-los-angeles-vazquez.1793",
+        "source.familysearch-burial.maria-magdalena-cortes.1794",
+        "source.familysearch-burial.jose-vazquez.1801"
       ],
-      "notes": "The marriage calls Máximo the legitimate son of Francisco and María Cortez. It does not write a surname for Francisco, so Vázquez is not inferred."
+      "notes": "Máximo's 1805 marriage names his father only as Francisco. Caguas originals from 1786, 1793, and 1794 identify a Francisco Vázquez married to María Magdalena, later explicitly María Magdalena Cortés; an 1801 child burial repeats Francisco and María Cortés. The exact parent pair, Caguas location, chronology, and Máximo's recorded Caguas origin make the identity strong. Francisco's own birth, parents, native place, and death remain unknown."
     },
     "relations": {
       "parentIds": [],
@@ -9854,7 +10060,10 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "person.maria-cortez"
       ],
       "childIds": [
-        "person.maximo-vazquez"
+        "person.maximo-vazquez",
+        "person.miguel-vazquez-child-of-francisco-maria",
+        "person.maria-de-los-angeles-vazquez",
+        "person.jose-vazquez-child-of-francisco-maria"
       ],
       "siblingIds": [],
       "relatedIds": [],
@@ -9862,6 +10071,59 @@ export const peopleProfiles: readonly PersonProfile[] = [
       "namedSiblings": []
     },
     "claims": [
+      {
+        "id": "claim.origin-frontier-2026-07-24",
+        "subject": [
+          "person.maximo-vazquez",
+          "person.josefa-rivera",
+          "person.luis-father-of-josefa-rivera",
+          "person.francisco-father-of-maximo-vazquez",
+          "person.maria-cortez"
+        ],
+        "predicate": "earliest_verified_origin_boundary",
+        "object": {
+          "verified_native_places": {
+            "person.maximo-vazquez": "Caguas, Puerto Rico",
+            "person.josefa-rivera": "Humacao, Puerto Rico",
+            "person.luis-father-of-josefa-rivera": "Humacao district, Puerto Rico"
+          },
+          "earliest_named_people_without_birthplaces": [
+            "Francisco Vázquez",
+            "María Magdalena Cortés",
+            "Roque [surname not stated]",
+            "Marciana Delgado",
+            "Isidora Rodríguez"
+          ],
+          "earliest_verified_events_without_native_places": {
+            "person.francisco-father-of-maximo-vazquez": "children and wife documented in Caguas, 1786–1801",
+            "person.maria-cortez": "buried in Caguas on 17 June 1794"
+          },
+          "overseas_birthplace_identified": false,
+          "routes_unproven": [
+            "Africa",
+            "Europe",
+            "another Caribbean island"
+          ]
+        },
+        "status": "verified_three_puerto_rico_native_places_fuller_caguas_parent_pair_and_burial_overseas_origin_open",
+        "evidence_refs": [
+          "source.familysearch-baptism.juan-de-dios-vazquez-rivera.1819",
+          "source.familysearch-marriage.maximo-josefa.1805",
+          "source.familysearch-baptism.miguel-vazquez.1786",
+          "source.familysearch-burial.maria-de-los-angeles-vazquez.1793",
+          "source.familysearch-burial.maria-magdalena-cortes.1794",
+          "source.familysearch-burial.jose-vazquez.1801",
+          "source.familysearch-baptism.simona-rivera.1790",
+          "source.familysearch-baptism.ysabel-rivera.1792",
+          "source.familysearch-death.luis-de-rivera.1811",
+          "source.transcription.las-piedras-humacao-burials.1787-1798",
+          "source.search-audit.caguas-early-books.maximo-parents",
+          "source.search-audit.las-piedras-marriages.luis-isidora",
+          "source.search-audit.las-piedras-baptisms.luis-isidora.1778-1799",
+          "source.search-audit.familysearch-index.origin-frontier.2026-07-24"
+        ],
+        "note": "The records establish Puerto Rican native places for Máximo, Josefa, and Luís. The Caguas cluster supplies the fuller parent names Francisco Vázquez and María Magdalena Cortés and María's 1794 burial, but no reviewed source states either parent's native place or names an overseas-born direct ancestor."
+      },
       {
         "id": "claim.caguas-burial-screen-maximo-parents",
         "subject": [
@@ -9885,7 +10147,39 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "evidence_refs": [
           "source.search-audit.caguas-burials.1804-1809.maximo-parents"
         ],
-        "note": "Two handwriting-recognition passes and manual review of every plausible target-like result produced no defensible match. This is negative machine-assisted coverage, not proof of absence; the register has not received a full line-by-line human transcription."
+        "note": "Two handwriting-recognition passes and manual review of every plausible target-like result produced no defensible match inside the visible January 1804–June 1809 span. The positive 1793 and 1794 burials of this family and the 1801 José burial lie outside that captured span, so they revise the broader family picture without contradicting this bounded negative screen."
+      },
+      {
+        "id": "claim.francisco-maria-magdalena-couple",
+        "subject": [
+          "person.francisco-father-of-maximo-vazquez",
+          "person.maria-cortez"
+        ],
+        "predicate": "couple_identity",
+        "object": {
+          "accepted_names": [
+            "Francisco Vázquez",
+            "María Magdalena Cortés"
+          ],
+          "place": "Caguas, Puerto Rico",
+          "documented_span": "1786–1801",
+          "children_in_originals": [
+            "person.miguel-vazquez-child-of-francisco-maria",
+            "person.maria-de-los-angeles-vazquez",
+            "person.jose-vazquez-child-of-francisco-maria"
+          ],
+          "probable_child": "person.maximo-vazquez"
+        },
+        "status": "strong_multi_record_identity_cluster",
+        "evidence_refs": [
+          "source.familysearch-baptism.miguel-vazquez.1786",
+          "source.familysearch-burial.maria-de-los-angeles-vazquez.1793",
+          "source.familysearch-burial.maria-magdalena-cortes.1794",
+          "source.familysearch-burial.jose-vazquez.1801",
+          "source.familysearch-marriage.maximo-josefa.1805",
+          "source.familysearch-baptism.juan-de-dios-vazquez-rivera.1819"
+        ],
+        "note": "The first four originals establish one Caguas couple and household. Máximo's 1805 marriage names Francisco and María Cortez as his parents, and the 1819 baptism calls him native of Caguas. The fuller-name match is strong; finding Máximo's own baptism would make the cross-record identity direct."
       }
     ],
     "sources": [
@@ -9903,6 +10197,163 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "public_image": "1805-maximo-josefa-marriage.jpg"
       },
       {
+        "id": "source.familysearch-baptism.miguel-vazquez.1786",
+        "type": "parish_baptism_register_with_image",
+        "title": "1786 baptism of Miguel Vázquez",
+        "repository": "Dulce Nombre de Jesús, Caguas, via FamilySearch",
+        "accessed": "2026-07-24",
+        "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSV2-2QSC-R?cat=89952&i=49&lang=en&cc=1807092&groupId=1807092",
+        "quality": "original_register_image_downloaded_and_reviewed",
+        "citation": "Film 1389001, frame 50, folio 79, record 166. Miguel was baptized 18 October 1786 at the reported age of 15 days, the legitimate son of Francisco Vázquez and María Magdalena. Godparents were Lorenzo Lozano and Juana Cortés. The entry does not state María's surname.",
+        "image_archive": "research/pulls/images/caguas-1786-miguel-vazquez-baptism/1786-10-18-miguel-vazquez-baptism-original-3Q9M-CSV2-2QSC-R.jpg",
+        "image_sha256": "a635eb3194483a73ba24c1f6ed1de004567393e655d2ed03802a79b52291afa3",
+        "status": "confirmed_original_reviewed",
+        "public_image": "1786-miguel-vazquez-baptism.jpg"
+      },
+      {
+        "id": "source.familysearch-burial.maria-de-los-angeles-vazquez.1793",
+        "type": "parish_burial_register_with_image",
+        "title": "1793 burial of María de los Ángeles Vázquez",
+        "repository": "Dulce Nombre de Jesús, Caguas, via FamilySearch",
+        "accessed": "2026-07-24",
+        "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSV2-3QZM-S?cat=89952&i=1979&lang=en",
+        "quality": "original_register_image_downloaded_and_reviewed",
+        "citation": "Film 1389031, frame 1980, folio 119 verso, record 476. On 25 July 1793 the parish buried María de los Ángeles, described as a párvula and legitimate daughter of Francisco Vázquez or Basques and María Magdalena. The entry does not state María's surname.",
+        "image_archive": "research/pulls/images/caguas-1793-maria-de-los-angeles-vazquez-burial/1793-07-25-maria-de-los-angeles-vazquez-burial-original-3Q9M-CSV2-3QZM-S.jpg",
+        "image_sha256": "b6b82fe5a0aac83fa22705361cb973a3696173f3b348dcf0e6ea4b0330ffba14",
+        "status": "confirmed_original_reviewed",
+        "public_image": "1793-maria-de-los-angeles-vazquez-burial.jpg"
+      },
+      {
+        "id": "source.familysearch-burial.maria-magdalena-cortes.1794",
+        "type": "parish_burial_register_with_image",
+        "title": "1794 burial of María Magdalena Cortés",
+        "repository": "Dulce Nombre de Jesús, Caguas, via FamilySearch",
+        "accessed": "2026-07-24",
+        "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSV2-3QZM-Q?cat=89952&i=1990&lang=en",
+        "quality": "original_register_image_downloaded_and_reviewed",
+        "citation": "Film 1389031, frame 1991, folio 130, record 518. On 17 June 1794 the parish buried María Magdalena Cortés, identified as the legitimate wife of Francisco Vázquez. The register date securely establishes the burial; it does not separately state the exact day of death, her age, parents, birthplace, or native place.",
+        "image_archive": "research/pulls/images/caguas-1794-maria-magdalena-cortes-burial/1794-06-17-maria-magdalena-cortes-burial-original-3Q9M-CSV2-3QZM-Q.jpg",
+        "image_sha256": "783e14a277513412927e96e8424bc19a256483ff90f0720bbee2c3c8b80b8530",
+        "status": "confirmed_original_reviewed",
+        "public_image": "1794-maria-magdalena-cortes-burial.jpg"
+      },
+      {
+        "id": "source.familysearch-burial.jose-vazquez.1801",
+        "type": "parish_burial_register_with_image",
+        "title": "1801 burial of José Vázquez",
+        "repository": "Dulce Nombre de Jesús, Caguas, via FamilySearch",
+        "accessed": "2026-07-24",
+        "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSV2-3Q9N-P?cat=89952&i=2104&lang=en",
+        "quality": "original_register_image_downloaded_and_reviewed",
+        "citation": "Film 1389031, frame 2105, folio 244 verso, record 1032. On 14 February 1801 the parish buried José Vázquez, identified as the legitimate son of Francisco and María Cortés. The entry does not state José's age or the parents' native places.",
+        "image_archive": "research/pulls/images/caguas-1801-jose-vazquez-burial/1801-02-14-jose-vazquez-burial-original-3Q9M-CSV2-3Q9N-P.jpg",
+        "image_sha256": "831b0848c6d47dc8a4d8879413b32742d8a93a10446b3fc96d507094acef1524",
+        "status": "confirmed_original_reviewed",
+        "public_image": "1801-jose-vazquez-burial.jpg"
+      },
+      {
+        "id": "source.familysearch-baptism.juan-de-dios-vazquez-rivera.1819",
+        "type": "parish_baptism_register_with_image",
+        "title": "1819 baptism of Juan de Dios Vázquez Rivera",
+        "repository": "Nuestra Señora de la Inmaculada Concepción, Juncos, via FamilySearch",
+        "accessed": "2026-07-24",
+        "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSV2-MS7P-F?view=fullText&keywords=Juan%20de%20Dios%2CM%C3%A1ximo%20V%C3%A1zquez%2CRibera&lang=en",
+        "quality": "original_register_image_and_transcript",
+        "citation": "DGS 008126787, item 3, local image 78 of 174. Juan de Dios was born 9 March and baptized 14 March 1819 in Juncos, legitimate son of Máximo Vázquez, native of Caguas, and Josefa de Ribera, native of Humacao. The parents were described as pardos libres. The computer index incorrectly dated the birth to 1813 and baptism to 1814; the original reads 1819."
+      },
+      {
+        "id": "source.familysearch-baptism.simona-rivera.1790",
+        "type": "parish_baptism_register_with_image",
+        "title": "1790 baptism of Simona, daughter of Luís de Rivera and Isidora Rodríguez",
+        "repository": "Nuestra Señora de la Concepción, Las Piedras, via FamilySearch",
+        "accessed": "2026-07-24",
+        "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSV2-M9TT-W?view=fullText&lang=en&groupId=M99W-VYV",
+        "quality": "original_register_image_downloaded_and_transcribed",
+        "citation": "DGS 008126787, item 1, frame 00039. Simona was born 8 February 1790 and baptized 7 March in Las Piedras, the legitimate daughter of Luís de Rivera and Isidora Rodríguez. Godparents were Matías Berríos and Marta Berríos. The parent pair matches Simona's and Josefa Ribera's 1805 Humacao marriages and supplies the de Rivera surname omitted from both marriage entries.",
+        "image_archive": "capture.familysearch-baptism.simona-rivera.1790/3Q9M-CSV2-M9TT-W.jpg plus enhanced entry crops",
+        "status": "confirmed_original_reviewed",
+        "public_image": "1790-simona-rivera-baptism.jpg"
+      },
+      {
+        "id": "source.familysearch-baptism.ysabel-rivera.1792",
+        "type": "parish_baptism_register_with_image",
+        "title": "1792 baptism of Ysabel, daughter of Luís de Rivera and Isidora Rodríguez",
+        "repository": "Nuestra Señora de la Concepción, Las Piedras, via FamilySearch",
+        "accessed": "2026-07-24",
+        "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSV2-MS9L-N?view=fullText&lang=en&groupId=M99W-VYV",
+        "quality": "original_register_image_downloaded_and_transcribed",
+        "citation": "DGS 008126787, item 1, frame 00092. The child named Ysabel in the margin was born 5 October 1792 and baptized 22 October in Las Piedras, daughter of Luís de Rivera and Isidora Rodríguez; Marta Berríos was godmother. The body omits the usual child-name clause, which is why the automated transcript drops her name.",
+        "image_archive": "capture.familysearch-baptism.child-rivera-rodriguez.1792/3Q9M-CSV2-MS9L-N.jpg plus enhanced entry crop",
+        "status": "confirmed_original_reviewed",
+        "public_image": "1792-ysabel-rivera-baptism.jpg"
+      },
+      {
+        "id": "source.familysearch-death.luis-de-rivera.1811",
+        "type": "parish_death_register_with_image",
+        "title": "1811 death of Luís de Rivera",
+        "repository": "Dulce Nombre de Jesús, Humacao, via FamilySearch",
+        "accessed": "2026-07-24",
+        "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSFS-2BP2?view=fullText&keywords=Isidora+Rodr%C3%ADguez%2Cde+Lu%C3%ADs+de+Rivera&lang=en&groupId=M993-WQQ",
+        "quality": "original_register_image_downloaded_and_transcribed_key_clauses",
+        "citation": "DGS 008038524, item 6, image 23. The 1811 Humacao entry identifies Luís de Rivera as a native of this district and about 50 years old, the legitimate son of Roque and Marciana Delgado, and the church-married husband of Isidora Rodríguez. It names nine children: Josefa, Simona, Ysabel, Juana, Gerónima, Domingo, María, Ramón, and Juan. The exact day is too faint to promote from the original image.",
+        "image_archive": "capture.familysearch-death.luis-de-rivera.1811/3Q9M-CSFS-2BP2-original.jpg plus deep-zoom assembly, reading-order crops, and metadata",
+        "status": "confirmed_original_reviewed_exact_day_open",
+        "public_image": "1811-luis-de-rivera-death.jpg"
+      },
+      {
+        "id": "source.transcription.las-piedras-humacao-burials.1787-1798",
+        "type": "complete_volunteer_burial_transcription_with_historical_jurisdiction_note",
+        "title": "Burials in Las Piedras and Humacao, 1787–1798",
+        "repository": "Ivonne Santana Ríos transcription published by Hijos de Coamo Puerto Rico",
+        "accessed": "2026-07-24",
+        "url": "https://hijosdecoamopr.com/wp-content/uploads/2023/06/Entierros-en-Las-Piedras-y-Humacao-1787-1798.pdf",
+        "quality": "secondary_complete_transcription_with_cited_parish_context",
+        "citation": "The introductory note explains that Humacao's church was an assistant chapel under Las Piedras before Humacao became a parish in 1793, so Humacao residents used Las Piedras for baptisms and marriages in the earlier period. Exact-name searches of the burial transcription produced no Luís and Isidora Rodríguez, Francisco and María Cortez, or matching parent death."
+      },
+      {
+        "id": "source.search-audit.caguas-early-books.maximo-parents",
+        "type": "negative_search_and_collection_coverage_audit",
+        "title": "Caguas early-book search for Máximo and his parents",
+        "repository": "Hijos de Coamo Puerto Rico transcriptions of FamilySearch films 1389001 and 1389031",
+        "accessed": "2026-07-24",
+        "url": "https://hijosdecoamopr.com/caguas-puerto-rico-church-records-1730-1968/",
+        "quality": "complete_transcription_search_plus_published_coverage_guide",
+        "citation": "The complete Caguas 1785–1788 baptism transcript contains no Máximo matching parents Francisco and María Cortez. The complete 1774–1804 marriage transcript contains no defensible Francisco and María Cortez couple. Caguas baptism coverage has large gaps in 1767–1784 and 1789–1808, so the negative result does not contradict Máximo's recorded Caguas origin."
+      },
+      {
+        "id": "source.search-audit.las-piedras-marriages.luis-isidora",
+        "type": "negative_search_and_collection_coverage_audit",
+        "title": "Las Piedras marriage search for Luís and Isidora Rodríguez",
+        "repository": "Salli Mastron transcription of Las Piedras/Juncos marriages 1787–1816, film 1389073",
+        "accessed": "2026-07-24",
+        "url": "https://docs.google.com/spreadsheets/d/1gLgRpEJFZtZZ0PuvJCNyG3uGUWb0uIEcFrlbtrTy3C8/edit",
+        "quality": "complete_volunteer_transcription_search",
+        "citation": "The complete transcription contains no marriage for a Luís and Isidora Rodríguez couple. This is a negative search in one surviving book, not proof that their marriage did not occur locally or in an earlier, missing, or neighboring register."
+      },
+      {
+        "id": "source.search-audit.las-piedras-baptisms.luis-isidora.1778-1799",
+        "type": "manual_original_register_image_review",
+        "title": "Complete Las Piedras baptism-item review for the Luís de Rivera and Isidora Rodríguez household",
+        "repository": "Nuestra Señora de la Concepción, Las Piedras, DGS 008126787, item 1, via FamilySearch",
+        "accessed": "2026-07-24",
+        "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSV2-MS35-M?cat=247758&i=2&lang=en",
+        "quality": "complete_227_image_item_review_with_original_images_and_full_text_assistance",
+        "citation": "All 227 item images were reviewed, spanning the surviving sequence from 1778 through 1799. The review found the exact 1790 Simona and 1792 Ysabel baptisms under Luís de Rivera and Isidora Rodríguez, retained two same-name candidates separately, and did not find Josefa's baptism. This is a complete review of one surviving item, not proof that no baptism existed in a missing, duplicate, or neighboring register.",
+        "status": "complete_item_review_positive_siblings_josefa_not_found"
+      },
+      {
+        "id": "source.search-audit.familysearch-index.origin-frontier.2026-07-24",
+        "type": "negative_indexed_record_search",
+        "title": "Focused FamilySearch index searches at the pre-Puerto Rico frontier",
+        "repository": "FamilySearch historical-record index and full-text search",
+        "accessed": "2026-07-24",
+        "url": "https://www.familysearch.org/en/search/record/results?count=100&q.deathLikeDate.from=1811&q.deathLikeDate.to=1850&q.deathLikePlace=Humacao%2C%20Puerto%20Rico&q.givenName=Isidora&q.givenName.exact=on&q.recordCountry=Puerto%20Rico&q.surname=Rodr%C3%ADguez&q.surname.exact=on",
+        "quality": "focused_index_and_ocr_search_with_same_name_candidates_checked",
+        "citation": "Exact and variant searches tested Isidora or Ysidora Rodríguez in early Humacao deaths, Marciana Delgado with Roque, María Cortez or Cortés in early Caguas deaths, Máximo with Francisco and María Cortez, and Josefa with Luís and Isidora Rodríguez. The one early Humacao death indexed to Isidora Rodríguez names husband Andrés Obierna and different parents, so it is rejected. No indexed target death or baptism survived the parent, spouse, date, and place checks. Index and OCR gaps make this negative coverage, not proof of absence.",
+        "status": "negative_target_search_same_name_candidates_rejected"
+      },
+      {
         "id": "source.search-audit.caguas-burials.1804-1809.maximo-parents",
         "type": "machine_assisted_original_register_search_audit",
         "title": "Caguas burial-register screen for Máximo Vázquez, Francisco, and María Cortez",
@@ -9916,36 +10367,161 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "status": "complete_image_capture_machine_screen_negative_full_manual_transcription_open"
       }
     ],
-    "geographyEvents": []
+    "geographyEvents": [
+      {
+        "id": "geo.event.miguel-vazquez-baptism-1786",
+        "date": "1786-10-18",
+        "event_type": "baptism",
+        "person_refs": [
+          "person.miguel-vazquez-child-of-francisco-maria",
+          "person.francisco-father-of-maximo-vazquez",
+          "person.maria-cortez"
+        ],
+        "place_ref": "place.caguas",
+        "status": "confirmed_original_parish_register",
+        "evidence_refs": [
+          "source.familysearch-baptism.miguel-vazquez.1786"
+        ],
+        "map_groups": [
+          "early-vazquez"
+        ],
+        "sequence": 1,
+        "map_label": "Caguas · 1786",
+        "map_note": "Miguel was baptized at a reported age of fifteen days, the legitimate son of Francisco Vázquez and María Magdalena."
+      },
+      {
+        "id": "geo.event.maria-de-los-angeles-burial-1793",
+        "date": "1793-07-25",
+        "event_type": "burial",
+        "person_refs": [
+          "person.maria-de-los-angeles-vazquez",
+          "person.francisco-father-of-maximo-vazquez",
+          "person.maria-cortez"
+        ],
+        "place_ref": "place.caguas",
+        "status": "confirmed_original_parish_register",
+        "evidence_refs": [
+          "source.familysearch-burial.maria-de-los-angeles-vazquez.1793"
+        ],
+        "map_groups": [
+          "early-vazquez"
+        ],
+        "sequence": 4,
+        "map_label": "Caguas · 1793",
+        "map_note": "The child María de los Ángeles was buried as the legitimate daughter of Francisco Vázquez and María Magdalena."
+      },
+      {
+        "id": "geo.event.maria-magdalena-cortes-burial-1794",
+        "date": "1794-06-17",
+        "event_type": "burial",
+        "person_refs": [
+          "person.maria-cortez",
+          "person.francisco-father-of-maximo-vazquez"
+        ],
+        "place_ref": "place.caguas",
+        "status": "confirmed_original_parish_register",
+        "evidence_refs": [
+          "source.familysearch-burial.maria-magdalena-cortes.1794"
+        ],
+        "map_groups": [
+          "early-vazquez"
+        ],
+        "sequence": 5,
+        "map_label": "Caguas · 1794",
+        "map_note": "María Magdalena Cortés was buried here as the legitimate wife of Francisco Vázquez."
+      },
+      {
+        "id": "geo.event.jose-vazquez-burial-1801",
+        "date": "1801-02-14",
+        "event_type": "burial",
+        "person_refs": [
+          "person.jose-vazquez-child-of-francisco-maria",
+          "person.francisco-father-of-maximo-vazquez",
+          "person.maria-cortez"
+        ],
+        "place_ref": "place.caguas",
+        "status": "confirmed_original_parish_register",
+        "evidence_refs": [
+          "source.familysearch-burial.jose-vazquez.1801"
+        ],
+        "map_groups": [
+          "early-vazquez"
+        ],
+        "sequence": 6,
+        "map_label": "Caguas · 1801",
+        "map_note": "José Vázquez was buried as the legitimate son of Francisco and María Cortés."
+      }
+    ]
   },
   {
     "id": "person.maria-cortez",
     "slug": "maria-cortez",
-    "displayName": "María Cortez",
+    "displayName": "María Magdalena Cortés",
     "sex": "female",
     "tone": "vazquez",
     "siteProjection": "public",
     "record": {
       "id": "person.maria-cortez",
-      "display_name": "María Cortez",
+      "display_name": "María Magdalena Cortés",
       "sex": "female",
+      "names": [
+        {
+          "name": "María Cortez",
+          "type": "1805_son_marriage_spelling",
+          "status": "documented"
+        },
+        {
+          "name": "María Magdalena",
+          "type": "1786_baptism_and_1793_child_burial_surname_omitted",
+          "status": "documented"
+        },
+        {
+          "name": "María Magdalena Cortés",
+          "type": "1794_burial_full_form",
+          "status": "documented_original"
+        }
+      ],
       "birth": {
         "status": "not_yet_found"
       },
       "death": {
-        "status": "not_yet_found"
+        "on_or_before": "1794-06-17",
+        "place": "Caguas, Puerto Rico",
+        "status": "burial_date_confirmed_exact_death_day_not_separately_stated"
+      },
+      "burial": {
+        "date": "1794-06-17",
+        "place": "Dulce Nombre de Jesús, Caguas, Puerto Rico",
+        "status": "confirmed_original_parish_register"
       },
       "partner": "person.francisco-father-of-maximo-vazquez",
       "known_children": [
         {
           "person": "person.maximo-vazquez",
-          "status": "confirmed"
+          "status": "confirmed_1805_child_marriage_strong_identity_match_to_caguas_couple"
+        },
+        {
+          "person": "person.miguel-vazquez-child-of-francisco-maria",
+          "status": "confirmed_original_baptism"
+        },
+        {
+          "person": "person.maria-de-los-angeles-vazquez",
+          "status": "confirmed_original_burial"
+        },
+        {
+          "person": "person.jose-vazquez-child-of-francisco-maria",
+          "status": "confirmed_original_burial"
         }
       ],
-      "confidence": "confirmed_parent_original_1805_marriage_register",
+      "confidence": "full_name_spouse_and_burial_confirmed_original_strong_identity_match_to_maximo_parent",
       "evidence_refs": [
-        "source.familysearch-marriage.maximo-josefa.1805"
-      ]
+        "source.familysearch-marriage.maximo-josefa.1805",
+        "source.familysearch-baptism.miguel-vazquez.1786",
+        "source.familysearch-burial.maria-de-los-angeles-vazquez.1793",
+        "source.familysearch-burial.maria-magdalena-cortes.1794",
+        "source.familysearch-burial.jose-vazquez.1801"
+      ],
+      "notes": "The 1805 marriage names Máximo's mother as María Cortez. The 1794 Caguas burial gives the fuller María Magdalena Cortés and calls her Francisco Vázquez's legitimate wife. Earlier child records name the same couple as Francisco Vázquez and María Magdalena; the 1801 child burial uses María Cortés. Her parents, birthplace, and exact death day remain unknown."
     },
     "relations": {
       "parentIds": [],
@@ -9953,7 +10529,10 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "person.francisco-father-of-maximo-vazquez"
       ],
       "childIds": [
-        "person.maximo-vazquez"
+        "person.maximo-vazquez",
+        "person.miguel-vazquez-child-of-francisco-maria",
+        "person.maria-de-los-angeles-vazquez",
+        "person.jose-vazquez-child-of-francisco-maria"
       ],
       "siblingIds": [],
       "relatedIds": [],
@@ -9961,6 +10540,59 @@ export const peopleProfiles: readonly PersonProfile[] = [
       "namedSiblings": []
     },
     "claims": [
+      {
+        "id": "claim.origin-frontier-2026-07-24",
+        "subject": [
+          "person.maximo-vazquez",
+          "person.josefa-rivera",
+          "person.luis-father-of-josefa-rivera",
+          "person.francisco-father-of-maximo-vazquez",
+          "person.maria-cortez"
+        ],
+        "predicate": "earliest_verified_origin_boundary",
+        "object": {
+          "verified_native_places": {
+            "person.maximo-vazquez": "Caguas, Puerto Rico",
+            "person.josefa-rivera": "Humacao, Puerto Rico",
+            "person.luis-father-of-josefa-rivera": "Humacao district, Puerto Rico"
+          },
+          "earliest_named_people_without_birthplaces": [
+            "Francisco Vázquez",
+            "María Magdalena Cortés",
+            "Roque [surname not stated]",
+            "Marciana Delgado",
+            "Isidora Rodríguez"
+          ],
+          "earliest_verified_events_without_native_places": {
+            "person.francisco-father-of-maximo-vazquez": "children and wife documented in Caguas, 1786–1801",
+            "person.maria-cortez": "buried in Caguas on 17 June 1794"
+          },
+          "overseas_birthplace_identified": false,
+          "routes_unproven": [
+            "Africa",
+            "Europe",
+            "another Caribbean island"
+          ]
+        },
+        "status": "verified_three_puerto_rico_native_places_fuller_caguas_parent_pair_and_burial_overseas_origin_open",
+        "evidence_refs": [
+          "source.familysearch-baptism.juan-de-dios-vazquez-rivera.1819",
+          "source.familysearch-marriage.maximo-josefa.1805",
+          "source.familysearch-baptism.miguel-vazquez.1786",
+          "source.familysearch-burial.maria-de-los-angeles-vazquez.1793",
+          "source.familysearch-burial.maria-magdalena-cortes.1794",
+          "source.familysearch-burial.jose-vazquez.1801",
+          "source.familysearch-baptism.simona-rivera.1790",
+          "source.familysearch-baptism.ysabel-rivera.1792",
+          "source.familysearch-death.luis-de-rivera.1811",
+          "source.transcription.las-piedras-humacao-burials.1787-1798",
+          "source.search-audit.caguas-early-books.maximo-parents",
+          "source.search-audit.las-piedras-marriages.luis-isidora",
+          "source.search-audit.las-piedras-baptisms.luis-isidora.1778-1799",
+          "source.search-audit.familysearch-index.origin-frontier.2026-07-24"
+        ],
+        "note": "The records establish Puerto Rican native places for Máximo, Josefa, and Luís. The Caguas cluster supplies the fuller parent names Francisco Vázquez and María Magdalena Cortés and María's 1794 burial, but no reviewed source states either parent's native place or names an overseas-born direct ancestor."
+      },
       {
         "id": "claim.caguas-burial-screen-maximo-parents",
         "subject": [
@@ -9984,7 +10616,55 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "evidence_refs": [
           "source.search-audit.caguas-burials.1804-1809.maximo-parents"
         ],
-        "note": "Two handwriting-recognition passes and manual review of every plausible target-like result produced no defensible match. This is negative machine-assisted coverage, not proof of absence; the register has not received a full line-by-line human transcription."
+        "note": "Two handwriting-recognition passes and manual review of every plausible target-like result produced no defensible match inside the visible January 1804–June 1809 span. The positive 1793 and 1794 burials of this family and the 1801 José burial lie outside that captured span, so they revise the broader family picture without contradicting this bounded negative screen."
+      },
+      {
+        "id": "claim.francisco-maria-magdalena-couple",
+        "subject": [
+          "person.francisco-father-of-maximo-vazquez",
+          "person.maria-cortez"
+        ],
+        "predicate": "couple_identity",
+        "object": {
+          "accepted_names": [
+            "Francisco Vázquez",
+            "María Magdalena Cortés"
+          ],
+          "place": "Caguas, Puerto Rico",
+          "documented_span": "1786–1801",
+          "children_in_originals": [
+            "person.miguel-vazquez-child-of-francisco-maria",
+            "person.maria-de-los-angeles-vazquez",
+            "person.jose-vazquez-child-of-francisco-maria"
+          ],
+          "probable_child": "person.maximo-vazquez"
+        },
+        "status": "strong_multi_record_identity_cluster",
+        "evidence_refs": [
+          "source.familysearch-baptism.miguel-vazquez.1786",
+          "source.familysearch-burial.maria-de-los-angeles-vazquez.1793",
+          "source.familysearch-burial.maria-magdalena-cortes.1794",
+          "source.familysearch-burial.jose-vazquez.1801",
+          "source.familysearch-marriage.maximo-josefa.1805",
+          "source.familysearch-baptism.juan-de-dios-vazquez-rivera.1819"
+        ],
+        "note": "The first four originals establish one Caguas couple and household. Máximo's 1805 marriage names Francisco and María Cortez as his parents, and the 1819 baptism calls him native of Caguas. The fuller-name match is strong; finding Máximo's own baptism would make the cross-record identity direct."
+      },
+      {
+        "id": "claim.maria-magdalena-cortes-burial",
+        "subject": "person.maria-cortez",
+        "predicate": "burial_and_spouse",
+        "object": {
+          "burial": "1794-06-17",
+          "place": "Caguas, Puerto Rico",
+          "recorded_name": "María Magdalena Cortés",
+          "spouse": "person.francisco-father-of-maximo-vazquez"
+        },
+        "status": "confirmed_original_register",
+        "evidence_refs": [
+          "source.familysearch-burial.maria-magdalena-cortes.1794"
+        ],
+        "note": "The entry establishes burial on 17 June 1794 and names her as Francisco Vázquez's legitimate wife. It does not separately state the day of death, age, parents, birthplace, or native place."
       }
     ],
     "sources": [
@@ -10002,6 +10682,163 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "public_image": "1805-maximo-josefa-marriage.jpg"
       },
       {
+        "id": "source.familysearch-baptism.miguel-vazquez.1786",
+        "type": "parish_baptism_register_with_image",
+        "title": "1786 baptism of Miguel Vázquez",
+        "repository": "Dulce Nombre de Jesús, Caguas, via FamilySearch",
+        "accessed": "2026-07-24",
+        "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSV2-2QSC-R?cat=89952&i=49&lang=en&cc=1807092&groupId=1807092",
+        "quality": "original_register_image_downloaded_and_reviewed",
+        "citation": "Film 1389001, frame 50, folio 79, record 166. Miguel was baptized 18 October 1786 at the reported age of 15 days, the legitimate son of Francisco Vázquez and María Magdalena. Godparents were Lorenzo Lozano and Juana Cortés. The entry does not state María's surname.",
+        "image_archive": "research/pulls/images/caguas-1786-miguel-vazquez-baptism/1786-10-18-miguel-vazquez-baptism-original-3Q9M-CSV2-2QSC-R.jpg",
+        "image_sha256": "a635eb3194483a73ba24c1f6ed1de004567393e655d2ed03802a79b52291afa3",
+        "status": "confirmed_original_reviewed",
+        "public_image": "1786-miguel-vazquez-baptism.jpg"
+      },
+      {
+        "id": "source.familysearch-burial.maria-de-los-angeles-vazquez.1793",
+        "type": "parish_burial_register_with_image",
+        "title": "1793 burial of María de los Ángeles Vázquez",
+        "repository": "Dulce Nombre de Jesús, Caguas, via FamilySearch",
+        "accessed": "2026-07-24",
+        "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSV2-3QZM-S?cat=89952&i=1979&lang=en",
+        "quality": "original_register_image_downloaded_and_reviewed",
+        "citation": "Film 1389031, frame 1980, folio 119 verso, record 476. On 25 July 1793 the parish buried María de los Ángeles, described as a párvula and legitimate daughter of Francisco Vázquez or Basques and María Magdalena. The entry does not state María's surname.",
+        "image_archive": "research/pulls/images/caguas-1793-maria-de-los-angeles-vazquez-burial/1793-07-25-maria-de-los-angeles-vazquez-burial-original-3Q9M-CSV2-3QZM-S.jpg",
+        "image_sha256": "b6b82fe5a0aac83fa22705361cb973a3696173f3b348dcf0e6ea4b0330ffba14",
+        "status": "confirmed_original_reviewed",
+        "public_image": "1793-maria-de-los-angeles-vazquez-burial.jpg"
+      },
+      {
+        "id": "source.familysearch-burial.maria-magdalena-cortes.1794",
+        "type": "parish_burial_register_with_image",
+        "title": "1794 burial of María Magdalena Cortés",
+        "repository": "Dulce Nombre de Jesús, Caguas, via FamilySearch",
+        "accessed": "2026-07-24",
+        "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSV2-3QZM-Q?cat=89952&i=1990&lang=en",
+        "quality": "original_register_image_downloaded_and_reviewed",
+        "citation": "Film 1389031, frame 1991, folio 130, record 518. On 17 June 1794 the parish buried María Magdalena Cortés, identified as the legitimate wife of Francisco Vázquez. The register date securely establishes the burial; it does not separately state the exact day of death, her age, parents, birthplace, or native place.",
+        "image_archive": "research/pulls/images/caguas-1794-maria-magdalena-cortes-burial/1794-06-17-maria-magdalena-cortes-burial-original-3Q9M-CSV2-3QZM-Q.jpg",
+        "image_sha256": "783e14a277513412927e96e8424bc19a256483ff90f0720bbee2c3c8b80b8530",
+        "status": "confirmed_original_reviewed",
+        "public_image": "1794-maria-magdalena-cortes-burial.jpg"
+      },
+      {
+        "id": "source.familysearch-burial.jose-vazquez.1801",
+        "type": "parish_burial_register_with_image",
+        "title": "1801 burial of José Vázquez",
+        "repository": "Dulce Nombre de Jesús, Caguas, via FamilySearch",
+        "accessed": "2026-07-24",
+        "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSV2-3Q9N-P?cat=89952&i=2104&lang=en",
+        "quality": "original_register_image_downloaded_and_reviewed",
+        "citation": "Film 1389031, frame 2105, folio 244 verso, record 1032. On 14 February 1801 the parish buried José Vázquez, identified as the legitimate son of Francisco and María Cortés. The entry does not state José's age or the parents' native places.",
+        "image_archive": "research/pulls/images/caguas-1801-jose-vazquez-burial/1801-02-14-jose-vazquez-burial-original-3Q9M-CSV2-3Q9N-P.jpg",
+        "image_sha256": "831b0848c6d47dc8a4d8879413b32742d8a93a10446b3fc96d507094acef1524",
+        "status": "confirmed_original_reviewed",
+        "public_image": "1801-jose-vazquez-burial.jpg"
+      },
+      {
+        "id": "source.familysearch-baptism.juan-de-dios-vazquez-rivera.1819",
+        "type": "parish_baptism_register_with_image",
+        "title": "1819 baptism of Juan de Dios Vázquez Rivera",
+        "repository": "Nuestra Señora de la Inmaculada Concepción, Juncos, via FamilySearch",
+        "accessed": "2026-07-24",
+        "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSV2-MS7P-F?view=fullText&keywords=Juan%20de%20Dios%2CM%C3%A1ximo%20V%C3%A1zquez%2CRibera&lang=en",
+        "quality": "original_register_image_and_transcript",
+        "citation": "DGS 008126787, item 3, local image 78 of 174. Juan de Dios was born 9 March and baptized 14 March 1819 in Juncos, legitimate son of Máximo Vázquez, native of Caguas, and Josefa de Ribera, native of Humacao. The parents were described as pardos libres. The computer index incorrectly dated the birth to 1813 and baptism to 1814; the original reads 1819."
+      },
+      {
+        "id": "source.familysearch-baptism.simona-rivera.1790",
+        "type": "parish_baptism_register_with_image",
+        "title": "1790 baptism of Simona, daughter of Luís de Rivera and Isidora Rodríguez",
+        "repository": "Nuestra Señora de la Concepción, Las Piedras, via FamilySearch",
+        "accessed": "2026-07-24",
+        "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSV2-M9TT-W?view=fullText&lang=en&groupId=M99W-VYV",
+        "quality": "original_register_image_downloaded_and_transcribed",
+        "citation": "DGS 008126787, item 1, frame 00039. Simona was born 8 February 1790 and baptized 7 March in Las Piedras, the legitimate daughter of Luís de Rivera and Isidora Rodríguez. Godparents were Matías Berríos and Marta Berríos. The parent pair matches Simona's and Josefa Ribera's 1805 Humacao marriages and supplies the de Rivera surname omitted from both marriage entries.",
+        "image_archive": "capture.familysearch-baptism.simona-rivera.1790/3Q9M-CSV2-M9TT-W.jpg plus enhanced entry crops",
+        "status": "confirmed_original_reviewed",
+        "public_image": "1790-simona-rivera-baptism.jpg"
+      },
+      {
+        "id": "source.familysearch-baptism.ysabel-rivera.1792",
+        "type": "parish_baptism_register_with_image",
+        "title": "1792 baptism of Ysabel, daughter of Luís de Rivera and Isidora Rodríguez",
+        "repository": "Nuestra Señora de la Concepción, Las Piedras, via FamilySearch",
+        "accessed": "2026-07-24",
+        "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSV2-MS9L-N?view=fullText&lang=en&groupId=M99W-VYV",
+        "quality": "original_register_image_downloaded_and_transcribed",
+        "citation": "DGS 008126787, item 1, frame 00092. The child named Ysabel in the margin was born 5 October 1792 and baptized 22 October in Las Piedras, daughter of Luís de Rivera and Isidora Rodríguez; Marta Berríos was godmother. The body omits the usual child-name clause, which is why the automated transcript drops her name.",
+        "image_archive": "capture.familysearch-baptism.child-rivera-rodriguez.1792/3Q9M-CSV2-MS9L-N.jpg plus enhanced entry crop",
+        "status": "confirmed_original_reviewed",
+        "public_image": "1792-ysabel-rivera-baptism.jpg"
+      },
+      {
+        "id": "source.familysearch-death.luis-de-rivera.1811",
+        "type": "parish_death_register_with_image",
+        "title": "1811 death of Luís de Rivera",
+        "repository": "Dulce Nombre de Jesús, Humacao, via FamilySearch",
+        "accessed": "2026-07-24",
+        "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSFS-2BP2?view=fullText&keywords=Isidora+Rodr%C3%ADguez%2Cde+Lu%C3%ADs+de+Rivera&lang=en&groupId=M993-WQQ",
+        "quality": "original_register_image_downloaded_and_transcribed_key_clauses",
+        "citation": "DGS 008038524, item 6, image 23. The 1811 Humacao entry identifies Luís de Rivera as a native of this district and about 50 years old, the legitimate son of Roque and Marciana Delgado, and the church-married husband of Isidora Rodríguez. It names nine children: Josefa, Simona, Ysabel, Juana, Gerónima, Domingo, María, Ramón, and Juan. The exact day is too faint to promote from the original image.",
+        "image_archive": "capture.familysearch-death.luis-de-rivera.1811/3Q9M-CSFS-2BP2-original.jpg plus deep-zoom assembly, reading-order crops, and metadata",
+        "status": "confirmed_original_reviewed_exact_day_open",
+        "public_image": "1811-luis-de-rivera-death.jpg"
+      },
+      {
+        "id": "source.transcription.las-piedras-humacao-burials.1787-1798",
+        "type": "complete_volunteer_burial_transcription_with_historical_jurisdiction_note",
+        "title": "Burials in Las Piedras and Humacao, 1787–1798",
+        "repository": "Ivonne Santana Ríos transcription published by Hijos de Coamo Puerto Rico",
+        "accessed": "2026-07-24",
+        "url": "https://hijosdecoamopr.com/wp-content/uploads/2023/06/Entierros-en-Las-Piedras-y-Humacao-1787-1798.pdf",
+        "quality": "secondary_complete_transcription_with_cited_parish_context",
+        "citation": "The introductory note explains that Humacao's church was an assistant chapel under Las Piedras before Humacao became a parish in 1793, so Humacao residents used Las Piedras for baptisms and marriages in the earlier period. Exact-name searches of the burial transcription produced no Luís and Isidora Rodríguez, Francisco and María Cortez, or matching parent death."
+      },
+      {
+        "id": "source.search-audit.caguas-early-books.maximo-parents",
+        "type": "negative_search_and_collection_coverage_audit",
+        "title": "Caguas early-book search for Máximo and his parents",
+        "repository": "Hijos de Coamo Puerto Rico transcriptions of FamilySearch films 1389001 and 1389031",
+        "accessed": "2026-07-24",
+        "url": "https://hijosdecoamopr.com/caguas-puerto-rico-church-records-1730-1968/",
+        "quality": "complete_transcription_search_plus_published_coverage_guide",
+        "citation": "The complete Caguas 1785–1788 baptism transcript contains no Máximo matching parents Francisco and María Cortez. The complete 1774–1804 marriage transcript contains no defensible Francisco and María Cortez couple. Caguas baptism coverage has large gaps in 1767–1784 and 1789–1808, so the negative result does not contradict Máximo's recorded Caguas origin."
+      },
+      {
+        "id": "source.search-audit.las-piedras-marriages.luis-isidora",
+        "type": "negative_search_and_collection_coverage_audit",
+        "title": "Las Piedras marriage search for Luís and Isidora Rodríguez",
+        "repository": "Salli Mastron transcription of Las Piedras/Juncos marriages 1787–1816, film 1389073",
+        "accessed": "2026-07-24",
+        "url": "https://docs.google.com/spreadsheets/d/1gLgRpEJFZtZZ0PuvJCNyG3uGUWb0uIEcFrlbtrTy3C8/edit",
+        "quality": "complete_volunteer_transcription_search",
+        "citation": "The complete transcription contains no marriage for a Luís and Isidora Rodríguez couple. This is a negative search in one surviving book, not proof that their marriage did not occur locally or in an earlier, missing, or neighboring register."
+      },
+      {
+        "id": "source.search-audit.las-piedras-baptisms.luis-isidora.1778-1799",
+        "type": "manual_original_register_image_review",
+        "title": "Complete Las Piedras baptism-item review for the Luís de Rivera and Isidora Rodríguez household",
+        "repository": "Nuestra Señora de la Concepción, Las Piedras, DGS 008126787, item 1, via FamilySearch",
+        "accessed": "2026-07-24",
+        "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSV2-MS35-M?cat=247758&i=2&lang=en",
+        "quality": "complete_227_image_item_review_with_original_images_and_full_text_assistance",
+        "citation": "All 227 item images were reviewed, spanning the surviving sequence from 1778 through 1799. The review found the exact 1790 Simona and 1792 Ysabel baptisms under Luís de Rivera and Isidora Rodríguez, retained two same-name candidates separately, and did not find Josefa's baptism. This is a complete review of one surviving item, not proof that no baptism existed in a missing, duplicate, or neighboring register.",
+        "status": "complete_item_review_positive_siblings_josefa_not_found"
+      },
+      {
+        "id": "source.search-audit.familysearch-index.origin-frontier.2026-07-24",
+        "type": "negative_indexed_record_search",
+        "title": "Focused FamilySearch index searches at the pre-Puerto Rico frontier",
+        "repository": "FamilySearch historical-record index and full-text search",
+        "accessed": "2026-07-24",
+        "url": "https://www.familysearch.org/en/search/record/results?count=100&q.deathLikeDate.from=1811&q.deathLikeDate.to=1850&q.deathLikePlace=Humacao%2C%20Puerto%20Rico&q.givenName=Isidora&q.givenName.exact=on&q.recordCountry=Puerto%20Rico&q.surname=Rodr%C3%ADguez&q.surname.exact=on",
+        "quality": "focused_index_and_ocr_search_with_same_name_candidates_checked",
+        "citation": "Exact and variant searches tested Isidora or Ysidora Rodríguez in early Humacao deaths, Marciana Delgado with Roque, María Cortez or Cortés in early Caguas deaths, Máximo with Francisco and María Cortez, and Josefa with Luís and Isidora Rodríguez. The one early Humacao death indexed to Isidora Rodríguez names husband Andrés Obierna and different parents, so it is rejected. No indexed target death or baptism survived the parent, spouse, date, and place checks. Index and OCR gaps make this negative coverage, not proof of absence.",
+        "status": "negative_target_search_same_name_candidates_rejected"
+      },
+      {
         "id": "source.search-audit.caguas-burials.1804-1809.maximo-parents",
         "type": "machine_assisted_original_register_search_audit",
         "title": "Caguas burial-register screen for Máximo Vázquez, Francisco, and María Cortez",
@@ -10015,7 +10852,409 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "status": "complete_image_capture_machine_screen_negative_full_manual_transcription_open"
       }
     ],
-    "geographyEvents": []
+    "geographyEvents": [
+      {
+        "id": "geo.event.miguel-vazquez-baptism-1786",
+        "date": "1786-10-18",
+        "event_type": "baptism",
+        "person_refs": [
+          "person.miguel-vazquez-child-of-francisco-maria",
+          "person.francisco-father-of-maximo-vazquez",
+          "person.maria-cortez"
+        ],
+        "place_ref": "place.caguas",
+        "status": "confirmed_original_parish_register",
+        "evidence_refs": [
+          "source.familysearch-baptism.miguel-vazquez.1786"
+        ],
+        "map_groups": [
+          "early-vazquez"
+        ],
+        "sequence": 1,
+        "map_label": "Caguas · 1786",
+        "map_note": "Miguel was baptized at a reported age of fifteen days, the legitimate son of Francisco Vázquez and María Magdalena."
+      },
+      {
+        "id": "geo.event.maria-de-los-angeles-burial-1793",
+        "date": "1793-07-25",
+        "event_type": "burial",
+        "person_refs": [
+          "person.maria-de-los-angeles-vazquez",
+          "person.francisco-father-of-maximo-vazquez",
+          "person.maria-cortez"
+        ],
+        "place_ref": "place.caguas",
+        "status": "confirmed_original_parish_register",
+        "evidence_refs": [
+          "source.familysearch-burial.maria-de-los-angeles-vazquez.1793"
+        ],
+        "map_groups": [
+          "early-vazquez"
+        ],
+        "sequence": 4,
+        "map_label": "Caguas · 1793",
+        "map_note": "The child María de los Ángeles was buried as the legitimate daughter of Francisco Vázquez and María Magdalena."
+      },
+      {
+        "id": "geo.event.maria-magdalena-cortes-burial-1794",
+        "date": "1794-06-17",
+        "event_type": "burial",
+        "person_refs": [
+          "person.maria-cortez",
+          "person.francisco-father-of-maximo-vazquez"
+        ],
+        "place_ref": "place.caguas",
+        "status": "confirmed_original_parish_register",
+        "evidence_refs": [
+          "source.familysearch-burial.maria-magdalena-cortes.1794"
+        ],
+        "map_groups": [
+          "early-vazquez"
+        ],
+        "sequence": 5,
+        "map_label": "Caguas · 1794",
+        "map_note": "María Magdalena Cortés was buried here as the legitimate wife of Francisco Vázquez."
+      },
+      {
+        "id": "geo.event.jose-vazquez-burial-1801",
+        "date": "1801-02-14",
+        "event_type": "burial",
+        "person_refs": [
+          "person.jose-vazquez-child-of-francisco-maria",
+          "person.francisco-father-of-maximo-vazquez",
+          "person.maria-cortez"
+        ],
+        "place_ref": "place.caguas",
+        "status": "confirmed_original_parish_register",
+        "evidence_refs": [
+          "source.familysearch-burial.jose-vazquez.1801"
+        ],
+        "map_groups": [
+          "early-vazquez"
+        ],
+        "sequence": 6,
+        "map_label": "Caguas · 1801",
+        "map_note": "José Vázquez was buried as the legitimate son of Francisco and María Cortés."
+      }
+    ]
+  },
+  {
+    "id": "person.miguel-vazquez-child-of-francisco-maria",
+    "slug": "miguel-vazquez-child-of-francisco-maria",
+    "displayName": "Miguel Vázquez",
+    "sex": "male",
+    "tone": "vazquez",
+    "siteProjection": "research_only",
+    "record": {
+      "id": "person.miguel-vazquez-child-of-francisco-maria",
+      "display_name": "Miguel Vázquez",
+      "sex": "male",
+      "birth": {
+        "reported_age_at_baptism": "15 days",
+        "place": "Caguas, Puerto Rico",
+        "status": "exact_birth_date_not_stated"
+      },
+      "baptism": {
+        "date": "1786-10-18",
+        "place": "Dulce Nombre de Jesús, Caguas, Puerto Rico",
+        "status": "confirmed_original_parish_register"
+      },
+      "death": {
+        "status": "not_yet_found"
+      },
+      "parents": [
+        "person.francisco-father-of-maximo-vazquez",
+        "person.maria-cortez"
+      ],
+      "known_siblings": [
+        {
+          "person": "person.maria-de-los-angeles-vazquez",
+          "status": "confirmed_same_parent_pair"
+        },
+        {
+          "person": "person.jose-vazquez-child-of-francisco-maria",
+          "status": "confirmed_same_parent_pair"
+        },
+        {
+          "person": "person.maximo-vazquez",
+          "status": "strong_probable_same_parent_couple_caguas_cluster"
+        }
+      ],
+      "site_projection": "research_only",
+      "confidence": "baptism_and_parent_pair_confirmed_original_probable_sibling_of_maximo",
+      "evidence_refs": [
+        "source.familysearch-baptism.miguel-vazquez.1786"
+      ],
+      "notes": "The baptism names Francisco Vázquez and María Magdalena but does not give María's surname. Lorenzo Lozano and Juana Cortés were godparents. María's Cortés surname comes from the 1794 spouse burial and 1801 child burial, not from this baptism."
+    },
+    "relations": {
+      "parentIds": [
+        "person.francisco-father-of-maximo-vazquez",
+        "person.maria-cortez"
+      ],
+      "partnerIds": [],
+      "childIds": [],
+      "siblingIds": [
+        "person.maria-de-los-angeles-vazquez",
+        "person.jose-vazquez-child-of-francisco-maria",
+        "person.maximo-vazquez"
+      ],
+      "relatedIds": [],
+      "namedChildren": [],
+      "namedSiblings": []
+    },
+    "claims": [],
+    "sources": [
+      {
+        "id": "source.familysearch-baptism.miguel-vazquez.1786",
+        "type": "parish_baptism_register_with_image",
+        "title": "1786 baptism of Miguel Vázquez",
+        "repository": "Dulce Nombre de Jesús, Caguas, via FamilySearch",
+        "accessed": "2026-07-24",
+        "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSV2-2QSC-R?cat=89952&i=49&lang=en&cc=1807092&groupId=1807092",
+        "quality": "original_register_image_downloaded_and_reviewed",
+        "citation": "Film 1389001, frame 50, folio 79, record 166. Miguel was baptized 18 October 1786 at the reported age of 15 days, the legitimate son of Francisco Vázquez and María Magdalena. Godparents were Lorenzo Lozano and Juana Cortés. The entry does not state María's surname.",
+        "image_archive": "research/pulls/images/caguas-1786-miguel-vazquez-baptism/1786-10-18-miguel-vazquez-baptism-original-3Q9M-CSV2-2QSC-R.jpg",
+        "image_sha256": "a635eb3194483a73ba24c1f6ed1de004567393e655d2ed03802a79b52291afa3",
+        "status": "confirmed_original_reviewed",
+        "public_image": "1786-miguel-vazquez-baptism.jpg"
+      }
+    ],
+    "geographyEvents": [
+      {
+        "id": "geo.event.miguel-vazquez-baptism-1786",
+        "date": "1786-10-18",
+        "event_type": "baptism",
+        "person_refs": [
+          "person.miguel-vazquez-child-of-francisco-maria",
+          "person.francisco-father-of-maximo-vazquez",
+          "person.maria-cortez"
+        ],
+        "place_ref": "place.caguas",
+        "status": "confirmed_original_parish_register",
+        "evidence_refs": [
+          "source.familysearch-baptism.miguel-vazquez.1786"
+        ],
+        "map_groups": [
+          "early-vazquez"
+        ],
+        "sequence": 1,
+        "map_label": "Caguas · 1786",
+        "map_note": "Miguel was baptized at a reported age of fifteen days, the legitimate son of Francisco Vázquez and María Magdalena."
+      }
+    ]
+  },
+  {
+    "id": "person.maria-de-los-angeles-vazquez",
+    "slug": "maria-de-los-angeles-vazquez",
+    "displayName": "María de los Ángeles Vázquez",
+    "sex": "female",
+    "tone": "vazquez",
+    "siteProjection": "research_only",
+    "record": {
+      "id": "person.maria-de-los-angeles-vazquez",
+      "display_name": "María de los Ángeles Vázquez",
+      "sex": "female",
+      "birth": {
+        "status": "not_yet_found_child_at_death"
+      },
+      "death": {
+        "on_or_before": "1793-07-25",
+        "place": "Caguas, Puerto Rico",
+        "status": "burial_date_confirmed_exact_death_day_not_separately_stated"
+      },
+      "burial": {
+        "date": "1793-07-25",
+        "place": "Dulce Nombre de Jesús, Caguas, Puerto Rico",
+        "status": "confirmed_original_parish_register_recorded_as_parvula"
+      },
+      "parents": [
+        "person.francisco-father-of-maximo-vazquez",
+        "person.maria-cortez"
+      ],
+      "known_siblings": [
+        {
+          "person": "person.miguel-vazquez-child-of-francisco-maria",
+          "status": "confirmed_same_parent_pair"
+        },
+        {
+          "person": "person.jose-vazquez-child-of-francisco-maria",
+          "status": "confirmed_same_parent_pair"
+        },
+        {
+          "person": "person.maximo-vazquez",
+          "status": "strong_probable_same_parent_couple_caguas_cluster"
+        }
+      ],
+      "site_projection": "research_only",
+      "confidence": "burial_and_parent_pair_confirmed_original_probable_sibling_of_maximo",
+      "evidence_refs": [
+        "source.familysearch-burial.maria-de-los-angeles-vazquez.1793"
+      ],
+      "notes": "The burial calls her a párvula, a young child, and names her parents as Francisco Vázquez or Basques and María Magdalena. María's Cortés surname is supplied by the later spouse and child burials."
+    },
+    "relations": {
+      "parentIds": [
+        "person.francisco-father-of-maximo-vazquez",
+        "person.maria-cortez"
+      ],
+      "partnerIds": [],
+      "childIds": [],
+      "siblingIds": [
+        "person.miguel-vazquez-child-of-francisco-maria",
+        "person.jose-vazquez-child-of-francisco-maria",
+        "person.maximo-vazquez"
+      ],
+      "relatedIds": [],
+      "namedChildren": [],
+      "namedSiblings": []
+    },
+    "claims": [],
+    "sources": [
+      {
+        "id": "source.familysearch-burial.maria-de-los-angeles-vazquez.1793",
+        "type": "parish_burial_register_with_image",
+        "title": "1793 burial of María de los Ángeles Vázquez",
+        "repository": "Dulce Nombre de Jesús, Caguas, via FamilySearch",
+        "accessed": "2026-07-24",
+        "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSV2-3QZM-S?cat=89952&i=1979&lang=en",
+        "quality": "original_register_image_downloaded_and_reviewed",
+        "citation": "Film 1389031, frame 1980, folio 119 verso, record 476. On 25 July 1793 the parish buried María de los Ángeles, described as a párvula and legitimate daughter of Francisco Vázquez or Basques and María Magdalena. The entry does not state María's surname.",
+        "image_archive": "research/pulls/images/caguas-1793-maria-de-los-angeles-vazquez-burial/1793-07-25-maria-de-los-angeles-vazquez-burial-original-3Q9M-CSV2-3QZM-S.jpg",
+        "image_sha256": "b6b82fe5a0aac83fa22705361cb973a3696173f3b348dcf0e6ea4b0330ffba14",
+        "status": "confirmed_original_reviewed",
+        "public_image": "1793-maria-de-los-angeles-vazquez-burial.jpg"
+      }
+    ],
+    "geographyEvents": [
+      {
+        "id": "geo.event.maria-de-los-angeles-burial-1793",
+        "date": "1793-07-25",
+        "event_type": "burial",
+        "person_refs": [
+          "person.maria-de-los-angeles-vazquez",
+          "person.francisco-father-of-maximo-vazquez",
+          "person.maria-cortez"
+        ],
+        "place_ref": "place.caguas",
+        "status": "confirmed_original_parish_register",
+        "evidence_refs": [
+          "source.familysearch-burial.maria-de-los-angeles-vazquez.1793"
+        ],
+        "map_groups": [
+          "early-vazquez"
+        ],
+        "sequence": 4,
+        "map_label": "Caguas · 1793",
+        "map_note": "The child María de los Ángeles was buried as the legitimate daughter of Francisco Vázquez and María Magdalena."
+      }
+    ]
+  },
+  {
+    "id": "person.jose-vazquez-child-of-francisco-maria",
+    "slug": "jose-vazquez-child-of-francisco-maria",
+    "displayName": "José Vázquez",
+    "sex": "male",
+    "tone": "vazquez",
+    "siteProjection": "research_only",
+    "record": {
+      "id": "person.jose-vazquez-child-of-francisco-maria",
+      "display_name": "José Vázquez",
+      "sex": "male",
+      "birth": {
+        "status": "not_yet_found_child_at_death"
+      },
+      "death": {
+        "on_or_before": "1801-02-14",
+        "place": "Caguas, Puerto Rico",
+        "status": "burial_date_confirmed_exact_death_day_not_separately_stated"
+      },
+      "burial": {
+        "date": "1801-02-14",
+        "place": "Dulce Nombre de Jesús, Caguas, Puerto Rico",
+        "status": "confirmed_original_parish_register"
+      },
+      "parents": [
+        "person.francisco-father-of-maximo-vazquez",
+        "person.maria-cortez"
+      ],
+      "known_siblings": [
+        {
+          "person": "person.miguel-vazquez-child-of-francisco-maria",
+          "status": "confirmed_same_parent_pair"
+        },
+        {
+          "person": "person.maria-de-los-angeles-vazquez",
+          "status": "confirmed_same_parent_pair"
+        },
+        {
+          "person": "person.maximo-vazquez",
+          "status": "strong_probable_same_parent_couple_caguas_cluster"
+        }
+      ],
+      "site_projection": "research_only",
+      "confidence": "burial_and_parent_pair_confirmed_original_probable_sibling_of_maximo",
+      "evidence_refs": [
+        "source.familysearch-burial.jose-vazquez.1801"
+      ],
+      "notes": "The burial names José Vázquez as the legitimate son of Francisco and María Cortés. It does not state an age, birthplace, or the parents' native places."
+    },
+    "relations": {
+      "parentIds": [
+        "person.francisco-father-of-maximo-vazquez",
+        "person.maria-cortez"
+      ],
+      "partnerIds": [],
+      "childIds": [],
+      "siblingIds": [
+        "person.miguel-vazquez-child-of-francisco-maria",
+        "person.maria-de-los-angeles-vazquez",
+        "person.maximo-vazquez"
+      ],
+      "relatedIds": [],
+      "namedChildren": [],
+      "namedSiblings": []
+    },
+    "claims": [],
+    "sources": [
+      {
+        "id": "source.familysearch-burial.jose-vazquez.1801",
+        "type": "parish_burial_register_with_image",
+        "title": "1801 burial of José Vázquez",
+        "repository": "Dulce Nombre de Jesús, Caguas, via FamilySearch",
+        "accessed": "2026-07-24",
+        "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSV2-3Q9N-P?cat=89952&i=2104&lang=en",
+        "quality": "original_register_image_downloaded_and_reviewed",
+        "citation": "Film 1389031, frame 2105, folio 244 verso, record 1032. On 14 February 1801 the parish buried José Vázquez, identified as the legitimate son of Francisco and María Cortés. The entry does not state José's age or the parents' native places.",
+        "image_archive": "research/pulls/images/caguas-1801-jose-vazquez-burial/1801-02-14-jose-vazquez-burial-original-3Q9M-CSV2-3Q9N-P.jpg",
+        "image_sha256": "831b0848c6d47dc8a4d8879413b32742d8a93a10446b3fc96d507094acef1524",
+        "status": "confirmed_original_reviewed",
+        "public_image": "1801-jose-vazquez-burial.jpg"
+      }
+    ],
+    "geographyEvents": [
+      {
+        "id": "geo.event.jose-vazquez-burial-1801",
+        "date": "1801-02-14",
+        "event_type": "burial",
+        "person_refs": [
+          "person.jose-vazquez-child-of-francisco-maria",
+          "person.francisco-father-of-maximo-vazquez",
+          "person.maria-cortez"
+        ],
+        "place_ref": "place.caguas",
+        "status": "confirmed_original_parish_register",
+        "evidence_refs": [
+          "source.familysearch-burial.jose-vazquez.1801"
+        ],
+        "map_groups": [
+          "early-vazquez"
+        ],
+        "sequence": 6,
+        "map_label": "Caguas · 1801",
+        "map_note": "José Vázquez was buried as the legitimate son of Francisco and María Cortés."
+      }
+    ]
   },
   {
     "id": "person.luis-father-of-josefa-rivera",
@@ -10133,7 +11372,9 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "subject": [
           "person.maximo-vazquez",
           "person.josefa-rivera",
-          "person.luis-father-of-josefa-rivera"
+          "person.luis-father-of-josefa-rivera",
+          "person.francisco-father-of-maximo-vazquez",
+          "person.maria-cortez"
         ],
         "predicate": "earliest_verified_origin_boundary",
         "object": {
@@ -10143,12 +11384,16 @@ export const peopleProfiles: readonly PersonProfile[] = [
             "person.luis-father-of-josefa-rivera": "Humacao district, Puerto Rico"
           },
           "earliest_named_people_without_birthplaces": [
-            "Francisco [surname not stated]",
-            "María Cortez",
+            "Francisco Vázquez",
+            "María Magdalena Cortés",
             "Roque [surname not stated]",
             "Marciana Delgado",
             "Isidora Rodríguez"
           ],
+          "earliest_verified_events_without_native_places": {
+            "person.francisco-father-of-maximo-vazquez": "children and wife documented in Caguas, 1786–1801",
+            "person.maria-cortez": "buried in Caguas on 17 June 1794"
+          },
           "overseas_birthplace_identified": false,
           "routes_unproven": [
             "Africa",
@@ -10156,10 +11401,14 @@ export const peopleProfiles: readonly PersonProfile[] = [
             "another Caribbean island"
           ]
         },
-        "status": "verified_three_puerto_rico_native_places_two_parent_name_gains_overseas_origin_open",
+        "status": "verified_three_puerto_rico_native_places_fuller_caguas_parent_pair_and_burial_overseas_origin_open",
         "evidence_refs": [
           "source.familysearch-baptism.juan-de-dios-vazquez-rivera.1819",
           "source.familysearch-marriage.maximo-josefa.1805",
+          "source.familysearch-baptism.miguel-vazquez.1786",
+          "source.familysearch-burial.maria-de-los-angeles-vazquez.1793",
+          "source.familysearch-burial.maria-magdalena-cortes.1794",
+          "source.familysearch-burial.jose-vazquez.1801",
           "source.familysearch-baptism.simona-rivera.1790",
           "source.familysearch-baptism.ysabel-rivera.1792",
           "source.familysearch-death.luis-de-rivera.1811",
@@ -10169,7 +11418,7 @@ export const peopleProfiles: readonly PersonProfile[] = [
           "source.search-audit.las-piedras-baptisms.luis-isidora.1778-1799",
           "source.search-audit.familysearch-index.origin-frontier.2026-07-24"
         ],
-        "note": "The records establish Puerto Rican native places for Máximo, Josefa, and Luís. Luís's death adds parents Roque and Marciana Delgado but does not give their origins. No reviewed source names an overseas-born direct ancestor."
+        "note": "The records establish Puerto Rican native places for Máximo, Josefa, and Luís. The Caguas cluster supplies the fuller parent names Francisco Vázquez and María Magdalena Cortés and María's 1794 burial, but no reviewed source states either parent's native place or names an overseas-born direct ancestor."
       },
       {
         "id": "claim.luis-de-rivera-surname",
@@ -10306,6 +11555,62 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "citation": "DGS 008126787, item 3, local image 78 of 174. Juan de Dios was born 9 March and baptized 14 March 1819 in Juncos, legitimate son of Máximo Vázquez, native of Caguas, and Josefa de Ribera, native of Humacao. The parents were described as pardos libres. The computer index incorrectly dated the birth to 1813 and baptism to 1814; the original reads 1819."
       },
       {
+        "id": "source.familysearch-baptism.miguel-vazquez.1786",
+        "type": "parish_baptism_register_with_image",
+        "title": "1786 baptism of Miguel Vázquez",
+        "repository": "Dulce Nombre de Jesús, Caguas, via FamilySearch",
+        "accessed": "2026-07-24",
+        "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSV2-2QSC-R?cat=89952&i=49&lang=en&cc=1807092&groupId=1807092",
+        "quality": "original_register_image_downloaded_and_reviewed",
+        "citation": "Film 1389001, frame 50, folio 79, record 166. Miguel was baptized 18 October 1786 at the reported age of 15 days, the legitimate son of Francisco Vázquez and María Magdalena. Godparents were Lorenzo Lozano and Juana Cortés. The entry does not state María's surname.",
+        "image_archive": "research/pulls/images/caguas-1786-miguel-vazquez-baptism/1786-10-18-miguel-vazquez-baptism-original-3Q9M-CSV2-2QSC-R.jpg",
+        "image_sha256": "a635eb3194483a73ba24c1f6ed1de004567393e655d2ed03802a79b52291afa3",
+        "status": "confirmed_original_reviewed",
+        "public_image": "1786-miguel-vazquez-baptism.jpg"
+      },
+      {
+        "id": "source.familysearch-burial.maria-de-los-angeles-vazquez.1793",
+        "type": "parish_burial_register_with_image",
+        "title": "1793 burial of María de los Ángeles Vázquez",
+        "repository": "Dulce Nombre de Jesús, Caguas, via FamilySearch",
+        "accessed": "2026-07-24",
+        "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSV2-3QZM-S?cat=89952&i=1979&lang=en",
+        "quality": "original_register_image_downloaded_and_reviewed",
+        "citation": "Film 1389031, frame 1980, folio 119 verso, record 476. On 25 July 1793 the parish buried María de los Ángeles, described as a párvula and legitimate daughter of Francisco Vázquez or Basques and María Magdalena. The entry does not state María's surname.",
+        "image_archive": "research/pulls/images/caguas-1793-maria-de-los-angeles-vazquez-burial/1793-07-25-maria-de-los-angeles-vazquez-burial-original-3Q9M-CSV2-3QZM-S.jpg",
+        "image_sha256": "b6b82fe5a0aac83fa22705361cb973a3696173f3b348dcf0e6ea4b0330ffba14",
+        "status": "confirmed_original_reviewed",
+        "public_image": "1793-maria-de-los-angeles-vazquez-burial.jpg"
+      },
+      {
+        "id": "source.familysearch-burial.maria-magdalena-cortes.1794",
+        "type": "parish_burial_register_with_image",
+        "title": "1794 burial of María Magdalena Cortés",
+        "repository": "Dulce Nombre de Jesús, Caguas, via FamilySearch",
+        "accessed": "2026-07-24",
+        "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSV2-3QZM-Q?cat=89952&i=1990&lang=en",
+        "quality": "original_register_image_downloaded_and_reviewed",
+        "citation": "Film 1389031, frame 1991, folio 130, record 518. On 17 June 1794 the parish buried María Magdalena Cortés, identified as the legitimate wife of Francisco Vázquez. The register date securely establishes the burial; it does not separately state the exact day of death, her age, parents, birthplace, or native place.",
+        "image_archive": "research/pulls/images/caguas-1794-maria-magdalena-cortes-burial/1794-06-17-maria-magdalena-cortes-burial-original-3Q9M-CSV2-3QZM-Q.jpg",
+        "image_sha256": "783e14a277513412927e96e8424bc19a256483ff90f0720bbee2c3c8b80b8530",
+        "status": "confirmed_original_reviewed",
+        "public_image": "1794-maria-magdalena-cortes-burial.jpg"
+      },
+      {
+        "id": "source.familysearch-burial.jose-vazquez.1801",
+        "type": "parish_burial_register_with_image",
+        "title": "1801 burial of José Vázquez",
+        "repository": "Dulce Nombre de Jesús, Caguas, via FamilySearch",
+        "accessed": "2026-07-24",
+        "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSV2-3Q9N-P?cat=89952&i=2104&lang=en",
+        "quality": "original_register_image_downloaded_and_reviewed",
+        "citation": "Film 1389031, frame 2105, folio 244 verso, record 1032. On 14 February 1801 the parish buried José Vázquez, identified as the legitimate son of Francisco and María Cortés. The entry does not state José's age or the parents' native places.",
+        "image_archive": "research/pulls/images/caguas-1801-jose-vazquez-burial/1801-02-14-jose-vazquez-burial-original-3Q9M-CSV2-3Q9N-P.jpg",
+        "image_sha256": "831b0848c6d47dc8a4d8879413b32742d8a93a10446b3fc96d507094acef1524",
+        "status": "confirmed_original_reviewed",
+        "public_image": "1801-jose-vazquez-burial.jpg"
+      },
+      {
         "id": "source.transcription.las-piedras-humacao-burials.1787-1798",
         "type": "complete_volunteer_burial_transcription_with_historical_jurisdiction_note",
         "title": "Burials in Las Piedras and Humacao, 1787–1798",
@@ -10360,25 +11665,6 @@ export const peopleProfiles: readonly PersonProfile[] = [
     ],
     "geographyEvents": [
       {
-        "id": "geo.event.luis-native-humacao",
-        "date_range": "before 1811",
-        "event_type": "reported_native_place",
-        "person_refs": [
-          "person.luis-father-of-josefa-rivera"
-        ],
-        "place_ref": "place.humacao",
-        "status": "confirmed_as_recorded",
-        "evidence_refs": [
-          "source.familysearch-death.luis-de-rivera.1811"
-        ],
-        "map_groups": [
-          "early-vazquez"
-        ],
-        "sequence": 3,
-        "map_label": "Humacao",
-        "map_note": "Luís de Rivera's 1811 death calls him a native of this Humacao district."
-      },
-      {
         "id": "geo.event.simona-baptism-1790",
         "date": "1790-03-07",
         "event_type": "baptism",
@@ -10395,7 +11681,7 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "map_groups": [
           "early-vazquez"
         ],
-        "sequence": 4,
+        "sequence": 2,
         "map_label": "Las Piedras · 1790",
         "map_note": "Simona, sister of Josefa, was baptized here to Luís de Rivera and Isidora Rodríguez."
       },
@@ -10416,9 +11702,28 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "map_groups": [
           "early-vazquez"
         ],
-        "sequence": 5,
+        "sequence": 3,
         "map_label": "Las Piedras · 1792",
         "map_note": "Another daughter, Ysabel, was baptized in the same parish."
+      },
+      {
+        "id": "geo.event.luis-native-humacao",
+        "date_range": "before 1811",
+        "event_type": "reported_native_place",
+        "person_refs": [
+          "person.luis-father-of-josefa-rivera"
+        ],
+        "place_ref": "place.humacao",
+        "status": "confirmed_as_recorded",
+        "evidence_refs": [
+          "source.familysearch-death.luis-de-rivera.1811"
+        ],
+        "map_groups": [
+          "early-vazquez"
+        ],
+        "sequence": 9,
+        "map_label": "Humacao",
+        "map_note": "Luís de Rivera's 1811 death calls him a native of this Humacao district."
       },
       {
         "id": "geo.event.luis-death-1811",
@@ -10435,7 +11740,7 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "map_groups": [
           "early-vazquez"
         ],
-        "sequence": 8,
+        "sequence": 12,
         "map_label": "Humacao · 1811",
         "map_note": "Luís died in Humacao. The entry names his parents, wife, and nine children."
       }
@@ -10667,7 +11972,7 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "map_groups": [
           "early-vazquez"
         ],
-        "sequence": 4,
+        "sequence": 2,
         "map_label": "Las Piedras · 1790",
         "map_note": "Simona, sister of Josefa, was baptized here to Luís de Rivera and Isidora Rodríguez."
       },
@@ -10688,7 +11993,7 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "map_groups": [
           "early-vazquez"
         ],
-        "sequence": 5,
+        "sequence": 3,
         "map_label": "Las Piedras · 1792",
         "map_note": "Another daughter, Ysabel, was baptized in the same parish."
       }
@@ -11638,7 +12943,7 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "map_groups": [
           "early-vazquez"
         ],
-        "sequence": 7,
+        "sequence": 11,
         "map_label": "Humacao · 1806",
         "map_note": "Their daughter Juana Jacinta was born in Humacao."
       }
@@ -12840,7 +14145,7 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "map_groups": [
           "early-vazquez"
         ],
-        "sequence": 4,
+        "sequence": 2,
         "map_label": "Las Piedras · 1790",
         "map_note": "Simona, sister of Josefa, was baptized here to Luís de Rivera and Isidora Rodríguez."
       }
@@ -12970,7 +14275,7 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "map_groups": [
           "early-vazquez"
         ],
-        "sequence": 5,
+        "sequence": 3,
         "map_label": "Las Piedras · 1792",
         "map_note": "Another daughter, Ysabel, was baptized in the same parish."
       }

@@ -31,6 +31,14 @@ const publicRecordImages = {
   "source.census.1910.sotero-maria": "1910-sotero-maria-household.jpg",
   "source.familysearch-marriage.maximo-josefa.1805":
     "1805-maximo-josefa-marriage.jpg",
+  "source.familysearch-baptism.miguel-vazquez.1786":
+    "1786-miguel-vazquez-baptism.jpg",
+  "source.familysearch-burial.maria-de-los-angeles-vazquez.1793":
+    "1793-maria-de-los-angeles-vazquez-burial.jpg",
+  "source.familysearch-burial.maria-magdalena-cortes.1794":
+    "1794-maria-magdalena-cortes-burial.jpg",
+  "source.familysearch-burial.jose-vazquez.1801":
+    "1801-jose-vazquez-burial.jpg",
   "source.familysearch-baptism.simona-rivera.1790":
     "1790-simona-rivera-baptism.jpg",
   "source.familysearch-baptism.ysabel-rivera.1792":

@@ -16,6 +16,7 @@ const principalSources = sources.filter((source) =>
     "marriage",
     "census-1950",
     "maximo-josefa-marriage",
+    "maria-magdalena-cortes-burial-1794",
   ].includes(source.id),
 );
 
@@ -352,6 +353,26 @@ export default function Home() {
             </figcaption>
           </figure>
           <figure className="record-wide">
+            <a
+              href="/records/1794-maria-magdalena-cortes-burial.jpg"
+              target="_blank"
+            >
+              <img
+                src="/records/1794-maria-magdalena-cortes-burial.jpg"
+                alt="1794 Caguas parish burial entry for María Magdalena Cortés, wife of Francisco Vázquez"
+              />
+            </a>
+            <figcaption>
+              <strong>1794 · Caguas</strong>
+              <span>
+                María Magdalena Cortés was buried on 17 June. The entry names
+                her husband, Francisco Vázquez, completing the fuller parent
+                names behind Máximo’s 1805 marriage.
+              </span>
+              <small>Dulce Nombre de Jesús parish register · record 518</small>
+            </figcaption>
+          </figure>
+          <figure className="record-wide">
             <a href="/records/1811-luis-de-rivera-death.jpg" target="_blank">
               <img
                 src="/records/1811-luis-de-rivera-death.jpg"
@@ -649,6 +670,36 @@ export default function Home() {
               follow the family through Humacao, Juncos, and San Lorenzo.
             </p>
             <a href="/research#maximo-josefa">See this family →</a>
+          </article>
+          <article id="story-francisco-maria-cortez">
+            <span className="story-when">Máximo’s parents in Caguas</span>
+            <h3>
+              <Link
+                className="person-profile-link"
+                data-person-id="person.francisco-father-of-maximo-vazquez"
+                href="/people/francisco-father-of-maximo-vazquez"
+              >
+                Francisco Vázquez
+              </Link>
+              {" + "}
+              <Link
+                className="person-profile-link"
+                data-person-id="person.maria-cortez"
+                href="/people/maria-cortez"
+              >
+                María Magdalena Cortés
+              </Link>
+            </h3>
+            <p>
+              Their Caguas household appears across four records from 1786 to
+              1801. Miguel, María de los Ángeles, and José are documented
+              children; the same parent names and Máximo’s Caguas origin make
+              them his probable siblings. María Magdalena was buried in Caguas
+              on 17 June 1794.
+            </p>
+            <a href="/research#francisco-maria-cortez">
+              See this family and the records →
+            </a>
           </article>
           <article id="story-andres-francisca">
             <span className="story-when">Juana Regina’s parents</span>

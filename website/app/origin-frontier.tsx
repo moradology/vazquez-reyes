@@ -27,9 +27,11 @@ export function OriginFrontier() {
         <p>
           The first people whose native places are stated in the records are
           Máximo Vázquez of Caguas and Josefa Rivera of Humacao. Their 1805
-          marriage names both parent pairs. Luís de Rivera’s 1811 death carries
-          Josefa’s line one generation farther, but it calls Luís himself a
-          native of the Humacao district.
+          marriage names both parent pairs. Earlier Caguas records now identify
+          Máximo’s parents more fully as Francisco Vázquez and María Magdalena
+          Cortés. Luís de Rivera’s 1811 death carries Josefa’s line one
+          generation farther, but it calls Luís himself a native of the
+          Humacao district.
         </p>
       </div>
 
@@ -39,12 +41,16 @@ export function OriginFrontier() {
             <span>Máximo’s parents</span>
             <strong>
               <b data-person-id="person.francisco-father-of-maximo-vazquez">
-                Francisco [surname not stated]
+                Francisco Vázquez
               </b>
               <br />
-              <b data-person-id="person.maria-cortez">María Cortez</b>
+              <b data-person-id="person.maria-cortez">
+                María Magdalena Cortés
+              </b>
             </strong>
-            <small>Birthplaces and dates not yet found</small>
+            <small>
+              Birthplaces open · María buried in Caguas, 17 June 1794
+            </small>
           </header>
           <div className="origin-descent" aria-hidden="true">
             <i />
@@ -53,7 +59,10 @@ export function OriginFrontier() {
           <div className="origin-person" data-person-id="person.maximo-vazquez">
             <span>Native of Caguas</span>
             <h3>Máximo Vázquez</h3>
-            <p>Recorded as Máximo Basquez at his marriage in 1805</p>
+            <p>
+              Recorded as Máximo Basquez at his marriage in 1805; three
+              probable siblings now appear in the earlier Caguas household
+            </p>
           </div>
         </article>
 
@@ -116,8 +125,9 @@ export function OriginFrontier() {
           <p className="eyebrow">Routes still to test</p>
           <h3>No record yet names an overseas-born ancestor.</h3>
           <p>
-            These are possibilities to investigate, not family origins already
-            established.
+            The new records deepen this branch within Caguas. They do not state
+            where Francisco or María was born. These remain possibilities to
+            investigate, not family origins already established.
           </p>
         </div>
         <div className="origin-route-grid">

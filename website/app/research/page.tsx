@@ -19,6 +19,41 @@ function Grade({
   return <span className={`status status-${kind}`}>{children}</span>;
 }
 
+const caguasParentHouseholdRecords = [
+  {
+    src: "1786-miguel-vazquez-baptism.jpg",
+    alt: "1786 Caguas baptism entry for Miguel, son of Francisco Vázquez and María Magdalena",
+    title: "1786 · Miguel’s baptism",
+    detail:
+      "Miguel, baptized at the reported age of 15 days, is called the legitimate son of Francisco Vázquez and María Magdalena.",
+    note: "Caguas · film 1389001 · folio 79 · record 166",
+  },
+  {
+    src: "1793-maria-de-los-angeles-vazquez-burial.jpg",
+    alt: "1793 Caguas burial entry for María de los Ángeles, child of Francisco Vázquez and María Magdalena",
+    title: "1793 · María de los Ángeles’s burial",
+    detail:
+      "The young child is named as the legitimate daughter of Francisco Vázquez or Basques and María Magdalena.",
+    note: "Caguas · film 1389031 · folio 119 verso · record 476",
+  },
+  {
+    src: "1794-maria-magdalena-cortes-burial.jpg",
+    alt: "1794 Caguas burial entry for María Magdalena Cortés, wife of Francisco Vázquez",
+    title: "1794 · María Magdalena Cortés’s burial",
+    detail:
+      "Her own burial supplies the full name María Magdalena Cortés and identifies Francisco Vázquez as her husband.",
+    note: "Caguas · film 1389031 · folio 130 · record 518",
+  },
+  {
+    src: "1801-jose-vazquez-burial.jpg",
+    alt: "1801 Caguas burial entry for José Vázquez, son of Francisco and María Cortés, shown in two-part reading order",
+    title: "1801 · José Vázquez’s burial",
+    detail:
+      "José is named as the legitimate son of Francisco and María Cortés. The record gives no age or native places.",
+    note: "Caguas · film 1389031 · folio 244 verso · two-part crop",
+  },
+];
+
 export const metadata = {
   title: "Research Notes · Vazquez–Reyes Family History",
   description:
@@ -126,13 +161,38 @@ export default function ResearchPage() {
               </div>
               <div>
                 <dt>Parents</dt>
-                <dd>Francisco [surname not stated] and María Cortez</dd>
+                <dd>Francisco Vázquez and María Magdalena Cortés</dd>
               </div>
               <div>
                 <dt>Record language</dt>
                 <dd>
                   Described with Josefa as <i>pardo libre</i> in 1819
                 </dd>
+              </div>
+            </dl>
+          </article>
+          <article>
+            <Grade kind="probable">STRONG CLUSTER</Grade>
+            <h3>Francisco Vázquez + María Magdalena Cortés</h3>
+            <dl>
+              <div>
+                <dt>Place documented</dt>
+                <dd>Caguas, 1786–1801</dd>
+              </div>
+              <div>
+                <dt>Children in originals</dt>
+                <dd>Miguel, María de los Ángeles, and José</dd>
+              </div>
+              <div>
+                <dt>Máximo connection</dt>
+                <dd>
+                  Same parent pair and Caguas origin; his own baptism remains
+                  missing
+                </dd>
+              </div>
+              <div>
+                <dt>María’s burial</dt>
+                <dd>17 June 1794 in Caguas</dd>
               </div>
             </dl>
           </article>
@@ -190,9 +250,10 @@ export default function ResearchPage() {
               <span>Caguas</span>
               <strong>Máximo’s baptism</strong>
               <p>
-                No match appears in the complete 1785–1788 baptism transcript.
-                The surviving digitized sequence has major gaps before and
-                after those years.
+                No Máximo match appears in the complete 1785–1788 baptism
+                transcript. It does contain Miguel’s 1786 baptism under
+                Francisco Vázquez and María Magdalena. The surviving digitized
+                sequence has major gaps before and after those years.
               </p>
             </article>
             <article>
@@ -204,14 +265,25 @@ export default function ResearchPage() {
               </p>
             </article>
             <article>
+              <span>Caguas · 1786–1801</span>
+              <strong>The earlier household is now documented</strong>
+              <p>
+                Miguel’s baptism, María de los Ángeles’s burial, María
+                Magdalena Cortés’s own burial, and José Vázquez’s burial
+                establish the fuller parent couple and three probable siblings
+                of Máximo.
+              </p>
+            </article>
+            <article>
               <span>Caguas · 1804–1809</span>
               <strong>Burial register captured and screened</strong>
               <p>
                 All 190 photographed openings were saved. Two handwriting
                 recognition passes and a manual review of plausible hits found
-                no defensible Máximo, Francisco and María Cortez, parent death,
-                or overseas birthplace. This is not a full human transcription
-                or proof of absence.
+                no defensible target within that span. The verified family
+                burials date to 1793, 1794, and 1801—outside these captured
+                pages. This is not a full human transcription or proof of
+                absence.
               </p>
             </article>
             <article>
@@ -406,6 +478,19 @@ export default function ResearchPage() {
                   </figcaption>
                 </figure>
               )}
+              {family.id === "francisco-maria-cortez" &&
+                caguasParentHouseholdRecords.map((record) => (
+                  <figure className="family-record" key={record.src}>
+                    <a href={`/records/${record.src}`} target="_blank">
+                      <img src={`/records/${record.src}`} alt={record.alt} />
+                    </a>
+                    <figcaption>
+                      <strong>{record.title}</strong>
+                      <span>{record.detail}</span>
+                      <small>{record.note}</small>
+                    </figcaption>
+                  </figure>
+                ))}
               {family.id === "luis-isidora" && (
                 <>
                   <figure className="family-record">

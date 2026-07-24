@@ -46,7 +46,10 @@ test("renders the Vazquez-Reyes family history", async () => {
   assert.match(html, /No record yet names an overseas-born ancestor/);
   assert.match(html, /Routes still to test/);
   assert.match(html, /1805-maximo-josefa-marriage\.jpg/);
+  assert.match(html, /1794-maria-magdalena-cortes-burial\.jpg/);
   assert.match(html, /1811-luis-de-rivera-death\.jpg/);
+  assert.match(html, /Francisco Vázquez/);
+  assert.match(html, /María Magdalena Cortés/);
   assert.match(html, /Eastern Puerto Rico → East Harlem/);
   assert.match(html, /The families on paper/);
   assert.match(html, /1940-reyes-household\.jpg/);
@@ -99,12 +102,17 @@ test("renders the people directory and a detailed, linked person profile", async
   assert.equal(personResponse.status, 200);
   assert.match(personHtml, /<title>Máximo Vázquez · Vazquez–Reyes Family History<\/title>/);
   assert.match(personHtml, /Immediate family and known siblings/);
-  assert.match(personHtml, /Francisco \[surname not stated\]/);
-  assert.match(personHtml, /María Cortez/);
+  assert.match(personHtml, /Francisco Vázquez/);
+  assert.match(personHtml, /María Magdalena Cortés/);
+  assert.match(personHtml, /Miguel Vázquez/);
+  assert.match(personHtml, /María de los Ángeles Vázquez/);
+  assert.match(personHtml, /José Vázquez/);
   assert.match(personHtml, /Known children/);
   assert.match(personHtml, /Atilano Vázquez/);
   assert.match(personHtml, /data-pr-map="person-maximo-vazquez"/);
   assert.match(personHtml, /1805-maximo-josefa-marriage\.jpg/);
+  assert.match(personHtml, /1786-miguel-vazquez-baptism\.jpg/);
+  assert.match(personHtml, /1794-maria-magdalena-cortes-burial\.jpg/);
   assert.match(personHtml, /Claims and how they are graded/);
   assert.match(personHtml, /Records reviewed/);
 });
@@ -115,12 +123,14 @@ test("renders a slide-style, evidence-led family presentation", async () => {
 
   assert.equal(response.status, 200);
   assert.match(html, /Family evidence walkthrough/);
-  assert.equal([...html.matchAll(/\bdata-slide="true"/g)].length, 13);
+  assert.equal([...html.matchAll(/\bdata-slide="true"/g)].length, 14);
   assert.match(html, /How the records/);
   assert.match(html, /Connection/);
   assert.match(html, /The record/);
   assert.match(html, /1915-cruz-civil-birth\.jpg/);
   assert.match(html, /1805-maximo-josefa-marriage\.jpg/);
+  assert.match(html, /1794-maria-magdalena-cortes-burial\.jpg/);
+  assert.match(html, /Four earlier records supply the fuller parent names/);
   assert.match(html, /1811-luis-de-rivera-death\.jpg/);
   assert.match(html, /No reviewed record yet identifies a direct ancestor born in Africa/);
   assert.match(html, /data-presentation-fullscreen/);
@@ -190,7 +200,7 @@ test("keeps the geography ledger referential and explicit about precision", asyn
   const sourceIds = new Set(parse(sourcesText).map((source) => source.id));
 
   assert.equal(places.length, 18);
-  assert.equal(events.length, 38);
+  assert.equal(events.length, 42);
   for (const place of places) {
     assert.match(place.precision, /point/);
     assert.match(place.coordinate_source.url, /^https:\/\/tigerweb\.geo\.census\.gov\//);
@@ -269,7 +279,11 @@ test("separates the public summary from the research notes", async () => {
   assert.match(researchHtml, /3 June 1898 · Yabucoa/);
   assert.match(researchHtml, /Máximo Vázquez \+ Josefa Rivera/);
   assert.match(researchHtml, /Máximo Basquez and Josefa Ribera/);
-  assert.match(researchHtml, /Francisco \[surname not stated\] \+ María Cortez/);
+  assert.match(researchHtml, /Francisco Vázquez \+ María Magdalena Cortés/);
+  assert.match(researchHtml, /1786-miguel-vazquez-baptism\.jpg/);
+  assert.match(researchHtml, /1793-maria-de-los-angeles-vazquez-burial\.jpg/);
+  assert.match(researchHtml, /1794-maria-magdalena-cortes-burial\.jpg/);
+  assert.match(researchHtml, /1801-jose-vazquez-burial\.jpg/);
   assert.match(researchHtml, /Luís de Rivera \+ Isidora Rodríguez/);
   assert.match(researchHtml, /1790-simona-rivera-baptism\.jpg/);
   assert.match(researchHtml, /1792-ysabel-rivera-baptism\.jpg/);

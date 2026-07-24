@@ -222,11 +222,26 @@ marriage and death, and a wider Vázquez sibling cluster.
 - The marriage identifies Máximo as the legitimate son of **Francisco** and
   **María Cortez**, and Josefa as the legitimate daughter of **Luís** and
   **Isidora Rodríguez**.
-- The marriage register does not write surnames for Francisco or Luís.
-  Francisco therefore remains without an assigned surname. Two earlier Las
-  Piedras child baptisms now supply **Luís de Rivera** as a documented full
-  form for Josefa's father; the surname is cited to those baptisms rather than
-  retroactively quoted as part of the marriage.
+- The marriage register does not write surnames for Francisco or Luís. Four
+  earlier Caguas originals now support **Francisco Vázquez** and **María
+  Magdalena Cortés** as the fuller parent forms. Two earlier Las Piedras child
+  baptisms supply **Luís de Rivera** as Josefa's father's documented full form.
+  Neither surname is retroactively quoted as part of the 1805 marriage.
+- **Miguel Vázquez** was baptized in Caguas on **18 October 1786**, at the
+  reported age of 15 days, the legitimate son of Francisco Vázquez and María
+  Magdalena. The entry does not state María's surname.
+- **María de los Ángeles Vázquez**, described as a young child, was buried in
+  Caguas on **25 July 1793**, daughter of Francisco Vázquez or Basques and
+  María Magdalena.
+- **María Magdalena Cortés** was buried in Caguas on **17 June 1794** and
+  identified as Francisco Vázquez's legitimate wife. Her parents, age,
+  birthplace, native place, and exact death day are not stated.
+- **José Vázquez** was buried in Caguas on **14 February 1801**, the legitimate
+  son of Francisco and María Cortés.
+- The exact parent names, Caguas location, chronology, and Máximo's recorded
+  Caguas origin make Miguel, María de los Ángeles, and José strong probable
+  siblings of Máximo. His own baptism remains missing, so that sibling
+  relationship is not described as direct baptismal proof.
 - **Simona** was born **8 February 1790** and baptized **7 March 1790** in Las
   Piedras, the legitimate daughter of Luís de Rivera and Isidora Rodríguez.
   Her 1805 marriage repeats the parent pair, establishing her as Josefa's
@@ -252,9 +267,11 @@ marriage and death, and a wider Vázquez sibling cluster.
   Josefa. That complete item review does not cover missing, duplicate, or
   neighboring registers.
 - No record yet places a named direct ancestor before Puerto Rico. Luís is the
-  earliest direct ancestor with a newly stated origin, and that origin is
-  still the Humacao district. Roque's, Marciana's, Isidora's, Francisco's, and
-  María Cortez's own origins remain unknown.
+  earliest direct ancestor with a stated native place, and that place is still
+  the Humacao district. The new Caguas records document Francisco Vázquez and
+  María Magdalena Cortés there but do not state either person's native place.
+  Roque's, Marciana's, Isidora's, Francisco's, and María's origins remain
+  unknown.
 - The captured evidence includes the complete original register image, a
   natural reading-order crop joining the bottom-left entry to its top-right
   continuation, enhanced legibility crops, and capture metadata.
@@ -314,10 +331,10 @@ This couple were Carlina's parents and Rafael's maternal grandparents.
   in 1849. Juana died between 1863 and 1870; Atilano died in 1898. The line
   extends again to **Máximo Vázquez and Josefa Rivera**, who married in 1805.
   Their marriage names the prior generation as **Francisco and María Cortez**,
-  and **Luís and Isidora Rodríguez**. Earlier baptisms for Josefa's sisters
-  document the full form **Luís de Rivera**; Francisco's surname remains
-  unstated. Juana Regina's parents were **Andrés [Rodríguez] and Francisca
-  Díaz**.
+  and **Luís and Isidora Rodríguez**. The earlier Caguas household supplies
+  the fuller forms **Francisco Vázquez and María Magdalena Cortés**; earlier
+  baptisms for Josefa's sisters supply **Luís de Rivera**. Juana Regina's
+  parents were **Andrés [Rodríguez] and Francisca Díaz**.
 - Rafael's civil-registration index supports **February 1906**, not October;
   his exact birth day is still open.
 
@@ -342,9 +359,10 @@ This couple were Carlina's parents and Rafael's maternal grandparents.
 8. Birth or baptism records for the Perales–Pérez and Reyes–Martínez sibling
    clusters, especially Benito Isabel versus Isabel and Pedro's earlier
    children with Juana Villafañe.
-9. Baptisms, marriages, and deaths that can identify the life dates and native
-   places of Roque with Marciana Delgado, Isidora Rodríguez, and Francisco
-   with María Cortez. Overseas origins remain unassigned unless a record names
+9. Francisco Vázquez and María Magdalena Cortés's marriage before 1786,
+   Francisco's burial after 1801, and records that identify their parents or
+   native places; plus life records for Roque with Marciana Delgado and
+   Isidora Rodríguez. Overseas origins remain unassigned unless a record names
    a specific direct ancestor and place.
 
 All sources, conflicts and next-record targets are recorded in the adjacent

@@ -312,61 +312,25 @@ export const geographyPlaces = [
 
 export const geographyEvents = [
   {
-    "id": "geo.event.maximo-native-caguas",
-    "date_range": "before 1819",
-    "event_type": "reported_native_place",
+    "id": "geo.event.miguel-vazquez-baptism-1786",
+    "date": "1786-10-18",
+    "event_type": "baptism",
     "person_refs": [
-      "person.maximo-vazquez"
+      "person.miguel-vazquez-child-of-francisco-maria",
+      "person.francisco-father-of-maximo-vazquez",
+      "person.maria-cortez"
     ],
     "place_ref": "place.caguas",
-    "status": "confirmed_as_recorded",
+    "status": "confirmed_original_parish_register",
     "evidence_refs": [
-      "source.familysearch-baptism.juan-de-dios-vazquez-rivera.1819"
+      "source.familysearch-baptism.miguel-vazquez.1786"
     ],
     "map_groups": [
       "early-vazquez"
     ],
     "sequence": 1,
-    "map_label": "Caguas",
-    "map_note": "Máximo was recorded as a native of Caguas in his son’s 1819 baptism."
-  },
-  {
-    "id": "geo.event.josefa-native-humacao",
-    "date_range": "before 1819",
-    "event_type": "reported_native_place",
-    "person_refs": [
-      "person.josefa-rivera"
-    ],
-    "place_ref": "place.humacao",
-    "status": "confirmed_as_recorded",
-    "evidence_refs": [
-      "source.familysearch-baptism.juan-de-dios-vazquez-rivera.1819"
-    ],
-    "map_groups": [
-      "early-vazquez"
-    ],
-    "sequence": 2,
-    "map_label": "Humacao",
-    "map_note": "The same baptism calls Josefa a native of Humacao."
-  },
-  {
-    "id": "geo.event.luis-native-humacao",
-    "date_range": "before 1811",
-    "event_type": "reported_native_place",
-    "person_refs": [
-      "person.luis-father-of-josefa-rivera"
-    ],
-    "place_ref": "place.humacao",
-    "status": "confirmed_as_recorded",
-    "evidence_refs": [
-      "source.familysearch-death.luis-de-rivera.1811"
-    ],
-    "map_groups": [
-      "early-vazquez"
-    ],
-    "sequence": 3,
-    "map_label": "Humacao",
-    "map_note": "Luís de Rivera's 1811 death calls him a native of this Humacao district."
+    "map_label": "Caguas · 1786",
+    "map_note": "Miguel was baptized at a reported age of fifteen days, the legitimate son of Francisco Vázquez and María Magdalena."
   },
   {
     "id": "geo.event.simona-baptism-1790",
@@ -385,7 +349,7 @@ export const geographyEvents = [
     "map_groups": [
       "early-vazquez"
     ],
-    "sequence": 4,
+    "sequence": 2,
     "map_label": "Las Piedras · 1790",
     "map_note": "Simona, sister of Josefa, was baptized here to Luís de Rivera and Isidora Rodríguez."
   },
@@ -406,9 +370,128 @@ export const geographyEvents = [
     "map_groups": [
       "early-vazquez"
     ],
-    "sequence": 5,
+    "sequence": 3,
     "map_label": "Las Piedras · 1792",
     "map_note": "Another daughter, Ysabel, was baptized in the same parish."
+  },
+  {
+    "id": "geo.event.maria-de-los-angeles-burial-1793",
+    "date": "1793-07-25",
+    "event_type": "burial",
+    "person_refs": [
+      "person.maria-de-los-angeles-vazquez",
+      "person.francisco-father-of-maximo-vazquez",
+      "person.maria-cortez"
+    ],
+    "place_ref": "place.caguas",
+    "status": "confirmed_original_parish_register",
+    "evidence_refs": [
+      "source.familysearch-burial.maria-de-los-angeles-vazquez.1793"
+    ],
+    "map_groups": [
+      "early-vazquez"
+    ],
+    "sequence": 4,
+    "map_label": "Caguas · 1793",
+    "map_note": "The child María de los Ángeles was buried as the legitimate daughter of Francisco Vázquez and María Magdalena."
+  },
+  {
+    "id": "geo.event.maria-magdalena-cortes-burial-1794",
+    "date": "1794-06-17",
+    "event_type": "burial",
+    "person_refs": [
+      "person.maria-cortez",
+      "person.francisco-father-of-maximo-vazquez"
+    ],
+    "place_ref": "place.caguas",
+    "status": "confirmed_original_parish_register",
+    "evidence_refs": [
+      "source.familysearch-burial.maria-magdalena-cortes.1794"
+    ],
+    "map_groups": [
+      "early-vazquez"
+    ],
+    "sequence": 5,
+    "map_label": "Caguas · 1794",
+    "map_note": "María Magdalena Cortés was buried here as the legitimate wife of Francisco Vázquez."
+  },
+  {
+    "id": "geo.event.jose-vazquez-burial-1801",
+    "date": "1801-02-14",
+    "event_type": "burial",
+    "person_refs": [
+      "person.jose-vazquez-child-of-francisco-maria",
+      "person.francisco-father-of-maximo-vazquez",
+      "person.maria-cortez"
+    ],
+    "place_ref": "place.caguas",
+    "status": "confirmed_original_parish_register",
+    "evidence_refs": [
+      "source.familysearch-burial.jose-vazquez.1801"
+    ],
+    "map_groups": [
+      "early-vazquez"
+    ],
+    "sequence": 6,
+    "map_label": "Caguas · 1801",
+    "map_note": "José Vázquez was buried as the legitimate son of Francisco and María Cortés."
+  },
+  {
+    "id": "geo.event.maximo-native-caguas",
+    "date_range": "before 1819",
+    "event_type": "reported_native_place",
+    "person_refs": [
+      "person.maximo-vazquez"
+    ],
+    "place_ref": "place.caguas",
+    "status": "confirmed_as_recorded",
+    "evidence_refs": [
+      "source.familysearch-baptism.juan-de-dios-vazquez-rivera.1819"
+    ],
+    "map_groups": [
+      "early-vazquez"
+    ],
+    "sequence": 7,
+    "map_label": "Caguas",
+    "map_note": "Máximo was recorded as a native of Caguas in his son’s 1819 baptism."
+  },
+  {
+    "id": "geo.event.josefa-native-humacao",
+    "date_range": "before 1819",
+    "event_type": "reported_native_place",
+    "person_refs": [
+      "person.josefa-rivera"
+    ],
+    "place_ref": "place.humacao",
+    "status": "confirmed_as_recorded",
+    "evidence_refs": [
+      "source.familysearch-baptism.juan-de-dios-vazquez-rivera.1819"
+    ],
+    "map_groups": [
+      "early-vazquez"
+    ],
+    "sequence": 8,
+    "map_label": "Humacao",
+    "map_note": "The same baptism calls Josefa a native of Humacao."
+  },
+  {
+    "id": "geo.event.luis-native-humacao",
+    "date_range": "before 1811",
+    "event_type": "reported_native_place",
+    "person_refs": [
+      "person.luis-father-of-josefa-rivera"
+    ],
+    "place_ref": "place.humacao",
+    "status": "confirmed_as_recorded",
+    "evidence_refs": [
+      "source.familysearch-death.luis-de-rivera.1811"
+    ],
+    "map_groups": [
+      "early-vazquez"
+    ],
+    "sequence": 9,
+    "map_label": "Humacao",
+    "map_note": "Luís de Rivera's 1811 death calls him a native of this Humacao district."
   },
   {
     "id": "geo.event.maximo-josefa-marriage-1805",
@@ -426,7 +509,7 @@ export const geographyEvents = [
     "map_groups": [
       "early-vazquez"
     ],
-    "sequence": 6,
+    "sequence": 10,
     "map_label": "Humacao · 1805",
     "map_note": "Máximo Basquez and Josefa Ribera married in Humacao."
   },
@@ -447,7 +530,7 @@ export const geographyEvents = [
     "map_groups": [
       "early-vazquez"
     ],
-    "sequence": 7,
+    "sequence": 11,
     "map_label": "Humacao · 1806",
     "map_note": "Their daughter Juana Jacinta was born in Humacao."
   },
@@ -466,7 +549,7 @@ export const geographyEvents = [
     "map_groups": [
       "early-vazquez"
     ],
-    "sequence": 8,
+    "sequence": 12,
     "map_label": "Humacao · 1811",
     "map_note": "Luís died in Humacao. The entry names his parents, wife, and nine children."
   },
@@ -486,7 +569,7 @@ export const geographyEvents = [
     "map_groups": [
       "early-vazquez"
     ],
-    "sequence": 9,
+    "sequence": 13,
     "map_label": "Juncos · 1819",
     "map_note": "Their son Juan de Dios was baptized in Juncos."
   },
@@ -506,7 +589,7 @@ export const geographyEvents = [
     "map_groups": [
       "early-vazquez"
     ],
-    "sequence": 10,
+    "sequence": 14,
     "map_label": "San Lorenzo · 1824",
     "map_note": "Their son Miguel de los Santos was baptized in San Lorenzo."
   },

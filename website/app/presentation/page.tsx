@@ -59,7 +59,7 @@ function SlideNav({ current, total }: { current: number; total: number }) {
   );
 }
 
-const totalSlides = 13;
+const totalSlides = 14;
 
 export default function PresentationPage() {
   return (
@@ -377,7 +377,10 @@ export default function PresentationPage() {
           <h2>Máximo Basquez + Josefa Ribera</h2>
           <ul className="slide-findings">
             <li>Married 31 December 1805 in Humacao.</li>
-            <li>Máximo’s parents: Francisco and María Cortez.</li>
+            <li>
+              Máximo’s parents: Francisco and María Cortez; Francisco’s
+              surname is omitted here.
+            </li>
             <li>Josefa’s parents: Luís and Isidora Rodríguez.</li>
             <li>The record does not state a surname for either father.</li>
           </ul>
@@ -399,6 +402,47 @@ export default function PresentationPage() {
       </section>
 
       <section className="deck-slide record-slide" data-slide id="slide-11">
+        <div className="slide-copy">
+          <p className="slide-kicker">Máximo’s Caguas family</p>
+          <h2>Four earlier records supply the fuller parent names.</h2>
+          <ul className="slide-findings">
+            <li>
+              <b>1786:</b> Miguel’s baptism names Francisco Vázquez and María
+              Magdalena.
+            </li>
+            <li>
+              <b>1793:</b> María de los Ángeles’s burial repeats the couple.
+            </li>
+            <li>
+              <b>1794:</b> María Magdalena Cortés’s burial names husband
+              Francisco Vázquez.
+            </li>
+            <li>
+              <b>1801:</b> José Vázquez’s burial names Francisco and María
+              Cortés.
+            </li>
+          </ul>
+          <p className="slide-caution">
+            This strongly identifies Máximo’s parents and three probable
+            siblings. Máximo’s own baptism is still missing, so the sibling
+            links are not presented as direct baptismal proof.
+          </p>
+          <div className="slide-links">
+            <Link href="/people/francisco-father-of-maximo-vazquez">
+              Francisco’s profile →
+            </Link>
+            <Link href="/people/maria-cortez">María’s profile →</Link>
+          </div>
+        </div>
+        <RecordImage
+          alt="1794 Caguas burial of María Magdalena Cortés, wife of Francisco Vázquez"
+          caption="María Magdalena Cortés’s 1794 Caguas burial"
+          src="1794-maria-magdalena-cortes-burial.jpg"
+        />
+        <SlideNav current={11} total={totalSlides} />
+      </section>
+
+      <section className="deck-slide record-slide" data-slide id="slide-12">
         <div className="slide-copy">
           <p className="slide-kicker">Josefa’s family</p>
           <h2>Three records establish the Luís de Rivera household.</h2>
@@ -429,10 +473,10 @@ export default function PresentationPage() {
           caption="Simona, daughter of Luís de Rivera and Isidora Rodríguez"
           src="1790-simona-rivera-baptism.jpg"
         />
-        <SlideNav current={11} total={totalSlides} />
+        <SlideNav current={12} total={totalSlides} />
       </section>
 
-      <section className="deck-slide record-slide" data-slide id="slide-12">
+      <section className="deck-slide record-slide" data-slide id="slide-13">
         <div className="slide-copy">
           <p className="slide-kicker">One generation farther</p>
           <h2>Luís de Rivera names Roque and Marciana Delgado.</h2>
@@ -459,10 +503,10 @@ export default function PresentationPage() {
           caption="Luís de Rivera’s 1811 death entry"
           src="1811-luis-de-rivera-death.jpg"
         />
-        <SlideNav current={12} total={totalSlides} />
+        <SlideNav current={13} total={totalSlides} />
       </section>
 
-      <section className="deck-slide frontier-slide" data-slide id="slide-13">
+      <section className="deck-slide frontier-slide" data-slide id="slide-14">
         <div className="slide-copy">
           <p className="slide-kicker">Where the trail stands</p>
           <h2>The earliest proven places are still in Puerto Rico.</h2>
@@ -478,8 +522,8 @@ export default function PresentationPage() {
             </div>
             <div>
               <span>Birthplace not yet documented</span>
-              <strong>Francisco</strong>
-              <strong>María Cortez</strong>
+              <strong>Francisco Vázquez</strong>
+              <strong>María Magdalena Cortés</strong>
               <strong>Roque</strong>
               <strong>Marciana Delgado</strong>
               <strong>Isidora Rodríguez</strong>
@@ -503,7 +547,7 @@ export default function PresentationPage() {
           <p>Letters and funeral cards</p>
           <p>Stories—with who told them</p>
         </aside>
-        <SlideNav current={13} total={totalSlides} />
+        <SlideNav current={14} total={totalSlides} />
       </section>
     </main>
   );

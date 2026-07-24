@@ -184,14 +184,18 @@ export function FamilyTrees() {
       />
       <aside className="tree-continuation" aria-labelledby="earliest-vazquez-heading">
         <div>
-          <p className="eyebrow">The chart continues through Luís de Rivera</p>
+          <p className="eyebrow">
+            The chart continues through Caguas and Luís de Rivera
+          </p>
           <h3 id="earliest-vazquez-heading">
             Three parent pairs, kept in order
           </h3>
           <p>
             The 1805 marriage names Máximo’s and Josefa’s parents separately.
-            Luís’s 1811 death then names his own parents, Roque and Marciana
-            Delgado. Francisco’s and Roque’s surnames are not supplied.
+            It omits Francisco’s surname, but four earlier Caguas originals
+            identify the couple as Francisco Vázquez and María Magdalena
+            Cortés. Luís’s 1811 death then names his own parents, Roque and
+            Marciana Delgado; Roque’s surname is still not supplied.
           </p>
         </div>
         <div className="tree-continuation-grid">
@@ -199,9 +203,11 @@ export function FamilyTrees() {
             <span>Máximo’s parents</span>
             <strong>
               <Link href="/people/francisco-father-of-maximo-vazquez">
-                Francisco [surname not stated]
+                Francisco Vázquez
               </Link>
-              <Link href="/people/maria-cortez">María Cortez</Link>
+              <Link href="/people/maria-cortez">
+                María Magdalena Cortés
+              </Link>
             </strong>
           </article>
           <article>

@@ -289,9 +289,37 @@ export const sources = [
   {
     id: "maximo-josefa-marriage",
     label: "1805 marriage: Máximo Basquez and Josefa Ribera",
-    detail: "Married 31 December 1805 in Humacao. The register names Máximo’s parents as Francisco and María Cortez, and Josefa’s as Luís and Isidora Rodríguez. It omits both fathers’ surnames; Simona’s earlier baptism supplies the full Luís de Rivera form.",
+    detail: "Married 31 December 1805 in Humacao. The register names Máximo’s parents as Francisco and María Cortez, and Josefa’s as Luís and Isidora Rodríguez. It omits both fathers’ surnames; the earlier Caguas household supplies Francisco Vázquez, while Simona’s baptism supplies Luís de Rivera.",
     href: "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSFS-RT8X?view=fullText&keywords=M%C3%A1ximo+Basquez%2CJosefa%2CRibera&lang=en",
     grade: "Original parish register",
+  },
+  {
+    id: "miguel-vazquez-baptism-1786",
+    label: "1786 baptism: Miguel Vázquez",
+    detail: "Baptized 18 October 1786 in Caguas at the reported age of 15 days, legitimate son of Francisco Vázquez and María Magdalena. The entry does not give María’s surname; that comes from her later burial.",
+    href: "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSV2-2QSC-R?cat=89952&i=49&lang=en&cc=1807092&groupId=1807092",
+    grade: "Original parish register · image captured",
+  },
+  {
+    id: "maria-de-los-angeles-burial-1793",
+    label: "1793 burial: María de los Ángeles Vázquez",
+    detail: "Buried 25 July 1793 in Caguas, described as a young child and legitimate daughter of Francisco Vázquez or Basques and María Magdalena.",
+    href: "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSV2-3QZM-S?cat=89952&i=1979&lang=en",
+    grade: "Original parish register · image captured",
+  },
+  {
+    id: "maria-magdalena-cortes-burial-1794",
+    label: "1794 burial: María Magdalena Cortés",
+    detail: "Buried 17 June 1794 in Caguas and identified as the legitimate wife of Francisco Vázquez. The entry gives no age, parents, birthplace, or native place.",
+    href: "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSV2-3QZM-Q?cat=89952&i=1990&lang=en",
+    grade: "Original parish register · image captured",
+  },
+  {
+    id: "jose-vazquez-burial-1801",
+    label: "1801 burial: José Vázquez",
+    detail: "Buried 14 February 1801 in Caguas, legitimate son of Francisco and María Cortés. The entry does not state his age or either parent’s native place.",
+    href: "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSV2-3Q9N-P?cat=89952&i=2104&lang=en",
+    grade: "Original parish register · image captured",
   },
   {
     id: "simona-rivera-marriage",
@@ -352,14 +380,21 @@ export const sources = [
   {
     id: "caguas-early-transcripts",
     label: "Caguas early baptism and marriage transcriptions",
-    detail: "The complete 1785–1788 baptism transcript contains no Máximo matching parents Francisco and María Cortez. The complete 1774–1804 marriage transcript contains no matching parent marriage. Large baptism-book gaps mean these are negative searches, not proof that the events occurred elsewhere.",
+    detail: "The 1785–1788 baptism transcript led to Miguel’s 1786 original under Francisco Vázquez and María Magdalena, but contains no Máximo match. The 1774–1804 marriage transcript contains no defensible marriage for the parent couple. Large book gaps remain.",
     href: "https://hijosdecoamopr.com/caguas-puerto-rico-church-records-1730-1968/",
-    grade: "Published record guide + complete volunteer transcriptions",
+    grade: "Published record guide + complete transcriptions · originals checked",
+  },
+  {
+    id: "caguas-burial-transcription-1771-1819",
+    label: "Caguas burial transcription, 1771–1819",
+    detail: "The complete transcription led to the 1793 María de los Ángeles, 1794 María Magdalena Cortés, and 1801 José Vázquez entries. Each was then checked against its original FamilySearch image.",
+    href: "https://hijosdecoamopr.com/wp-content/uploads/2023/05/Caguas-%E2%80%93-Defunciones-1771-1819-Film-1389031-2.pdf",
+    grade: "Complete volunteer transcription · three originals checked",
   },
   {
     id: "caguas-burials-1804-1809",
     label: "Caguas burial register screen, 1804–1809",
-    detail: "All 190 photographed openings in item 9 were captured and screened for Máximo Vázquez and for Francisco with María Cortez. Two handwriting-recognition passes were followed by manual review of plausible hits. No defensible target appeared, but a full line-by-line human transcription remains open.",
+    detail: "All 190 photographed openings visibly spanning January 1804 through June 1809 were captured and screened. No defensible target appeared in that span. The newly verified family burials date to 1793, 1794, and 1801, outside this bounded screen.",
     href: "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSV2-3Q98-Z?view=index&lang=en&groupId=M9HS-4QG",
     grade: "Original parish register · complete image capture · machine-assisted screen",
   },
@@ -824,24 +859,29 @@ export const familyCouples = [
   {
     id: "francisco-maria-cortez",
     branch: "Máximo’s parents",
-    couple: "Francisco [surname not stated] + María Cortez",
+    couple: "Francisco Vázquez + María Magdalena Cortés",
     status: "documented" as const,
-    connection: "Named as Máximo’s parents in his 31 December 1805 marriage",
+    connection: "Named in Máximo’s 1805 marriage and a four-record Caguas household cluster",
     people: [
       {
-        name: "Francisco [surname not stated]",
+        name: "Francisco Vázquez",
         birth: "Not yet found",
         death: "Not yet found",
       },
       {
-        name: "María Cortez",
+        name: "María Magdalena Cortés",
         birth: "Not yet found",
-        death: "Not yet found",
+        death: "Buried 17 June 1794 · Caguas, Puerto Rico",
       },
     ],
-    children: ["Máximo Basquez or Vázquez"],
+    children: [
+      "Miguel Vázquez — baptized 18 Oct 1786 in Caguas",
+      "María de los Ángeles Vázquez — buried 25 Jul 1793 as a young child",
+      "Máximo Basquez or Vázquez — native of Caguas; probable sibling in this household",
+      "José Vázquez — buried 14 Feb 1801 in Caguas",
+    ],
     childNote:
-      "The Humacao register calls Máximo their legitimate son. It gives Francisco no surname, so Vázquez is not assigned to him without another record.",
+      "Máximo’s marriage gives Francisco no surname. The 1786 baptism, two child burials, and María Magdalena’s own 1794 burial supply Francisco Vázquez and María Magdalena Cortés. The exact names, place, and chronology make the identification strong; Máximo’s own baptism is still needed for direct sibling proof. Neither parent’s birthplace or native place is stated.",
   },
   {
     id: "luis-isidora",
@@ -1028,8 +1068,8 @@ export const openCases = [
   {
     id: "VR-13",
     title: "Máximo and Josefa before 1805",
-    conflict: "Their 31 December 1805 marriage and native places are confirmed. Luís de Rivera’s 1811 death now calls him native to the Humacao district and names parents Roque and Marciana Delgado. The complete 227-image Las Piedras item review found Simona and Ysabel but not Josefa. No reviewed record names an overseas-born direct ancestor.",
-    next: "Prioritize records that can state native places for Roque, Marciana Delgado, Isidora Rodríguez, Francisco, and María Cortez. Search earlier, duplicate, diocesan, and neighboring books; do not turn an index gap into a migration claim.",
+    conflict: "The 1805 marriage and native places are confirmed. Four earlier Caguas originals strongly identify Máximo’s parents more fully as Francisco Vázquez and María Magdalena Cortés and add three probable siblings, but Máximo’s own baptism remains missing. Luís de Rivera’s 1811 death names Roque and Marciana Delgado. No reviewed record names an overseas-born direct ancestor.",
+    next: "Prioritize Máximo’s baptism, Francisco and María’s pre-1786 marriage, Francisco’s post-1801 burial, and records that state native places or parents for this Caguas couple, Roque, Marciana Delgado, and Isidora Rodríguez.",
   },
   {
     id: "VR-14",
@@ -1066,9 +1106,9 @@ export const negativeSearches = [
   "No Pastora Reyes entry appears in the reviewed Gurabo baptism-index pages. A Cruz Reyes entry points to book 15, folio 18 verso, but the damaged register image does not expose the child or parents.",
   "The 1844 Humacao baptism of an Ana Martínez with parents Dámaso Martínez and María Rivera is retained but rejected as the direct Ana because it is 11–14 years earlier than her ages in the 1910 census and 1918 death act.",
   "Focused searches for Pedro Reyes and Juana Villafañe’s marriage and for Juana’s death did not produce a defensible exact match; two children’s original death records nevertheless confirm the parent pair.",
-  "The complete Caguas 1785–1788 baptism transcription contains no Máximo matching parents Francisco and María Cortez. Major gaps before and after that book prevent a negative conclusion about Caguas as his birthplace.",
+  "The complete Caguas 1785–1788 baptism transcription contains no Máximo matching parents Francisco and María Cortez, but it led to Miguel’s 1786 baptism under Francisco Vázquez and María Magdalena. Major gaps before and after that book prevent a negative conclusion about Máximo’s baptism.",
   "The complete Caguas 1774–1804 marriage transcription contains no defensible Francisco and María Cortez parent-couple match.",
-  "All 190 photographed openings of the Caguas burial item visibly spanning January 1804 through June 1809 were captured and screened twice. Plausible target-like hits were manually rejected, but handwriting-recognition gaps mean this is not a definitive negative.",
+  "All 190 photographed openings of the Caguas burial item visibly spanning January 1804 through June 1809 were captured and screened twice. No target appeared within that span. The verified 1793, 1794, and 1801 family burials lie outside it and do not contradict the bounded negative result.",
   "The Las Piedras 1787–1816 marriage transcription contains no Luís and Isidora Rodríguez marriage. Original 1790 and 1792 baptisms nevertheless verify children Simona and Ysabel under Luís de Rivera and Isidora Rodríguez.",
   "A 1787 Simona born to Isidora Montañez is not the woman who married León Garrafa; the exact 1790 baptism resolves that same-name candidate.",
   "A faded 1791 Lorenza baptism names an Isidora Rodríguez with a different apparent father. It is preserved but not merged with the target household.",
@@ -1129,6 +1169,11 @@ export const nameVariants = [
     person: "Máximo Vázquez",
     forms: "Máximo Vázquez · Máximo Basquez · Maximino Vázquez · Maximiliano Vázquez",
     conclusion: "The 1805 marriage writes Máximo Basquez; subsequent parish records repeatedly use Vázquez. Later descendant records and indexes use Maximino or Maximiliano. The same spouse and family cluster support spelling and given-name variants, not separate men.",
+  },
+  {
+    person: "María Magdalena Cortés",
+    forms: "María Magdalena · María Magdalena Cortés · María Cortez",
+    conclusion: "The 1786 baptism and 1793 child burial use María Magdalena without a surname. Her own 1794 Caguas burial gives María Magdalena Cortés and husband Francisco Vázquez; Máximo’s 1805 marriage shortens her name to María Cortez.",
   },
   {
     person: "Francisco Solano Vázquez Rivera",
@@ -1317,5 +1362,9 @@ export const updates = [
   {
     date: "24 Jul 2026",
     text: "Captured all 190 photographed openings in the Caguas burial item visibly spanning January 1804 through June 1809. Two handwriting-recognition passes and manual review of plausible hits found no defensible Máximo, Francisco and María Cortez, parent death, or overseas birthplace; full human transcription remains open.",
+  },
+  {
+    date: "24 Jul 2026",
+    text: "Checked four earlier Caguas originals and identified the fuller parent couple Francisco Vázquez and María Magdalena Cortés. Miguel, María de los Ángeles, and José form a strong probable sibling cluster for Máximo; María Magdalena was buried in Caguas on 17 June 1794. No parent birthplace or overseas origin is stated.",
   },
 ];
