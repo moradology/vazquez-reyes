@@ -1,0 +1,34 @@
+#!/bin/sh
+set -eu
+
+ROOT=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
+COMMAND=${1:-help}
+
+case "$COMMAND" in
+  ancestry)
+    shift
+    exec uv run "$ROOT/tools/gen_ancestry.py" "$@"
+    ;;
+  gate)
+    exec uv run "$ROOT/tools/test_gen_ancestry.py"
+    ;;
+  help|-h|--help)
+    cat <<'EOF'
+Vazquez-Reyes family-research cockpit
+
+Usage:
+  ./gen ancestry --help
+  ./gen ancestry search --collection N --name Given_Surname [filters]
+  ./gen ancestry goto "search/N?name=Given_Surname" --agent ID
+  ./gen ancestry cache stats
+  ./gen gate
+
+The Ancestry commands drive an already-running, logged-in Chrome CDP
+session on localhost:9222. They do not automate login.
+EOF
+    ;;
+  *)
+    printf '{"command":"%s","ok":false,"error":"unknown command"}\n' "$COMMAND"
+    exit 1
+    ;;
+esac
