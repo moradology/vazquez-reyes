@@ -5,7 +5,7 @@ import { SiteHeader } from "../site-header";
 export const metadata = {
   title: "Family Presentation · Vazquez–Reyes Family History",
   description:
-    "A slide-style walk through the records connecting the Vazquez-Reyes generations.",
+    "Original records for the Vazquez-Reyes family, arranged as a presentation.",
 };
 
 function SourceLink({
@@ -70,7 +70,7 @@ function SlideNav({ current, total }: { current: number; total: number }) {
   );
 }
 
-const totalSlides = 16;
+const totalSlides = 18;
 
 export default function PresentationPage() {
   return (
@@ -556,7 +556,7 @@ export default function PresentationPage() {
       <section className="deck-slide record-slide" data-slide id="slide-14">
         <div className="slide-copy">
           <p className="slide-kicker">Josefa’s family</p>
-          <h2>Three records establish the Luís de Rivera household.</h2>
+          <h2>The Luís and Isidora household appears repeatedly.</h2>
           <ol className="numbered-evidence">
             <li>
               <b>1790:</b> Simona’s baptism names Luís de Rivera and Isidora
@@ -618,10 +618,79 @@ export default function PresentationPage() {
         <SlideNav current={15} total={totalSlides} />
       </section>
 
-      <section className="deck-slide frontier-slide" data-slide id="slide-16">
+      <section className="deck-slide record-slide" data-slide id="slide-16">
+        <div className="slide-copy">
+          <p className="slide-kicker">Two sons, two place reports</p>
+          <h2>Juan Antonio and José Ramón identify the conflict.</h2>
+          <ol className="numbered-evidence">
+            <li>
+              <b>30 Oct 1808:</b> Juan Antonio’s baptism calls Luís a native of
+              Coamo and Isidora a native and resident of Humacao.
+            </li>
+            <li>
+              <b>9 Feb 1811:</b> José Ramón’s baptism calls both parents natives
+              of the Humacao district.
+            </li>
+            <li>
+              <b>20 Apr 1811:</b> Luís’s burial again says Humacao and lists the
+              sons by the shorter names Juan and Ramón.
+            </li>
+          </ol>
+          <p className="slide-caution">
+            These are original records for one household. The Coamo–Humacao
+            disagreement is recorded as a conflict, not silently resolved.
+          </p>
+          <div className="slide-links">
+            <Link href="/people/juan-child-of-luis-isidora">
+              Juan Antonio’s profile →
+            </Link>
+            <Link href="/people/ramon-child-of-luis-isidora">
+              José Ramón’s profile →
+            </Link>
+          </div>
+        </div>
+        <RecordImage
+          alt="Two full register images containing the 1808 baptism of Juan Antonio"
+          caption="Juan Antonio’s 1808 entry crosses two register images"
+          src="1808-juan-antonio-rivera-baptism.jpg"
+        />
+        <SlideNav current={16} total={totalSlides} />
+      </section>
+
+      <section className="deck-slide record-slide" data-slide id="slide-17">
+        <div className="slide-copy">
+          <p className="slide-kicker">The Coamo candidate</p>
+          <h2>A close match with one serious conflict.</h2>
+          <ul className="slide-findings">
+            <li>Luís, baptized in Coamo on 8 September 1765.</li>
+            <li>Father: Roque de Rivera.</li>
+            <li>The age fits Luís’s reported age in 1811 reasonably well.</li>
+            <li>Mother: Emerenciana Tirado.</li>
+          </ul>
+          <p className="slide-caution">
+            Luís’s direct 1811 burial names his mother as Marciana Delgado.
+            Until another record reconciles those women—or shows two separate
+            families—the 1765 baptism remains a candidate, not proof.
+          </p>
+          <Link
+            className="slide-profile-link"
+            href="/people/luis-father-of-josefa-rivera"
+          >
+            See Luís’s evidence and open questions →
+          </Link>
+        </div>
+        <RecordImage
+          alt="1765 Coamo baptism of Luís, son of Roque de Rivera and Emerenciana Tirado"
+          caption="1765 Coamo baptism candidate · retained, not merged"
+          src="1765-luis-rivera-candidate-baptism.jpg"
+        />
+        <SlideNav current={17} total={totalSlides} />
+      </section>
+
+      <section className="deck-slide frontier-slide" data-slide id="slide-18">
         <div className="slide-copy">
           <p className="slide-kicker">Where the trail stands</p>
-          <h2>The earliest proven places are still in Puerto Rico.</h2>
+          <h2>The documented trail still stays within Puerto Rico.</h2>
           <div className="frontier-columns">
             <div>
               <span>Place documented</span>
@@ -629,8 +698,10 @@ export default function PresentationPage() {
               <p>Caguas, Puerto Rico</p>
               <strong>Josefa Rivera</strong>
               <p>Humacao, Puerto Rico</p>
-              <strong>Luís de Rivera</strong>
+              <strong>Isidora Rodríguez</strong>
               <p>Humacao district, Puerto Rico</p>
+              <strong>Luís de Rivera</strong>
+              <p>Coamo in 1808; Humacao in 1811</p>
             </div>
             <div>
               <span>Birthplace not yet documented</span>
@@ -638,7 +709,6 @@ export default function PresentationPage() {
               <strong>María Magdalena Cortés</strong>
               <strong>Roque</strong>
               <strong>Marciana Delgado</strong>
-              <strong>Isidora Rodríguez</strong>
             </div>
           </div>
           <p className="frontier-answer">
@@ -659,7 +729,7 @@ export default function PresentationPage() {
           <p>Letters and funeral cards</p>
           <p>Stories—with who told them</p>
         </aside>
-        <SlideNav current={16} total={totalSlides} />
+        <SlideNav current={18} total={totalSlides} />
       </section>
     </main>
   );

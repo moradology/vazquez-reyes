@@ -47,6 +47,12 @@ const publicRecordImages = {
     "1790-simona-rivera-baptism.jpg",
   "source.familysearch-baptism.ysabel-rivera.1792":
     "1792-ysabel-rivera-baptism.jpg",
+  "source.familysearch-baptism.juan-antonio-rivera.1808":
+    "1808-juan-antonio-rivera-baptism.jpg",
+  "source.familysearch-baptism.jose-ramon-rivera.1811":
+    "1811-jose-ramon-rivera-baptism.jpg",
+  "source.familysearch-baptism.luis-rivera-candidate.1765":
+    "1765-luis-rivera-candidate-baptism.jpg",
   "source.familysearch-death.luis-de-rivera.1811":
     "1811-luis-de-rivera-death.jpg",
 };

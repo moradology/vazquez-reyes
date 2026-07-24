@@ -53,6 +53,23 @@ export const geographyPlaces = [
     }
   },
   {
+    "id": "place.coamo",
+    "label": "Coamo",
+    "kind": "municipio",
+    "parent_ref": "place.puerto-rico",
+    "geoid": "72043",
+    "coordinates": [
+      -66.360145,
+      18.0973515
+    ],
+    "precision": "municipio_internal_point",
+    "coordinate_source": {
+      "dataset": "U.S. Census Bureau TIGERweb ACS 2025",
+      "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/State_County/MapServer/11",
+      "accessed": "2026-07-24"
+    }
+  },
+  {
     "id": "place.fajardo",
     "label": "Fajardo",
     "kind": "municipio",
@@ -476,22 +493,23 @@ export const geographyEvents = [
   },
   {
     "id": "geo.event.luis-native-humacao",
-    "date_range": "before 1811",
+    "date_range": "reported 1811",
     "event_type": "reported_native_place",
     "person_refs": [
       "person.luis-father-of-josefa-rivera"
     ],
     "place_ref": "place.humacao",
-    "status": "confirmed_as_recorded",
+    "status": "confirmed_as_recorded_conflicts_with_1808_coamo_report",
     "evidence_refs": [
+      "source.familysearch-baptism.jose-ramon-rivera.1811",
       "source.familysearch-death.luis-de-rivera.1811"
     ],
     "map_groups": [
       "early-vazquez"
     ],
     "sequence": 9,
-    "map_label": "Humacao",
-    "map_note": "Luís de Rivera's 1811 burial entry calls him a native of this Humacao district."
+    "map_label": "Humacao · reported 1811",
+    "map_note": "José Ramón's baptism and Luís's burial call Luís a native of the Humacao district; Juan Antonio's 1808 baptism instead says Coamo."
   },
   {
     "id": "geo.event.maximo-josefa-marriage-1805",
@@ -533,6 +551,87 @@ export const geographyEvents = [
     "sequence": 11,
     "map_label": "Humacao · 1806",
     "map_note": "Their daughter Juana Jacinta was born in Humacao."
+  },
+  {
+    "id": "geo.event.luis-native-coamo-report-1808",
+    "date": "1808-10-30",
+    "event_type": "reported_native_place",
+    "person_refs": [
+      "person.luis-father-of-josefa-rivera"
+    ],
+    "place_ref": "place.coamo",
+    "status": "confirmed_as_recorded_conflicts_with_1811_humacao_reports",
+    "evidence_refs": [
+      "source.familysearch-baptism.juan-antonio-rivera.1808"
+    ],
+    "map_groups": [
+      "early-vazquez"
+    ],
+    "sequence": 12,
+    "map_label": "Coamo · reported 1808",
+    "map_note": "Juan Antonio's baptism explicitly calls Luís a native of the Villa de Coamo. Two 1811 records instead say Humacao."
+  },
+  {
+    "id": "geo.event.isidora-native-humacao-report-1808",
+    "date": "1808-10-30",
+    "event_type": "reported_native_place",
+    "person_refs": [
+      "person.isidora-rodriguez"
+    ],
+    "place_ref": "place.humacao",
+    "status": "confirmed_as_recorded",
+    "evidence_refs": [
+      "source.familysearch-baptism.juan-antonio-rivera.1808",
+      "source.familysearch-baptism.jose-ramon-rivera.1811"
+    ],
+    "map_groups": [
+      "early-vazquez"
+    ],
+    "sequence": 13,
+    "map_label": "Humacao · Isidora",
+    "map_note": "The 1808 baptism calls Isidora a native and resident of Humacao; the 1811 baptism again calls her a native of the district."
+  },
+  {
+    "id": "geo.event.juan-antonio-baptism-1808",
+    "date": "1808-10-30",
+    "event_type": "baptism",
+    "person_refs": [
+      "person.juan-child-of-luis-isidora",
+      "person.luis-father-of-josefa-rivera",
+      "person.isidora-rodriguez"
+    ],
+    "place_ref": "place.humacao",
+    "status": "confirmed_original_parish_register",
+    "evidence_refs": [
+      "source.familysearch-baptism.juan-antonio-rivera.1808"
+    ],
+    "map_groups": [
+      "early-vazquez"
+    ],
+    "sequence": 14,
+    "map_label": "Humacao · 1808",
+    "map_note": "Juan Antonio was baptized in Humacao twelve days after his birth at Yagüelles."
+  },
+  {
+    "id": "geo.event.jose-ramon-baptism-1811",
+    "date": "1811-02-09",
+    "event_type": "baptism",
+    "person_refs": [
+      "person.ramon-child-of-luis-isidora",
+      "person.luis-father-of-josefa-rivera",
+      "person.isidora-rodriguez"
+    ],
+    "place_ref": "place.humacao",
+    "status": "confirmed_original_parish_register",
+    "evidence_refs": [
+      "source.familysearch-baptism.jose-ramon-rivera.1811"
+    ],
+    "map_groups": [
+      "early-vazquez"
+    ],
+    "sequence": 15,
+    "map_label": "Humacao · 1811",
+    "map_note": "José Ramón was baptized in Humacao ten days after his birth at Quebrada Mariana."
   },
   {
     "id": "geo.event.luis-death-1811",

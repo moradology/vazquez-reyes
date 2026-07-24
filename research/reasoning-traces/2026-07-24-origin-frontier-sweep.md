@@ -114,10 +114,11 @@ The verified direct-line boundary is:
 - Máximo Vázquez — native of Caguas; parents Francisco and María Cortez;
 - Josefa Rivera — native of Humacao; parents Luís de Rivera and Isidora
   Rodríguez;
-- Luís de Rivera — native of the Humacao district; parents Roque and Marciana
-  Delgado;
-- no reviewed record gives a birthplace for Francisco, María, Roque, Marciana,
-  or Isidora;
+- Luís de Rivera — reported as native of Coamo in 1808 and of the Humacao
+  district in two 1811 records; parents Roque and Marciana Delgado;
+- Isidora Rodríguez — reported as native of Humacao in 1808 and 1811;
+- no reviewed record gives a birthplace for Francisco, María, Roque, or
+  Marciana;
 - no reviewed record names a direct ancestor born in Africa, Europe, or another
   Caribbean island.
 

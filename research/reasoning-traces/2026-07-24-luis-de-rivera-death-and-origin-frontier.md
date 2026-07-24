@@ -1,4 +1,4 @@
-# Luís de Rivera's 1811 burial and the origin frontier
+# Luís de Rivera: the 1811 burial, conflicting native places, and the Coamo candidate
 
 ## Question
 
@@ -45,8 +45,109 @@ The record is a strong match to the established household:
 2. His wife is Isidora Rodríguez.
 3. The children include Josefa, Simona, and Ysabel, each independently tied to
    that parent pair by earlier originals.
-4. The additional six children are accepted from the burial entry but are
-   retained without surnames until their own records are found.
+4. The additional six children are accepted from the burial entry. Juan
+   Antonio and José Ramón now have their own baptisms; the other four remain
+   without surnames until their own records are found.
+
+## Two children identified in their own baptisms
+
+The Humacao baptism books now identify two of the sons who had previously been
+known only from the 1811 burial list.
+
+### Juan Antonio
+
+- DGS 008038525, item 13, images 75–76
+- stable image:
+  https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSFS-576V-3?view=fullText&keywords=Isidora&lang=en&groupId=M993-7VR
+- born 18 October 1808 at Yagüelles;
+- baptized 30 October 1808 in Humacao;
+- legitimate son of Luís de Rivera and Isidora Rodríguez;
+- Luís called a native of the **Villa de Coamo**;
+- Isidora called a native and resident of the Humacao parish;
+- both parents classified as blancos; and
+- godparents Lucas and Antonia de Castro, legitimate unmarried siblings.
+
+The entry crosses two photographed openings. Both original-resolution images
+were downloaded and a full-page composite was made without discarding either
+page. The exact parent pair and the later nine-child list make Juan Antonio the
+Juan named in Luís's burial.
+
+### José Ramón
+
+- DGS 008038525, item 14, image 37
+- stable image:
+  https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSFS-57P6-K?view=fullText&keywords=Isidora&lang=en&groupId=M993-7VT
+- born 30 January 1811 at Quebrada Mariana;
+- baptized 9 February 1811 in Humacao;
+- legitimate son of Luís de Rivera and Isidora Rodríguez;
+- both parents called natives of the Humacao district and blancos;
+- Luís described as a labrador; and
+- godparents José Antonio Almeyda and Rita del Valle, legitimate spouses.
+
+The manuscript reads Luís de Rivera. The computer transcript's Luís de Olivera
+form is not adopted. The exact parent pair and the burial only two months later
+make José Ramón the Ramón in the nine-child list.
+
+## The native-place conflict
+
+The records now contain three direct reports about Luís's native place:
+
+1. Juan Antonio's 1808 baptism: **Villa de Coamo**.
+2. José Ramón's February 1811 baptism: **this district**, meaning Humacao.
+3. Luís's April 1811 burial: **this district**, again meaning Humacao.
+
+All three are original records for the same household. The two later reports do
+not erase the earlier one, and the earlier one does not automatically prove a
+Coamo baptism. The research ledger therefore carries the disagreement as an
+open conflict.
+
+Isidora's origin is not conflicted. The 1808 act calls her a native and resident
+of Humacao, and the 1811 act again calls her a native of the district.
+
+## The 1765 Coamo baptism candidate
+
+FamilySearch full-text search in Coamo DGS 008100612 found:
+
+- 8 September 1765 baptism of a 15-day-old **Luís**;
+- legitimate son of **Roque de Rivera** and **Emerenciana Tirado**; and
+- original image:
+  https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSJN-KHF1?view=fullText&keywords=Lu%C3%ADs%2CRoque&lang=en&groupId=M9SP-FTN
+
+This is an unusually close candidate:
+
+- the child is Luís;
+- the father is Roque;
+- the place agrees with the 1808 Coamo-native statement; and
+- a 1765 birth would make the man about 45 or 46 at the 1811 burial, reasonably
+  close to the reported age of about 50.
+
+The mother is a material conflict. Luís's direct 1811 burial names **Marciana
+Delgado**; the baptism names **Emerenciana Tirado**. No reviewed record connects
+those women.
+
+A second Coamo baptism confirms that the candidate parent pair was a real
+household: Bernarda, daughter of Roque de Rivera and Emerenciana Tirado, was
+baptized 2 September 1763. That strengthens the local household but does not
+make Bernarda a proven sister of the direct Luís.
+
+The 1765 baptism is graded **strong candidate, not proof**. Neither it nor
+Bernarda is merged into the direct family until a marriage, burial, sibling
+record, or other original reconciles the mother's identity.
+
+## Humacao collateral lead for Roque
+
+A 9 April 1798 Humacao burial entry for Martina names her as enslaved by a
+parishioner **Roque de Ribera**:
+
+https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSFS-297R-X?view=fullText&keywords=Roque&lang=en&groupId=M993-WQN
+
+This places a man of that name in Humacao in the right generation. The entry
+does not name Marciana Delgado, Luís, or any relationship anchor. It is retained
+as a collateral lead and not merged with Luís's father.
+
+A separate July 1829 Humacao page returned by computer full-text search for
+Roque was reviewed and produced no defensible family record. Its full image is
+also retained as a rejected OCR lead.
 
 ## Negative coverage
 
@@ -82,10 +183,14 @@ coverage only because indexing, OCR, and surviving-book gaps are substantial.
 
 ## Conclusion
 
-The direct line advances one generation from Luís to **Roque** and **Marciana
-Delgado**. It does not cross Puerto Rico's boundary. Luís is explicitly native
-to the Humacao district, while the birthplaces of Roque, Marciana, Isidora,
-Francisco, and María Cortez remain unknown.
+The direct line still advances securely from Luís to **Roque** and **Marciana
+Delgado**. Isidora is now directly reported as a native of Humacao. Luís has
+conflicting direct native-place reports: Coamo in 1808 and Humacao in two 1811
+records.
+
+The 1765 Coamo baptism is the strongest candidate yet for Luís's own baptism,
+but its mother, Emerenciana Tirado, conflicts with Marciana Delgado. It is not
+proof until that conflict is resolved.
 
 No named direct ancestor is yet documented as born in Africa, Europe, the
 Canary Islands, another Caribbean island, or anywhere else outside Puerto

@@ -9118,6 +9118,7 @@ export const peopleProfiles: readonly PersonProfile[] = [
           "person.maximo-vazquez",
           "person.josefa-rivera",
           "person.luis-father-of-josefa-rivera",
+          "person.isidora-rodriguez",
           "person.francisco-father-of-maximo-vazquez",
           "person.maria-cortez"
         ],
@@ -9126,14 +9127,19 @@ export const peopleProfiles: readonly PersonProfile[] = [
           "verified_native_places": {
             "person.maximo-vazquez": "Caguas, Puerto Rico",
             "person.josefa-rivera": "Humacao, Puerto Rico",
-            "person.luis-father-of-josefa-rivera": "Humacao district, Puerto Rico"
+            "person.isidora-rodriguez": "Humacao district, Puerto Rico"
+          },
+          "conflicting_native_place_reports": {
+            "person.luis-father-of-josefa-rivera": [
+              "Villa de Coamo, Puerto Rico — 1808 son's baptism",
+              "Humacao district, Puerto Rico — 1811 son's baptism and Luís's burial"
+            ]
           },
           "earliest_named_people_without_birthplaces": [
             "Francisco Vázquez",
             "María Magdalena Cortés",
             "Roque [surname not stated]",
-            "Marciana Delgado",
-            "Isidora Rodríguez"
+            "Marciana Delgado"
           ],
           "earliest_verified_events_without_native_places": {
             "person.francisco-father-of-maximo-vazquez": "children and wife documented in Caguas, 1786–1801",
@@ -9146,7 +9152,7 @@ export const peopleProfiles: readonly PersonProfile[] = [
             "another Caribbean island"
           ]
         },
-        "status": "verified_three_puerto_rico_native_places_fuller_caguas_parent_pair_and_burial_overseas_origin_open",
+        "status": "verified_puerto_rico_native_places_luis_coamo_humacao_conflict_retained_overseas_origin_open",
         "evidence_refs": [
           "source.familysearch-baptism.juan-de-dios-vazquez-rivera.1819",
           "source.familysearch-marriage.maximo-josefa.1805",
@@ -9156,6 +9162,8 @@ export const peopleProfiles: readonly PersonProfile[] = [
           "source.familysearch-burial.jose-vazquez.1801",
           "source.familysearch-baptism.simona-rivera.1790",
           "source.familysearch-baptism.ysabel-rivera.1792",
+          "source.familysearch-baptism.juan-antonio-rivera.1808",
+          "source.familysearch-baptism.jose-ramon-rivera.1811",
           "source.familysearch-death.luis-de-rivera.1811",
           "source.transcription.las-piedras-humacao-burials.1787-1798",
           "source.search-audit.caguas-early-books.maximo-parents",
@@ -9163,7 +9171,7 @@ export const peopleProfiles: readonly PersonProfile[] = [
           "source.search-audit.las-piedras-baptisms.luis-isidora.1778-1799",
           "source.search-audit.familysearch-index.origin-frontier.2026-07-24"
         ],
-        "note": "The records establish Puerto Rican native places for Máximo, Josefa, and Luís. The Caguas cluster supplies the fuller parent names Francisco Vázquez and María Magdalena Cortés and María's 1794 burial, but no reviewed source states either parent's native place or names an overseas-born direct ancestor."
+        "note": "The direct records establish Caguas for Máximo, Humacao for Josefa and Isidora, and two conflicting Puerto Rico native-place reports for Luís: Coamo in 1808 and Humacao in 1811. The 1765 Coamo baptism is only a candidate because its mother conflicts with the 1811 parent statement. No reviewed source names an overseas-born direct ancestor."
       },
       {
         "id": "claim.caguas-burial-screen-maximo-parents",
@@ -9409,6 +9417,37 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "image_archive": "capture.familysearch-baptism.child-rivera-rodriguez.1792/3Q9M-CSV2-MS9L-N.jpg plus enhanced entry crop",
         "status": "confirmed_original_reviewed",
         "public_image": "1792-ysabel-rivera-baptism.jpg"
+      },
+      {
+        "id": "source.familysearch-baptism.juan-antonio-rivera.1808",
+        "type": "parish_baptism_register_with_two_original_images",
+        "title": "1808 baptism of Juan Antonio, son of Luís de Rivera and Isidora Rodríguez",
+        "repository": "Dulce Nombre de Jesús, Humacao, via FamilySearch",
+        "accessed": "2026-07-24",
+        "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSFS-576V-3?view=fullText&keywords=Isidora&lang=en&groupId=M993-7VR",
+        "quality": "original_register_images_downloaded_and_transcribed_entry_crosses_two_images",
+        "citation": "DGS 008038525, item 13, images 75–76. Juan Antonio was born 18 October 1808 at Yagüelles and baptized 30 October in Humacao, the legitimate son of Luís de Rivera, called a native of the Villa de Coamo, and Isidora Rodríguez, called a native and resident of Humacao. The entry classifies both parents as blancos and names the unmarried siblings Lucas and Antonia de Castro as godparents. Juan Antonio strongly resolves the Juan named among the couple's nine children in Luís's 1811 burial.",
+        "image_archive": "research/pulls/images/humacao-1808-juan-antonio-rivera-baptism/1808-10-30-juan-antonio-baptism-entry-start-3Q9M-CSFS-576V-3-prev.jpg and 1808-10-30-juan-antonio-baptism-entry-continuation-3Q9M-CSFS-576V-3.jpg",
+        "image_sha256": [
+          "53491dbe3f672f6df76d2ab66467e4299e45c40528a269ae83cf5d25d6fc6897",
+          "0475a7e760b73cc478e23e410fdf4a9dc6c2dd33a2f92e54cc331e37212a184e"
+        ],
+        "status": "confirmed_original_reviewed",
+        "public_image": "1808-juan-antonio-rivera-baptism.jpg"
+      },
+      {
+        "id": "source.familysearch-baptism.jose-ramon-rivera.1811",
+        "type": "parish_baptism_register_with_image",
+        "title": "1811 baptism of José Ramón, son of Luís de Rivera and Isidora Rodríguez",
+        "repository": "Dulce Nombre de Jesús, Humacao, via FamilySearch",
+        "accessed": "2026-07-24",
+        "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSFS-57P6-K?view=fullText&keywords=Isidora&lang=en&groupId=M993-7VT",
+        "quality": "original_register_image_downloaded_and_transcribed",
+        "citation": "DGS 008038525, item 14, image 37. José Ramón was born 30 January 1811 at Quebrada Mariana and baptized 9 February in Humacao, the legitimate son of Luís de Rivera and Isidora Rodríguez. Both parents are called natives of the Humacao district and blancos; Luís is described as a labrador. José Antonio Almeyda and Rita del Valle, legitimate spouses, were godparents. José Ramón strongly resolves the Ramón named in Luís's burial two months later. The automated transcript's Luís de Olivera reading is not adopted.",
+        "image_archive": "research/pulls/images/humacao-1811-jose-ramon-rivera-baptism/1811-02-09-jose-ramon-baptism-original-3Q9M-CSFS-57P6-K.jpg",
+        "image_sha256": "feae69247004bae75e7da7cae28f9c7c2503c7ed191916cd0fcd118b3b555409",
+        "status": "confirmed_original_reviewed",
+        "public_image": "1811-jose-ramon-rivera-baptism.jpg"
       },
       {
         "id": "source.familysearch-death.luis-de-rivera.1811",
@@ -9803,6 +9842,7 @@ export const peopleProfiles: readonly PersonProfile[] = [
           "person.maximo-vazquez",
           "person.josefa-rivera",
           "person.luis-father-of-josefa-rivera",
+          "person.isidora-rodriguez",
           "person.francisco-father-of-maximo-vazquez",
           "person.maria-cortez"
         ],
@@ -9811,14 +9851,19 @@ export const peopleProfiles: readonly PersonProfile[] = [
           "verified_native_places": {
             "person.maximo-vazquez": "Caguas, Puerto Rico",
             "person.josefa-rivera": "Humacao, Puerto Rico",
-            "person.luis-father-of-josefa-rivera": "Humacao district, Puerto Rico"
+            "person.isidora-rodriguez": "Humacao district, Puerto Rico"
+          },
+          "conflicting_native_place_reports": {
+            "person.luis-father-of-josefa-rivera": [
+              "Villa de Coamo, Puerto Rico — 1808 son's baptism",
+              "Humacao district, Puerto Rico — 1811 son's baptism and Luís's burial"
+            ]
           },
           "earliest_named_people_without_birthplaces": [
             "Francisco Vázquez",
             "María Magdalena Cortés",
             "Roque [surname not stated]",
-            "Marciana Delgado",
-            "Isidora Rodríguez"
+            "Marciana Delgado"
           ],
           "earliest_verified_events_without_native_places": {
             "person.francisco-father-of-maximo-vazquez": "children and wife documented in Caguas, 1786–1801",
@@ -9831,7 +9876,7 @@ export const peopleProfiles: readonly PersonProfile[] = [
             "another Caribbean island"
           ]
         },
-        "status": "verified_three_puerto_rico_native_places_fuller_caguas_parent_pair_and_burial_overseas_origin_open",
+        "status": "verified_puerto_rico_native_places_luis_coamo_humacao_conflict_retained_overseas_origin_open",
         "evidence_refs": [
           "source.familysearch-baptism.juan-de-dios-vazquez-rivera.1819",
           "source.familysearch-marriage.maximo-josefa.1805",
@@ -9841,6 +9886,8 @@ export const peopleProfiles: readonly PersonProfile[] = [
           "source.familysearch-burial.jose-vazquez.1801",
           "source.familysearch-baptism.simona-rivera.1790",
           "source.familysearch-baptism.ysabel-rivera.1792",
+          "source.familysearch-baptism.juan-antonio-rivera.1808",
+          "source.familysearch-baptism.jose-ramon-rivera.1811",
           "source.familysearch-death.luis-de-rivera.1811",
           "source.transcription.las-piedras-humacao-burials.1787-1798",
           "source.search-audit.caguas-early-books.maximo-parents",
@@ -9848,7 +9895,7 @@ export const peopleProfiles: readonly PersonProfile[] = [
           "source.search-audit.las-piedras-baptisms.luis-isidora.1778-1799",
           "source.search-audit.familysearch-index.origin-frontier.2026-07-24"
         ],
-        "note": "The records establish Puerto Rican native places for Máximo, Josefa, and Luís. The Caguas cluster supplies the fuller parent names Francisco Vázquez and María Magdalena Cortés and María's 1794 burial, but no reviewed source states either parent's native place or names an overseas-born direct ancestor."
+        "note": "The direct records establish Caguas for Máximo, Humacao for Josefa and Isidora, and two conflicting Puerto Rico native-place reports for Luís: Coamo in 1808 and Humacao in 1811. The 1765 Coamo baptism is only a candidate because its mother conflicts with the 1811 parent statement. No reviewed source names an overseas-born direct ancestor."
       },
       {
         "id": "claim.maria-de-la-cruz-josefa-vazquez-rejected",
@@ -10068,6 +10115,37 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "image_archive": "capture.familysearch-baptism.child-rivera-rodriguez.1792/3Q9M-CSV2-MS9L-N.jpg plus enhanced entry crop",
         "status": "confirmed_original_reviewed",
         "public_image": "1792-ysabel-rivera-baptism.jpg"
+      },
+      {
+        "id": "source.familysearch-baptism.juan-antonio-rivera.1808",
+        "type": "parish_baptism_register_with_two_original_images",
+        "title": "1808 baptism of Juan Antonio, son of Luís de Rivera and Isidora Rodríguez",
+        "repository": "Dulce Nombre de Jesús, Humacao, via FamilySearch",
+        "accessed": "2026-07-24",
+        "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSFS-576V-3?view=fullText&keywords=Isidora&lang=en&groupId=M993-7VR",
+        "quality": "original_register_images_downloaded_and_transcribed_entry_crosses_two_images",
+        "citation": "DGS 008038525, item 13, images 75–76. Juan Antonio was born 18 October 1808 at Yagüelles and baptized 30 October in Humacao, the legitimate son of Luís de Rivera, called a native of the Villa de Coamo, and Isidora Rodríguez, called a native and resident of Humacao. The entry classifies both parents as blancos and names the unmarried siblings Lucas and Antonia de Castro as godparents. Juan Antonio strongly resolves the Juan named among the couple's nine children in Luís's 1811 burial.",
+        "image_archive": "research/pulls/images/humacao-1808-juan-antonio-rivera-baptism/1808-10-30-juan-antonio-baptism-entry-start-3Q9M-CSFS-576V-3-prev.jpg and 1808-10-30-juan-antonio-baptism-entry-continuation-3Q9M-CSFS-576V-3.jpg",
+        "image_sha256": [
+          "53491dbe3f672f6df76d2ab66467e4299e45c40528a269ae83cf5d25d6fc6897",
+          "0475a7e760b73cc478e23e410fdf4a9dc6c2dd33a2f92e54cc331e37212a184e"
+        ],
+        "status": "confirmed_original_reviewed",
+        "public_image": "1808-juan-antonio-rivera-baptism.jpg"
+      },
+      {
+        "id": "source.familysearch-baptism.jose-ramon-rivera.1811",
+        "type": "parish_baptism_register_with_image",
+        "title": "1811 baptism of José Ramón, son of Luís de Rivera and Isidora Rodríguez",
+        "repository": "Dulce Nombre de Jesús, Humacao, via FamilySearch",
+        "accessed": "2026-07-24",
+        "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSFS-57P6-K?view=fullText&keywords=Isidora&lang=en&groupId=M993-7VT",
+        "quality": "original_register_image_downloaded_and_transcribed",
+        "citation": "DGS 008038525, item 14, image 37. José Ramón was born 30 January 1811 at Quebrada Mariana and baptized 9 February in Humacao, the legitimate son of Luís de Rivera and Isidora Rodríguez. Both parents are called natives of the Humacao district and blancos; Luís is described as a labrador. José Antonio Almeyda and Rita del Valle, legitimate spouses, were godparents. José Ramón strongly resolves the Ramón named in Luís's burial two months later. The automated transcript's Luís de Olivera reading is not adopted.",
+        "image_archive": "research/pulls/images/humacao-1811-jose-ramon-rivera-baptism/1811-02-09-jose-ramon-baptism-original-3Q9M-CSFS-57P6-K.jpg",
+        "image_sha256": "feae69247004bae75e7da7cae28f9c7c2503c7ed191916cd0fcd118b3b555409",
+        "status": "confirmed_original_reviewed",
+        "public_image": "1811-jose-ramon-rivera-baptism.jpg"
       },
       {
         "id": "source.familysearch-death.luis-de-rivera.1811",
@@ -10332,6 +10410,7 @@ export const peopleProfiles: readonly PersonProfile[] = [
           "person.maximo-vazquez",
           "person.josefa-rivera",
           "person.luis-father-of-josefa-rivera",
+          "person.isidora-rodriguez",
           "person.francisco-father-of-maximo-vazquez",
           "person.maria-cortez"
         ],
@@ -10340,14 +10419,19 @@ export const peopleProfiles: readonly PersonProfile[] = [
           "verified_native_places": {
             "person.maximo-vazquez": "Caguas, Puerto Rico",
             "person.josefa-rivera": "Humacao, Puerto Rico",
-            "person.luis-father-of-josefa-rivera": "Humacao district, Puerto Rico"
+            "person.isidora-rodriguez": "Humacao district, Puerto Rico"
+          },
+          "conflicting_native_place_reports": {
+            "person.luis-father-of-josefa-rivera": [
+              "Villa de Coamo, Puerto Rico — 1808 son's baptism",
+              "Humacao district, Puerto Rico — 1811 son's baptism and Luís's burial"
+            ]
           },
           "earliest_named_people_without_birthplaces": [
             "Francisco Vázquez",
             "María Magdalena Cortés",
             "Roque [surname not stated]",
-            "Marciana Delgado",
-            "Isidora Rodríguez"
+            "Marciana Delgado"
           ],
           "earliest_verified_events_without_native_places": {
             "person.francisco-father-of-maximo-vazquez": "children and wife documented in Caguas, 1786–1801",
@@ -10360,7 +10444,7 @@ export const peopleProfiles: readonly PersonProfile[] = [
             "another Caribbean island"
           ]
         },
-        "status": "verified_three_puerto_rico_native_places_fuller_caguas_parent_pair_and_burial_overseas_origin_open",
+        "status": "verified_puerto_rico_native_places_luis_coamo_humacao_conflict_retained_overseas_origin_open",
         "evidence_refs": [
           "source.familysearch-baptism.juan-de-dios-vazquez-rivera.1819",
           "source.familysearch-marriage.maximo-josefa.1805",
@@ -10370,6 +10454,8 @@ export const peopleProfiles: readonly PersonProfile[] = [
           "source.familysearch-burial.jose-vazquez.1801",
           "source.familysearch-baptism.simona-rivera.1790",
           "source.familysearch-baptism.ysabel-rivera.1792",
+          "source.familysearch-baptism.juan-antonio-rivera.1808",
+          "source.familysearch-baptism.jose-ramon-rivera.1811",
           "source.familysearch-death.luis-de-rivera.1811",
           "source.transcription.las-piedras-humacao-burials.1787-1798",
           "source.search-audit.caguas-early-books.maximo-parents",
@@ -10377,7 +10463,7 @@ export const peopleProfiles: readonly PersonProfile[] = [
           "source.search-audit.las-piedras-baptisms.luis-isidora.1778-1799",
           "source.search-audit.familysearch-index.origin-frontier.2026-07-24"
         ],
-        "note": "The records establish Puerto Rican native places for Máximo, Josefa, and Luís. The Caguas cluster supplies the fuller parent names Francisco Vázquez and María Magdalena Cortés and María's 1794 burial, but no reviewed source states either parent's native place or names an overseas-born direct ancestor."
+        "note": "The direct records establish Caguas for Máximo, Humacao for Josefa and Isidora, and two conflicting Puerto Rico native-place reports for Luís: Coamo in 1808 and Humacao in 1811. The 1765 Coamo baptism is only a candidate because its mother conflicts with the 1811 parent statement. No reviewed source names an overseas-born direct ancestor."
       },
       {
         "id": "claim.caguas-burial-screen-maximo-parents",
@@ -10542,6 +10628,37 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "image_archive": "capture.familysearch-baptism.child-rivera-rodriguez.1792/3Q9M-CSV2-MS9L-N.jpg plus enhanced entry crop",
         "status": "confirmed_original_reviewed",
         "public_image": "1792-ysabel-rivera-baptism.jpg"
+      },
+      {
+        "id": "source.familysearch-baptism.juan-antonio-rivera.1808",
+        "type": "parish_baptism_register_with_two_original_images",
+        "title": "1808 baptism of Juan Antonio, son of Luís de Rivera and Isidora Rodríguez",
+        "repository": "Dulce Nombre de Jesús, Humacao, via FamilySearch",
+        "accessed": "2026-07-24",
+        "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSFS-576V-3?view=fullText&keywords=Isidora&lang=en&groupId=M993-7VR",
+        "quality": "original_register_images_downloaded_and_transcribed_entry_crosses_two_images",
+        "citation": "DGS 008038525, item 13, images 75–76. Juan Antonio was born 18 October 1808 at Yagüelles and baptized 30 October in Humacao, the legitimate son of Luís de Rivera, called a native of the Villa de Coamo, and Isidora Rodríguez, called a native and resident of Humacao. The entry classifies both parents as blancos and names the unmarried siblings Lucas and Antonia de Castro as godparents. Juan Antonio strongly resolves the Juan named among the couple's nine children in Luís's 1811 burial.",
+        "image_archive": "research/pulls/images/humacao-1808-juan-antonio-rivera-baptism/1808-10-30-juan-antonio-baptism-entry-start-3Q9M-CSFS-576V-3-prev.jpg and 1808-10-30-juan-antonio-baptism-entry-continuation-3Q9M-CSFS-576V-3.jpg",
+        "image_sha256": [
+          "53491dbe3f672f6df76d2ab66467e4299e45c40528a269ae83cf5d25d6fc6897",
+          "0475a7e760b73cc478e23e410fdf4a9dc6c2dd33a2f92e54cc331e37212a184e"
+        ],
+        "status": "confirmed_original_reviewed",
+        "public_image": "1808-juan-antonio-rivera-baptism.jpg"
+      },
+      {
+        "id": "source.familysearch-baptism.jose-ramon-rivera.1811",
+        "type": "parish_baptism_register_with_image",
+        "title": "1811 baptism of José Ramón, son of Luís de Rivera and Isidora Rodríguez",
+        "repository": "Dulce Nombre de Jesús, Humacao, via FamilySearch",
+        "accessed": "2026-07-24",
+        "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSFS-57P6-K?view=fullText&keywords=Isidora&lang=en&groupId=M993-7VT",
+        "quality": "original_register_image_downloaded_and_transcribed",
+        "citation": "DGS 008038525, item 14, image 37. José Ramón was born 30 January 1811 at Quebrada Mariana and baptized 9 February in Humacao, the legitimate son of Luís de Rivera and Isidora Rodríguez. Both parents are called natives of the Humacao district and blancos; Luís is described as a labrador. José Antonio Almeyda and Rita del Valle, legitimate spouses, were godparents. José Ramón strongly resolves the Ramón named in Luís's burial two months later. The automated transcript's Luís de Olivera reading is not adopted.",
+        "image_archive": "research/pulls/images/humacao-1811-jose-ramon-rivera-baptism/1811-02-09-jose-ramon-baptism-original-3Q9M-CSFS-57P6-K.jpg",
+        "image_sha256": "feae69247004bae75e7da7cae28f9c7c2503c7ed191916cd0fcd118b3b555409",
+        "status": "confirmed_original_reviewed",
+        "public_image": "1811-jose-ramon-rivera-baptism.jpg"
       },
       {
         "id": "source.familysearch-death.luis-de-rivera.1811",
@@ -10802,6 +10919,7 @@ export const peopleProfiles: readonly PersonProfile[] = [
           "person.maximo-vazquez",
           "person.josefa-rivera",
           "person.luis-father-of-josefa-rivera",
+          "person.isidora-rodriguez",
           "person.francisco-father-of-maximo-vazquez",
           "person.maria-cortez"
         ],
@@ -10810,14 +10928,19 @@ export const peopleProfiles: readonly PersonProfile[] = [
           "verified_native_places": {
             "person.maximo-vazquez": "Caguas, Puerto Rico",
             "person.josefa-rivera": "Humacao, Puerto Rico",
-            "person.luis-father-of-josefa-rivera": "Humacao district, Puerto Rico"
+            "person.isidora-rodriguez": "Humacao district, Puerto Rico"
+          },
+          "conflicting_native_place_reports": {
+            "person.luis-father-of-josefa-rivera": [
+              "Villa de Coamo, Puerto Rico — 1808 son's baptism",
+              "Humacao district, Puerto Rico — 1811 son's baptism and Luís's burial"
+            ]
           },
           "earliest_named_people_without_birthplaces": [
             "Francisco Vázquez",
             "María Magdalena Cortés",
             "Roque [surname not stated]",
-            "Marciana Delgado",
-            "Isidora Rodríguez"
+            "Marciana Delgado"
           ],
           "earliest_verified_events_without_native_places": {
             "person.francisco-father-of-maximo-vazquez": "children and wife documented in Caguas, 1786–1801",
@@ -10830,7 +10953,7 @@ export const peopleProfiles: readonly PersonProfile[] = [
             "another Caribbean island"
           ]
         },
-        "status": "verified_three_puerto_rico_native_places_fuller_caguas_parent_pair_and_burial_overseas_origin_open",
+        "status": "verified_puerto_rico_native_places_luis_coamo_humacao_conflict_retained_overseas_origin_open",
         "evidence_refs": [
           "source.familysearch-baptism.juan-de-dios-vazquez-rivera.1819",
           "source.familysearch-marriage.maximo-josefa.1805",
@@ -10840,6 +10963,8 @@ export const peopleProfiles: readonly PersonProfile[] = [
           "source.familysearch-burial.jose-vazquez.1801",
           "source.familysearch-baptism.simona-rivera.1790",
           "source.familysearch-baptism.ysabel-rivera.1792",
+          "source.familysearch-baptism.juan-antonio-rivera.1808",
+          "source.familysearch-baptism.jose-ramon-rivera.1811",
           "source.familysearch-death.luis-de-rivera.1811",
           "source.transcription.las-piedras-humacao-burials.1787-1798",
           "source.search-audit.caguas-early-books.maximo-parents",
@@ -10847,7 +10972,7 @@ export const peopleProfiles: readonly PersonProfile[] = [
           "source.search-audit.las-piedras-baptisms.luis-isidora.1778-1799",
           "source.search-audit.familysearch-index.origin-frontier.2026-07-24"
         ],
-        "note": "The records establish Puerto Rican native places for Máximo, Josefa, and Luís. The Caguas cluster supplies the fuller parent names Francisco Vázquez and María Magdalena Cortés and María's 1794 burial, but no reviewed source states either parent's native place or names an overseas-born direct ancestor."
+        "note": "The direct records establish Caguas for Máximo, Humacao for Josefa and Isidora, and two conflicting Puerto Rico native-place reports for Luís: Coamo in 1808 and Humacao in 1811. The 1765 Coamo baptism is only a candidate because its mother conflicts with the 1811 parent statement. No reviewed source names an overseas-born direct ancestor."
       },
       {
         "id": "claim.caguas-burial-screen-maximo-parents",
@@ -11028,6 +11153,37 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "image_archive": "capture.familysearch-baptism.child-rivera-rodriguez.1792/3Q9M-CSV2-MS9L-N.jpg plus enhanced entry crop",
         "status": "confirmed_original_reviewed",
         "public_image": "1792-ysabel-rivera-baptism.jpg"
+      },
+      {
+        "id": "source.familysearch-baptism.juan-antonio-rivera.1808",
+        "type": "parish_baptism_register_with_two_original_images",
+        "title": "1808 baptism of Juan Antonio, son of Luís de Rivera and Isidora Rodríguez",
+        "repository": "Dulce Nombre de Jesús, Humacao, via FamilySearch",
+        "accessed": "2026-07-24",
+        "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSFS-576V-3?view=fullText&keywords=Isidora&lang=en&groupId=M993-7VR",
+        "quality": "original_register_images_downloaded_and_transcribed_entry_crosses_two_images",
+        "citation": "DGS 008038525, item 13, images 75–76. Juan Antonio was born 18 October 1808 at Yagüelles and baptized 30 October in Humacao, the legitimate son of Luís de Rivera, called a native of the Villa de Coamo, and Isidora Rodríguez, called a native and resident of Humacao. The entry classifies both parents as blancos and names the unmarried siblings Lucas and Antonia de Castro as godparents. Juan Antonio strongly resolves the Juan named among the couple's nine children in Luís's 1811 burial.",
+        "image_archive": "research/pulls/images/humacao-1808-juan-antonio-rivera-baptism/1808-10-30-juan-antonio-baptism-entry-start-3Q9M-CSFS-576V-3-prev.jpg and 1808-10-30-juan-antonio-baptism-entry-continuation-3Q9M-CSFS-576V-3.jpg",
+        "image_sha256": [
+          "53491dbe3f672f6df76d2ab66467e4299e45c40528a269ae83cf5d25d6fc6897",
+          "0475a7e760b73cc478e23e410fdf4a9dc6c2dd33a2f92e54cc331e37212a184e"
+        ],
+        "status": "confirmed_original_reviewed",
+        "public_image": "1808-juan-antonio-rivera-baptism.jpg"
+      },
+      {
+        "id": "source.familysearch-baptism.jose-ramon-rivera.1811",
+        "type": "parish_baptism_register_with_image",
+        "title": "1811 baptism of José Ramón, son of Luís de Rivera and Isidora Rodríguez",
+        "repository": "Dulce Nombre de Jesús, Humacao, via FamilySearch",
+        "accessed": "2026-07-24",
+        "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSFS-57P6-K?view=fullText&keywords=Isidora&lang=en&groupId=M993-7VT",
+        "quality": "original_register_image_downloaded_and_transcribed",
+        "citation": "DGS 008038525, item 14, image 37. José Ramón was born 30 January 1811 at Quebrada Mariana and baptized 9 February in Humacao, the legitimate son of Luís de Rivera and Isidora Rodríguez. Both parents are called natives of the Humacao district and blancos; Luís is described as a labrador. José Antonio Almeyda and Rita del Valle, legitimate spouses, were godparents. José Ramón strongly resolves the Ramón named in Luís's burial two months later. The automated transcript's Luís de Olivera reading is not adopted.",
+        "image_archive": "research/pulls/images/humacao-1811-jose-ramon-rivera-baptism/1811-02-09-jose-ramon-baptism-original-3Q9M-CSFS-57P6-K.jpg",
+        "image_sha256": "feae69247004bae75e7da7cae28f9c7c2503c7ed191916cd0fcd118b3b555409",
+        "status": "confirmed_original_reviewed",
+        "public_image": "1811-jose-ramon-rivera-baptism.jpg"
       },
       {
         "id": "source.familysearch-death.luis-de-rivera.1811",
@@ -11527,13 +11683,18 @@ export const peopleProfiles: readonly PersonProfile[] = [
       "names": [
         {
           "name": "Luís de Rivera",
-          "type": "1790_1792_baptisms_and_1811_death_form",
+          "type": "1790_1792_1808_1811_baptisms_and_1811_burial_form",
           "status": "documented"
         },
         {
           "name": "Luís [surname omitted]",
           "type": "1805_daughter_marriage_form",
           "status": "documented_contextual"
+        },
+        {
+          "name": "Luís de Olivera",
+          "type": "1811_baptism_computer_transcript",
+          "status": "automated_transcript_error_not_adopted"
         },
         {
           "name": "Luís Sumano",
@@ -11543,8 +11704,17 @@ export const peopleProfiles: readonly PersonProfile[] = [
       ],
       "birth": {
         "estimated": "about 1761",
-        "place": "Humacao district, Puerto Rico",
-        "status": "derived_from_reported_age_about_50_and_native_of_this_district_in_1811"
+        "reported_native_places": [
+          {
+            "place": "Villa de Coamo, Puerto Rico",
+            "record": "1808 son Juan Antonio baptism"
+          },
+          {
+            "place": "Humacao district, Puerto Rico",
+            "record": "1811 son José Ramón baptism and Luís burial"
+          }
+        ],
+        "status": "estimated_from_reported_age_native_place_conflict_retained"
       },
       "death": {
         "on_or_before": "1811-04-20",
@@ -11592,23 +11762,25 @@ export const peopleProfiles: readonly PersonProfile[] = [
         },
         {
           "person": "person.ramon-child-of-luis-isidora",
-          "status": "confirmed_named_on_father_death"
+          "status": "confirmed_original_1811_baptism_and_named_on_father_burial"
         },
         {
           "person": "person.juan-child-of-luis-isidora",
-          "status": "confirmed_named_on_father_death"
+          "status": "confirmed_original_1808_baptism_and_named_on_father_burial"
         }
       ],
-      "confidence": "native_place_parentage_marriage_burial_date_and_nine_child_cluster_confirmed_originals",
+      "confidence": "parentage_marriage_burial_date_and_nine_child_cluster_confirmed_native_place_conflict_retained",
       "evidence_refs": [
         "source.familysearch-baptism.simona-rivera.1790",
         "source.familysearch-baptism.ysabel-rivera.1792",
         "source.familysearch-marriage.maximo-josefa.1805",
         "source.familysearch-marriage.simona-ribera-leon-garrafa.1805",
+        "source.familysearch-baptism.juan-antonio-rivera.1808",
+        "source.familysearch-baptism.jose-ramon-rivera.1811",
         "source.familysearch-death.luis-de-rivera.1811",
         "source.familysearch-index.humacao-burials.1810-1815"
       ],
-      "notes": "The 1811 entry calls Luís a native of this Humacao district, about 50, legitimate son of Roque and Marciana Delgado, and husband of Isidora Rodríguez. The attached index resolves the faint burial date as 20 April 1811; the exact death day is not separately stated. The about-1761 birth is an estimate. Luís Sumano is a FamilySearch computer-index error and is not adopted; the Luís de Rivera form is supported by the original entry and two child baptisms."
+      "notes": "Juan Antonio's 1808 baptism calls Luís a native of the Villa de Coamo. José Ramón's February 1811 baptism and Luís's April burial call him a native of the Humacao district. The conflict is retained rather than selecting one report. The burial calls him about 50, legitimate son of Roque and Marciana Delgado, and husband of Isidora Rodríguez; the attached index resolves the burial date as 20 April 1811, while the exact death day remains unstated. A 1765 Coamo baptism of Luís, son of Roque de Rivera and Emerenciana Tirado, is an unusually strong candidate on child, father, place, and age, but it is not merged because the mother conflicts with Marciana Delgado. Luís de Olivera and Luís Sumano are computer errors."
     },
     "relations": {
       "parentIds": [
@@ -11641,6 +11813,7 @@ export const peopleProfiles: readonly PersonProfile[] = [
           "person.maximo-vazquez",
           "person.josefa-rivera",
           "person.luis-father-of-josefa-rivera",
+          "person.isidora-rodriguez",
           "person.francisco-father-of-maximo-vazquez",
           "person.maria-cortez"
         ],
@@ -11649,14 +11822,19 @@ export const peopleProfiles: readonly PersonProfile[] = [
           "verified_native_places": {
             "person.maximo-vazquez": "Caguas, Puerto Rico",
             "person.josefa-rivera": "Humacao, Puerto Rico",
-            "person.luis-father-of-josefa-rivera": "Humacao district, Puerto Rico"
+            "person.isidora-rodriguez": "Humacao district, Puerto Rico"
+          },
+          "conflicting_native_place_reports": {
+            "person.luis-father-of-josefa-rivera": [
+              "Villa de Coamo, Puerto Rico — 1808 son's baptism",
+              "Humacao district, Puerto Rico — 1811 son's baptism and Luís's burial"
+            ]
           },
           "earliest_named_people_without_birthplaces": [
             "Francisco Vázquez",
             "María Magdalena Cortés",
             "Roque [surname not stated]",
-            "Marciana Delgado",
-            "Isidora Rodríguez"
+            "Marciana Delgado"
           ],
           "earliest_verified_events_without_native_places": {
             "person.francisco-father-of-maximo-vazquez": "children and wife documented in Caguas, 1786–1801",
@@ -11669,7 +11847,7 @@ export const peopleProfiles: readonly PersonProfile[] = [
             "another Caribbean island"
           ]
         },
-        "status": "verified_three_puerto_rico_native_places_fuller_caguas_parent_pair_and_burial_overseas_origin_open",
+        "status": "verified_puerto_rico_native_places_luis_coamo_humacao_conflict_retained_overseas_origin_open",
         "evidence_refs": [
           "source.familysearch-baptism.juan-de-dios-vazquez-rivera.1819",
           "source.familysearch-marriage.maximo-josefa.1805",
@@ -11679,6 +11857,8 @@ export const peopleProfiles: readonly PersonProfile[] = [
           "source.familysearch-burial.jose-vazquez.1801",
           "source.familysearch-baptism.simona-rivera.1790",
           "source.familysearch-baptism.ysabel-rivera.1792",
+          "source.familysearch-baptism.juan-antonio-rivera.1808",
+          "source.familysearch-baptism.jose-ramon-rivera.1811",
           "source.familysearch-death.luis-de-rivera.1811",
           "source.transcription.las-piedras-humacao-burials.1787-1798",
           "source.search-audit.caguas-early-books.maximo-parents",
@@ -11686,7 +11866,7 @@ export const peopleProfiles: readonly PersonProfile[] = [
           "source.search-audit.las-piedras-baptisms.luis-isidora.1778-1799",
           "source.search-audit.familysearch-index.origin-frontier.2026-07-24"
         ],
-        "note": "The records establish Puerto Rican native places for Máximo, Josefa, and Luís. The Caguas cluster supplies the fuller parent names Francisco Vázquez and María Magdalena Cortés and María's 1794 burial, but no reviewed source states either parent's native place or names an overseas-born direct ancestor."
+        "note": "The direct records establish Caguas for Máximo, Humacao for Josefa and Isidora, and two conflicting Puerto Rico native-place reports for Luís: Coamo in 1808 and Humacao in 1811. The 1765 Coamo baptism is only a candidate because its mother conflicts with the 1811 parent statement. No reviewed source names an overseas-born direct ancestor."
       },
       {
         "id": "claim.luis-de-rivera-surname",
@@ -11746,7 +11926,65 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "evidence_refs": [
           "source.familysearch-death.luis-de-rivera.1811"
         ],
-        "note": "The entry lists the children by given name. Surnames are not assigned to the six newly identified children without their own records."
+        "note": "The entry lists the children by given name. Juan Antonio and José Ramón now have their own baptisms; surnames are not assigned to the four children still known only from the burial list."
+      },
+      {
+        "id": "claim.luis-native-place-conflict",
+        "subject": "person.luis-father-of-josefa-rivera",
+        "predicate": "conflicting_reported_native_places",
+        "object": {
+          "reports": [
+            {
+              "date": "1808-10-30",
+              "place": "Villa de Coamo, Puerto Rico",
+              "source_context": "son Juan Antonio's baptism"
+            },
+            {
+              "date": "1811-02-09",
+              "place": "Humacao district, Puerto Rico",
+              "source_context": "son José Ramón's baptism"
+            },
+            {
+              "date": "1811-04-20",
+              "place": "Humacao district, Puerto Rico",
+              "source_context": "Luís's burial"
+            }
+          ]
+        },
+        "status": "open_conflict_all_three_original_reports_retained",
+        "evidence_refs": [
+          "source.familysearch-baptism.juan-antonio-rivera.1808",
+          "source.familysearch-baptism.jose-ramon-rivera.1811",
+          "source.familysearch-death.luis-de-rivera.1811"
+        ],
+        "note": "The 1808 entry explicitly says Villa de Coamo. Two 1811 originals say the Humacao district. The disagreement is not resolved by majority vote; each report remains attached to its source."
+      },
+      {
+        "id": "claim.luis-coamo-baptism-candidate-1765",
+        "subject": "person.luis-father-of-josefa-rivera",
+        "predicate": "unmerged_baptism_candidate",
+        "object": {
+          "baptism": "1765-09-08",
+          "reported_age": "15 days",
+          "place": "Coamo, Puerto Rico",
+          "child": "Luís",
+          "father": "Roque de Rivera",
+          "mother": "Emerenciana Tirado",
+          "matching_points": [
+            "child given name",
+            "father given name",
+            "Coamo native-place report in 1808",
+            "plausible age at 1811 burial"
+          ],
+          "material_conflict": "The direct 1811 burial names the mother as Marciana Delgado."
+        },
+        "status": "strong_candidate_not_proof_mother_conflict",
+        "evidence_refs": [
+          "source.familysearch-baptism.luis-rivera-candidate.1765",
+          "source.familysearch-baptism.juan-antonio-rivera.1808",
+          "source.familysearch-death.luis-de-rivera.1811"
+        ],
+        "note": "The candidate is unusually close but cannot be merged until a record reconciles Emerenciana Tirado with Marciana Delgado or otherwise proves the households identical."
       }
     ],
     "sources": [
@@ -11800,6 +12038,37 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "citation": "DGS 008038536, frame 1123, folio 91 verso. Simona Ribera married León Garrafa in Humacao on 24 April 1805. The entry calls Simona the legitimate daughter of Luís and Isidora Rodríguez, the same parent pair named for Josefa Ribera in December 1805. The image was downloaded at original resolution and the entry was cropped in reading order across the facing pages.",
         "image_archive": "capture.familysearch-marriage.simona-rivera-leon-garrafa.1805/1805-04-24_simona-rivera-leon-garrafa-marriage_humacao_familysearch_dgs-008038536_image-1123_3Q9M-CSFS-R9MT-Q.jpg plus adjacent image 1124 and entry crops",
         "status": "confirmed_original_reviewed_likely_sibling_relation"
+      },
+      {
+        "id": "source.familysearch-baptism.juan-antonio-rivera.1808",
+        "type": "parish_baptism_register_with_two_original_images",
+        "title": "1808 baptism of Juan Antonio, son of Luís de Rivera and Isidora Rodríguez",
+        "repository": "Dulce Nombre de Jesús, Humacao, via FamilySearch",
+        "accessed": "2026-07-24",
+        "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSFS-576V-3?view=fullText&keywords=Isidora&lang=en&groupId=M993-7VR",
+        "quality": "original_register_images_downloaded_and_transcribed_entry_crosses_two_images",
+        "citation": "DGS 008038525, item 13, images 75–76. Juan Antonio was born 18 October 1808 at Yagüelles and baptized 30 October in Humacao, the legitimate son of Luís de Rivera, called a native of the Villa de Coamo, and Isidora Rodríguez, called a native and resident of Humacao. The entry classifies both parents as blancos and names the unmarried siblings Lucas and Antonia de Castro as godparents. Juan Antonio strongly resolves the Juan named among the couple's nine children in Luís's 1811 burial.",
+        "image_archive": "research/pulls/images/humacao-1808-juan-antonio-rivera-baptism/1808-10-30-juan-antonio-baptism-entry-start-3Q9M-CSFS-576V-3-prev.jpg and 1808-10-30-juan-antonio-baptism-entry-continuation-3Q9M-CSFS-576V-3.jpg",
+        "image_sha256": [
+          "53491dbe3f672f6df76d2ab66467e4299e45c40528a269ae83cf5d25d6fc6897",
+          "0475a7e760b73cc478e23e410fdf4a9dc6c2dd33a2f92e54cc331e37212a184e"
+        ],
+        "status": "confirmed_original_reviewed",
+        "public_image": "1808-juan-antonio-rivera-baptism.jpg"
+      },
+      {
+        "id": "source.familysearch-baptism.jose-ramon-rivera.1811",
+        "type": "parish_baptism_register_with_image",
+        "title": "1811 baptism of José Ramón, son of Luís de Rivera and Isidora Rodríguez",
+        "repository": "Dulce Nombre de Jesús, Humacao, via FamilySearch",
+        "accessed": "2026-07-24",
+        "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSFS-57P6-K?view=fullText&keywords=Isidora&lang=en&groupId=M993-7VT",
+        "quality": "original_register_image_downloaded_and_transcribed",
+        "citation": "DGS 008038525, item 14, image 37. José Ramón was born 30 January 1811 at Quebrada Mariana and baptized 9 February in Humacao, the legitimate son of Luís de Rivera and Isidora Rodríguez. Both parents are called natives of the Humacao district and blancos; Luís is described as a labrador. José Antonio Almeyda and Rita del Valle, legitimate spouses, were godparents. José Ramón strongly resolves the Ramón named in Luís's burial two months later. The automated transcript's Luís de Olivera reading is not adopted.",
+        "image_archive": "research/pulls/images/humacao-1811-jose-ramon-rivera-baptism/1811-02-09-jose-ramon-baptism-original-3Q9M-CSFS-57P6-K.jpg",
+        "image_sha256": "feae69247004bae75e7da7cae28f9c7c2503c7ed191916cd0fcd118b3b555409",
+        "status": "confirmed_original_reviewed",
+        "public_image": "1811-jose-ramon-rivera-baptism.jpg"
       },
       {
         "id": "source.familysearch-death.luis-de-rivera.1811",
@@ -11944,6 +12213,20 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "quality": "focused_index_and_ocr_search_with_same_name_candidates_checked",
         "citation": "Exact and variant searches tested Isidora or Ysidora Rodríguez in early Humacao deaths, Marciana Delgado with Roque, María Cortez or Cortés in early Caguas deaths, Máximo with Francisco and María Cortez, and Josefa with Luís and Isidora Rodríguez. The one early Humacao death indexed to Isidora Rodríguez names husband Andrés Obierna and different parents, so it is rejected. No indexed target death or baptism survived the parent, spouse, date, and place checks. Index and OCR gaps make this negative coverage, not proof of absence.",
         "status": "negative_target_search_same_name_candidates_rejected"
+      },
+      {
+        "id": "source.familysearch-baptism.luis-rivera-candidate.1765",
+        "type": "parish_baptism_register_with_image_candidate",
+        "title": "1765 Coamo baptism of Luís, son of Roque de Rivera and Emerenciana Tirado",
+        "repository": "San Blas de Illescas, Coamo, via FamilySearch",
+        "accessed": "2026-07-24",
+        "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSJN-KHF1?view=fullText&keywords=Lu%C3%ADs%2CRoque&lang=en&groupId=M9SP-FTN",
+        "quality": "original_register_image_downloaded_strong_candidate_with_material_mother_conflict",
+        "citation": "DGS 008100612, item 1, image 207. A 15-day-old Luís was baptized in Coamo on 8 September 1765, the legitimate son of Roque de Rivera and Emerenciana Tirado. Child, father, place, and age fit the later Luís de Rivera unusually well, and a 1808 record independently calls the direct Luís a native of Coamo. The mother conflicts materially with Luís's 1811 burial, which names Marciana Delgado. The baptism is therefore retained as a strong candidate and is not attached as proof of the direct Luís's birth or parentage.",
+        "image_archive": "research/pulls/images/coamo-1765-luis-rivera-candidate-baptism/1765-09-08-luis-rivera-candidate-baptism-original-3Q9M-CSJN-KHF1.jpg",
+        "image_sha256": "3ff4ac4d146fbf951572ff5cf3940c5899de15cf8a90e7665161d778ff5a5887",
+        "status": "unmerged_strong_candidate_mother_conflict",
+        "public_image": "1765-luis-rivera-candidate-baptism.jpg"
       }
     ],
     "geographyEvents": [
@@ -11991,22 +12274,84 @@ export const peopleProfiles: readonly PersonProfile[] = [
       },
       {
         "id": "geo.event.luis-native-humacao",
-        "date_range": "before 1811",
+        "date_range": "reported 1811",
         "event_type": "reported_native_place",
         "person_refs": [
           "person.luis-father-of-josefa-rivera"
         ],
         "place_ref": "place.humacao",
-        "status": "confirmed_as_recorded",
+        "status": "confirmed_as_recorded_conflicts_with_1808_coamo_report",
         "evidence_refs": [
+          "source.familysearch-baptism.jose-ramon-rivera.1811",
           "source.familysearch-death.luis-de-rivera.1811"
         ],
         "map_groups": [
           "early-vazquez"
         ],
         "sequence": 9,
-        "map_label": "Humacao",
-        "map_note": "Luís de Rivera's 1811 burial entry calls him a native of this Humacao district."
+        "map_label": "Humacao · reported 1811",
+        "map_note": "José Ramón's baptism and Luís's burial call Luís a native of the Humacao district; Juan Antonio's 1808 baptism instead says Coamo."
+      },
+      {
+        "id": "geo.event.luis-native-coamo-report-1808",
+        "date": "1808-10-30",
+        "event_type": "reported_native_place",
+        "person_refs": [
+          "person.luis-father-of-josefa-rivera"
+        ],
+        "place_ref": "place.coamo",
+        "status": "confirmed_as_recorded_conflicts_with_1811_humacao_reports",
+        "evidence_refs": [
+          "source.familysearch-baptism.juan-antonio-rivera.1808"
+        ],
+        "map_groups": [
+          "early-vazquez"
+        ],
+        "sequence": 12,
+        "map_label": "Coamo · reported 1808",
+        "map_note": "Juan Antonio's baptism explicitly calls Luís a native of the Villa de Coamo. Two 1811 records instead say Humacao."
+      },
+      {
+        "id": "geo.event.juan-antonio-baptism-1808",
+        "date": "1808-10-30",
+        "event_type": "baptism",
+        "person_refs": [
+          "person.juan-child-of-luis-isidora",
+          "person.luis-father-of-josefa-rivera",
+          "person.isidora-rodriguez"
+        ],
+        "place_ref": "place.humacao",
+        "status": "confirmed_original_parish_register",
+        "evidence_refs": [
+          "source.familysearch-baptism.juan-antonio-rivera.1808"
+        ],
+        "map_groups": [
+          "early-vazquez"
+        ],
+        "sequence": 14,
+        "map_label": "Humacao · 1808",
+        "map_note": "Juan Antonio was baptized in Humacao twelve days after his birth at Yagüelles."
+      },
+      {
+        "id": "geo.event.jose-ramon-baptism-1811",
+        "date": "1811-02-09",
+        "event_type": "baptism",
+        "person_refs": [
+          "person.ramon-child-of-luis-isidora",
+          "person.luis-father-of-josefa-rivera",
+          "person.isidora-rodriguez"
+        ],
+        "place_ref": "place.humacao",
+        "status": "confirmed_original_parish_register",
+        "evidence_refs": [
+          "source.familysearch-baptism.jose-ramon-rivera.1811"
+        ],
+        "map_groups": [
+          "early-vazquez"
+        ],
+        "sequence": 15,
+        "map_label": "Humacao · 1811",
+        "map_note": "José Ramón was baptized in Humacao ten days after his birth at Quebrada Mariana."
       },
       {
         "id": "geo.event.luis-death-1811",
@@ -12042,7 +12387,8 @@ export const peopleProfiles: readonly PersonProfile[] = [
       "display_name": "Isidora Rodríguez",
       "sex": "female",
       "birth": {
-        "status": "not_yet_found"
+        "place": "Humacao district, Puerto Rico",
+        "status": "native_place_confirmed_on_1808_and_1811_child_baptisms_exact_date_not_found"
       },
       "death": {
         "status": "not_yet_found"
@@ -12079,22 +12425,24 @@ export const peopleProfiles: readonly PersonProfile[] = [
         },
         {
           "person": "person.ramon-child-of-luis-isidora",
-          "status": "confirmed_named_on_father_death"
+          "status": "confirmed_original_1811_baptism_and_named_on_father_burial"
         },
         {
           "person": "person.juan-child-of-luis-isidora",
-          "status": "confirmed_named_on_father_death"
+          "status": "confirmed_original_1808_baptism_and_named_on_father_burial"
         }
       ],
-      "confidence": "marriage_and_nine_child_cluster_confirmed_originals_own_origins_open",
+      "confidence": "native_place_marriage_and_nine_child_cluster_confirmed_originals_own_parents_and_dates_open",
       "evidence_refs": [
         "source.familysearch-baptism.simona-rivera.1790",
         "source.familysearch-baptism.ysabel-rivera.1792",
         "source.familysearch-marriage.maximo-josefa.1805",
         "source.familysearch-marriage.simona-ribera-leon-garrafa.1805",
+        "source.familysearch-baptism.juan-antonio-rivera.1808",
+        "source.familysearch-baptism.jose-ramon-rivera.1811",
         "source.familysearch-death.luis-de-rivera.1811"
       ],
-      "notes": "Luís's 1811 death names Isidora as his church-married wife and lists their nine children. The wording is not used to infer that she was then alive. Her own parents, native place, and death remain unknown. Focused Isidora and Ysidora death searches found no defensible target; a separate faded 1791 Las Piedras baptism names another Isidora Rodríguez with a different apparent father for the child Lorenza and is not merged."
+      "notes": "Juan Antonio's 1808 baptism calls Isidora a native and resident of the Humacao parish, and José Ramón's 1811 baptism again calls both parents natives of the district. Luís's burial names her as his church-married wife and lists their nine children, but that wording is not used to infer that she was then alive. Her parents, exact birth date, and death remain unknown. A faded 1791 Las Piedras baptism names a different or unresolved Isidora Rodríguez with another apparent father for the child Lorenza and is not merged."
     },
     "relations": {
       "parentIds": [],
@@ -12118,6 +12466,67 @@ export const peopleProfiles: readonly PersonProfile[] = [
       "namedSiblings": []
     },
     "claims": [
+      {
+        "id": "claim.origin-frontier-2026-07-24",
+        "subject": [
+          "person.maximo-vazquez",
+          "person.josefa-rivera",
+          "person.luis-father-of-josefa-rivera",
+          "person.isidora-rodriguez",
+          "person.francisco-father-of-maximo-vazquez",
+          "person.maria-cortez"
+        ],
+        "predicate": "earliest_verified_origin_boundary",
+        "object": {
+          "verified_native_places": {
+            "person.maximo-vazquez": "Caguas, Puerto Rico",
+            "person.josefa-rivera": "Humacao, Puerto Rico",
+            "person.isidora-rodriguez": "Humacao district, Puerto Rico"
+          },
+          "conflicting_native_place_reports": {
+            "person.luis-father-of-josefa-rivera": [
+              "Villa de Coamo, Puerto Rico — 1808 son's baptism",
+              "Humacao district, Puerto Rico — 1811 son's baptism and Luís's burial"
+            ]
+          },
+          "earliest_named_people_without_birthplaces": [
+            "Francisco Vázquez",
+            "María Magdalena Cortés",
+            "Roque [surname not stated]",
+            "Marciana Delgado"
+          ],
+          "earliest_verified_events_without_native_places": {
+            "person.francisco-father-of-maximo-vazquez": "children and wife documented in Caguas, 1786–1801",
+            "person.maria-cortez": "buried in Caguas on 17 June 1794"
+          },
+          "overseas_birthplace_identified": false,
+          "routes_unproven": [
+            "Africa",
+            "Europe",
+            "another Caribbean island"
+          ]
+        },
+        "status": "verified_puerto_rico_native_places_luis_coamo_humacao_conflict_retained_overseas_origin_open",
+        "evidence_refs": [
+          "source.familysearch-baptism.juan-de-dios-vazquez-rivera.1819",
+          "source.familysearch-marriage.maximo-josefa.1805",
+          "source.familysearch-baptism.miguel-vazquez.1786",
+          "source.familysearch-burial.maria-de-los-angeles-vazquez.1793",
+          "source.familysearch-burial.maria-magdalena-cortes.1794",
+          "source.familysearch-burial.jose-vazquez.1801",
+          "source.familysearch-baptism.simona-rivera.1790",
+          "source.familysearch-baptism.ysabel-rivera.1792",
+          "source.familysearch-baptism.juan-antonio-rivera.1808",
+          "source.familysearch-baptism.jose-ramon-rivera.1811",
+          "source.familysearch-death.luis-de-rivera.1811",
+          "source.transcription.las-piedras-humacao-burials.1787-1798",
+          "source.search-audit.caguas-early-books.maximo-parents",
+          "source.search-audit.las-piedras-marriages.luis-isidora",
+          "source.search-audit.las-piedras-baptisms.luis-isidora.1778-1799",
+          "source.search-audit.familysearch-index.origin-frontier.2026-07-24"
+        ],
+        "note": "The direct records establish Caguas for Máximo, Humacao for Josefa and Isidora, and two conflicting Puerto Rico native-place reports for Luís: Coamo in 1808 and Humacao in 1811. The 1765 Coamo baptism is only a candidate because its mother conflicts with the 1811 parent statement. No reviewed source names an overseas-born direct ancestor."
+      },
       {
         "id": "claim.lorenza-isidora-rodriguez-candidate",
         "subject": "person.isidora-rodriguez",
@@ -12157,7 +12566,31 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "evidence_refs": [
           "source.familysearch-death.luis-de-rivera.1811"
         ],
-        "note": "The entry lists the children by given name. Surnames are not assigned to the six newly identified children without their own records."
+        "note": "The entry lists the children by given name. Juan Antonio and José Ramón now have their own baptisms; surnames are not assigned to the four children still known only from the burial list."
+      },
+      {
+        "id": "claim.isidora-rodriguez-native-humacao",
+        "subject": "person.isidora-rodriguez",
+        "predicate": "reported_native_place",
+        "object": {
+          "place": "Humacao district, Puerto Rico",
+          "reports": [
+            {
+              "date": "1808-10-30",
+              "wording": "natural y vecina de esta feligresía"
+            },
+            {
+              "date": "1811-02-09",
+              "wording": "both parents naturales de este Partido"
+            }
+          ]
+        },
+        "status": "confirmed_two_original_child_baptisms",
+        "evidence_refs": [
+          "source.familysearch-baptism.juan-antonio-rivera.1808",
+          "source.familysearch-baptism.jose-ramon-rivera.1811"
+        ],
+        "note": "The records establish Isidora's reported native place, not her exact date of birth or parents."
       }
     ],
     "sources": [
@@ -12213,6 +12646,37 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "status": "confirmed_original_reviewed_likely_sibling_relation"
       },
       {
+        "id": "source.familysearch-baptism.juan-antonio-rivera.1808",
+        "type": "parish_baptism_register_with_two_original_images",
+        "title": "1808 baptism of Juan Antonio, son of Luís de Rivera and Isidora Rodríguez",
+        "repository": "Dulce Nombre de Jesús, Humacao, via FamilySearch",
+        "accessed": "2026-07-24",
+        "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSFS-576V-3?view=fullText&keywords=Isidora&lang=en&groupId=M993-7VR",
+        "quality": "original_register_images_downloaded_and_transcribed_entry_crosses_two_images",
+        "citation": "DGS 008038525, item 13, images 75–76. Juan Antonio was born 18 October 1808 at Yagüelles and baptized 30 October in Humacao, the legitimate son of Luís de Rivera, called a native of the Villa de Coamo, and Isidora Rodríguez, called a native and resident of Humacao. The entry classifies both parents as blancos and names the unmarried siblings Lucas and Antonia de Castro as godparents. Juan Antonio strongly resolves the Juan named among the couple's nine children in Luís's 1811 burial.",
+        "image_archive": "research/pulls/images/humacao-1808-juan-antonio-rivera-baptism/1808-10-30-juan-antonio-baptism-entry-start-3Q9M-CSFS-576V-3-prev.jpg and 1808-10-30-juan-antonio-baptism-entry-continuation-3Q9M-CSFS-576V-3.jpg",
+        "image_sha256": [
+          "53491dbe3f672f6df76d2ab66467e4299e45c40528a269ae83cf5d25d6fc6897",
+          "0475a7e760b73cc478e23e410fdf4a9dc6c2dd33a2f92e54cc331e37212a184e"
+        ],
+        "status": "confirmed_original_reviewed",
+        "public_image": "1808-juan-antonio-rivera-baptism.jpg"
+      },
+      {
+        "id": "source.familysearch-baptism.jose-ramon-rivera.1811",
+        "type": "parish_baptism_register_with_image",
+        "title": "1811 baptism of José Ramón, son of Luís de Rivera and Isidora Rodríguez",
+        "repository": "Dulce Nombre de Jesús, Humacao, via FamilySearch",
+        "accessed": "2026-07-24",
+        "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSFS-57P6-K?view=fullText&keywords=Isidora&lang=en&groupId=M993-7VT",
+        "quality": "original_register_image_downloaded_and_transcribed",
+        "citation": "DGS 008038525, item 14, image 37. José Ramón was born 30 January 1811 at Quebrada Mariana and baptized 9 February in Humacao, the legitimate son of Luís de Rivera and Isidora Rodríguez. Both parents are called natives of the Humacao district and blancos; Luís is described as a labrador. José Antonio Almeyda and Rita del Valle, legitimate spouses, were godparents. José Ramón strongly resolves the Ramón named in Luís's burial two months later. The automated transcript's Luís de Olivera reading is not adopted.",
+        "image_archive": "research/pulls/images/humacao-1811-jose-ramon-rivera-baptism/1811-02-09-jose-ramon-baptism-original-3Q9M-CSFS-57P6-K.jpg",
+        "image_sha256": "feae69247004bae75e7da7cae28f9c7c2503c7ed191916cd0fcd118b3b555409",
+        "status": "confirmed_original_reviewed",
+        "public_image": "1811-jose-ramon-rivera-baptism.jpg"
+      },
+      {
         "id": "source.familysearch-death.luis-de-rivera.1811",
         "type": "parish_burial_register_with_image",
         "title": "1811 burial of Luís de Rivera",
@@ -12225,6 +12689,124 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "image_archive": "capture.familysearch-death.luis-de-rivera.1811/3Q9M-CSFS-2BP2-original.jpg plus deep-zoom assembly, reading-order crops, and metadata; duplicate exact frame retained in humacao-burials-1810-1815",
         "status": "confirmed_original_reviewed_burial_date_resolved",
         "public_image": "1811-luis-de-rivera-death.jpg"
+      },
+      {
+        "id": "source.familysearch-baptism.juan-de-dios-vazquez-rivera.1819",
+        "type": "parish_baptism_register_with_image",
+        "title": "1819 baptism of Juan de Dios Vázquez Rivera",
+        "repository": "Nuestra Señora de la Inmaculada Concepción, Juncos, via FamilySearch",
+        "accessed": "2026-07-24",
+        "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSV2-MS7P-F?view=fullText&keywords=Juan%20de%20Dios%2CM%C3%A1ximo%20V%C3%A1zquez%2CRibera&lang=en",
+        "quality": "original_register_image_and_transcript",
+        "citation": "DGS 008126787, item 3, local image 78 of 174. Juan de Dios was born 9 March and baptized 14 March 1819 in Juncos, legitimate son of Máximo Vázquez, native of Caguas, and Josefa de Ribera, native of Humacao. The parents were described as pardos libres. The computer index incorrectly dated the birth to 1813 and baptism to 1814; the original reads 1819."
+      },
+      {
+        "id": "source.familysearch-baptism.miguel-vazquez.1786",
+        "type": "parish_baptism_register_with_image",
+        "title": "1786 baptism of Miguel Vázquez",
+        "repository": "Dulce Nombre de Jesús, Caguas, via FamilySearch",
+        "accessed": "2026-07-24",
+        "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSV2-2QSC-R?cat=89952&i=49&lang=en&cc=1807092&groupId=1807092",
+        "quality": "original_register_image_downloaded_and_reviewed",
+        "citation": "Film 1389001, frame 50, folio 79, record 166. Miguel was baptized 18 October 1786 at the reported age of 15 days, the legitimate son of Francisco Vázquez and María Magdalena. Godparents were Lorenzo Lozano and Juana Cortés. The entry does not state María's surname.",
+        "image_archive": "research/pulls/images/caguas-1786-miguel-vazquez-baptism/1786-10-18-miguel-vazquez-baptism-original-3Q9M-CSV2-2QSC-R.jpg",
+        "image_sha256": "a635eb3194483a73ba24c1f6ed1de004567393e655d2ed03802a79b52291afa3",
+        "status": "confirmed_original_reviewed",
+        "public_image": "1786-miguel-vazquez-baptism.jpg"
+      },
+      {
+        "id": "source.familysearch-burial.maria-de-los-angeles-vazquez.1793",
+        "type": "parish_burial_register_with_image",
+        "title": "1793 burial of María de los Ángeles Vázquez",
+        "repository": "Dulce Nombre de Jesús, Caguas, via FamilySearch",
+        "accessed": "2026-07-24",
+        "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSV2-3QZM-S?cat=89952&i=1979&lang=en",
+        "quality": "original_register_image_downloaded_and_reviewed",
+        "citation": "Film 1389031, frame 1980, folio 119 verso, record 476. On 25 July 1793 the parish buried María de los Ángeles, described as a párvula and legitimate daughter of Francisco Vázquez or Basques and María Magdalena. The entry does not state María's surname.",
+        "image_archive": "research/pulls/images/caguas-1793-maria-de-los-angeles-vazquez-burial/1793-07-25-maria-de-los-angeles-vazquez-burial-original-3Q9M-CSV2-3QZM-S.jpg",
+        "image_sha256": "b6b82fe5a0aac83fa22705361cb973a3696173f3b348dcf0e6ea4b0330ffba14",
+        "status": "confirmed_original_reviewed",
+        "public_image": "1793-maria-de-los-angeles-vazquez-burial.jpg"
+      },
+      {
+        "id": "source.familysearch-burial.maria-magdalena-cortes.1794",
+        "type": "parish_burial_register_with_image",
+        "title": "1794 burial of María Magdalena Cortés",
+        "repository": "Dulce Nombre de Jesús, Caguas, via FamilySearch",
+        "accessed": "2026-07-24",
+        "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSV2-3QZM-Q?cat=89952&i=1990&lang=en",
+        "quality": "original_register_image_downloaded_and_reviewed",
+        "citation": "Film 1389031, frame 1991, folio 130, record 518. On 17 June 1794 the parish buried María Magdalena Cortés, identified as the legitimate wife of Francisco Vázquez. The register date securely establishes the burial; it does not separately state the exact day of death, her age, parents, birthplace, or native place.",
+        "image_archive": "research/pulls/images/caguas-1794-maria-magdalena-cortes-burial/1794-06-17-maria-magdalena-cortes-burial-original-3Q9M-CSV2-3QZM-Q.jpg",
+        "image_sha256": "783e14a277513412927e96e8424bc19a256483ff90f0720bbee2c3c8b80b8530",
+        "status": "confirmed_original_reviewed",
+        "public_image": "1794-maria-magdalena-cortes-burial.jpg"
+      },
+      {
+        "id": "source.familysearch-burial.jose-vazquez.1801",
+        "type": "parish_burial_register_with_image",
+        "title": "1801 burial of José Vázquez",
+        "repository": "Dulce Nombre de Jesús, Caguas, via FamilySearch",
+        "accessed": "2026-07-24",
+        "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSV2-3Q9N-P?cat=89952&i=2104&lang=en",
+        "quality": "original_register_image_downloaded_and_reviewed",
+        "citation": "Film 1389031, frame 2105, folio 244 verso, record 1032. On 14 February 1801 the parish buried José Vázquez, identified as the legitimate son of Francisco and María Cortés. The entry does not state José's age or the parents' native places.",
+        "image_archive": "research/pulls/images/caguas-1801-jose-vazquez-burial/1801-02-14-jose-vazquez-burial-original-3Q9M-CSV2-3Q9N-P.jpg",
+        "image_sha256": "831b0848c6d47dc8a4d8879413b32742d8a93a10446b3fc96d507094acef1524",
+        "status": "confirmed_original_reviewed",
+        "public_image": "1801-jose-vazquez-burial.jpg"
+      },
+      {
+        "id": "source.transcription.las-piedras-humacao-burials.1787-1798",
+        "type": "complete_volunteer_burial_transcription_with_historical_jurisdiction_note",
+        "title": "Burials in Las Piedras and Humacao, 1787–1798",
+        "repository": "Ivonne Santana Ríos transcription published by Hijos de Coamo Puerto Rico",
+        "accessed": "2026-07-24",
+        "url": "https://hijosdecoamopr.com/wp-content/uploads/2023/06/Entierros-en-Las-Piedras-y-Humacao-1787-1798.pdf",
+        "quality": "secondary_complete_transcription_with_cited_parish_context",
+        "citation": "The introductory note explains that Humacao's church was an assistant chapel under Las Piedras before Humacao became a parish in 1793, so Humacao residents used Las Piedras for baptisms and marriages in the earlier period. Exact-name searches of the burial transcription produced no Luís and Isidora Rodríguez, Francisco and María Cortez, or matching parent death."
+      },
+      {
+        "id": "source.search-audit.caguas-early-books.maximo-parents",
+        "type": "negative_search_and_collection_coverage_audit",
+        "title": "Caguas early-book search for Máximo and his parents",
+        "repository": "Hijos de Coamo Puerto Rico transcriptions of FamilySearch films 1389001 and 1389031",
+        "accessed": "2026-07-24",
+        "url": "https://hijosdecoamopr.com/caguas-puerto-rico-church-records-1730-1968/",
+        "quality": "complete_transcription_search_plus_published_coverage_guide",
+        "citation": "The complete Caguas 1785–1788 baptism transcript contains no Máximo matching parents Francisco and María Cortez. The complete 1774–1804 marriage transcript contains no defensible Francisco and María Cortez couple. Caguas baptism coverage has large gaps in 1767–1784 and 1789–1808, so the negative result does not contradict Máximo's recorded Caguas origin."
+      },
+      {
+        "id": "source.search-audit.las-piedras-marriages.luis-isidora",
+        "type": "negative_search_and_collection_coverage_audit",
+        "title": "Las Piedras marriage search for Luís and Isidora Rodríguez",
+        "repository": "Salli Mastron transcription of Las Piedras/Juncos marriages 1787–1816, film 1389073",
+        "accessed": "2026-07-24",
+        "url": "https://docs.google.com/spreadsheets/d/1gLgRpEJFZtZZ0PuvJCNyG3uGUWb0uIEcFrlbtrTy3C8/edit",
+        "quality": "complete_volunteer_transcription_search",
+        "citation": "The complete transcription contains no marriage for a Luís and Isidora Rodríguez couple. This is a negative search in one surviving book, not proof that their marriage did not occur locally or in an earlier, missing, or neighboring register."
+      },
+      {
+        "id": "source.search-audit.las-piedras-baptisms.luis-isidora.1778-1799",
+        "type": "manual_original_register_image_review",
+        "title": "Complete Las Piedras baptism-item review for the Luís de Rivera and Isidora Rodríguez household",
+        "repository": "Nuestra Señora de la Concepción, Las Piedras, DGS 008126787, item 1, via FamilySearch",
+        "accessed": "2026-07-24",
+        "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSV2-MS35-M?cat=247758&i=2&lang=en",
+        "quality": "complete_227_image_item_review_with_original_images_and_full_text_assistance",
+        "citation": "All 227 item images were reviewed, spanning the surviving sequence from 1778 through 1799. The review found the exact 1790 Simona and 1792 Ysabel baptisms under Luís de Rivera and Isidora Rodríguez, retained two same-name candidates separately, and did not find Josefa's baptism. This is a complete review of one surviving item, not proof that no baptism existed in a missing, duplicate, or neighboring register.",
+        "status": "complete_item_review_positive_siblings_josefa_not_found"
+      },
+      {
+        "id": "source.search-audit.familysearch-index.origin-frontier.2026-07-24",
+        "type": "negative_indexed_record_search",
+        "title": "Focused FamilySearch index searches at the pre-Puerto Rico frontier",
+        "repository": "FamilySearch historical-record index and full-text search",
+        "accessed": "2026-07-24",
+        "url": "https://www.familysearch.org/en/search/record/results?count=100&q.deathLikeDate.from=1811&q.deathLikeDate.to=1850&q.deathLikePlace=Humacao%2C%20Puerto%20Rico&q.givenName=Isidora&q.givenName.exact=on&q.recordCountry=Puerto%20Rico&q.surname=Rodr%C3%ADguez&q.surname.exact=on",
+        "quality": "focused_index_and_ocr_search_with_same_name_candidates_checked",
+        "citation": "Exact and variant searches tested Isidora or Ysidora Rodríguez in early Humacao deaths, Marciana Delgado with Roque, María Cortez or Cortés in early Caguas deaths, Máximo with Francisco and María Cortez, and Josefa with Luís and Isidora Rodríguez. The one early Humacao death indexed to Isidora Rodríguez names husband Andrés Obierna and different parents, so it is rejected. No indexed target death or baptism survived the parent, spouse, date, and place checks. Index and OCR gaps make this negative coverage, not proof of absence.",
+        "status": "negative_target_search_same_name_candidates_rejected"
       },
       {
         "id": "source.familysearch-baptism.lorenza-isidora-rodriguez-candidate.1791",
@@ -12281,6 +12863,68 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "sequence": 3,
         "map_label": "Las Piedras · 1792",
         "map_note": "Another daughter, Ysabel, was baptized in the same parish."
+      },
+      {
+        "id": "geo.event.isidora-native-humacao-report-1808",
+        "date": "1808-10-30",
+        "event_type": "reported_native_place",
+        "person_refs": [
+          "person.isidora-rodriguez"
+        ],
+        "place_ref": "place.humacao",
+        "status": "confirmed_as_recorded",
+        "evidence_refs": [
+          "source.familysearch-baptism.juan-antonio-rivera.1808",
+          "source.familysearch-baptism.jose-ramon-rivera.1811"
+        ],
+        "map_groups": [
+          "early-vazquez"
+        ],
+        "sequence": 13,
+        "map_label": "Humacao · Isidora",
+        "map_note": "The 1808 baptism calls Isidora a native and resident of Humacao; the 1811 baptism again calls her a native of the district."
+      },
+      {
+        "id": "geo.event.juan-antonio-baptism-1808",
+        "date": "1808-10-30",
+        "event_type": "baptism",
+        "person_refs": [
+          "person.juan-child-of-luis-isidora",
+          "person.luis-father-of-josefa-rivera",
+          "person.isidora-rodriguez"
+        ],
+        "place_ref": "place.humacao",
+        "status": "confirmed_original_parish_register",
+        "evidence_refs": [
+          "source.familysearch-baptism.juan-antonio-rivera.1808"
+        ],
+        "map_groups": [
+          "early-vazquez"
+        ],
+        "sequence": 14,
+        "map_label": "Humacao · 1808",
+        "map_note": "Juan Antonio was baptized in Humacao twelve days after his birth at Yagüelles."
+      },
+      {
+        "id": "geo.event.jose-ramon-baptism-1811",
+        "date": "1811-02-09",
+        "event_type": "baptism",
+        "person_refs": [
+          "person.ramon-child-of-luis-isidora",
+          "person.luis-father-of-josefa-rivera",
+          "person.isidora-rodriguez"
+        ],
+        "place_ref": "place.humacao",
+        "status": "confirmed_original_parish_register",
+        "evidence_refs": [
+          "source.familysearch-baptism.jose-ramon-rivera.1811"
+        ],
+        "map_groups": [
+          "early-vazquez"
+        ],
+        "sequence": 15,
+        "map_label": "Humacao · 1811",
+        "map_note": "José Ramón was baptized in Humacao ten days after his birth at Quebrada Mariana."
       }
     ]
   },
@@ -14645,11 +15289,14 @@ export const peopleProfiles: readonly PersonProfile[] = [
       },
       "partner": "person.marciana-delgado",
       "known_child": "person.luis-father-of-josefa-rivera",
-      "confidence": "confirmed_as_luis_father_on_original_1811_death",
+      "confidence": "confirmed_as_luis_father_on_original_1811_burial_other_roque_records_unmerged",
       "evidence_refs": [
-        "source.familysearch-death.luis-de-rivera.1811"
+        "source.familysearch-death.luis-de-rivera.1811",
+        "source.familysearch-baptism.luis-rivera-candidate.1765",
+        "source.familysearch-baptism.bernarda-rivera-candidate.1763",
+        "source.familysearch-burial.martina-roque-de-ribera-collateral.1798"
       ],
-      "notes": "Luís's death entry gives the father only as Roque. Rivera is not assigned without another record."
+      "notes": "Luís's burial gives the father only as Roque, so Rivera is not assigned. Two Coamo baptisms document a Roque de Rivera with Emerenciana Tirado in 1763 and 1765, and a 1798 Humacao burial documents a living Roque de Ribera there. The records are valuable leads but do not name Marciana Delgado or otherwise bridge either man to Luís's father; they remain unmerged."
     },
     "relations": {
       "parentIds": [],
@@ -14682,6 +15329,53 @@ export const peopleProfiles: readonly PersonProfile[] = [
           "source.familysearch-death.luis-de-rivera.1811"
         ],
         "note": "The 1811 burial entry for Luís names his parents as Roque and Marciana Delgado. The 1797 burial identifies a Joseph Roque as María Herrera's widower. No source connects the Canary-born man to Marciana or Luís, so the overseas-origin clue is preserved but not assigned to the family."
+      },
+      {
+        "id": "claim.roque-emerenciana-coamo-household-candidate",
+        "subject": "person.roque-father-of-luis-de-rivera",
+        "predicate": "unmerged_same_name_parent_household",
+        "object": {
+          "place": "Coamo, Puerto Rico",
+          "parent_pair": [
+            "Roque de Rivera",
+            "Emerenciana Tirado"
+          ],
+          "children_in_originals": [
+            {
+              "name": "Bernarda",
+              "baptism": "1763-09-02"
+            },
+            {
+              "name": "Luís",
+              "baptism": "1765-09-08"
+            }
+          ],
+          "conflict": "The direct Luís's 1811 burial names his mother as Marciana Delgado."
+        },
+        "status": "real_collateral_household_identity_to_direct_roque_unproven",
+        "evidence_refs": [
+          "source.familysearch-baptism.bernarda-rivera-candidate.1763",
+          "source.familysearch-baptism.luis-rivera-candidate.1765",
+          "source.familysearch-death.luis-de-rivera.1811"
+        ],
+        "note": "These baptisms prove that the Coamo couple existed. They do not prove that this Roque was the direct ancestor or that Bernarda was the direct Luís's sister."
+      },
+      {
+        "id": "claim.roque-de-ribera-humacao-collateral-1798",
+        "subject": "person.roque-father-of-luis-de-rivera",
+        "predicate": "unmerged_same_name_collateral_presence",
+        "object": {
+          "date": "1798-04-09",
+          "place": "Humacao, Puerto Rico",
+          "recorded_name": "Roque de Ribera",
+          "context": "Named as the enslaver of Martina in her burial entry"
+        },
+        "status": "same_place_generation_lead_no_identity_bridge",
+        "evidence_refs": [
+          "source.familysearch-burial.martina-roque-de-ribera-collateral.1798",
+          "source.familysearch-death.luis-de-rivera.1811"
+        ],
+        "note": "The record places a Roque de Ribera in Humacao in 1798 but does not name Marciana Delgado, Luís, or another relationship anchor. It is preserved and not merged."
       }
     ],
     "sources": [
@@ -14698,6 +15392,46 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "image_archive": "capture.familysearch-death.luis-de-rivera.1811/3Q9M-CSFS-2BP2-original.jpg plus deep-zoom assembly, reading-order crops, and metadata; duplicate exact frame retained in humacao-burials-1810-1815",
         "status": "confirmed_original_reviewed_burial_date_resolved",
         "public_image": "1811-luis-de-rivera-death.jpg"
+      },
+      {
+        "id": "source.familysearch-baptism.luis-rivera-candidate.1765",
+        "type": "parish_baptism_register_with_image_candidate",
+        "title": "1765 Coamo baptism of Luís, son of Roque de Rivera and Emerenciana Tirado",
+        "repository": "San Blas de Illescas, Coamo, via FamilySearch",
+        "accessed": "2026-07-24",
+        "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSJN-KHF1?view=fullText&keywords=Lu%C3%ADs%2CRoque&lang=en&groupId=M9SP-FTN",
+        "quality": "original_register_image_downloaded_strong_candidate_with_material_mother_conflict",
+        "citation": "DGS 008100612, item 1, image 207. A 15-day-old Luís was baptized in Coamo on 8 September 1765, the legitimate son of Roque de Rivera and Emerenciana Tirado. Child, father, place, and age fit the later Luís de Rivera unusually well, and a 1808 record independently calls the direct Luís a native of Coamo. The mother conflicts materially with Luís's 1811 burial, which names Marciana Delgado. The baptism is therefore retained as a strong candidate and is not attached as proof of the direct Luís's birth or parentage.",
+        "image_archive": "research/pulls/images/coamo-1765-luis-rivera-candidate-baptism/1765-09-08-luis-rivera-candidate-baptism-original-3Q9M-CSJN-KHF1.jpg",
+        "image_sha256": "3ff4ac4d146fbf951572ff5cf3940c5899de15cf8a90e7665161d778ff5a5887",
+        "status": "unmerged_strong_candidate_mother_conflict",
+        "public_image": "1765-luis-rivera-candidate-baptism.jpg"
+      },
+      {
+        "id": "source.familysearch-baptism.bernarda-rivera-candidate.1763",
+        "type": "parish_baptism_register_with_image_candidate_household",
+        "title": "1763 Coamo baptism of Bernarda, daughter of Roque de Rivera and Emerenciana Tirado",
+        "repository": "San Blas de Illescas, Coamo, via FamilySearch",
+        "accessed": "2026-07-24",
+        "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSJN-KHN2?view=fullText&keywords=Emerenciana&lang=en&groupId=M9SP-FTN",
+        "quality": "original_register_image_downloaded_collateral_candidate_household",
+        "citation": "DGS 008100612, item 1, image 179. Bernarda was baptized in Coamo on 2 September 1763 as the legitimate daughter of Roque de Rivera and Emerenciana Tirado; the original appears to report her as eight days old. This confirms that the parent pair in the 1765 Luís baptism was a real Coamo household. Bernarda is not assigned as the direct Luís's sister because the 1811 burial names his mother as Marciana Delgado and no bridge has reconciled the women.",
+        "image_archive": "research/pulls/images/coamo-1763-bernarda-rivera-candidate-baptism/1763-09-02-bernarda-rivera-candidate-baptism-original-3Q9M-CSJN-KHN2.jpg",
+        "image_sha256": "db0e34600a031901b4c869168f8c12eea9f860d3dfeb5a2355427fe9ef96230a",
+        "status": "unmerged_candidate_household"
+      },
+      {
+        "id": "source.familysearch-burial.martina-roque-de-ribera-collateral.1798",
+        "type": "parish_burial_register_with_image_collateral_lead",
+        "title": "1798 Humacao burial of Martina, enslaved by Roque de Ribera",
+        "repository": "Dulce Nombre de Jesús, Humacao, via FamilySearch",
+        "accessed": "2026-07-24",
+        "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSFS-297R-X?view=fullText&keywords=Roque&lang=en&groupId=M993-WQN",
+        "quality": "original_register_image_downloaded_collateral_same_name_lead",
+        "citation": "DGS 008038524, image 37. Martina, described as black, creole, about 25, and enslaved by parishioner Roque de Ribera, was buried in Humacao on 9 April 1798. The entry proves that a living Roque de Ribera was present in Humacao in the right generation. It does not name Marciana Delgado, Luís, or any other identity bridge, so this man is not merged with Luís's father.",
+        "image_archive": "research/pulls/images/humacao-1798-martina-roque-ribera-collateral/1798-04-09-martina-burial-roque-de-ribera-original-3Q9M-CSFS-297R-X.jpg",
+        "image_sha256": "afd4eb10b98893b33e8124215bf03ca55c9ff08c204c4f0639efbd6ef39fc9c2",
+        "status": "unmerged_collateral_lead"
       },
       {
         "id": "source.familysearch-burial.joseph-roque-canary-islands-rejected.1797",
@@ -14746,11 +15480,12 @@ export const peopleProfiles: readonly PersonProfile[] = [
       },
       "partner": "person.roque-father-of-luis-de-rivera",
       "known_child": "person.luis-father-of-josefa-rivera",
-      "confidence": "confirmed_as_luis_mother_on_original_1811_death",
+      "confidence": "confirmed_as_luis_mother_on_original_1811_burial_1765_candidate_mother_conflicts",
       "evidence_refs": [
-        "source.familysearch-death.luis-de-rivera.1811"
+        "source.familysearch-death.luis-de-rivera.1811",
+        "source.familysearch-baptism.luis-rivera-candidate.1765"
       ],
-      "notes": "The original reads Marciana Delgado. FamilySearch's automated transcript renders the given name Merenciana; the manuscript reading is retained."
+      "notes": "The original 1811 burial reads Marciana Delgado. FamilySearch's Merenciana form is a computer error. A strong 1765 Coamo candidate instead names the mother of a Luís as Emerenciana Tirado; no reviewed record shows that Emerenciana Tirado and Marciana Delgado were the same woman, so that baptism is not merged."
     },
     "relations": {
       "parentIds": [],
@@ -14780,6 +15515,20 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "image_archive": "capture.familysearch-death.luis-de-rivera.1811/3Q9M-CSFS-2BP2-original.jpg plus deep-zoom assembly, reading-order crops, and metadata; duplicate exact frame retained in humacao-burials-1810-1815",
         "status": "confirmed_original_reviewed_burial_date_resolved",
         "public_image": "1811-luis-de-rivera-death.jpg"
+      },
+      {
+        "id": "source.familysearch-baptism.luis-rivera-candidate.1765",
+        "type": "parish_baptism_register_with_image_candidate",
+        "title": "1765 Coamo baptism of Luís, son of Roque de Rivera and Emerenciana Tirado",
+        "repository": "San Blas de Illescas, Coamo, via FamilySearch",
+        "accessed": "2026-07-24",
+        "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSJN-KHF1?view=fullText&keywords=Lu%C3%ADs%2CRoque&lang=en&groupId=M9SP-FTN",
+        "quality": "original_register_image_downloaded_strong_candidate_with_material_mother_conflict",
+        "citation": "DGS 008100612, item 1, image 207. A 15-day-old Luís was baptized in Coamo on 8 September 1765, the legitimate son of Roque de Rivera and Emerenciana Tirado. Child, father, place, and age fit the later Luís de Rivera unusually well, and a 1808 record independently calls the direct Luís a native of Coamo. The mother conflicts materially with Luís's 1811 burial, which names Marciana Delgado. The baptism is therefore retained as a strong candidate and is not attached as proof of the direct Luís's birth or parentage.",
+        "image_archive": "research/pulls/images/coamo-1765-luis-rivera-candidate-baptism/1765-09-08-luis-rivera-candidate-baptism-original-3Q9M-CSJN-KHF1.jpg",
+        "image_sha256": "3ff4ac4d146fbf951572ff5cf3940c5899de15cf8a90e7665161d778ff5a5887",
+        "status": "unmerged_strong_candidate_mother_conflict",
+        "public_image": "1765-luis-rivera-candidate-baptism.jpg"
       }
     ],
     "geographyEvents": []
@@ -15063,17 +15812,35 @@ export const peopleProfiles: readonly PersonProfile[] = [
   {
     "id": "person.ramon-child-of-luis-isidora",
     "slug": "ramon-child-of-luis-isidora",
-    "displayName": "Ramón",
+    "displayName": "José Ramón",
     "sex": "male",
     "tone": "vazquez",
     "siteProjection": "research_only",
     "record": {
       "id": "person.ramon-child-of-luis-isidora",
-      "display_name": "Ramón",
+      "display_name": "José Ramón",
       "sex": "male",
+      "names": [
+        {
+          "name": "José Ramón",
+          "type": "1811_baptism",
+          "status": "documented"
+        },
+        {
+          "name": "Ramón",
+          "type": "1811_father_burial_child_list",
+          "status": "documented_short_form"
+        }
+      ],
       "birth": {
-        "before": "1811",
-        "status": "named_as_child_on_father_death"
+        "date": "1811-01-30",
+        "place": "Quebrada Mariana, Humacao, Puerto Rico",
+        "status": "confirmed_original_baptism_register"
+      },
+      "baptism": {
+        "date": "1811-02-09",
+        "place": "Dulce Nombre de Jesús, Humacao, Puerto Rico",
+        "status": "confirmed_original_register"
       },
       "death": {
         "status": "not_yet_found"
@@ -15082,12 +15849,17 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "person.luis-father-of-josefa-rivera",
         "person.isidora-rodriguez"
       ],
+      "godparents": [
+        "José Antonio Almeyda",
+        "Rita del Valle"
+      ],
       "site_projection": "research_only",
-      "confidence": "confirmed_child_named_on_original_1811_death",
+      "confidence": "birth_baptism_parentage_and_identity_with_ramon_on_father_burial_confirmed",
       "evidence_refs": [
+        "source.familysearch-baptism.jose-ramon-rivera.1811",
         "source.familysearch-death.luis-de-rivera.1811"
       ],
-      "notes": "No surname is assigned because Luís's death entry lists the children by given name."
+      "notes": "The baptism names the child José Ramón and the exact Luís de Rivera–Isidora Rodríguez parent pair. Luís's burial two months later lists a son Ramón among the same nine-child household, making the identity strong. The child's surname is not written and is not assigned."
     },
     "relations": {
       "parentIds": [
@@ -15110,8 +15882,50 @@ export const peopleProfiles: readonly PersonProfile[] = [
       "namedChildren": [],
       "namedSiblings": []
     },
-    "claims": [],
+    "claims": [
+      {
+        "id": "claim.jose-ramon-rivera-birth-baptism",
+        "subject": "person.ramon-child-of-luis-isidora",
+        "predicate": "birth_baptism_parentage_and_short_name_identity",
+        "object": {
+          "recorded_name": "José Ramón",
+          "birth": "1811-01-30",
+          "birth_site": "Quebrada Mariana, Humacao, Puerto Rico",
+          "baptism": "1811-02-09",
+          "baptism_place": "Humacao, Puerto Rico",
+          "parents": [
+            "person.luis-father-of-josefa-rivera",
+            "person.isidora-rodriguez"
+          ],
+          "godparents": [
+            "José Antonio Almeyda",
+            "Rita del Valle"
+          ],
+          "later_household_name": "Ramón"
+        },
+        "status": "confirmed_original_baptism_and_father_burial",
+        "evidence_refs": [
+          "source.familysearch-baptism.jose-ramon-rivera.1811",
+          "source.familysearch-death.luis-de-rivera.1811"
+        ],
+        "note": "The exact parent pair and Luís's burial two months later make José Ramón the Ramón named in the nine-child list. The baptism does not write a surname for the child."
+      }
+    ],
     "sources": [
+      {
+        "id": "source.familysearch-baptism.jose-ramon-rivera.1811",
+        "type": "parish_baptism_register_with_image",
+        "title": "1811 baptism of José Ramón, son of Luís de Rivera and Isidora Rodríguez",
+        "repository": "Dulce Nombre de Jesús, Humacao, via FamilySearch",
+        "accessed": "2026-07-24",
+        "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSFS-57P6-K?view=fullText&keywords=Isidora&lang=en&groupId=M993-7VT",
+        "quality": "original_register_image_downloaded_and_transcribed",
+        "citation": "DGS 008038525, item 14, image 37. José Ramón was born 30 January 1811 at Quebrada Mariana and baptized 9 February in Humacao, the legitimate son of Luís de Rivera and Isidora Rodríguez. Both parents are called natives of the Humacao district and blancos; Luís is described as a labrador. José Antonio Almeyda and Rita del Valle, legitimate spouses, were godparents. José Ramón strongly resolves the Ramón named in Luís's burial two months later. The automated transcript's Luís de Olivera reading is not adopted.",
+        "image_archive": "research/pulls/images/humacao-1811-jose-ramon-rivera-baptism/1811-02-09-jose-ramon-baptism-original-3Q9M-CSFS-57P6-K.jpg",
+        "image_sha256": "feae69247004bae75e7da7cae28f9c7c2503c7ed191916cd0fcd118b3b555409",
+        "status": "confirmed_original_reviewed",
+        "public_image": "1811-jose-ramon-rivera-baptism.jpg"
+      },
       {
         "id": "source.familysearch-death.luis-de-rivera.1811",
         "type": "parish_burial_register_with_image",
@@ -15127,22 +15941,62 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "public_image": "1811-luis-de-rivera-death.jpg"
       }
     ],
-    "geographyEvents": []
+    "geographyEvents": [
+      {
+        "id": "geo.event.jose-ramon-baptism-1811",
+        "date": "1811-02-09",
+        "event_type": "baptism",
+        "person_refs": [
+          "person.ramon-child-of-luis-isidora",
+          "person.luis-father-of-josefa-rivera",
+          "person.isidora-rodriguez"
+        ],
+        "place_ref": "place.humacao",
+        "status": "confirmed_original_parish_register",
+        "evidence_refs": [
+          "source.familysearch-baptism.jose-ramon-rivera.1811"
+        ],
+        "map_groups": [
+          "early-vazquez"
+        ],
+        "sequence": 15,
+        "map_label": "Humacao · 1811",
+        "map_note": "José Ramón was baptized in Humacao ten days after his birth at Quebrada Mariana."
+      }
+    ]
   },
   {
     "id": "person.juan-child-of-luis-isidora",
     "slug": "juan-child-of-luis-isidora",
-    "displayName": "Juan",
+    "displayName": "Juan Antonio",
     "sex": "male",
     "tone": "vazquez",
     "siteProjection": "research_only",
     "record": {
       "id": "person.juan-child-of-luis-isidora",
-      "display_name": "Juan",
+      "display_name": "Juan Antonio",
       "sex": "male",
+      "names": [
+        {
+          "name": "Juan Antonio",
+          "type": "1808_baptism",
+          "status": "documented"
+        },
+        {
+          "name": "Juan",
+          "type": "1811_father_burial_child_list",
+          "status": "documented_short_form"
+        }
+      ],
       "birth": {
-        "before": "1811",
-        "status": "named_as_child_on_father_death"
+        "date": "1808-10-18",
+        "place": "Yagüelles, Humacao, Puerto Rico",
+        "status": "confirmed_original_baptism_register"
+      },
+      "baptism": {
+        "date": "1808-10-30",
+        "place": "Dulce Nombre de Jesús, Humacao, Puerto Rico",
+        "status": "confirmed_original_register"
       },
       "death": {
         "status": "not_yet_found"
@@ -15151,12 +16005,17 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "person.luis-father-of-josefa-rivera",
         "person.isidora-rodriguez"
       ],
+      "godparents": [
+        "Lucas de Castro",
+        "Antonia de Castro"
+      ],
       "site_projection": "research_only",
-      "confidence": "confirmed_child_named_on_original_1811_death",
+      "confidence": "birth_baptism_parentage_and_identity_with_juan_on_father_burial_confirmed",
       "evidence_refs": [
+        "source.familysearch-baptism.juan-antonio-rivera.1808",
         "source.familysearch-death.luis-de-rivera.1811"
       ],
-      "notes": "No surname is assigned because Luís's death entry lists the children by given name."
+      "notes": "The baptism names the child Juan Antonio and the exact Luís de Rivera–Isidora Rodríguez parent pair. Luís's burial in 1811 lists a son Juan among the same nine-child household, making the identity strong. The entry calls Luís a native of Coamo and Isidora a native and resident of Humacao; it does not write a surname for the child."
     },
     "relations": {
       "parentIds": [
@@ -15179,8 +16038,53 @@ export const peopleProfiles: readonly PersonProfile[] = [
       "namedChildren": [],
       "namedSiblings": []
     },
-    "claims": [],
+    "claims": [
+      {
+        "id": "claim.juan-antonio-rivera-birth-baptism",
+        "subject": "person.juan-child-of-luis-isidora",
+        "predicate": "birth_baptism_parentage_and_short_name_identity",
+        "object": {
+          "recorded_name": "Juan Antonio",
+          "birth": "1808-10-18",
+          "birth_site": "Yagüelles, Humacao, Puerto Rico",
+          "baptism": "1808-10-30",
+          "baptism_place": "Humacao, Puerto Rico",
+          "parents": [
+            "person.luis-father-of-josefa-rivera",
+            "person.isidora-rodriguez"
+          ],
+          "godparents": [
+            "Lucas de Castro",
+            "Antonia de Castro"
+          ],
+          "later_household_name": "Juan"
+        },
+        "status": "confirmed_original_baptism_and_father_burial",
+        "evidence_refs": [
+          "source.familysearch-baptism.juan-antonio-rivera.1808",
+          "source.familysearch-death.luis-de-rivera.1811"
+        ],
+        "note": "The exact parent pair and the later nine-child list make Juan Antonio the Juan named in Luís's 1811 burial. The baptism does not write a surname for the child."
+      }
+    ],
     "sources": [
+      {
+        "id": "source.familysearch-baptism.juan-antonio-rivera.1808",
+        "type": "parish_baptism_register_with_two_original_images",
+        "title": "1808 baptism of Juan Antonio, son of Luís de Rivera and Isidora Rodríguez",
+        "repository": "Dulce Nombre de Jesús, Humacao, via FamilySearch",
+        "accessed": "2026-07-24",
+        "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSFS-576V-3?view=fullText&keywords=Isidora&lang=en&groupId=M993-7VR",
+        "quality": "original_register_images_downloaded_and_transcribed_entry_crosses_two_images",
+        "citation": "DGS 008038525, item 13, images 75–76. Juan Antonio was born 18 October 1808 at Yagüelles and baptized 30 October in Humacao, the legitimate son of Luís de Rivera, called a native of the Villa de Coamo, and Isidora Rodríguez, called a native and resident of Humacao. The entry classifies both parents as blancos and names the unmarried siblings Lucas and Antonia de Castro as godparents. Juan Antonio strongly resolves the Juan named among the couple's nine children in Luís's 1811 burial.",
+        "image_archive": "research/pulls/images/humacao-1808-juan-antonio-rivera-baptism/1808-10-30-juan-antonio-baptism-entry-start-3Q9M-CSFS-576V-3-prev.jpg and 1808-10-30-juan-antonio-baptism-entry-continuation-3Q9M-CSFS-576V-3.jpg",
+        "image_sha256": [
+          "53491dbe3f672f6df76d2ab66467e4299e45c40528a269ae83cf5d25d6fc6897",
+          "0475a7e760b73cc478e23e410fdf4a9dc6c2dd33a2f92e54cc331e37212a184e"
+        ],
+        "status": "confirmed_original_reviewed",
+        "public_image": "1808-juan-antonio-rivera-baptism.jpg"
+      },
       {
         "id": "source.familysearch-death.luis-de-rivera.1811",
         "type": "parish_burial_register_with_image",
@@ -15196,7 +16100,29 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "public_image": "1811-luis-de-rivera-death.jpg"
       }
     ],
-    "geographyEvents": []
+    "geographyEvents": [
+      {
+        "id": "geo.event.juan-antonio-baptism-1808",
+        "date": "1808-10-30",
+        "event_type": "baptism",
+        "person_refs": [
+          "person.juan-child-of-luis-isidora",
+          "person.luis-father-of-josefa-rivera",
+          "person.isidora-rodriguez"
+        ],
+        "place_ref": "place.humacao",
+        "status": "confirmed_original_parish_register",
+        "evidence_refs": [
+          "source.familysearch-baptism.juan-antonio-rivera.1808"
+        ],
+        "map_groups": [
+          "early-vazquez"
+        ],
+        "sequence": 14,
+        "map_label": "Humacao · 1808",
+        "map_note": "Juan Antonio was baptized in Humacao twelve days after his birth at Yagüelles."
+      }
+    ]
   },
   {
     "id": "person.dolores-rivera",

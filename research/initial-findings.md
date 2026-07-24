@@ -249,6 +249,15 @@ marriage and death, and a wider Vázquez sibling cluster.
 - **Ysabel** was born **5 October 1792** and baptized **22 October 1792** in
   Las Piedras to the same parents, with Marta Berríos as godmother. Her name is
   written in the margin and omitted by the automated transcript.
+- **Juan Antonio** was born **18 October 1808** at Yagüelles and baptized **30
+  October 1808** in Humacao, the legitimate son of Luís de Rivera and Isidora
+  Rodríguez. This identifies the Juan named in Luís's later burial. The record
+  calls Luís a native of the **Villa de Coamo** and Isidora a native and
+  resident of Humacao.
+- **José Ramón** was born **30 January 1811** at Quebrada Mariana and baptized
+  **9 February 1811** in Humacao to the same parents. This identifies the Ramón
+  named in Luís's burial two months later. This act calls both parents natives
+  of the **Humacao district**.
 - Luís de Rivera's **Humacao burial entry**, dated **20 April 1811**, calls
   him a native of that
   district and about 50 years old, names his parents as **Roque** and
@@ -258,9 +267,21 @@ marriage and death, and a wider Vázquez sibling cluster.
   manuscript date as the burial date; the exact death day is not separately
   stated.
 - The same burial entry names nine children: **Josefa, Simona, Ysabel, Juana,
-  Gerónima, Domingo, María, Ramón, and Juan**. The six newly identified
-  children are retained by given name only because the entry does not assign
-  surnames to them.
+  Gerónima, Domingo, María, Ramón, and Juan**. Four children remain known only
+  by given name from that list; the separate baptisms now identify Ramón as
+  José Ramón and Juan as Juan Antonio.
+- Luís's native-place evidence conflicts. The 1808 baptism explicitly says
+  Coamo, while the February 1811 baptism and April 1811 burial say the Humacao
+  district. All three reports remain attached to their sources.
+- A Coamo baptism on **8 September 1765** records a 15-day-old Luís, son of
+  **Roque de Rivera and Emerenciana Tirado**. Child, father, place, and age make
+  it a strong candidate for the direct Luís, but his 1811 burial names his
+  mother as **Marciana Delgado**. The candidate is not merged until that
+  material conflict can be resolved. A 1763 Bernarda baptism confirms the
+  Roque–Emerenciana household but does not yet prove a sibling relationship.
+- A 1798 Humacao burial names a living **Roque de Ribera** as the enslaver of
+  Martina. It places the name in the right time and place but supplies no link
+  to Marciana or Luís, so it remains collateral evidence only.
 - The marriage occurred about seven and a half months before their first
   currently documented child, **Juana Jacinta**, was born in Humacao on **16
   August 1806**.
@@ -270,11 +291,11 @@ marriage and death, and a wider Vázquez sibling cluster.
   Josefa. That complete item review does not cover missing, duplicate, or
   neighboring registers.
 - No record yet places a named direct ancestor before Puerto Rico. Luís is the
-  earliest direct ancestor with a stated native place, and that place is still
-  the Humacao district. The new Caguas records document Francisco Vázquez and
-  María Magdalena Cortés there but do not state either person's native place.
-  Roque's, Marciana's, Isidora's, Francisco's, and María's origins remain
-  unknown.
+  earliest direct ancestor with a stated native place, but the original records
+  disagree between Coamo and Humacao. Isidora is directly reported as a native
+  of Humacao. The Caguas records document Francisco Vázquez and María Magdalena
+  Cortés there but do not state either person's native place. Roque's,
+  Marciana's, Francisco's, and María's origins remain unknown.
 - The captured evidence includes the complete original register image, a
   natural reading-order crop joining the bottom-left entry to its top-right
   continuation, enhanced legibility crops, and capture metadata.
@@ -364,9 +385,11 @@ This couple were Carlina's parents and Rafael's maternal grandparents.
    children with Juana Villafañe.
 9. Francisco Vázquez and María Magdalena Cortés's marriage before 1786,
    Francisco's burial after 1801, and records that identify their parents or
-   native places; plus life records for Roque with Marciana Delgado and
-   Isidora Rodríguez. Overseas origins remain unassigned unless a record names
-   a specific direct ancestor and place.
+   native places; plus Coamo or Humacao marriage, sibling, and burial records
+   that can test whether Roque de Rivera with Emerenciana Tirado was the same
+   family as Roque with Marciana Delgado. Isidora's parents and life dates also
+   remain open. Overseas origins remain unassigned unless a record names a
+   specific direct ancestor and place.
 
 All sources, conflicts and next-record targets are recorded in the adjacent
 JSONL files. Record pages, viewer captures, original-resolution images, and the

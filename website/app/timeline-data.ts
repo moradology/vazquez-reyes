@@ -233,6 +233,13 @@ export const timelinePeople: readonly TimelinePerson[] = [
     "directLine": false
   },
   {
+    "id": "person.ramon-child-of-luis-isidora",
+    "name": "José Ramón",
+    "slug": "ramon-child-of-luis-isidora",
+    "branch": "vazquez",
+    "directLine": false
+  },
+  {
     "id": "person.jose-vazquez-child-of-francisco-maria",
     "name": "José Vázquez",
     "slug": "jose-vazquez-child-of-francisco-maria",
@@ -248,7 +255,7 @@ export const timelinePeople: readonly TimelinePerson[] = [
   },
   {
     "id": "person.juan-child-of-luis-isidora",
-    "name": "Juan",
+    "name": "Juan Antonio",
     "slug": "juan-child-of-luis-isidora",
     "branch": "vazquez",
     "directLine": false
@@ -464,13 +471,6 @@ export const timelinePeople: readonly TimelinePerson[] = [
     "directLine": true
   },
   {
-    "id": "person.ramon-child-of-luis-isidora",
-    "name": "Ramón",
-    "slug": "ramon-child-of-luis-isidora",
-    "branch": "vazquez",
-    "directLine": false
-  },
-  {
     "id": "person.reyes-garcia-olivero",
     "name": "Reyes García Olivero",
     "slug": "reyes-garcia-olivero",
@@ -554,8 +554,8 @@ export const timelineEvents: readonly TimelineEvent[] = [
     "eventTypeLabel": "Birth",
     "certainty": "Approximate or bounded",
     "title": "Luís de Rivera is born",
-    "description": "The date is estimated from later records; the recorded place is Humacao district, Puerto Rico.",
-    "place": "Humacao district, Puerto Rico",
+    "description": "The date is estimated from later records.",
+    "place": null,
     "people": [
       {
         "id": "person.luis-father-of-josefa-rivera",
@@ -968,6 +968,170 @@ export const timelineEvents: readonly TimelineEvent[] = [
     }
   },
   {
+    "id": "timeline.juan-child-of-luis-isidora.birth.18081018",
+    "branch": "vazquez",
+    "directLine": false,
+    "dateLabel": "18 October 1808",
+    "dateTime": "1808-10-18",
+    "sortValue": 18081018,
+    "eventType": "birth",
+    "eventTypeLabel": "Birth",
+    "certainty": "Documented",
+    "title": "Juan Antonio is born",
+    "description": "Birth recorded in Yagüelles, Humacao, Puerto Rico.",
+    "place": "Yagüelles, Humacao, Puerto Rico",
+    "people": [
+      {
+        "id": "person.juan-child-of-luis-isidora",
+        "name": "Juan Antonio",
+        "slug": "juan-child-of-luis-isidora"
+      }
+    ],
+    "source": null
+  },
+  {
+    "id": "geo.event.juan-antonio-baptism-1808",
+    "branch": "vazquez",
+    "directLine": true,
+    "dateLabel": "30 October 1808",
+    "dateTime": "1808-10-30",
+    "sortValue": 18081030,
+    "eventType": "baptism",
+    "eventTypeLabel": "Baptism",
+    "certainty": "Documented",
+    "title": "Juan Antonio is baptized",
+    "description": "Juan Antonio was baptized in Humacao twelve days after his birth at Yagüelles.",
+    "place": "Humacao",
+    "people": [
+      {
+        "id": "person.juan-child-of-luis-isidora",
+        "name": "Juan Antonio",
+        "slug": "juan-child-of-luis-isidora"
+      },
+      {
+        "id": "person.luis-father-of-josefa-rivera",
+        "name": "Luís de Rivera",
+        "slug": "luis-father-of-josefa-rivera"
+      },
+      {
+        "id": "person.isidora-rodriguez",
+        "name": "Isidora Rodríguez",
+        "slug": "isidora-rodriguez"
+      }
+    ],
+    "source": {
+      "title": "1808 baptism of Juan Antonio, son of Luís de Rivera and Isidora Rodríguez",
+      "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSFS-576V-3?view=fullText&keywords=Isidora&lang=en&groupId=M993-7VR"
+    }
+  },
+  {
+    "id": "geo.event.isidora-native-humacao-report-1808",
+    "branch": "vazquez",
+    "directLine": true,
+    "dateLabel": "30 October 1808",
+    "dateTime": "1808-10-30",
+    "sortValue": 18081030,
+    "eventType": "origin",
+    "eventTypeLabel": "Birthplace evidence",
+    "certainty": "Documented",
+    "title": "Isidora Rodríguez's birthplace enters the record",
+    "description": "The 1808 baptism calls Isidora a native and resident of Humacao; the 1811 baptism again calls her a native of the district.",
+    "place": "Humacao",
+    "people": [
+      {
+        "id": "person.isidora-rodriguez",
+        "name": "Isidora Rodríguez",
+        "slug": "isidora-rodriguez"
+      }
+    ],
+    "source": {
+      "title": "1808 baptism of Juan Antonio, son of Luís de Rivera and Isidora Rodríguez",
+      "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSFS-576V-3?view=fullText&keywords=Isidora&lang=en&groupId=M993-7VR"
+    }
+  },
+  {
+    "id": "geo.event.luis-native-coamo-report-1808",
+    "branch": "vazquez",
+    "directLine": true,
+    "dateLabel": "30 October 1808",
+    "dateTime": "1808-10-30",
+    "sortValue": 18081030,
+    "eventType": "origin",
+    "eventTypeLabel": "Birthplace evidence",
+    "certainty": "Documented",
+    "title": "Luís de Rivera's birthplace enters the record",
+    "description": "Juan Antonio's baptism explicitly calls Luís a native of the Villa de Coamo. Two 1811 records instead say Humacao.",
+    "place": "Coamo",
+    "people": [
+      {
+        "id": "person.luis-father-of-josefa-rivera",
+        "name": "Luís de Rivera",
+        "slug": "luis-father-of-josefa-rivera"
+      }
+    ],
+    "source": {
+      "title": "1808 baptism of Juan Antonio, son of Luís de Rivera and Isidora Rodríguez",
+      "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSFS-576V-3?view=fullText&keywords=Isidora&lang=en&groupId=M993-7VR"
+    }
+  },
+  {
+    "id": "timeline.ramon-child-of-luis-isidora.birth.18110130",
+    "branch": "vazquez",
+    "directLine": false,
+    "dateLabel": "30 January 1811",
+    "dateTime": "1811-01-30",
+    "sortValue": 18110130,
+    "eventType": "birth",
+    "eventTypeLabel": "Birth",
+    "certainty": "Documented",
+    "title": "José Ramón is born",
+    "description": "Birth recorded in Quebrada Mariana, Humacao, Puerto Rico.",
+    "place": "Quebrada Mariana, Humacao, Puerto Rico",
+    "people": [
+      {
+        "id": "person.ramon-child-of-luis-isidora",
+        "name": "José Ramón",
+        "slug": "ramon-child-of-luis-isidora"
+      }
+    ],
+    "source": null
+  },
+  {
+    "id": "geo.event.jose-ramon-baptism-1811",
+    "branch": "vazquez",
+    "directLine": true,
+    "dateLabel": "9 February 1811",
+    "dateTime": "1811-02-09",
+    "sortValue": 18110209,
+    "eventType": "baptism",
+    "eventTypeLabel": "Baptism",
+    "certainty": "Documented",
+    "title": "José Ramón is baptized",
+    "description": "José Ramón was baptized in Humacao ten days after his birth at Quebrada Mariana.",
+    "place": "Humacao",
+    "people": [
+      {
+        "id": "person.ramon-child-of-luis-isidora",
+        "name": "José Ramón",
+        "slug": "ramon-child-of-luis-isidora"
+      },
+      {
+        "id": "person.luis-father-of-josefa-rivera",
+        "name": "Luís de Rivera",
+        "slug": "luis-father-of-josefa-rivera"
+      },
+      {
+        "id": "person.isidora-rodriguez",
+        "name": "Isidora Rodríguez",
+        "slug": "isidora-rodriguez"
+      }
+    ],
+    "source": {
+      "title": "1811 baptism of José Ramón, son of Luís de Rivera and Isidora Rodríguez",
+      "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSFS-57P6-K?view=fullText&keywords=Isidora&lang=en&groupId=M993-7VT"
+    }
+  },
+  {
     "id": "timeline.luis-father-of-josefa-rivera.death.18110420",
     "branch": "vazquez",
     "directLine": true,
@@ -1059,28 +1223,6 @@ export const timelineEvents: readonly TimelineEvent[] = [
     "source": null
   },
   {
-    "id": "timeline.juan-child-of-luis-isidora.birth.18110615",
-    "branch": "vazquez",
-    "directLine": false,
-    "dateLabel": "Before 1811",
-    "dateTime": null,
-    "sortValue": 18110614,
-    "eventType": "birth",
-    "eventTypeLabel": "Birth",
-    "certainty": "Approximate or bounded",
-    "title": "Juan is born",
-    "description": "The surviving records bound the event without supplying an exact date.",
-    "place": null,
-    "people": [
-      {
-        "id": "person.juan-child-of-luis-isidora",
-        "name": "Juan",
-        "slug": "juan-child-of-luis-isidora"
-      }
-    ],
-    "source": null
-  },
-  {
     "id": "timeline.juana-child-of-luis-isidora.birth.18110615",
     "branch": "vazquez",
     "directLine": false,
@@ -1125,39 +1267,17 @@ export const timelineEvents: readonly TimelineEvent[] = [
     "source": null
   },
   {
-    "id": "timeline.ramon-child-of-luis-isidora.birth.18110615",
-    "branch": "vazquez",
-    "directLine": false,
-    "dateLabel": "Before 1811",
-    "dateTime": null,
-    "sortValue": 18110614,
-    "eventType": "birth",
-    "eventTypeLabel": "Birth",
-    "certainty": "Approximate or bounded",
-    "title": "Ramón is born",
-    "description": "The surviving records bound the event without supplying an exact date.",
-    "place": null,
-    "people": [
-      {
-        "id": "person.ramon-child-of-luis-isidora",
-        "name": "Ramón",
-        "slug": "ramon-child-of-luis-isidora"
-      }
-    ],
-    "source": null
-  },
-  {
     "id": "geo.event.luis-native-humacao",
     "branch": "vazquez",
     "directLine": true,
-    "dateLabel": "before 1811",
+    "dateLabel": "reported 1811",
     "dateTime": null,
     "sortValue": 18110615,
     "eventType": "origin",
     "eventTypeLabel": "Birthplace evidence",
     "certainty": "Approximate or bounded",
     "title": "Luís de Rivera's birthplace enters the record",
-    "description": "Luís de Rivera's 1811 burial entry calls him a native of this Humacao district.",
+    "description": "José Ramón's baptism and Luís's burial call Luís a native of the Humacao district; Juan Antonio's 1808 baptism instead says Coamo.",
     "place": "Humacao",
     "people": [
       {
@@ -1167,8 +1287,8 @@ export const timelineEvents: readonly TimelineEvent[] = [
       }
     ],
     "source": {
-      "title": "1811 burial of Luís de Rivera",
-      "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSFS-2BP2?view=fullText&keywords=Isidora+Rodr%C3%ADguez%2Cde+Lu%C3%ADs+de+Rivera&lang=en&groupId=M993-WQQ"
+      "title": "1811 baptism of José Ramón, son of Luís de Rivera and Isidora Rodríguez",
+      "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSFS-57P6-K?view=fullText&keywords=Isidora&lang=en&groupId=M993-7VT"
     }
   },
   {

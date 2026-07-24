@@ -460,7 +460,9 @@ export default function Home() {
               <span>
                 Luís de Rivera’s burial entry calls him native to the Humacao
                 district, names his parents as Roque and Marciana Delgado, and
-                lists nine children with Isidora Rodríguez.
+                lists nine children with Isidora Rodríguez. An 1808 child
+                baptism instead calls Luís a native of Coamo, so the place
+                reports remain in conflict.
               </span>
               <small>
                 Dulce Nombre de Jesús parish register · two-part reading-order

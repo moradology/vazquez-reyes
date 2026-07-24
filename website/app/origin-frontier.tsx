@@ -23,15 +23,15 @@ export function OriginFrontier() {
 
       <div className="origin-heading">
         <p className="eyebrow">The current edge of the family tree</p>
-        <h2>The records still point to Caguas and Humacao.</h2>
+        <h2>Caguas and Humacao are secure. Coamo is now a live question.</h2>
         <p>
           The first people whose native places are stated in the records are
           Máximo Vázquez of Caguas and Josefa Rivera of Humacao. Their 1805
           marriage names both parent pairs. Earlier Caguas records now identify
           Máximo’s parents more fully as Francisco Vázquez and María Magdalena
-          Cortés. Luís de Rivera’s 1811 burial carries Josefa’s line one
-          generation farther, but it calls Luís himself a native of the
-          Humacao district.
+          Cortés. On Josefa’s line, Juan Antonio’s 1808 baptism calls Luís de
+          Rivera a native of Coamo, while two 1811 records call him a native of
+          Humacao. The disagreement remains open.
         </p>
       </div>
 
@@ -82,7 +82,7 @@ export function OriginFrontier() {
               <br />
               <b data-person-id="person.marciana-delgado">Marciana Delgado</b>
             </strong>
-            <small>Birthplaces and dates not yet found</small>
+            <small>Named in Luís’s 1811 burial · birthplaces open</small>
           </header>
           <div className="origin-descent" aria-hidden="true">
             <i />
@@ -92,7 +92,7 @@ export function OriginFrontier() {
             className="origin-person"
             data-person-id="person.luis-father-of-josefa-rivera"
           >
-            <span>Luís native of the Humacao district</span>
+            <span>Luís: Coamo in 1808 · Humacao in 1811</span>
             <h3>
               Luís de Rivera +{" "}
               <b data-person-id="person.isidora-rodriguez">
@@ -100,8 +100,8 @@ export function OriginFrontier() {
               </b>
             </h3>
             <p>
-              His 1811 burial names Roque and Marciana; Isidora’s birthplace
-              and parents remain unknown
+              His 1811 burial names Roque and Marciana; two child baptisms call
+              Isidora a native of Humacao
             </p>
           </div>
           <div className="origin-descent" aria-hidden="true">
@@ -117,7 +117,7 @@ export function OriginFrontier() {
       </div>
 
       <div className="record-boundary">
-        <span>Current birthplace boundary</span>
+        <span>Current documented boundary in Puerto Rico</span>
       </div>
 
       <div className="origin-open">
@@ -125,9 +125,10 @@ export function OriginFrontier() {
           <p className="eyebrow">Routes still to test</p>
           <h3>No record yet names an overseas-born ancestor.</h3>
           <p>
-            The new records deepen this branch within Caguas. They do not state
-            where Francisco or María was born. These remain possibilities to
-            investigate, not family origins already established.
+            A 1765 Coamo baptism is a strong candidate for Luís because it names
+            a child Luís and father Roque de Rivera. It also names mother
+            Emerenciana Tirado, conflicting with the direct 1811 record’s
+            Marciana Delgado. Until that is resolved, it remains a candidate.
           </p>
         </div>
         <div className="origin-route-grid">

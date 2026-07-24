@@ -511,7 +511,9 @@ export default function ResearchPage() {
                         Marciana Delgado. The entry names Isidora Rodríguez and
                         their nine children. The manuscript day is faint; the
                         attached index resolves the burial date as 20 April.
-                        The exact death day is not separately stated.
+                        The exact death day is not separately stated. An 1808
+                        child baptism instead reports Coamo as Luís’s native
+                        place.
                       </span>
                       <small>
                         Dulce Nombre de Jesús · DGS 008038524 · item 6 · image
@@ -560,6 +562,74 @@ export default function ResearchPage() {
                       </span>
                       <small>
                         Las Piedras · DGS 008126787 · item 1 · image 92
+                      </small>
+                    </figcaption>
+                  </figure>
+                  <figure className="family-record">
+                    <a
+                      href="/records/1808-juan-antonio-rivera-baptism.jpg"
+                      target="_blank"
+                    >
+                      <img
+                        src="/records/1808-juan-antonio-rivera-baptism.jpg"
+                        alt="Two full Humacao register images containing the 1808 baptism of Juan Antonio"
+                      />
+                    </a>
+                    <figcaption>
+                      <strong>1808 · Juan Antonio’s baptism</strong>
+                      <span>
+                        Born 18 October and baptized 30 October, Juan Antonio
+                        was the legitimate son of Luís de Rivera and Isidora
+                        Rodríguez. The entry calls Luís a native of Coamo and
+                        Isidora a native and resident of Humacao.
+                      </span>
+                      <small>
+                        Humacao · DGS 008038525 · item 13 · images 75–76
+                      </small>
+                    </figcaption>
+                  </figure>
+                  <figure className="family-record">
+                    <a
+                      href="/records/1811-jose-ramon-rivera-baptism.jpg"
+                      target="_blank"
+                    >
+                      <img
+                        src="/records/1811-jose-ramon-rivera-baptism.jpg"
+                        alt="1811 Humacao baptism entry for José Ramón, son of Luís de Rivera and Isidora Rodríguez"
+                      />
+                    </a>
+                    <figcaption>
+                      <strong>1811 · José Ramón’s baptism</strong>
+                      <span>
+                        Born 30 January and baptized 9 February, José Ramón was
+                        the legitimate son of the same couple. This record calls
+                        both parents natives of the Humacao district.
+                      </span>
+                      <small>
+                        Humacao · DGS 008038525 · item 14 · image 37
+                      </small>
+                    </figcaption>
+                  </figure>
+                  <figure className="family-record">
+                    <a
+                      href="/records/1765-luis-rivera-candidate-baptism.jpg"
+                      target="_blank"
+                    >
+                      <img
+                        src="/records/1765-luis-rivera-candidate-baptism.jpg"
+                        alt="1765 Coamo baptism candidate for Luís, son of Roque de Rivera and Emerenciana Tirado"
+                      />
+                    </a>
+                    <figcaption>
+                      <strong>1765 · Coamo baptism candidate</strong>
+                      <span>
+                        The child Luís and father Roque de Rivera match, but
+                        mother Emerenciana Tirado conflicts with Marciana
+                        Delgado in Luís’s 1811 burial. The record is retained
+                        and not merged.
+                      </span>
+                      <small>
+                        Coamo · DGS 008100612 · item 1 · image 207
                       </small>
                     </figcaption>
                   </figure>

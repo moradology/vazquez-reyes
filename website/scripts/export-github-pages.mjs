@@ -143,6 +143,9 @@ assert.equal(renderedRoutes.length, people.length + 5);
 for (const filename of [
   "1910-reyes-household.jpg",
   "1920-vazquez-household.jpg",
+  "1765-luis-rivera-candidate-baptism.jpg",
+  "1808-juan-antonio-rivera-baptism.jpg",
+  "1811-jose-ramon-rivera-baptism.jpg",
 ]) {
   await readFile(new URL(`records/${filename}`, outRoot));
 }

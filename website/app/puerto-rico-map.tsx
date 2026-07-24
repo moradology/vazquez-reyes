@@ -68,6 +68,7 @@ function project([longitude, latitude]: readonly [number, number]) {
 }
 
 const baseLabels = [
+  ["Coamo", [-66.360145, 18.0973515]],
   ["Caguas", [-66.0509643, 18.2111085]],
   ["Juncos", [-65.9085417, 18.2241334]],
   ["Gurabo", [-65.9809422, 18.2718899]],

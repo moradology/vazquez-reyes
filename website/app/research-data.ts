@@ -350,6 +350,41 @@ export const sources = [
     grade: "Original parish register · image captured · indexed burial date checked",
   },
   {
+    id: "juan-antonio-rivera-baptism",
+    label: "1808 baptism: Juan Antonio, son of Luís and Isidora",
+    detail: "Born 18 October at Yagüelles and baptized 30 October in Humacao. The entry calls Luís a native of the Villa de Coamo and Isidora a native and resident of Humacao. The exact parent pair identifies Juan Antonio as the Juan named in Luís’s 1811 burial.",
+    href: "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSFS-576V-3?view=fullText&keywords=Isidora&lang=en&groupId=M993-7VR",
+    grade: "Original parish register · two full-size images captured",
+  },
+  {
+    id: "jose-ramon-rivera-baptism",
+    label: "1811 baptism: José Ramón, son of Luís and Isidora",
+    detail: "Born 30 January at Quebrada Mariana and baptized 9 February in Humacao. This entry calls both parents natives of the Humacao district. It identifies José Ramón as the Ramón named in Luís’s burial two months later.",
+    href: "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSFS-57P6-K?view=fullText&keywords=Isidora&lang=en&groupId=M993-7VT",
+    grade: "Original parish register · full-size image captured",
+  },
+  {
+    id: "luis-rivera-coamo-candidate-1765",
+    label: "1765 Coamo baptism candidate: Luís, son of Roque and Emerenciana",
+    detail: "A 15-day-old Luís, son of Roque de Rivera and Emerenciana Tirado, was baptized in Coamo on 8 September 1765. Child, father, place, and age fit the direct Luís unusually well, but his 1811 burial names his mother as Marciana Delgado. The record is a strong candidate, not proof.",
+    href: "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSJN-KHF1?view=fullText&keywords=Lu%C3%ADs%2CRoque&lang=en&groupId=M9SP-FTN",
+    grade: "Original parish register · candidate retained · mother conflicts",
+  },
+  {
+    id: "bernarda-rivera-coamo-candidate-1763",
+    label: "1763 Coamo collateral: Bernarda, daughter of Roque and Emerenciana",
+    detail: "Bernarda’s baptism confirms that Roque de Rivera and Emerenciana Tirado were a real Coamo household before the 1765 Luís baptism. It does not prove that Bernarda was the direct Luís’s sister.",
+    href: "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSJN-KHN2?view=fullText&keywords=Emerenciana&lang=en&groupId=M9SP-FTN",
+    grade: "Original parish register · unmerged collateral household",
+  },
+  {
+    id: "roque-ribera-humacao-collateral-1798",
+    label: "1798 Humacao collateral: Roque de Ribera",
+    detail: "Martina’s burial entry names her as enslaved by a parishioner Roque de Ribera. It places that name in Humacao in the right generation but does not name Marciana Delgado or Luís, so the man is not merged with the direct ancestor.",
+    href: "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSFS-297R-X?view=fullText&keywords=Roque&lang=en&groupId=M993-WQN",
+    grade: "Original parish register · same-name collateral lead",
+  },
+  {
     id: "humacao-marriage-transcription-1793-1808",
     label: "Humacao marriage transcription, 1793–1808",
     detail: "The full register transcription places both Simona’s April marriage and Josefa’s December marriage in the same 1805 book and repeats Luís and Isidora Rodríguez as the brides’ parents. Parent surnames supplied by the spreadsheet are treated as normalization, not as words written in the original entries.",
@@ -888,16 +923,16 @@ export const familyCouples = [
     branch: "Josefa’s parents",
     couple: "Luís de Rivera + Isidora Rodríguez",
     status: "documented" as const,
-    connection: "Named across two Las Piedras baptisms, two daughter marriages, and Luís’s 1811 Humacao burial",
+    connection: "Named across four child baptisms, two daughter marriages, and Luís’s 1811 Humacao burial",
     people: [
       {
         name: "Luís de Rivera",
-        birth: "About 1761; native of the Humacao district",
+        birth: "About 1761; records conflict between Coamo and Humacao",
         death: "On or before 20 Apr 1811; buried that day in Humacao",
       },
       {
         name: "Isidora Rodríguez",
-        birth: "Not yet found",
+        birth: "Native of Humacao; exact date not found",
         death: "Not yet found",
       },
     ],
@@ -909,11 +944,11 @@ export const familyCouples = [
       "Gerónima — named on her father’s 1811 death",
       "Domingo — named on his father’s 1811 death",
       "María — named on her father’s 1811 death",
-      "Ramón — named on his father’s 1811 death",
-      "Juan — named on his father’s 1811 death",
+      "José Ramón — born 30 Jan 1811; baptized 9 Feb in Humacao",
+      "Juan Antonio — born 18 Oct 1808; baptized 30 Oct in Humacao",
     ],
     childNote:
-      "Luís’s death lists nine children by given name and names his parents as Roque and Marciana Delgado. The six newly identified children are not assigned surnames without their own records. Isidora’s parents and native place remain unknown.",
+      "Luís’s burial lists nine children and names his parents as Roque and Marciana Delgado. Juan Antonio and José Ramón now have their own baptisms. The 1808 act calls Luís a native of Coamo; two 1811 records call him a native of Humacao. Isidora is consistently called a Humacao native, but her parents remain unknown.",
   },
   {
     id: "roque-marciana",
@@ -933,9 +968,9 @@ export const familyCouples = [
         death: "Not yet found",
       },
     ],
-    children: ["Luís de Rivera — about 1761–1811; native of the Humacao district"],
+    children: ["Luís de Rivera — about 1761–1811; native-place reports conflict between Coamo and Humacao"],
     childNote:
-      "The death entry gives Roque no surname, so Rivera is not assigned to him. It establishes the parent pair but not a marriage date or place. The original reads Marciana; the automated Merenciana form is an OCR error.",
+      "The burial gives Roque no surname, so Rivera is not assigned to him. A 1765 Coamo baptism names a Luís whose parents were Roque de Rivera and Emerenciana Tirado; it is a strong candidate but not merged because the mother conflicts with Marciana Delgado. A 1798 Humacao Roque de Ribera is also retained as an unmerged lead.",
   },
   {
     id: "andres-francisca",
@@ -1068,8 +1103,8 @@ export const openCases = [
   {
     id: "VR-13",
     title: "Máximo and Josefa before 1805",
-    conflict: "The 1805 marriage and native places are confirmed. Four earlier Caguas originals strongly identify Máximo’s parents more fully as Francisco Vázquez and María Magdalena Cortés and add three probable siblings, but Máximo’s own baptism remains missing. Luís de Rivera’s 1811 burial names Roque and Marciana Delgado. No reviewed record names an overseas-born direct ancestor.",
-    next: "Prioritize Máximo’s baptism, Francisco and María’s pre-1786 marriage, Francisco’s post-1801 burial, and records that state native places or parents for this Caguas couple, Roque, Marciana Delgado, and Isidora Rodríguez.",
+    conflict: "Four Caguas originals strongly identify Máximo’s parents as Francisco Vázquez and María Magdalena Cortés, but Máximo’s own baptism remains missing. On Josefa’s line, the 1808 baptism of Juan Antonio calls Luís a native of Coamo; José Ramón’s 1811 baptism and Luís’s burial call him a native of Humacao. A 1765 Coamo baptism matches Luís and father Roque but names mother Emerenciana Tirado instead of Marciana Delgado.",
+    next: "Prioritize Máximo’s baptism and Francisco and María’s marriage. In Coamo and Humacao, seek a marriage, burial, sibling record, or dispensation that either bridges or separates Emerenciana Tirado and Marciana Delgado. Do not merge the 1765 baptism before resolving that conflict.",
   },
   {
     id: "VR-14",
@@ -1366,5 +1401,17 @@ export const updates = [
   {
     date: "24 Jul 2026",
     text: "Checked four earlier Caguas originals and identified the fuller parent couple Francisco Vázquez and María Magdalena Cortés. Miguel, María de los Ángeles, and José form a strong probable sibling cluster for Máximo; María Magdalena was buried in Caguas on 17 June 1794. No parent birthplace or overseas origin is stated.",
+  },
+  {
+    date: "24 Jul 2026",
+    text: "Found Juan Antonio’s 1808 and José Ramón’s 1811 Humacao baptisms, identifying two sons previously known only as Juan and Ramón. The first calls Luís a native of Coamo and Isidora a Humacao native; the second calls both parents natives of Humacao, so Luís’s place conflict is retained.",
+  },
+  {
+    date: "24 Jul 2026",
+    text: "Captured a strong 1765 Coamo baptism candidate for Luís, son of Roque de Rivera and Emerenciana Tirado, plus Bernarda’s 1763 baptism in the same household. The candidate is not merged because Luís’s direct 1811 burial names his mother as Marciana Delgado.",
+  },
+  {
+    date: "24 Jul 2026",
+    text: "Captured a 1798 Humacao burial naming a living Roque de Ribera and retained it as a same-place, same-generation lead without assigning it to the family. A separate 1829 computer-text hit was also preserved and rejected.",
   },
 ];

@@ -52,7 +52,8 @@ test("renders the Vazquez-Reyes family history", async () => {
   assert.match(html, /The Reyes–Díaz ancestors/);
   assert.match(html, /The Vázquez–Perales ancestors/);
   assert.match(html, /Three parent pairs, kept in order/);
-  assert.match(html, /The records still point to Caguas and Humacao/);
+  assert.match(html, /Caguas and Humacao are secure\. Coamo is now a live question/);
+  assert.match(html, /Coamo in 1808 · Humacao in 1811/);
   assert.match(html, /Luís de Rivera/);
   assert.match(html, /No record yet names an overseas-born ancestor/);
   assert.match(html, /Routes still to test/);
@@ -196,7 +197,7 @@ test("renders a slide-style, evidence-led family presentation", async () => {
 
   assert.equal(response.status, 200);
   assert.match(html, /Vazquez–Reyes family history/);
-  assert.equal([...html.matchAll(/\bdata-slide="true"/g)].length, 16);
+  assert.equal([...html.matchAll(/\bdata-slide="true"/g)].length, 18);
   assert.match(html, /family roots/);
   assert.match(html, /Connection/);
   assert.match(html, /The record/);
@@ -212,9 +213,12 @@ test("renders a slide-style, evidence-led family presentation", async () => {
   assert.match(html, /1794-maria-magdalena-cortes-burial\.jpg/);
   assert.match(html, /Four earlier records supply the fuller parent names/);
   assert.match(html, /1811-luis-de-rivera-death\.jpg/);
+  assert.match(html, /1808-juan-antonio-rivera-baptism\.jpg/);
+  assert.match(html, /1765-luis-rivera-candidate-baptism\.jpg/);
+  assert.match(html, /A close match with one serious conflict/);
   assert.match(html, /No reviewed record yet identifies a direct ancestor born in Africa/);
   assert.match(html, /data-presentation-fullscreen/);
-  assert.match(html, /data-slide-total="16"/);
+  assert.match(html, /data-slide-total="18"/);
 });
 
 test("installs presentation controls before the page finishes loading", async () => {
@@ -299,8 +303,8 @@ test("keeps the geography ledger referential and explicit about precision", asyn
   const peopleIds = new Set(parse(peopleText).map((person) => person.id));
   const sourceIds = new Set(parse(sourcesText).map((source) => source.id));
 
-  assert.equal(places.length, 18);
-  assert.equal(events.length, 51);
+  assert.equal(places.length, 19);
+  assert.equal(events.length, 55);
   for (const place of places) {
     assert.match(place.precision, /point/);
     assert.match(place.coordinate_source.url, /^https:\/\/tigerweb\.geo\.census\.gov\//);
