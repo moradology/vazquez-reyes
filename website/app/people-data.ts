@@ -325,6 +325,23 @@ export const peopleProfiles: readonly PersonProfile[] = [
           "source.nyc-marriage.1941.18978"
         ],
         "note": "The records bound the move between April 1940 and October 1941; they do not provide the travel date or route."
+      },
+      {
+        "id": "claim.couple-east-harlem-1950",
+        "subject": [
+          "person.cruz-reyes-vasquez",
+          "person.rafael-vazquez-perales"
+        ],
+        "predicate": "household",
+        "object": {
+          "date": "1950",
+          "place": "East 109th Street, East Harlem, Manhattan, New York"
+        },
+        "status": "confirmed",
+        "evidence_refs": [
+          "source.census.1950.rafael-cruz"
+        ],
+        "note": "The 1950 census records Cruz and Rafael together on East 109th Street. Potentially living descendants are omitted from the public research data."
       }
     ],
     "sources": [
@@ -763,6 +780,23 @@ export const peopleProfiles: readonly PersonProfile[] = [
           "source.public-ssdi-derivative.rafael"
         ],
         "note": "Family date fits the 2 January burial, but the public SSDI derivative gives 1 December. Obtain the NYC death certificate."
+      },
+      {
+        "id": "claim.couple-east-harlem-1950",
+        "subject": [
+          "person.cruz-reyes-vasquez",
+          "person.rafael-vazquez-perales"
+        ],
+        "predicate": "household",
+        "object": {
+          "date": "1950",
+          "place": "East 109th Street, East Harlem, Manhattan, New York"
+        },
+        "status": "confirmed",
+        "evidence_refs": [
+          "source.census.1950.rafael-cruz"
+        ],
+        "note": "The 1950 census records Cruz and Rafael together on East 109th Street. Potentially living descendants are omitted from the public research data."
       }
     ],
     "sources": [
