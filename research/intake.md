@@ -25,10 +25,11 @@ confirmed against records.
   “m. Reyes” needs clarification from records.
 - Name variants to search: Cruz Reyes, Cruz Vasquez, Cruz Vázquez,
   Cruz Reyes Vasquez, Cruz Reyes Vázquez, Pastora Reyes, Pastora Cruz Reyes.
-- Later family testimony: the family does not believe Cruz was her only or
-  primary personal name. **Pastora** may have been her personal or baptismal
-  name; Cruz was remembered as connected to her birth on 3 May, the Day of the
-  Cross. This remains an oral-history lead until her baptism is found.
+- Later family testimony, clarified 24 July 2026: Cruz's daughter remembers
+  being told that **Pastora** may have been her mother's name and that Cruz may
+  have related to her birth on 3 May, the Day of the Cross. She does not
+  remember her mother using Pastora. This is a low-confidence, secondhand
+  oral-history lead; no reviewed record supports it.
 - Supplied birth: 3 May 1915, Puerto Rico.
 - Supplied death: October 1998, possibly 24 October, place not yet supplied.
 - Supplied burial: Rosedale & Rosehill Cemetery in Linden, New Jersey
@@ -97,8 +98,9 @@ confirmed against records.
 - Cruz's civil registration identifies her as Cruz Reyes Díaz, born 3 May 1915
   in Gurabo to Mauricio Reyes Martínez and Carmen Díaz García. The act was made
   on 17 June, 45 days after the birth, from a declaration by maternal
-  grandfather Lope Díaz. It confirms the civil name Cruz but does not settle
-  the family report that she was personally or baptismally named Pastora.
+  grandfather Lope Díaz. It confirms the civil name Cruz. Every identified
+  later record also uses Cruz; Pastora remains only the daughter's secondhand
+  recollection, with no remembered personal use or documentary support.
 - The San José de Gurabo baptism index contains a matching-era **Cruz Reyes**
   in book 15, folio 18 verso. No Pastora Reyes appears in the reviewed Reyes
   index section. The exact folio was captured, but damage and overlapping

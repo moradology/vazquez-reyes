@@ -25,11 +25,11 @@ children on rows 93-97:
 Three grandchildren follow on rows 98-100. Their names and exact details are
 not needed for the direct-line reconstruction.
 
-The two censuses extend the known household beyond 1930 and place Pastora,
-civilly recorded as Cruz, in Puerto Rico on 4 April 1940. Her Manhattan
-marriage-license affidavit is dated 21 October 1941 and her marriage occurred
-25 October. The evidence therefore bounds her move from Puerto Rico to New York
-between those dates; it does not identify a ship, flight, or exact travel date.
+The two censuses extend the known household beyond 1930 and place Cruz in
+Puerto Rico on 4 April 1940. Her Manhattan marriage-license affidavit is dated
+21 October 1941 and her marriage occurred 25 October. The evidence therefore
+bounds her move from Puerto Rico to New York between those dates; it does not
+identify a ship, flight, or exact travel date.
 
 ## Cándido Reyes Díaz
 

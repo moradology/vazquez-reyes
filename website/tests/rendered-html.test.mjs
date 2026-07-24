@@ -32,7 +32,6 @@ test("renders the Vazquez-Reyes family history", async () => {
   assert.match(html, /<title>Vazquez–Reyes Family History<\/title>/i);
   assert.match(html, /From/);
   assert.match(html, /Humacao/);
-  assert.match(html, /Pastora Reyes/);
   assert.match(html, /Cruz Reyes/);
   assert.match(html, /Rafael Vázquez/);
   assert.match(html, /From.*Puerto Rico/s);
@@ -81,11 +80,14 @@ test("separates the public summary from the research notes", async () => {
     publicHtml,
     /data-person-id="person\.(?:candido-reyes-diaz|teresa-reyes-diaz)"/,
   );
+  assert.doesNotMatch(publicHtml, /Pastora/i);
 
   assert.equal(researchResponse.status, 200);
   assert.match(researchHtml, /Research notes/);
   assert.match(researchHtml, /Where the records and memory differ/);
-  assert.match(researchHtml, /Pastora and the civil name Cruz/);
+  assert.match(researchHtml, /secondhand Pastora story/i);
+  assert.match(researchHtml, /daughter remembers being told/i);
+  assert.doesNotMatch(researchHtml, /family knew her as Pastora/i);
   assert.match(researchHtml, /One family at a time/);
   assert.match(researchHtml, /Known or reported children/);
   assert.match(researchHtml, /Cándido \(1923–1948\)/);

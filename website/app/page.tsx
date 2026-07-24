@@ -39,9 +39,9 @@ export default function Home() {
           to New York
         </h1>
         <p className="hero-deck">
-          Pastora Reyes—registered civilly as Cruz—was born in Gurabo. Rafael
-          Vázquez grew up in Humacao. They married in Manhattan in 1941 and
-          made their home in East Harlem.
+          Cruz Reyes Díaz was born in Gurabo. Rafael Vázquez grew up in
+          Humacao. They married in Manhattan in 1941 and made their home in
+          East Harlem.
         </p>
         <div className="hero-rule">
           <span>Naguabo</span>
@@ -51,19 +51,19 @@ export default function Home() {
           <span>New York City</span>
         </div>
         <a className="scroll-cue" href="#family">
-          Pastora and Rafael <span aria-hidden="true">↓</span>
+          Cruz and Rafael <span aria-hidden="true">↓</span>
         </a>
       </section>
 
       <section className="public-foreword">
         <p>
-          Pastora’s parents, Mauricio Reyes Martínez and Carmen Díaz García,
-          lived in Naguabo before their daughter was born in Gurabo on 3 May
-          1915. By 1920 the family was in Anton Ruiz, Humacao.
+          Cruz’s parents, Mauricio Reyes Martínez and Carmen Díaz García, lived
+          in Naguabo before their daughter was born in Gurabo on 3 May 1915.
+          By 1920 the family was in Anton Ruiz, Humacao.
         </p>
         <p>
           Rafael’s family was already in Anton Ruiz when he was a child. He and
-          Pastora married in East Harlem in 1941; the 1950 census records their
+          Cruz married in East Harlem in 1941; the 1950 census records their
           household a few blocks away on East 109th Street.
         </p>
       </section>
@@ -71,10 +71,10 @@ export default function Home() {
       <section className="section family" id="family">
         <div className="section-label">
           <span>01</span>
-          <p>Pastora and Rafael</p>
+          <p>Cruz and Rafael</p>
         </div>
         <div className="family-intro public-family-intro">
-          <h2>Pastora Reyes Díaz and Rafael Vázquez</h2>
+          <h2>Cruz Reyes Díaz and Rafael Vázquez</h2>
           <p>
             They married on East 105th Street in 1941. Nine years later, the
             census recorded them a few blocks north on East 109th Street.
@@ -87,10 +87,11 @@ export default function Home() {
             data-person-id="person.cruz-reyes-vasquez"
           >
             <div className="person-number">I</div>
-            <p className="given">Pastora Reyes</p>
+            <p className="given">Cruz Reyes</p>
             <h3>Vasquez</h3>
             <p className="card-note">
-              Family memory: Pastora · Civil records: Cruz Reyes Díaz
+              Documented as Cruz in civil, census, marriage, and Social
+              Security records
             </p>
             <p className="lifespan">died 1998</p>
             <dl>
@@ -219,8 +220,7 @@ export default function Home() {
               <strong>1915 · Rincón, Gurabo</strong>
               <span>
                 The civil act records the name Cruz Reyes Díaz. Her grandfather
-                Lope Díaz reported the birth 45 days after she was born. Her
-                family knew her as Pastora.
+                Lope Díaz reported the birth 45 days after she was born.
               </span>
               <small>Puerto Rico civil registration</small>
             </figcaption>
@@ -267,9 +267,8 @@ export default function Home() {
             <figcaption>
               <strong>1940 · Collores, Humacao</strong>
               <span>
-                Mauricio and Carmen with Eriberta, Pastora (recorded here as
-                Cruz), Aurora, and Cándido. Eighteen months later, Pastora
-                married in Manhattan.
+                Mauricio and Carmen with Eriberta, Cruz, Aurora, and Cándido.
+                Eighteen months later, Cruz married in Manhattan.
               </span>
               <small>U.S. Census, National Archives · rows 91–96</small>
             </figcaption>
@@ -304,8 +303,8 @@ export default function Home() {
             <div>
               <h3>Humacao</h3>
               <p>
-                Both families appear in Humacao records. Pastora was still
-                living with her parents in Collores on 4 April 1940.
+                Both families appear in Humacao records. Cruz was still living
+                with her parents in Collores on 4 April 1940.
               </p>
             </div>
           </article>
@@ -315,8 +314,8 @@ export default function Home() {
             <div>
               <h3>East Harlem, Manhattan</h3>
               <p>
-                Rafael and Pastora marry on 25 October at an address on East
-                105th Street.
+                Rafael and Cruz marry on 25 October at an address on East 105th
+                Street.
               </p>
             </div>
           </article>
@@ -345,7 +344,7 @@ export default function Home() {
         </div>
         <div className="story-grid">
           <article>
-            <span className="story-when">Pastora’s parents</span>
+            <span className="story-when">Cruz’s parents</span>
             <h3>
               <span data-person-id="person.mauricio-reyes">Mauricio Reyes Martínez</span>
               {" + "}

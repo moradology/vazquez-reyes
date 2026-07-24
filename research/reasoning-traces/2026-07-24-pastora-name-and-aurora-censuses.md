@@ -2,11 +2,11 @@
 
 Research date: 24 July 2026
 
-## Pastora and Cruz
+## The secondhand Pastora story and documented name Cruz
 
-Family testimony identifies **Pastora** as the name by which the woman
-documented in later records as Cruz was known. The remembered explanation is
-that **Cruz** was connected to her birth on 3 May, the Day of the Cross.
+Cruz's daughter remembers being told that **Pastora** may have been her
+mother's name. She does not remember Cruz using it. The same secondhand account
+connects **Cruz** to her birth on 3 May, the Day of the Cross.
 
 The original Gurabo civil act does not settle the full name story:
 
@@ -17,10 +17,10 @@ The original Gurabo civil act does not settle the full name story:
 - Later marriage, census, Social Security, and cemetery records also use Cruz.
 
 The act therefore proves that **Cruz Reyes Díaz was the civilly registered
-name**. It does not prove that Cruz was the only name used in the family or at
-baptism, and it does not show that the civil registration preceded baptism.
-Pastora remains documented family testimony rather than a disproved name, but
-its exact baptismal or compound form remains unconfirmed.
+name**. Every identified later record also uses Cruz. It does not show that the
+civil registration preceded baptism, but there is currently no documentary
+evidence or remembered personal use of Pastora. Pastora remains only a
+low-confidence, secondhand oral-history lead.
 
 Later the same day, the Gurabo baptism index was located. It lists **Cruz
 Reyes, book 15, folio 18 verso**; no Pastora Reyes appears in the reviewed

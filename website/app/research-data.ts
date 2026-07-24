@@ -79,14 +79,14 @@ export const sources = [
   {
     id: "census-1935-reyes",
     label: "1935 Puerto Rico social census: Reyes–Díaz household",
-    detail: "Collores, Humacao; Mauricio and Carmen with Eriberta, Pastora (recorded as Cruz), Belén, Cándido, Saturnino, and Julio César.",
+    detail: "Collores, Humacao; Mauricio and Carmen with Eriberta, Cruz, Belén, Cándido, Saturnino, and Julio César.",
     href: "https://www.ancestry.com/search/collections/2404/records/390774",
     grade: "Original enumeration",
   },
   {
     id: "census-1940-reyes",
     label: "1940 Puerto Rico census: Reyes–Díaz household",
-    detail: "Collores, Humacao, 4 April 1940; Mauricio and Carmen with Eriberta, Pastora (recorded as Cruz), Aurora, Cándido, and Julio. The public image is cropped before younger household members.",
+    detail: "Collores, Humacao, 4 April 1940; Mauricio and Carmen with Eriberta, Cruz, Aurora, Cándido, and Julio. The public image is cropped before younger household members.",
     href: "https://www.ancestry.com/search/collections/2442/records/161323863",
     grade: "Original enumeration",
   },
@@ -487,10 +487,10 @@ export const sources = [
 export const familyCouples = [
   {
     id: "mauricio-carmen",
-    branch: "Pastora’s parents",
+    branch: "Cruz’s parents",
     couple: "Mauricio Reyes Martínez + Carmen Díaz García",
     status: "documented" as const,
-    connection: "Parents of Pastora Reyes, civilly registered as Cruz Reyes Díaz",
+    connection: "Parents of Cruz Reyes Díaz",
     people: [
       {
         name: "Mauricio Reyes Martínez",
@@ -507,7 +507,7 @@ export const familyCouples = [
       "Juana",
       "Ruperto",
       "Heriberta (civil birth: 25 Jul 1913; baptism record: 16 Mar 1913)",
-      "Pastora (civil records: Cruz)",
+      "Cruz",
       "Belén",
       "Angelina (1930 census)",
       "Aurora (1940 census)",
@@ -802,8 +802,8 @@ export const familyCouples = [
 export const openCases = [
   {
     id: "VR-01",
-    title: "Pastora’s baptismal name",
-    conflict: "The family knew her as Pastora. Her grandfather registered the civil name Cruz 45 days after birth. The Gurabo index also lists a matching-era Cruz Reyes in book 15, folio 18 verso, but the surviving page is damaged and the indexed entry is not legible.",
+    title: "The secondhand Pastora story",
+    conflict: "Cruz’s daughter remembers being told that Pastora may have been her mother’s name, but does not remember Cruz using it. Every identified record uses Cruz. The Gurabo index also lists a matching-era Cruz Reyes in book 15, folio 18 verso, but the surviving page is damaged and the indexed entry is not legible.",
     next: "Seek a duplicate register, sacramental certificate, alternate filming, or parish archive lookup for book 15, folio 18 verso that names the child and parents.",
   },
   {
@@ -917,9 +917,9 @@ export const negativeSearches = [
 
 export const nameVariants = [
   {
-    person: "Pastora Reyes Vasquez, civilly recorded as Cruz",
-    forms: "Pastora Reyes · Cruz Reyes Díaz · Cruz Reyes · Cruz Vasquez · Cruz Vázquez",
-    conclusion: "Pastora is the name remembered and used by the family. Cruz Reyes Díaz is the documented civil form. The Gurabo baptism index also lists Cruz Reyes, but the damaged folio does not reveal enough to identify the child conclusively.",
+    person: "Cruz Reyes Díaz Vasquez",
+    forms: "Cruz Reyes Díaz · Cruz Reyes · Cruz Vasquez · Cruz Vázquez · Pastora Reyes (secondhand oral-history lead only)",
+    conclusion: "Cruz Reyes Díaz is the documented civil form, and every identified later record uses Cruz. Her daughter remembers being told that Pastora may have been her mother’s name, but does not remember her using it. The damaged Gurabo folio does not reveal enough to identify the indexed Cruz Reyes conclusively.",
   },
   {
     person: "Rafael Vázquez y Perales",
@@ -1025,7 +1025,7 @@ export const updates = [
   },
   {
     date: "24 Jul 2026",
-    text: "Recorded the family’s Pastora account separately from the documented civil name Cruz and made the Gurabo baptism an open case.",
+    text: "Recorded the daughter’s secondhand Pastora recollection as an unverified oral-history lead, separate from the consistently documented name Cruz.",
   },
   {
     date: "24 Jul 2026",
@@ -1033,7 +1033,7 @@ export const updates = [
   },
   {
     date: "24 Jul 2026",
-    text: "Extended Mauricio and Carmen’s household through the 1935 and 1940 censuses; Pastora was still in Collores on 4 April 1940.",
+    text: "Extended Mauricio and Carmen’s household through the 1935 and 1940 censuses; Cruz was still in Collores on 4 April 1940.",
   },
   {
     date: "24 Jul 2026",

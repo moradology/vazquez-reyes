@@ -236,22 +236,24 @@ export default function ResearchPage() {
         <div className="conflict-table" role="table" aria-label="Research conflicts">
           <article role="row">
             <div role="cell">
-              <strong>Pastora and the civil name Cruz</strong>
-              <Grade kind="open">NAME UNRESOLVED</Grade>
+              <strong>The secondhand Pastora story</strong>
+              <Grade kind="open">UNVERIFIED ORAL HISTORY</Grade>
             </div>
             <p role="cell">
-              <b>Pastora</b> — the name by which the family knew her. Its exact
-              baptismal or compound form has not yet been found.
+              <b>Pastora</b> — Cruz’s daughter remembers being told that this
+              may have been her mother’s name. She does not remember Cruz using
+              it, and no reviewed record supports it.
             </p>
             <p role="cell">
               <b>Cruz Reyes Díaz</b> — the civilly registered name. Her
               grandfather Lope Díaz made the declaration on 17 June 1915, 45
-              days after the birth; later records also use Cruz.
+              days after the birth; every identified later record also uses
+              Cruz.
             </p>
             <p role="cell">
               <b>Next:</b> seek a duplicate or clearer copy of the damaged
-              Gurabo folio and check whether it says Pastora, Cruz Pastora,
-              Pastora Cruz, or Cruz.
+              Gurabo folio and identify the child and parents without assuming
+              what name the entry will contain.
             </p>
           </article>
           <article role="row">

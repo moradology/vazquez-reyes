@@ -55,11 +55,12 @@ This search changes the name question, but does not close it:
   candidate cannot yet be tied conclusively to Mauricio and Carmen's daughter.
 - No Pastora Reyes entry was found in the reviewed Reyes index section.
 
-The index therefore supports Cruz as the likely church-indexed name more than
-Pastora, but it does not disprove the family's use of Pastora. A duplicate
-parish register, sacramental certificate, alternate filming, or parish archive
-lookup is needed to identify the child and recover the complete baptismal
-wording.
+The index supports Cruz as the likely church-indexed name. Pastora remains only
+a secondhand recollection from Cruz's daughter, who does not remember Cruz
+using it; no reviewed record supports it. A duplicate parish register,
+sacramental certificate, alternate filming, or parish archive lookup is needed
+to identify the child and recover the complete baptismal wording without
+assuming what name it will contain.
 
 ## Private image archive
 
