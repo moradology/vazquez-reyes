@@ -137,7 +137,7 @@ export const nameVariants = [
 export const updates = [
   {
     date: "23 Jul 2026",
-    text: "Recorded the family account and preserved every uncertain name and date as a search clue.",
+    text: "Recorded the family account, including uncertain names and dates.",
   },
   {
     date: "23 Jul 2026",
@@ -153,6 +153,6 @@ export const updates = [
   },
   {
     date: "23 Jul 2026",
-    text: "Separated the family-facing story from this sanitized ongoing-research notebook.",
+    text: "Created separate pages for the public summary and the research notes.",
   },
 ];

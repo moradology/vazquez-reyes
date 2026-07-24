@@ -21,24 +21,24 @@ export default function Home() {
         <nav aria-label="Main navigation">
           <a href="#family">Family</a>
           <a href="#resting-place">Resting place</a>
-          <a href="#journey">Journey</a>
-          <a href="#stories">Stories</a>
-          <a href="/research">Research notebook</a>
+          <a href="#journey">Places</a>
+          <a href="#stories">Findings</a>
+          <a href="/research">Research notes</a>
         </nav>
         <ResearchTools />
       </header>
 
       <section className="hero" id="top">
-        <div className="hero-kicker">A family history in progress</div>
+        <div className="hero-kicker">Vazquez–Reyes family records</div>
         <h1>
           From <em>Humacao</em>
           <br />
           to Manhattan
         </h1>
         <p className="hero-deck">
-          The documented story of Cruz Reyes and Rafael Vázquez—two Puerto
-          Rican lives, a 1941 marriage, and a shared resting place in Linden,
-          New Jersey.
+          Cruz Reyes and Rafael Vázquez married in Manhattan in 1941. The
+          records collected here trace Rafael’s childhood in Humacao, the
+          couple’s life in East Harlem, and their burials in Linden, New Jersey.
         </p>
         <div className="hero-rule">
           <span>Puerto Rico</span>
@@ -48,34 +48,35 @@ export default function Home() {
           <span>New Jersey</span>
         </div>
         <a className="scroll-cue" href="#family">
-          Meet Cruz and Rafael <span aria-hidden="true">↓</span>
+          Cruz and Rafael <span aria-hidden="true">↓</span>
         </a>
       </section>
 
       <section className="public-foreword">
         <p>
-          Family memory gave us two names, a handful of dates, and “Rosehill
-          Cemetery in Linden.” Records now connect those fragments into one
-          continuous story from Humacao to East Harlem and a shared grave in
-          New Jersey.
+          This research began with two names, several approximate dates, and
+          “Rosehill Cemetery in Linden.” Marriage, census, civil-registration,
+          and cemetery records have since identified the couple and both sets
+          of parents.
         </p>
         <p>
-          This page tells the family-facing story. Date disputes, unsuccessful
-          searches, and the records still being sought live in the{" "}
-          <a href="/research">ongoing research notebook</a>.
+          This page summarizes the findings. Conflicting dates, searches that
+          did not produce a match, and records still to be found are listed in
+          the <a href="/research">research notes</a>.
         </p>
       </section>
 
       <section className="section family" id="family">
         <div className="section-label">
           <span>01</span>
-          <p>The starting couple</p>
+          <p>Cruz and Rafael</p>
         </div>
         <div className="family-intro public-family-intro">
-          <h2>Two lives, firmly connected.</h2>
+          <h2>What the records establish</h2>
           <p>
-            Their marriage record names both sets of parents. Later census and
-            cemetery records follow them together across the decades.
+            Their 1941 marriage record names both sets of parents. The 1950
+            census records them together in East Harlem, and the cemetery
+            database places them in the same plot in Linden.
           </p>
         </div>
 
@@ -164,13 +165,12 @@ export default function Home() {
           <span>Linden, New Jersey</span>
         </div>
         <div className="plot-copy">
-          <p className="eyebrow">The clue that closed the loop</p>
-          <h2>Together in one plot.</h2>
+          <p className="eyebrow">Rosedale &amp; Rosehill Cemetery</p>
+          <h2>Buried in the same plot</h2>
           <p>
-            “Rosehill Cemetery in Linden” was almost exactly right. The official
-            combined property is Rosedale & Rosehill Cemetery. Its database
-            places Cruz and Rafael in two positions within the same Rosedale
-            plot.
+            The remembered name, “Rosehill Cemetery in Linden,” led to Rosedale
+            &amp; Rosehill Cemetery. Its database lists Cruz and Rafael in two
+            positions within Rosedale plot WIN4T-22-11.
           </p>
           <div className="interments">
             <p>
@@ -196,10 +196,10 @@ export default function Home() {
       <section className="section journey" id="journey">
         <div className="section-label light">
           <span>02</span>
-          <p>Their journey</p>
+          <p>Places and dates</p>
         </div>
         <div className="journey-heading">
-          <p className="eyebrow">Three places hold the story</p>
+          <p className="eyebrow">Locations in the records</p>
           <h2>Humacao → Manhattan → Linden</h2>
         </div>
         <div className="timeline">
@@ -231,8 +231,8 @@ export default function Home() {
             <div>
               <h3>Linden, New Jersey</h3>
               <p>
-                Rafael is buried first. Thirteen years later, Cruz joins him in
-                the same Rosedale plot.
+                Rafael is buried in January 1985. Cruz is buried in the same
+                Rosedale plot in October 1998.
               </p>
             </div>
           </article>
@@ -242,41 +242,41 @@ export default function Home() {
       <section className="section stories" id="stories">
         <div className="section-label">
           <span>03</span>
-          <p>Stories the records tell</p>
+          <p>Key findings</p>
         </div>
         <div className="stories-heading">
-          <p className="eyebrow">Nothing beyond the evidence</p>
-          <h2>Three breakthroughs.</h2>
+          <p className="eyebrow">From the records reviewed so far</p>
+          <h2>What we have learned</h2>
         </div>
         <div className="story-grid">
           <article>
             <span className="story-when">1941 → 1950</span>
-            <h3>The license that joined both families</h3>
+            <h3>The marriage record identifies all four parents</h3>
             <p>
               The Manhattan license names Rafael, Cruz, and all four parents.
               The 1950 census then finds the couple together on East 109th
               Street.
             </p>
-            <a href="/research#source-marriage">See the record trail →</a>
+            <a href="/research#source-marriage">View the sources →</a>
           </article>
           <article>
             <span className="story-when">1910 → 1920</span>
-            <h3>“Cathelina” comes back into focus</h3>
+            <h3>Rafael’s mother was Carlina Perales y Pérez</h3>
             <p>
               Rafael’s mother appears across the Humacao records as Carlina
               Perales y Pérez. The family memory preserved Pérez and an
               approximate first name.
             </p>
-            <a href="/research#source-census-1910">See the record trail →</a>
+            <a href="/research#source-census-1910">View the sources →</a>
           </article>
           <article>
             <span className="story-when">1985 → 1998</span>
-            <h3>The cemetery plot that closed the loop</h3>
+            <h3>The cemetery database identifies the shared plot</h3>
             <p>
               A remembered cemetery name led to two official entries in one
               plot, thirteen years apart.
             </p>
-            <a href="/research#source-cemetery">See the record trail →</a>
+            <a href="/research#source-cemetery">View the sources →</a>
           </article>
         </div>
       </section>
@@ -296,19 +296,19 @@ export default function Home() {
           ))}
         </div>
         <a className="research-cta" href="/research">
-          Read the full research notebook
-          <span>Conflicts, open cases, negative searches, and complete sources →</span>
+          Open the research notes
+          <span>Conflicting dates, open questions, searches, and sources →</span>
         </a>
       </section>
 
       <section className="public-contribute">
-        <p className="eyebrow">Help finish the record</p>
-        <h2>Family papers can answer what archives cannot.</h2>
+        <p className="eyebrow">Documents still wanted</p>
+        <h2>What to look for in family papers</h2>
         <p>
           Wedding photographs, baptism cards, passports, funeral cards,
           obituary clippings, and notes on the backs of photographs may explain
-          the Martínez, Belén, Juan Ramón, and 24 October clues. A clear phone
-          photograph of the front and back is enough to begin.
+          the Martínez, Belén, Juan Ramón, and 24 October clues. A clear
+          photograph of the front and back is useful.
         </p>
         <p className="privacy-promise">
           Living relatives remain private unless there is explicit permission
@@ -328,7 +328,7 @@ export default function Home() {
           Research begun July 2026
         </p>
         <p className="footer-note">
-          Public story · <a href="/research">Research notebook</a>
+          Public summary · <a href="/research">Research notes</a>
           <br />
           Living-person details and sensitive identifiers are excluded.
         </p>

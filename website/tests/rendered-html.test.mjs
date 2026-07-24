@@ -35,8 +35,12 @@ test("renders the Vazquez-Reyes family history", async () => {
   assert.match(html, /Cruz Reyes/);
   assert.match(html, /Rafael Vázquez/);
   assert.match(html, /WIN4T/);
-  assert.match(html, /Two lives, firmly connected/);
-  assert.match(html, /ongoing research notebook/);
+  assert.match(html, /What the records establish/);
+  assert.match(html, /research notes/);
+  assert.doesNotMatch(
+    html,
+    /Two lives, firmly connected|The evidence behind the story|Three breakthroughs|closed the loop/i,
+  );
   assert.doesNotMatch(html, /codex-preview|react-loading-skeleton/i);
 });
 
@@ -51,7 +55,7 @@ test("keeps sensitive details out of the rendered page", async () => {
   assert.doesNotMatch(html, /\b\d{3}-\d{2}-\d{4}\b/);
 });
 
-test("separates public story from the ongoing research notebook", async () => {
+test("separates the public summary from the research notes", async () => {
   const [publicResponse, researchResponse] = await Promise.all([
     render(),
     render("/research"),
@@ -59,16 +63,16 @@ test("separates public story from the ongoing research notebook", async () => {
   const publicHtml = await publicResponse.text();
   const researchHtml = await researchResponse.text();
 
-  assert.match(publicHtml, /Family papers can answer what archives cannot/);
+  assert.match(publicHtml, /What to look for in family papers/);
   assert.doesNotMatch(publicHtml, /Negative memory/);
   assert.doesNotMatch(publicHtml, /VR-01/);
 
   assert.equal(researchResponse.status, 200);
-  assert.match(researchHtml, /The evidence behind the story/);
+  assert.match(researchHtml, /Research notes/);
   assert.match(researchHtml, /Where the records disagree/);
-  assert.match(researchHtml, /Negative memory/);
+  assert.match(researchHtml, /Searches without a match/);
   assert.match(researchHtml, /VR-01/);
-  assert.match(researchHtml, /The records reviewed so far/);
+  assert.match(researchHtml, /Records reviewed/);
 });
 
 test("projects every canonical historical person into the public page", async () => {

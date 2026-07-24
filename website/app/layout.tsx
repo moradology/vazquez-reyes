@@ -17,11 +17,11 @@ const sans = Inter({
 export const metadata: Metadata = {
   title: "Vazquez–Reyes Family History",
   description:
-    "The documented journey of Cruz Reyes and Rafael Vázquez, from Humacao to Manhattan and Linden.",
+    "Records for Cruz Reyes and Rafael Vázquez in Humacao, Manhattan, and Linden.",
   openGraph: {
     title: "Vazquez–Reyes Family History",
     description:
-      "Two Puerto Rican lives, a 1941 Manhattan marriage, and a shared resting place in Linden, New Jersey.",
+      "Cruz Reyes and Rafael Vázquez: family records from Puerto Rico, New York, and New Jersey.",
     type: "website",
     images: [
       {
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Vazquez–Reyes Family History",
     description:
-      "From Humacao to Manhattan: a documented family history in progress.",
+      "Family records for Cruz Reyes and Rafael Vázquez.",
     images: ["/og.png"],
   },
 };

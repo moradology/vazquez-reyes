@@ -18,47 +18,47 @@ function Grade({
 }
 
 export const metadata = {
-  title: "Research Notebook · Vazquez–Reyes Family History",
+  title: "Research Notes · Vazquez–Reyes Family History",
   description:
-    "Conflicts, open cases, negative searches, and sources behind the Vazquez-Reyes family history.",
+    "Sources, conflicting dates, open questions, and search notes for the Vazquez-Reyes family history.",
 };
 
 export default function ResearchPage() {
   return (
     <main className="research-page">
       <header className="site-header research-header">
-        <a className="wordmark" href="/" aria-label="Return to the family story">
+        <a className="wordmark" href="/" aria-label="Return to the family summary">
           <span>V</span>
           <i />
           <span>R</span>
         </a>
         <nav aria-label="Research navigation">
-          <a href="/">Public story</a>
+          <a href="/">Public summary</a>
           <a href="#conflicts">Conflicts</a>
-          <a href="#docket">Docket</a>
-          <a href="#negative">Negative searches</a>
+          <a href="#docket">Open questions</a>
+          <a href="#negative">Search log</a>
           <a href="#sources">Sources</a>
         </nav>
         <ResearchTools />
       </header>
 
       <section className="research-hero">
-        <p className="hero-kicker">Ongoing research notebook · updated July 2026</p>
-        <h1>The evidence behind the story.</h1>
+        <p className="hero-kicker">Updated July 2026</p>
+        <h1>Research notes</h1>
         <p>
-          This is the transparent working layer: what the records say, where
-          they disagree, what has already been searched, and which document
-          should be sought next. It remains privacy-reviewed for public access.
+          This page lists the sources reviewed, conflicts between them, searches
+          already tried, and the records we are looking for next. Details about
+          living relatives and sensitive identifiers are not published.
         </p>
-        <a href="/">← Read the family-facing story</a>
+        <a href="/">← Return to the family summary</a>
       </section>
 
       <section className="research-section" id="method">
         <div className="research-section-title">
           <span>00</span>
           <div>
-            <p>Method</p>
-            <h2>How evidence is weighed</h2>
+            <p>Labels</p>
+            <h2>How claims are marked</h2>
           </div>
         </div>
         <div className="method-grid">
@@ -72,26 +72,24 @@ export default function ResearchPage() {
           </article>
           <article>
             <Grade kind="probable">PROBABLE</Grade>
-            <h3>Strong but unfinished</h3>
+            <h3>Supported, not settled</h3>
             <p>
-              Independent details align, but a more original or direct record
-              is still needed before the conclusion is closed.
+              Several details agree, but a more direct record is still needed.
             </p>
           </article>
           <article>
             <Grade kind="open">OPEN</Grade>
-            <h3>Conflict or clue</h3>
+            <h3>Unresolved</h3>
             <p>
-              Competing dates and remembered names remain visible search
-              targets. No ancestor is invented to fill a blank.
+              The available records conflict, or a remembered name has not yet
+              been matched to a record.
             </p>
           </article>
         </div>
         <p className="method-note">
-          Evidence lives in Git-tracked JSONL and reasoning traces. This page
-          arranges that material for reading; it does not originate new facts.
-          Raw subscription images, Social Security numbers, and living-person
-          details are excluded.
+          The underlying notes are stored as JSONL files in the public
+          repository. Subscription-only images, Social Security numbers, and
+          details about living people are excluded.
         </p>
       </section>
 
@@ -161,7 +159,7 @@ export default function ResearchPage() {
           <span>02</span>
           <div>
             <p>Name variants</p>
-            <h2>What the remembered names became</h2>
+            <h2>Names found in the records</h2>
           </div>
         </div>
         <div className="variant-list">
@@ -179,8 +177,8 @@ export default function ResearchPage() {
         <div className="research-section-title">
           <span>03</span>
           <div>
-            <p>Research docket</p>
-            <h2>The next records that can move the tree</h2>
+            <p>Open questions</p>
+            <h2>Records to look for next</h2>
           </div>
         </div>
         <div className="docket-list">
@@ -203,14 +201,13 @@ export default function ResearchPage() {
         <div className="research-section-title">
           <span>04</span>
           <div>
-            <p>Negative memory</p>
-            <h2>Where we already looked</h2>
+            <p>Search log</p>
+            <h2>Searches without a match</h2>
           </div>
         </div>
         <p className="section-deck">
-          An unsuccessful search is not proof that a record does not exist. It
-          is still worth preserving so the same narrow path is not mistaken for
-          new work later.
+          These results do not prove that a record does not exist. They are
+          listed so the same searches are not repeated.
         </p>
         <ol className="negative-list">
           {negativeSearches.map((entry) => (
@@ -223,8 +220,8 @@ export default function ResearchPage() {
         <div className="research-section-title">
           <span>05</span>
           <div>
-            <p>Wanted family papers</p>
-            <h2>A phone photograph can be evidence</h2>
+            <p>Family papers</p>
+            <h2>Documents we are looking for</h2>
           </div>
         </div>
         <div className="wanted-research-grid">
@@ -250,8 +247,8 @@ export default function ResearchPage() {
         <div className="research-section-title">
           <span>06</span>
           <div>
-            <p>Source ledger</p>
-            <h2>The records reviewed so far</h2>
+            <p>Sources</p>
+            <h2>Records reviewed</h2>
           </div>
         </div>
         <div className="source-list">
@@ -284,8 +281,8 @@ export default function ResearchPage() {
         <div className="research-section-title">
           <span>07</span>
           <div>
-            <p>Change log</p>
-            <h2>How this record has grown</h2>
+            <p>Research log</p>
+            <h2>Work completed</h2>
           </div>
         </div>
         <div className="update-list">
@@ -305,9 +302,9 @@ export default function ResearchPage() {
           <span>R</span>
         </div>
         <p>
-          Vazquez–Reyes research notebook
+          Vazquez–Reyes research notes
           <br />
-          <a href="/">Return to the public story</a>
+          <a href="/">Return to the public summary</a>
         </p>
         <p className="footer-note">
           Canonical files remain in the public repository.
