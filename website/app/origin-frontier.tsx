@@ -23,7 +23,7 @@ export function OriginFrontier() {
 
       <div className="origin-heading">
         <p className="eyebrow">The current edge of the family tree</p>
-        <h2>Caguas and Humacao are secure. Coamo is now a live question.</h2>
+        <h2>Caguas and Humacao are secure. Earlier routes remain unproved.</h2>
         <p>
           The first people whose native places are stated in the records are
           Máximo Vázquez of Caguas and Josefa Rivera of Humacao. Their 1805
@@ -134,6 +134,15 @@ export function OriginFrontier() {
             Francisca Luna as a mother while retaining Emerenciana as a
             godmother. Until those identities are resolved, it remains a
             nearby household—not an extension of this tree.
+          </p>
+          <p>
+            A second lead runs from a Francisco Xavier Vázquez in Cayey to Juan
+            Vázquez de Rivera, recorded in Ponce in 1709. The chronology makes
+            that Francisco worth testing, but his 1801 burial names only María
+            de los Reyes Vázquez as his wife. It does not identify his parents,
+            native place, or an earlier wife. We have therefore not connected
+            the Cayey–Ponce family to our Caguas family. The published
+            reconstruction itself says Juan’s ancestry is unknown.
           </p>
         </div>
         <div className="origin-route-grid">

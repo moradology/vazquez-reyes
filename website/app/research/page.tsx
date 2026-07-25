@@ -197,6 +197,39 @@ export default function ResearchPage() {
             </dl>
           </article>
           <article>
+            <Grade kind="open">UNMERGED CANDIDATE</Grade>
+            <h3>Francisco Xavier Vázquez · Cayey</h3>
+            <dl>
+              <div>
+                <dt>Why he was tested</dt>
+                <dd>
+                  María Magdalena died in 1794; his documented children with
+                  María de los Reyes begin in 1796; both men were alive in
+                  1801.
+                </dd>
+              </div>
+              <div>
+                <dt>What his burial says</dt>
+                <dd>
+                  Wife María de los Reyes Vázquez; no parents, native place, or
+                  prior wife
+                </dd>
+              </div>
+              <div>
+                <dt>Decision</dt>
+                <dd>Not attached to this tree without an identity bridge</dd>
+              </div>
+              <div>
+                <dt>Possible earlier network</dt>
+                <dd>
+                  A published reconstruction follows this Cayey family to Juan
+                  Vázquez de Rivera in Ponce in 1709, then stops with Juan’s
+                  ancestry unknown.
+                </dd>
+              </div>
+            </dl>
+          </article>
+          <article>
             <Grade kind="documented">DOCUMENTED</Grade>
             <h3>Josefa Rivera</h3>
             <dl>
@@ -263,6 +296,32 @@ export default function ResearchPage() {
           </article>
         </div>
 
+        <figure className="family-record origin-candidate-record">
+          <a
+            href="/records/1801-francisco-xavier-vazquez-cayey-candidate-burial.jpg"
+            target="_blank"
+          >
+            <img
+              src="/records/1801-francisco-xavier-vazquez-cayey-candidate-burial.jpg"
+              alt="1801 Cayey burial page containing the entry for Francisco Xavier Vázquez, an unmerged candidate"
+            />
+          </a>
+          <figcaption>
+            <strong>21 October 1801 · Cayey candidate</strong>
+            <span>
+              Francisco Xavier Vázquez’s burial names María de los Reyes
+              Vázquez as his wife. It does not name his parents, native place,
+              or an earlier wife. The full-size page is preserved here because
+              the record is relevant; it is not proof that he was our Caguas
+              Francisco.
+            </span>
+            <small>
+              Nuestra Señora de la Asunción · FamilySearch image
+              9398-K8SW-QV · unmerged
+            </small>
+          </figcaption>
+        </figure>
+
         <div className="origin-coverage">
           <header>
             <p className="eyebrow">Record coverage checked</p>
@@ -311,6 +370,30 @@ export default function ResearchPage() {
                 burials date to 1793, 1794, and 1801—outside these captured
                 pages. This is not a full human transcription or proof of
                 absence.
+              </p>
+            </article>
+            <article>
+              <span>Cayey → Ponce · 1709–1801</span>
+              <strong>A possible route, not an ancestor line</strong>
+              <p>
+                A scholarly reconstruction and the original 1801 Cayey burial
+                were checked. The chronology leaves open a post-1794
+                remarriage, but no record says this Francisco was María
+                Magdalena Cortés’s widower or connects him to the Caguas
+                children. The reconstructed line reaches Juan Vázquez de
+                Rivera in Ponce in 1709; its author explicitly reports Juan’s
+                ancestry as unknown.
+              </p>
+            </article>
+            <article>
+              <span>Archivo General de Indias</span>
+              <strong>The cited 1709 source is not online</strong>
+              <p>
+                The reconstruction cites ESCRIBANIA,129A. PARES catalogs the
+                bundle as microfilmed but provides no digital image gallery.
+                Archive access may let us inspect the cited original, but it
+                cannot substitute for the missing Caguas-to-Cayey identity
+                bridge.
               </p>
             </article>
             <article>

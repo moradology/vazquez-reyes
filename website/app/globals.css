@@ -2600,11 +2600,15 @@ a {
   margin: 10px 0 16px;
 }
 
-.origin-open > div:first-child > p:last-child {
+.origin-open > div:first-child > p:not(.eyebrow) {
   color: rgba(23, 42, 38, 0.68);
   font-size: 11px;
   line-height: 1.7;
-  margin: 0;
+  margin: 0 0 14px;
+}
+
+.origin-open > div:first-child > p:last-child {
+  margin-bottom: 0;
 }
 
 .origin-route-grid {
@@ -3519,6 +3523,7 @@ footer p {
   .origin-audit-grid,
   .origin-coverage,
   .origin-research-note,
+  .origin-candidate-record,
   .family-couple-list,
   .conflict-table,
   .variant-list,
@@ -4301,6 +4306,11 @@ footer p {
   border: 1px solid var(--line);
   min-width: 0;
   padding: 28px;
+}
+
+.origin-candidate-record {
+  border-top: 1px solid var(--line);
+  margin: 24px 0 24px 66px;
 }
 
 .claim-list article > header {

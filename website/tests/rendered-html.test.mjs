@@ -52,7 +52,10 @@ test("renders the Vazquez-Reyes family history", async () => {
   assert.match(html, /The Reyes–Díaz ancestors/);
   assert.match(html, /The Vázquez–Perales ancestors/);
   assert.match(html, /Three parent pairs, kept in order/);
-  assert.match(html, /Caguas and Humacao are secure\. Coamo is now a live question/);
+  assert.match(
+    html,
+    /Caguas and Humacao are secure\. Earlier routes remain unproved/,
+  );
   assert.match(html, /Coamo in 1808 · Humacao in 1811/);
   assert.match(html, /Luís de Rivera/);
   assert.match(html, /No record yet names an overseas-born ancestor/);

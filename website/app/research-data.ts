@@ -434,6 +434,34 @@ export const sources = [
     grade: "Published guide + complete fragment capture + transcriptions",
   },
   {
+    id: "stark-vasquez-cayey-coamo-guayama",
+    label: "2006 reconstruction: the Vázquez families of Cayey, Coamo, and Guayama",
+    detail: "David M. Stark reconstructs a separate Vázquez network from parish registers, military marriage inventories, and dispensations. It follows Francisco Xavier Vázquez through Pedro Vázquez to Juan Vázquez de Rivera, resident in Ponce in 1709, but explicitly says Juan’s ancestry is unknown. No record yet joins that Francisco to the Caguas husband of María Magdalena Cortés.",
+    href: "https://genus-meridiem-pr.blogspot.com/2020/06/reconstructing-vasquez-family-tree-in.html",
+    grade: "Published scholarly reconstruction · candidate network only",
+  },
+  {
+    id: "cayey-francisco-xavier-burial",
+    label: "1801 Cayey burial: Francisco Xavier Vázquez candidate",
+    detail: "Buried 21 October 1801 in Cayey. The original names María de los Reyes Vázquez as his wife but gives no parents, native place, or earlier wife. Its chronology permits a post-1794 remarriage by the Caguas widower; it does not prove that identity.",
+    href: "https://www.familysearch.org/ark:/61903/1:1:6Z2N-CP8J?lang=en",
+    grade: "Original parish register · unmerged candidate · image captured",
+  },
+  {
+    id: "cayey-early-transcriptions",
+    label: "Cayey baptisms and marriages, 1776–1851",
+    detail: "The transcriptions identify children of Francisco Xavier Vázquez and María de los Reyes beginning in 1796 and a different Francisco Vázquez Rodríguez who married María Ortiz in 1789. They do not contain a marriage identifying Francisco Xavier as the widower of María Magdalena Cortés.",
+    href: "https://hijosdecoamopr.com/cayey-puerto-rico-church-records-indexes-1765-1967/",
+    grade: "Complete volunteer transcriptions · finding aids",
+  },
+  {
+    id: "pares-escribania-129a",
+    label: "Archivo General de Indias: ESCRIBANIA,129A",
+    detail: "The 2006 reconstruction cites material in this bundle for Juan Vázquez de Rivera in 1709 and 1719. The official PARES catalog describes the larger 1718–1723 residencia proceedings and marks the bundle as microfilmed, but supplies no online document images. A PARES account does not by itself provide the microfilm.",
+    href: "https://pares.mcu.es/ParesBusquedas20/catalogo/description/85286",
+    grade: "Official archive catalog · cited original not yet inspected",
+  },
+  {
     id: "caguas-marriage-fragment-1734-1774",
     label: "Caguas marriage fragment, 1734–1774",
     detail: "All 71 full-size images were captured. The transcript layer was screened across the fragment, and every Vázquez- or Cortés-like hit was checked against the manuscript. No defensible Francisco Vázquez–María Magdalena Cortés marriage appeared. Damage and incomplete computer text prevent an absence claim.",
@@ -1442,5 +1470,9 @@ export const updates = [
   {
     date: "24 Jul 2026",
     text: "Captured a 1798 Humacao burial naming a living Roque de Ribera and retained it as a same-place, same-generation lead without assigning it to the family. A separate 1829 computer-text hit was also preserved and rejected.",
+  },
+  {
+    date: "24 Jul 2026",
+    text: "Tested a possible Cayey–Ponce Vázquez route. Francisco Xavier Vázquez’s original 1801 Cayey burial names María de los Reyes Vázquez but no parents, native place, or prior wife, so he remains separate from our Caguas Francisco. The published reconstruction reaches Juan Vázquez de Rivera in Ponce in 1709 and explicitly stops with Juan’s ancestry unknown.",
   },
 ];
