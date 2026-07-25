@@ -49,6 +49,21 @@ first-page civil-index results produced no record that combined the target
 pair with Pedro, Humacao, or another reliable relationship anchor. This is a
 limited first-page screen, not evidence of absence.
 
+## Exact-name index false positives
+
+An exact-name civil-index search for Dámaso Martínez with María Rivera
+surfaced four non-primary relationship rows. All four originals were
+preserved and reviewed:
+
+- record 60678949 is another relationship row for Severiano's already
+  documented 1922 Humacao death;
+- records 138342011, 138978801, and 138980440 belong to Adjuntas records and
+  name María Alicea, not María Rivera.
+
+The three Adjuntas records are rejected for this family. This bounded screen
+does not prove that no other children or records exist; it only resolves the
+four first-page exact-name hits that the index presented.
+
 ## Next record
 
 Search Humacao baptisms around 1854–1858 and the Pedro Reyes–Ana Martínez
