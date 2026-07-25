@@ -5679,7 +5679,7 @@ export const peopleProfiles: readonly PersonProfile[] = [
       },
       "death": {
         "after": "1940-04-05",
-        "status": "not_yet_found"
+        "status": "not_yet_found_bounded_1940_1950_naguabo_index_screen_negative"
       },
       "last_documented": {
         "date": "1940-04-05",
@@ -5707,9 +5707,10 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "source.pr-civil-death.carlina.681091",
         "source.pr-civil-marriage.juan-perales.1531375",
         "source.census.1935.aurora-hilaria",
-        "source.census.1940.aurora-hilaria"
+        "source.census.1940.aurora-hilaria",
+        "source.search-audit.ancestry-aurora-perez-death.1940-1950"
       ],
-      "notes": "The 1935 and 1940 censuses place the widowed Aurora in the Río Blanco household of daughter Hilaria or Ilaria. Reported ages 95 and 99 suggest about 1840-1841 but are not exact birth evidence. A 1942 Aurora Monserrate Pérez record was captured and rejected because the spouse was Marcelo Pérez, not Marcelino Perales."
+      "notes": "The 1935 and 1940 censuses place the widowed Aurora in the Río Blanco household of daughter Hilaria or Ilaria. Reported ages 95 and 99 suggest about 1840-1841 but are not exact birth evidence. An exact year-by-year Ancestry index screen for any Aurora death in Naguabo from 1940 through 1950 found only three different women; additional exact-name and age-weighted candidates were rejected. Her death remains unfound and register-level searching is needed."
     },
     "relations": {
       "parentIds": [],
@@ -5918,6 +5919,18 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "image_url": "https://www.ancestry.com/imageviewer/collections/2442/images/m-t0627-04641-00371?pid=162855393",
         "quality": "original_enumeration_and_derivative_index",
         "citation": "Río Blanco, Naguabo; 5 April 1940; page 9B; ED 73-14. Original image reads Ilaria Perales, widow of Rotger, age 50, head; Antonio Rotger Perales, son, age 25; and Aurora Pérez, widow of Perales, mother, age 99. The index misreads Aurora's married surname as Serales."
+      },
+      {
+        "id": "source.search-audit.ancestry-aurora-perez-death.1940-1950",
+        "type": "bounded_exact_year_place_index_search_with_original_candidate_review",
+        "title": "Aurora Pérez death search, Naguabo and Puerto Rico, 1940–1950",
+        "repository": "Puerto Rico civil-registration index via Ancestry.com",
+        "accessed": "2026-07-25",
+        "url": "https://www.ancestry.com/search/collections/9100/?name=Aurora&death=1942_Naguabo&death_x=0-0-0_1-0&name_x=1_1",
+        "quality": "bounded_derivative_index_screen_with_selected_originals_reviewed_not_register_level",
+        "citation": "Exact year-by-year searches for any Aurora death with exact Naguabo death place from 1940 through 1950 returned only Aurora Monserrate Pérez (1942, record 4622921), Aurora Rivera Otero (1945, record 4625083), and Aurora Telmont Romas (1948, record 4625719), all different women. Exact Aurora Pérez and Aurora Perales searches produced no additional Naguabo candidate. Exact Aurora Pérez searches across Puerto Rico for 1940–1945 returned only unrelated rows. Age-weighted candidates 636983, 450755, and 861212 were rejected after original-image review as Aurora Collazo, a young child, and a four-day-old infant. Index omissions, name variation, death elsewhere, survival after 1950, and missing records remain possible.",
+        "reasoning_trace": "research/reasoning-traces/2026-07-25-aurora-perez-death-index-sweep.md",
+        "status": "bounded_index_screen_no_defensible_target_not_proof_of_absence"
       },
       {
         "id": "source.pr-civil-marriage.martina-perales.14391961",
