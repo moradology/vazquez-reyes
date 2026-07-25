@@ -1324,6 +1324,10 @@ a {
   object-position: center 48%;
 }
 
+[data-archive-image-trigger="home-east-harlem-image"] img {
+  object-position: center 42%;
+}
+
 .place-figure figcaption {
   border-top: 1px solid rgba(241, 236, 223, 0.18);
   display: grid;
@@ -3173,6 +3177,12 @@ footer p {
   height: 100%;
   object-fit: cover;
   width: 100%;
+}
+
+[data-timeline-place-image="timeline-place-east-105th-1939-1941"]
+  .timeline-place-image
+  img {
+  object-position: center 42%;
 }
 
 .timeline-place-figure figcaption {

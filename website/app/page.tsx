@@ -99,29 +99,29 @@ export default function Home() {
 
           <figure className="place-figure">
             <ArchiveImage
-              alt="A Spanish Harlem street with brick apartment buildings, shops, pedestrians, and fire escapes in the 1970s"
-              citation="Bernard Gotfryd, Spanish Harlem, between 1970 and 1980. Library of Congress, LC-DIG-gtfy-07645; no known restrictions on publication."
+              alt="Black-and-white 1939–1941 tax photograph of the apartment building at 16 East 105th Street in East Harlem"
+              citation="16 East 105 Street, 1939–1941, 1940s Tax Department photographs, New York (N.Y.). Department of Finance, nynyma_rec0040_1_01610_0064. Courtesy of the Municipal Archives, City of New York."
               id="home-east-harlem-image"
-              sourceHref="https://www.loc.gov/item/2020737186/"
-              sourceLabel="Library of Congress citation"
-              src="/places/east-harlem-1970s.jpg"
+              sourceHref="https://nycrecords.access.preservica.com/uncategorized/IO_3e40e72b-a649-4039-8b1c-24d2179eabcb/"
+              sourceLabel="NYC Municipal Archives record"
+              src="/places/16-east-105-street-1939-1941.jpg"
               triggerClassName="place-image"
-              zoomLabel="View the East Harlem photograph at full size"
+              zoomLabel="View 16 East 105th Street at full size"
             />
             <figcaption>
               <div>
-                <p className="place-name">East Harlem, New York</p>
-                <p className="place-date">1970s</p>
+                <p className="place-name">16 East 105th Street</p>
+                <p className="place-date">1939–1941</p>
               </div>
               <p>
-                Cruz and Rafael married on East 105th Street in 1941. The 1950
-                census recorded their household four blocks north on East
-                109th Street.
+                Rafael gave this address when he and Cruz married in 1941. The
+                city photographed the building at almost exactly that moment;
+                the 1950 census later found the couple four blocks north.
               </p>
               <p className="place-credit">
-                Bernard Gotfryd · Library of Congress ·{" "}
+                NYC Department of Finance · Municipal Archives ·{" "}
                 <a
-                  href="https://www.loc.gov/item/2020737186/"
+                  href="https://nycrecords.access.preservica.com/uncategorized/IO_3e40e72b-a649-4039-8b1c-24d2179eabcb/"
                   rel="noreferrer"
                   target="_blank"
                 >
@@ -133,8 +133,9 @@ export default function Home() {
         </div>
 
         <p className="place-context-note">
-          These are archival views of the places—not photographs of a residence
-          identified as belonging to the family.
+          The Humacao image shows the region, not a family residence. The New
+          York image shows Rafael’s documented 1941 address; it does not
+          identify a particular apartment or anyone in the photograph.
         </p>
       </section>
 

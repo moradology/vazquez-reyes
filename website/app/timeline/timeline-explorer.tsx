@@ -57,18 +57,19 @@ const timelinePlaceImages: readonly TimelinePlaceImage[] = [
     sourceLabel: "Wikimedia Commons source",
   },
   {
-    id: "timeline-place-east-harlem-1970s",
-    afterEventId: "timeline.claim.couple-east-harlem-1950",
-    dateLabel: "1970s",
-    place: "East Harlem, New York",
+    id: "timeline-place-east-105th-1939-1941",
+    afterEventId: "timeline.claim.couple-marriage",
+    dateLabel: "1939–41",
+    place: "16 East 105th Street, East Harlem",
     context:
-      "The 1950 census placed Cruz and Rafael on East 109th Street. Gotfryd photographed Spanish Harlem in the decades after their move; the exact block is not identified.",
-    src: "/places/east-harlem-1970s.jpg",
-    alt: "A Spanish Harlem street with brick apartment buildings, shops, pedestrians, and fire escapes in the 1970s",
+      "Rafael gave this address when he and Cruz married in 1941. New York City tax photographers recorded the building between 1939 and 1941; the image does not identify a particular apartment or anyone in the family.",
+    src: "/places/16-east-105-street-1939-1941.jpg",
+    alt: "Black-and-white 1939–1941 tax photograph of the apartment building at 16 East 105th Street in East Harlem",
     citation:
-      "Bernard Gotfryd, Spanish Harlem, between 1970 and 1980. Library of Congress, LC-DIG-gtfy-07645; no known restrictions on publication.",
-    sourceHref: "https://www.loc.gov/item/2020737186/",
-    sourceLabel: "Library of Congress citation",
+      "16 East 105 Street, 1939–1941, 1940s Tax Department photographs, New York (N.Y.). Department of Finance, nynyma_rec0040_1_01610_0064. Courtesy of the Municipal Archives, City of New York.",
+    sourceHref:
+      "https://nycrecords.access.preservica.com/uncategorized/IO_3e40e72b-a649-4039-8b1c-24d2179eabcb/",
+    sourceLabel: "NYC Municipal Archives record",
   },
 ];
 

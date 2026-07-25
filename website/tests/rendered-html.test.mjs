@@ -38,13 +38,14 @@ test("renders the Vazquez-Reyes family history", async () => {
   assert.match(html, /to New York/);
   assert.match(html, /Humacao \/ East Harlem/);
   assert.match(html, /humacao-near-1909\.jpg/);
-  assert.match(html, /east-harlem-1970s\.jpg/);
   assert.match(
     html,
-    /not photographs of a residence\s*identified as belonging to the family/i,
+    /New York image shows Rafael’s documented 1941 address/i,
   );
   assert.match(html, /Waldrop Photographic Co\./);
-  assert.match(html, /Bernard Gotfryd/);
+  assert.match(html, /16 East 105th Street/);
+  assert.match(html, /Municipal Archives/);
+  assert.match(html, /16-east-105-street-1939-1941\.jpg/);
   assert.match(html, /data-archive-image-trigger="home-humacao-image"/);
   assert.match(html, /data-archive-image-viewer="home-east-harlem-image"/);
   assert.match(html, /The same island across five generations/);
@@ -184,10 +185,10 @@ test("renders a filterable two-line family timeline from the research ledger", a
   assert.match(html, /punta-santiago-1902\.jpg/);
   assert.match(html, /Punta Santiago, Humacao/);
   assert.match(html, /Near Humacao/);
-  assert.match(html, /East Harlem, New York/);
+  assert.match(html, /16 East 105th Street, East Harlem/);
   assert.match(html, /View full size/);
   assert.match(html, /United States Fish Commission/);
-  assert.match(html, /LC-DIG-gtfy-07645/);
+  assert.match(html, /nynyma_rec0040_1_01610_0064/);
   assert.ok(
     [...html.matchAll(/\bdata-timeline-event=/g)].length > 50,
     "expected a substantial direct-line chronology",
