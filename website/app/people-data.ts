@@ -3612,6 +3612,37 @@ export const peopleProfiles: readonly PersonProfile[] = [
           "source.pr-civil-death.ana-martinez.45678048"
         ],
         "note": "The parent names match, but the candidate is 11–14 years older than Ana's ages in two later originals. It may represent an older child of the same parent pair; it is not the direct Ana without stronger bridging evidence."
+      },
+      {
+        "id": "claim.severiano-damaso-maria-probable-collateral",
+        "subject": [
+          "person.severiano-martinez-rivera",
+          "person.damaso-martinez",
+          "person.maria-rivera",
+          "person.ana-martinez"
+        ],
+        "predicate": "probable_collateral_child_and_parent_origins",
+        "object": {
+          "recorded_child": "person.severiano-martinez-rivera",
+          "reported_birth": "about 1862",
+          "birth_place": "Humacao, Puerto Rico",
+          "death": "1922-03-05",
+          "recorded_parents": [
+            "person.damaso-martinez",
+            "person.maria-rivera"
+          ],
+          "parents_reported_native_place": "Humacao, Puerto Rico",
+          "parents_reported_status": "married, of full age, and deceased by 5 March 1922",
+          "relationship_to_direct_ana": "probable sibling, not confirmed"
+        },
+        "status": "strong_exact_parent_pair_same_locality_and_generation_identity_bridge_to_ana_still_open",
+        "evidence_refs": [
+          "source.pr-civil-death.severiano-martinez-rivera.678949",
+          "source.familysearch-baptism.mauricio-reyes-martinez.1882",
+          "source.census.1910.pedro-ana-julian",
+          "source.pr-civil-death.ana-martinez.45678048"
+        ],
+        "note": "The exact pair and Humacao setting are materially stronger than a surname-only match. Even so, Dámaso Martínez and María Rivera are not assumed unique, and Ana's own baptism or marriage remains the needed bridge."
       }
     ],
     "sources": [
@@ -3703,6 +3734,22 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "citation": "DGS 008038525, item 6, local image 35 of 201. The index identifies Ana, born 26 July 1844 and baptized in October 1844, daughter of Dámaso Martínez and María Rivera. The original is severely obscured by bleed-through. This exact-name parent-pair candidate is retained but not merged because the direct Ana reported age 55 in 1910 and age 60 in 1918, placing her birth about 1854–1858 rather than 1844.",
         "status": "rejected_as_direct_ana_age_conflict_same_parent_pair_possible_older_child",
         "image_archive": "1844-10_ana-martinez-baptism-candidate_humacao_familysearch_dgs-008038525_item-6_image-35_3Q9M-CSFS-575R-C.jpg"
+      },
+      {
+        "id": "source.pr-civil-death.severiano-martinez-rivera.678949",
+        "type": "civil_death_registration_with_image",
+        "title": "1922 death of Severiano Martínez Rivera",
+        "repository": "Departamento de Salud de Puerto Rico via Ancestry.com",
+        "accessed": "2026-07-25",
+        "url": "https://www.ancestry.com/search/collections/9100/records/678949",
+        "image_url": "https://www.ancestry.com/imageviewer/collections/9100/images/004494234_01606?pid=678949",
+        "quality": "original_image_downloaded_and_visually_reviewed",
+        "citation": "Humacao act 464, registered 6 March 1922. Severiano Martínez Rivera died 5 March 1922, reported age 60 and a native of Humacao. The act names his parents as Dámaso Martínez and María Rivera, both natives of Humacao, married, of full age, and deceased. The exact parent pair, place, and generation make Severiano a strong collateral candidate for Ana Martínez's family, but the act does not itself identify Ana as his sister.",
+        "image_archive": "research/pulls/images/ancestry-9100-678949-severiano-martinez-rivera/20260725T175623Z-document-original.jpg",
+        "image_sha256": "912d89a170d5a4c6a84ea21c91102d46af8c17c24dc34f931d15a4e3345971e3",
+        "public_image": "1922-severiano-martinez-rivera-death.jpg",
+        "public_image_sha256": "5a7bebf5c460abf598c61169babf5348c8ac96bfec282f6882f3af740e38d426",
+        "status": "confirmed_original_reviewed_probable_collateral_not_merged_as_ana_sibling"
       }
     ],
     "geographyEvents": [
@@ -15412,19 +15459,27 @@ export const peopleProfiles: readonly PersonProfile[] = [
       "display_name": "Dámaso Martínez",
       "sex": "male",
       "birth": {
-        "status": "not_yet_found"
+        "place": "Humacao, Puerto Rico",
+        "date_status": "not_yet_found",
+        "place_status": "reported_on_probable_collateral_child_death"
       },
       "death": {
-        "status": "not_yet_found"
+        "before": "1922-03-05",
+        "exact_date_status": "not_yet_found",
+        "status": "reported_deceased_on_probable_collateral_child_death"
       },
       "spouse": "person.maria-rivera",
       "known_child": "person.ana-martinez",
-      "confidence": "confirmed_as_maternal_grandfather_on_original_baptisms",
+      "possible_children": [
+        "person.severiano-martinez-rivera"
+      ],
+      "confidence": "confirmed_as_maternal_grandfather_probable_collateral_reports_humacao_origin",
       "evidence_refs": [
         "source.familysearch-baptism.mauricio-reyes-martinez.1882",
-        "source.familysearch-baptism.benito-isabel-reyes-martinez.1877"
+        "source.familysearch-baptism.benito-isabel-reyes-martinez.1877",
+        "source.pr-civil-death.severiano-martinez-rivera.678949"
       ],
-      "notes": "The original baptisms repeat Dámaso as Ana Martínez's father. His own life events have not yet been found."
+      "notes": "The original baptisms repeat Dámaso as Ana Martínez's father. Severiano Martínez Rivera's 1922 death act names the exact Dámaso Martínez and María Rivera pair, calls both parents Humacao natives, and says both were already deceased. The locality, pair, and generation make Severiano a probable collateral child, but the pair is not treated as uniquely identified until Ana's own baptism or marriage is found."
     },
     "relations": {
       "parentIds": [],
@@ -15435,11 +15490,45 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "person.ana-martinez"
       ],
       "siblingIds": [],
-      "relatedIds": [],
+      "relatedIds": [
+        "person.severiano-martinez-rivera"
+      ],
       "namedChildren": [],
       "namedSiblings": []
     },
-    "claims": [],
+    "claims": [
+      {
+        "id": "claim.severiano-damaso-maria-probable-collateral",
+        "subject": [
+          "person.severiano-martinez-rivera",
+          "person.damaso-martinez",
+          "person.maria-rivera",
+          "person.ana-martinez"
+        ],
+        "predicate": "probable_collateral_child_and_parent_origins",
+        "object": {
+          "recorded_child": "person.severiano-martinez-rivera",
+          "reported_birth": "about 1862",
+          "birth_place": "Humacao, Puerto Rico",
+          "death": "1922-03-05",
+          "recorded_parents": [
+            "person.damaso-martinez",
+            "person.maria-rivera"
+          ],
+          "parents_reported_native_place": "Humacao, Puerto Rico",
+          "parents_reported_status": "married, of full age, and deceased by 5 March 1922",
+          "relationship_to_direct_ana": "probable sibling, not confirmed"
+        },
+        "status": "strong_exact_parent_pair_same_locality_and_generation_identity_bridge_to_ana_still_open",
+        "evidence_refs": [
+          "source.pr-civil-death.severiano-martinez-rivera.678949",
+          "source.familysearch-baptism.mauricio-reyes-martinez.1882",
+          "source.census.1910.pedro-ana-julian",
+          "source.pr-civil-death.ana-martinez.45678048"
+        ],
+        "note": "The exact pair and Humacao setting are materially stronger than a surname-only match. Even so, Dámaso Martínez and María Rivera are not assumed unique, and Ana's own baptism or marriage remains the needed bridge."
+      }
+    ],
     "sources": [
       {
         "id": "source.familysearch-baptism.mauricio-reyes-martinez.1882",
@@ -15463,9 +15552,69 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "quality": "original_register_image",
         "citation": "DGS 008038526, item 6, local image 169 of 337, register page 135. Benito Isabel was born 8 July and baptized 15 September 1877, described as the legitimate son of Pedro Reyes and Ana Martínez. Paternal grandparents Ramón Reyes and Inés Castro; maternal grandfather Dámaso Martínez. The maternal grandmother's given name is María, but her surname is difficult to read and conflicts with the clearer Rivera form in Mauricio's 1882 baptism. Godparents Benito Rosario and Valentina Rodríguez.",
         "image_archive": "1877-09-15_benito-isabel-reyes-martinez-baptism_humacao_familysearch_dgs-008038526_item-6_image-169_3Q9M-CSFS-29WY-6.jpg"
+      },
+      {
+        "id": "source.pr-civil-death.severiano-martinez-rivera.678949",
+        "type": "civil_death_registration_with_image",
+        "title": "1922 death of Severiano Martínez Rivera",
+        "repository": "Departamento de Salud de Puerto Rico via Ancestry.com",
+        "accessed": "2026-07-25",
+        "url": "https://www.ancestry.com/search/collections/9100/records/678949",
+        "image_url": "https://www.ancestry.com/imageviewer/collections/9100/images/004494234_01606?pid=678949",
+        "quality": "original_image_downloaded_and_visually_reviewed",
+        "citation": "Humacao act 464, registered 6 March 1922. Severiano Martínez Rivera died 5 March 1922, reported age 60 and a native of Humacao. The act names his parents as Dámaso Martínez and María Rivera, both natives of Humacao, married, of full age, and deceased. The exact parent pair, place, and generation make Severiano a strong collateral candidate for Ana Martínez's family, but the act does not itself identify Ana as his sister.",
+        "image_archive": "research/pulls/images/ancestry-9100-678949-severiano-martinez-rivera/20260725T175623Z-document-original.jpg",
+        "image_sha256": "912d89a170d5a4c6a84ea21c91102d46af8c17c24dc34f931d15a4e3345971e3",
+        "public_image": "1922-severiano-martinez-rivera-death.jpg",
+        "public_image_sha256": "5a7bebf5c460abf598c61169babf5348c8ac96bfec282f6882f3af740e38d426",
+        "status": "confirmed_original_reviewed_probable_collateral_not_merged_as_ana_sibling"
+      },
+      {
+        "id": "source.census.1910.pedro-ana-julian",
+        "type": "federal_census_two_page_household",
+        "title": "1910 United States Federal Census: Pedro Reyes, Ana Martínez, and Julián Reyes",
+        "repository": "U.S. National Archives via FamilySearch",
+        "accessed": "2026-07-24",
+        "url": "https://www.familysearch.org/ark:/61903/1:1:VWKH-5D5?lang=en",
+        "image_url": "https://www.familysearch.org/ark:/61903/3:1:33S7-9YYN-SPZF?view=index&personArk=%2Fark%3A%2F61903%2F1%3A1%3AVWKH-5D5&action=view&cc=1727033&lang=en",
+        "quality": "original_enumeration_across_adjacent_images",
+        "citation": "Anton Ruiz, Humacao, enumeration district 822, sheets 5B–6A, enumerated 20–21 April 1910. Pedro Reyes, 60, head, appears on line 50 of sheet 5B; wife Ana Martínez de Reyes, 55, and son Julián Reyes y Martínez, 22, continue on lines 1–2 of sheet 6A. The marital columns report this as Pedro's second marriage and Ana's first, married 35 years; Ana reports seven children born and four living.",
+        "image_archive": "1910_pedro-reyes-ana-martinez-julian-census_anton-ruiz-humacao_familysearch_image-700_33S7-9YYN-SPZF.jpg and adjacent image 701",
+        "public_image": "1910-pedro-ana-julian-household.jpg"
+      },
+      {
+        "id": "source.pr-civil-death.ana-martinez.45678048",
+        "type": "civil_death_registration_with_image",
+        "title": "1918 death of Ana Martínez",
+        "repository": "Departamento de Salud de Puerto Rico via Ancestry.com",
+        "accessed": "2026-07-24",
+        "url": "https://www.ancestry.com/search/collections/9100/records/45678048",
+        "quality": "original_image_and_derivative_index",
+        "citation": "Humacao, death 21 March 1918, registered 22 March; age 60; widow of Pedro Reyes; born Humacao; children Isabel, Natalio, Mauricio, and Juliano; informant son Natalio; parents unknown."
       }
     ],
-    "geographyEvents": []
+    "geographyEvents": [
+      {
+        "id": "geo.event.damaso-maria-reported-native-humacao",
+        "date_range": "before 1862",
+        "event_type": "reported_native_place",
+        "person_refs": [
+          "person.damaso-martinez",
+          "person.maria-rivera"
+        ],
+        "place_ref": "place.humacao",
+        "status": "reported_on_probable_collateral_child_death_identity_bridge_open",
+        "evidence_refs": [
+          "source.pr-civil-death.severiano-martinez-rivera.678949"
+        ],
+        "map_groups": [
+          "profile-detail"
+        ],
+        "sequence": 1,
+        "map_label": "Humacao",
+        "map_note": "Severiano Martínez Rivera's death act calls both parents, Dámaso Martínez and María Rivera, natives of Humacao. The exact pair is strong collateral evidence; identity to Ana's parents remains probable."
+      }
+    ]
   },
   {
     "id": "person.maria-rivera",
@@ -15491,19 +15640,27 @@ export const peopleProfiles: readonly PersonProfile[] = [
         }
       ],
       "birth": {
-        "status": "not_yet_found"
+        "place": "Humacao, Puerto Rico",
+        "date_status": "not_yet_found",
+        "place_status": "reported_on_probable_collateral_child_death"
       },
       "death": {
-        "status": "not_yet_found"
+        "before": "1922-03-05",
+        "exact_date_status": "not_yet_found",
+        "status": "reported_deceased_on_probable_collateral_child_death"
       },
       "spouse": "person.damaso-martinez",
       "known_child": "person.ana-martinez",
-      "confidence": "strong_parentage_one_surname_reading_conflict",
+      "possible_children": [
+        "person.severiano-martinez-rivera"
+      ],
+      "confidence": "strong_parentage_one_surname_reading_conflict_probable_collateral_reports_humacao_origin",
       "evidence_refs": [
         "source.familysearch-baptism.mauricio-reyes-martinez.1882",
-        "source.familysearch-baptism.benito-isabel-reyes-martinez.1877"
+        "source.familysearch-baptism.benito-isabel-reyes-martinez.1877",
+        "source.pr-civil-death.severiano-martinez-rivera.678949"
       ],
-      "notes": "Mauricio's 1882 baptism clearly gives María Rivera. The corresponding surname in Benito Isabel's 1877 baptism is difficult to read and has been transcribed inconsistently; no alternate surname is merged."
+      "notes": "Mauricio's 1882 baptism clearly gives María Rivera. The corresponding surname in Benito Isabel's 1877 baptism is difficult to read and has been transcribed inconsistently; no alternate surname is merged. Severiano Martínez Rivera's 1922 death act names the exact Dámaso Martínez and María Rivera pair, calls both parents Humacao natives, and says both were already deceased. That makes Severiano probable collateral, not a proven brother of Ana without an identity bridge."
     },
     "relations": {
       "parentIds": [],
@@ -15514,11 +15671,45 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "person.ana-martinez"
       ],
       "siblingIds": [],
-      "relatedIds": [],
+      "relatedIds": [
+        "person.severiano-martinez-rivera"
+      ],
       "namedChildren": [],
       "namedSiblings": []
     },
-    "claims": [],
+    "claims": [
+      {
+        "id": "claim.severiano-damaso-maria-probable-collateral",
+        "subject": [
+          "person.severiano-martinez-rivera",
+          "person.damaso-martinez",
+          "person.maria-rivera",
+          "person.ana-martinez"
+        ],
+        "predicate": "probable_collateral_child_and_parent_origins",
+        "object": {
+          "recorded_child": "person.severiano-martinez-rivera",
+          "reported_birth": "about 1862",
+          "birth_place": "Humacao, Puerto Rico",
+          "death": "1922-03-05",
+          "recorded_parents": [
+            "person.damaso-martinez",
+            "person.maria-rivera"
+          ],
+          "parents_reported_native_place": "Humacao, Puerto Rico",
+          "parents_reported_status": "married, of full age, and deceased by 5 March 1922",
+          "relationship_to_direct_ana": "probable sibling, not confirmed"
+        },
+        "status": "strong_exact_parent_pair_same_locality_and_generation_identity_bridge_to_ana_still_open",
+        "evidence_refs": [
+          "source.pr-civil-death.severiano-martinez-rivera.678949",
+          "source.familysearch-baptism.mauricio-reyes-martinez.1882",
+          "source.census.1910.pedro-ana-julian",
+          "source.pr-civil-death.ana-martinez.45678048"
+        ],
+        "note": "The exact pair and Humacao setting are materially stronger than a surname-only match. Even so, Dámaso Martínez and María Rivera are not assumed unique, and Ana's own baptism or marriage remains the needed bridge."
+      }
+    ],
     "sources": [
       {
         "id": "source.familysearch-baptism.mauricio-reyes-martinez.1882",
@@ -15542,9 +15733,69 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "quality": "original_register_image",
         "citation": "DGS 008038526, item 6, local image 169 of 337, register page 135. Benito Isabel was born 8 July and baptized 15 September 1877, described as the legitimate son of Pedro Reyes and Ana Martínez. Paternal grandparents Ramón Reyes and Inés Castro; maternal grandfather Dámaso Martínez. The maternal grandmother's given name is María, but her surname is difficult to read and conflicts with the clearer Rivera form in Mauricio's 1882 baptism. Godparents Benito Rosario and Valentina Rodríguez.",
         "image_archive": "1877-09-15_benito-isabel-reyes-martinez-baptism_humacao_familysearch_dgs-008038526_item-6_image-169_3Q9M-CSFS-29WY-6.jpg"
+      },
+      {
+        "id": "source.pr-civil-death.severiano-martinez-rivera.678949",
+        "type": "civil_death_registration_with_image",
+        "title": "1922 death of Severiano Martínez Rivera",
+        "repository": "Departamento de Salud de Puerto Rico via Ancestry.com",
+        "accessed": "2026-07-25",
+        "url": "https://www.ancestry.com/search/collections/9100/records/678949",
+        "image_url": "https://www.ancestry.com/imageviewer/collections/9100/images/004494234_01606?pid=678949",
+        "quality": "original_image_downloaded_and_visually_reviewed",
+        "citation": "Humacao act 464, registered 6 March 1922. Severiano Martínez Rivera died 5 March 1922, reported age 60 and a native of Humacao. The act names his parents as Dámaso Martínez and María Rivera, both natives of Humacao, married, of full age, and deceased. The exact parent pair, place, and generation make Severiano a strong collateral candidate for Ana Martínez's family, but the act does not itself identify Ana as his sister.",
+        "image_archive": "research/pulls/images/ancestry-9100-678949-severiano-martinez-rivera/20260725T175623Z-document-original.jpg",
+        "image_sha256": "912d89a170d5a4c6a84ea21c91102d46af8c17c24dc34f931d15a4e3345971e3",
+        "public_image": "1922-severiano-martinez-rivera-death.jpg",
+        "public_image_sha256": "5a7bebf5c460abf598c61169babf5348c8ac96bfec282f6882f3af740e38d426",
+        "status": "confirmed_original_reviewed_probable_collateral_not_merged_as_ana_sibling"
+      },
+      {
+        "id": "source.census.1910.pedro-ana-julian",
+        "type": "federal_census_two_page_household",
+        "title": "1910 United States Federal Census: Pedro Reyes, Ana Martínez, and Julián Reyes",
+        "repository": "U.S. National Archives via FamilySearch",
+        "accessed": "2026-07-24",
+        "url": "https://www.familysearch.org/ark:/61903/1:1:VWKH-5D5?lang=en",
+        "image_url": "https://www.familysearch.org/ark:/61903/3:1:33S7-9YYN-SPZF?view=index&personArk=%2Fark%3A%2F61903%2F1%3A1%3AVWKH-5D5&action=view&cc=1727033&lang=en",
+        "quality": "original_enumeration_across_adjacent_images",
+        "citation": "Anton Ruiz, Humacao, enumeration district 822, sheets 5B–6A, enumerated 20–21 April 1910. Pedro Reyes, 60, head, appears on line 50 of sheet 5B; wife Ana Martínez de Reyes, 55, and son Julián Reyes y Martínez, 22, continue on lines 1–2 of sheet 6A. The marital columns report this as Pedro's second marriage and Ana's first, married 35 years; Ana reports seven children born and four living.",
+        "image_archive": "1910_pedro-reyes-ana-martinez-julian-census_anton-ruiz-humacao_familysearch_image-700_33S7-9YYN-SPZF.jpg and adjacent image 701",
+        "public_image": "1910-pedro-ana-julian-household.jpg"
+      },
+      {
+        "id": "source.pr-civil-death.ana-martinez.45678048",
+        "type": "civil_death_registration_with_image",
+        "title": "1918 death of Ana Martínez",
+        "repository": "Departamento de Salud de Puerto Rico via Ancestry.com",
+        "accessed": "2026-07-24",
+        "url": "https://www.ancestry.com/search/collections/9100/records/45678048",
+        "quality": "original_image_and_derivative_index",
+        "citation": "Humacao, death 21 March 1918, registered 22 March; age 60; widow of Pedro Reyes; born Humacao; children Isabel, Natalio, Mauricio, and Juliano; informant son Natalio; parents unknown."
       }
     ],
-    "geographyEvents": []
+    "geographyEvents": [
+      {
+        "id": "geo.event.damaso-maria-reported-native-humacao",
+        "date_range": "before 1862",
+        "event_type": "reported_native_place",
+        "person_refs": [
+          "person.damaso-martinez",
+          "person.maria-rivera"
+        ],
+        "place_ref": "place.humacao",
+        "status": "reported_on_probable_collateral_child_death_identity_bridge_open",
+        "evidence_refs": [
+          "source.pr-civil-death.severiano-martinez-rivera.678949"
+        ],
+        "map_groups": [
+          "profile-detail"
+        ],
+        "sequence": 1,
+        "map_label": "Humacao",
+        "map_note": "Severiano Martínez Rivera's death act calls both parents, Dámaso Martínez and María Rivera, natives of Humacao. The exact pair is strong collateral evidence; identity to Ana's parents remains probable."
+      }
+    ]
   },
   {
     "id": "person.benito-isabel-reyes-martinez",
@@ -17401,5 +17652,180 @@ export const peopleProfiles: readonly PersonProfile[] = [
       }
     ],
     "geographyEvents": []
+  },
+  {
+    "id": "person.severiano-martinez-rivera",
+    "slug": "severiano-martinez-rivera",
+    "displayName": "Severiano Martínez Rivera",
+    "sex": "male",
+    "tone": "vazquez",
+    "siteProjection": "research_only",
+    "record": {
+      "id": "person.severiano-martinez-rivera",
+      "display_name": "Severiano Martínez Rivera",
+      "sex": "male",
+      "birth": {
+        "estimated": "about 1862",
+        "place": "Humacao, Puerto Rico",
+        "status": "reported_age_and_native_place_on_original_death_act"
+      },
+      "death": {
+        "date": "1922-03-05",
+        "place": "Humacao, Puerto Rico",
+        "status": "confirmed_original_civil_registration"
+      },
+      "possible_parents": [
+        "person.damaso-martinez",
+        "person.maria-rivera"
+      ],
+      "possible_siblings": [
+        "person.ana-martinez"
+      ],
+      "site_projection": "research_only",
+      "confidence": "exact_parent_pair_same_locality_and_generation_probable_collateral_not_proven_ana_sibling",
+      "evidence_refs": [
+        "source.pr-civil-death.severiano-martinez-rivera.678949"
+      ],
+      "notes": "His original death registration names parents Dámaso Martínez and María Rivera, both natives of Humacao, married, of full age, and already deceased. Those identifiers closely fit Ana's documented parents, but Ana's own baptism or marriage is still needed before Severiano is presented as a confirmed brother."
+    },
+    "relations": {
+      "parentIds": [],
+      "partnerIds": [],
+      "childIds": [],
+      "siblingIds": [],
+      "relatedIds": [
+        "person.damaso-martinez",
+        "person.maria-rivera",
+        "person.ana-martinez"
+      ],
+      "namedChildren": [],
+      "namedSiblings": []
+    },
+    "claims": [
+      {
+        "id": "claim.severiano-damaso-maria-probable-collateral",
+        "subject": [
+          "person.severiano-martinez-rivera",
+          "person.damaso-martinez",
+          "person.maria-rivera",
+          "person.ana-martinez"
+        ],
+        "predicate": "probable_collateral_child_and_parent_origins",
+        "object": {
+          "recorded_child": "person.severiano-martinez-rivera",
+          "reported_birth": "about 1862",
+          "birth_place": "Humacao, Puerto Rico",
+          "death": "1922-03-05",
+          "recorded_parents": [
+            "person.damaso-martinez",
+            "person.maria-rivera"
+          ],
+          "parents_reported_native_place": "Humacao, Puerto Rico",
+          "parents_reported_status": "married, of full age, and deceased by 5 March 1922",
+          "relationship_to_direct_ana": "probable sibling, not confirmed"
+        },
+        "status": "strong_exact_parent_pair_same_locality_and_generation_identity_bridge_to_ana_still_open",
+        "evidence_refs": [
+          "source.pr-civil-death.severiano-martinez-rivera.678949",
+          "source.familysearch-baptism.mauricio-reyes-martinez.1882",
+          "source.census.1910.pedro-ana-julian",
+          "source.pr-civil-death.ana-martinez.45678048"
+        ],
+        "note": "The exact pair and Humacao setting are materially stronger than a surname-only match. Even so, Dámaso Martínez and María Rivera are not assumed unique, and Ana's own baptism or marriage remains the needed bridge."
+      }
+    ],
+    "sources": [
+      {
+        "id": "source.pr-civil-death.severiano-martinez-rivera.678949",
+        "type": "civil_death_registration_with_image",
+        "title": "1922 death of Severiano Martínez Rivera",
+        "repository": "Departamento de Salud de Puerto Rico via Ancestry.com",
+        "accessed": "2026-07-25",
+        "url": "https://www.ancestry.com/search/collections/9100/records/678949",
+        "image_url": "https://www.ancestry.com/imageviewer/collections/9100/images/004494234_01606?pid=678949",
+        "quality": "original_image_downloaded_and_visually_reviewed",
+        "citation": "Humacao act 464, registered 6 March 1922. Severiano Martínez Rivera died 5 March 1922, reported age 60 and a native of Humacao. The act names his parents as Dámaso Martínez and María Rivera, both natives of Humacao, married, of full age, and deceased. The exact parent pair, place, and generation make Severiano a strong collateral candidate for Ana Martínez's family, but the act does not itself identify Ana as his sister.",
+        "image_archive": "research/pulls/images/ancestry-9100-678949-severiano-martinez-rivera/20260725T175623Z-document-original.jpg",
+        "image_sha256": "912d89a170d5a4c6a84ea21c91102d46af8c17c24dc34f931d15a4e3345971e3",
+        "public_image": "1922-severiano-martinez-rivera-death.jpg",
+        "public_image_sha256": "5a7bebf5c460abf598c61169babf5348c8ac96bfec282f6882f3af740e38d426",
+        "status": "confirmed_original_reviewed_probable_collateral_not_merged_as_ana_sibling"
+      },
+      {
+        "id": "source.familysearch-baptism.mauricio-reyes-martinez.1882",
+        "type": "parish_baptism_register_with_image",
+        "title": "1882 baptism of Mauricio Reyes Martínez",
+        "repository": "Dulce Nombre de Jesús, Humacao, via FamilySearch",
+        "accessed": "2026-07-24",
+        "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSF3-6SVL-5?view=fullText&keywords=Pedro+Reyes%2CReyes%2CPedro%2CAna+Mart%C3%ADnez%2CHumacao&lang=en",
+        "quality": "original_register_image",
+        "citation": "DGS 008038529, item 9, local image 278 of 346, register page 236. Mauricio was baptized 23 February 1882, legitimate son of Pedro Reyes and Ana Martínez. Paternal grandparents Ramón Reyes and Inés Castro; maternal grandparents Dámaso Martínez and María Rivera; godparents Eugenio Miranda and Rosenda Ramos. The birth statement says 22 September 'de este año,' chronologically impossible in a February 1882 baptism; 1881 is likely but is not silently supplied as fact.",
+        "image_archive": "1882-02-23_mauricio-reyes-martinez-baptism_humacao_familysearch_dgs-008038529_item-9_image-278_3Q9M-CSF3-6SVL-5.jpg",
+        "public_image": "1882-mauricio-reyes-baptism.jpg"
+      },
+      {
+        "id": "source.census.1910.pedro-ana-julian",
+        "type": "federal_census_two_page_household",
+        "title": "1910 United States Federal Census: Pedro Reyes, Ana Martínez, and Julián Reyes",
+        "repository": "U.S. National Archives via FamilySearch",
+        "accessed": "2026-07-24",
+        "url": "https://www.familysearch.org/ark:/61903/1:1:VWKH-5D5?lang=en",
+        "image_url": "https://www.familysearch.org/ark:/61903/3:1:33S7-9YYN-SPZF?view=index&personArk=%2Fark%3A%2F61903%2F1%3A1%3AVWKH-5D5&action=view&cc=1727033&lang=en",
+        "quality": "original_enumeration_across_adjacent_images",
+        "citation": "Anton Ruiz, Humacao, enumeration district 822, sheets 5B–6A, enumerated 20–21 April 1910. Pedro Reyes, 60, head, appears on line 50 of sheet 5B; wife Ana Martínez de Reyes, 55, and son Julián Reyes y Martínez, 22, continue on lines 1–2 of sheet 6A. The marital columns report this as Pedro's second marriage and Ana's first, married 35 years; Ana reports seven children born and four living.",
+        "image_archive": "1910_pedro-reyes-ana-martinez-julian-census_anton-ruiz-humacao_familysearch_image-700_33S7-9YYN-SPZF.jpg and adjacent image 701",
+        "public_image": "1910-pedro-ana-julian-household.jpg"
+      },
+      {
+        "id": "source.pr-civil-death.ana-martinez.45678048",
+        "type": "civil_death_registration_with_image",
+        "title": "1918 death of Ana Martínez",
+        "repository": "Departamento de Salud de Puerto Rico via Ancestry.com",
+        "accessed": "2026-07-24",
+        "url": "https://www.ancestry.com/search/collections/9100/records/45678048",
+        "quality": "original_image_and_derivative_index",
+        "citation": "Humacao, death 21 March 1918, registered 22 March; age 60; widow of Pedro Reyes; born Humacao; children Isabel, Natalio, Mauricio, and Juliano; informant son Natalio; parents unknown."
+      }
+    ],
+    "geographyEvents": [
+      {
+        "id": "geo.event.severiano-reported-birth-humacao",
+        "date_range": "about 1862",
+        "event_type": "reported_birth_place",
+        "person_refs": [
+          "person.severiano-martinez-rivera"
+        ],
+        "place_ref": "place.humacao",
+        "status": "reported_on_original_death_registration",
+        "evidence_refs": [
+          "source.pr-civil-death.severiano-martinez-rivera.678949"
+        ],
+        "map_groups": [
+          "profile-detail"
+        ],
+        "sequence": 1,
+        "map_label": "Humacao · c. 1862",
+        "map_note": "Severiano's death act reports him as a Humacao native and age 60."
+      },
+      {
+        "id": "geo.event.severiano-death-humacao-1922",
+        "date": "1922-03-05",
+        "event_type": "death",
+        "person_refs": [
+          "person.severiano-martinez-rivera"
+        ],
+        "place_ref": "place.humacao",
+        "status": "confirmed_original_civil_registration",
+        "evidence_refs": [
+          "source.pr-civil-death.severiano-martinez-rivera.678949"
+        ],
+        "map_groups": [
+          "profile-detail"
+        ],
+        "sequence": 2,
+        "map_label": "Humacao · 1922",
+        "map_note": "Severiano died in Humacao on 5 March 1922."
+      }
+    ]
   }
 ];

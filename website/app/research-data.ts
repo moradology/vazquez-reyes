@@ -21,6 +21,13 @@ export const sources = [
     grade: "Original parish register · birth-year conflict retained",
   },
   {
+    id: "severiano-death-1922",
+    label: "1922 death: Severiano Martínez Rivera",
+    detail: "Died 5 March 1922 in Humacao at reported age 60. The act names parents Dámaso Martínez and María Rivera and calls both Humacao natives. This makes Severiano probable collateral, not yet a confirmed brother of Ana.",
+    href: "https://www.ancestry.com/search/collections/9100/records/678949",
+    grade: "Original civil record · probable collateral relationship",
+  },
+  {
     id: "pedro-ana-census-1910",
     label: "1910 census: Pedro Reyes, Ana Martínez, and Julián Reyes",
     detail: "Anton Ruiz, Humacao. The household crosses sheets 5B–6A. Pedro’s marriage to Ana was his second and her first; Ana reported seven children born and four living.",
@@ -819,18 +826,21 @@ export const familyCouples = [
     people: [
       {
         name: "Dámaso Martínez",
-        birth: "Not yet found",
-        death: "Not yet found",
+        birth: "Humacao, Puerto Rico · exact date not found",
+        death: "Before 5 March 1922 · exact date not found",
       },
       {
         name: "María Rivera",
-        birth: "Not yet found",
-        death: "Not yet found",
+        birth: "Humacao, Puerto Rico · exact date not found",
+        death: "Before 5 March 1922 · exact date not found",
       },
     ],
-    children: ["Ana or Anastasia Martínez"],
+    children: [
+      "Ana or Anastasia Martínez",
+      "Severiano Martínez Rivera (probable collateral child)",
+    ],
     childNote:
-      "Mauricio’s 1882 baptism clearly names this pair. A 1877 sibling baptism repeats Dámaso but leaves María’s surname difficult to read; the conflict remains visible.",
+      "Mauricio’s 1882 baptism clearly names this pair. Severiano’s 1922 death act repeats the exact parent pair and says both were Humacao natives and already deceased. The fit is strong, but Ana’s baptism or marriage is still needed before Severiano is called her confirmed brother.",
   },
   {
     id: "lope-reyes",
@@ -1192,8 +1202,8 @@ export const openCases = [
   {
     id: "VR-15",
     title: "Ana’s baptism and maternal surname",
-    conflict: "Mauricio’s 1882 baptism clearly names Dámaso Martínez and María Rivera as Ana’s parents. A 1877 sibling baptism repeats Dámaso but leaves María’s surname difficult to read. An 1844 Ana with the same parent names is too old to fit Ana’s ages in 1910 and 1918.",
-    next: "Search Humacao baptisms about 1854–1858 and the Pedro–Ana marriage around 1874–1875. Retain the 1844 child without merging her.",
+    conflict: "Mauricio’s 1882 baptism clearly names Dámaso Martínez and María Rivera as Ana’s parents. A 1877 sibling baptism repeats Dámaso but leaves María’s surname difficult to read. A 1922 death act gives the exact parent pair for Severiano Martínez Rivera and reports both parents as Humacao natives, making him probable collateral; it does not itself identify Ana as his sister. An 1844 Ana with the same parent names is too old to fit Ana’s ages in 1910 and 1918.",
+    next: "Search Humacao baptisms about 1854–1858 and the Pedro–Ana marriage around 1874–1875. Use either record to test Severiano’s probable sibling link, and retain the 1844 child without merging her.",
   },
   {
     id: "VR-16",
@@ -1217,6 +1227,7 @@ export const negativeSearches = [
   "A 1942 death for Aurora Monserrate Pérez belongs to the widow of Marcelo Pérez, not the wife of Marcelino Perales; it was captured and rejected.",
   "No Pastora Reyes entry appears in the reviewed Gurabo baptism-index pages. A Cruz Reyes entry points to book 15, folio 18 verso, but the damaged register image does not expose the child or parents.",
   "The 1844 Humacao baptism of an Ana Martínez with parents Dámaso Martínez and María Rivera is retained but rejected as the direct Ana because it is 11–14 years earlier than her ages in the 1910 census and 1918 death act.",
+  "Severiano Martínez Rivera’s 1922 death repeats the exact Dámaso Martínez–María Rivera parent pair and reports both parents as Humacao natives. He remains a probable collateral child, not a confirmed brother of Ana, until Ana’s own baptism or marriage identifies the pair directly.",
   "Focused searches for Pedro Reyes and Juana Villafañe’s marriage and for Juana’s death did not produce a defensible exact match; two children’s original death records nevertheless confirm the parent pair.",
   "The complete Caguas 1785–1788 baptism transcription contains no Máximo matching parents Francisco and María Cortez, but it led to Miguel’s 1786 baptism under Francisco Vázquez and María Magdalena. Major gaps before and after that book prevent a negative conclusion about Máximo’s baptism.",
   "The damaged Caguas 1734–1774 marriage fragment was captured in full: all 71 images were screened and every Vázquez- or Cortés-like hit was checked against the manuscript. The complete 1774–1804 transcription was also checked. Neither produced a defensible Francisco and María Cortez parent-couple match; damage, incomplete computer text, and possible missing or duplicate books prevent an absence claim.",
@@ -1521,5 +1532,9 @@ export const updates = [
   {
     date: "25 Jul 2026",
     text: "Classified the surfaced 1817 Hato Grande militia transcription as an incomplete male-roster lead. It cannot identify Josefa or the children and does not support a presence or absence claim for Máximo.",
+  },
+  {
+    date: "25 Jul 2026",
+    text: "Captured Severiano Martínez Rivera’s 1922 Humacao death act. It repeats the exact Dámaso Martínez–María Rivera parent pair and reports both parents as Humacao natives; Severiano is retained as probable collateral until Ana’s own baptism or marriage supplies the identity bridge.",
   },
 ];

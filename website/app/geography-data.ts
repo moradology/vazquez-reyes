@@ -1432,5 +1432,63 @@ export const geographyEvents = [
     "sequence": 1,
     "map_label": "San Lorenzo · 1879",
     "map_note": "Dolores was baptized at Nuestra Señora de las Mercedes in San Lorenzo."
+  },
+  {
+    "id": "geo.event.damaso-maria-reported-native-humacao",
+    "date_range": "before 1862",
+    "event_type": "reported_native_place",
+    "person_refs": [
+      "person.damaso-martinez",
+      "person.maria-rivera"
+    ],
+    "place_ref": "place.humacao",
+    "status": "reported_on_probable_collateral_child_death_identity_bridge_open",
+    "evidence_refs": [
+      "source.pr-civil-death.severiano-martinez-rivera.678949"
+    ],
+    "map_groups": [
+      "profile-detail"
+    ],
+    "sequence": 1,
+    "map_label": "Humacao",
+    "map_note": "Severiano Martínez Rivera's death act calls both parents, Dámaso Martínez and María Rivera, natives of Humacao. The exact pair is strong collateral evidence; identity to Ana's parents remains probable."
+  },
+  {
+    "id": "geo.event.severiano-reported-birth-humacao",
+    "date_range": "about 1862",
+    "event_type": "reported_birth_place",
+    "person_refs": [
+      "person.severiano-martinez-rivera"
+    ],
+    "place_ref": "place.humacao",
+    "status": "reported_on_original_death_registration",
+    "evidence_refs": [
+      "source.pr-civil-death.severiano-martinez-rivera.678949"
+    ],
+    "map_groups": [
+      "profile-detail"
+    ],
+    "sequence": 1,
+    "map_label": "Humacao · c. 1862",
+    "map_note": "Severiano's death act reports him as a Humacao native and age 60."
+  },
+  {
+    "id": "geo.event.severiano-death-humacao-1922",
+    "date": "1922-03-05",
+    "event_type": "death",
+    "person_refs": [
+      "person.severiano-martinez-rivera"
+    ],
+    "place_ref": "place.humacao",
+    "status": "confirmed_original_civil_registration",
+    "evidence_refs": [
+      "source.pr-civil-death.severiano-martinez-rivera.678949"
+    ],
+    "map_groups": [
+      "profile-detail"
+    ],
+    "sequence": 2,
+    "map_label": "Humacao · 1922",
+    "map_note": "Severiano died in Humacao on 5 March 1922."
   }
 ] as const;

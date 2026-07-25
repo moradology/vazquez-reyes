@@ -323,7 +323,7 @@ test("keeps the geography ledger referential and explicit about precision", asyn
   const sourceIds = new Set(parse(sourcesText).map((source) => source.id));
 
   assert.equal(places.length, 19);
-  assert.equal(events.length, 55);
+  assert.equal(events.length, 58);
   for (const place of places) {
     assert.match(place.precision, /point/);
     assert.match(place.coordinate_source.url, /^https:\/\/tigerweb\.geo\.census\.gov\//);

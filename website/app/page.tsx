@@ -624,9 +624,10 @@ export default function Home() {
               <Link className="person-profile-link" data-person-id="person.maria-rivera" href="/people/maria-rivera">María Rivera</Link>
             </h3>
             <p>
-              Mauricio’s baptism names Dámaso and María as Ana’s parents. An
-              earlier sibling’s baptism repeats Dámaso, though María’s surname
-              is difficult to read on that page.
+              Mauricio’s baptism names Dámaso and María as Ana’s parents. A
+              1922 Humacao death act for probable collateral son Severiano
+              reports that both parents were from Humacao. Ana’s own baptism
+              or marriage is still needed before calling him her brother.
             </p>
             <a href="/research#damaso-maria">See this family →</a>
           </article>

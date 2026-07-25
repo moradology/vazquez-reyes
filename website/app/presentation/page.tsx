@@ -308,6 +308,15 @@ export default function PresentationPage() {
               grandparents.
             </p>
           </div>
+          <div className="evidence-step">
+            <span>Collateral check</span>
+            <strong>The same parent pair appears again in Humacao</strong>
+            <p>
+              Severiano Martínez Rivera’s 1922 death act reports Dámaso and
+              María as Humacao natives. He is probable collateral—not yet a
+              confirmed brother of Ana.
+            </p>
+          </div>
           <p className="slide-caution">
             The baptism’s birth-year wording is impossible. September 1881 is
             likely; it is not silently promoted to an exact fact.

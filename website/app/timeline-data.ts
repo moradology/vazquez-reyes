@@ -149,6 +149,13 @@ export const timelinePeople: readonly TimelinePerson[] = [
     "directLine": true
   },
   {
+    "id": "person.damaso-martinez",
+    "name": "Dámaso Martínez",
+    "slug": "damaso-martinez",
+    "branch": "reyes",
+    "directLine": true
+  },
+  {
     "id": "person.dolores-rivera",
     "name": "Dolores Rivera",
     "slug": "dolores-rivera",
@@ -415,6 +422,13 @@ export const timelinePeople: readonly TimelinePerson[] = [
     "directLine": true
   },
   {
+    "id": "person.maria-rivera",
+    "name": "María Rivera",
+    "slug": "maria-rivera",
+    "branch": "reyes",
+    "directLine": true
+  },
+  {
     "id": "person.mariana-vazquez-de-santiago",
     "name": "Mariana Vázquez de Santiago",
     "slug": "mariana-vazquez-de-santiago",
@@ -496,6 +510,13 @@ export const timelinePeople: readonly TimelinePerson[] = [
     "name": "Secundino Díaz García",
     "slug": "secundino-diaz-garcia",
     "branch": "reyes",
+    "directLine": false
+  },
+  {
+    "id": "person.severiano-martinez-rivera",
+    "name": "Severiano Martínez Rivera",
+    "slug": "severiano-martinez-rivera",
+    "branch": "vazquez",
     "directLine": false
   },
   {
@@ -1999,6 +2020,83 @@ export const timelineEvents: readonly TimelineEvent[] = [
       }
     ],
     "source": null
+  },
+  {
+    "id": "timeline.severiano-martinez-rivera.birth.18620615",
+    "branch": "vazquez",
+    "directLine": false,
+    "dateLabel": "c. 1862",
+    "dateTime": null,
+    "sortValue": 18620615,
+    "eventType": "birth",
+    "eventTypeLabel": "Birth",
+    "certainty": "Approximate or bounded",
+    "title": "Severiano Martínez Rivera is born",
+    "description": "The date is estimated from later records; the recorded place is Humacao, Puerto Rico.",
+    "place": "Humacao, Puerto Rico",
+    "people": [
+      {
+        "id": "person.severiano-martinez-rivera",
+        "name": "Severiano Martínez Rivera",
+        "slug": "severiano-martinez-rivera"
+      }
+    ],
+    "source": null
+  },
+  {
+    "id": "geo.event.damaso-maria-reported-native-humacao",
+    "branch": "reyes",
+    "directLine": true,
+    "dateLabel": "before 1862",
+    "dateTime": null,
+    "sortValue": 18620615,
+    "eventType": "origin",
+    "eventTypeLabel": "Birthplace evidence",
+    "certainty": "Approximate or bounded",
+    "title": "Dámaso Martínez's birthplace enters the record",
+    "description": "Severiano Martínez Rivera's death act calls both parents, Dámaso Martínez and María Rivera, natives of Humacao. The exact pair is strong collateral evidence; identity to Ana's parents remains probable.",
+    "place": "Humacao",
+    "people": [
+      {
+        "id": "person.damaso-martinez",
+        "name": "Dámaso Martínez",
+        "slug": "damaso-martinez"
+      },
+      {
+        "id": "person.maria-rivera",
+        "name": "María Rivera",
+        "slug": "maria-rivera"
+      }
+    ],
+    "source": {
+      "title": "1922 death of Severiano Martínez Rivera",
+      "url": "https://www.ancestry.com/search/collections/9100/records/678949"
+    }
+  },
+  {
+    "id": "geo.event.severiano-reported-birth-humacao",
+    "branch": "vazquez",
+    "directLine": false,
+    "dateLabel": "c. 1862",
+    "dateTime": null,
+    "sortValue": 18620615,
+    "eventType": "origin",
+    "eventTypeLabel": "Birthplace evidence",
+    "certainty": "Approximate or bounded",
+    "title": "Severiano Martínez Rivera's birthplace enters the record",
+    "description": "Severiano's death act reports him as a Humacao native and age 60.",
+    "place": "Humacao",
+    "people": [
+      {
+        "id": "person.severiano-martinez-rivera",
+        "name": "Severiano Martínez Rivera",
+        "slug": "severiano-martinez-rivera"
+      }
+    ],
+    "source": {
+      "title": "1922 death of Severiano Martínez Rivera",
+      "url": "https://www.ancestry.com/search/collections/9100/records/678949"
+    }
   },
   {
     "id": "timeline.reyes-garcia-olivero.birth.18621815",
@@ -3676,6 +3774,75 @@ export const timelineEvents: readonly TimelineEvent[] = [
     "source": {
       "title": "1929 death of Lope Díaz Figueroa",
       "url": "https://www.ancestry.com/search/collections/9100/records/684632"
+    }
+  },
+  {
+    "id": "timeline.damaso-martinez.death.19220305",
+    "branch": "reyes",
+    "directLine": true,
+    "dateLabel": "Before 5 March 1922",
+    "dateTime": null,
+    "sortValue": 19220304,
+    "eventType": "death",
+    "eventTypeLabel": "Death",
+    "certainty": "Approximate or bounded",
+    "title": "Dámaso Martínez dies",
+    "description": "The surviving records bound the event without supplying an exact date.",
+    "place": null,
+    "people": [
+      {
+        "id": "person.damaso-martinez",
+        "name": "Dámaso Martínez",
+        "slug": "damaso-martinez"
+      }
+    ],
+    "source": null
+  },
+  {
+    "id": "timeline.maria-rivera.death.19220305",
+    "branch": "reyes",
+    "directLine": true,
+    "dateLabel": "Before 5 March 1922",
+    "dateTime": null,
+    "sortValue": 19220304,
+    "eventType": "death",
+    "eventTypeLabel": "Death",
+    "certainty": "Approximate or bounded",
+    "title": "María Rivera dies",
+    "description": "The surviving records bound the event without supplying an exact date.",
+    "place": null,
+    "people": [
+      {
+        "id": "person.maria-rivera",
+        "name": "María Rivera",
+        "slug": "maria-rivera"
+      }
+    ],
+    "source": null
+  },
+  {
+    "id": "geo.event.severiano-death-humacao-1922",
+    "branch": "vazquez",
+    "directLine": false,
+    "dateLabel": "5 March 1922",
+    "dateTime": "1922-03-05",
+    "sortValue": 19220305,
+    "eventType": "death",
+    "eventTypeLabel": "Death",
+    "certainty": "Documented",
+    "title": "Severiano Martínez Rivera dies",
+    "description": "Severiano died in Humacao on 5 March 1922.",
+    "place": "Humacao",
+    "people": [
+      {
+        "id": "person.severiano-martinez-rivera",
+        "name": "Severiano Martínez Rivera",
+        "slug": "severiano-martinez-rivera"
+      }
+    ],
+    "source": {
+      "title": "1922 death of Severiano Martínez Rivera",
+      "url": "https://www.ancestry.com/search/collections/9100/records/678949"
     }
   },
   {

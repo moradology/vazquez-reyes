@@ -57,6 +57,8 @@ const publicRecordImages = {
     "1765-luis-rivera-candidate-baptism.jpg",
   "source.familysearch-death.luis-de-rivera.1811":
     "1811-luis-de-rivera-death.jpg",
+  "source.pr-civil-death.severiano-martinez-rivera.678949":
+    "1922-severiano-martinez-rivera-death.jpg",
 };
 
 function personRefs(value) {
