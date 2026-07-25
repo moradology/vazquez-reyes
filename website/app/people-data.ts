@@ -9220,6 +9220,54 @@ export const peopleProfiles: readonly PersonProfile[] = [
           "source.familysearch-baptism.juan-de-dios-vazquez-rivera.1819"
         ],
         "note": "Each sibling candidate is directly documented as a child of the Caguas Francisco and María household. Máximo is directly documented as son of Francisco and María Cortez and as native of Caguas. Because his own baptism is missing, the sibling links are graded strong rather than fully direct."
+      },
+      {
+        "id": "claim.maximo-josefa-humacao-burial-index-audit",
+        "subject": [
+          "person.maximo-vazquez",
+          "person.josefa-rivera"
+        ],
+        "predicate": "death_or_burial_search_coverage",
+        "object": {
+          "place": "Humacao, Puerto Rico",
+          "complete_index_books_reviewed": [
+            "1815–1820",
+            "1823–1826",
+            "1826–1829",
+            "1829–1836",
+            "1836–1839",
+            "1839–1843",
+            "1843–1846",
+            "1846–1852"
+          ],
+          "coverage_gap": "1821–1822",
+          "targets": [
+            {
+              "person": "person.maximo-vazquez",
+              "forms_screened": [
+                "Máximo Vázquez",
+                "Máximo Basquez",
+                "Maximino Vázquez",
+                "Maximiliano Vázquez"
+              ],
+              "result": "no defensible entry"
+            },
+            {
+              "person": "person.josefa-rivera",
+              "forms_screened": [
+                "Josefa Rivera",
+                "Josefa Ribera",
+                "María Josefa Rivera"
+              ],
+              "result": "no defensible entry"
+            }
+          ]
+        },
+        "status": "bounded_complete_index_review_negative_targets_not_proof_of_absence",
+        "evidence_refs": [
+          "source.search-audit.humacao-burials.maximo-josefa.1815-1852"
+        ],
+        "note": "The screen closes a repeated-search loop in the surviving Humacao indexes, but it does not establish where or when either person died. The 1821–1822 gap, index omissions, legibility, name variation, and other parishes remain open."
       }
     ],
     "sources": [
@@ -9569,6 +9617,19 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "image_archive": "research/pulls/scans/caguas-dgs-008126765-item9-burials-1801-1810/page-041.jpg through page-230.jpg",
         "image_set_sha256": "a3edfc3a4f06c681a6445565f978ce3ae9a4df0769d57122b0fd5107522b3a27",
         "status": "complete_image_capture_machine_screen_negative_full_manual_transcription_open"
+      },
+      {
+        "id": "source.search-audit.humacao-burials.maximo-josefa.1815-1852",
+        "type": "targeted_manual_screen_of_complete_parish_burial_indexes",
+        "title": "Máximo Vázquez and Josefa Rivera in Humacao burial indexes, 1815–1852",
+        "repository": "Dulce Nombre de Jesús, Humacao, DGS 007769016, via FamilySearch",
+        "accessed": "2026-07-25",
+        "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSM8-Q7KW-5?i=581&lang=en",
+        "quality": "eight_complete_alphabetical_index_books_preserved_as_sixty_nine_full_browser_frame_captures_and_manually_screened",
+        "citation": "The complete index books labeled 1815–1820, 1823–1826, 1826–1829, 1829–1836, 1836–1839, 1839–1843, 1843–1846, and 1846–1852 were screened specifically for Máximo Vázquez under Vázquez, Vasquez, and Basquez and for Josefa Rivera under Rivera and Ribera, including common given-name variants. No defensible target entry was found. The run contains no 1821–1822 book, and index omission, register survival, handwriting, name variation, and burial in another parish prevent an absence claim.",
+        "image_archive": "research/pulls/images/humacao-burial-indexes-1815-1820 through humacao-burial-indexes-1846-1852, with per-directory SHA-256 manifests",
+        "reasoning_trace": "research/reasoning-traces/2026-07-25-maximo-josefa-humacao-burial-index-screen.md",
+        "status": "bounded_complete_index_screen_negative_for_both_targets_not_proof_of_absence"
       }
     ],
     "geographyEvents": [
@@ -9960,6 +10021,54 @@ export const peopleProfiles: readonly PersonProfile[] = [
           "source.familysearch-marriage.maximo-josefa.1805"
         ],
         "note": "The 1800 mother is recorded as Josefa Vázquez, while the documented ancestor is Josefa Ribera or Rivera, daughter of Luís de Rivera and Isidora Rodríguez. No father, spouse, or parent pair joins the two women. The record is preserved but not attached to the family."
+      },
+      {
+        "id": "claim.maximo-josefa-humacao-burial-index-audit",
+        "subject": [
+          "person.maximo-vazquez",
+          "person.josefa-rivera"
+        ],
+        "predicate": "death_or_burial_search_coverage",
+        "object": {
+          "place": "Humacao, Puerto Rico",
+          "complete_index_books_reviewed": [
+            "1815–1820",
+            "1823–1826",
+            "1826–1829",
+            "1829–1836",
+            "1836–1839",
+            "1839–1843",
+            "1843–1846",
+            "1846–1852"
+          ],
+          "coverage_gap": "1821–1822",
+          "targets": [
+            {
+              "person": "person.maximo-vazquez",
+              "forms_screened": [
+                "Máximo Vázquez",
+                "Máximo Basquez",
+                "Maximino Vázquez",
+                "Maximiliano Vázquez"
+              ],
+              "result": "no defensible entry"
+            },
+            {
+              "person": "person.josefa-rivera",
+              "forms_screened": [
+                "Josefa Rivera",
+                "Josefa Ribera",
+                "María Josefa Rivera"
+              ],
+              "result": "no defensible entry"
+            }
+          ]
+        },
+        "status": "bounded_complete_index_review_negative_targets_not_proof_of_absence",
+        "evidence_refs": [
+          "source.search-audit.humacao-burials.maximo-josefa.1815-1852"
+        ],
+        "note": "The screen closes a repeated-search loop in the surviving Humacao indexes, but it does not establish where or when either person died. The 1821–1822 gap, index omissions, legibility, name variation, and other parishes remain open."
       }
     ],
     "sources": [
@@ -10308,6 +10417,19 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "citation": "DGS 008038524, item 6, local image 27. The original records the burial on 22 June 1800 of five-year-old María de la Cruz, daughter of Josefa Vázquez of the district. It does not name a father or provide an identity bridge to Josefa Rivera, daughter of Luís de Rivera and Isidora Rodríguez. The shared given name is insufficient, so the child and mother are not merged into the family.",
         "image_archive": "research/pulls/images/humacao-burial-indexes-1810-1820/1810-1815-humacao-burial-index-frame-581_3Q9M-CSM8-Q7KQ-Y.jpg; original ARK reviewed but download did not complete",
         "status": "rejected_as_family_link_name_only_no_identity_bridge"
+      },
+      {
+        "id": "source.search-audit.humacao-burials.maximo-josefa.1815-1852",
+        "type": "targeted_manual_screen_of_complete_parish_burial_indexes",
+        "title": "Máximo Vázquez and Josefa Rivera in Humacao burial indexes, 1815–1852",
+        "repository": "Dulce Nombre de Jesús, Humacao, DGS 007769016, via FamilySearch",
+        "accessed": "2026-07-25",
+        "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSM8-Q7KW-5?i=581&lang=en",
+        "quality": "eight_complete_alphabetical_index_books_preserved_as_sixty_nine_full_browser_frame_captures_and_manually_screened",
+        "citation": "The complete index books labeled 1815–1820, 1823–1826, 1826–1829, 1829–1836, 1836–1839, 1839–1843, 1843–1846, and 1846–1852 were screened specifically for Máximo Vázquez under Vázquez, Vasquez, and Basquez and for Josefa Rivera under Rivera and Ribera, including common given-name variants. No defensible target entry was found. The run contains no 1821–1822 book, and index omission, register survival, handwriting, name variation, and burial in another parish prevent an absence claim.",
+        "image_archive": "research/pulls/images/humacao-burial-indexes-1815-1820 through humacao-burial-indexes-1846-1852, with per-directory SHA-256 manifests",
+        "reasoning_trace": "research/reasoning-traces/2026-07-25-maximo-josefa-humacao-burial-index-screen.md",
+        "status": "bounded_complete_index_screen_negative_for_both_targets_not_proof_of_absence"
       }
     ],
     "geographyEvents": [
