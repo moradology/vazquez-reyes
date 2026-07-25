@@ -10642,6 +10642,44 @@ export const peopleProfiles: readonly PersonProfile[] = [
           "source.search-audit.caguas-early-books.maximo-parents"
         ],
         "note": "The screen sharpens the record boundary but does not establish that the couple did not marry in Caguas."
+      },
+      {
+        "id": "claim.francisco-xavier-vazquez-cayey-candidate-1801",
+        "subject": "person.francisco-father-of-maximo-vazquez",
+        "predicate": "unmerged_same_name_post_1794_remarriage_candidate",
+        "object": {
+          "candidate": "Francisco Xavier Vázquez of Cayey",
+          "burial": "1801-10-21",
+          "burial_place": "Cayey, Puerto Rico",
+          "recorded_wife": "María de los Reyes Vázquez",
+          "published_parents": [
+            "Pedro Vázquez",
+            "Francisca Quiñones"
+          ],
+          "matching_points": [
+            "María Magdalena Cortés died in Caguas in 1794",
+            "Francisco Xavier and María de los Reyes had documented children in 1796 and 1799",
+            "the Caguas Francisco was still living when his son José was buried in February 1801",
+            "Francisco Xavier died in October 1801"
+          ],
+          "missing_identity_evidence": [
+            "the burial names no parents",
+            "the burial names no native place",
+            "the burial names no prior wife",
+            "no record names Francisco Xavier as María Magdalena Cortés's widower",
+            "no record connects the Cayey children to the Caguas children"
+          ]
+        },
+        "status": "unmerged_candidate_possible_post_1794_remarriage_no_identity_bridge",
+        "evidence_refs": [
+          "source.article.stark-vasquez-cayey-coamo-guayama.2006",
+          "source.transcription.cayey-baptisms.1776-1820",
+          "source.transcription.cayey-marriages.1776-1851",
+          "source.familysearch-burial.francisco-xavier-vazquez-candidate.1801",
+          "source.familysearch-burial.maria-magdalena-cortes.1794",
+          "source.familysearch-burial.jose-vazquez.1801"
+        ],
+        "note": "The chronology is compatible, but compatibility is not identity. The Cayey household remains separate from the direct tree unless a record explicitly bridges the two."
       }
     ],
     "sources": [
@@ -10898,6 +10936,62 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "image_archive": "research/pulls/scans/caguas-dgs-008126765-item9-burials-1801-1810/page-041.jpg through page-230.jpg",
         "image_set_sha256": "a3edfc3a4f06c681a6445565f978ce3ae9a4df0769d57122b0fd5107522b3a27",
         "status": "complete_image_capture_machine_screen_negative_full_manual_transcription_open"
+      },
+      {
+        "id": "source.article.stark-vasquez-cayey-coamo-guayama.2006",
+        "type": "published_scholarly_genealogical_reconstruction",
+        "title": "Reconstructing the Vásquez Family Tree in Cayey, Coamo, and Guayama: The Descendants of Juan Vásquez de Rivera",
+        "author": "David M. Stark",
+        "publication": "Hereditas",
+        "volume_issue_pages": "7:1 (2006), 96–101",
+        "accessed": "2026-07-24",
+        "url": "https://genus-meridiem-pr.blogspot.com/2020/06/reconstructing-vasquez-family-tree-in.html",
+        "pdf_url": "https://drive.google.com/file/d/17VypuHIUCzKouKgpxvKvvPNAZRSG3JkS/view?usp=sharing",
+        "quality": "published_reconstruction_with_archival_and_parish_citations_not_a_direct_identity_bridge_to_the_caguas_household",
+        "citation": "Stark reconstructs a Cayey, Coamo, and Guayama Vázquez network using military marriage inventories, dispensations, and parish registers. It identifies Francisco Xavier Vázquez as a son of Pedro Vázquez and Francisca Quiñones, follows Pedro to Juan Vázquez de Rivera and Juliana de Alvarado, and places Juan at about age twenty and resident in Ponce in 1709. The author explicitly states that nothing is known of Juan's ancestry. The article does not identify the Caguas husband of María Magdalena Cortés as Francisco Xavier and therefore does not extend the direct line.",
+        "local_archive": "research/pulls/articles/2006-stark-reconstructing-vasquez-family-tree-coamo-cayey-guayama.pdf",
+        "sha256": "128c131c5d413dc266eacb6cbac28aec7be98f81b7d40fbf67130b5c5291806d",
+        "status": "relevant_unattached_network_earliest_member_ancestry_unknown"
+      },
+      {
+        "id": "source.transcription.cayey-baptisms.1776-1820",
+        "type": "complete_volunteer_parish_baptism_transcription_family_name_order",
+        "title": "Cayey baptisms, 1776–1820, family-name order",
+        "repository": "Hijos de Coamo transcription of Nuestra Señora de la Asunción registers",
+        "accessed": "2026-07-24",
+        "url": "https://hijosdecoamopr.com/cayey-puerto-rico-church-records-indexes-1765-1967/",
+        "quality": "complete_volunteer_transcription_used_as_finding_aid",
+        "citation": "The transcription records Domingo, born 4 August and baptized 15 August 1796, and Juana, born 2 January and baptized 13 January 1799, as children of Francisco Xavier Vázquez and María de los Reyes. Their dates make a post-1794 marriage chronologically possible but do not identify Francisco Xavier as the widower of María Magdalena Cortés.",
+        "local_archive": "research/pulls/transcriptions/cayey-early-parish-registers/cayey-bautismos-1776-1820-family-name-order.pdf",
+        "sha256": "de8b5119f1e67db5b7a24e6867191a4924764ce70c318e46640584bf6a62a4db",
+        "status": "candidate_household_chronology_documented_identity_bridge_absent"
+      },
+      {
+        "id": "source.transcription.cayey-marriages.1776-1851",
+        "type": "complete_volunteer_parish_marriage_transcription",
+        "title": "Cayey marriages, 1776–1851, version 3.3",
+        "repository": "Hijos de Coamo transcription of Nuestra Señora de la Asunción registers",
+        "accessed": "2026-07-24",
+        "url": "https://hijosdecoamopr.com/cayey-puerto-rico-church-records-indexes-1765-1967/",
+        "quality": "complete_volunteer_transcription_used_as_finding_aid",
+        "citation": "The transcription records Francisco Vázquez Rodríguez, son of Tomás Vázquez and Margarita Rodríguez, marrying María Ortiz Ramos on 27 April 1789; this is a distinct same-name man because María Magdalena Cortés remained alive until 1794. Later marriages of children call their father Francisco Javier Vázquez deceased and their mother María de los Reyes. No entry explicitly identifies Francisco Xavier as María Magdalena's widower.",
+        "local_archive": "research/pulls/transcriptions/cayey-early-parish-registers/cayey-matrimonios-1776-1851-v3.3.pdf",
+        "sha256": "771b0bcc9088a7bc7125acb1851745a986c91e3deaa22aa5c2c482f3b50e3b93",
+        "status": "candidate_household_and_distinct_same_name_man_documented_identity_bridge_absent"
+      },
+      {
+        "id": "source.familysearch-burial.francisco-xavier-vazquez-candidate.1801",
+        "type": "original_parish_burial",
+        "title": "Burial of Francisco Xavier Vázquez, Cayey, 21 October 1801",
+        "repository": "Nuestra Señora de la Asunción, Cayey, via FamilySearch",
+        "accessed": "2026-07-24",
+        "url": "https://www.familysearch.org/ark:/61903/1:1:6Z2N-CP8J?lang=en",
+        "image_url": "https://www.familysearch.org/ark:/61903/3:1:9398-K8SW-QV?view=index&personArk=%2Fark%3A%2F61903%2F1%3A1%3A6Z2N-CP8J&action=view&cc=1807092&lang=en",
+        "quality": "original_register_full_size_image_downloaded_and_visually_reviewed",
+        "citation": "The original register records Francisco Xavier Vázquez's burial in Cayey on 21 October 1801 and names María de los Reyes Vázquez as his wife. It gives no parents, native place, or prior wife. Because María Magdalena Cortés died in 1794 and the Cayey couple had children in 1796 and 1799, the chronology permits a post-1794 remarriage, but the burial supplies no identity bridge to the Caguas household.",
+        "image_archive": "research/pulls/images/cayey-1801-francisco-xavier-vazquez-burial-candidate/1801-10-21-francisco-bazquez-burial-candidate-original-9398-K8SW-QV.jpg",
+        "image_sha256": "f743560fdc8ff305452ff9b3ce7c05310d7425dc67edd6bbbb0cd206cd2b5406",
+        "status": "unmerged_candidate_original_does_not_supply_identity_bridge"
       }
     ],
     "geographyEvents": [
