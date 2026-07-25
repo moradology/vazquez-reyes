@@ -678,6 +678,20 @@ export const sources = [
     href: "https://www.newjerseydeathindex.com/",
     grade: "Official index images",
   },
+  {
+    id: "juncos-census-1832",
+    label: "1832 Juncos census transcription",
+    detail: "The complete 50-page transcription contains several Vázquez households, but none that can be tied to Máximo and Josefa. The only named Atilano is Atilano Piñero. A Francisco Vázquez, age 35, and Magdalena Delgado, age 70, remain separate near-matches without family bridges.",
+    href: "https://hijosdecoamopr.com/wp-content/uploads/2023/01/Juncos-%E2%80%93-Censo-1832-Film-1511631.pdf",
+    grade: "Complete volunteer census transcription · original images pending",
+  },
+  {
+    id: "foreign-residents-1815-1845",
+    label: "Puerto Rico foreign residents, 1815–1845",
+    detail: "The complete applicant compendium contains no exact direct-line ancestor. Its only Vázquez-like applicant is Juan Luis Bázquez in 1824, with no record connecting him to this family. This collection is not a census of every overseas-born resident.",
+    href: "https://hijosdecoamopr.com/wp-content/uploads/2022/08/Compendio-Residentes-extranjeros-1815-1845.pdf",
+    grade: "Complete volunteer collection index · bounded negative",
+  },
 ];
 
 export const familyCouples = [
@@ -1196,6 +1210,8 @@ export const negativeSearches = [
   "The Las Piedras 1787–1816 marriage transcription contains no Luís and Isidora Rodríguez marriage. Original 1790 and 1792 baptisms nevertheless verify children Simona and Ysabel under Luís de Rivera and Isidora Rodríguez.",
   "A 1787 Simona born to Isidora Montañez is not the woman who married León Garrafa; the exact 1790 baptism resolves that same-name candidate.",
   "A faded 1791 Lorenza baptism names an Isidora Rodríguez with a different apparent father. It is preserved but not merged with the target household.",
+  "The complete 1832 Juncos census transcription contains no household that can be defensibly assigned to Máximo Vázquez, Josefa Rivera, or Atilano Vázquez. The only named Atilano is Atilano Piñero; a Francisco Vázquez household and Magdalena Delgado remain detached near-matches. Blank repeated surnames and unreadable fields prevent an absence claim.",
+  "The complete 1815–1845 foreign-resident compendium contains no exact direct-line ancestor. Its only Vázquez-like applicant is Juan Luis Bázquez in 1824, with no identity bridge to the family. The file set is not a census of every immigrant, so the negative screen does not establish Puerto Rico birth for every earlier ancestor.",
 ];
 
 export const nameVariants = [
@@ -1474,5 +1490,13 @@ export const updates = [
   {
     date: "24 Jul 2026",
     text: "Tested a possible Cayey–Ponce Vázquez route. Francisco Xavier Vázquez’s original 1801 Cayey burial names María de los Reyes Vázquez but no parents, native place, or prior wife, so he remains separate from our Caguas Francisco. The published reconstruction reaches Juan Vázquez de Rivera in Ponce in 1709 and explicitly stops with Juan’s ancestry unknown.",
+  },
+  {
+    date: "25 Jul 2026",
+    text: "Screened and preserved the complete 1832 Juncos census transcription. No household can be attached to Máximo, Josefa, or Atilano; the Francisco Vázquez, Atilano Piñero, and Magdalena Delgado near-matches remain explicitly separate.",
+  },
+  {
+    date: "25 Jul 2026",
+    text: "Screened the complete 1815–1845 Puerto Rico foreign-resident compendium. No direct-line ancestor appears, and Juan Luis Bázquez remains an unattached surname lead rather than evidence of an overseas origin.",
   },
 ];
