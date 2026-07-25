@@ -44,6 +44,7 @@ import shutil
 import socket
 import subprocess
 import time
+import unicodedata
 from contextlib import contextmanager
 from datetime import datetime, timezone
 from pathlib import Path
@@ -111,7 +112,7 @@ SESSION_RESET_CONFIRMATION = "RESET-ANCESTRY-SESSION"
 AGENT_RE = re.compile(r"[A-Za-z0-9][A-Za-z0-9._-]{0,63}")
 CAPTURE_ID_RE = re.compile(r"[A-Za-z0-9][A-Za-z0-9._-]{0,127}")
 CACHE_KINDS = ("collection", "record", "search")
-SEARCH_TEXT_FILTERS = ("birth", "place", "spouse", "birthplace")
+SEARCH_TEXT_FILTERS = ("birth", "place", "spouse", "birthplace", "death", "deathplace")
 CENSUS_COLLECTION_YEARS = {
     "8054": 1850,
     "7667": 1860,
@@ -227,6 +228,8 @@ def cache_location(key: str, meta: dict) -> dict:
             "collection": collection,
             "name": name,
             **{field: meta.get(field) for field in SEARCH_TEXT_FILTERS},
+            "exact_death": meta.get("exact_death"),
+            "exact_deathplace": meta.get("exact_deathplace"),
             "exact_name": meta.get("exact_name"),
         }
         validate_search_location(loc, context="cache metadata")
@@ -1443,6 +1446,14 @@ def ancestry_search_params(loc: dict) -> dict[str, str]:
     birth_parts = [value for value in (loc["birth"], loc["birthplace"]) if value]
     if birth_parts:
         params["birth"] = "_".join(birth_parts)
+    death_parts = [value for value in (loc["death"], loc["deathplace"]) if value]
+    if death_parts:
+        params["death"] = "_".join(death_parts)
+    if loc["exact_death"]:
+        death_modifier = "0-0-0"
+        if loc["exact_deathplace"]:
+            death_modifier += "_1-0"
+        params["death_x"] = death_modifier
     if loc["place"]:
         params["residence"] = loc["place"]
     if loc["spouse"]:
@@ -1514,7 +1525,11 @@ def validate_search_rows(rows, collection: str) -> list[dict]:
 
 def normalized_words(value: str) -> list[str]:
     """Case-fold text into Unicode-aware alphanumeric words."""
-    folded = value.casefold()
+    folded = "".join(
+        char
+        for char in unicodedata.normalize("NFKD", value.casefold())
+        if not unicodedata.combining(char)
+    )
     return [word for word in re.split(r"[^\w]+", folded, flags=re.UNICODE) if word]
 
 
@@ -1558,8 +1573,17 @@ def validate_search_location(loc: object, *, context: str = "search") -> dict:
         value = loc.get(field)
         if not isinstance(value, str) or (value and not value.strip()):
             raise CockpitError(f"malformed Ancestry {context} filter", filter=field)
-    if loc["birth"] and not re.fullmatch(r"\d{3,4}", loc["birth"]):
-        raise CockpitError("birth must be a 3- or 4-digit year")
+    for field in ("birth", "death"):
+        if loc[field] and not re.fullmatch(r"\d{3,4}", loc[field]):
+            raise CockpitError(f"{field} must be a 3- or 4-digit year")
+    if not isinstance(loc.get("exact_death"), bool):
+        raise CockpitError(f"malformed Ancestry {context} exact-death filter")
+    if loc["exact_death"] and not loc["death"]:
+        raise CockpitError("exact death year requires a death year")
+    if not isinstance(loc.get("exact_deathplace"), bool):
+        raise CockpitError(f"malformed Ancestry {context} exact-death-place filter")
+    if loc["exact_deathplace"] and (not loc["deathplace"] or not loc["exact_death"]):
+        raise CockpitError("exact death place requires a death place and exact death year")
     if not isinstance(loc.get("exact_name"), bool):
         raise CockpitError(f"malformed Ancestry {context} exact-name filter")
     return loc
@@ -1573,6 +1597,10 @@ def search_location(
     place: str = "",
     spouse: str = "",
     birthplace: str = "",
+    death: str = "",
+    deathplace: str = "",
+    exact_death: bool = False,
+    exact_deathplace: bool = False,
     exact_name: bool = False,
 ) -> dict:
     loc = {
@@ -1583,6 +1611,10 @@ def search_location(
         "place": place,
         "spouse": spouse,
         "birthplace": birthplace,
+        "death": death,
+        "deathplace": deathplace,
+        "exact_death": exact_death,
+        "exact_deathplace": exact_deathplace,
         "exact_name": exact_name,
     }
     return validate_search_location(loc)
@@ -1593,6 +1625,8 @@ def search_filters(loc: dict) -> dict:
     return {
         "name": loc["name"],
         **{field: loc[field] for field in SEARCH_TEXT_FILTERS},
+        "exact_death": loc["exact_death"],
+        "exact_deathplace": loc["exact_deathplace"],
         "exact_name": loc["exact_name"],
     }
 
@@ -1952,6 +1986,10 @@ def cmd_search(args) -> int:
         place=args.place or "",
         spouse=args.spouse or "",
         birthplace=args.birthplace or "",
+        death=args.death or "",
+        deathplace=args.deathplace or "",
+        exact_death=args.exact_death,
+        exact_deathplace=args.exact_deathplace,
         exact_name=args.exact_name,
     )
     key = location_key(loc)
@@ -2022,7 +2060,7 @@ def parse_address(addr: str) -> dict | None:
             pairs = parse_qsl(m.group(2) or "", keep_blank_values=True, strict_parsing=True)
         except ValueError:
             return None
-        allowed = {"name", *SEARCH_TEXT_FILTERS, "exact"}
+        allowed = {"name", *SEARCH_TEXT_FILTERS, "exact_death", "exact_deathplace", "exact"}
         if any(k not in allowed for k, _v in pairs) or len({k for k, _v in pairs}) != len(pairs):
             return None
         params = dict(pairs)
@@ -2032,6 +2070,10 @@ def parse_address(addr: str) -> dict | None:
             return None
         if "exact" in params and params["exact"] != "true":
             return None
+        if "exact_death" in params and params["exact_death"] != "true":
+            return None
+        if "exact_deathplace" in params and params["exact_deathplace"] != "true":
+            return None
         try:
             return search_location(
                 m.group(1),
@@ -2040,6 +2082,10 @@ def parse_address(addr: str) -> dict | None:
                 place=params.get("place", ""),
                 spouse=params.get("spouse", ""),
                 birthplace=params.get("birthplace", ""),
+                death=params.get("death", ""),
+                deathplace=params.get("deathplace", ""),
+                exact_death=params.get("exact_death") == "true",
+                exact_deathplace=params.get("exact_deathplace") == "true",
                 exact_name=params.get("exact") == "true",
             )
         except CockpitError:
@@ -2449,7 +2495,9 @@ EPILOG = """\
 addresses:
   record/COLL/ID                           one record's detail page
   search/COLL?name=Given_Surname&...       a collection search; optional birth,
-                                            place, spouse, birthplace, exact=true
+                                            place, spouse, birthplace, death,
+                                            deathplace, exact_death=true,
+                                            exact_deathplace=true, exact=true
   collection/COLL                          a collection's landing page
 
 semantics (what an agent must know):
@@ -2558,6 +2606,14 @@ def main() -> int:
     p_search.add_argument("--place", metavar="PLACE", help="residence/event place filter, e.g. Smith_Kansas")
     p_search.add_argument("--spouse", metavar="GIVEN_SURNAME", help="spouse-name filter")
     p_search.add_argument("--birthplace", metavar="PLACE", help="birthplace filter")
+    p_search.add_argument("--death", metavar="YEAR", help="approximate death year filter")
+    p_search.add_argument("--deathplace", metavar="PLACE", help="death-place filter")
+    p_search.add_argument("--exact-death", action="store_true", help="require the supplied death year")
+    p_search.add_argument(
+        "--exact-deathplace",
+        action="store_true",
+        help="require the supplied death place (requires --exact-death)",
+    )
     p_search.add_argument("--exact-name", action="store_true", help="require exact given and surname words")
     p_search.add_argument("--agent", metavar="ID", help="agent id for tab ownership and session accounting; default: 'default'")
     p_search.add_argument("--limit", type=int, default=25, metavar="K", help="max results to emit (default 25)")

@@ -72,6 +72,10 @@ def search_data(collection: str = "6224") -> dict:
         "place": "",
         "spouse": "",
         "birthplace": "",
+        "death": "",
+        "deathplace": "",
+        "exact_death": False,
+        "exact_deathplace": False,
         "exact_name": False,
         "count": len(rows),
         "outcome": "results",
@@ -225,11 +229,11 @@ class ParsingTests(unittest.TestCase):
             "https://www.ancestry.com/search/collections/6224/?name=Example_Person&birth=1912",
         )
         filtered = ga.parse_address(
-            "search/6224?name=Example_Person&birth=1912&place=Smith_Kansas&spouse=Mary_Person&birthplace=Kansas&exact=true"
+            "search/6224?name=Example_Person&birth=1912&place=Smith_Kansas&spouse=Mary_Person&birthplace=Kansas&death=1947&deathplace=Naguabo&exact_death=true&exact_deathplace=true&exact=true"
         )
         self.assertEqual(
             ga.url_for(filtered),
-            "https://www.ancestry.com/search/collections/6224/?name=Example_Person&birth=1912_Kansas&residence=Smith_Kansas&spouse=Mary_Person&name_x=1_1",
+            "https://www.ancestry.com/search/collections/6224/?name=Example_Person&birth=1912_Kansas&death=1947_Naguabo&death_x=0-0-0_1-0&residence=Smith_Kansas&spouse=Mary_Person&name_x=1_1",
         )
         self.assertNotEqual(ga.location_key(filtered), ga.location_key(search))
         collection = {"type": "collection", "collection": "6224"}
@@ -248,6 +252,19 @@ class ParsingTests(unittest.TestCase):
 
 
 class ValidationTests(unittest.TestCase):
+    def test_search_name_matching_ignores_diacritics(self):
+        loc = ga.search_location("9100", "Aurora_Perez", exact_name=True)
+        accented = {
+            **row("9100"),
+            "primary_name": "Aurora Monserrate Pérez",
+            "cells": ["Aurora Monserrate Pérez"],
+            "text": "Aurora Monserrate Pérez",
+        }
+        self.assertEqual(
+            ga.validate_search_outcome(loc, "Search results", [accented]),
+            "results",
+        )
+
     def test_page_accepts_expected_url_and_rejects_redirects_and_challenges(self):
         loc = search_loc()
         good = "https://www.ancestry.com/search/collections/6224/?name=Example_Person"
@@ -376,6 +393,10 @@ class ValidationTests(unittest.TestCase):
             place="Smith_Kansas",
             spouse="Mary_Person",
             birthplace="Kansas",
+            death="1947",
+            deathplace="Naguabo",
+            exact_death=True,
+            exact_deathplace=True,
             exact_name=True,
         )
         ga.validate_final_search_query(loc, ga.url_for(loc))
@@ -899,6 +920,10 @@ class SessionAccountingTests(unittest.TestCase):
                 place="Smith_Kansas",
                 spouse="Mary_Person",
                 birthplace="Kansas",
+                death="1947",
+                deathplace="Naguabo",
+                exact_death=True,
+                exact_deathplace=True,
                 exact_name=True,
             )
             data = {**search_data(), **ga.search_filters(loc)}
@@ -910,7 +935,9 @@ class SessionAccountingTests(unittest.TestCase):
             with patch.object(sys, "argv", [
                 "gen ancestry", "search", "--collection", "6224", "--name", "Example_Person",
                 "--birth", "1911", "--place", "Smith_Kansas", "--spouse", "Mary_Person",
-                "--birthplace", "Kansas", "--exact-name", "--agent", "alice", "--cache-only",
+                "--birthplace", "Kansas", "--death", "1947", "--deathplace", "Naguabo",
+                "--exact-death", "--exact-deathplace", "--exact-name",
+                "--agent", "alice", "--cache-only",
             ]):
                 code, output = captured(ga.main)
             self.assertEqual(code, 0)
@@ -920,7 +947,11 @@ class SessionAccountingTests(unittest.TestCase):
                 "place": "Smith_Kansas",
                 "spouse": "Mary_Person",
                 "birthplace": "Kansas",
+                "death": "1947",
+                "deathplace": "Naguabo",
             })
+            self.assertTrue(output["exact_death"])
+            self.assertTrue(output["exact_deathplace"])
             self.assertTrue(output["exact_name"])
             cdp.assert_not_called()
 
