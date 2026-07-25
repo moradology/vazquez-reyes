@@ -401,6 +401,13 @@ export const timelinePeople: readonly TimelinePerson[] = [
     "directLine": false
   },
   {
+    "id": "person.maria-josefa-vazquez-rivera-1826",
+    "name": "María Josefa Vázquez",
+    "slug": "maria-josefa-vazquez-rivera-1826",
+    "branch": "vazquez",
+    "directLine": false
+  },
+  {
     "id": "person.maria-cortez",
     "name": "María Magdalena Cortés",
     "slug": "maria-cortez",
@@ -1556,6 +1563,28 @@ export const timelineEvents: readonly TimelineEvent[] = [
     "source": null
   },
   {
+    "id": "timeline.maria-josefa-vazquez-rivera-1826.baptism.18260312",
+    "branch": "vazquez",
+    "directLine": false,
+    "dateLabel": "12 March 1826",
+    "dateTime": "1826-03-12",
+    "sortValue": 18260312,
+    "eventType": "baptism",
+    "eventTypeLabel": "Baptism",
+    "certainty": "Strongly supported",
+    "title": "María Josefa Vázquez is baptized",
+    "description": "Baptized in Nuestra Señora de las Mercedes, San Lorenzo, Puerto Rico.",
+    "place": "Nuestra Señora de las Mercedes, San Lorenzo, Puerto Rico",
+    "people": [
+      {
+        "id": "person.maria-josefa-vazquez-rivera-1826",
+        "name": "María Josefa Vázquez",
+        "slug": "maria-josefa-vazquez-rivera-1826"
+      }
+    ],
+    "source": null
+  },
+  {
     "id": "timeline.atilano-vazquez.birth.18280615",
     "branch": "vazquez",
     "directLine": true,
@@ -2706,7 +2735,7 @@ export const timelineEvents: readonly TimelineEvent[] = [
     "sortValue": 18891231,
     "eventType": "death",
     "eventTypeLabel": "Death",
-    "certainty": "Documented",
+    "certainty": "Approximate or bounded",
     "title": "Tomasa Vázquez Rivera dies",
     "description": "Death recorded in Maunabo, Puerto Rico.",
     "place": "Maunabo, Puerto Rico",

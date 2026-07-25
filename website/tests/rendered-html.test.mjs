@@ -189,6 +189,10 @@ test("renders a filterable two-line family timeline from the research ledger", a
   assert.match(html, /View full size/);
   assert.match(html, /United States Fish Commission/);
   assert.match(html, /nynyma_rec0040_1_01610_0064/);
+  assert.match(
+    html,
+    /data-timeline-event="timeline\.maria-josefa-vazquez-rivera-1826\.baptism\.18260312"[\s\S]*?Strongly supported/,
+  );
   assert.ok(
     [...html.matchAll(/\bdata-timeline-event=/g)].length > 50,
     "expected a substantial direct-line chronology",

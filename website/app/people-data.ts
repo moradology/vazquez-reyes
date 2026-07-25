@@ -9268,6 +9268,114 @@ export const peopleProfiles: readonly PersonProfile[] = [
           "source.search-audit.humacao-burials.maximo-josefa.1815-1852"
         ],
         "note": "The screen closes a repeated-search loop in the surviving Humacao indexes, but it does not establish where or when either person died. The 1821–1822 gap, index omissions, legibility, name variation, and other parishes remain open."
+      },
+      {
+        "id": "claim.maria-josefa-vazquez-baptism-1826-candidate",
+        "subject": [
+          "person.maria-josefa-vazquez-rivera-1826",
+          "person.maximo-vazquez",
+          "person.josefa-rivera"
+        ],
+        "predicate": "birth_family_and_baptism_candidate",
+        "object": {
+          "candidate_person": "person.maria-josefa-vazquez-rivera-1826",
+          "baptism": "1826-03-12",
+          "place": "San Lorenzo, Puerto Rico",
+          "transcribed_parent_pair": [
+            "person.maximo-vazquez",
+            "person.josefa-rivera"
+          ],
+          "source_coordinates": {
+            "overall_image": 795,
+            "item_image": 281,
+            "folio": "84",
+            "record": 423
+          }
+        },
+        "status": "strong_exact_parent_pair_complete_transcription_original_image_pending",
+        "evidence_refs": [
+          "source.transcription.san-lorenzo-baptism.maria-josefa-vazquez.1826"
+        ],
+        "note": "The exact parent pair makes this a strong new candidate child and Atilano sibling. The original image is access-restricted and has not yet been reviewed, so the baptism date, wording, legitimacy, classification, birthplace, godparents, and exact relationship are not promoted to confirmed or added to the canonical family graph."
+      },
+      {
+        "id": "claim.maximo-josefa-likely-living-1849",
+        "subject": [
+          "person.maximo-vazquez",
+          "person.josefa-rivera"
+        ],
+        "predicate": "latest_contextual_life_status_evidence",
+        "object": {
+          "date": "1849-02-10",
+          "event": "marriage of son Atilano Vázquez",
+          "place": "Yabucoa, Puerto Rico",
+          "observation": "The entry explicitly calls bride Juana Rodríguez's father Andrés deceased but names groom Atilano's parents Máximo Vázquez and Josefa de Rivera without a deceased label."
+        },
+        "status": "cautious_contextual_inference_not_direct_life_event",
+        "evidence_refs": [
+          "source.familysearch-marriage.atilano-juana.1849"
+        ],
+        "note": "The within-entry contrast supports, but does not prove, that Máximo and Josefa were treated as living on 10 February 1849. A clerk could omit a deceased label, and the entry is not a death or residence record. It is therefore a latest-likely-living boundary, not a confirmed alive-on date."
+      },
+      {
+        "id": "claim.maximo-vazquez-cayey-same-name-rejected",
+        "subject": "person.maximo-vazquez",
+        "predicate": "same_name_candidate_rejected",
+        "object": {
+          "candidate": "Máximo Vázquez Sánchez of Cayey",
+          "candidate_parents": [
+            "Mateo Vázquez",
+            "Victoriana Sánchez"
+          ],
+          "candidate_spouses": [
+            "María Josefa Ortiz",
+            "Juana Vázquez"
+          ],
+          "direct_person_parents": [
+            "person.francisco-father-of-maximo-vazquez",
+            "person.maria-cortez"
+          ],
+          "direct_person_spouse": "person.josefa-rivera",
+          "reasons": [
+            "The Cayey transcription gives a different parent pair and different wives.",
+            "The direct Máximo's original 1805 marriage names Francisco and María Cortez as his parents and Josefa Ribera as his wife.",
+            "The direct family appears in Humacao, Juncos, San Lorenzo, and Yabucoa records without an identity bridge to the Cayey household."
+          ]
+        },
+        "status": "rejected_distinct_same_name_household",
+        "evidence_refs": [
+          "source.transcription.cayey-baptisms.1776-1820",
+          "source.transcription.cayey-marriages.1776-1851",
+          "source.familysearch-marriage.maximo-josefa.1805"
+        ],
+        "note": "Do not merge the online-tree person or Cayey household into the direct line. The overlap is the common name Máximo Vázquez, not a demonstrated identity."
+      },
+      {
+        "id": "claim.maximo-josefa-san-lorenzo-burial-transcription-audit",
+        "subject": [
+          "person.maximo-vazquez",
+          "person.josefa-rivera"
+        ],
+        "predicate": "death_or_burial_search_coverage",
+        "object": {
+          "place": "San Lorenzo, Puerto Rico",
+          "coverage": "complete 1856–1867 volunteer transcription, 2,447 data rows",
+          "targets": [
+            {
+              "person": "person.maximo-vazquez",
+              "result": "No defensible entry; same-name hits were younger people with other mothers or parents."
+            },
+            {
+              "person": "person.josefa-rivera",
+              "result": "No defensible entry; the Josefa de Rivera hit was age ten."
+            }
+          ]
+        },
+        "status": "bounded_complete_transcription_review_negative_targets_not_proof_of_absence",
+        "evidence_refs": [
+          "source.transcription.san-lorenzo-burials.1856-1867"
+        ],
+        "note": "This rules out only obvious target entries in the transcription. It does not substitute for original-image review or cover the missing San Lorenzo burial span 1829–1856."
       }
     ],
     "sources": [
@@ -9630,6 +9738,59 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "image_archive": "research/pulls/images/humacao-burial-indexes-1815-1820 through humacao-burial-indexes-1846-1852, with per-directory SHA-256 manifests",
         "reasoning_trace": "research/reasoning-traces/2026-07-25-maximo-josefa-humacao-burial-index-screen.md",
         "status": "bounded_complete_index_screen_negative_for_both_targets_not_proof_of_absence"
+      },
+      {
+        "id": "source.transcription.san-lorenzo-baptism.maria-josefa-vazquez.1826",
+        "type": "complete_volunteer_parish_baptism_transcription_finding_aid",
+        "title": "1826 baptism transcription for María Josefa Vázquez",
+        "repository": "Hijos de Coamo transcription of Nuestra Señora de las Mercedes, San Lorenzo, book 3 for pardos, via Google Sheets",
+        "accessed": "2026-07-25",
+        "url": "https://docs.google.com/spreadsheets/d/16AK5wSfhZNjQWLbl-HSXpGF0Jek8pv6EaLOLj3Y8Um8/edit",
+        "familysearch_image_url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSV2-97YM-F?i=794",
+        "quality": "complete_volunteer_transcription_finding_aid_original_image_not_yet_reviewed",
+        "citation": "The transcription records María Josefa Vázquez, daughter of Máximo Vázquez and Josefa de Rivera, baptized 12 March 1826. It points to overall image 795, item image 281, folio 84, record 423. This exact-parent-pair hit is strong but remains provisional until the original register image is captured and read.",
+        "local_archive": "research/pulls/transcriptions/san-lorenzo-baptisms-1811-1852/transcription-c.csv",
+        "sha256": "8aa8e9d646f6e9ecb12ea933d37a1679b77c0e1f39ea8c4de0158a783372050b",
+        "status": "strong_candidate_original_image_pending"
+      },
+      {
+        "id": "source.transcription.cayey-baptisms.1776-1820",
+        "type": "complete_volunteer_parish_baptism_transcription_family_name_order",
+        "title": "Cayey baptisms, 1776–1820, family-name order",
+        "repository": "Hijos de Coamo transcription of Nuestra Señora de la Asunción registers",
+        "accessed": "2026-07-24",
+        "url": "https://hijosdecoamopr.com/cayey-puerto-rico-church-records-indexes-1765-1967/",
+        "quality": "complete_volunteer_transcription_used_as_finding_aid",
+        "citation": "The transcription records Domingo, born 4 August and baptized 15 August 1796, and Juana, born 2 January and baptized 13 January 1799, as children of Francisco Xavier Vázquez and María de los Reyes. Their dates make a post-1794 marriage chronologically possible but do not identify Francisco Xavier as the widower of María Magdalena Cortés.",
+        "local_archive": "research/pulls/transcriptions/cayey-early-parish-registers/cayey-bautismos-1776-1820-family-name-order.pdf",
+        "sha256": "de8b5119f1e67db5b7a24e6867191a4924764ce70c318e46640584bf6a62a4db",
+        "status": "candidate_household_chronology_documented_identity_bridge_absent"
+      },
+      {
+        "id": "source.transcription.cayey-marriages.1776-1851",
+        "type": "complete_volunteer_parish_marriage_transcription",
+        "title": "Cayey marriages, 1776–1851, version 3.3",
+        "repository": "Hijos de Coamo transcription of Nuestra Señora de la Asunción registers",
+        "accessed": "2026-07-24",
+        "url": "https://hijosdecoamopr.com/cayey-puerto-rico-church-records-indexes-1765-1967/",
+        "quality": "complete_volunteer_transcription_used_as_finding_aid",
+        "citation": "The transcription records Francisco Vázquez Rodríguez, son of Tomás Vázquez and Margarita Rodríguez, marrying María Ortiz Ramos on 27 April 1789; this is a distinct same-name man because María Magdalena Cortés remained alive until 1794. Later marriages of children call their father Francisco Javier Vázquez deceased and their mother María de los Reyes. No entry explicitly identifies Francisco Xavier as María Magdalena's widower.",
+        "local_archive": "research/pulls/transcriptions/cayey-early-parish-registers/cayey-matrimonios-1776-1851-v3.3.pdf",
+        "sha256": "771b0bcc9088a7bc7125acb1851745a986c91e3deaa22aa5c2c482f3b50e3b93",
+        "status": "candidate_household_and_distinct_same_name_man_documented_identity_bridge_absent"
+      },
+      {
+        "id": "source.transcription.san-lorenzo-burials.1856-1867",
+        "type": "complete_volunteer_parish_burial_transcription",
+        "title": "San Lorenzo burials, 1856–1867",
+        "repository": "Hijos de Coamo transcription of Nuestra Señora de las Mercedes register, via Google Sheets",
+        "accessed": "2026-07-25",
+        "url": "https://docs.google.com/spreadsheets/d/1Ze4IGIMaab33kJ0QCKcmjMJBp9uF5HKsNeFmEpnCxqM/edit",
+        "quality": "complete_volunteer_transcription_used_as_finding_aid",
+        "citation": "All 2,447 data rows were screened for Máximo or Maximino Vázquez and Josefa Rivera or Ribera. The Vázquez hits were younger people with different mothers or parents, and the Josefa de Rivera hit was a ten-year-old child. No defensible entry for the direct Máximo or Josefa was found. This is a transcription-level bounded negative, not proof that either person was absent from San Lorenzo or alive after 1867.",
+        "local_archive": "research/pulls/transcriptions/san-lorenzo-burials-1856-1867/san-lorenzo-burials-1856-1867.csv",
+        "sha256": "6b71b07bcb0b91703cb7bb54cc390fcd35be2ec1d6a43b3bf844f60bcbf1f813",
+        "status": "bounded_complete_transcription_screen_negative_targets_not_proof_of_absence"
       }
     ],
     "geographyEvents": [
@@ -10069,6 +10230,81 @@ export const peopleProfiles: readonly PersonProfile[] = [
           "source.search-audit.humacao-burials.maximo-josefa.1815-1852"
         ],
         "note": "The screen closes a repeated-search loop in the surviving Humacao indexes, but it does not establish where or when either person died. The 1821–1822 gap, index omissions, legibility, name variation, and other parishes remain open."
+      },
+      {
+        "id": "claim.maria-josefa-vazquez-baptism-1826-candidate",
+        "subject": [
+          "person.maria-josefa-vazquez-rivera-1826",
+          "person.maximo-vazquez",
+          "person.josefa-rivera"
+        ],
+        "predicate": "birth_family_and_baptism_candidate",
+        "object": {
+          "candidate_person": "person.maria-josefa-vazquez-rivera-1826",
+          "baptism": "1826-03-12",
+          "place": "San Lorenzo, Puerto Rico",
+          "transcribed_parent_pair": [
+            "person.maximo-vazquez",
+            "person.josefa-rivera"
+          ],
+          "source_coordinates": {
+            "overall_image": 795,
+            "item_image": 281,
+            "folio": "84",
+            "record": 423
+          }
+        },
+        "status": "strong_exact_parent_pair_complete_transcription_original_image_pending",
+        "evidence_refs": [
+          "source.transcription.san-lorenzo-baptism.maria-josefa-vazquez.1826"
+        ],
+        "note": "The exact parent pair makes this a strong new candidate child and Atilano sibling. The original image is access-restricted and has not yet been reviewed, so the baptism date, wording, legitimacy, classification, birthplace, godparents, and exact relationship are not promoted to confirmed or added to the canonical family graph."
+      },
+      {
+        "id": "claim.maximo-josefa-likely-living-1849",
+        "subject": [
+          "person.maximo-vazquez",
+          "person.josefa-rivera"
+        ],
+        "predicate": "latest_contextual_life_status_evidence",
+        "object": {
+          "date": "1849-02-10",
+          "event": "marriage of son Atilano Vázquez",
+          "place": "Yabucoa, Puerto Rico",
+          "observation": "The entry explicitly calls bride Juana Rodríguez's father Andrés deceased but names groom Atilano's parents Máximo Vázquez and Josefa de Rivera without a deceased label."
+        },
+        "status": "cautious_contextual_inference_not_direct_life_event",
+        "evidence_refs": [
+          "source.familysearch-marriage.atilano-juana.1849"
+        ],
+        "note": "The within-entry contrast supports, but does not prove, that Máximo and Josefa were treated as living on 10 February 1849. A clerk could omit a deceased label, and the entry is not a death or residence record. It is therefore a latest-likely-living boundary, not a confirmed alive-on date."
+      },
+      {
+        "id": "claim.maximo-josefa-san-lorenzo-burial-transcription-audit",
+        "subject": [
+          "person.maximo-vazquez",
+          "person.josefa-rivera"
+        ],
+        "predicate": "death_or_burial_search_coverage",
+        "object": {
+          "place": "San Lorenzo, Puerto Rico",
+          "coverage": "complete 1856–1867 volunteer transcription, 2,447 data rows",
+          "targets": [
+            {
+              "person": "person.maximo-vazquez",
+              "result": "No defensible entry; same-name hits were younger people with other mothers or parents."
+            },
+            {
+              "person": "person.josefa-rivera",
+              "result": "No defensible entry; the Josefa de Rivera hit was age ten."
+            }
+          ]
+        },
+        "status": "bounded_complete_transcription_review_negative_targets_not_proof_of_absence",
+        "evidence_refs": [
+          "source.transcription.san-lorenzo-burials.1856-1867"
+        ],
+        "note": "This rules out only obvious target entries in the transcription. It does not substitute for original-image review or cover the missing San Lorenzo burial span 1829–1856."
       }
     ],
     "sources": [
@@ -10430,6 +10666,33 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "image_archive": "research/pulls/images/humacao-burial-indexes-1815-1820 through humacao-burial-indexes-1846-1852, with per-directory SHA-256 manifests",
         "reasoning_trace": "research/reasoning-traces/2026-07-25-maximo-josefa-humacao-burial-index-screen.md",
         "status": "bounded_complete_index_screen_negative_for_both_targets_not_proof_of_absence"
+      },
+      {
+        "id": "source.transcription.san-lorenzo-baptism.maria-josefa-vazquez.1826",
+        "type": "complete_volunteer_parish_baptism_transcription_finding_aid",
+        "title": "1826 baptism transcription for María Josefa Vázquez",
+        "repository": "Hijos de Coamo transcription of Nuestra Señora de las Mercedes, San Lorenzo, book 3 for pardos, via Google Sheets",
+        "accessed": "2026-07-25",
+        "url": "https://docs.google.com/spreadsheets/d/16AK5wSfhZNjQWLbl-HSXpGF0Jek8pv6EaLOLj3Y8Um8/edit",
+        "familysearch_image_url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSV2-97YM-F?i=794",
+        "quality": "complete_volunteer_transcription_finding_aid_original_image_not_yet_reviewed",
+        "citation": "The transcription records María Josefa Vázquez, daughter of Máximo Vázquez and Josefa de Rivera, baptized 12 March 1826. It points to overall image 795, item image 281, folio 84, record 423. This exact-parent-pair hit is strong but remains provisional until the original register image is captured and read.",
+        "local_archive": "research/pulls/transcriptions/san-lorenzo-baptisms-1811-1852/transcription-c.csv",
+        "sha256": "8aa8e9d646f6e9ecb12ea933d37a1679b77c0e1f39ea8c4de0158a783372050b",
+        "status": "strong_candidate_original_image_pending"
+      },
+      {
+        "id": "source.transcription.san-lorenzo-burials.1856-1867",
+        "type": "complete_volunteer_parish_burial_transcription",
+        "title": "San Lorenzo burials, 1856–1867",
+        "repository": "Hijos de Coamo transcription of Nuestra Señora de las Mercedes register, via Google Sheets",
+        "accessed": "2026-07-25",
+        "url": "https://docs.google.com/spreadsheets/d/1Ze4IGIMaab33kJ0QCKcmjMJBp9uF5HKsNeFmEpnCxqM/edit",
+        "quality": "complete_volunteer_transcription_used_as_finding_aid",
+        "citation": "All 2,447 data rows were screened for Máximo or Maximino Vázquez and Josefa Rivera or Ribera. The Vázquez hits were younger people with different mothers or parents, and the Josefa de Rivera hit was a ten-year-old child. No defensible entry for the direct Máximo or Josefa was found. This is a transcription-level bounded negative, not proof that either person was absent from San Lorenzo or alive after 1867.",
+        "local_archive": "research/pulls/transcriptions/san-lorenzo-burials-1856-1867/san-lorenzo-burials-1856-1867.csv",
+        "sha256": "6b71b07bcb0b91703cb7bb54cc390fcd35be2ec1d6a43b3bf844f60bcbf1f813",
+        "status": "bounded_complete_transcription_screen_negative_targets_not_proof_of_absence"
       }
     ],
     "geographyEvents": [
@@ -16991,5 +17254,100 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "map_note": "The census again recorded Juan and Dolores together, both marked CC, contrato consensual."
       }
     ]
+  },
+  {
+    "id": "person.maria-josefa-vazquez-rivera-1826",
+    "slug": "maria-josefa-vazquez-rivera-1826",
+    "displayName": "María Josefa Vázquez",
+    "sex": "female",
+    "tone": "vazquez",
+    "siteProjection": "research_only",
+    "record": {
+      "id": "person.maria-josefa-vazquez-rivera-1826",
+      "display_name": "María Josefa Vázquez",
+      "sex": "female",
+      "birth": {
+        "place": "San Lorenzo, Puerto Rico",
+        "status": "baptism_transcription_only_exact_birth_date_not_yet_read_from_original"
+      },
+      "baptism": {
+        "date": "1826-03-12",
+        "place": "Nuestra Señora de las Mercedes, San Lorenzo, Puerto Rico",
+        "status": "strong_exact_parent_pair_complete_volunteer_transcription_original_image_pending"
+      },
+      "death": {
+        "status": "not_yet_found"
+      },
+      "transcribed_parent_pair": [
+        "person.maximo-vazquez",
+        "person.josefa-rivera"
+      ],
+      "site_projection": "research_only",
+      "confidence": "strong_transcription_candidate_not_yet_promoted_to_confirmed_child",
+      "evidence_refs": [
+        "source.transcription.san-lorenzo-baptism.maria-josefa-vazquez.1826"
+      ],
+      "notes": "A complete volunteer transcription gives María Josefa Vázquez, daughter of Máximo Vázquez and Josefa de Rivera, baptized 12 March 1826. It identifies the original as overall image 795, item image 281, folio 84, record 423. The exact parent pair makes this a strong candidate sister of Atilano, but the original register image must be captured and read before the relationship or baptism is called confirmed. She is deliberately excluded from the canonical parent-child graph until that review is complete."
+    },
+    "relations": {
+      "parentIds": [],
+      "partnerIds": [],
+      "childIds": [],
+      "siblingIds": [],
+      "relatedIds": [
+        "person.maximo-vazquez",
+        "person.josefa-rivera"
+      ],
+      "namedChildren": [],
+      "namedSiblings": []
+    },
+    "claims": [
+      {
+        "id": "claim.maria-josefa-vazquez-baptism-1826-candidate",
+        "subject": [
+          "person.maria-josefa-vazquez-rivera-1826",
+          "person.maximo-vazquez",
+          "person.josefa-rivera"
+        ],
+        "predicate": "birth_family_and_baptism_candidate",
+        "object": {
+          "candidate_person": "person.maria-josefa-vazquez-rivera-1826",
+          "baptism": "1826-03-12",
+          "place": "San Lorenzo, Puerto Rico",
+          "transcribed_parent_pair": [
+            "person.maximo-vazquez",
+            "person.josefa-rivera"
+          ],
+          "source_coordinates": {
+            "overall_image": 795,
+            "item_image": 281,
+            "folio": "84",
+            "record": 423
+          }
+        },
+        "status": "strong_exact_parent_pair_complete_transcription_original_image_pending",
+        "evidence_refs": [
+          "source.transcription.san-lorenzo-baptism.maria-josefa-vazquez.1826"
+        ],
+        "note": "The exact parent pair makes this a strong new candidate child and Atilano sibling. The original image is access-restricted and has not yet been reviewed, so the baptism date, wording, legitimacy, classification, birthplace, godparents, and exact relationship are not promoted to confirmed or added to the canonical family graph."
+      }
+    ],
+    "sources": [
+      {
+        "id": "source.transcription.san-lorenzo-baptism.maria-josefa-vazquez.1826",
+        "type": "complete_volunteer_parish_baptism_transcription_finding_aid",
+        "title": "1826 baptism transcription for María Josefa Vázquez",
+        "repository": "Hijos de Coamo transcription of Nuestra Señora de las Mercedes, San Lorenzo, book 3 for pardos, via Google Sheets",
+        "accessed": "2026-07-25",
+        "url": "https://docs.google.com/spreadsheets/d/16AK5wSfhZNjQWLbl-HSXpGF0Jek8pv6EaLOLj3Y8Um8/edit",
+        "familysearch_image_url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSV2-97YM-F?i=794",
+        "quality": "complete_volunteer_transcription_finding_aid_original_image_not_yet_reviewed",
+        "citation": "The transcription records María Josefa Vázquez, daughter of Máximo Vázquez and Josefa de Rivera, baptized 12 March 1826. It points to overall image 795, item image 281, folio 84, record 423. This exact-parent-pair hit is strong but remains provisional until the original register image is captured and read.",
+        "local_archive": "research/pulls/transcriptions/san-lorenzo-baptisms-1811-1852/transcription-c.csv",
+        "sha256": "8aa8e9d646f6e9ecb12ea933d37a1679b77c0e1f39ea8c4de0158a783372050b",
+        "status": "strong_candidate_original_image_pending"
+      }
+    ],
+    "geographyEvents": []
   }
 ];

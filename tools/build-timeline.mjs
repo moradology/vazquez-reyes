@@ -370,6 +370,13 @@ function eventTypeLabel(type) {
 function certainty(status, qualifier) {
   const normalized = String(status ?? "").toLowerCase();
   if (
+    /candidate|pending|unreviewed|transcription/.test(normalized)
+  ) {
+    return /strong|exact_parent_pair/.test(normalized)
+      ? "Strongly supported"
+      : "Approximate or bounded";
+  }
+  if (
     ["exact", "recorded"].includes(qualifier) &&
     /confirmed|documented|original|register/.test(normalized)
   ) {
