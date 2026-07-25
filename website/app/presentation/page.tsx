@@ -327,29 +327,30 @@ export default function PresentationPage() {
 
       <section className="deck-slide record-slide" data-slide id="slide-08">
         <div className="slide-copy">
-          <p className="slide-kicker">Rafael’s childhood</p>
-          <h2>Rafael with Juan Vázquez and Carlina Perales</h2>
+          <p className="slide-kicker">Rafael’s birth</p>
+          <h2>The act establishes the family—and preserves its own error.</h2>
           <div className="evidence-step">
             <span>Connection</span>
             <strong>Parents and son</strong>
             <p>
-              Rafael’s civil registration names Carlina. The 1910 and 1920
-              censuses place Rafael with Juan Vázquez Rodríguez and Carlina
-              Perales Pérez in Antón Ruíz, Humacao.
+              Humacao act 134 names Rafael, his parents Juan Vázquez and
+              Carlina Perales, and both grandparent couples. The 1910 and 1920
+              censuses then place him in the same Antón Ruíz household.
             </p>
           </div>
           <p className="slide-caution">
-            February 1906 is supported. The exact day remains unresolved; the
-            remembered October date conflicts with the civil index.
+            The original clearly writes 29 February 1906. That date did not
+            exist: 1906 was not a leap year. February 1906 is secure; the valid
+            exact day remains unresolved.
           </p>
           <Link className="slide-profile-link" href="/people/rafael-vazquez-perales">
             Open Rafael’s complete profile →
           </Link>
         </div>
         <RecordImage
-          alt="1920 census household containing Rafael Vázquez"
-          caption="The Vázquez–Perales household in Antón Ruíz, Humacao, 1920"
-          src="1920-vazquez-household.jpg"
+          alt="Two-page 1906 Humacao civil birth registration for Rafael Vázquez"
+          caption="Humacao civil birth act 134, registered 7 April 1906"
+          src="1906-rafael-birth-registration.jpg"
         />
         <SlideNav current={8} total={totalSlides} />
       </section>

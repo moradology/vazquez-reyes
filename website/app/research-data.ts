@@ -128,9 +128,9 @@ export const sources = [
   {
     id: "rafael-birth",
     label: "Puerto Rico civil registration: Rafael Vazquez y Peralez",
-    detail: "Humacao registration 134; indexed February 1906; mother Carlina Peralez.",
+    detail: "Humacao act 134, registered 7 April 1906, clearly writes 29 February 1906 at 6 a.m. Because 1906 was not a leap year, the original confirms February 1906 but contains an impossible day. Parents Juan Vázquez and Carlina Perales.",
     href: "https://www.ancestry.com/search/collections/9100/records/649515",
-    grade: "Original image + index",
+    grade: "Original civil record · impossible written day retained",
   },
   {
     id: "census-1910",
@@ -1086,8 +1086,8 @@ export const openCases = [
   {
     id: "VR-02",
     title: "Rafael’s exact birth day",
-    conflict: "February 1906 vs. the remembered 24 October",
-    next: "Obtain a legible certified copy or expert transcription of Humacao registration 134.",
+    conflict: "Humacao act 134 clearly writes 29 February 1906, but 1906 was not a leap year. A later derivative gives 28 February; the family remembered 24 October.",
+    next: "Find Rafael’s baptism, a corrected or certified civil copy, or another contemporary record. Do not silently normalize the impossible 29 February to 28 February.",
   },
   {
     id: "VR-03",

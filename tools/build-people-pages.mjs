@@ -20,6 +20,8 @@ const peopleById = new Map(people.map((person) => [person.id, person]));
 const sourcesById = new Map(sources.map((source) => [source.id, source]));
 
 const publicRecordImages = {
+  "source.pr-civil-birth.rafael.649515":
+    "1906-rafael-birth-registration.jpg",
   "source.pr-civil-birth.cruz.3790159": "1915-cruz-civil-birth.jpg",
   "source.census.1910.reyes-diaz": "1910-reyes-household.jpg",
   "source.census.1940.reyes-diaz": "1940-reyes-household.jpg",

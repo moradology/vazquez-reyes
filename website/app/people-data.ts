@@ -668,12 +668,12 @@ export const peopleProfiles: readonly PersonProfile[] = [
       "birth": {
         "preferred": "1906-02",
         "place": "Humacao, Puerto Rico",
-        "status": "month_and_year_supported_exact_day_unresolved",
+        "status": "original_register_explicitly_writes_impossible_1906_02_29_exact_day_unresolved",
         "alternatives": [
+          "1906-02-29 (written in Humacao act 134, but 1906 was not a leap year)",
+          "1906-02-28 (public SSDI derivative and plausible correction, not independently confirmed)",
           "1906-10-24 (family account)",
-          "1909-10-24 (1941 marriage license)",
-          "1906-02-28 (public SSDI derivative)",
-          "1906-02-29 (impossible indexed date in one SSDI transcription)"
+          "1909-10-24 (1941 marriage license)"
         ]
       },
       "death": {
@@ -691,7 +691,7 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "plot": "WIN4T-22-11 /3D",
         "status": "confirmed"
       },
-      "confidence": "identified",
+      "confidence": "identified_birth_month_and_year_confirmed_original_day_internally_impossible",
       "evidence_refs": [
         "source.pr-civil-birth.rafael.649515",
         "source.census.1910.rafael",
@@ -701,7 +701,7 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "source.census.1950.rafael-cruz",
         "source.rosedale-lookup.rafael"
       ],
-      "notes": "The civil-registration index supports February 1906 but the image has not yielded a confident exact-day transcription."
+      "notes": "Humacao act 134, registered 7 April 1906, clearly writes that Rafael was born on 29 February at 6 a.m. Because 1906 was not a leap year, the contemporary original contains an impossible day. The 28 February SSDI derivative may be a later correction to the last valid day of the month, but no reviewed record proves that correction. February 1906 is retained as the narrowest defensible birth date."
     },
     "relations": {
       "parentIds": [
@@ -756,16 +756,28 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "predicate": "birth",
         "object": {
           "preferred_date": "1906-02",
-          "place": "Humacao, Puerto Rico"
+          "place": "Humacao, Puerto Rico",
+          "registration": {
+            "number": 134,
+            "date": "1906-04-07",
+            "written_birth_date": "1906-02-29",
+            "written_birth_time": "06:00",
+            "calendar_valid": false
+          },
+          "possible_correction": "1906-02-28",
+          "possible_correction_status": "plausible_last_valid_day_and_public_ssdi_derivative_not_independently_confirmed",
+          "remembered_date": "1906-10-24",
+          "marriage_license_report": "1909-10-24"
         },
-        "status": "exact_day_unresolved",
+        "status": "original_register_month_and_year_confirmed_written_day_impossible_exact_day_unresolved",
         "evidence_refs": [
           "source.pr-civil-birth.rafael.649515",
           "source.census.1910.rafael",
           "source.census.1920.rafael",
           "source.family-account.2026-07-23",
           "source.public-ssdi-derivative.rafael"
-        ]
+        ],
+        "note": "The original is legible enough to read 29 February, not merely an ambiguous numeral. The problem is that 1906 had no 29 February. Do not silently normalize the act to 28 February; retain February 1906 until a baptism, corrected certificate, or another contemporary record resolves the clerk's error."
       },
       {
         "id": "claim.rafael-death",
@@ -808,10 +820,30 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "title": "Puerto Rico, Civil Registrations, 1885-2001: Rafael Vazquez y Peralez",
         "repository": "Departamento de Salud de Puerto Rico via Ancestry.com",
         "accessed": "2026-07-23",
+        "reviewed": "2026-07-25",
         "url": "https://www.ancestry.com/search/collections/9100/records/649515",
         "image_url": "https://www.ancestry.com/imageviewer/collections/9100/images/004493681_00685?pid=649515",
-        "quality": "original_image_and_derivative_index",
-        "citation": "Humacao birth registration, record 134; indexed February 1906; mother Carlina Peralez."
+        "quality": "original_image_reviewed_explicit_impossible_date_preserved",
+        "citation": "Humacao act 134, registered 7 April 1906. Father Juan Vázquez declared that the boy was born at 6 a.m. on 'veinte y nueve de Febrero último'—29 February 1906—and that he was named Rafael. The act names mother Carlina Perales and both grandparent couples. Because 1906 was not a leap year, the original itself contains an impossible day; it supports February 1906 but cannot establish a valid exact date without a corrective record.",
+        "image_archive": "research/pulls/images/capture.pr-civil-birth.rafael.649515/20260724T031458Z-document-original.jpg",
+        "image_sha256": "67ec2a32a4975ab718438ef15bea56b8ff706292f005f5492f5e99c89c6ebce1",
+        "public_image": "1906-rafael-birth-registration.jpg",
+        "public_image_sha256": "0e1723e6251b352709d28e9b505d36d1a695658a95687458b182c2f13c33cfa2",
+        "review_derivatives": [
+          {
+            "path": "research/pulls/images/capture.pr-civil-birth.rafael.649515/1906-rafael-birth-date-lines-enhanced.png",
+            "sha256": "c2492988f718ab14ad551bb50af86a7577d13f02c5db41d59a25385bd8e6f2b8"
+          },
+          {
+            "path": "research/pulls/images/capture.pr-civil-birth.rafael.649515/1906-rafael-birth-entry-left-page-enhanced.png",
+            "sha256": "6f3fe6958f7dcabac3921377d7678e489cb8baa0701ee72e71bee529e20b3616"
+          },
+          {
+            "path": "research/pulls/images/capture.pr-civil-birth.rafael.649515/1906-rafael-birth-entry-right-page-enhanced.png",
+            "sha256": "439c1cc45a2e4f074ed186a299aec8b4c8a500a80ec65fb93988cc1452851f0c"
+          }
+        ],
+        "status": "original_reviewed_month_and_year_confirmed_exact_day_internally_impossible"
       },
       {
         "id": "source.census.1910.rafael",
@@ -914,7 +946,7 @@ export const peopleProfiles: readonly PersonProfile[] = [
           "person.rafael-vazquez-perales"
         ],
         "place_ref": "place.humacao",
-        "status": "confirmed_month_exact_day_open",
+        "status": "confirmed_month_original_day_internally_impossible",
         "evidence_refs": [
           "source.pr-civil-birth.rafael.649515"
         ],
@@ -923,7 +955,7 @@ export const peopleProfiles: readonly PersonProfile[] = [
         ],
         "sequence": 1,
         "map_label": "Humacao · 1906",
-        "map_note": "Rafael’s civil registration supports February 1906; the exact day is unresolved."
+        "map_note": "Rafael’s civil act writes 29 February 1906, an impossible date in a non-leap year. February 1906 is secure; the valid day remains unresolved."
       },
       {
         "id": "geo.event.rafael-anton-ruiz-1910",
@@ -2823,10 +2855,30 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "title": "Puerto Rico, Civil Registrations, 1885-2001: Rafael Vazquez y Peralez",
         "repository": "Departamento de Salud de Puerto Rico via Ancestry.com",
         "accessed": "2026-07-23",
+        "reviewed": "2026-07-25",
         "url": "https://www.ancestry.com/search/collections/9100/records/649515",
         "image_url": "https://www.ancestry.com/imageviewer/collections/9100/images/004493681_00685?pid=649515",
-        "quality": "original_image_and_derivative_index",
-        "citation": "Humacao birth registration, record 134; indexed February 1906; mother Carlina Peralez."
+        "quality": "original_image_reviewed_explicit_impossible_date_preserved",
+        "citation": "Humacao act 134, registered 7 April 1906. Father Juan Vázquez declared that the boy was born at 6 a.m. on 'veinte y nueve de Febrero último'—29 February 1906—and that he was named Rafael. The act names mother Carlina Perales and both grandparent couples. Because 1906 was not a leap year, the original itself contains an impossible day; it supports February 1906 but cannot establish a valid exact date without a corrective record.",
+        "image_archive": "research/pulls/images/capture.pr-civil-birth.rafael.649515/20260724T031458Z-document-original.jpg",
+        "image_sha256": "67ec2a32a4975ab718438ef15bea56b8ff706292f005f5492f5e99c89c6ebce1",
+        "public_image": "1906-rafael-birth-registration.jpg",
+        "public_image_sha256": "0e1723e6251b352709d28e9b505d36d1a695658a95687458b182c2f13c33cfa2",
+        "review_derivatives": [
+          {
+            "path": "research/pulls/images/capture.pr-civil-birth.rafael.649515/1906-rafael-birth-date-lines-enhanced.png",
+            "sha256": "c2492988f718ab14ad551bb50af86a7577d13f02c5db41d59a25385bd8e6f2b8"
+          },
+          {
+            "path": "research/pulls/images/capture.pr-civil-birth.rafael.649515/1906-rafael-birth-entry-left-page-enhanced.png",
+            "sha256": "6f3fe6958f7dcabac3921377d7678e489cb8baa0701ee72e71bee529e20b3616"
+          },
+          {
+            "path": "research/pulls/images/capture.pr-civil-birth.rafael.649515/1906-rafael-birth-entry-right-page-enhanced.png",
+            "sha256": "439c1cc45a2e4f074ed186a299aec8b4c8a500a80ec65fb93988cc1452851f0c"
+          }
+        ],
+        "status": "original_reviewed_month_and_year_confirmed_exact_day_internally_impossible"
       },
       {
         "id": "source.pr-civil-marriage.juan-carlina.1530270",

@@ -103,13 +103,14 @@ test("renders navigable trees and repeated maps from one geographic frame", asyn
 });
 
 test("renders the people directory and a detailed, linked person profile", async () => {
-  const [indexResponse, personResponse, contextResponse, placeResponse, luisResponse] =
+  const [indexResponse, personResponse, contextResponse, placeResponse, luisResponse, rafaelResponse] =
     await Promise.all([
     render("/people"),
     render("/people/maximo-vazquez"),
     render("/people/lope-diaz-figueroa"),
     render("/people/manuel-diaz"),
     render("/people/luis-father-of-josefa-rivera"),
+    render("/people/rafael-vazquez-perales"),
   ]);
   const indexHtml = await indexResponse.text();
   const personHtml = await personResponse.text();
@@ -155,6 +156,14 @@ test("renders the people directory and a detailed, linked person profile", async
   assert.equal(luisResponse.status, 200);
   assert.match(luisHtml, /On or before April 20, 1811 · Humacao, Puerto Rico/);
   assert.match(luisHtml, /Burial/);
+
+  const rafaelHtml = await rafaelResponse.text();
+  assert.equal(rafaelResponse.status, 200);
+  assert.match(rafaelHtml, /1906-rafael-birth-registration\.jpg/);
+  assert.match(rafaelHtml, /29 February 1906/);
+  assert.match(rafaelHtml, /1906 was not a leap year/);
+  assert.match(rafaelHtml, /1906-02-29/);
+  assert.doesNotMatch(rafaelHtml, /March 1, 1906/);
 });
 
 test("renders a filterable two-line family timeline from the research ledger", async () => {
@@ -217,6 +226,8 @@ test("renders a slide-style, evidence-led family presentation", async () => {
   assert.match(html, /Juan \+ Dolores Rivera by 1930/);
   assert.match(html, /Consensual\/common-law household/);
   assert.match(html, /1915-cruz-civil-birth\.jpg/);
+  assert.match(html, /1906-rafael-birth-registration\.jpg/);
+  assert.match(html, /The original clearly writes 29 February 1906/);
   assert.match(html, /1805-maximo-josefa-marriage\.jpg/);
   assert.match(html, /1794-maria-magdalena-cortes-burial\.jpg/);
   assert.match(html, /Four earlier records supply the fuller parent names/);

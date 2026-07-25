@@ -898,7 +898,7 @@ export const geographyEvents = [
       "person.rafael-vazquez-perales"
     ],
     "place_ref": "place.humacao",
-    "status": "confirmed_month_exact_day_open",
+    "status": "confirmed_month_original_day_internally_impossible",
     "evidence_refs": [
       "source.pr-civil-birth.rafael.649515"
     ],
@@ -907,7 +907,7 @@ export const geographyEvents = [
     ],
     "sequence": 1,
     "map_label": "Humacao · 1906",
-    "map_note": "Rafael’s civil registration supports February 1906; the exact day is unresolved."
+    "map_note": "Rafael’s civil act writes 29 February 1906, an impossible date in a non-leap year. February 1906 is secure; the valid day remains unresolved."
   },
   {
     "id": "geo.event.rafael-anton-ruiz-1910",

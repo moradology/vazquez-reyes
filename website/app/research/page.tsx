@@ -861,11 +861,17 @@ export default function ResearchPage() {
           <article role="row">
             <div role="cell">
               <strong>Rafael’s birth</strong>
-              <Grade kind="open">DAY UNRESOLVED</Grade>
+              <Grade kind="open">ORIGINAL WRITES AN IMPOSSIBLE DAY</Grade>
             </div>
             <p role="cell">
-              <b>February 1906</b> — Puerto Rico civil index; supported by the
-              1910 and 1920 census ages.
+              <b>29 February 1906</b> — the date clearly written in Humacao act
+              134, registered 7 April. The date did not exist because 1906 was
+              not a leap year.
+            </p>
+            <p role="cell">
+              <b>28 February 1906</b> — a later SSDI derivative and a plausible
+              correction to the last valid day, but not an independent
+              contemporary record.
             </p>
             <p role="cell">
               <b>24 October 1906</b> — family account.
@@ -1029,7 +1035,10 @@ export default function ResearchPage() {
               A duplicate or clearer copy of Gurabo baptism book 15, folio 18
               verso, naming the indexed Cruz Reyes and her parents.
             </li>
-            <li>Rafael’s baptism card, passport, or a clearer birth certificate.</li>
+            <li>
+              Rafael’s baptism card, passport, or a corrected or certified
+              civil birth copy.
+            </li>
             <li>The 1941 marriage certificate or church announcement.</li>
             <li>Obituary clippings and funeral cards from 1984 and 1998.</li>
           </ul>

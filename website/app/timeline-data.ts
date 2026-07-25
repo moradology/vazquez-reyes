@@ -3037,7 +3037,7 @@ export const timelineEvents: readonly TimelineEvent[] = [
     "eventTypeLabel": "Birth",
     "certainty": "Approximate or bounded",
     "title": "Rafael Vázquez y Perales is born",
-    "description": "Rafael’s civil registration supports February 1906; the exact day is unresolved.",
+    "description": "Rafael’s civil act writes 29 February 1906, an impossible date in a non-leap year. February 1906 is secure; the valid day remains unresolved.",
     "place": "Humacao",
     "people": [
       {
