@@ -12591,6 +12591,43 @@ export const peopleProfiles: readonly PersonProfile[] = [
           "source.familysearch-baptism.jose-ramon-rivera.1811"
         ],
         "note": "The records establish Isidora's reported native place, not her exact date of birth or parents."
+      },
+      {
+        "id": "claim.isidora-rodriguez-humacao-burial-index-audit",
+        "subject": "person.isidora-rodriguez",
+        "predicate": "death_or_burial_search_coverage",
+        "object": {
+          "place": "Humacao, Puerto Rico",
+          "complete_index_books_reviewed": [
+            "1810–1815",
+            "1815–1820",
+            "1823–1826",
+            "1826–1829",
+            "1829–1836",
+            "1836–1839",
+            "1839–1843",
+            "1843–1846",
+            "1846–1852"
+          ],
+          "coverage_gap": "1821–1822",
+          "target_result": "no defensible entry",
+          "same_name_rejected": {
+            "date": "1827-12-07",
+            "parents": [
+              "Diego Rodríguez",
+              "Josefa"
+            ],
+            "spouse": "Andrés Ubierna or Obierna",
+            "reason": "spouse and parents conflict with the Luís de Rivera household"
+          }
+        },
+        "status": "bounded_complete_index_review_negative_target_not_proof_of_absence",
+        "evidence_refs": [
+          "source.familysearch-index.humacao-burials.1810-1815",
+          "source.familysearch-index.humacao-burials.1815-1852",
+          "source.familysearch-death.isidora-rodriguez-ubierna-rejected.1827"
+        ],
+        "note": "The manually reviewed index books substantially narrow an indexed Humacao death after Luís's 1811 burial, but the missing 1821–1822 interval, possible register loss, spelling, and legibility prevent an absence claim."
       }
     ],
     "sources": [
@@ -12819,6 +12856,44 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "citation": "DGS 008126787, item 1, frame 00073. Lorenza was born 2 September 1791 and baptized 2 October. The faded entry names mother Isidora Rodríguez but appears to give a father other than Luís de Rivera, probably Juan de Ayala. It is preserved as a nearby same-name candidate and not merged with the target household.",
         "image_archive": "candidate.familysearch-baptism.lorenza-isidora-rodriguez.1791/3Q9M-CSV2-M9PM-D.jpg plus three legibility crops",
         "status": "unmerged_same_name_candidate"
+      },
+      {
+        "id": "source.familysearch-index.humacao-burials.1810-1815",
+        "type": "complete_parish_burial_index_capture_and_review",
+        "title": "Humacao burial index, 1810–1815",
+        "repository": "Dulce Nombre de Jesús, Humacao, DGS 007769016, via FamilySearch",
+        "accessed": "2026-07-24",
+        "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSM8-Q7KW-Y?i=572&lang=en",
+        "quality": "nine_full_size_index_frames_downloaded_and_manually_reviewed",
+        "citation": "FamilySearch frames 573–581 contain the complete alphabetical index to the Humacao burial book labeled 1810–1815. Frame 579 lists Luís Rivera, son of Roque and Marciana Delgado, at page 18; the attached indexed record resolves his burial as 20 April 1811. The review found no defensible Isidora Rodríguez or Máximo Vázquez burial. Frame 581 also produced a María Vázquez, daughter of Josefa, lead that was checked against the original and kept separate.",
+        "image_archive": "research/pulls/images/humacao-burial-indexes-1810-1820/frames 573-581 plus metadata.json",
+        "status": "complete_index_capture_positive_luis_negative_isidora_maximo"
+      },
+      {
+        "id": "source.familysearch-index.humacao-burials.1815-1852",
+        "type": "complete_parish_burial_index_capture_and_review",
+        "title": "Humacao burial indexes, 1815–1852",
+        "repository": "Dulce Nombre de Jesús, Humacao, DGS 007769016, via FamilySearch",
+        "accessed": "2026-07-24",
+        "url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSM8-Q7KW-5?i=581&lang=en",
+        "quality": "sixty_nine_browser_frame_captures_manually_reviewed_across_eight_complete_index_books",
+        "citation": "FamilySearch frames 582–650 contain eight complete alphabetical Humacao burial indexes labeled 1815–1820, 1823–1826, 1826–1829, 1829–1836, 1836–1839, 1839–1843, 1843–1846, and 1846–1852. The complete 69-frame manual review found no defensible burial for the Isidora Rodríguez married to Luís de Rivera. Frame 608 does list an Isidora Rodríguez at page 109, but the attached indexed record gives 7 December 1827, parents Diego Rodríguez and Josefa, and spouse Andrés Ubierna or Obierna; those identifiers conflict with the target household and the woman is retained separately. The reviewed sequence contains no 1821–1822 book, and index legibility plus surviving-register gaps prevent an absence claim.",
+        "image_archive": "research/pulls/images/humacao-burial-indexes-1815-1820 through humacao-burial-indexes-1846-1852, with per-directory SHA-256 manifests",
+        "status": "complete_index_capture_negative_target_one_same_name_woman_rejected_1821_1822_gap"
+      },
+      {
+        "id": "source.familysearch-death.isidora-rodriguez-ubierna-rejected.1827",
+        "type": "indexed_parish_death_with_original_image_page_opened_and_book_index_entry_located",
+        "title": "1827 death of a different Isidora Rodríguez",
+        "repository": "Dulce Nombre de Jesús, Humacao, via FamilySearch",
+        "accessed": "2026-07-24",
+        "url": "https://www.familysearch.org/ark:/61903/1:1:XSQS-62PC?lang=en",
+        "image_url": "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSFS-29WG-H?view=index&personArk=%2Fark%3A%2F61903%2F1%3A1%3AXSQS-62PC&action=view&lang=en",
+        "quality": "attached_familysearch_index_checked_against_manually_located_alphabetical_book_index_entry_original_page_opened_download_failed",
+        "citation": "DGS 008038524, item 7, image 119; alphabetical book index on DGS 007769016 frame 608, page 109. The attached FamilySearch record reports Isidora Rodríguez on 7 December 1827 in Humacao, born about 1767, daughter of Diego Rodríguez and Josefa, and spouse of Andrés Ubierna or Obierna. The direct Isidora was the church-married wife of Luís de Rivera and mother of their documented children. The conflicting husband and parents make this a different woman despite the exact name, place, and plausible age.",
+        "image_archive": "research/pulls/images/humacao-1827-isidora-rodriguez-rejected/1827-isidora-rodriguez-index-entry_frame-608_crop.png plus full frame 608 in humacao-burial-indexes-1826-1829",
+        "image_sha256": "2dcaae0d3fbbac6f6964076a77aed47bd6a85cf539917a8d9ec11f306fa022bb",
+        "status": "rejected_as_target_exact_name_place_age_but_spouse_and_parents_conflict"
       }
     ],
     "geographyEvents": [
