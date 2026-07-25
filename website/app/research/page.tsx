@@ -280,11 +280,15 @@ export default function ResearchPage() {
               </p>
             </article>
             <article>
-              <span>Caguas</span>
+              <span>Caguas · 1734–1804</span>
               <strong>His parents’ marriage</strong>
               <p>
-                No Francisco and María Cortez match appears in the 1774–1804
-                marriage transcript.
+                The damaged 1734–1774 fragment was captured in full: 71
+                images, with every Vázquez- or Cortés-like transcript hit
+                checked against the original. The complete 1774–1804
+                transcription was also checked. Neither produced a defensible
+                Francisco and María match. Damage and missing books still
+                prevent an absence claim.
               </p>
             </article>
             <article>
@@ -337,6 +341,17 @@ export default function ResearchPage() {
                 Andrés Ubierna or Obierna. No defensible entry for Luís’s wife
                 was found. The surviving sequence has no 1821–1822 book, so
                 this narrows the search without proving absence.
+              </p>
+            </article>
+            <article>
+              <span>Coamo · 1756–1767</span>
+              <strong>The nearby Roque Rivera household is complicated</strong>
+              <p>
+                Six baptism pages were captured. Bernarda and Luís name
+                Emerenciana Tirado as mother; Juana names Francisca Luna and
+                has Emerenciana as godmother. The first three mother fields
+                remain unreadable. None names Marciana Delgado, so this
+                household is real but not attached to the direct line.
               </p>
             </article>
             <article>

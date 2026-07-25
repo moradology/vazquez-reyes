@@ -31,7 +31,9 @@ export function OriginFrontier() {
           Máximo’s parents more fully as Francisco Vázquez and María Magdalena
           Cortés. On Josefa’s line, Juan Antonio’s 1808 baptism calls Luís de
           Rivera a native of Coamo, while two 1811 records call him a native of
-          Humacao. The disagreement remains open.
+          Humacao. The surviving Caguas marriage material has been checked back
+          to 1734 without naming an earlier place. The disagreement remains
+          open.
         </p>
       </div>
 
@@ -128,7 +130,10 @@ export function OriginFrontier() {
             A 1765 Coamo baptism is a strong candidate for Luís because it names
             a child Luís and father Roque de Rivera. It also names mother
             Emerenciana Tirado, conflicting with the direct 1811 record’s
-            Marciana Delgado. Until that is resolved, it remains a candidate.
+            Marciana Delgado. The wider six-child Coamo cluster also introduces
+            Francisca Luna as a mother while retaining Emerenciana as a
+            godmother. Until those identities are resolved, it remains a
+            nearby household—not an extension of this tree.
           </p>
         </div>
         <div className="origin-route-grid">

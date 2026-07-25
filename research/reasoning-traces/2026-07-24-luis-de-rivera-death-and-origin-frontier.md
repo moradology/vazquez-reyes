@@ -125,14 +125,35 @@ The mother is a material conflict. Luís's direct 1811 burial names **Marciana
 Delgado**; the baptism names **Emerenciana Tirado**. No reviewed record connects
 those women.
 
-A second Coamo baptism confirms that the candidate parent pair was a real
-household: Bernarda, daughter of Roque de Rivera and Emerenciana Tirado, was
-baptized 2 September 1763. That strengthens the local household but does not
-make Bernarda a proven sister of the direct Luís.
+A complete family-group transcription of Coamo baptisms for 1700–1825 expands
+the same-name local household to six indexed children:
+
+| Baptism | Child | Father | Mother as transcribed or reviewed |
+| --- | --- | --- | --- |
+| 4 Mar 1756 | Eusebio Rivera | Roque Rivera | not reliably readable |
+| 11 Nov 1759 | Nicolás Vicente Rivera | Roque Rivera | not reliably readable |
+| 17 Aug 1761 | Juan Rivera | Roque Rivera | not reliably readable |
+| 2 Sep 1763 | Bernarda Rivera | Roque Rivera | Emerenciana Tirado |
+| 8 Sep 1765 | Luís Rivera | Roque Rivera | Emerenciana Tirado |
+| 8 Nov 1767 | Juana Rivera | Roque Rivera | Francisca Luna |
+
+Juana's 1767 entry names Emerenciana Tirado as a godmother while identifying
+Francisca Luna as the child's mother. This establishes that the nearby Roque
+Rivera evidence is more complex than a single two-parent cluster. It does not
+show whether there were successive partners, two same-name men, a recording
+error, or another relationship, and no such explanation is assigned.
+
+All six original pages were downloaded from DGS 008100612, item 1, at images
+88, 137, 155, 179, 207, and 238. The first three mother names remain unreadable
+or blank in the complete transcription and are not reconstructed from weak
+computer text. The image set and SHA-256 manifest are retained at:
+
+`research/pulls/images/coamo-roque-rivera-household-1756-1767/`
 
 The 1765 baptism is graded **strong candidate, not proof**. Neither it nor
-Bernarda is merged into the direct family until a marriage, burial, sibling
-record, or other original reconciles the mother's identity.
+the wider household is merged into the direct family until a marriage, burial,
+sibling record, or other original reconciles **Emerenciana Tirado**,
+**Francisca Luna**, and the direct burial's **Marciana Delgado**.
 
 ## Humacao collateral lead for Roque
 
@@ -240,8 +261,10 @@ conflicting direct native-place reports: Coamo in 1808 and Humacao in two 1811
 records.
 
 The 1765 Coamo baptism is the strongest candidate yet for Luís's own baptism,
-but its mother, Emerenciana Tirado, conflicts with Marciana Delgado. It is not
-proof until that conflict is resolved.
+but the expanded six-child household makes a casual merge less safe, not more.
+Its mother, Emerenciana Tirado, conflicts with Marciana Delgado, and the 1767
+household record introduces Francisca Luna while retaining Emerenciana as a
+godmother. The candidate is not proof until those identities are resolved.
 
 No named direct ancestor is yet documented as born in Africa, Europe, the
 Canary Islands, another Caribbean island, or anywhere else outside Puerto

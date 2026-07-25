@@ -536,7 +536,10 @@ export default function PresentationPage() {
           <p className="slide-caution">
             This strongly identifies Máximo’s parents and three probable
             siblings. Máximo’s own baptism is still missing, so the sibling
-            links are not presented as direct baptismal proof.
+            links are not presented as direct baptismal proof. The surviving
+            Caguas marriage material has been checked from 1734 through 1804
+            without finding the parents’ marriage; damage and book gaps mean
+            that is not proof of absence.
           </p>
           <div className="slide-links">
             <Link href="/people/francisco-father-of-maximo-vazquez">
@@ -660,17 +663,23 @@ export default function PresentationPage() {
       <section className="deck-slide record-slide" data-slide id="slide-17">
         <div className="slide-copy">
           <p className="slide-kicker">The Coamo candidate</p>
-          <h2>A close match with one serious conflict.</h2>
+          <h2>A close match inside a complicated household.</h2>
           <ul className="slide-findings">
             <li>Luís, baptized in Coamo on 8 September 1765.</li>
             <li>Father: Roque de Rivera.</li>
             <li>The age fits Luís’s reported age in 1811 reasonably well.</li>
             <li>Mother: Emerenciana Tirado.</li>
+            <li>
+              Five other baptism pages name the same father; a 1767 child
+              instead names Francisca Luna as mother and Emerenciana as
+              godmother.
+            </li>
           </ul>
           <p className="slide-caution">
             Luís’s direct 1811 burial names his mother as Marciana Delgado.
-            Until another record reconciles those women—or shows two separate
-            families—the 1765 baptism remains a candidate, not proof.
+            No record yet explains Emerenciana, Francisca, and Marciana—or
+            proves which Roque household was his. The 1765 baptism remains a
+            candidate, not proof.
           </p>
           <Link
             className="slide-profile-link"

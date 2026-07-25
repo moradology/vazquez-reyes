@@ -92,6 +92,31 @@ visibly spans January 1804 through June 1809. The positive burials here date to
 1793, 1794, and 1801, outside that bounded image span. They therefore improve
 the family reconstruction without contradicting the earlier negative result.
 
+## Surviving Caguas marriage material, 1734–1804
+
+The earlier marriage check has now been extended through the surviving
+**1734–1774 fragment**:
+
+- FamilySearch DGS **008126767**, item 6;
+- item images **159–229**, corresponding to film frames **1654–1724**;
+- all **71 full-size original images** downloaded and checksummed;
+- the transcript layer screened across the full item; and
+- every surname-like Vázquez or Cortés hit opened and checked against the
+  manuscript.
+
+No defensible Francisco Vázquez–María Magdalena Cortés marriage appeared.
+Several Vázquez entries and witnesses belong to other families. None joins the
+target names, household, or later children.
+
+Together with the complete volunteer transcription of the 1774–1804 marriage
+book, this checks the surviving marriage material presently identified for
+**1734–1804**. It is not proof that the couple did not marry in Caguas. The
+earliest fragment is damaged, its computer transcript is incomplete, and
+missing, duplicate, diocesan, or neighboring-parish material may still exist.
+The archive is retained at:
+
+`research/pulls/images/caguas-marriages-1734-1774/`
+
 ## Origin boundary
 
 This work moves the line deeper into eighteenth-century Caguas and supplies one
@@ -101,4 +126,5 @@ Puerto Rico, Europe, Africa, the Canary Islands, or another Caribbean colony.
 
 Their parents, birthplaces, native places, marriage, and Francisco's death
 remain open. The highest-value next targets are Máximo's baptism, the couple's
-marriage before 1786, and Francisco's burial after 1801.
+marriage in a duplicate, diocesan, missing, or neighboring book before 1786,
+and Francisco's burial after 1801.

@@ -378,6 +378,20 @@ export const sources = [
     grade: "Original parish register · unmerged collateral household",
   },
   {
+    id: "coamo-baptisms-family-group-1700-1825",
+    label: "Coamo baptisms, 1700–1825: family-group transcription",
+    detail: "The complete transcription groups six children under father Roque Rivera from 1756 through 1767. It names Emerenciana Tirado as mother of Bernarda and Luís, and Francisca Luna as mother of Juana. The first three mother fields are not reliable enough to adopt.",
+    href: "https://hijosdecoamopr.com/wp-content/uploads/2021/07/Coamo-Bautizos-1700-1825-Family-Group-Order.pdf",
+    grade: "Complete volunteer transcription · six originals checked",
+  },
+  {
+    id: "coamo-roque-rivera-household-1756-1767",
+    label: "1756–1767 Coamo household: six original baptism pages",
+    detail: "All six indexed pages were captured at full size. Bernarda and Luís name Emerenciana Tirado as mother. Juana names Francisca Luna as mother and Emerenciana as godmother. No page names Marciana Delgado or proves that this Roque was the direct ancestor.",
+    href: "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSJN-K4B1?lang=en",
+    grade: "Six original parish-register images · unmerged household",
+  },
+  {
     id: "roque-ribera-humacao-collateral-1798",
     label: "1798 Humacao collateral: Roque de Ribera",
     detail: "Martina’s burial entry names her as enslaved by a parishioner Roque de Ribera. It places that name in Humacao in the right generation but does not name Marciana Delgado or Luís, so the man is not merged with the direct ancestor.",
@@ -415,9 +429,16 @@ export const sources = [
   {
     id: "caguas-early-transcripts",
     label: "Caguas early baptism and marriage transcriptions",
-    detail: "The 1785–1788 baptism transcript led to Miguel’s 1786 original under Francisco Vázquez and María Magdalena, but contains no Máximo match. The 1774–1804 marriage transcript contains no defensible marriage for the parent couple. Large book gaps remain.",
+    detail: "The 1785–1788 baptism transcript led to Miguel’s 1786 original under Francisco Vázquez and María Magdalena, but contains no Máximo match. All 71 images in the damaged 1734–1774 marriage fragment were captured and screened, and the 1774–1804 transcription was checked; neither produced a defensible parent marriage. Damage and book gaps remain.",
     href: "https://hijosdecoamopr.com/caguas-puerto-rico-church-records-1730-1968/",
-    grade: "Published record guide + complete transcriptions · originals checked",
+    grade: "Published guide + complete fragment capture + transcriptions",
+  },
+  {
+    id: "caguas-marriage-fragment-1734-1774",
+    label: "Caguas marriage fragment, 1734–1774",
+    detail: "All 71 full-size images were captured. The transcript layer was screened across the fragment, and every Vázquez- or Cortés-like hit was checked against the manuscript. No defensible Francisco Vázquez–María Magdalena Cortés marriage appeared. Damage and incomplete computer text prevent an absence claim.",
+    href: "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSV2-KW84-Q?cat=89952&i=1653&lang=en",
+    grade: "Complete fragment capture · machine-assisted screen · originals checked",
   },
   {
     id: "caguas-burial-transcription-1771-1819",
@@ -970,7 +991,7 @@ export const familyCouples = [
     ],
     children: ["Luís de Rivera — about 1761–1811; native-place reports conflict between Coamo and Humacao"],
     childNote:
-      "The burial gives Roque no surname, so Rivera is not assigned to him. A 1765 Coamo baptism names a Luís whose parents were Roque de Rivera and Emerenciana Tirado; it is a strong candidate but not merged because the mother conflicts with Marciana Delgado. A 1798 Humacao Roque de Ribera is also retained as an unmerged lead.",
+      "The burial gives Roque no surname, so Rivera is not assigned to him. Six Coamo baptisms from 1756–1767 document a same-name father. Bernarda and Luís name Emerenciana Tirado as mother; Juana names Francisca Luna and has Emerenciana as godmother. The 1765 Luís remains a strong candidate, not a merge, because the direct burial names Marciana Delgado. A 1798 Humacao Roque de Ribera is also retained as an unmerged lead.",
   },
   {
     id: "andres-francisca",
@@ -1103,8 +1124,8 @@ export const openCases = [
   {
     id: "VR-13",
     title: "Máximo and Josefa before 1805",
-    conflict: "Four Caguas originals strongly identify Máximo’s parents as Francisco Vázquez and María Magdalena Cortés, but Máximo’s own baptism remains missing. On Josefa’s line, the 1808 baptism of Juan Antonio calls Luís a native of Coamo; José Ramón’s 1811 baptism and Luís’s burial call him a native of Humacao. A 1765 Coamo baptism matches Luís and father Roque but names mother Emerenciana Tirado instead of Marciana Delgado.",
-    next: "Prioritize Máximo’s baptism and Francisco and María’s marriage. In Coamo and Humacao, seek a marriage, burial, sibling record, or dispensation that either bridges or separates Emerenciana Tirado and Marciana Delgado. Do not merge the 1765 baptism before resolving that conflict.",
+    conflict: "Four Caguas originals strongly identify Máximo’s parents as Francisco Vázquez and María Magdalena Cortés, but Máximo’s own baptism remains missing. Surviving marriage material checked through 1734–1804 does not contain the parent marriage. On Josefa’s line, Luís is called a Coamo native in 1808 and a Humacao native in 1811. A six-child Coamo cluster under father Roque includes Emerenciana Tirado and Francisca Luna, while the direct burial names Marciana Delgado.",
+    next: "Prioritize Máximo’s baptism and missing, duplicate, diocesan, or neighboring material for Francisco and María’s marriage. Seek records that distinguish or connect the Coamo Roque household from Roque with Marciana Delgado. Do not merge the 1765 baptism before resolving that conflict.",
   },
   {
     id: "VR-14",
@@ -1142,7 +1163,7 @@ export const negativeSearches = [
   "The 1844 Humacao baptism of an Ana Martínez with parents Dámaso Martínez and María Rivera is retained but rejected as the direct Ana because it is 11–14 years earlier than her ages in the 1910 census and 1918 death act.",
   "Focused searches for Pedro Reyes and Juana Villafañe’s marriage and for Juana’s death did not produce a defensible exact match; two children’s original death records nevertheless confirm the parent pair.",
   "The complete Caguas 1785–1788 baptism transcription contains no Máximo matching parents Francisco and María Cortez, but it led to Miguel’s 1786 baptism under Francisco Vázquez and María Magdalena. Major gaps before and after that book prevent a negative conclusion about Máximo’s baptism.",
-  "The complete Caguas 1774–1804 marriage transcription contains no defensible Francisco and María Cortez parent-couple match.",
+  "The damaged Caguas 1734–1774 marriage fragment was captured in full: all 71 images were screened and every Vázquez- or Cortés-like hit was checked against the manuscript. The complete 1774–1804 transcription was also checked. Neither produced a defensible Francisco and María Cortez parent-couple match; damage, incomplete computer text, and possible missing or duplicate books prevent an absence claim.",
   "All 190 photographed openings of the Caguas burial item visibly spanning January 1804 through June 1809 were captured and screened twice. No target appeared within that span. The verified 1793, 1794, and 1801 family burials lie outside it and do not contradict the bounded negative result.",
   "The Las Piedras 1787–1816 marriage transcription contains no Luís and Isidora Rodríguez marriage. Original 1790 and 1792 baptisms nevertheless verify children Simona and Ysabel under Luís de Rivera and Isidora Rodríguez.",
   "A 1787 Simona born to Isidora Montañez is not the woman who married León Garrafa; the exact 1790 baptism resolves that same-name candidate.",
@@ -1409,6 +1430,14 @@ export const updates = [
   {
     date: "24 Jul 2026",
     text: "Captured a strong 1765 Coamo baptism candidate for Luís, son of Roque de Rivera and Emerenciana Tirado, plus Bernarda’s 1763 baptism in the same household. The candidate is not merged because Luís’s direct 1811 burial names his mother as Marciana Delgado.",
+  },
+  {
+    date: "24 Jul 2026",
+    text: "Captured all 71 images in the damaged Caguas marriage fragment for 1734–1774 and checked every Vázquez- or Cortés-like transcript hit against the original. Combined with the 1774–1804 transcription, no defensible marriage for Francisco and María appeared; this is bounded coverage, not proof of absence.",
+  },
+  {
+    date: "24 Jul 2026",
+    text: "Expanded the Coamo Roque Rivera household to six original baptism pages, 1756–1767. Bernarda and Luís name Emerenciana Tirado; Juana names Francisca Luna and has Emerenciana as godmother. No record bridges either woman to the direct Luís’s mother Marciana Delgado.",
   },
   {
     date: "24 Jul 2026",

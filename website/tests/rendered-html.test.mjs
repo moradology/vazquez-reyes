@@ -215,7 +215,7 @@ test("renders a slide-style, evidence-led family presentation", async () => {
   assert.match(html, /1811-luis-de-rivera-death\.jpg/);
   assert.match(html, /1808-juan-antonio-rivera-baptism\.jpg/);
   assert.match(html, /1765-luis-rivera-candidate-baptism\.jpg/);
-  assert.match(html, /A close match with one serious conflict/);
+  assert.match(html, /A close match inside a complicated household/);
   assert.match(html, /No reviewed record yet identifies a direct ancestor born in Africa/);
   assert.match(html, /data-presentation-fullscreen/);
   assert.match(html, /data-slide-total="18"/);

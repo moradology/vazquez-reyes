@@ -85,12 +85,18 @@ missing book, duplicate register, or neighboring parish.
 ### Caguas
 
 The complete 1785–1788 baptism transcription contains no Máximo matching
-parents Francisco and María Cortez. The complete 1774–1804 marriage
-transcription contains no defensible Francisco and María Cortez couple.
+parents Francisco and María Cortez. The surviving 1734–1774 marriage fragment
+was then captured in full: all 71 images in DGS 008126767, item 6 were
+machine-screened, and every Vázquez- or Cortés-like result was checked against
+the original. It contains no defensible Francisco Vázquez and María Magdalena
+Cortés couple. The complete 1774–1804 marriage transcription is also negative
+for the pair.
 
 These are limited negative results. The published Caguas guide shows large
 baptism gaps in 1767–1784 and 1789–1808. A missing match in 1785–1788 therefore
-does not contradict the original statement that Máximo was from Caguas.
+does not contradict the original statement that Máximo was from Caguas. The
+early marriage fragment is damaged and incompletely transcribed, so the
+1734–1804 check is coverage evidence, not an absence claim.
 
 ### Humacao and Las Piedras
 
@@ -125,6 +131,29 @@ The verified direct-line boundary is:
 Those overseas routes remain open research possibilities. They are not current
 family-history claims.
 
+## Coamo household check
+
+A complete family-group transcription of Coamo baptisms for 1700–1825 expands
+the local Roque Rivera household from two known children to six indexed
+children:
+
+- Eusebio, baptized 4 March 1756;
+- Nicolás Vicente, baptized 11 November 1759;
+- Juan, baptized 17 August 1761;
+- Bernarda, baptized 2 September 1763;
+- Luís, baptized 8 September 1765; and
+- Juana, baptized 8 November 1767.
+
+The first three mother fields are blank or not reliably readable in the
+transcription and surviving images. Bernarda and Luís name **Emerenciana
+Tirado**. Juana names **Francisca Luna**, while Emerenciana Tirado appears as
+her godmother. All six original images are archived and checksummed.
+
+This proves a real, more complex Roque Rivera household in Coamo. It does not
+identify the direct Roque named in Luís de Rivera's 1811 burial, whose wife is
+recorded there as **Marciana Delgado**. No reviewed Coamo record reconciles the
+women, so the 1765 Luís remains unmerged and no overseas origin follows.
+
 ## Luís's burial date and the completed Humacao index
 
 The original Luís de Rivera entry had a faint day. The attached FamilySearch
@@ -155,8 +184,8 @@ record is preserved but not attached to this family.
    the completed Las Piedras item as complete coverage of the event.
 2. Search Las Piedras and neighboring eastern-parish marriage material earlier
    than the reviewed 1787–1816 transcription for Luís and Isidora.
-3. Search Caguas duplicate, diocesan, or neighboring-parish material that
-   covers the published baptism gaps before and after 1785–1788.
+3. Search Caguas duplicate, diocesan, missing, or neighboring-parish material
+   that covers the published baptism gaps and the unresolved parent marriage.
 4. Prioritize original records that could state the native places or parents of
    Roque, Marciana Delgado, Isidora Rodríguez, Francisco, and María Cortez.
 5. Seek death or burial records for Máximo and Josefa; a death entry may state

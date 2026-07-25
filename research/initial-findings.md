@@ -242,6 +242,13 @@ marriage and death, and a wider Vázquez sibling cluster.
   Caguas origin make Miguel, María de los Ángeles, and José strong probable
   siblings of Máximo. His own baptism remains missing, so that sibling
   relationship is not described as direct baptismal proof.
+- All **71 images** in the damaged surviving Caguas marriage fragment for
+  **1734–1774** were captured and machine-screened, with every Vázquez- or
+  Cortés-like result checked against the original. No defensible Francisco
+  Vázquez–María Magdalena Cortés marriage appeared. The complete 1774–1804
+  transcription is also negative for the pair. Damage, incomplete text
+  recognition, and possible missing or duplicate books prevent an absence
+  claim.
 - **Simona** was born **8 February 1790** and baptized **7 March 1790** in Las
   Piedras, the legitimate daughter of Luís de Rivera and Isidora Rodríguez.
   Her 1805 marriage repeats the parent pair, establishing her as Josefa's
@@ -284,8 +291,15 @@ marriage and death, and a wider Vázquez sibling cluster.
   **Roque de Rivera and Emerenciana Tirado**. Child, father, place, and age make
   it a strong candidate for the direct Luís, but his 1811 burial names his
   mother as **Marciana Delgado**. The candidate is not merged until that
-  material conflict can be resolved. A 1763 Bernarda baptism confirms the
-  Roque–Emerenciana household but does not yet prove a sibling relationship.
+  material conflict can be resolved.
+- The complete Coamo 1700–1825 family-group baptism transcription expands the
+  nearby Roque Rivera household to **Eusebio (1756), Nicolás Vicente (1759),
+  Juan (1761), Bernarda (1763), Luís (1765), and Juana (1767)**. Bernarda and
+  Luís name Emerenciana Tirado as mother. Juana instead names **Francisca
+  Luna**, while Emerenciana is her godmother. The first three mother fields
+  remain unreadable or blank. All six originals are archived. This proves a
+  real, complicated Coamo household but does not connect it to the direct Roque
+  and Marciana Delgado.
 - A 1798 Humacao burial names a living **Roque de Ribera** as the enslaver of
   Martina. It places the name in the right time and place but supplies no link
   to Marciana or Luís, so it remains collateral evidence only.
@@ -390,13 +404,14 @@ This couple were Carlina's parents and Rafael's maternal grandparents.
 8. Birth or baptism records for the Perales–Pérez and Reyes–Martínez sibling
    clusters, especially Benito Isabel versus Isabel and Pedro's earlier
    children with Juana Villafañe.
-9. Francisco Vázquez and María Magdalena Cortés's marriage before 1786,
-   Francisco's burial after 1801, and records that identify their parents or
-   native places; plus Coamo or Humacao marriage, sibling, and burial records
-   that can test whether Roque de Rivera with Emerenciana Tirado was the same
-   family as Roque with Marciana Delgado. Isidora's parents and life dates also
-   remain open. Overseas origins remain unassigned unless a record names a
-   specific direct ancestor and place.
+9. Francisco Vázquez and María Magdalena Cortés's marriage in a missing,
+   duplicate, diocesan, or neighboring book before 1786; Francisco's burial
+   after 1801; and records that identify their parents or native places. On the
+   Rivera line, seek evidence that can distinguish or connect Roque Rivera's
+   Coamo household with Emerenciana Tirado and Francisca Luna from the direct
+   Roque with Marciana Delgado. Isidora's parents and life dates also remain
+   open. Overseas origins remain unassigned unless a record names a specific
+   direct ancestor and place.
 
 All sources, conflicts and next-record targets are recorded in the adjacent
 JSONL files. Record pages, viewer captures, original-resolution images, and the
