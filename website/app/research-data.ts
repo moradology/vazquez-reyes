@@ -692,6 +692,20 @@ export const sources = [
     href: "https://hijosdecoamopr.com/wp-content/uploads/2022/08/Compendio-Residentes-extranjeros-1815-1845.pdf",
     grade: "Complete volunteer collection index · bounded negative",
   },
+  {
+    id: "hato-grande-census-1822",
+    label: "1822 Hato Grande nominal census · exact frame identified",
+    detail: "The finding aid identifies a named-resident census for Hato Grande, now San Lorenzo, and pins the starting frame to FamilySearch image 1630. It falls between the family’s 1819 Juncos and 1824 San Lorenzo baptisms. The original still requires sign-in and has not been read, so no household is claimed.",
+    href: "https://www.familysearch.org/ark:/61903/3:1:3Q9M-CSV2-TQM9-J?cat=607211&i=1629&lang=en",
+    grade: "Exact household target · original capture pending",
+  },
+  {
+    id: "hato-grande-militia-1817",
+    label: "1817 Hato Grande urban-militia transcription",
+    detail: "A partial public excerpt names other men called Máximo but does not identify our Máximo Vázquez. This is a male militia roster, not a household census, and the complete Hato Grande section and original archive pages remain unreviewed.",
+    href: "https://www.scribd.com/document/894429370/Listas-Milicias-Urbanas-1817-Puerto-Rico",
+    grade: "Incomplete collateral lead · no identity or absence claim",
+  },
 ];
 
 export const familyCouples = [
@@ -1167,7 +1181,7 @@ export const openCases = [
     id: "VR-13",
     title: "Máximo and Josefa before 1805",
     conflict: "Four Caguas originals strongly identify Máximo’s parents as Francisco Vázquez and María Magdalena Cortés, but Máximo’s own baptism remains missing. Surviving marriage material checked through 1734–1804 does not contain the parent marriage. On Josefa’s line, Luís is called a Coamo native in 1808 and a Humacao native in 1811. A six-child Coamo cluster under father Roque includes Emerenciana Tirado and Francisca Luna, while the direct burial names Marciana Delgado.",
-    next: "Prioritize Máximo’s baptism and missing, duplicate, diocesan, or neighboring material for Francisco and María’s marriage. Seek records that distinguish or connect the Coamo Roque household from Roque with Marciana Delgado. Do not merge the 1765 baptism before resolving that conflict.",
+    next: "Capture and screen the exact 1822 Hato Grande nominal census first, then continue Máximo’s baptism and missing, duplicate, diocesan, or neighboring material for Francisco and María’s marriage. Seek records that distinguish or connect the Coamo Roque household from Roque with Marciana Delgado. Do not merge the 1765 baptism before resolving that conflict.",
   },
   {
     id: "VR-14",
@@ -1212,6 +1226,7 @@ export const negativeSearches = [
   "A faded 1791 Lorenza baptism names an Isidora Rodríguez with a different apparent father. It is preserved but not merged with the target household.",
   "The complete 1832 Juncos census transcription contains no household that can be defensibly assigned to Máximo Vázquez, Josefa Rivera, or Atilano Vázquez. The only named Atilano is Atilano Piñero; a Francisco Vázquez household and Magdalena Delgado remain detached near-matches. Blank repeated surnames and unreadable fields prevent an absence claim.",
   "The complete 1815–1845 foreign-resident compendium contains no exact direct-line ancestor. Its only Vázquez-like applicant is Juan Luis Bázquez in 1824, with no identity bridge to the family. The file set is not a census of every immigrant, so the negative screen does not establish Puerto Rico birth for every earlier ancestor.",
+  "The publicly surfaced 1817 Hato Grande militia excerpt is not a census and has not been reviewed in full. It names other men called Máximo but cannot establish whether Máximo Vázquez, Josefa Rivera, or their children were present or absent. The exact 1822 nominal census is the proper household test.",
 ];
 
 export const nameVariants = [
@@ -1498,5 +1513,13 @@ export const updates = [
   {
     date: "25 Jul 2026",
     text: "Screened the complete 1815–1845 Puerto Rico foreign-resident compendium. No direct-line ancestor appears, and Juan Luis Bázquez remains an unattached surname lead rather than evidence of an overseas origin.",
+  },
+  {
+    date: "25 Jul 2026",
+    text: "Pinned the 1822 Hato Grande nominal census to exact FamilySearch image 1630. It is the best current household test between the family’s 1819 Juncos and 1824 San Lorenzo records; original capture remains blocked by sign-in.",
+  },
+  {
+    date: "25 Jul 2026",
+    text: "Classified the surfaced 1817 Hato Grande militia transcription as an incomplete male-roster lead. It cannot identify Josefa or the children and does not support a presence or absence claim for Máximo.",
   },
 ];
