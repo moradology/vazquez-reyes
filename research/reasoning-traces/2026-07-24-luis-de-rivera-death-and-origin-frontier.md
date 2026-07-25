@@ -211,6 +211,27 @@ and different parents and is rejected. No indexed target record survived the
 name, spouse, parent, date, and place checks. These searches are negative
 coverage only because indexing, OCR, and surviving-book gaps are substantial.
 
+The later original-book indexes were then reviewed directly rather than left
+at the search-result level. FamilySearch DGS 007769016 frames 582–650 contain
+eight complete alphabetical burial indexes labeled **1815–1820, 1823–1826,
+1826–1829, 1829–1836, 1836–1839, 1839–1843, 1843–1846, and 1846–1852**.
+All 69 frames were captured and manually reviewed.
+
+The exact-name entry is visible on frame 608 under Rodríguez and points to page
+109. Its attached record identifies an Isidora Rodríguez recorded on **7
+December 1827**, daughter of **Diego Rodríguez and Josefa**, and spouse of
+**Andrés Ubierna or Obierna**. Those identifiers conflict with the Isidora who
+was church-married to Luís de Rivera and mother of their children, so the 1827
+woman is retained as a separate person. The full frame and an enlarged entry
+crop are archived.
+
+No defensible target burial appears in the reviewed indexes. This is still
+bounded negative coverage, not proof of absence: the reviewed sequence has no
+1821–1822 book, and missing pages, variant spelling, poor legibility, or an
+unfilmed or neighboring register remain possible. The result moves the next
+search toward duplicate or diocesan registers and records that can name
+Isidora's parents, rather than toward more name-only index results.
+
 ## Conclusion
 
 The direct line still advances securely from Luís to **Roque** and **Marciana

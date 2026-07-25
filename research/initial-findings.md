@@ -270,6 +270,13 @@ marriage and death, and a wider Vázquez sibling cluster.
   Gerónima, Domingo, María, Ramón, and Juan**. Four children remain known only
   by given name from that list; the separate baptisms now identify Ramón as
   José Ramón and Juan as Juan Antonio.
+- The complete Humacao burial indexes from **1810 through 1852** were reviewed
+  for Isidora, with the **1821–1822 register interval missing** from the
+  surviving sequence. The only exact-name entry after 1811 is a different
+  Isidora Rodríguez recorded on **7 December 1827**, daughter of Diego
+  Rodríguez and Josefa and spouse of Andrés Ubierna or Obierna. The conflicting
+  husband and parents rule her out. No defensible target burial was found, but
+  the register gap and possible record loss mean Isidora's death remains open.
 - Luís's native-place evidence conflicts. The 1808 baptism explicitly says
   Coamo, while the February 1811 baptism and April 1811 burial say the Humacao
   district. All three reports remain attached to their sources.

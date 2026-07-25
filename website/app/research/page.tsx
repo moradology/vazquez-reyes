@@ -222,8 +222,10 @@ export default function ResearchPage() {
             <h3>Luís de Rivera</h3>
             <dl>
               <div>
-                <dt>Native place</dt>
-                <dd>Humacao district, Puerto Rico</dd>
+                <dt>Native-place reports</dt>
+                <dd>
+                  Coamo in 1808; Humacao district in two 1811 records
+                </dd>
               </div>
               <div>
                 <dt>Parents</dt>
@@ -235,6 +237,27 @@ export default function ResearchPage() {
                   About 50 years old; married in the church to Isidora
                   Rodríguez; nine children named
                 </dd>
+              </div>
+            </dl>
+          </article>
+          <article>
+            <Grade kind="documented">DOCUMENTED</Grade>
+            <h3>Isidora Rodríguez</h3>
+            <dl>
+              <div>
+                <dt>Native place</dt>
+                <dd>Humacao district, Puerto Rico</dd>
+              </div>
+              <div>
+                <dt>Family</dt>
+                <dd>
+                  Church-married to Luís de Rivera; nine children named in
+                  Luís’s burial
+                </dd>
+              </div>
+              <div>
+                <dt>Still unknown</dt>
+                <dd>Her parents, birth date, and death</dd>
               </div>
             </dl>
           </article>
@@ -305,14 +328,26 @@ export default function ResearchPage() {
               </p>
             </article>
             <article>
+              <span>Humacao · 1810–1852</span>
+              <strong>Isidora’s burial search</strong>
+              <p>
+                Nine complete alphabetical burial indexes were reviewed. The
+                only later exact-name entry is a different Isidora Rodríguez:
+                recorded in 1827 with parents Diego and Josefa and husband
+                Andrés Ubierna or Obierna. No defensible entry for Luís’s wife
+                was found. The surviving sequence has no 1821–1822 book, so
+                this narrows the search without proving absence.
+              </p>
+            </article>
+            <article>
               <span>Humacao · 1797</span>
               <strong>A Canary Islands lead rejected</strong>
               <p>
                 A burial calls Joseph Roque a native of the Canary Islands,
                 but also calls him the widower of María Herrera. Our Roque is
-                documented with Marciana Delgado. With no record bridging the
-                two identities, the overseas-born man is preserved as a
-                same-name candidate and not assigned to this family.
+                documented with Marciana Delgado. The conflicting spouse makes
+                the overseas-born man a different person; the record is
+                preserved and rejected from this family.
               </p>
             </article>
           </div>
