@@ -15341,16 +15341,18 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "status": "not_yet_found"
       },
       "death": {
-        "status": "not_yet_found"
+        "status": "not_yet_found",
+        "search_audit": "An exact year-by-year Humacao civil-index screen for 1885–1910 found only Ramón Reyes y Ruiz, age 18 at death in 1898; that younger man is rejected as the target."
       },
       "spouse": "person.ines-castro",
       "known_child": "person.pedro-reyes",
-      "confidence": "confirmed_as_paternal_grandfather_on_original_baptisms",
+      "confidence": "confirmed_as_paternal_grandfather_on_original_baptisms_life_events_open",
       "evidence_refs": [
         "source.familysearch-baptism.mauricio-reyes-martinez.1882",
-        "source.familysearch-baptism.benito-isabel-reyes-martinez.1877"
+        "source.familysearch-baptism.benito-isabel-reyes-martinez.1877",
+        "source.search-audit.ancestry-ramon-reyes-ines-castro-deaths.1885-1910"
       ],
-      "notes": "The surviving records name him as Pedro Reyes's father; his own life events have not yet been found."
+      "notes": "Two original baptisms name him as Pedro Reyes's father. His own life events have not yet been found. The complete exact-name Humacao death-index screen from 1885 through 1910 produced no generation-fitting target."
     },
     "relations": {
       "parentIds": [],
@@ -15389,6 +15391,18 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "quality": "original_register_image",
         "citation": "DGS 008038526, item 6, local image 169 of 337, register page 135. Benito Isabel was born 8 July and baptized 15 September 1877, described as the legitimate son of Pedro Reyes and Ana Martínez. Paternal grandparents Ramón Reyes and Inés Castro; maternal grandfather Dámaso Martínez. The maternal grandmother's given name is María, but her surname is difficult to read and conflicts with the clearer Rivera form in Mauricio's 1882 baptism. Godparents Benito Rosario and Valentina Rodríguez.",
         "image_archive": "1877-09-15_benito-isabel-reyes-martinez-baptism_humacao_familysearch_dgs-008038526_item-6_image-169_3Q9M-CSFS-29WY-6.jpg"
+      },
+      {
+        "id": "source.search-audit.ancestry-ramon-reyes-ines-castro-deaths.1885-1910",
+        "type": "bounded_exact_name_year_place_civil_death_index_screen_with_original_candidate_review",
+        "title": "Ramón Reyes and Inés Castro death search, Humacao, 1885–1910",
+        "repository": "Puerto Rico civil-registration index via Ancestry.com",
+        "accessed": "2026-07-25",
+        "url": "https://www.ancestry.com/search/collections/9100/?name=Ines_Castro&death=1889_Humacao&death_x=0-0-0_1-0&name_x=1_1",
+        "quality": "complete_year_by_year_exact_name_exact_death_year_exact_humacao_place_derivative_index_screen_selected_original_reviewed_not_register_level",
+        "citation": "Exact year-by-year Humacao death searches from 1885 through 1910 found only one Inés Castro: 85-year-old Inés Castro Rivera in 1889, whose original names her as the widow of Pascasio Reyes rather than the target Ramón Reyes. The same bounded screen found only one Ramón Reyes: Ramón Reyes y Ruiz, age 18 at death in 1898, who is rejected as the target by generation. Exact Pascasio Reyes searches for 1885–1889 returned no Humacao death. Index omission, variant names, pre-1885 death, death elsewhere, and missing registrations remain possible; this is not proof of absence.",
+        "reasoning_trace": "research/reasoning-traces/2026-07-25-ramon-reyes-ines-castro-death-sweep.md",
+        "status": "bounded_index_screen_no_defensible_target_one_conflicted_candidate_preserved"
       }
     ],
     "geographyEvents": []
@@ -15408,16 +15422,19 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "status": "not_yet_found"
       },
       "death": {
-        "status": "not_yet_found"
+        "status": "not_yet_found",
+        "candidate_record": "An Inés Castro Rivera, age 85 and a native of Las Piedras, died in Humacao in August 1889. Her original calls her the widow of Pascasio Reyes, not Ramón Reyes, so she is not merged."
       },
       "spouse": "person.ramon-reyes",
       "known_child": "person.pedro-reyes",
-      "confidence": "confirmed_as_paternal_grandmother_on_original_baptisms",
+      "confidence": "confirmed_as_paternal_grandmother_on_original_baptisms_one_conflicted_death_candidate_unmerged",
       "evidence_refs": [
         "source.familysearch-baptism.mauricio-reyes-martinez.1882",
-        "source.familysearch-baptism.benito-isabel-reyes-martinez.1877"
+        "source.familysearch-baptism.benito-isabel-reyes-martinez.1877",
+        "source.pr-civil-death.ines-castro-rivera-candidate.663467",
+        "source.search-audit.ancestry-ramon-reyes-ines-castro-deaths.1885-1910"
       ],
-      "notes": "The surviving records name her as Pedro Reyes's mother; her own life events have not yet been found."
+      "notes": "Two original baptisms name her as Pedro Reyes's mother and Ramón Reyes's wife. The only exact Inés Castro death indexed in Humacao from 1885 through 1910 is a plausible-generation namesake whose original names a conflicting husband, Pascasio Reyes. She remains an unmerged candidate until a parish record supplies an identity bridge."
     },
     "relations": {
       "parentIds": [],
@@ -15456,6 +15473,39 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "quality": "original_register_image",
         "citation": "DGS 008038526, item 6, local image 169 of 337, register page 135. Benito Isabel was born 8 July and baptized 15 September 1877, described as the legitimate son of Pedro Reyes and Ana Martínez. Paternal grandparents Ramón Reyes and Inés Castro; maternal grandfather Dámaso Martínez. The maternal grandmother's given name is María, but her surname is difficult to read and conflicts with the clearer Rivera form in Mauricio's 1882 baptism. Godparents Benito Rosario and Valentina Rodríguez.",
         "image_archive": "1877-09-15_benito-isabel-reyes-martinez-baptism_humacao_familysearch_dgs-008038526_item-6_image-169_3Q9M-CSFS-29WY-6.jpg"
+      },
+      {
+        "id": "source.pr-civil-death.ines-castro-rivera-candidate.663467",
+        "type": "two_page_civil_death_registration_with_image",
+        "title": "1889 death of Inés Castro Rivera, unresolved same-name candidate",
+        "repository": "Departamento de Salud de Puerto Rico via Ancestry.com",
+        "accessed": "2026-07-25",
+        "url": "https://www.ancestry.com/search/collections/9100/records/663467",
+        "image_url": "https://www.ancestry.com/imageviewer/collections/9100/images/004493690_02176?pid=663467&usePUB=true&usePUBJs=true",
+        "quality": "two_original_filmed_pages_downloaded_and_visually_reviewed_derivative_index_date_conflict_preserved",
+        "citation": "Humacao act 385, dated 13 August 1889. The original reports Inés Castro Rivera as 85 and a native of Las Piedras and says that she died at nine in the morning on the previous day, 12 August; the derivative index uses 13 August. The act calls her the widow of Pascasio Reyes. The exact name, place, and generation are plausible for the direct Inés Castro, but two original descendant baptisms name the target husband as Ramón Reyes. No record reviewed so far joins Pascasio to Ramón or this woman to Pedro Reyes, so the record is preserved but not merged.",
+        "image_archive": [
+          "research/pulls/images/candidate.ines-castro-rivera-death.663467/20260725T191447Z-document-original.jpg",
+          "research/pulls/images/candidate.ines-castro-rivera-death.663467/20260725T191447Z-document-next-1-original.jpg"
+        ],
+        "image_sha256": [
+          "3a2fe34f97acc586266127503a6175b057bc10c92e57fc3c0d5084158f74412d",
+          "e26e91f7bf5a4a84222381059f7d177b3f9ed6820cf06c5b6af087f2595cdef0"
+        ],
+        "reasoning_trace": "research/reasoning-traces/2026-07-25-ramon-reyes-ines-castro-death-sweep.md",
+        "status": "unmerged_candidate_husband_conflict"
+      },
+      {
+        "id": "source.search-audit.ancestry-ramon-reyes-ines-castro-deaths.1885-1910",
+        "type": "bounded_exact_name_year_place_civil_death_index_screen_with_original_candidate_review",
+        "title": "Ramón Reyes and Inés Castro death search, Humacao, 1885–1910",
+        "repository": "Puerto Rico civil-registration index via Ancestry.com",
+        "accessed": "2026-07-25",
+        "url": "https://www.ancestry.com/search/collections/9100/?name=Ines_Castro&death=1889_Humacao&death_x=0-0-0_1-0&name_x=1_1",
+        "quality": "complete_year_by_year_exact_name_exact_death_year_exact_humacao_place_derivative_index_screen_selected_original_reviewed_not_register_level",
+        "citation": "Exact year-by-year Humacao death searches from 1885 through 1910 found only one Inés Castro: 85-year-old Inés Castro Rivera in 1889, whose original names her as the widow of Pascasio Reyes rather than the target Ramón Reyes. The same bounded screen found only one Ramón Reyes: Ramón Reyes y Ruiz, age 18 at death in 1898, who is rejected as the target by generation. Exact Pascasio Reyes searches for 1885–1889 returned no Humacao death. Index omission, variant names, pre-1885 death, death elsewhere, and missing registrations remain possible; this is not proof of absence.",
+        "reasoning_trace": "research/reasoning-traces/2026-07-25-ramon-reyes-ines-castro-death-sweep.md",
+        "status": "bounded_index_screen_no_defensible_target_one_conflicted_candidate_preserved"
       }
     ],
     "geographyEvents": []
