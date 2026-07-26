@@ -117,6 +117,28 @@ The archive is retained at:
 
 `research/pulls/images/caguas-marriages-1734-1774/`
 
+## Bayamón marriage candidate, 1781
+
+FamilySearch now indexes a Francisco Vázquez Hernández and María Magdalena
+Cortés marrying in Bayamón on 2 January 1781. A reviewed cropped manuscript
+copy supports the couple, date, and parent structure. The index gives Juan
+Vázquez del Río and María Hernández as the groom's parents, and Lázaro Cortés
+and Isabel Monzón (`Monzor` in the derivative index) as the bride's parents.
+
+This is the strongest marriage lead yet for the direct couple: the spouse pair
+is exact and distinctive, and the marriage falls five years before the first
+documented Caguas child. It remains **unmerged**. No reviewed child, witness,
+godparent, native-place statement, or later record connects the Bayamón spouses
+to the Caguas household. The exact full register frame and adjacent entries
+also remain pending behind FamilySearch sign-in. The proposed parents are
+therefore not added to the direct tree.
+
+Luciano Vázquez's 1839 Gurabo burial supplies a possible Bayamón collateral
+network. The manuscript calls him a native of Bayamón, son of Juan José
+Vázquez and María de la Cruz Hernández, and husband of Marcela de Torres; the
+public derivative index transposes the mother and wife. This does not prove
+Luciano was Francisco's brother or that Juan José was Juan Vázquez del Río.
+
 ## Origin boundary
 
 This work moves the line deeper into eighteenth-century Caguas and supplies one

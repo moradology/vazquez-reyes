@@ -301,6 +301,16 @@ export const sources = [
     grade: "Original parish register",
   },
   {
+    id: "bayamon-marriage-candidate-1781",
+    label:
+      "1781 Bayamón marriage candidate: Francisco Vázquez + María Magdalena Cortés",
+    detail:
+      "Married 2 January 1781 in Bayamón. The index and a cropped manuscript copy name his parents as Juan Vázquez del Río and María Hernández, and hers as Lázaro Cortés and Isabel Monzón. The exact spouse pair and date make this a strong lead for the Caguas household known from 1786, but no child, witness, godparent, native-place, or later record yet connects the two parishes.",
+    href: "https://www.familysearch.org/ark:/61903/1:1:X9P2-28TG?lang=en",
+    grade:
+      "Indexed parish marriage + manuscript image copy · strong candidate, not merged",
+  },
+  {
     id: "miguel-vazquez-baptism-1786",
     label: "1786 baptism: Miguel Vázquez",
     detail: "Baptized 18 October 1786 in Caguas at the reported age of 15 days, legitimate son of Francisco Vázquez and María Magdalena. The entry does not give María’s surname; that comes from her later burial.",
@@ -1003,7 +1013,7 @@ export const familyCouples = [
       "José Vázquez — buried 14 Feb 1801 in Caguas",
     ],
     childNote:
-      "Máximo’s marriage gives Francisco no surname. The 1786 baptism, two child burials, and María Magdalena’s own 1794 burial supply Francisco Vázquez and María Magdalena Cortés. The exact names, place, and chronology make the identification strong; Máximo’s own baptism is still needed for direct sibling proof. Neither parent’s birthplace or native place is stated.",
+      "Máximo’s marriage gives Francisco no surname. The 1786 baptism, two child burials, and María Magdalena’s own 1794 burial supply Francisco Vázquez and María Magdalena Cortés. The exact names, place, and chronology make the identification strong; Máximo’s own baptism is still needed for direct sibling proof. An exact-name couple married in Bayamón in 1781, but no reviewed record yet bridges that marriage to this Caguas household, so the event and its proposed parent pairs remain unmerged. Neither direct parent’s birthplace or native place is stated.",
   },
   {
     id: "luis-isidora",

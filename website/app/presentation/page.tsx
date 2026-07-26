@@ -70,7 +70,7 @@ function SlideNav({ current, total }: { current: number; total: number }) {
   );
 }
 
-const totalSlides = 18;
+const totalSlides = 19;
 
 export default function PresentationPage() {
   return (
@@ -568,6 +568,49 @@ export default function PresentationPage() {
 
       <section className="deck-slide record-slide" data-slide id="slide-14">
         <div className="slide-copy">
+          <p className="slide-kicker">The Bayamón lead</p>
+          <h2>A 1781 marriage may be the same couple. The bridge is not complete.</h2>
+          <ul className="slide-findings">
+            <li>
+              <b>2 Jan 1781, Bayamón:</b> Francisco Vázquez married María
+              Magdalena Cortés.
+            </li>
+            <li>
+              His indexed parents: Juan Vázquez del Río and María Hernández.
+            </li>
+            <li>
+              Hers: Lázaro Cortés and Isabel Monzón—written as{" "}
+              <i>Monzor</i> in the index.
+            </li>
+            <li>
+              The exact spouse pair and date fit the Caguas household first
+              documented in 1786.
+            </li>
+          </ul>
+          <p className="slide-caution">
+            This remains a same-name candidate. No reviewed child, witness,
+            godparent, native-place statement, or later record connects the
+            Bayamón marriage to the Caguas household. The proposed parents are
+            not in the direct tree.
+          </p>
+          <div className="slide-links">
+            <Link href="/people/francisco-father-of-maximo-vazquez">
+              Francisco’s profile →
+            </Link>
+            <Link href="/people/maria-cortez">María’s profile →</Link>
+            <Link href="/research#origins">Origin research →</Link>
+          </div>
+        </div>
+        <RecordImage
+          alt="Cropped manuscript copy of the 1781 Bayamón marriage candidate for Francisco Vázquez and María Magdalena Cortés"
+          caption="1781 Bayamón marriage candidate · not merged"
+          src="1781-francisco-vazquez-maria-magdalena-cortes-marriage-candidate.jpg"
+        />
+        <SlideNav current={14} total={totalSlides} />
+      </section>
+
+      <section className="deck-slide record-slide" data-slide id="slide-15">
+        <div className="slide-copy">
           <p className="slide-kicker">Josefa’s family</p>
           <h2>The Luís and Isidora household appears repeatedly.</h2>
           <ol className="numbered-evidence">
@@ -597,10 +640,10 @@ export default function PresentationPage() {
           caption="Simona, daughter of Luís de Rivera and Isidora Rodríguez"
           src="1790-simona-rivera-baptism.jpg"
         />
-        <SlideNav current={14} total={totalSlides} />
+        <SlideNav current={15} total={totalSlides} />
       </section>
 
-      <section className="deck-slide record-slide" data-slide id="slide-15">
+      <section className="deck-slide record-slide" data-slide id="slide-16">
         <div className="slide-copy">
           <p className="slide-kicker">One generation farther</p>
           <h2>Luís de Rivera names Roque and Marciana Delgado.</h2>
@@ -628,10 +671,10 @@ export default function PresentationPage() {
           caption="Luís de Rivera’s burial entry · 20 April 1811"
           src="1811-luis-de-rivera-death.jpg"
         />
-        <SlideNav current={15} total={totalSlides} />
+        <SlideNav current={16} total={totalSlides} />
       </section>
 
-      <section className="deck-slide record-slide" data-slide id="slide-16">
+      <section className="deck-slide record-slide" data-slide id="slide-17">
         <div className="slide-copy">
           <p className="slide-kicker">Two sons, two place reports</p>
           <h2>Juan Antonio and José Ramón identify the conflict.</h2>
@@ -667,10 +710,10 @@ export default function PresentationPage() {
           caption="Juan Antonio’s 1808 entry crosses two register images"
           src="1808-juan-antonio-rivera-baptism.jpg"
         />
-        <SlideNav current={16} total={totalSlides} />
+        <SlideNav current={17} total={totalSlides} />
       </section>
 
-      <section className="deck-slide record-slide" data-slide id="slide-17">
+      <section className="deck-slide record-slide" data-slide id="slide-18">
         <div className="slide-copy">
           <p className="slide-kicker">The Coamo candidate</p>
           <h2>A close match inside a complicated household.</h2>
@@ -703,10 +746,10 @@ export default function PresentationPage() {
           caption="1765 Coamo baptism candidate · retained, not merged"
           src="1765-luis-rivera-candidate-baptism.jpg"
         />
-        <SlideNav current={17} total={totalSlides} />
+        <SlideNav current={18} total={totalSlides} />
       </section>
 
-      <section className="deck-slide frontier-slide" data-slide id="slide-18">
+      <section className="deck-slide frontier-slide" data-slide id="slide-19">
         <div className="slide-copy">
           <p className="slide-kicker">Where the trail stands</p>
           <h2>The documented trail still stays within Puerto Rico.</h2>
@@ -748,7 +791,7 @@ export default function PresentationPage() {
           <p>Letters and funeral cards</p>
           <p>Stories—with who told them</p>
         </aside>
-        <SlideNav current={18} total={totalSlides} />
+        <SlideNav current={19} total={totalSlides} />
       </section>
     </main>
   );

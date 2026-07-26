@@ -45,6 +45,8 @@ const publicRecordImages = {
     "1794-maria-magdalena-cortes-burial.jpg",
   "source.familysearch-burial.jose-vazquez.1801":
     "1801-jose-vazquez-burial.jpg",
+  "source.familysearch-marriage.francisco-maria-magdalena-candidate.1781":
+    "1781-francisco-vazquez-maria-magdalena-cortes-marriage-candidate.jpg",
   "source.familysearch-baptism.simona-rivera.1790":
     "1790-simona-rivera-baptism.jpg",
   "source.familysearch-baptism.ysabel-rivera.1792":

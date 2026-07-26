@@ -624,6 +624,34 @@ export default function ResearchPage() {
                     </figcaption>
                   </figure>
                 ))}
+              {family.id === "francisco-maria-cortez" && (
+                <figure className="family-record">
+                  <a
+                    href="/records/1781-francisco-vazquez-maria-magdalena-cortes-marriage-candidate.jpg"
+                    target="_blank"
+                  >
+                    <img
+                      src="/records/1781-francisco-vazquez-maria-magdalena-cortes-marriage-candidate.jpg"
+                      alt="Cropped manuscript copy of the 1781 Bayamón marriage candidate for Francisco Vázquez and María Magdalena Cortés"
+                    />
+                  </a>
+                  <figcaption>
+                    <strong>1781 · Bayamón marriage candidate</strong>
+                    <span>
+                      Francisco Vázquez and María Magdalena Cortés married on 2
+                      January. The record proposes Juan Vázquez del Río and
+                      María Hernández as his parents, and Lázaro Cortés and
+                      Isabel Monzón as hers. The exact pair and chronology make
+                      this a strong lead, but no reviewed record yet connects
+                      the Bayamón marriage to the Caguas household.
+                    </span>
+                    <small>
+                      FamilySearch X9P2-28TG · third-party cropped image copy ·
+                      full register frame pending
+                    </small>
+                  </figcaption>
+                </figure>
+              )}
               {family.id === "luis-isidora" && (
                 <>
                   <figure className="family-record">

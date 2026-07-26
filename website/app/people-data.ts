@@ -11177,6 +11177,81 @@ export const peopleProfiles: readonly PersonProfile[] = [
           "source.familysearch-burial.jose-vazquez.1801"
         ],
         "note": "The chronology is compatible, but compatibility is not identity. The Cayey household remains separate from the direct tree unless a record explicitly bridges the two."
+      },
+      {
+        "id": "claim.francisco-maria-bayamon-marriage-candidate-1781",
+        "subject": [
+          "person.francisco-father-of-maximo-vazquez",
+          "person.maria-cortez"
+        ],
+        "predicate": "unmerged_same_couple_marriage_candidate",
+        "object": {
+          "candidate_event": {
+            "date": "1781-01-02",
+            "place": "Bayamón, Puerto Rico",
+            "groom": "Francisco Vázquez Hernández",
+            "bride": "María Magdalena Cortés"
+          },
+          "proposed_groom_parents": [
+            "Juan Vázquez del Río",
+            "María Hernández"
+          ],
+          "proposed_bride_parents": [
+            "Lázaro Cortés",
+            "Isabel Monzón"
+          ],
+          "matching_points": [
+            "exact distinctive spouse pair",
+            "marriage precedes the first documented Caguas child in 1786",
+            "indexed parish event supported by a cropped manuscript image copy"
+          ],
+          "missing_identity_bridge": [
+            "no reviewed child links the Bayamón couple to the Caguas children",
+            "no witness or godparent network yet connects the parishes",
+            "no reviewed native-place or later record identifies the Caguas couple as the Bayamón spouses",
+            "exact full register frame and adjacent entries remain pending"
+          ]
+        },
+        "status": "strong_candidate_not_merged_proposed_parents_excluded_from_direct_tree",
+        "evidence_refs": [
+          "source.familysearch-marriage.francisco-maria-magdalena-candidate.1781",
+          "source.familysearch-baptism.miguel-vazquez.1786",
+          "source.familysearch-burial.maria-de-los-angeles-vazquez.1793",
+          "source.familysearch-burial.maria-magdalena-cortes.1794",
+          "source.familysearch-burial.jose-vazquez.1801",
+          "source.familysearch-marriage.maximo-josefa.1805"
+        ],
+        "note": "This is the strongest marriage lead found for the direct Caguas couple, but matching names and compatible chronology are not an identity bridge. Do not attach Juan Vázquez del Río, María Hernández, Lázaro Cortés, or Isabel Monzón as direct ancestors unless another record joins the Bayamón and Caguas households."
+      },
+      {
+        "id": "claim.francisco-luciano-bayamon-collateral-candidate",
+        "subject": "person.francisco-father-of-maximo-vazquez",
+        "predicate": "unmerged_candidate_sibling_network",
+        "object": {
+          "candidate_collateral": "Luciano Vázquez",
+          "burial": "1839-06-17",
+          "burial_place": "Gurabo, Puerto Rico",
+          "reported_age": 65,
+          "reported_native_place": "Bayamón, Puerto Rico",
+          "parents_read_from_manuscript": [
+            "Juan José Vázquez",
+            "María de la Cruz Hernández"
+          ],
+          "spouse_read_from_manuscript": "Marcela de Torres",
+          "derivative_index_problem": "FamilySearch's public derivative fields transpose María de la Cruz Hernández and Marcela de Torres",
+          "possible_alignment": "The Bayamón origin and Hernández mother may align Luciano with the 1781 Francisco candidate's family",
+          "missing_proof": [
+            "no reviewed record names Francisco and Luciano as brothers",
+            "Juan José Vázquez has not been shown to be Juan Vázquez del Río",
+            "the 1781 Francisco candidate has not been bridged to the direct Caguas Francisco"
+          ]
+        },
+        "status": "candidate_collateral_not_attached",
+        "evidence_refs": [
+          "source.familysearch-burial.luciano-vazquez-candidate-collateral.1839",
+          "source.familysearch-marriage.francisco-maria-magdalena-candidate.1781"
+        ],
+        "note": "The manuscript controls the relationship order where the derivative index is wrong. The record identifies a useful Bayamón Vázquez–Hernández network, not a proved direct-line sibling."
       }
     ],
     "sources": [
@@ -11489,6 +11564,40 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "image_archive": "research/pulls/images/cayey-1801-francisco-xavier-vazquez-burial-candidate/1801-10-21-francisco-bazquez-burial-candidate-original-9398-K8SW-QV.jpg",
         "image_sha256": "f743560fdc8ff305452ff9b3ce7c05310d7425dc67edd6bbbb0cd206cd2b5406",
         "status": "unmerged_candidate_original_does_not_supply_identity_bridge"
+      },
+      {
+        "id": "source.familysearch-marriage.francisco-maria-magdalena-candidate.1781",
+        "type": "indexed_catholic_marriage_with_third_party_manuscript_image_copy",
+        "title": "1781 Bayamón marriage of Francisco Vázquez and María Magdalena Cortés, direct-line candidate",
+        "repository": "San Francisco de Paula, Bayamón, via FamilySearch; manuscript image copy via Ancestry member-tree media",
+        "accessed": "2026-07-25",
+        "url": "https://www.familysearch.org/ark:/61903/1:1:X9P2-28TG?lang=en",
+        "image_url": "https://www.ancestry.com/mediaui-viewer/tree/52752422/person/382464712547/media/dd2bf373-19ee-4717-9d57-33be43a2375a",
+        "finding_aid_url": "https://hijosdecoamopr.com/bayamon-puerto-rico-church-books-indexes/",
+        "familysearch_book_start": "https://www.familysearch.org/ark:/61903/3:1:9396-PJVS-Y?i=1079&wc=QZYD-2RG%3A149111901%2C149111902%2C1589504574&cc=1807092",
+        "familysearch_index_start": "https://www.familysearch.org/ark:/61903/3:1:9396-P6CD-J?i=2459&wc=QZYD-2RD%3A149111901%2C149111902%2C1589504599&cc=1807092",
+        "quality": "derivative_familysearch_index_plus_visually_reviewed_cropped_manuscript_copy_exact_full_original_frame_pending",
+        "citation": "FamilySearch indexes the marriage of Francisco Vázquez Hernández and María Magdalena Cortez on 2 January 1781 in Bayamón. The indexed parent pairs are Juan Vázquez del Río and María Hernández for the groom, and Lázaro Cortez and Isabel Monzor for the bride. The reviewed cropped manuscript copy supports the couple, date, and parent structure and reads the bride's mother more like Isabel Monzón. The exact distinctive couple and chronology make this a strong candidate for the Caguas Francisco Vázquez–María Magdalena Cortés household documented from 1786, but no reviewed child, witness, godparent, native-place, or later record bridges Bayamón to Caguas.",
+        "image_archive": "research/pulls/images/candidate.bayamon-1781-francisco-vazquez-maria-magdalena-cortes-marriage/1781-01-02-francisco-vazquez-maria-magdalena-cortes-marriage-ancestry-member-tree-copy.jpg",
+        "image_sha256": "3be4d5cc65a0dc08289aeed21202354c2ee894b9ab8486019a1c19b29b85eadc",
+        "public_image": "1781-francisco-vazquez-maria-magdalena-cortes-marriage-candidate.jpg",
+        "reasoning_trace": "research/reasoning-traces/2026-07-25-bayamon-1781-marriage-candidate.md",
+        "status": "strong_unmerged_same_couple_candidate_no_bayamon_caguas_identity_bridge"
+      },
+      {
+        "id": "source.familysearch-burial.luciano-vazquez-candidate-collateral.1839",
+        "type": "indexed_catholic_burial_with_low_resolution_third_party_manuscript_image_copy",
+        "title": "1839 Gurabo burial of Luciano Vázquez, Bayamón-born candidate collateral",
+        "repository": "San José, Gurabo, via FamilySearch; manuscript image copy via Ancestry member-tree media",
+        "accessed": "2026-07-25",
+        "url": "https://www.familysearch.org/ark:/61903/1:1:XSQC-2ZML?lang=en",
+        "image_url": "https://www.ancestry.com/mediaui-viewer/tree/52752422/person/380125810166/media/d158a3fa-4282-40d5-9d2a-22c192e0f400",
+        "quality": "derivative_familysearch_index_plus_visually_reviewed_low_resolution_cropped_manuscript_copy_exact_full_original_frame_pending",
+        "citation": "FamilySearch indexes Luciano Vázquez, born about 1774 in Bayamón and buried 17 June 1839 in Gurabo. Its public derivative fields transpose the women. The reviewed manuscript copy reads Luciano as the 65-year-old native of Bayamón, legitimate son of Juan José and María de la Cruz Hernández, and husband of Marcela de Torres. The Hernández mother and Bayamón origin suggest a possible collateral network for the 1781 Francisco candidate, but no record proves that Juan José was Juan Vázquez del Río or that Luciano was the direct Francisco's brother.",
+        "image_archive": "research/pulls/images/candidate.luciano-vazquez-burial-1839/1839-06-17-luciano-vazquez-burial-ancestry-member-tree-copy.jpg",
+        "image_sha256": "828813946f05277248c5aa6585e2f0a955805824dd34046c98791f7a0883b45d",
+        "reasoning_trace": "research/reasoning-traces/2026-07-25-bayamon-1781-marriage-candidate.md",
+        "status": "unmerged_candidate_collateral_derivative_relationship_transposition_corrected_from_image"
       }
     ],
     "geographyEvents": [
@@ -11834,6 +11943,51 @@ export const peopleProfiles: readonly PersonProfile[] = [
           "source.search-audit.caguas-early-books.maximo-parents"
         ],
         "note": "The screen sharpens the record boundary but does not establish that the couple did not marry in Caguas."
+      },
+      {
+        "id": "claim.francisco-maria-bayamon-marriage-candidate-1781",
+        "subject": [
+          "person.francisco-father-of-maximo-vazquez",
+          "person.maria-cortez"
+        ],
+        "predicate": "unmerged_same_couple_marriage_candidate",
+        "object": {
+          "candidate_event": {
+            "date": "1781-01-02",
+            "place": "Bayamón, Puerto Rico",
+            "groom": "Francisco Vázquez Hernández",
+            "bride": "María Magdalena Cortés"
+          },
+          "proposed_groom_parents": [
+            "Juan Vázquez del Río",
+            "María Hernández"
+          ],
+          "proposed_bride_parents": [
+            "Lázaro Cortés",
+            "Isabel Monzón"
+          ],
+          "matching_points": [
+            "exact distinctive spouse pair",
+            "marriage precedes the first documented Caguas child in 1786",
+            "indexed parish event supported by a cropped manuscript image copy"
+          ],
+          "missing_identity_bridge": [
+            "no reviewed child links the Bayamón couple to the Caguas children",
+            "no witness or godparent network yet connects the parishes",
+            "no reviewed native-place or later record identifies the Caguas couple as the Bayamón spouses",
+            "exact full register frame and adjacent entries remain pending"
+          ]
+        },
+        "status": "strong_candidate_not_merged_proposed_parents_excluded_from_direct_tree",
+        "evidence_refs": [
+          "source.familysearch-marriage.francisco-maria-magdalena-candidate.1781",
+          "source.familysearch-baptism.miguel-vazquez.1786",
+          "source.familysearch-burial.maria-de-los-angeles-vazquez.1793",
+          "source.familysearch-burial.maria-magdalena-cortes.1794",
+          "source.familysearch-burial.jose-vazquez.1801",
+          "source.familysearch-marriage.maximo-josefa.1805"
+        ],
+        "note": "This is the strongest marriage lead found for the direct Caguas couple, but matching names and compatible chronology are not an identity bridge. Do not attach Juan Vázquez del Río, María Hernández, Lázaro Cortés, or Isabel Monzón as direct ancestors unless another record joins the Bayamón and Caguas households."
       }
     ],
     "sources": [
@@ -12090,6 +12244,25 @@ export const peopleProfiles: readonly PersonProfile[] = [
         "image_archive": "research/pulls/scans/caguas-dgs-008126765-item9-burials-1801-1810/page-041.jpg through page-230.jpg",
         "image_set_sha256": "a3edfc3a4f06c681a6445565f978ce3ae9a4df0769d57122b0fd5107522b3a27",
         "status": "complete_image_capture_machine_screen_negative_full_manual_transcription_open"
+      },
+      {
+        "id": "source.familysearch-marriage.francisco-maria-magdalena-candidate.1781",
+        "type": "indexed_catholic_marriage_with_third_party_manuscript_image_copy",
+        "title": "1781 Bayamón marriage of Francisco Vázquez and María Magdalena Cortés, direct-line candidate",
+        "repository": "San Francisco de Paula, Bayamón, via FamilySearch; manuscript image copy via Ancestry member-tree media",
+        "accessed": "2026-07-25",
+        "url": "https://www.familysearch.org/ark:/61903/1:1:X9P2-28TG?lang=en",
+        "image_url": "https://www.ancestry.com/mediaui-viewer/tree/52752422/person/382464712547/media/dd2bf373-19ee-4717-9d57-33be43a2375a",
+        "finding_aid_url": "https://hijosdecoamopr.com/bayamon-puerto-rico-church-books-indexes/",
+        "familysearch_book_start": "https://www.familysearch.org/ark:/61903/3:1:9396-PJVS-Y?i=1079&wc=QZYD-2RG%3A149111901%2C149111902%2C1589504574&cc=1807092",
+        "familysearch_index_start": "https://www.familysearch.org/ark:/61903/3:1:9396-P6CD-J?i=2459&wc=QZYD-2RD%3A149111901%2C149111902%2C1589504599&cc=1807092",
+        "quality": "derivative_familysearch_index_plus_visually_reviewed_cropped_manuscript_copy_exact_full_original_frame_pending",
+        "citation": "FamilySearch indexes the marriage of Francisco Vázquez Hernández and María Magdalena Cortez on 2 January 1781 in Bayamón. The indexed parent pairs are Juan Vázquez del Río and María Hernández for the groom, and Lázaro Cortez and Isabel Monzor for the bride. The reviewed cropped manuscript copy supports the couple, date, and parent structure and reads the bride's mother more like Isabel Monzón. The exact distinctive couple and chronology make this a strong candidate for the Caguas Francisco Vázquez–María Magdalena Cortés household documented from 1786, but no reviewed child, witness, godparent, native-place, or later record bridges Bayamón to Caguas.",
+        "image_archive": "research/pulls/images/candidate.bayamon-1781-francisco-vazquez-maria-magdalena-cortes-marriage/1781-01-02-francisco-vazquez-maria-magdalena-cortes-marriage-ancestry-member-tree-copy.jpg",
+        "image_sha256": "3be4d5cc65a0dc08289aeed21202354c2ee894b9ab8486019a1c19b29b85eadc",
+        "public_image": "1781-francisco-vazquez-maria-magdalena-cortes-marriage-candidate.jpg",
+        "reasoning_trace": "research/reasoning-traces/2026-07-25-bayamon-1781-marriage-candidate.md",
+        "status": "strong_unmerged_same_couple_candidate_no_bayamon_caguas_identity_bridge"
       }
     ],
     "geographyEvents": [

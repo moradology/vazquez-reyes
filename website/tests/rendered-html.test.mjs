@@ -214,7 +214,7 @@ test("renders a slide-style, evidence-led family presentation", async () => {
 
   assert.equal(response.status, 200);
   assert.match(html, /Vazquez–Reyes family history/);
-  assert.equal([...html.matchAll(/\bdata-slide="true"/g)].length, 18);
+  assert.equal([...html.matchAll(/\bdata-slide="true"/g)].length, 19);
   assert.match(html, /family roots/);
   assert.match(html, /Connection/);
   assert.match(html, /The record/);
@@ -231,13 +231,19 @@ test("renders a slide-style, evidence-led family presentation", async () => {
   assert.match(html, /1805-maximo-josefa-marriage\.jpg/);
   assert.match(html, /1794-maria-magdalena-cortes-burial\.jpg/);
   assert.match(html, /Four earlier records supply the fuller parent names/);
+  assert.match(
+    html,
+    /1781-francisco-vazquez-maria-magdalena-cortes-marriage-candidate\.jpg/,
+  );
+  assert.match(html, /The bridge is not complete/);
+  assert.match(html, /The proposed parents are not in the direct tree/);
   assert.match(html, /1811-luis-de-rivera-death\.jpg/);
   assert.match(html, /1808-juan-antonio-rivera-baptism\.jpg/);
   assert.match(html, /1765-luis-rivera-candidate-baptism\.jpg/);
   assert.match(html, /A close match inside a complicated household/);
   assert.match(html, /No reviewed record yet identifies a direct ancestor born in Africa/);
   assert.match(html, /data-presentation-fullscreen/);
-  assert.match(html, /data-slide-total="18"/);
+  assert.match(html, /data-slide-total="19"/);
 });
 
 test("installs presentation controls before the page finishes loading", async () => {
